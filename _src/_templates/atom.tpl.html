@@ -16,7 +16,7 @@
 	<link href="{{ site.url }}{{ post.path }}"/>
 	<updated>{{ post.date | date_to_xmlschema }}</updated>
 	<id>{{ site.url }}{{ post.path }}</id>
-	<content type="html">{{ post.content | xml_escape }}</content>
+	<content type="html">{{ post.content | atomic_links(site.url) | xml_escape }}</content>
 	{% for tag in post.tags %}<category term="{{tag | xml_escape}}"/>{% endfor %}
 </entry>
 {% endfor %}

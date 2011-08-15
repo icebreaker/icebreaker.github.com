@@ -1,6 +1,10 @@
 import os, re, yaml, cgi, doxter
 from datetime import date
 
+def atomic_links(value, root):
+	regexp = re.compile(r'="\/(.*?)"')
+	return re.sub(regexp, lambda m: '="%s%s"' % (root, m.group(1)), value)
+
 def date_to_string(value, format='%B %d, %Y'):
 	return value.strftime(format)
 
@@ -33,6 +37,7 @@ class MetadataProcessor(doxter.Processor):
 		self.template.register_filter('date_to_xmlschema', date_to_xmlschema)
 		self.template.register_filter('xml_escape', xml_escape)
 		self.template.register_filter('array_to_sentence_string', array_to_sentence_string)
+		self.template.register_filter('atomic_links', atomic_links)
 
 	def priority(self):
 		return 1

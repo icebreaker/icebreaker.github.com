@@ -110,7 +110,7 @@ it would all have been perfect.&lt;/p&gt;
 &lt;li&gt;three&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Images:&lt;/p&gt;
-&lt;p&gt;&lt;img alt="" src="/images/two.jpg" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="" src="http://szabster.net/images/two.jpg" /&gt;&lt;/p&gt;
 &lt;p&gt;Auto links:&lt;/p&gt;
 &lt;p&gt;&lt;a href="http://proudify.me"&gt;http://proudify.me&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;All these in &lt;code&gt;plain Markdown&lt;/code&gt; with &lt;em&gt;some&lt;/em&gt; extensions. Isn't it beautiful? Lets you focus on the &lt;em&gt;precious content&lt;/em&gt;.&lt;/p&gt;
@@ -462,7 +462,7 @@ it all ...&lt;/p&gt;
 	<updated>2010-11-07T00:00:00+02:00</updated>
 	<id>http://szabster.net/2010/11/7/java-trap</id>
 	<content type="html">&lt;h3&gt;The empire strikes back or the return of the Jedi?&lt;/h3&gt;
-&lt;p&gt;After my controversial &lt;a href="/2010/10/23/crapdroid/"&gt;CrapDroid&lt;/a&gt; post, it's time for me to 
+&lt;p&gt;After my controversial &lt;a href="http://szabster.net/2010/10/23/crapdroid/"&gt;CrapDroid&lt;/a&gt; post, it's time for me to 
 strike back with another &lt;em&gt;hot&lt;/em&gt; topic, namely the Java or C# trap for that matter.&lt;/p&gt;
 &lt;p&gt;The JVM and the .NET CLR are birds of the same feather and they kind of flock
 together; like it or not.&lt;/p&gt;
@@ -536,10 +536,10 @@ trolling around in the comments.&lt;/p&gt;
 &lt;h3&gt;DVDs&lt;/h3&gt;
 &lt;p&gt;I pre-ordered my DVDs like a year ago, and I was very excited when they
 arrived yesterday. Yay!&lt;/p&gt;
-&lt;p&gt;&lt;a href="/images/2010/10/sintel/front-cover.jpg"&gt;&lt;img src="/images/2010/10/sintel/front-cover_small.jpg"/&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href="/images/2010/10/sintel/back-cover.jpg"&gt;&lt;img src="/images/2010/10/sintel/back-cover_small.jpg"/&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href="/images/2010/10/sintel/disc-1-2.jpg"&gt;&lt;img src="/images/2010/10/sintel/disc-1-2_small.jpg"/&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href="/images/2010/10/sintel/disc-3-4.jpg"&gt;&lt;img src="/images/2010/10/sintel/disc-3-4_small.jpg"/&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://szabster.net/images/2010/10/sintel/front-cover.jpg"&gt;&lt;img src="http://szabster.net/images/2010/10/sintel/front-cover_small.jpg"/&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://szabster.net/images/2010/10/sintel/back-cover.jpg"&gt;&lt;img src="http://szabster.net/images/2010/10/sintel/back-cover_small.jpg"/&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://szabster.net/images/2010/10/sintel/disc-1-2.jpg"&gt;&lt;img src="http://szabster.net/images/2010/10/sintel/disc-1-2_small.jpg"/&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://szabster.net/images/2010/10/sintel/disc-3-4.jpg"&gt;&lt;img src="http://szabster.net/images/2010/10/sintel/disc-3-4_small.jpg"/&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;The image quality is not so good, but I'm sure that you got the idea :D&lt;/p&gt;
 &lt;h3&gt;End of Line&lt;/h3&gt;</content>
 	<category term="sintel"/><category term="durian"/><category term="blender"/><category term="openmovie"/>
@@ -569,11 +569,11 @@ issue has no idea about what he is talking about.&lt;/p&gt;
 &lt;p&gt;Why reinvent the wheel and create a brand new &lt;em&gt;distribution&lt;/em&gt; or &lt;em&gt;operating system&lt;/em&gt;, when you can cherry-pick
 the components out there and build something awesome; this is the joy of FLOSS.&lt;/p&gt;
 &lt;h4&gt;Nokia&lt;/h4&gt;
-&lt;p&gt;&lt;img alt="Maemo" src="/images/2010/10/maemo.png" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Maemo" src="http://szabster.net/images/2010/10/maemo.png" /&gt;&lt;/p&gt;
 &lt;p&gt;How could one possibly go wrong with a combination of &lt;a href="kernel.org"&gt;the Linux kernel&lt;/a&gt;, &lt;a href="debian.org"&gt;Debian&lt;/a&gt; and &lt;a href="gnome.org"&gt;Gnome&lt;/a&gt;
 resulting in &lt;a href="http://maemo.org/development/"&gt;Maemo&lt;/a&gt; ?&lt;/p&gt;
 &lt;h4&gt;Intel&lt;/h4&gt;
-&lt;p&gt;&lt;img alt="Moblin" src="/images/2010/10/moblin.jpg" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Moblin" src="http://szabster.net/images/2010/10/moblin.jpg" /&gt;&lt;/p&gt;
 &lt;p&gt;Just like Nokia, a winner combination of the &lt;a href="kernel.org"&gt;the Linux kernel&lt;/a&gt;, and &lt;a href="gnome.org"&gt;Gnome&lt;/a&gt; resulting in &lt;a href="moblin.org"&gt;Moblin&lt;/a&gt; .&lt;/p&gt;
 &lt;h4&gt;God said let there be MeeGo ...&lt;/h4&gt;
 &lt;p&gt;Android fan-boys I'm sorry to disappoint you, but the joint efforts of Intel and Nokia created a far better &lt;em&gt;platform&lt;/em&gt;, a true
@@ -636,8 +636,8 @@ and &lt;em&gt;Wolfenstein: Enemy Territory&lt;/em&gt; both using modified versio
 &lt;p&gt;This is another significant contribution to the open source community, even though some of us were expecting idTech4 (Doom3).&lt;/p&gt;
 &lt;p&gt;More on this over &lt;a href="http://www.gamasutra.com/view/news/29903/QuakeCon_id_Software_Releases_Source_Code_For_Two_Wolfenstein_Titles.php"&gt;here&lt;/a&gt; .&lt;/p&gt;
 &lt;h3&gt;Build, Build, Build&lt;/h3&gt;
-&lt;p&gt;&lt;a href="/images/2010/08/wrtc.png" class="image"&gt;
-&lt;img src="/images/2010/08/wrtc_thumb.png"/&gt;
+&lt;p&gt;&lt;a href="http://szabster.net/images/2010/08/wrtc.png" class="image"&gt;
+&lt;img src="http://szabster.net/images/2010/08/wrtc_thumb.png"/&gt;
 &lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;I quickly grabbed the source code of the SP version (&lt;strong&gt;Return to Castle&lt;/strong&gt;) and compiled it without any problems in less than a minute
 on my Linux Box.&lt;/p&gt;
@@ -658,7 +658,7 @@ on my Linux Box.&lt;/p&gt;
 	<updated>2010-06-05T00:00:00+02:00</updated>
 	<id>http://szabster.net/2010/6/5/reloaded</id>
 	<content type="html">&lt;p&gt;&lt;a href="http://upload.wikimedia.org/wikipedia/commons/5/57/Dr_Jekyll_and_Mr_Hyde_poster.png" class="image"&gt;
-&lt;img src="/images/2010/06/poster_thumb.png"/&gt;
+&lt;img src="http://szabster.net/images/2010/06/poster_thumb.png"/&gt;
 &lt;/a&gt;&lt;/p&gt;
 &lt;h3&gt;End of Line&lt;/h3&gt;</content>
 	<category term="reloaded"/><category term="design"/><category term="jekyll"/>
@@ -890,7 +890,7 @@ copied JavaScript from DHTML.com all their lives without ever knowing what's goi
 &lt;p&gt;Soooooooo, &lt;em&gt;drum rolls&lt;/em&gt; ... I'm here to announce &lt;a href="http://icebreaker.github.com/mini3d/"&gt;Mini3D&lt;/a&gt; a small 3D engine written in pure JavaScript, built on the top of WebGL which uses the
 canvas element and it's part of the HTML5 standard.&lt;/p&gt;
 &lt;h3&gt;Rant Begin&lt;/h3&gt;
-&lt;p&gt;I should have rather spent time working on &lt;a href="/tag/lera3d"&gt;Lera3D&lt;/a&gt; instead, but after seeing the &lt;a href="http://code.google.com/p/quake2-gwt-port/"&gt;Quake2 port to WebGL&lt;/a&gt; and being pissed off by
+&lt;p&gt;I should have rather spent time working on &lt;a href="http://szabster.net/tag/lera3d"&gt;Lera3D&lt;/a&gt; instead, but after seeing the &lt;a href="http://code.google.com/p/quake2-gwt-port/"&gt;Quake2 port to WebGL&lt;/a&gt; and being pissed off by
 &lt;a href="http://www.ambiera.com/copperlicht/index.html"&gt;CopperLicht&lt;/a&gt; which is basically a subset of the crappy &lt;a href="http://irrlicht.sourceforge.net/"&gt;irrLicht&lt;/a&gt; ported to JavaScript and WebGL, I decided
 to build a 100% free alternative myself.&lt;/p&gt;
 &lt;h3&gt;Rant End&lt;/h3&gt;
@@ -906,10 +906,10 @@ programmer can focus on the 'demo' or 'game' itself rather than writing miles of
 &lt;p&gt;This is a very very early version, but this time I stick to &lt;em&gt;'Release early, release often'&lt;/em&gt;.&lt;/p&gt;
 &lt;h3&gt;Demos&lt;/h3&gt;
 &lt;p&gt;&lt;a href="http://icebreaker.github.com/mini3d/demos/cube/cube.html" class="image"&gt;
-&lt;img src="/images/2010/04/cube.png"/&gt;
+&lt;img src="http://szabster.net/images/2010/04/cube.png"/&gt;
 &lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href="http://icebreaker.github.com/mini3d/demos/clod/clod.html" class="image"&gt;
-&lt;img src="/images/2010/04/clod.png"/&gt;
+&lt;img src="http://szabster.net/images/2010/04/clod.png"/&gt;
 &lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Click on the images above to start the demos. You will need a WebGL enabled browser in order to watch them; for more information about
 how to get a WebGL enabled browser please consult the following &lt;a href="http://www.khronos.org/webgl/wiki/Getting_a_WebGL_Implementation"&gt;documentation&lt;/a&gt; .&lt;/p&gt;
@@ -997,8 +997,8 @@ and totally feasable, BUT ... (there's always a BUT) you just have to choose and
 	<updated>2010-03-28T00:00:00+02:00</updated>
 	<id>http://szabster.net/2010/3/28/lera3d-architecture</id>
 	<content type="html">&lt;p&gt;It's kind of late, but I'm going to post this anyway. &lt;strong&gt;Yawn&lt;/strong&gt; .&lt;/p&gt;
-&lt;p&gt;&lt;a href="/images/2010/03/l3d_arch.png" class="image"&gt;
-&lt;img src="/images/2010/03/l3d_arch_thumb.png"/&gt;
+&lt;p&gt;&lt;a href="http://szabster.net/images/2010/03/l3d_arch.png" class="image"&gt;
+&lt;img src="http://szabster.net/images/2010/03/l3d_arch_thumb.png"/&gt;
 &lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;(click for a bigger version :P)&lt;/p&gt;
 &lt;p&gt;I've been always talking about Lera3D up and Lera3D down, but never posted anything tangible, so here we are rocking around the clock.&lt;/p&gt;
@@ -1006,11 +1006,11 @@ and totally feasable, BUT ... (there's always a BUT) you just have to choose and
 full customization of every aspect of the engine, the &lt;strong&gt;end-user&lt;/strong&gt; can swap any plug-in
 by buying an alternate or just writing his / her own. (assuming that all plug-ins are well written
 and the exposed interfaces are flexible enough to make different implementations possible).&lt;/p&gt;
-&lt;p&gt;&lt;a href="/tag/lemontea"&gt;Lemon Tea&lt;/a&gt; has its place as well in the &lt;strong&gt;big picture&lt;/strong&gt; ... can you find it? even though he's not
+&lt;p&gt;&lt;a href="http://szabster.net/tag/lemontea"&gt;Lemon Tea&lt;/a&gt; has its place as well in the &lt;strong&gt;big picture&lt;/strong&gt; ... can you find it? even though he's not
 using Lera3D as of now, it has a completely different &lt;strong&gt;small&lt;/strong&gt; built-in engine, but
 this will change as it matures (hopefully!?!) .&lt;/p&gt;
 &lt;p&gt;I will write more about this tomorrow; by splitting up the &lt;strong&gt;core&lt;/strong&gt; and explaining a couple of
-the existing features, plus giving a long awaited update on the progress with &lt;a href="/tag/lemontea"&gt;Lemon Tea&lt;/a&gt;.&lt;/p&gt;
+the existing features, plus giving a long awaited update on the progress with &lt;a href="http://szabster.net/tag/lemontea"&gt;Lemon Tea&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;Until tomorrow (ah shit it's tomorrow already ... grrr), as server said ...&lt;/p&gt;
 &lt;p&gt;(&lt;strong&gt;yawn&lt;/strong&gt;)&lt;/p&gt;
 &lt;h3&gt;End of Line&lt;/h3&gt;</content>
@@ -1056,7 +1056,7 @@ gnome-power-manager seems to ignore the brightness value and resets it to 100%, 
 &lt;p&gt;Since I switched to a Jekyll generated blog, I write all my posts in &lt;a href="http://daringfireball.net/projects/markdown/"&gt;Markdown&lt;/a&gt; , but I wanted instant visual feedback to see how my text looks like as I'm typing ... here we are.&lt;/p&gt;
 &lt;p&gt;This is a prototype, but it's perfectly enough for my basic editing needs, feel free to fork it, hack it, then submit a pull request; any contribution is more than welcome!&lt;/p&gt;
 &lt;p&gt;The source code can be found on GitHub as usual right &lt;a href="http://github.com/icebreaker/instantcoffee"&gt;here&lt;/a&gt; .&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Instant Coffee&lt;/strong&gt; is another prime example, just like &lt;a href="/2010/01/23/sexygrep/"&gt;SexyGrep&lt;/a&gt; of converting a web app into a desktop app using QT and WebKit, we really don't need Adobe Air and other proprietary bullshit.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Instant Coffee&lt;/strong&gt; is another prime example, just like &lt;a href="http://szabster.net/2010/01/23/sexygrep/"&gt;SexyGrep&lt;/a&gt; of converting a web app into a desktop app using QT and WebKit, we really don't need Adobe Air and other proprietary bullshit.&lt;/p&gt;
 &lt;h3&gt;End of Line&lt;/h3&gt;</content>
 	<category term="instantcoffee"/><category term="coding"/><category term="launch"/><category term="qt"/><category term="webkit"/><category term="prototype"/><category term="markdown"/>
 </entry>
@@ -1073,16 +1073,16 @@ of benefits, but also drawbacks mostly because some of this bleeding edge stuff 
 &lt;p&gt;It's quite simple, I have my &lt;strong&gt;/opt&lt;/strong&gt; mounted on a 10GB partition and I install qt and qt creator
 there via 'make install' then just make sure that all the utilities (i.e qmake) are in my path (all the libs in LD_LIBRARY_PATH), so basically
 I can even have multiple versions installed without breaking the "stable" versions residing in &lt;strong&gt;/usr&lt;/strong&gt; or &lt;strong&gt;/usr/local&lt;/strong&gt; .&lt;/p&gt;
-&lt;p&gt;&lt;a href="/images/2010/03/qt-creator.png" class="image"&gt;
-&lt;img src="/images/2010/03/qt-creator_thumb.png"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://szabster.net/images/2010/03/qt-creator.png" class="image"&gt;
+&lt;img src="http://szabster.net/images/2010/03/qt-creator_thumb.png"&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;I also discovered this awesome 'Boxes' demo, I have no idea how long this have been part of the demos, but it's really awesome.&lt;/p&gt;
-&lt;p&gt;&lt;a href="/images/2010/03/qt-boxes-demo.png" class="image"&gt;
-&lt;img src="/images/2010/03/qt-boxes-demo_thumb.png"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://szabster.net/images/2010/03/qt-boxes-demo.png" class="image"&gt;
+&lt;img src="http://szabster.net/images/2010/03/qt-boxes-demo_thumb.png"&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Sooooo &lt;em&gt;drum rolls&lt;/em&gt; &lt;strong&gt;finally&lt;/strong&gt; I was able to get my hands on QML and test it without way any headache as it has landed
 into the 4.7 branch.&lt;/p&gt;
 &lt;p&gt;With this at my fingertips I was also able to compile QT Creator with the QML related plug-ins enabled. &lt;strong&gt;yaaaayyy&lt;/strong&gt;!!?!&lt;/p&gt;
-&lt;p&gt;&lt;a href="/images/2010/03/qml-designer.png" class="image"&gt;
-&lt;img src="/images/2010/03/qml-designer_thumb.png"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://szabster.net/images/2010/03/qml-designer.png" class="image"&gt;
+&lt;img src="http://szabster.net/images/2010/03/qml-designer_thumb.png"&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Here is a short video demoing the 'SameGame' example (part of the declarative samples); it was played and recorded using the
 &lt;em&gt;official&lt;/em&gt; QML viewer bundled with QT.&lt;/p&gt;
 &lt;p&gt;&lt;object width="640" height="360"&gt;&lt;param name="wmode" value="transparent" /&gt;&lt;param name="allowfullscreen" value="true" /&gt;&lt;param name="allowscriptaccess" value="always" /&gt;&lt;param name="movie" value="http://vimeo.com/moogaloop.swf?clip_id=10150113&amp;amp;server=vimeo.com&amp;amp;show_title=1&amp;amp;show_byline=1&amp;amp;show_portrait=1&amp;amp;color=A80000&amp;amp;fullscreen=1" /&gt;&lt;embed src="http://vimeo.com/moogaloop.swf?clip_id=10150113&amp;amp;server=vimeo.com&amp;amp;show_title=1&amp;amp;show_byline=1&amp;amp;show_portrait=1&amp;amp;color=A80000&amp;amp;fullscreen=1" type="application/x-shockwave-flash" allowfullscreen="true" allowscriptaccess="always" wmode="transparent" width="640" height="360"&gt;&lt;/embed&gt;&lt;/object&gt;&lt;/p&gt;
@@ -1098,12 +1098,12 @@ I blogged about this last year when I just compiled and pretty much forgot about
 &lt;p&gt;Yesterday I said, lets look at the source code again. I'm interested mostly in the rendering part, including the different rendering
 paths (fixed or shader), etc.&lt;/p&gt;
 &lt;p&gt;( a couple of &lt;em&gt;fresh&lt;/em&gt; screens )&lt;/p&gt;
-&lt;p&gt;&lt;a href="/images/2010/03/0ad-oasis.png" class="image"&gt;
-&lt;img src="/images/2010/03/0ad-oasis_thumb.png"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href="/images/2010/03/0ad-closeup.png" class="image"&gt;
-&lt;img src="/images/2010/03/0ad-closeup_thumb.png"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href="/images/2010/03/0ad-animals-closeup.png" class="image"&gt;
-&lt;img src="/images/2010/03/0ad-animals-closeup_thumb.png"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://szabster.net/images/2010/03/0ad-oasis.png" class="image"&gt;
+&lt;img src="http://szabster.net/images/2010/03/0ad-oasis_thumb.png"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://szabster.net/images/2010/03/0ad-closeup.png" class="image"&gt;
+&lt;img src="http://szabster.net/images/2010/03/0ad-closeup_thumb.png"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://szabster.net/images/2010/03/0ad-animals-closeup.png" class="image"&gt;
+&lt;img src="http://szabster.net/images/2010/03/0ad-animals-closeup_thumb.png"&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;The actual code base is quite messy and not everything is clearly separated or grouped together where necessary.&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;c0d3rguy@Seth:/opt/0ad/source/maths&lt;span class="nv"&gt;$ &lt;/span&gt;ls -l
 total 160
@@ -1187,8 +1187,8 @@ especially &lt;a href="http://www.boost.org"&gt;Boost&lt;/a&gt; which is a TRUE 
 &lt;p&gt;It was about time for a &lt;strong&gt;&lt;em&gt;status update&lt;/em&gt;&lt;/strong&gt; regarding Lemon Tea. I'm trying to keep it simple and not over engineer 
 it, because this is mainly a prototype and later is to be decided if it is worth continuing and transforming it into
 a full blown &lt;em&gt;World Editor&lt;/em&gt; for &lt;strong&gt;Lera3D&lt;/strong&gt;.&lt;/p&gt;
-&lt;p&gt;&lt;a href="/images/2010/03/stage03.png" class="image"&gt;
-&lt;img src="/images/2010/03/stage03_thumb.png"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://szabster.net/images/2010/03/stage03.png" class="image"&gt;
+&lt;img src="http://szabster.net/images/2010/03/stage03_thumb.png"&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;Highlights&lt;/em&gt;:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;QDockWidgets&lt;/li&gt;
@@ -1371,8 +1371,8 @@ when it comes to the back-end rendering architecture.&lt;/p&gt;
 &lt;p&gt;Hmm ... this is the most interesting part ... as always. Sooo ... I will dual license it, GPLv3 and BSD.&lt;/p&gt;
 &lt;h3&gt;How does it looks like?&lt;/h3&gt;
 &lt;p&gt;Here it is an early screenshot.&lt;/p&gt;
-&lt;p&gt;&lt;a href="/images/2010/02/stage01.png" class="image"&gt;
-&lt;img src="/images/2010/02/stage01_thumb.png"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://szabster.net/images/2010/02/stage01.png" class="image"&gt;
+&lt;img src="http://szabster.net/images/2010/02/stage01_thumb.png"&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Everything is subject to change in a way or another, but as of now this is how is it looks like.&lt;/p&gt;
 &lt;h3&gt;What's next? When it will be released?&lt;/h3&gt;
 &lt;p&gt;I will post more details later on as I make progress (feature set, how to contribute, etc). &lt;/p&gt;
@@ -1497,7 +1497,7 @@ to Heroku, plus push the &lt;strong&gt;raw source material&lt;/strong&gt; to Git
 &lt;/blockquote&gt;
 &lt;h3&gt;(Dr.) Jekyll&lt;/h3&gt;
 &lt;p&gt;&lt;a href="http://github.com/mojombo/jekyll"&gt;Jekyll&lt;/a&gt; is an awesome piece of software written in Ruby, unfortunately I had to hack it a little bit in order to 
-enable generating nice Tag Clouds and Tag Pages. You can check out the &lt;a href="/archives-tags.html"&gt;Archives&lt;/a&gt; page 
+enable generating nice Tag Clouds and Tag Pages. You can check out the &lt;a href="http://szabster.net/archives-tags.html"&gt;Archives&lt;/a&gt; page 
 to see what I mean. You can find my Jekyll fork right &lt;a href="http://github.com/icebreaker/jekyll"&gt;here&lt;/a&gt; .&lt;/p&gt;
 &lt;p&gt;Like I said, I also had to modify the WordPress importer in order to fetch tags and fix the image paths so 
 I could just move out my "uploads" directory into Jekyll's "images" directory.&lt;/p&gt;
@@ -1536,7 +1536,7 @@ I've been discussing about here .&lt;/p&gt;</content>
 	<content type="html">&lt;p&gt;SexyGrep is another experimental prototype project thrown together in a few hours. I really wanted to do this for a long long time now, so here I am!&lt;/p&gt;
 &lt;p&gt;The whole point of the project is to embed WebKit into a C++ application, expose some system functionalities to it, so they can be accessed via JavaScript and build the whole app using the well known and proven trio HTML+CSS+JavaScript.&lt;/p&gt;
 &lt;p&gt;What's better for a setup like this than QT? nothing!&lt;/p&gt;
-&lt;p&gt;&lt;a class="image" href="/images/2010/01/sexygrep.png"&gt;&lt;img class="aligncenter size-medium wp-image-798" title="sexygrep" src="/images/2010/01/sexygrep-500x281.png" alt="" width="500" height="281" /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class="image" href="http://szabster.net/images/2010/01/sexygrep.png"&gt;&lt;img class="aligncenter size-medium wp-image-798" title="sexygrep" src="http://szabster.net/images/2010/01/sexygrep-500x281.png" alt="" width="500" height="281" /&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Right now it works under &lt;em&gt;NIX only, but it shouldn't be hard to make it work under Windows as well; also this can be used as a 'base framework' to build other apps using this mindset. Who the hell needs Adobe Air? Most definitely not me! &lt;/em&gt;sigh*&lt;/p&gt;
 &lt;p&gt;The source code can be found on GitHub as usual right &lt;a title="Get the source code now!" href="http://github.com/icebreaker/sexygrep/" target="_blank"&gt;here&lt;/a&gt; .&lt;/p&gt;
 &lt;p&gt;Until next time, as server said END OF LINE.&lt;/p&gt;</content>
@@ -1550,7 +1550,7 @@ I've been discussing about here .&lt;/p&gt;</content>
 	<id>http://szabster.net/2010/1/17/rant-n</id>
 	<content type="html">&lt;p&gt;I'm really really irritated and frustrated by Ubuntu's road map; the last release I could call solid is 7.04, now that was A REALLY REALLY solid release from head to toes; all the upcoming releases were getting worse and worse which is unacceptable; don't get me started with 9.10 when it comes to upgrading an existing 9.04 system ... TOTAL MESS, and most of the time you end up with a completely fucked up system.&lt;/p&gt;
 &lt;p&gt;Now to Debian or not to Debian? switch to Debian 'stable' or Not? ... well, gentlemen, Debian 5.0 is very very outdated and Debian 'Sid' is just as worse as Ubuntu but at least it's labeled and marketed as 'unstable' ; the rest of Debian based distros are a sort of mess.
-&lt;p style="text-align: center;"&gt;&lt;a class="image" href="/images/2010/01/ati-amd-fedora-fail.png"&gt;&lt;img class="aligncenter" title="ati-amd-fedora-fail" src="/images/2010/01/ati-amd-fedora-fail.png" alt="" width="320" height="320" /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p style="text-align: center;"&gt;&lt;a class="image" href="http://szabster.net/images/2010/01/ati-amd-fedora-fail.png"&gt;&lt;img class="aligncenter" title="ati-amd-fedora-fail" src="http://szabster.net/images/2010/01/ati-amd-fedora-fail.png" alt="" width="320" height="320" /&gt;&lt;/a&gt;&lt;/p&gt;
 A viable solution to all this mess would be to switch to the good old Fedora which is up to date and it doesn't seem to break UNLESS ... &lt;em&gt;drum rolls&lt;/em&gt; ... unless you install the proprietary ATI driver from AMD ... and BOOOM! totally fucked up X, black screen, END OF LINE.&lt;/p&gt;
 &lt;p&gt;Personally I have no idea what the Fedora developers could have been thinking ... we are in fucking 2010, even LINUX people got some serious hardware in their machines ... but no, they are all for their crappy open source Radeon driver ... what the fuck? I'm all for open source and free software, but no community in this world will be able to make better drivers for a VIDEO CARD but the manufacturer itself. END OF STORY.&lt;/p&gt;
 &lt;p&gt;As a developer I'm always seeking for the best distribution to develop on (especially 3D stuff whatever that means), the open source Radeon driver is fine with people who are willing to use Open Office, develop any non-multimedia thingies (hard to believe these days) or corporate customers, but it definitely won't suit the needs of a home-user or a more extravagant developer (but ... at least you have the freedom of choice).&lt;/p&gt;
@@ -1586,11 +1586,11 @@ Programming is a complex task and you should use white space and comments as fre
 	<link href="http://szabster.net/2010/1/2/licensing"/>
 	<updated>2010-01-02T00:00:00+02:00</updated>
 	<id>http://szabster.net/2010/1/2/licensing</id>
-	<content type="html">&lt;p&gt;-&amp;gt;&lt;a class="image" href="/images/2010/01/art54_1.jpg"&gt;&lt;img class="size-full wp-image-766 alignleft" title="art54_1" src="/images/2010/01/art54_1.jpg" alt="" width="240" height="204" /&gt;&lt;/a&gt;&amp;lt;-&lt;/p&gt;
+	<content type="html">&lt;p&gt;-&amp;gt;&lt;a class="image" href="http://szabster.net/images/2010/01/art54_1.jpg"&gt;&lt;img class="size-full wp-image-766 alignleft" title="art54_1" src="http://szabster.net/images/2010/01/art54_1.jpg" alt="" width="240" height="204" /&gt;&lt;/a&gt;&amp;lt;-&lt;/p&gt;
 &lt;p&gt;It's not my style to blog yada-yada; I try to focus on the technical side of things, but lately I've been thinking about what it takes to bootstrap a small start-up governed by '&lt;a title="The Hacking Business Model" href="http://askmonty.org/wiki/index.php/The_hacking_business_model" target="_blank"&gt;The Hacking Business Model&lt;/a&gt;' crafted together by our fellows Zak Greant and Michael Widenius .&lt;/p&gt;
 &lt;p&gt;Personally, I think that dual-licensing is very important, especially for a 3D Game Engine &amp;amp; Framework; instead of LGPL I will go with EPL. The next question which comes up is why? Well, while EPL guarantees that &lt;em&gt;derived works &lt;/em&gt;must be contributed back to the community, it does allow completely separate modules to be licensed under another license, even a proprietary one; the primary benefit of this is that some 3rd party might not want to open source their plugin, with EPL they can do that without any problems.&lt;/p&gt;
 &lt;p&gt;The biggest question is that with a license like EPL, when the &lt;em&gt;alternate commercial license&lt;/em&gt; will make sense, if ever? Lets take this step by step; first of all most of the time for any serious project based on a game engine, the programmers will have to touch the engine itself or at least some module of it; it's just impossible to make an engine to suit everyones needs, so if they modify it, but don't want to contribute back their changes to the community (let's say that they re-wrote major parts of some of the existing renderers -- this would be classified as a &lt;em&gt;derivate work&lt;/em&gt;), or they just want professional prioritized support (they always have the community as a support free of charge) it's feasible for them to pay a license or just support fee.&lt;/p&gt;
-&lt;p&gt;-&amp;gt;&lt;a class="image" href="/images/2010/01/team.jpg"&gt;&lt;img class="alignright size-full wp-image-767" title="team" src="/images/2010/01/team.jpg" alt="" width="295" height="225" /&gt;&lt;/a&gt;&amp;lt;-&lt;/p&gt;
+&lt;p&gt;-&amp;gt;&lt;a class="image" href="http://szabster.net/images/2010/01/team.jpg"&gt;&lt;img class="alignright size-full wp-image-767" title="team" src="http://szabster.net/images/2010/01/team.jpg" alt="" width="295" height="225" /&gt;&lt;/a&gt;&amp;lt;-&lt;/p&gt;
 &lt;p&gt;We'll see how it goes after I release the first &lt;em&gt;community version &lt;/em&gt;of Lera3D ; to be able to form a community around it is the most important step, without a developer community an open source project means &lt;em&gt;NOTHING&lt;/em&gt;. The &lt;em&gt;bazaar &lt;/em&gt;model works so much better than the cathedral model, this have been proven many many times already.
 I'm not planning to make the &lt;em&gt;alternate commercial license &lt;/em&gt;available until the first stable version 1.0 ; obviously to be the &lt;em&gt;next big thing &lt;/em&gt;it&lt;em&gt; &lt;/em&gt;means mature code, and crafting mature code takes some time, even with a fully open development model.
 I know that there is a motto which says &lt;em&gt;"release early, release often"&lt;/em&gt;, but I'm not releasing any source code until Lera3D reaches beta, it just wouldn't make sense releasing any code earlier, mostly because I want to implement all my ideas first (or stuff I miss in other engines, etc), be them good or bad, they are mine!
@@ -1605,7 +1605,7 @@ Wow, this post got really really long ... lots of blah, blah ... just another la
 	<id>http://szabster.net/2009/12/29/cast-yerr-vote-for-marina-orlova</id>
 	<content type="html">&lt;p&gt;&lt;a href="http://www.wired.com/underwire/2009/12/sexy-geeks-2009"&gt;http://www.wired.com/underwire/2009/12/sexy-geeks-2009&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a title="Hot For Words!" href="http://www.hotforwords.com" target="_blank" class="image"&gt;
-&lt;img class="aligncenter size-medium wp-image-720" title="IMG_0071" src="/images/2009/12/IMG_0071-500x375.jpg" alt="" width="500" height="375" /&gt;
+&lt;img class="aligncenter size-medium wp-image-720" title="IMG_0071" src="http://szabster.net/images/2009/12/IMG_0071-500x375.jpg" alt="" width="500" height="375" /&gt;
 &lt;/a&gt;&lt;/p&gt;</content>
 	<category term="geek"/><category term="sexy"/><category term="hotforwords"/><category term="marina"/><category term="orlova"/>
 </entry>
@@ -1626,7 +1626,7 @@ Wow, this post got really really long ... lots of blah, blah ... just another la
 	<updated>2009-12-23T00:00:00+02:00</updated>
 	<id>http://szabster.net/2009/12/23/triple-ezariks</id>
 	<content type="html">&lt;p&gt;Triple Ezariks once again!!!&lt;/p&gt;
-&lt;p&gt;&lt;a class="image" href="/images/2009/12/ezarikxmas.gif"&gt;&lt;img class="aligncenter size-full wp-image-714" title="ezarikxmas" src="/images/2009/12/ezarikxmas.gif" alt="" width="480" height="512" /&gt;&lt;/a&gt;&lt;/p&gt;</content>
+&lt;p&gt;&lt;a class="image" href="http://szabster.net/images/2009/12/ezarikxmas.gif"&gt;&lt;img class="aligncenter size-full wp-image-714" title="ezarikxmas" src="http://szabster.net/images/2009/12/ezarikxmas.gif" alt="" width="480" height="512" /&gt;&lt;/a&gt;&lt;/p&gt;</content>
 	<category term="ijustine"/><category term="ezariks"/><category term="triple"/>
 </entry>
 
@@ -1649,7 +1649,7 @@ Wow, this post got really really long ... lots of blah, blah ... just another la
 	<link href="http://szabster.net/2009/11/21/tripple-x"/>
 	<updated>2009-11-21T00:00:00+02:00</updated>
 	<id>http://szabster.net/2009/11/21/tripple-x</id>
-	<content type="html">&lt;p style="text-align: center;"&gt;&lt;a title="Click for bigger &amp;amp; better!" class="image" href="/images/2009/11/MG_2361.jpg" target="_blank"&gt;&lt;img class="aligncenter size-full wp-image-688" title="_MG_2361" src="/images/2009/11/MG_2361.jpg" alt="_MG_2361" width="545" height="818" /&gt;&lt;/a&gt;&lt;/p&gt;
+	<content type="html">&lt;p style="text-align: center;"&gt;&lt;a title="Click for bigger &amp;amp; better!" class="image" href="http://szabster.net/images/2009/11/MG_2361.jpg" target="_blank"&gt;&lt;img class="aligncenter size-full wp-image-688" title="_MG_2361" src="http://szabster.net/images/2009/11/MG_2361.jpg" alt="_MG_2361" width="545" height="818" /&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p style="text-align: center;"&gt;(Source: &lt;a title="THEM THANGS" href="http://jblyth.com/blog_08.html" target="_blank"&gt;THEM THANS&lt;/a&gt;)&lt;/p&gt;</content>
 	<category term="girl"/><category term="xxx"/><category term="p0rn"/><category term="cyber"/><category term="art"/>
 </entry>
@@ -1674,8 +1674,8 @@ Wow, this post got really really long ... lots of blah, blah ... just another la
 &lt;p&gt;I'm hoping that it's just some internal soldering problem at the DC's input, and that I won't have to replace the whole motherboard, because in that case I will rather buy another &lt;em&gt;brand new&lt;/em&gt; laptop :)&lt;/p&gt;
 &lt;p&gt;So, until I get that fixed (hopefully ... &lt;em&gt;fingers crossed&lt;/em&gt;) I put my Wibrain to work ( my EEE PC would be way to slow for &lt;em&gt;compiling&lt;/em&gt; ) .&lt;/p&gt;
 &lt;p&gt;It works quite well with my 17' widescreen monitor ... so here is my setup ...&lt;/p&gt;
-&lt;p&gt;&lt;a class="image" href="/images/2009/10/IMG_0005.JPG"&gt;
-&lt;img class="size-medium wp-image-679  " title="IMG_0005" src="/images/2009/10/IMG_0005-500x375.jpg" alt="IMG_0005" width="500" height="375" /&gt;
+&lt;p&gt;&lt;a class="image" href="http://szabster.net/images/2009/10/IMG_0005.JPG"&gt;
+&lt;img class="size-medium wp-image-679  " title="IMG_0005" src="http://szabster.net/images/2009/10/IMG_0005-500x375.jpg" alt="IMG_0005" width="500" height="375" /&gt;
 &lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Not bad huh? I would say, not bad at all! :))&lt;/p&gt;</content>
 	<category term="rant"/><category term="wibrain"/><category term="toshiba"/><category term="fuck"/>
@@ -1692,7 +1692,7 @@ Wow, this post got really really long ... lots of blah, blah ... just another la
 &lt;p&gt;What's better for prototyping than QT? NOTHING! I already had some base foundation code laying around from my other prototype projects (Slider3D, Prototype2D) so I started tackling around, NOT THE EASY way, BUT THE HARD WAY.&lt;/p&gt;
 &lt;p&gt;Instead of just cheating and positioning the widget on the top of my custom 3D canvas, I make a snapshot of the content and transform it into an OpenGL Texture, which then I draw on a quad. (this means that any shape can be textured with it)&lt;/p&gt;
 &lt;p&gt;Now here is an early screenshot demoing this:&lt;/p&gt;
-&lt;p&gt;&lt;a class="image" href="/images/2009/09/ui_experiments.png"&gt;&lt;img class="aligncenter size-medium wp-image-673" title="ui_experiments" src="/images/2009/09/ui_experiments-500x165.png" alt="ui_experiments" width="500" height="165" /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class="image" href="http://szabster.net/images/2009/09/ui_experiments.png"&gt;&lt;img class="aligncenter size-medium wp-image-673" title="ui_experiments" src="http://szabster.net/images/2009/09/ui_experiments-500x165.png" alt="ui_experiments" width="500" height="165" /&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;On the left side it's the actual HTML + CSS, displayed in OpenGL ortho (2D) mode on the right side, drawn on the top of the actual 3D scene with blending.&lt;/p&gt;
 &lt;p&gt;The most important thing left to be done is INPUT, which I will implement most probably during next week or so, then I'll release the source code under BSD license as usual ...&lt;/p&gt;
 &lt;p&gt;Please don't ask who's the blondie, it just won't get you anywhere :)&lt;/p&gt;
@@ -1706,7 +1706,7 @@ Wow, this post got really really long ... lots of blah, blah ... just another la
 	<updated>2009-09-09T00:00:00+02:00</updated>
 	<id>http://szabster.net/2009/9/9/leragames-com</id>
 	<content type="html">&lt;p&gt;First &lt;em&gt;'baby'&lt;/em&gt; &lt;strong&gt;steps&lt;/strong&gt; ...&lt;/p&gt;
-&lt;p&gt;&lt;a href="http://www.leragames.com/" class="image"&gt;&lt;img src="/images/leragames.png" alt="LeraGames.com" /&gt;&lt;/a&gt;&lt;/p&gt;</content>
+&lt;p&gt;&lt;a href="http://www.leragames.com/" class="image"&gt;&lt;img src="http://szabster.net/images/leragames.png" alt="LeraGames.com" /&gt;&lt;/a&gt;&lt;/p&gt;</content>
 	<category term="startup"/><category term="lera3d"/><category term="leragames"/><category term="lera"/>
 </entry>
 
@@ -1717,7 +1717,7 @@ Wow, this post got really really long ... lots of blah, blah ... just another la
 	<id>http://szabster.net/2009/9/1/wtf</id>
 	<content type="html">&lt;p style="text-align: center;"&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;a title="Click to see the bigger version." class="image" href="/images/2009/09/117681_wtf.png" target="_blank"&gt;&lt;img class="size-medium wp-image-663" title="117681_wtf" src="/images/2009/09/117681_wtf-500x375.png" alt="Wtf???!!!" width="500" height="375" /&gt;&lt;/a&gt;&lt;/p&gt;</content>
+&lt;p&gt;&lt;a title="Click to see the bigger version." class="image" href="http://szabster.net/images/2009/09/117681_wtf.png" target="_blank"&gt;&lt;img class="size-medium wp-image-663" title="117681_wtf" src="http://szabster.net/images/2009/09/117681_wtf-500x375.png" alt="Wtf???!!!" width="500" height="375" /&gt;&lt;/a&gt;&lt;/p&gt;</content>
 	<category term="fun"/><category term="funny"/><category term="stupid"/><category term="wtf"/><category term="pitzipoanca"/>
 </entry>
 
@@ -1726,9 +1726,9 @@ Wow, this post got really really long ... lots of blah, blah ... just another la
 	<link href="http://szabster.net/2009/8/15/3d-slideshow-part-deux"/>
 	<updated>2009-08-15T00:00:00+02:00</updated>
 	<id>http://szabster.net/2009/8/15/3d-slideshow-part-deux</id>
-	<content type="html">&lt;p&gt;Here is a major update for the 3D SlideShow prototype thingy I released last weekend ( see my previous &lt;a title="Part One!" href="/2009/08/09/3d-slideshow/" target="_blank"&gt;post&lt;/a&gt; on how to obtain the source code ).&lt;/p&gt;
+	<content type="html">&lt;p&gt;Here is a major update for the 3D SlideShow prototype thingy I released last weekend ( see my previous &lt;a title="Part One!" href="http://szabster.net/2009/08/09/3d-slideshow/" target="_blank"&gt;post&lt;/a&gt; on how to obtain the source code ).&lt;/p&gt;
 &lt;p&gt;I added a nice configuration dialog, and replaced the --monitor X command line argument with --config which forces the dialog to appear even when "Don't show this again" is checked.&lt;/p&gt;
-&lt;p&gt;&lt;a class="image" href="/images/2009/08/config.png" target="_blank"&gt;&lt;img class="aligncenter size-medium wp-image-658" title="config" src="/images/2009/08/config-499x301.png" alt="config" width="499" height="301" /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class="image" href="http://szabster.net/images/2009/08/config.png" target="_blank"&gt;&lt;img class="aligncenter size-medium wp-image-658" title="config" src="http://szabster.net/images/2009/08/config-499x301.png" alt="config" width="499" height="301" /&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Note: 'Dive into sub-directories' has no effect as of now :P'&lt;/p&gt;</content>
 	<category term="coding"/><category term="qt"/><category term="opengl"/><category term="slider3d"/>
 </entry>
@@ -1775,7 +1775,7 @@ It should work fine on most systems (even with those crappy integrated Intel gra
 	<id>http://szabster.net/2009/7/22/javascript-classes</id>
 	<content type="html">&lt;p&gt;The one thing I love about YUI is the nice "extend" function which makes everything sooooo much more beautiful and gives almost that nice C++ 'like' object oriented feeling.&lt;/p&gt;
 &lt;p&gt;Now, YUI is quite heavy, even with all the compression, etc. so I came up with a very light-weight extend implementation.&lt;/p&gt;
-&lt;p&gt;&lt;a class="image" href="/images/2009/07/extends.png" target="_blank"&gt;&lt;img class="aligncenter size-medium wp-image-646" title="extends" src="/images/2009/07/extends-500x313.png" alt="extends" width="500" height="313" /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class="image" href="http://szabster.net/images/2009/07/extends.png" target="_blank"&gt;&lt;img class="aligncenter size-medium wp-image-646" title="extends" src="http://szabster.net/images/2009/07/extends-500x313.png" alt="extends" width="500" height="313" /&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;It's nothing new (or extremely brilliant), except that it works just like the "extend" from YUI; the source code can be found right &lt;a title="Click to get the source code!" href="http://github.com/icebreaker/js-magick/" target="_blank"&gt;here&lt;/a&gt; .&lt;/p&gt;
 &lt;p&gt;Public domain, enjoy :)&lt;/p&gt;</content>
 	<category term="coding"/><category term="jsmagick"/><category term="javascript"/>
@@ -1797,14 +1797,14 @@ It should work fine on most systems (even with those crappy integrated Intel gra
 	<link href="http://szabster.net/2009/7/17/wildfire-games-0-a-d"/>
 	<updated>2009-07-17T00:00:00+02:00</updated>
 	<id>http://szabster.net/2009/7/17/wildfire-games-0-a-d</id>
-	<content type="html">&lt;p&gt;&lt;a class="image" href="/images/2009/07/0ad.jpg" target="_blank"&gt;&lt;img class="aligncenter size-medium wp-image-626" title="0ad" src="/images/2009/07/0ad-499x90.jpg" alt="0ad" width="499" height="90" /&gt;&lt;/a&gt;&lt;/p&gt;
+	<content type="html">&lt;p&gt;&lt;a class="image" href="http://szabster.net/images/2009/07/0ad.jpg" target="_blank"&gt;&lt;img class="aligncenter size-medium wp-image-626" title="0ad" src="http://szabster.net/images/2009/07/0ad-499x90.jpg" alt="0ad" width="499" height="90" /&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;0 A.D was released under the LGPL license some time ago, and it's definitely the BEST "Open Source" RTS available (both technically and visually).&lt;/p&gt;
 &lt;p&gt;Build instructions can be found right &lt;a title="Build 0 A.D!" href="http://trac.wildfiregames.com/wiki/BuildInstructions" target="_blank"&gt;here&lt;/a&gt; .&lt;/p&gt;
 &lt;p&gt;I built it (under Linux) without any headaches in 20 minutes or so on my Core Duo @ 1,8ghz (2mb L2 cache) ... (totally impressed ... lol).&lt;/p&gt;
 &lt;p&gt;Now here are some screenies ...&lt;/p&gt;
-&lt;p&gt;&lt;a class="image" href="/images/2009/07/shot2.png" target="_blank"&gt;&lt;img class="size-thumbnail wp-image-628" title="shot2" src="/images/2009/07/shot2-400x300.png" alt="shot2" width="400" height="300" /&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a class="image" href="/images/2009/07/shot3.png" target="_blank"&gt;&lt;img class="size-thumbnail wp-image-629" title="shot3" src="/images/2009/07/shot3-400x300.png" alt="shot3" width="400" height="300" /&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a class="image" href="/images/2009/07/shot1.png" target="_blank"&gt;&lt;img class="size-thumbnail wp-image-627" title="shot1" src="/images/2009/07/shot1-400x301.png" alt="shot1" width="400" height="301" /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class="image" href="http://szabster.net/images/2009/07/shot2.png" target="_blank"&gt;&lt;img class="size-thumbnail wp-image-628" title="shot2" src="http://szabster.net/images/2009/07/shot2-400x300.png" alt="shot2" width="400" height="300" /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class="image" href="http://szabster.net/images/2009/07/shot3.png" target="_blank"&gt;&lt;img class="size-thumbnail wp-image-629" title="shot3" src="http://szabster.net/images/2009/07/shot3-400x300.png" alt="shot3" width="400" height="300" /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class="image" href="http://szabster.net/images/2009/07/shot1.png" target="_blank"&gt;&lt;img class="size-thumbnail wp-image-627" title="shot1" src="http://szabster.net/images/2009/07/shot1-400x301.png" alt="shot1" width="400" height="301" /&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Enjoy :)&lt;/p&gt;</content>
 	<category term="games"/><category term="linux"/><category term="indie"/><category term="wildfire"/>
 </entry>
@@ -1825,7 +1825,7 @@ It should work fine on most systems (even with those crappy integrated Intel gra
 Mean aliens land on Dino's peaceful planet intent on blowing it up with lasers and explosives. Help Dino deploy his magic powers to battle the aliens and reclaim his carefree world in this whimsical fantasy game! "&lt;/blockquote&gt;
 &lt;p style="text-align: center;"&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;a class="image" href="/images/2009/07/dfzz4ggw_803d2qk9xfg_b.jpeg" target="_blank"&gt;&lt;img class="size-thumbnail wp-image-611" title="dfzz4ggw_803d2qk9xfg_b" src="/images/2009/07/dfzz4ggw_803d2qk9xfg_b-400x300.jpg" alt="Click for bigger version!" width="400" height="300" /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class="image" href="http://szabster.net/images/2009/07/dfzz4ggw_803d2qk9xfg_b.jpeg" target="_blank"&gt;&lt;img class="size-thumbnail wp-image-611" title="dfzz4ggw_803d2qk9xfg_b" src="http://szabster.net/images/2009/07/dfzz4ggw_803d2qk9xfg_b-400x300.jpg" alt="Click for bigger version!" width="400" height="300" /&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;The source code is located in &lt;strong&gt;&lt;a title="Get the source!" href="http://github.com/icebreaker/daa/tree/" target="_blank"&gt;here&lt;/a&gt;&lt;/strong&gt; ; it's pure ANSI C and will compile pretty much anywhere with a decent ANSI C standard compliant C compiler like GCC.&lt;/p&gt;
 &lt;p&gt;There is no ready made executable, so &lt;em&gt;please&lt;/em&gt; &lt;strong&gt;don't&lt;/strong&gt; ask.&lt;/p&gt;</content>
 	<category term="c"/><category term="daa"/><category term="cracking"/><category term="reverse"/><category term="engineering"/>
@@ -1850,7 +1850,7 @@ Mean aliens land on Dino's peaceful planet intent on blowing it up with lasers a
 	<updated>2009-06-26T00:00:00+02:00</updated>
 	<id>http://szabster.net/2009/6/26/epic-fail</id>
 	<content type="html">&lt;p&gt;Today, I stumbled across this blog &lt;a href="http://theunixgeek.wordpress.com/"&gt;TheUnixGeek&lt;/a&gt; and discovered the following:&lt;/p&gt;
-&lt;p&gt;&lt;a class="image" href="/images/2009/06/epicfail.png"&gt;&lt;img class="alignleft size-full wp-image-596" title="epicfail" src="/images/2009/06/epicfail.png" alt="epicfail" width="447" height="137" /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class="image" href="http://szabster.net/images/2009/06/epicfail.png"&gt;&lt;img class="alignleft size-full wp-image-596" title="epicfail" src="http://szabster.net/images/2009/06/epicfail.png" alt="epicfail" width="447" height="137" /&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;&lt;strong&gt;EPIC FAIL!!!! &lt;/strong&gt;&lt;/em&gt;(Fellow programmers (but not only) will know what I'm talking about &lt;em&gt;&lt;em&gt;cough, cough&lt;/em&gt;&lt;/em&gt;)&lt;/p&gt;
 &lt;p&gt;IMHO, one shouldn't publish stuff on the internet unless he really has something to say, and HE IS ABSOLUTELY sure that he fully understands the given TOPIC.&lt;/p&gt;
 &lt;p&gt;It's always wise to evaluate your skills before getting into something, because it's totally useless wasting your time trying to 'build' something; you know from the very begining that you just can't.&lt;/p&gt;
@@ -1895,7 +1895,7 @@ So far it's around 4 days of work, I really hope to finish it this weekend, then
 	<link href="http://szabster.net/2009/6/15/murmurs-of-facebook"/>
 	<updated>2009-06-15T00:00:00+02:00</updated>
 	<id>http://szabster.net/2009/6/15/murmurs-of-facebook</id>
-	<content type="html">&lt;p&gt;&lt;a class="image" href="/images/2009/06/facebook.png"&gt;&lt;img class="alignleft size-full wp-image-582" title="facebook" src="/images/2009/06/facebook.png" alt="facebook" width="558" height="75" /&gt;&lt;/a&gt;&lt;/p&gt;</content>
+	<content type="html">&lt;p&gt;&lt;a class="image" href="http://szabster.net/images/2009/06/facebook.png"&gt;&lt;img class="alignleft size-full wp-image-582" title="facebook" src="http://szabster.net/images/2009/06/facebook.png" alt="facebook" width="558" height="75" /&gt;&lt;/a&gt;&lt;/p&gt;</content>
 	<category term="fun"/><category term="facebook"/><category term="stupid"/><category term="french"/>
 </entry>
 
@@ -1948,7 +1948,7 @@ So far it's around 4 days of work, I really hope to finish it this weekend, then
 	<updated>2009-06-06T00:00:00+02:00</updated>
 	<id>http://szabster.net/2009/6/6/qtcreator-twitter-plugin</id>
 	<content type="html">&lt;p&gt;I pushed out an Twitter status updater plugin for QtCreator today, you can select some text in the editor then press Alt+C followed by Alt+U, and there you go :)
-&lt;p style="text-align: center;"&gt;&lt;a class="image" href="/images/2009/06/config.jpg" target="_blank"&gt;&lt;img class="size-thumbnail wp-image-564 aligncenter" title="config" src="/images/2009/06/config-400x286.jpg" alt="config" width="400" height="286" /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p style="text-align: center;"&gt;&lt;a class="image" href="http://szabster.net/images/2009/06/config.jpg" target="_blank"&gt;&lt;img class="size-thumbnail wp-image-564 aligncenter" title="config" src="http://szabster.net/images/2009/06/config-400x286.jpg" alt="config" width="400" height="286" /&gt;&lt;/a&gt;&lt;/p&gt;
 It is available in my forked repository:&lt;/p&gt;
 &lt;p&gt;UPDATE: Sep 18, 2009 -- I REMOVED THE FORKED REPO, THE SOURCE CODE IS AVAILABLE ON REQUEST!&lt;/p&gt;</content>
 	<category term="coding"/><category term="qtcreator"/><category term="qt"/>
@@ -1965,7 +1965,7 @@ It is available in my forked repository:&lt;/p&gt;
 &lt;p&gt;After this, it was clear ... I WANT THE SOURCE code ... haha, so I headed over Gitorious and "forked" (cloned) the repository in order to make my own changes and eventually submit them to the "official" master branch.&lt;/p&gt;
 &lt;p&gt;The first thing I added is a persistent settings dialog for the "Generic Project" wizard, in order to allow to follow symbolic links when creating a new project.&lt;/p&gt;
 &lt;p&gt;I like to keep my "framework" separately from the actual projects using the "framework", this way when something changes in the framework I don't need to bother updating the various copies, this is where Symbolic Links come into the scene.&lt;/p&gt;
-&lt;p&gt;&lt;a title="Click to see the bigger version." class="image" href="/images/2009/05/screenshot.png" target="_blank"&gt;&lt;img class="size-thumbnail wp-image-549" title="Click to see the bigger version." src="/images/2009/05/screenshot-400x132.png" alt="Click to see the bigger version." width="400" height="132" /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a title="Click to see the bigger version." class="image" href="http://szabster.net/images/2009/05/screenshot.png" target="_blank"&gt;&lt;img class="size-thumbnail wp-image-549" title="Click to see the bigger version." src="http://szabster.net/images/2009/05/screenshot-400x132.png" alt="Click to see the bigger version." width="400" height="132" /&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Another thing I would like to add (in the near future) is the ability to "add directories" to a project instead of just manually selecting files.&lt;/p&gt;
 &lt;p&gt;Here is my "cloned" repository, where I will push all my changes.&lt;/p&gt;
 &lt;p&gt;&lt;a title="Click to go and fork!" href="http://gitorious.org/~icebreaker/qt-creator/qt-creator-personal" target="_blank"&gt;&lt;/a&gt;UPDATE: Sept 17, 2009 -- REMOVED THE FORK!&lt;/p&gt;
@@ -1986,8 +1986,8 @@ realclean: clean
 
 &lt;p&gt;&lt;em&gt;(Qt Creator seems to be the only viable enemy to Visual Studio at the time being)&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;Update: Nov 17, 2009&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;&lt;a title="Desert" href="/files/desert.xml" target="_blank"&gt;Desert Theme Port&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;&lt;a title="Oblivion" href="/files/oblivion.xml" target="_blank"&gt;Oblivion Theme Port&lt;/a&gt;
+&lt;p&gt;&lt;em&gt;&lt;a title="Desert" href="http://szabster.net/files/desert.xml" target="_blank"&gt;Desert Theme Port&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;&lt;a title="Oblivion" href="http://szabster.net/files/oblivion.xml" target="_blank"&gt;Oblivion Theme Port&lt;/a&gt;
 &lt;/em&gt;&lt;/p&gt;</content>
 	<category term="coding"/><category term="qtcreator"/><category term="git"/><category term="qt"/>
 </entry>
@@ -1998,7 +1998,7 @@ realclean: clean
 	<updated>2009-05-09T00:00:00+02:00</updated>
 	<id>http://szabster.net/2009/5/9/game-developer-magazine</id>
 	<content type="html">&lt;p&gt;Game Developer Magazine, is just purely awesome, the quality of the content is just breath taking, worth every single cent, so yesterday for just 19.95$, I subscribed ( 6 months ) and got my "bonus issues" :)
-&lt;p style="text-align: center;"&gt;&lt;a class="image" href="/images/2009/05/0904gd_cover_576x780.jpg"&gt;&lt;img class="size-thumbnail wp-image-540 aligncenter" title="0904gd_cover_576x780" src="/images/2009/05/0904gd_cover_576x780-295x399.jpg" alt="0904gd_cover_576x780" width="295" height="399" /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p style="text-align: center;"&gt;&lt;a class="image" href="http://szabster.net/images/2009/05/0904gd_cover_576x780.jpg"&gt;&lt;img class="size-thumbnail wp-image-540 aligncenter" title="0904gd_cover_576x780" src="http://szabster.net/images/2009/05/0904gd_cover_576x780-295x399.jpg" alt="0904gd_cover_576x780" width="295" height="399" /&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p style="text-align: left;"&gt;I'll definitely be a regular subscriber after the current one is over.&lt;/p&gt;
 &lt;p style="text-align: left;"&gt;PS: Already started devorating the issues from April :))&lt;/p&gt;&lt;/p&gt;</content>
 	<category term="game"/><category term="gdmag"/><category term="developer"/><category term="magazine"/>
@@ -2082,8 +2082,8 @@ realclean: clean
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nb"&gt;export &lt;/span&gt;&lt;span class="nv"&gt;LD_LIBRARY_PATH&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;/opt/csw/lib:&lt;span class="nv"&gt;$LD_LIBRARY_PATH&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;&lt;/p&gt;
 &lt;p&gt;... there you go :D up and running.&lt;/p&gt;
-&lt;p&gt;&lt;a class="image" href="/images/2009/04/screen.jpg"&gt;
-&lt;img class="alignnone size-thumbnail wp-image-485" title="screen" src="/images/2009/04/screen-400x330.jpg" alt="screen" width="400" height="330" /&gt;
+&lt;p&gt;&lt;a class="image" href="http://szabster.net/images/2009/04/screen.jpg"&gt;
+&lt;img class="alignnone size-thumbnail wp-image-485" title="screen" src="http://szabster.net/images/2009/04/screen-400x330.jpg" alt="screen" width="400" height="330" /&gt;
 &lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Personally, I think that it's an good idea installing all the 3rd party stuff inside the /opt dir instead of /usr or /usr/local, which seems to be a common practice in the existing Linux communities, of course this is more or less a matter of tastes.&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;"Gustibus non, disputatum est.&lt;/em&gt;"&lt;/p&gt;
@@ -2191,14 +2191,14 @@ this message was &lt;span class="nb"&gt;set &lt;/span&gt;from Python and printed
 &lt;p&gt;If you have lots of music like I do in the MP3 format, it's worth installing the &lt;strong&gt;&lt;em&gt;"Fluendo"&lt;/em&gt;&lt;/strong&gt; mp3 decoder GStreamer plugin, to get the most out of sound quality.&lt;/p&gt;
 &lt;p&gt;For the first time since the very first Ubuntu release, I didn't had to remove the "network manager" in order to make my wireless work flawlessly with WPA2-TKIP.&lt;/p&gt;
 &lt;p&gt;Anyway I'm most impressed by the improved 'font rendering', it's getting quite close to the smoothed and antialised font look popular and well know from MacOSX. Good job here ;)&lt;/p&gt;
-&lt;img class="alignnone size-medium wp-image-422" title="font-rendering-ubuntu" src="/images/2009/02/font-rendering-ubuntu-500x236.png" alt="font-rendering-ubuntu" width="500" height="236" /&gt;
+&lt;img class="alignnone size-medium wp-image-422" title="font-rendering-ubuntu" src="http://szabster.net/images/2009/02/font-rendering-ubuntu-500x236.png" alt="font-rendering-ubuntu" width="500" height="236" /&gt;
 
 &lt;p&gt;&lt;strong&gt;Font&lt;/strong&gt; : &lt;em&gt;Droid Sans Mono&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;GEdit Theme&lt;/strong&gt;: &lt;em&gt;Django&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;There is a lot of buzz about the blazing fast boot time, but yeah, with ext4 partitions it's about 10-14 seconds on my modest system ( dual core @ 1,8ghz, 2GB ram, and 120gb 5400 rpm hdd ) .&lt;/p&gt;
 &lt;p&gt;In overall 9.04 alpha 4 is looking rock solid and a lot more responsive, it's really really fast.&lt;/p&gt;
 &lt;p&gt;I also installed the themes, etc. from "Ubuntu Satanic Edition" for Intrepid, so here is a screenshot :)&lt;/p&gt;
-&lt;p&gt;&lt;a class="image" href="/images/2009/02/desktop.jpg"&gt;&lt;img class="alignnone size-thumbnail wp-image-423" title="desktop" src="/images/2009/02/desktop-400x132.jpg" alt="desktop" width="400" height="132" /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class="image" href="http://szabster.net/images/2009/02/desktop.jpg"&gt;&lt;img class="alignnone size-thumbnail wp-image-423" title="desktop" src="http://szabster.net/images/2009/02/desktop-400x132.jpg" alt="desktop" width="400" height="132" /&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;To be continued ...&lt;/p&gt;</content>
 	<category term="ubuntu"/><category term="jaunty"/><category term="alpha"/><category term="testing"/><category term="linux"/><category term="review"/>
 </entry>
@@ -2209,9 +2209,9 @@ this message was &lt;span class="nb"&gt;set &lt;/span&gt;from Python and printed
 	<updated>2009-02-03T00:00:00+02:00</updated>
 	<id>http://szabster.net/2009/2/3/mysticmine</id>
 	<content type="html">&lt;p&gt;Mystic Mine finally arrived .... hooorraaaay!&lt;/p&gt;
-&lt;img class="alignnone size-thumbnail wp-image-412" title="startup" src="/images/2009/02/startup-400x300.jpg" alt="startup" width="400" height="300" /&gt;
+&lt;img class="alignnone size-thumbnail wp-image-412" title="startup" src="http://szabster.net/images/2009/02/startup-400x300.jpg" alt="startup" width="400" height="300" /&gt;
 
-&lt;img class="alignnone size-thumbnail wp-image-413" title="gameplay" src="/images/2009/02/gameplay-400x300.jpg" alt="gameplay" width="400" height="300" /&gt;
+&lt;img class="alignnone size-thumbnail wp-image-413" title="gameplay" src="http://szabster.net/images/2009/02/gameplay-400x300.jpg" alt="gameplay" width="400" height="300" /&gt;
 
 &lt;p&gt;Get the demo &lt;a title="Get it here!" href="http://www.koonsolo.com/mysticmine/" target="_blank"&gt;here&lt;/a&gt; .&lt;/p&gt;</content>
 	<category term="game"/><category term="review"/><category term="mistic"/><category term="mine"/><category term="demo"/>
@@ -2249,9 +2249,9 @@ this message was &lt;span class="nb"&gt;set &lt;/span&gt;from Python and printed
 Hot-babe is a small graphical utility which displays the system activity in a very special way.  When the CPU is idle, it displays a dressed girl, and when the activity goes up, as the temperature increases, the girl begins to undress, to finish totally naked when the system activity reaches 100%. Of course, if you can be shocked by nudity, don't use it!&lt;/blockquote&gt;
 
 &lt;p&gt;Screenshot with 0% CPU utilization :&lt;/p&gt;
-&lt;p&gt;&lt;a class="image" href="/images/2008/11/hb.png"&gt;&lt;img class="alignnone size-thumbnail wp-image-389" title="hb" src="/images/2008/11/hb.png" alt="" width="245" height="339" /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class="image" href="http://szabster.net/images/2008/11/hb.png"&gt;&lt;img class="alignnone size-thumbnail wp-image-389" title="hb" src="http://szabster.net/images/2008/11/hb.png" alt="" width="245" height="339" /&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Screenshot with 100% CPU utilization (NSFW) :&lt;/p&gt;
-&lt;p&gt;&lt;a class="image" href="/images/2008/11/hb_nsfw.png"&gt;&lt;img class="alignnone size-thumbnail wp-image-390" title="hb_nsfw" src="/images/2008/11/hb_nsfw.png" alt="" width="201" height="334" /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class="image" href="http://szabster.net/images/2008/11/hb_nsfw.png"&gt;&lt;img class="alignnone size-thumbnail wp-image-390" title="hb_nsfw" src="http://szabster.net/images/2008/11/hb_nsfw.png" alt="" width="201" height="334" /&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;( while compiling Blender with 4 jobs "scons -j4" )&lt;/p&gt;
 &lt;p&gt;Get it &lt;a title="Get Hot babe here!" href="http://dindinx.net/hotbabe/" target="_blank"&gt;here&lt;/a&gt; .&lt;/p&gt;
 &lt;p&gt;Pretty cool, but it's gets boring after a while, even though it's a cool way to spice up your desktop.&lt;/p&gt;
@@ -2301,14 +2301,14 @@ make install
 	<id>http://szabster.net/2008/10/12/bitjam-music-diskz</id>
 	<content type="html">&lt;p&gt;Music Diskz are core part of the 'demo scene'. Here are two .... ermmm actually three of my new favorites :D&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Bitjam Vol. 1.1&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a class="image" href="/images/2008/10/bitjam_cover.jpg"&gt;&lt;img class="alignnone size-thumbnail wp-image-373" title="Bitjam Cover" src="/images/2008/10/bitjam_cover-400x262.jpg" alt="" width="400" height="262" /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class="image" href="http://szabster.net/images/2008/10/bitjam_cover.jpg"&gt;&lt;img class="alignnone size-thumbnail wp-image-373" title="Bitjam Cover" src="http://szabster.net/images/2008/10/bitjam_cover-400x262.jpg" alt="" width="400" height="262" /&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;This is quite a big download, 657229824 bytes = 626.8 mega bytes. Grab it &lt;a title="Grab it!" href="http://pouet.net/prod.php?which=31658" target="_blank"&gt;here&lt;/a&gt; .&lt;/p&gt;
 &lt;p&gt;( the 3D cover preview was made with the DVD-Cover python script for GIMP )&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Bitjam RMX 001&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a class="image" href="/images/2008/10/bitjam_rmx.jpg"&gt;&lt;img class="alignnone size-thumbnail wp-image-374" title="bitjam_rmx" src="/images/2008/10/bitjam_rmx-400x250.jpg" alt="" width="400" height="250" /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class="image" href="http://szabster.net/images/2008/10/bitjam_rmx.jpg"&gt;&lt;img class="alignnone size-thumbnail wp-image-374" title="bitjam_rmx" src="http://szabster.net/images/2008/10/bitjam_rmx-400x250.jpg" alt="" width="400" height="250" /&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;No strings attached, this one is still big ... around 137 mega bytes. Grab it &lt;a title="Grab it!" href="http://pouet.net/prod.php?which=51219" target="_blank"&gt;here&lt;/a&gt; .&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Jailhouse Voices&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a class="image" href="/images/2008/10/jailhouse.jpg"&gt;&lt;img class="alignnone size-thumbnail wp-image-375" title="jailhouse" src="/images/2008/10/jailhouse-400x300.jpg" alt="" width="400" height="300" /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class="image" href="http://szabster.net/images/2008/10/jailhouse.jpg"&gt;&lt;img class="alignnone size-thumbnail wp-image-375" title="jailhouse" src="http://szabster.net/images/2008/10/jailhouse-400x300.jpg" alt="" width="400" height="300" /&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;( don't forget about the F9 - F10 trick during the "intro" if you wanna extract all the tracks )&lt;/p&gt;
 &lt;p&gt;Again, no strings attached, ufff ... a bit smaller ... around 74 mega bytes. Grab it &lt;a title="Grab it!" href="http://www.pouet.net/prod.php?which=51760" target="_blank"&gt;here&lt;/a&gt; .&lt;/p&gt;
 &lt;p&gt;Enjoy indefinitely :)&lt;/p&gt;</content>
@@ -2350,8 +2350,8 @@ rm *.o game
 ./game
 &lt;/pre&gt;&lt;/div&gt;
 
-&lt;p&gt;&lt;a class="image" href="/images/2008/10/screenshot-game.jpg"&gt;
-&lt;img class="alignnone size-thumbnail wp-image-360" title="screenshot-game" src="/images/2008/10/screenshot-game-400x300.jpg" alt="" width="400" height="300" /&gt;
+&lt;p&gt;&lt;a class="image" href="http://szabster.net/images/2008/10/screenshot-game.jpg"&gt;
+&lt;img class="alignnone size-thumbnail wp-image-360" title="screenshot-game" src="http://szabster.net/images/2008/10/screenshot-game-400x300.jpg" alt="" width="400" height="300" /&gt;
 &lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Enjoy!&lt;/p&gt;</content>
 	<category term="game"/><category term="linux"/><category term="ubuntu"/><category term="frogatto"/>
@@ -2367,7 +2367,7 @@ rm *.o game
 &lt;p&gt;( the guys left in the code for this, so I just made it more object oriented and C++ like, the heritage of Delphi (Object Pascal) is clearly visible in their code -- I'm saying this being an Delphi developer myself too for a long time )&lt;/p&gt;
 &lt;p&gt;&lt;object width="640" height="360"&gt;&lt;param name="wmode" value="transparent" /&gt;&lt;param name="allowfullscreen" value="true" /&gt;&lt;param name="allowscriptaccess" value="always" /&gt;&lt;param name="movie" value="http://vimeo.com/moogaloop.swf?clip_id=1862776&amp;amp;server=vimeo.com&amp;amp;show_title=1&amp;amp;show_byline=1&amp;amp;show_portrait=1&amp;amp;color=FF7700&amp;amp;fullscreen=1" /&gt;&lt;embed src="http://vimeo.com/moogaloop.swf?clip_id=1862776&amp;amp;server=vimeo.com&amp;amp;show_title=1&amp;amp;show_byline=1&amp;amp;show_portrait=1&amp;amp;color=FF7700&amp;amp;fullscreen=1" type="application/x-shockwave-flash" allowfullscreen="true" allowscriptaccess="always" wmode="transparent" width="640" height="360"&gt;&lt;/embed&gt;&lt;/object&gt;&lt;/p&gt;
 &lt;p&gt;I'm also planning to take this further, by making the whole effect to "pulse" on music, and adding a few post processing effects like motion and radial blur, just to name a few, eventually making a basic music player out of it.&lt;/p&gt;
-&lt;p&gt;Since "Lera3D" is not open source yet, I'm providing the source code only for the "client". You can see the source code by clicking &lt;a title="Source Code!" href="/files/cubes.cpp" target="_blank"&gt;here&lt;/a&gt; .&lt;/p&gt;
+&lt;p&gt;Since "Lera3D" is not open source yet, I'm providing the source code only for the "client". You can see the source code by clicking &lt;a title="Source Code!" href="http://szabster.net/files/cubes.cpp" target="_blank"&gt;here&lt;/a&gt; .&lt;/p&gt;
 &lt;p&gt;More on this later ...&lt;/p&gt;</content>
 	<category term="programming"/><category term="scene"/><category term="lera3d"/><category term="demo"/>
 </entry>
@@ -2377,13 +2377,13 @@ rm *.o game
 	<link href="http://szabster.net/2008/9/22/epiphany-webkit-meh"/>
 	<updated>2008-09-22T00:00:00+02:00</updated>
 	<id>http://szabster.net/2008/9/22/epiphany-webkit-meh</id>
-	<content type="html">&lt;p&gt;&lt;a class="image" href="/images/2008/09/about_epiphany.jpg"&gt;&lt;img class="size-full wp-image-339 aligncenter" title="about_epiphany" src="/images/2008/09/about_epiphany.jpg" alt="" width="446" height="262" /&gt;&lt;/a&gt;&lt;/p&gt;
+	<content type="html">&lt;p&gt;&lt;a class="image" href="http://szabster.net/images/2008/09/about_epiphany.jpg"&gt;&lt;img class="size-full wp-image-339 aligncenter" title="about_epiphany" src="http://szabster.net/images/2008/09/about_epiphany.jpg" alt="" width="446" height="262" /&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;I'm one of those who are waiting for the Linux version of Chrome. I downloaded Chrome and even compiled and ran the executable which tests the sub-systems, amazing! lol&lt;/p&gt;
 &lt;p&gt;Today, I grabbed Epiphany and Webkit trying to see if I can get something similar to Chrome ... lol well, they both compiled, etc, but it's not really stable. Maybe because of the nightly build of WebKit, or maybe because Epiphany's Webkit support is &lt;em&gt;still&lt;/em&gt; experimental.&lt;/p&gt;
 &lt;p&gt;Compiling WebKit took around 30 minutes on my Dual Core @ 1.8ghz ... what a monster!!!&lt;/p&gt;
 &lt;p&gt;In overall, it's really fast and the rendering is good as far as WebKit can go with the rendering, the fonts are a bit crappy though, with both the FreeType and Pango backend.&lt;/p&gt;
 &lt;p&gt;I think that I'll give it another try later on ... lol until then viva Firefox 3.0, and waiting for Chrome :D&lt;/p&gt;
-&lt;p&gt;&lt;a class="image" href="/images/2008/09/linux_games_epiphany.jpg"&gt;&lt;img class="alignnone size-thumbnail wp-image-340" title="linux_games_epiphany" src="/images/2008/09/linux_games_epiphany-400x224.jpg" alt="" width="400" height="224" /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class="image" href="http://szabster.net/images/2008/09/linux_games_epiphany.jpg"&gt;&lt;img class="alignnone size-thumbnail wp-image-340" title="linux_games_epiphany" src="http://szabster.net/images/2008/09/linux_games_epiphany-400x224.jpg" alt="" width="400" height="224" /&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Happy Compiling! :)&lt;/p&gt;</content>
 	<category term="linux"/><category term="ubuntu"/><category term="google"/><category term="webkit"/><category term="epiphany"/><category term="chrome"/>
 </entry>
@@ -2421,7 +2421,7 @@ More info at &lt;a title="The Free Software Song" href="http://en.wikipedia.org/
 	<updated>2008-09-10T00:00:00+02:00</updated>
 	<id>http://szabster.net/2008/9/10/codelite</id>
 	<content type="html">&lt;p&gt;Today I found CodeLite, which seems to be a nice IDE. I compiled the latest version from the SVN, but haven't tested it yet. I'll write more about it later ...&lt;/p&gt;
-&lt;p&gt;&lt;a class="image" href="/images/2008/09/screenshot-codelite.jpg"&gt;&lt;img class="alignnone size-thumbnail wp-image-331" title="screenshot-codelite" src="/images/2008/09/screenshot-codelite-400x225.jpg" alt="" width="400" height="225" /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class="image" href="http://szabster.net/images/2008/09/screenshot-codelite.jpg"&gt;&lt;img class="alignnone size-thumbnail wp-image-331" title="screenshot-codelite" src="http://szabster.net/images/2008/09/screenshot-codelite-400x225.jpg" alt="" width="400" height="225" /&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;You can get it &lt;a title="Get it here!" href="http://codelite.org/" target="_blank"&gt;here&lt;/a&gt; .&lt;/p&gt;</content>
 	<category term="gcc"/><category term="ubuntu"/><category term="windows"/><category term="codelite"/><category term="ide"/>
 </entry>
@@ -2519,7 +2519,7 @@ More info at &lt;a title="The Free Software Song" href="http://en.wikipedia.org/
 &lt;p&gt;I will also include a small analysis on the technologies I believe they are using. Reverse engineering is one of my older hobbies ... lol&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;&lt;em&gt;London Game&lt;/em&gt; by Team Fragment&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;This is a lovely GTA 3 clone. It's one of the most impressive game &lt;em&gt;demos&lt;/em&gt; I've seen @ a Scene Party ... correct me, if I'm wrong :)&lt;/p&gt;
-&lt;p&gt;&lt;a class="image" href="/images/2008/09/london_game.jpg"&gt;&lt;img class="alignnone size-thumbnail wp-image-300" title="london_game" src="/images/2008/09/london_game-400x300.jpg" alt="" width="400" height="300" /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class="image" href="http://szabster.net/images/2008/09/london_game.jpg"&gt;&lt;img class="alignnone size-thumbnail wp-image-300" title="london_game" src="http://szabster.net/images/2008/09/london_game-400x300.jpg" alt="" width="400" height="300" /&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Game Engine: in-house game engine ( proof GSystem.dll ) . A closer exanimation of the DLL Imports revealed that it's using Direct Input (DINPUT8) for input, and OpenGL (also GLU32 is imported) for rendering.&lt;/p&gt;
 &lt;p&gt;Sound System: FMod ( proof fmodex.dll )&lt;/p&gt;
 &lt;p&gt;Physics: NVidia PhysX ( proof PhysXLoader.dll )&lt;/p&gt;
@@ -2533,11 +2533,11 @@ More info at &lt;a title="The Free Software Song" href="http://en.wikipedia.org/
 &lt;p&gt;At the end of the PAK files, there is a text which says: "If you are reading this, you have no life!" .&lt;/p&gt;
 &lt;p&gt;This amused me a lot ... lol, now I'm scared to death ... haha!&lt;/p&gt;
 &lt;p&gt;It has an external configuration utility named Config.exe, but it definitely worths checking out the "userdata/settings.script", especially if you wanna enable "debug" mode and a few other interesting stuff, though setting "motion blur" to true, didn't take any effect.&lt;/p&gt;
-&lt;p&gt;&lt;a class="image" href="/images/2008/09/london_game2.jpg"&gt;&lt;img class="alignnone size-thumbnail wp-image-301" title="london_game2" src="/images/2008/09/london_game2-400x290.jpg" alt="" width="400" height="290" /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class="image" href="http://szabster.net/images/2008/09/london_game2.jpg"&gt;&lt;img class="alignnone size-thumbnail wp-image-301" title="london_game2" src="http://szabster.net/images/2008/09/london_game2-400x290.jpg" alt="" width="400" height="290" /&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;I didn't go any further, and waiting for new updated versions as promised in the "readme" file :)&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;&lt;em&gt;Sylph Wind&lt;/em&gt; by Pieslice Productions&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;This is a really cool shoot-em up arcade game, really immersing, nice graphics, very good music, and good game-play .&lt;/p&gt;
-&lt;p&gt;&lt;a class="image" href="/images/2008/09/sylph_wind.jpg"&gt;&lt;img class="alignnone size-thumbnail wp-image-303" title="sylph_wind" src="/images/2008/09/sylph_wind-400x300.jpg" alt="" width="400" height="300" /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class="image" href="http://szabster.net/images/2008/09/sylph_wind.jpg"&gt;&lt;img class="alignnone size-thumbnail wp-image-303" title="sylph_wind" src="http://szabster.net/images/2008/09/sylph_wind-400x300.jpg" alt="" width="400" height="300" /&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Game Engine: in-house game engine, statically linked, so there is no separate &lt;em&gt;engine&lt;/em&gt; dynamic library. Analyzing the imports, this also seems to be using Direct Input for Input (DINPUT8) and OpenGL (also GLU32 is imported ) for rendering.&lt;/p&gt;
 &lt;p&gt;Sound System: FMod ( proof fmodex.dll, and also credited in the "Manual.html" )&lt;/p&gt;
 &lt;p&gt;Other Notes: Uses the Cg Shader Technology from NVidia ( proof cg.dll and cggl.dll, and also credited in the "Manual.html" ) instead of pure GLSL .&lt;/p&gt;
@@ -2550,13 +2550,13 @@ More info at &lt;a title="The Free Software Song" href="http://en.wikipedia.org/
 &lt;p&gt;This is a good game, worth playing :)&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;&lt;em&gt;Kiuasturvat feat Vastaisku&lt;/em&gt; by Sx Cracked by Taat&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;This is the typical "rag-doll" type game. No strings attached.&lt;/p&gt;
-&lt;p&gt;&lt;a class="image" href="/images/2008/09/kiuasturvat.jpg"&gt;&lt;img class="alignnone size-thumbnail wp-image-308" title="kiuasturvat" src="/images/2008/09/kiuasturvat-400x300.jpg" alt="" width="400" height="300" /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class="image" href="http://szabster.net/images/2008/09/kiuasturvat.jpg"&gt;&lt;img class="alignnone size-thumbnail wp-image-308" title="kiuasturvat" src="http://szabster.net/images/2008/09/kiuasturvat-400x300.jpg" alt="" width="400" height="300" /&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Game Engine: Irrlicht&lt;/p&gt;
 &lt;p&gt;Sound System: Bass&lt;/p&gt;
 &lt;p&gt;Other Notes: N/A :P&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;&lt;em&gt;Flipout&lt;/em&gt; by Mikkosoft Productions&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;Flipout is breakout game with pinball style controls. This is an innovative concept, IMHO ... but at first it's a bit difficult to control.&lt;/p&gt;
-&lt;p&gt;&lt;a class="image" href="/images/2008/09/flipout.jpg"&gt;&lt;img class="alignnone size-thumbnail wp-image-310" title="flipout" src="/images/2008/09/flipout-400x300.jpg" alt="" width="400" height="300" /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class="image" href="http://szabster.net/images/2008/09/flipout.jpg"&gt;&lt;img class="alignnone size-thumbnail wp-image-310" title="flipout" src="http://szabster.net/images/2008/09/flipout-400x300.jpg" alt="" width="400" height="300" /&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;It has a Linux port, and obviously uses a great deal of open source libraries.&lt;/p&gt;
 &lt;p&gt;Game Engine: in-house game engine. Obviously it uses OpenGL for rendering. ( no GLU32 this time )&lt;/p&gt;
 &lt;p&gt;Sound System: OpenAL with Ogg Vorbis (proof libvorbis-0.dll, OpenAL32.dll, wrap_oal.dll )&lt;/p&gt;
@@ -2564,13 +2564,13 @@ More info at &lt;a title="The Free Software Song" href="http://en.wikipedia.org/
 &lt;p&gt;Uses a virtual filesystem to store most of it's data. The extension of the PAK file is ".data" . There aren't any clearly identifiable signatures, etc. inside, but again I didn't go any further :)&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;&lt;em&gt;Frontal Assault&lt;/em&gt; by Eturintama&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;No comments, but not X-rated, neverthless interesting and spicy :P&lt;/p&gt;
-&lt;p&gt;&lt;a class="image" href="/images/2008/09/frontal_assault.jpg"&gt;&lt;img class="alignnone size-thumbnail wp-image-316" title="frontal_assault" src="/images/2008/09/frontal_assault-400x300.jpg" alt="" width="400" height="300" /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class="image" href="http://szabster.net/images/2008/09/frontal_assault.jpg"&gt;&lt;img class="alignnone size-thumbnail wp-image-316" title="frontal_assault" src="http://szabster.net/images/2008/09/frontal_assault-400x300.jpg" alt="" width="400" height="300" /&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Game Engine: in-house game engine. It uses GLUT32 ( proof glut32.dll ) and obviously OpenGL for rendering.&lt;/p&gt;
 &lt;p&gt;Sound System: FMod ( proof fmod.dll )&lt;/p&gt;
 &lt;p&gt;Other Notes: there is no virtual file system, so all the data files are exposed.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;&lt;em&gt;A Tribute To The Rolling Boulder&lt;/em&gt; by Kloonigames&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;This is a nice 2D platform game.&lt;/p&gt;
-&lt;p&gt;&lt;a class="image" href="/images/2008/09/tribute.jpg"&gt;&lt;img class="alignnone size-thumbnail wp-image-317" title="tribute" src="/images/2008/09/tribute-400x300.jpg" alt="" width="400" height="300" /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class="image" href="http://szabster.net/images/2008/09/tribute.jpg"&gt;&lt;img class="alignnone size-thumbnail wp-image-317" title="tribute" src="http://szabster.net/images/2008/09/tribute-400x300.jpg" alt="" width="400" height="300" /&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Game Engine: in-house game engine, uses SDL for rendering.&lt;/p&gt;
 &lt;p&gt;Sound System: SDL_mixer&lt;/p&gt;
 &lt;p&gt;Physics: Box2D&lt;/p&gt;
@@ -2578,7 +2578,7 @@ More info at &lt;a title="The Free Software Song" href="http://en.wikipedia.org/
 &lt;p&gt;It has a nice "autoexec.txt" script file, which setups key bindings, pre-loads sound effects, etc. It also seems to have it's own in-house GUI framework. ( some of these is mentioned in the "readme.html" )&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;&lt;em&gt;Dust&lt;/em&gt; by Sandbox Software&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;I was talking about no particular order, but I should have mentioned this one right after the 1st two as a 3rd. :P&lt;/p&gt;
-&lt;p&gt;&lt;a class="image" href="/images/2008/09/dust.jpg"&gt;&lt;img class="alignnone size-thumbnail wp-image-319" title="dust" src="/images/2008/09/dust-400x300.jpg" alt="" width="400" height="300" /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class="image" href="http://szabster.net/images/2008/09/dust.jpg"&gt;&lt;img class="alignnone size-thumbnail wp-image-319" title="dust" src="http://szabster.net/images/2008/09/dust-400x300.jpg" alt="" width="400" height="300" /&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Game Engine: in-house game engine. Uses SDL + OpenGL for rendering ( imports GLU32 ). It seems to import GLUT just for gluSolidSphere , also uses GLEW for extension handling. There are lots of XML files, because of the Collada file format ( proof FColladaR.dll, FColladaD.dll ) .&lt;/p&gt;
 &lt;p&gt;Sound System: FMod (proof fmodex.dll, and fmod_event.dll )&lt;/p&gt;
 &lt;p&gt;Physics: Ode ( proof ode.dll )&lt;/p&gt;
@@ -2589,12 +2589,12 @@ More info at &lt;a title="The Free Software Song" href="http://en.wikipedia.org/
 &lt;p&gt;Again, as always I didn't go any further.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;&lt;em&gt;TTS Demo&lt;/em&gt; by Aukiogames&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;This is another GTA clone, with a huge playable level, and lovely graphics.&lt;/p&gt;
-&lt;p&gt;&lt;a class="image" href="/images/2008/09/tts1.jpg"&gt;&lt;img class="alignnone size-thumbnail wp-image-320" title="tts1" src="/images/2008/09/tts1-400x300.jpg" alt="" width="400" height="300" /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class="image" href="http://szabster.net/images/2008/09/tts1.jpg"&gt;&lt;img class="alignnone size-thumbnail wp-image-320" title="tts1" src="http://szabster.net/images/2008/09/tts1-400x300.jpg" alt="" width="400" height="300" /&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Game Engine: in-house game engine, using DirectX8 for rendering and input, it also seems to be written in Delphi 7 which means that it's Object Pascal :) niceeee :) ... just check those nice TParticleSystem, etc. with an hex editor ;) :P&lt;/p&gt;
 &lt;p&gt;Sound System: Fmod ( proof fmod.dll )&lt;/p&gt;
 &lt;p&gt;Other Notes: again there is no virtual filesystem, but it does have a proprietary model format, with the generic "obj" extension.&lt;/p&gt;
 &lt;p&gt;Textures are in DDS, sounds and music in WAV, MP3 and OGG ... Scripts have the extension "tsl" and the language seems to be a subset of Pascal, combined with some PHP.&lt;/p&gt;
-&lt;p&gt;&lt;a class="image" href="/images/2008/09/tts2.jpg"&gt;&lt;img class="alignnone size-thumbnail wp-image-321" title="tts2" src="/images/2008/09/tts2-400x300.jpg" alt="" width="400" height="300" /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class="image" href="http://szabster.net/images/2008/09/tts2.jpg"&gt;&lt;img class="alignnone size-thumbnail wp-image-321" title="tts2" src="http://szabster.net/images/2008/09/tts2-400x300.jpg" alt="" width="400" height="300" /&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;I stopped right here!&lt;/p&gt;
 &lt;p&gt;Uffff, this was a long long journey, it took my whole Sunday afternoon ... :) There were a few other games, but mostly they were seriously lacking quality or just failed to run reasonably.&lt;/p&gt;
 &lt;p&gt;I think that these prove that Indie Game Development do exists, and it is possible for a small team to create really nice games, even if some are just "tech demos", showcasing the engines behind :)&lt;/p&gt;
@@ -2610,7 +2610,7 @@ More info at &lt;a title="The Free Software Song" href="http://en.wikipedia.org/
 	<id>http://szabster.net/2008/9/6/girl-of-the-day-stephie-coplan</id>
 	<content type="html">&lt;h3&gt;Stephie Coplan&lt;/h3&gt;
 
-&lt;p&gt;&lt;b&gt;Year: &lt;/b&gt;Senior&lt;br&gt;&lt;b&gt;School: &lt;/b&gt;Tufts&lt;br&gt;&lt;b&gt;Hometown: &lt;/b&gt;Rockville, MD&lt;br&gt;&lt;b&gt;Major: &lt;/b&gt;Philosophy/Pre-Law&lt;/p&gt;&lt;p&gt;&lt;a class="image" href="http://www.collegehumor.com/cutecollegegirl/StephieC" target="_blank"&gt;&lt;img src="/images/cutecollegegirl/Stephie-Coplan_3d19d68079e443a3ecc704bc36592274.jpg" alt="Stephie Coplan" /&gt;&lt;/a&gt;&lt;/p&gt;&lt;p&gt;Click &lt;a href="http://www.collegehumor.com/cutecollegegirl/StephieC" target="_blank"&gt;here&lt;/a&gt; for more.&lt;/p&gt;</content>
+&lt;p&gt;&lt;b&gt;Year: &lt;/b&gt;Senior&lt;br&gt;&lt;b&gt;School: &lt;/b&gt;Tufts&lt;br&gt;&lt;b&gt;Hometown: &lt;/b&gt;Rockville, MD&lt;br&gt;&lt;b&gt;Major: &lt;/b&gt;Philosophy/Pre-Law&lt;/p&gt;&lt;p&gt;&lt;a class="image" href="http://www.collegehumor.com/cutecollegegirl/StephieC" target="_blank"&gt;&lt;img src="http://szabster.net/images/cutecollegegirl/Stephie-Coplan_3d19d68079e443a3ecc704bc36592274.jpg" alt="Stephie Coplan" /&gt;&lt;/a&gt;&lt;/p&gt;&lt;p&gt;Click &lt;a href="http://www.collegehumor.com/cutecollegegirl/StephieC" target="_blank"&gt;here&lt;/a&gt; for more.&lt;/p&gt;</content>
 	<category term="cutecollegegirl"/><category term="collegehumor"/><category term="stephie coplan"/>
 </entry>
 
@@ -2621,7 +2621,7 @@ More info at &lt;a title="The Free Software Song" href="http://en.wikipedia.org/
 	<id>http://szabster.net/2008/9/5/girl-of-the-day-rebecca-kelly</id>
 	<content type="html">&lt;h3&gt;Rebecca Kelly&lt;/h3&gt;
 
-&lt;p&gt;&lt;b&gt;Year: &lt;/b&gt;Sophomore&lt;br&gt;&lt;b&gt;School: &lt;/b&gt;UNC Charlotte&lt;br&gt;&lt;b&gt;Hometown: &lt;/b&gt;Durham, NC&lt;br&gt;&lt;b&gt;Major: &lt;/b&gt;Education&lt;/p&gt;&lt;p&gt;&lt;a class="image" href="http://www.collegehumor.com/cutecollegegirl/RebeccaK" target="_blank"&gt;&lt;img src="/images/cutecollegegirl/Rebecca-Kelly_4ccd6b5bbba8b6e4623bbc063b78e67f.jpg" alt="Rebecca Kelly" /&gt;&lt;/a&gt;&lt;/p&gt;&lt;p&gt;Click &lt;a href="http://www.collegehumor.com/cutecollegegirl/RebeccaK" target="_blank"&gt;here&lt;/a&gt; for more.&lt;/p&gt;</content>
+&lt;p&gt;&lt;b&gt;Year: &lt;/b&gt;Sophomore&lt;br&gt;&lt;b&gt;School: &lt;/b&gt;UNC Charlotte&lt;br&gt;&lt;b&gt;Hometown: &lt;/b&gt;Durham, NC&lt;br&gt;&lt;b&gt;Major: &lt;/b&gt;Education&lt;/p&gt;&lt;p&gt;&lt;a class="image" href="http://www.collegehumor.com/cutecollegegirl/RebeccaK" target="_blank"&gt;&lt;img src="http://szabster.net/images/cutecollegegirl/Rebecca-Kelly_4ccd6b5bbba8b6e4623bbc063b78e67f.jpg" alt="Rebecca Kelly" /&gt;&lt;/a&gt;&lt;/p&gt;&lt;p&gt;Click &lt;a href="http://www.collegehumor.com/cutecollegegirl/RebeccaK" target="_blank"&gt;here&lt;/a&gt; for more.&lt;/p&gt;</content>
 	<category term="cutecollegegirl"/><category term="collegehumor"/><category term="rebecca kelly"/>
 </entry>
 
@@ -2632,7 +2632,7 @@ More info at &lt;a title="The Free Software Song" href="http://en.wikipedia.org/
 	<id>http://szabster.net/2008/9/4/girl-of-the-day-nikki-pekovitch</id>
 	<content type="html">&lt;h3&gt;Nikki Pekovitch&lt;/h3&gt;
 
-&lt;p&gt;&lt;b&gt;Year: &lt;/b&gt;Sophomore&lt;br&gt;&lt;b&gt;School: &lt;/b&gt;Mount Marty College&lt;br&gt;&lt;b&gt;Hometown: &lt;/b&gt;Chicago&lt;br&gt;&lt;b&gt;Major: &lt;/b&gt;Childhood Education&lt;/p&gt;&lt;p&gt;&lt;a class="image" href="http://www.collegehumor.com/cutecollegegirl/NikkiP" target="_blank"&gt;&lt;img src="/images/cutecollegegirl/Nikki-Pekovitch_60a678caef9818a1223161d6fbbb4fc7.jpg" alt="Nikki Pekovitch" /&gt;&lt;/a&gt;&lt;/p&gt;&lt;p&gt;Click &lt;a href="http://www.collegehumor.com/cutecollegegirl/NikkiP" target="_blank"&gt;here&lt;/a&gt; for more.&lt;/p&gt;</content>
+&lt;p&gt;&lt;b&gt;Year: &lt;/b&gt;Sophomore&lt;br&gt;&lt;b&gt;School: &lt;/b&gt;Mount Marty College&lt;br&gt;&lt;b&gt;Hometown: &lt;/b&gt;Chicago&lt;br&gt;&lt;b&gt;Major: &lt;/b&gt;Childhood Education&lt;/p&gt;&lt;p&gt;&lt;a class="image" href="http://www.collegehumor.com/cutecollegegirl/NikkiP" target="_blank"&gt;&lt;img src="http://szabster.net/images/cutecollegegirl/Nikki-Pekovitch_60a678caef9818a1223161d6fbbb4fc7.jpg" alt="Nikki Pekovitch" /&gt;&lt;/a&gt;&lt;/p&gt;&lt;p&gt;Click &lt;a href="http://www.collegehumor.com/cutecollegegirl/NikkiP" target="_blank"&gt;here&lt;/a&gt; for more.&lt;/p&gt;</content>
 	<category term="cutecollegegirl"/><category term="collegehumor"/><category term="nikki pekovitch"/>
 </entry>
 
@@ -2643,7 +2643,7 @@ More info at &lt;a title="The Free Software Song" href="http://en.wikipedia.org/
 	<id>http://szabster.net/2008/9/3/girl-of-the-day-tiffany-reed</id>
 	<content type="html">&lt;h3&gt;Tiffany Reed&lt;/h3&gt;
 
-&lt;p&gt;&lt;b&gt;Year: &lt;/b&gt;Junior&lt;br&gt;&lt;b&gt;School: &lt;/b&gt;Texas&lt;br&gt;&lt;b&gt;Hometown: &lt;/b&gt;Tulle, France&lt;br&gt;&lt;b&gt;Major: &lt;/b&gt;Psychology&lt;/p&gt;&lt;p&gt;&lt;a class="image" href="http://www.collegehumor.com/cutecollegegirl/TiffanyR" target="_blank"&gt;&lt;img src="/images/cutecollegegirl/Tiffany-Reed_657b61ec28823a190ca97cc27738d29a.jpg" alt="Tiffany Reed" /&gt;&lt;/a&gt;&lt;/p&gt;&lt;p&gt;Click &lt;a href="http://www.collegehumor.com/cutecollegegirl/TiffanyR" target="_blank"&gt;here&lt;/a&gt; for more.&lt;/p&gt;</content>
+&lt;p&gt;&lt;b&gt;Year: &lt;/b&gt;Junior&lt;br&gt;&lt;b&gt;School: &lt;/b&gt;Texas&lt;br&gt;&lt;b&gt;Hometown: &lt;/b&gt;Tulle, France&lt;br&gt;&lt;b&gt;Major: &lt;/b&gt;Psychology&lt;/p&gt;&lt;p&gt;&lt;a class="image" href="http://www.collegehumor.com/cutecollegegirl/TiffanyR" target="_blank"&gt;&lt;img src="http://szabster.net/images/cutecollegegirl/Tiffany-Reed_657b61ec28823a190ca97cc27738d29a.jpg" alt="Tiffany Reed" /&gt;&lt;/a&gt;&lt;/p&gt;&lt;p&gt;Click &lt;a href="http://www.collegehumor.com/cutecollegegirl/TiffanyR" target="_blank"&gt;here&lt;/a&gt; for more.&lt;/p&gt;</content>
 	<category term="cutecollegegirl"/><category term="collegehumor"/><category term="tiffany reed"/>
 </entry>
 
@@ -2653,7 +2653,7 @@ More info at &lt;a title="The Free Software Song" href="http://en.wikipedia.org/
 	<updated>2008-08-31T00:00:00+02:00</updated>
 	<id>http://szabster.net/2008/8/31/jedi-tool-1-regexxer</id>
 	<content type="html">&lt;p&gt;I just stumbled across &lt;a href="http://regexxer.sourceforge.net/" target="_blank"&gt;Reggexer&lt;/a&gt; today while searching for a tool to replace stuff in multiple files in an easy and convenient way.&lt;/p&gt;
-&lt;p&gt;&lt;a class="image" href="/images/2008/08/screenshot-regexxer.png"&gt;&lt;img class="alignnone size-thumbnail wp-image-286" title="screenshot-regexxer" src="/images/2008/08/screenshot-regexxer-400x300.png" alt="" width="400" height="300" /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class="image" href="http://szabster.net/images/2008/08/screenshot-regexxer.png"&gt;&lt;img class="alignnone size-thumbnail wp-image-286" title="screenshot-regexxer" src="http://szabster.net/images/2008/08/screenshot-regexxer-400x300.png" alt="" width="400" height="300" /&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Just as it says on it's homepage, my first thought was &lt;em&gt;"Hey,           I must have this!" :)&lt;/em&gt;&lt;/p&gt;</content>
 	<category term="linux"/><category term="ubuntu"/><category term="regexxer"/><category term="perl"/><category term="replace"/>
 </entry>
@@ -2679,7 +2679,7 @@ More info at &lt;a title="The Free Software Song" href="http://en.wikipedia.org/
 	<id>http://szabster.net/2008/8/30/girl-of-the-day-jenna-zidansek</id>
 	<content type="html">&lt;h3&gt;Jenna Zidansek&lt;/h3&gt;
 
-&lt;p&gt;&lt;b&gt;Year: &lt;/b&gt;Freshman&lt;br&gt;&lt;b&gt;School: &lt;/b&gt;Duquesne&lt;br&gt;&lt;b&gt;Hometown: &lt;/b&gt;PA&lt;br&gt;&lt;b&gt;Major: &lt;/b&gt;Nursing&lt;/p&gt;&lt;p&gt;&lt;a class="image" href="http://www.collegehumor.com/cutecollegegirl/JennaZ" target="_blank"&gt;&lt;img src="/images/cutecollegegirl/Jenna-Zidansek_d5bd75410da058bc287ba0e92d0794e5.jpg" alt="Jenna Zidansek" /&gt;&lt;/a&gt;&lt;/p&gt;&lt;p&gt;Click &lt;a href="http://www.collegehumor.com/cutecollegegirl/JennaZ" target="_blank"&gt;here&lt;/a&gt; for more.&lt;/p&gt;</content>
+&lt;p&gt;&lt;b&gt;Year: &lt;/b&gt;Freshman&lt;br&gt;&lt;b&gt;School: &lt;/b&gt;Duquesne&lt;br&gt;&lt;b&gt;Hometown: &lt;/b&gt;PA&lt;br&gt;&lt;b&gt;Major: &lt;/b&gt;Nursing&lt;/p&gt;&lt;p&gt;&lt;a class="image" href="http://www.collegehumor.com/cutecollegegirl/JennaZ" target="_blank"&gt;&lt;img src="http://szabster.net/images/cutecollegegirl/Jenna-Zidansek_d5bd75410da058bc287ba0e92d0794e5.jpg" alt="Jenna Zidansek" /&gt;&lt;/a&gt;&lt;/p&gt;&lt;p&gt;Click &lt;a href="http://www.collegehumor.com/cutecollegegirl/JennaZ" target="_blank"&gt;here&lt;/a&gt; for more.&lt;/p&gt;</content>
 	<category term="cutecollegegirl"/><category term="collegehumor"/><category term="jenna zidansek"/>
 </entry>
 
@@ -2688,7 +2688,7 @@ More info at &lt;a title="The Free Software Song" href="http://en.wikipedia.org/
 	<link href="http://szabster.net/2008/8/29/its-never-too-late"/>
 	<updated>2008-08-29T00:00:00+02:00</updated>
 	<id>http://szabster.net/2008/8/29/its-never-too-late</id>
-	<content type="html">&lt;div class="mceTemp"&gt;&lt;dl id="attachment_276" class="wp-caption alignnone" style="width: 410px;"&gt;&lt;dt class="wp-caption-dt"&gt;&lt;a class="image" href="/images/2008/08/3327.jpg" mce_class="image" href="/images/2008/08/3327.jpg"&gt;&lt;img class="size-thumbnail wp-image-276" title="Grandma Learning Linux" src="/images/2008/08/3327-400x347.jpg" mce_src="/images/2008/08/3327-400x347.jpg" alt="It's never too late!" height="347" width="400"&gt;&lt;/a&gt;&lt;/dt&gt;&lt;/dl&gt;&lt;/div&gt;</content>
+	<content type="html">&lt;div class="mceTemp"&gt;&lt;dl id="attachment_276" class="wp-caption alignnone" style="width: 410px;"&gt;&lt;dt class="wp-caption-dt"&gt;&lt;a class="image" href="http://szabster.net/images/2008/08/3327.jpg" mce_class="image" href="http://szabster.net/images/2008/08/3327.jpg"&gt;&lt;img class="size-thumbnail wp-image-276" title="Grandma Learning Linux" src="http://szabster.net/images/2008/08/3327-400x347.jpg" mce_src="http://szabster.net/images/2008/08/3327-400x347.jpg" alt="It's never too late!" height="347" width="400"&gt;&lt;/a&gt;&lt;/dt&gt;&lt;/dl&gt;&lt;/div&gt;</content>
 	<category term="linux"/><category term="ubuntu"/><category term="dummies"/><category term="learning"/>
 </entry>
 
@@ -2699,7 +2699,7 @@ More info at &lt;a title="The Free Software Song" href="http://en.wikipedia.org/
 	<id>http://szabster.net/2008/8/27/girl-of-the-day-maya-ma</id>
 	<content type="html">&lt;h3&gt;Maya Ma&lt;/h3&gt;
 
-&lt;p&gt;&lt;b&gt;Year: &lt;/b&gt;Freshman&lt;br&gt;&lt;b&gt;School: &lt;/b&gt;Santa Monica Community&lt;br&gt;&lt;b&gt;Hometown: &lt;/b&gt;china&lt;br&gt;&lt;b&gt;Major: &lt;/b&gt;Fashion Design&lt;/p&gt;&lt;p&gt;&lt;a class="image" href="http://www.collegehumor.com/cutecollegegirl/MayaM" target="_blank"&gt;&lt;img src="/images/cutecollegegirl/Maya-Ma_cb7d1f7e5c360ee537e77aa23136f9e1.jpg" alt="Maya Ma" /&gt;&lt;/a&gt;&lt;/p&gt;&lt;p&gt;Click &lt;a href="http://www.collegehumor.com/cutecollegegirl/MayaM" target="_blank"&gt;here&lt;/a&gt; for more.&lt;/p&gt;</content>
+&lt;p&gt;&lt;b&gt;Year: &lt;/b&gt;Freshman&lt;br&gt;&lt;b&gt;School: &lt;/b&gt;Santa Monica Community&lt;br&gt;&lt;b&gt;Hometown: &lt;/b&gt;china&lt;br&gt;&lt;b&gt;Major: &lt;/b&gt;Fashion Design&lt;/p&gt;&lt;p&gt;&lt;a class="image" href="http://www.collegehumor.com/cutecollegegirl/MayaM" target="_blank"&gt;&lt;img src="http://szabster.net/images/cutecollegegirl/Maya-Ma_cb7d1f7e5c360ee537e77aa23136f9e1.jpg" alt="Maya Ma" /&gt;&lt;/a&gt;&lt;/p&gt;&lt;p&gt;Click &lt;a href="http://www.collegehumor.com/cutecollegegirl/MayaM" target="_blank"&gt;here&lt;/a&gt; for more.&lt;/p&gt;</content>
 	<category term="cutecollegegirl"/><category term="collegehumor"/><category term="maya ma"/>
 </entry>
 
@@ -2710,7 +2710,7 @@ More info at &lt;a title="The Free Software Song" href="http://en.wikipedia.org/
 	<id>http://szabster.net/2008/8/26/girl-of-the-day-jacque-fuller</id>
 	<content type="html">&lt;h3&gt;Jacque Fuller&lt;/h3&gt;
 
-&lt;p&gt;&lt;b&gt;Year: &lt;/b&gt;Freshman&lt;br&gt;&lt;b&gt;School: &lt;/b&gt;Mercer&lt;br&gt;&lt;b&gt;Hometown: &lt;/b&gt;McDonough GA&lt;br&gt;&lt;b&gt;Major: &lt;/b&gt;Marketing&lt;/p&gt;&lt;p&gt;&lt;a class="image" href="http://www.collegehumor.com/cutecollegegirl/JacqueF" target="_blank"&gt;&lt;img src="/images/cutecollegegirl/Jacque-Fuller_03e0cc02d9db57b217764ab9c6cad42c.jpg" alt="Jacque Fuller" /&gt;&lt;/a&gt;&lt;/p&gt;&lt;p&gt;Click &lt;a href="http://www.collegehumor.com/cutecollegegirl/JacqueF" target="_blank"&gt;here&lt;/a&gt; for more.&lt;/p&gt;</content>
+&lt;p&gt;&lt;b&gt;Year: &lt;/b&gt;Freshman&lt;br&gt;&lt;b&gt;School: &lt;/b&gt;Mercer&lt;br&gt;&lt;b&gt;Hometown: &lt;/b&gt;McDonough GA&lt;br&gt;&lt;b&gt;Major: &lt;/b&gt;Marketing&lt;/p&gt;&lt;p&gt;&lt;a class="image" href="http://www.collegehumor.com/cutecollegegirl/JacqueF" target="_blank"&gt;&lt;img src="http://szabster.net/images/cutecollegegirl/Jacque-Fuller_03e0cc02d9db57b217764ab9c6cad42c.jpg" alt="Jacque Fuller" /&gt;&lt;/a&gt;&lt;/p&gt;&lt;p&gt;Click &lt;a href="http://www.collegehumor.com/cutecollegegirl/JacqueF" target="_blank"&gt;here&lt;/a&gt; for more.&lt;/p&gt;</content>
 	<category term="cutecollegegirl"/><category term="collegehumor"/><category term="jacque fuller"/>
 </entry>
 
@@ -2721,7 +2721,7 @@ More info at &lt;a title="The Free Software Song" href="http://en.wikipedia.org/
 	<id>http://szabster.net/2008/8/23/girl-of-the-day-samantha-haynes</id>
 	<content type="html">&lt;h3&gt;Samantha Haynes&lt;/h3&gt;
 
-&lt;p&gt;&lt;b&gt;Year: &lt;/b&gt;Freshman&lt;br/&gt;&lt;b&gt;School: &lt;/b&gt;Missouri Southern State&lt;br/&gt;&lt;b&gt;Hometown: &lt;/b&gt;Joplin&lt;br/&gt;&lt;b&gt;Major: &lt;/b&gt;Art Education&lt;/p&gt;&lt;p&gt;&lt;a href="http://www.collegehumor.com/cutecollegegirl/SamanthaH" target="_blank" class="image"&gt;&lt;img src="/images/cutecollegegirl/Samantha-Haynes_035d88e36207389482948313e469e40d.jpg" alt="Samantha Haynes" /&gt;&lt;/a&gt;&lt;/p&gt;&lt;p&gt;Click &lt;a href="http://www.collegehumor.com/cutecollegegirl/SamanthaH" target="_blank"&gt;here&lt;/a&gt; for more.&lt;/p&gt;</content>
+&lt;p&gt;&lt;b&gt;Year: &lt;/b&gt;Freshman&lt;br/&gt;&lt;b&gt;School: &lt;/b&gt;Missouri Southern State&lt;br/&gt;&lt;b&gt;Hometown: &lt;/b&gt;Joplin&lt;br/&gt;&lt;b&gt;Major: &lt;/b&gt;Art Education&lt;/p&gt;&lt;p&gt;&lt;a href="http://www.collegehumor.com/cutecollegegirl/SamanthaH" target="_blank" class="image"&gt;&lt;img src="http://szabster.net/images/cutecollegegirl/Samantha-Haynes_035d88e36207389482948313e469e40d.jpg" alt="Samantha Haynes" /&gt;&lt;/a&gt;&lt;/p&gt;&lt;p&gt;Click &lt;a href="http://www.collegehumor.com/cutecollegegirl/SamanthaH" target="_blank"&gt;here&lt;/a&gt; for more.&lt;/p&gt;</content>
 	<category term="cutecollegegirl"/><category term="collegehumor"/><category term="samantha haynes"/>
 </entry>
 
@@ -2731,7 +2731,7 @@ More info at &lt;a title="The Free Software Song" href="http://en.wikipedia.org/
 	<updated>2008-08-17T00:00:00+02:00</updated>
 	<id>http://szabster.net/2008/8/17/freedroid</id>
 	<content type="html">&lt;p&gt;It was a long time since I last posted about a game, so here we go "FreeDroid" :)&lt;/p&gt;
-&lt;p&gt;&lt;a class="image" href="/images/2008/08/screenshot-freedroidrpg-011svn.png"&gt;&lt;img class="alignnone size-thumbnail wp-image-269" title="screenshot-freedroidrpg-011svn" src="/images/2008/08/screenshot-freedroidrpg-011svn-400x300.png" alt="" width="400" height="300" /&gt;&lt;/a&gt;&lt;/p&gt;</content>
+&lt;p&gt;&lt;a class="image" href="http://szabster.net/images/2008/08/screenshot-freedroidrpg-011svn.png"&gt;&lt;img class="alignnone size-thumbnail wp-image-269" title="screenshot-freedroidrpg-011svn" src="http://szabster.net/images/2008/08/screenshot-freedroidrpg-011svn-400x300.png" alt="" width="400" height="300" /&gt;&lt;/a&gt;&lt;/p&gt;</content>
 	<category term="game"/><category term="linux"/><category term="ubuntu"/><category term="freedroid"/><category term="rpg"/>
 </entry>
 
@@ -2741,7 +2741,7 @@ More info at &lt;a title="The Free Software Song" href="http://en.wikipedia.org/
 	<updated>2008-07-27T00:00:00+02:00</updated>
 	<id>http://szabster.net/2008/7/27/moved-to-eclipse</id>
 	<content type="html">&lt;p&gt;I've been living with GEdit + a few plugins, but today I moved my project to Eclipse with the C/C++ extensions. It took a bit longer to setup everything, but in the end, I got everything plus a lot more.&lt;/p&gt;
-&lt;p&gt;&lt;a class="image" href="/images/2008/07/screenshot-1.png"&gt;&lt;img class="alignnone size-thumbnail wp-image-263" title="Eclipse" src="/images/2008/07/screenshot-1-400x132.png" alt="" width="400" height="132" /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class="image" href="http://szabster.net/images/2008/07/screenshot-1.png"&gt;&lt;img class="alignnone size-thumbnail wp-image-263" title="Eclipse" src="http://szabster.net/images/2008/07/screenshot-1-400x132.png" alt="" width="400" height="132" /&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;I also customized the color scheme a bit and changed the font to Bitstream Vera Sans Mono .&lt;/p&gt;</content>
 	<category term="c"/><category term="eclipse"/>
 </entry>
@@ -2761,7 +2761,7 @@ More info at &lt;a title="The Free Software Song" href="http://en.wikipedia.org/
 	<link href="http://szabster.net/2008/7/24/no-strings-attached"/>
 	<updated>2008-07-24T00:00:00+02:00</updated>
 	<id>http://szabster.net/2008/7/24/no-strings-attached</id>
-	<content type="html">&lt;p&gt;&lt;a class="image" href="/images/2008/07/oral.jpg"&gt;&lt;img class="alignnone size-full wp-image-255" title="oral" src="/images/2008/07/oral.jpg" alt="" width="350" height="477" /&gt;&lt;/a&gt;&lt;/p&gt;</content>
+	<content type="html">&lt;p&gt;&lt;a class="image" href="http://szabster.net/images/2008/07/oral.jpg"&gt;&lt;img class="alignnone size-full wp-image-255" title="oral" src="http://szabster.net/images/2008/07/oral.jpg" alt="" width="350" height="477" /&gt;&lt;/a&gt;&lt;/p&gt;</content>
 	<category term="hot"/><category term="meal"/><category term="husband"/><category term="wife"/><category term="oral"/>
 </entry>
 
@@ -2793,7 +2793,7 @@ More info at &lt;a title="The Free Software Song" href="http://en.wikipedia.org/
 	<updated>2008-07-14T00:00:00+02:00</updated>
 	<id>http://szabster.net/2008/7/14/google-desktop-google-gadgets</id>
 	<content type="html">&lt;p&gt;Here we go :) I installed Google Desktop and Google Gadgets on my Ubuntu box. Personally I find the RSS feed and the Google Calendar gadgets the most useful :)&lt;/p&gt;
-&lt;p&gt;&lt;a class="image" href="/images/2008/07/2008-07-14-200859_2720x900_scrot.jpg"&gt;&lt;img class="alignnone size-thumbnail wp-image-245" title="2008-07-14-200859_2720x900_scrot" src="/images/2008/07/2008-07-14-200859_2720x900_scrot-400x132.jpg" alt="" width="400" height="132" /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class="image" href="http://szabster.net/images/2008/07/2008-07-14-200859_2720x900_scrot.jpg"&gt;&lt;img class="alignnone size-thumbnail wp-image-245" title="2008-07-14-200859_2720x900_scrot" src="http://szabster.net/images/2008/07/2008-07-14-200859_2720x900_scrot-400x132.jpg" alt="" width="400" height="132" /&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Hmm ... what else you can see there? Well, the &lt;a href="http://apricot.blender.org"&gt;Apricot&lt;/a&gt; production SVN + the Blender Apricot branch which is also compiling on the right side, and some other random stuff :P&lt;/p&gt;
 &lt;p&gt;N.B: the name of the girl in the background is Valeria :P&lt;/p&gt;</content>
 	<category term="google"/><category term="desktop"/><category term="gadgets"/><category term="search"/>
@@ -2805,7 +2805,7 @@ More info at &lt;a title="The Free Software Song" href="http://en.wikipedia.org/
 	<updated>2008-07-01T00:00:00+02:00</updated>
 	<id>http://szabster.net/2008/7/1/big-buck-bunny</id>
 	<content type="html">&lt;p&gt;A while back I posted about a similar movie created by the &lt;em&gt;Orange Open Project&lt;/em&gt; using entirely with open source software (Blender, etc), it was called &lt;em&gt;Elephants Dream&lt;/em&gt;, and now here we go again with &lt;em&gt;Big Buck Bunny&lt;/em&gt; ... Be sure to check out the project at &lt;a title="Go!" href="http://www.bigbuckbunny.org" target="_blank"&gt;BigBuckBunny.org&lt;/a&gt; and download the movie.&lt;/p&gt;
-&lt;p&gt;&lt;a class="image" href="/images/2008/07/poster_bunny_bunnysize.jpg"&gt;&lt;img class="alignnone size-thumbnail wp-image-241" title="poster_bunny_bunnysize" src="/images/2008/07/poster_bunny_bunnysize-265x400.jpg" alt="" width="265" height="400" /&gt;&lt;/a&gt;&lt;/p&gt;</content>
+&lt;p&gt;&lt;a class="image" href="http://szabster.net/images/2008/07/poster_bunny_bunnysize.jpg"&gt;&lt;img class="alignnone size-thumbnail wp-image-241" title="poster_bunny_bunnysize" src="http://szabster.net/images/2008/07/poster_bunny_bunnysize-265x400.jpg" alt="" width="265" height="400" /&gt;&lt;/a&gt;&lt;/p&gt;</content>
 	<category term="blender"/><category term="movie"/><category term="open"/><category term="source"/><category term="orange"/><category term="animation"/><category term="big"/><category term="buck"/><category term="bunny"/>
 </entry>
 
@@ -2817,13 +2817,13 @@ More info at &lt;a title="The Free Software Song" href="http://en.wikipedia.org/
 	<content type="html">&lt;p&gt;I do lots of coding in different languages and under Linux, I use the excellent light-weight GEdit. It's really important to find a color scheme + font which really suits your needs, because you need a pleasant environment to work in on day to day basis.&lt;/p&gt;
 &lt;p&gt;I found the theme, which is the &lt;em&gt;text-mate like&lt;/em&gt; &lt;em&gt;"DarkMate"&lt;/em&gt; ( if I remember well I posted about this one ), as for the font I was oscillating between &lt;em&gt;"MonoSpace"&lt;/em&gt; and &lt;em&gt;"DejaVu Sans Mono"&lt;/em&gt; ... here they are side by side:&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;&lt;strong&gt;MonoSpace&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a class="image" href="/images/2008/06/gedit_monospace.png"&gt;&lt;img class="alignnone size-thumbnail wp-image-236" title="gedit_monospace" src="/images/2008/06/gedit_monospace-400x221.png" alt="" width="400" height="221" /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class="image" href="http://szabster.net/images/2008/06/gedit_monospace.png"&gt;&lt;img class="alignnone size-thumbnail wp-image-236" title="gedit_monospace" src="http://szabster.net/images/2008/06/gedit_monospace-400x221.png" alt="" width="400" height="221" /&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;&lt;strong&gt;DejaVu Sans Mono&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a class="image" href="/images/2008/06/dejavu_sans_mono_gedit.png"&gt;&lt;img class="alignnone size-thumbnail wp-image-237" title="dejavu_sans_mono_gedit" src="/images/2008/06/dejavu_sans_mono_gedit-400x221.png" alt="" width="400" height="221" /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class="image" href="http://szabster.net/images/2008/06/dejavu_sans_mono_gedit.png"&gt;&lt;img class="alignnone size-thumbnail wp-image-237" title="dejavu_sans_mono_gedit" src="http://szabster.net/images/2008/06/dejavu_sans_mono_gedit-400x221.png" alt="" width="400" height="221" /&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Well, there is no big difference between the two, but recently I stumbled across the &lt;em&gt;"Droid Sans Mono&lt;/em&gt;", here is a screenshot:&lt;/p&gt;
-&lt;p&gt;&lt;a class="image" href="/images/2008/06/droid_sans_mono_gedit.png"&gt;&lt;img class="alignnone size-thumbnail wp-image-238" title="droid_sans_mono_gedit" src="/images/2008/06/droid_sans_mono_gedit-400x221.png" alt="" width="400" height="221" /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class="image" href="http://szabster.net/images/2008/06/droid_sans_mono_gedit.png"&gt;&lt;img class="alignnone size-thumbnail wp-image-238" title="droid_sans_mono_gedit" src="http://szabster.net/images/2008/06/droid_sans_mono_gedit-400x221.png" alt="" width="400" height="221" /&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;This has that smoothed &lt;em&gt;MacOSX like&lt;/em&gt; font look, so this is definitely &lt;em&gt;the droid I was looking for&lt;/em&gt; so long!&lt;/p&gt;
-&lt;p&gt;Since is it distributed under the &lt;em&gt;Apache license&lt;/em&gt;, I also uploaded a copy just in case it disappears from the other locations. You can grab it right &lt;a class="image" href="/images/2008/06/droidsansmono.zip"&gt;here&lt;/a&gt; .&lt;/p&gt;
+&lt;p&gt;Since is it distributed under the &lt;em&gt;Apache license&lt;/em&gt;, I also uploaded a copy just in case it disappears from the other locations. You can grab it right &lt;a class="image" href="http://szabster.net/images/2008/06/droidsansmono.zip"&gt;here&lt;/a&gt; .&lt;/p&gt;
 &lt;p&gt;Happy Coding!&lt;/p&gt;</content>
 	<category term="linux"/><category term="ubuntu"/><category term="textmate"/><category term="gedit"/><category term="scheme"/><category term="color"/><category term="mono spaced font"/><category term="darkmate"/><category term="coding"/>
 </entry>
@@ -2833,12 +2833,12 @@ More info at &lt;a title="The Free Software Song" href="http://en.wikipedia.org/
 	<link href="http://szabster.net/2008/6/15/is-the-shit"/>
 	<updated>2008-06-15T00:00:00+02:00</updated>
 	<id>http://szabster.net/2008/6/15/is-the-shit</id>
-	<content type="html">&lt;p&gt;&lt;a class="image" href="/images/2008/06/cbinsxfl.jpg"&gt;&lt;img class="alignnone size-full wp-image-228" title="cbinsxfl" src="/images/2008/06/cbinsxfl.jpg" alt="" width="500" height="437" /&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;img class="alignnone size-full wp-image-229" title="dygmjspz" src="/images/2008/06/dygmjspz.jpg" alt="" width="413" height="456" /&gt;
+	<content type="html">&lt;p&gt;&lt;a class="image" href="http://szabster.net/images/2008/06/cbinsxfl.jpg"&gt;&lt;img class="alignnone size-full wp-image-228" title="cbinsxfl" src="http://szabster.net/images/2008/06/cbinsxfl.jpg" alt="" width="500" height="437" /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;img class="alignnone size-full wp-image-229" title="dygmjspz" src="http://szabster.net/images/2008/06/dygmjspz.jpg" alt="" width="413" height="456" /&gt;
 
-&lt;p&gt;&lt;a class="image" href="/images/2008/06/hdfqrfty.jpg"&gt;&lt;img class="alignnone size-thumbnail wp-image-230" title="hdfqrfty" src="/images/2008/06/hdfqrfty-400x188.jpg" alt="" width="400" height="188" /&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a class="image" href="/images/2008/06/jmthpumr.jpg"&gt;&lt;img class="alignnone size-thumbnail wp-image-231" title="jmthpumr" src="/images/2008/06/jmthpumr-400x287.jpg" alt="" width="400" height="287" /&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a class="image" href="/images/2008/06/nzrgvlrk.jpg"&gt;&lt;img class="alignnone size-thumbnail wp-image-232" title="nzrgvlrk" src="/images/2008/06/nzrgvlrk-400x331.jpg" alt="" width="400" height="331" /&gt;&lt;/a&gt;&lt;/p&gt;</content>
+&lt;p&gt;&lt;a class="image" href="http://szabster.net/images/2008/06/hdfqrfty.jpg"&gt;&lt;img class="alignnone size-thumbnail wp-image-230" title="hdfqrfty" src="http://szabster.net/images/2008/06/hdfqrfty-400x188.jpg" alt="" width="400" height="188" /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class="image" href="http://szabster.net/images/2008/06/jmthpumr.jpg"&gt;&lt;img class="alignnone size-thumbnail wp-image-231" title="jmthpumr" src="http://szabster.net/images/2008/06/jmthpumr-400x287.jpg" alt="" width="400" height="287" /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class="image" href="http://szabster.net/images/2008/06/nzrgvlrk.jpg"&gt;&lt;img class="alignnone size-thumbnail wp-image-232" title="nzrgvlrk" src="http://szabster.net/images/2008/06/nzrgvlrk-400x331.jpg" alt="" width="400" height="331" /&gt;&lt;/a&gt;&lt;/p&gt;</content>
 	<category term="humor"/><category term="is"/><category term="the"/><category term="shit"/><category term="funny"/><category term="pictures"/><category term="photos"/>
 </entry>
 
@@ -2848,7 +2848,7 @@ More info at &lt;a title="The Free Software Song" href="http://en.wikipedia.org/
 	<updated>2008-06-08T00:00:00+02:00</updated>
 	<id>http://szabster.net/2008/6/8/lol</id>
 	<content type="html">&lt;p&gt;I just had to post this ... click on the image for the bigger version :)&lt;/p&gt;
-&lt;p&gt;&lt;a class="image" href="/images/2008/06/12127624005pjj3kxwq4_1_1_l.jpg"&gt;&lt;img class="alignnone size-medium wp-image-226" title="12127624005pjj3kxwq4_1_1_l" src="/images/2008/06/12127624005pjj3kxwq4_1_1_l-500x452.jpg" alt="" width="500" height="452" /&gt;&lt;/a&gt;&lt;/p&gt;</content>
+&lt;p&gt;&lt;a class="image" href="http://szabster.net/images/2008/06/12127624005pjj3kxwq4_1_1_l.jpg"&gt;&lt;img class="alignnone size-medium wp-image-226" title="12127624005pjj3kxwq4_1_1_l" src="http://szabster.net/images/2008/06/12127624005pjj3kxwq4_1_1_l-500x452.jpg" alt="" width="500" height="452" /&gt;&lt;/a&gt;&lt;/p&gt;</content>
 	<category term="7.10"/><category term="humor"/><category term="ubuntu"/><category term="windows"/><category term="lol"/><category term="lamer"/><category term="joke"/><category term="amazon"/>
 </entry>
 
@@ -2916,7 +2916,7 @@ More info at &lt;a title="The Free Software Song" href="http://en.wikipedia.org/
 	<updated>2008-05-29T00:00:00+02:00</updated>
 	<id>http://szabster.net/2008/5/29/textmate-like-color-scheme-for-gedit</id>
 	<content type="html">&lt;p&gt;I found this awesome Textmate like color scheme for GEdit &lt;a title="Get it!" href="http://grigio.org/textmate_gedit_few_steps" target="_blank"&gt;here&lt;/a&gt; . You can see it in action in the screenshot below.&lt;/p&gt;
-&lt;p&gt;&lt;a class="image" href="/images/2008/05/screenshot.jpg"&gt;&lt;img class="alignnone size-thumbnail wp-image-220" title="screenshot" src="/images/2008/05/screenshot-400x132.jpg" alt="" width="400" height="132" /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class="image" href="http://szabster.net/images/2008/05/screenshot.jpg"&gt;&lt;img class="alignnone size-thumbnail wp-image-220" title="screenshot" src="http://szabster.net/images/2008/05/screenshot-400x132.jpg" alt="" width="400" height="132" /&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;(oops, you can see OpenSolaris booting from the Live CD on the right, and on the left a portion of a component from my 3D engine )&lt;/p&gt;</content>
 	<category term="open"/><category term="solaris"/><category term="textmate"/><category term="gedit"/><category term="scheme"/><category term="color"/><category term="syntax"/><category term="highlighting"/>
 </entry>
@@ -2945,7 +2945,7 @@ ls *.png | awk &lt;span class="s1"&gt;&amp;#39;{ printf(&amp;quot;Converting %s 
 	<updated>2008-05-26T00:00:00+02:00</updated>
 	<id>http://szabster.net/2008/5/26/beach-volley</id>
 	<content type="html">&lt;p&gt;&lt;a href="http://www.flickr.com/photos/gymstar/2513681326/" class="image"&gt;
-&lt;img class="alignnone size-full wp-image-218" title="Beach Volley" src="/images/2008/05/2513681326_7db6159bd0.jpg" alt="" width="319" height="500" /&gt;
+&lt;img class="alignnone size-full wp-image-218" title="Beach Volley" src="http://szabster.net/images/2008/05/2513681326_7db6159bd0.jpg" alt="" width="319" height="500" /&gt;
 &lt;/a&gt;&lt;/p&gt;</content>
 	<category term="chick"/><category term="girl"/><category term="hot"/><category term="beach"/><category term="volley"/><category term="hottie"/><category term="sexy"/>
 </entry>
@@ -3026,7 +3026,7 @@ ls *.png | awk &lt;span class="s1"&gt;&amp;#39;{ printf(&amp;quot;Converting %s 
 	<id>http://szabster.net/2008/5/20/spread-linux-with-a-chick</id>
 	<content type="html">&lt;p&gt;Original source &lt;a title="Click and go! Wohooo!" href="http://florchakh.com/2007/08/15/ubuntu-girl-spread-the-linux-with-a-chick.html" target="_self"&gt;here&lt;/a&gt; .&lt;/p&gt;
 &lt;p&gt;&lt;a href="http://www.ubuntu.com" class="image"&gt;
-&lt;img class="alignnone size-full wp-image-213 alignleft" src="/images/2008/05/ubuntu-girl.jpg" alt="Ubuntu Girl" width="498" height="863" /&gt;
+&lt;img class="alignnone size-full wp-image-213 alignleft" src="http://szabster.net/images/2008/05/ubuntu-girl.jpg" alt="Ubuntu Girl" width="498" height="863" /&gt;
 &lt;/a&gt;&lt;/p&gt;</content>
 	<category term="chick"/><category term="free"/><category term="gnu"/><category term="linux"/><category term="open"/><category term="source"/><category term="spread"/><category term="ubuntu"/>
 </entry>
@@ -3113,8 +3113,8 @@ mv Core/_Build.cpp Core/Build.cpp
 	<updated>2008-05-04T00:00:00+02:00</updated>
 	<id>http://szabster.net/2008/5/4/nimuh</id>
 	<content type="html">&lt;p&gt;This is another sweet game i stumbled across a while ago, but I don't think that I blogged about it, or maybe I'm wrong? Hmm... anyway, here are two screenshots as a teaser, and if you like it then grab it over &lt;a title=")" href="http://www.nimuh.com/" target="_blank"&gt;here&lt;/a&gt; .&lt;/p&gt;
-&lt;p&gt;&lt;a class="image" href="/images/2008/05/screenshot-nimuh-en-busca-del-tesoro-andaluz-1.png"&gt;&lt;img class="alignnone size-medium wp-image-198" src="/images/2008/05/screenshot-nimuh-en-busca-del-tesoro-andaluz-1.png?w=300" alt="" width="300" height="225" /&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a class="image" href="/images/2008/05/screenshot-nimuh-en-busca-del-tesoro-andaluz.png"&gt;&lt;img class="alignnone size-medium wp-image-199" src="/images/2008/05/screenshot-nimuh-en-busca-del-tesoro-andaluz.png?w=300" alt="" width="300" height="225" /&gt;&lt;/a&gt;&lt;/p&gt;</content>
+&lt;p&gt;&lt;a class="image" href="http://szabster.net/images/2008/05/screenshot-nimuh-en-busca-del-tesoro-andaluz-1.png"&gt;&lt;img class="alignnone size-medium wp-image-198" src="http://szabster.net/images/2008/05/screenshot-nimuh-en-busca-del-tesoro-andaluz-1.png?w=300" alt="" width="300" height="225" /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class="image" href="http://szabster.net/images/2008/05/screenshot-nimuh-en-busca-del-tesoro-andaluz.png"&gt;&lt;img class="alignnone size-medium wp-image-199" src="http://szabster.net/images/2008/05/screenshot-nimuh-en-busca-del-tesoro-andaluz.png?w=300" alt="" width="300" height="225" /&gt;&lt;/a&gt;&lt;/p&gt;</content>
 	<category term="game"/><category term="linux"/><category term="nimuh"/><category term="play"/><category term="ubuntu"/>
 </entry>
 
@@ -3125,7 +3125,7 @@ mv Core/_Build.cpp Core/Build.cpp
 	<id>http://szabster.net/2008/5/3/digg-a-tech-girl</id>
 	<content type="html">&lt;p&gt;Vote for &lt;a title=")" href="http://leahculver.com" target="_blank"&gt;&lt;em&gt;&lt;strong&gt;Leah Culver&lt;/strong&gt;&lt;/em&gt;&lt;/a&gt; on &lt;em&gt;Digg a Tech Girl&lt;/em&gt; by clicking right &lt;a title="Click &amp;amp; Vote!" href="http://www.digatechgirl.com/SiliconValley/Leah_Culver_-_Pownce_geek/" target="_blank"&gt;here&lt;/a&gt; .&lt;/p&gt;
 &lt;p&gt;&lt;a href="http://www.digatechgirl.com/SiliconValley/Leah_Culver_-_Pownce_geek/" target="_blank" class="image"&gt;
-&lt;img class="alignnone size-full wp-image-196" src="/images/2008/05/2585223_96f87acb5b.jpg" border="0" alt="" width="334" height="500" /&gt;
+&lt;img class="alignnone size-full wp-image-196" src="http://szabster.net/images/2008/05/2585223_96f87acb5b.jpg" border="0" alt="" width="334" height="500" /&gt;
 &lt;/a&gt;&lt;/p&gt;</content>
 	<category term="chick"/><category term="culver"/><category term="digg"/><category term="geek"/><category term="girl"/><category term="hot"/><category term="leah"/><category term="nerd"/><category term="tech"/><category term="vote"/>
 </entry>
@@ -3140,7 +3140,7 @@ mv Core/_Build.cpp Core/Build.cpp
 &lt;p&gt;I grabbed the sources and compiled it, because I prefer to compile myself where possible rather than installing precompiled packages.&lt;/p&gt;
 &lt;p&gt;( it uses "scons" instead of automake, or jam )&lt;/p&gt;
 &lt;p&gt;... here is an in-game screenshot:&lt;/p&gt;
-&lt;p&gt;&lt;a class="image" href="/images/2008/05/screenshot-battle-tanks-5800-beta.png"&gt;&lt;img class="alignnone size-medium wp-image-194" src="/images/2008/05/screenshot-battle-tanks-5800-beta.png?w=300" alt="" width="300" height="225" /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class="image" href="http://szabster.net/images/2008/05/screenshot-battle-tanks-5800-beta.png"&gt;&lt;img class="alignnone size-medium wp-image-194" src="http://szabster.net/images/2008/05/screenshot-battle-tanks-5800-beta.png?w=300" alt="" width="300" height="225" /&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;If I raised your interest check it out &lt;a href="http://btanks.sourceforge.net" target="_blank"&gt;here&lt;/a&gt; .&lt;/p&gt;</content>
 	<category term="game"/><category term="day"/><category term="battle"/><category term="tanks"/><category term="linux"/>
 </entry>
@@ -3190,7 +3190,7 @@ She's trading her win box for a white Apple laptop&lt;/p&gt;
 	<link href="http://szabster.net/2008/4/29/just-because"/>
 	<updated>2008-04-29T00:00:00+02:00</updated>
 	<id>http://szabster.net/2008/4/29/just-because</id>
-	<content type="html">&lt;p&gt;&lt;a class="image" href="/images/2008/04/macgenius.jpg"&gt;&lt;img style="border-right:0;border-top:0;border-left:0;border-bottom:0;" height="382" alt="macgenius" src="/images/2008/04/macgenius-thumb.jpg" width="448" border="0" /&gt;&lt;/a&gt;&lt;/p&gt;</content>
+	<content type="html">&lt;p&gt;&lt;a class="image" href="http://szabster.net/images/2008/04/macgenius.jpg"&gt;&lt;img style="border-right:0;border-top:0;border-left:0;border-bottom:0;" height="382" alt="macgenius" src="http://szabster.net/images/2008/04/macgenius-thumb.jpg" width="448" border="0" /&gt;&lt;/a&gt;&lt;/p&gt;</content>
 	<category term="chick"/><category term="geek"/><category term="girl"/><category term="humor"/><category term="mac"/><category term="macosx"/><category term="nerd"/>
 </entry>
 
@@ -3200,7 +3200,7 @@ She's trading her win box for a white Apple laptop&lt;/p&gt;
 	<updated>2008-04-20T00:00:00+02:00</updated>
 	<id>http://szabster.net/2008/4/20/73labcom</id>
 	<content type="html">&lt;p&gt;&lt;a href="http://www.73lab.com" target="_blank" class="image"&gt;
-&lt;img class="alignnone size-full wp-image-181" src="/images/2008/04/banner_miss2_73lab.jpg" alt="" /&gt;
+&lt;img class="alignnone size-full wp-image-181" src="http://szabster.net/images/2008/04/banner_miss2_73lab.jpg" alt="" /&gt;
 &lt;/a&gt;&lt;/p&gt;</content>
 	<category term="design"/><category term="draw"/><category term="e-card"/><category term="ecard"/><category term="gimp"/><category term="graphics"/><category term="inkscape"/><category term="media"/><category term="svg"/><category term="ubuntu"/><category term="vector"/><category term="wallpaper"/>
 </entry>
@@ -3213,8 +3213,8 @@ She's trading her win box for a white Apple laptop&lt;/p&gt;
 	<content type="html">&lt;p&gt;XMoto is a really really good cross platform open source 'Elma' clone with thousands of user created levels.&lt;/p&gt;
 &lt;p&gt;If you liked Elma, you will love XMoto for sure :)&lt;/p&gt;
 &lt;p&gt;Here are some screenshots ... if you like what you see then grab a copy right &lt;a title="Grab Xmoto!" href="http://xmoto.tuxfamily.org/" target="_blank"&gt;here&lt;/a&gt; .&lt;/p&gt;
-&lt;p&gt;&lt;a class="image" href="/images/2008/04/screenshot-042.png"&gt;&lt;img class="alignnone size-medium wp-image-178" src="/images/2008/04/screenshot-042.png?w=400" alt="" width="400" height="300" /&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a class="image" href="/images/2008/04/screenshot-042-1.png"&gt;&lt;img class="alignnone size-medium wp-image-179" src="/images/2008/04/screenshot-042-1.png?w=400" alt="" width="400" height="300" /&gt;&lt;/a&gt;&lt;/p&gt;</content>
+&lt;p&gt;&lt;a class="image" href="http://szabster.net/images/2008/04/screenshot-042.png"&gt;&lt;img class="alignnone size-medium wp-image-178" src="http://szabster.net/images/2008/04/screenshot-042.png?w=400" alt="" width="400" height="300" /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class="image" href="http://szabster.net/images/2008/04/screenshot-042-1.png"&gt;&lt;img class="alignnone size-medium wp-image-179" src="http://szabster.net/images/2008/04/screenshot-042-1.png?w=400" alt="" width="400" height="300" /&gt;&lt;/a&gt;&lt;/p&gt;</content>
 	<category term="elma"/><category term="game"/><category term="linux"/><category term="sdl"/><category term="ubuntu"/><category term="xmoto"/>
 </entry>
 
@@ -3243,8 +3243,8 @@ She's trading her win box for a white Apple laptop&lt;/p&gt;
 	<updated>2008-04-13T00:00:00+02:00</updated>
 	<id>http://szabster.net/2008/4/13/rip</id>
 	<content type="html">&lt;p&gt;I've seen that lots of people are looking for these two wallpapers so I decided to "host" a copy of them over my place. Enjoy! (click for the bigger version )&lt;/p&gt;
-&lt;p&gt;&lt;a class="image" href="/images/2008/04/51275-ubuntu-titi-color.jpg"&gt;&lt;img class="alignnone size-medium wp-image-172" src="/images/2008/04/51275-ubuntu-titi-color.jpg?w=400" alt="" width="400" height="319" /&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a class="image" href="/images/2008/04/70889-1.png"&gt;&lt;img class="alignnone size-medium wp-image-173" src="/images/2008/04/70889-1.png" alt="" width="211" height="300" /&gt;&lt;/a&gt;&lt;/p&gt;</content>
+&lt;p&gt;&lt;a class="image" href="http://szabster.net/images/2008/04/51275-ubuntu-titi-color.jpg"&gt;&lt;img class="alignnone size-medium wp-image-172" src="http://szabster.net/images/2008/04/51275-ubuntu-titi-color.jpg?w=400" alt="" width="400" height="319" /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class="image" href="http://szabster.net/images/2008/04/70889-1.png"&gt;&lt;img class="alignnone size-medium wp-image-173" src="http://szabster.net/images/2008/04/70889-1.png" alt="" width="211" height="300" /&gt;&lt;/a&gt;&lt;/p&gt;</content>
 	<category term="ass"/><category term="background"/><category term="legs"/><category term="titi"/><category term="tits"/><category term="tux"/><category term="ubuntu"/><category term="wallpaper"/>
 </entry>
 
@@ -3274,13 +3274,13 @@ She's trading her win box for a white Apple laptop&lt;/p&gt;
 &lt;p&gt;(I highlighted the customizable parts for convenience)&lt;/p&gt;
 &lt;p&gt;Voila!!!&lt;/p&gt;
 &lt;p&gt;Here are a few wallpapers i "forged" with this little script :) Enjoy! (click to see the bigger version)&lt;/p&gt;
-&lt;p&gt;&lt;a class="image" href="/images/2008/04/rihanna_wall1.png"&gt;&lt;img class="alignnone size-medium wp-image-162" src="/images/2008/04/rihanna_wall1.png?w=400" alt="" width="400" height="132" /&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a class="image" href="/images/2008/04/rihanna_wall2.png"&gt;&lt;img class="alignnone size-medium wp-image-163" src="/images/2008/04/rihanna_wall2.png?w=400" alt="" width="400" height="132" /&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a class="image" href="/images/2008/04/arielle_wall1.png"&gt;&lt;img class="alignnone size-medium wp-image-168" src="/images/2008/04/arielle_wall1.png?w=400" alt="" width="400" height="132" /&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a class="image" href="/images/2008/04/rihanna_wall3.png"&gt;&lt;img class="alignnone size-medium wp-image-164" src="/images/2008/04/rihanna_wall3.png?w=400" alt="" width="400" height="132" /&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a class="image" href="/images/2008/04/swanepoel_wall1.png"&gt;&lt;img class="alignnone size-medium wp-image-165" src="/images/2008/04/swanepoel_wall1.png?w=400" alt="" width="400" height="132" /&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a class="image" href="/images/2008/04/elisha_wall1.png"&gt;&lt;img class="alignnone size-medium wp-image-166" src="/images/2008/04/elisha_wall1.png?w=400" alt="" width="400" height="132" /&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a class="image" href="/images/2008/04/angelina_wall1.png"&gt;&lt;img class="alignnone size-medium wp-image-167" src="/images/2008/04/angelina_wall1.png?w=400" alt="" width="400" height="132" /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class="image" href="http://szabster.net/images/2008/04/rihanna_wall1.png"&gt;&lt;img class="alignnone size-medium wp-image-162" src="http://szabster.net/images/2008/04/rihanna_wall1.png?w=400" alt="" width="400" height="132" /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class="image" href="http://szabster.net/images/2008/04/rihanna_wall2.png"&gt;&lt;img class="alignnone size-medium wp-image-163" src="http://szabster.net/images/2008/04/rihanna_wall2.png?w=400" alt="" width="400" height="132" /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class="image" href="http://szabster.net/images/2008/04/arielle_wall1.png"&gt;&lt;img class="alignnone size-medium wp-image-168" src="http://szabster.net/images/2008/04/arielle_wall1.png?w=400" alt="" width="400" height="132" /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class="image" href="http://szabster.net/images/2008/04/rihanna_wall3.png"&gt;&lt;img class="alignnone size-medium wp-image-164" src="http://szabster.net/images/2008/04/rihanna_wall3.png?w=400" alt="" width="400" height="132" /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class="image" href="http://szabster.net/images/2008/04/swanepoel_wall1.png"&gt;&lt;img class="alignnone size-medium wp-image-165" src="http://szabster.net/images/2008/04/swanepoel_wall1.png?w=400" alt="" width="400" height="132" /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class="image" href="http://szabster.net/images/2008/04/elisha_wall1.png"&gt;&lt;img class="alignnone size-medium wp-image-166" src="http://szabster.net/images/2008/04/elisha_wall1.png?w=400" alt="" width="400" height="132" /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class="image" href="http://szabster.net/images/2008/04/angelina_wall1.png"&gt;&lt;img class="alignnone size-medium wp-image-167" src="http://szabster.net/images/2008/04/angelina_wall1.png?w=400" alt="" width="400" height="132" /&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Oh, I almost forgot to tell that &lt;a title="Click to visit!" href="http://www.ewallpapers.eu" target="_blank"&gt;EWallpapers.eu&lt;/a&gt; is my number #1 landing place when I'm looking for high resolution wide screen wallpapers ( but not only! ) and also &lt;a title="Click to visit!" href="http://www.hollywooddesktop.com/" target="_blank"&gt;Hollywood Desktop&lt;/a&gt;.&lt;/p&gt;</content>
 	<category term="dual"/><category term="imagemagick"/><category term="linux"/><category term="monitor"/><category term="twinview"/><category term="ubuntu"/><category term="wallpaper"/>
 </entry>
@@ -3291,7 +3291,7 @@ She's trading her win box for a white Apple laptop&lt;/p&gt;
 	<updated>2008-04-13T00:00:00+02:00</updated>
 	<id>http://szabster.net/2008/4/13/elephants-dream</id>
 	<content type="html">&lt;p&gt;&lt;a title="Elephants Dream" href="http://www.elephantsdream.org/" target="_blank"&gt;&lt;em&gt;Elephants Dream&lt;/em&gt;&lt;/a&gt; is the worlds first open movie,           made entirely with open source graphics software such as &lt;a href="http://www.blender.org/"&gt;Blender&lt;/a&gt;,             and with all production files freely available to use however           you please, under a &lt;a href="http://www.creativecommons.org/"&gt;Creative Commons&lt;/a&gt; license.&lt;/p&gt;
-&lt;p&gt;&lt;a class="image" href="/images/2008/04/s5_both.jpg"&gt;&lt;img class="alignnone size-medium wp-image-170" src="/images/2008/04/s5_both.jpg?w=400" alt="" width="400" height="225" /&gt;&lt;/a&gt;&lt;/p&gt;</content>
+&lt;p&gt;&lt;a class="image" href="http://szabster.net/images/2008/04/s5_both.jpg"&gt;&lt;img class="alignnone size-medium wp-image-170" src="http://szabster.net/images/2008/04/s5_both.jpg?w=400" alt="" width="400" height="225" /&gt;&lt;/a&gt;&lt;/p&gt;</content>
 	<category term="blender"/><category term="gimp"/><category term="linux"/><category term="movie"/><category term="open"/><category term="source"/><category term="tools"/><category term="ubuntu"/>
 </entry>
 
@@ -3308,10 +3308,10 @@ She's trading her win box for a white Apple laptop&lt;/p&gt;
 &lt;p&gt;wxWidgets takes quite some time to compile, even on my dual-core @ 1.8Ghz ... damn, usually I compile in a "yakuake" session so I can forget about it :P&lt;/p&gt;
 &lt;p&gt;One thing I noticed though, if I compiled wxWidgets with X11 the editor didn't flicker, but with GTK flickers heavily ...&lt;/p&gt;
 &lt;p&gt;I think that wouldn't be wrong if I would say that Glest is the best open source RTS at the moment in all means, graphics, ai, etc...&lt;/p&gt;
-&lt;p&gt;&lt;a class="image" href="/images/2008/03/glest_screenshot.png" title="glest_screenshot.png"&gt;&lt;img src="/images/2008/03/glest_screenshot.png" alt="glest_screenshot.png" height="353" width="563" /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class="image" href="http://szabster.net/images/2008/03/glest_screenshot.png" title="glest_screenshot.png"&gt;&lt;img src="http://szabster.net/images/2008/03/glest_screenshot.png" alt="glest_screenshot.png" height="353" width="563" /&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Anyway I'm planning to contribute to Glest ... maybe fixing some bugs, or making some improvements, we'll see ...&lt;/p&gt;
 &lt;p&gt;Until then, happy coding and may the source be with you!&lt;/p&gt;
-&lt;p&gt;&lt;a class="image" href="/images/2008/03/glest_screenshot-1.png" title="glest_screenshot-1.png"&gt;&lt;img src="/images/2008/03/glest_screenshot-1.png" alt="glest_screenshot-1.png" height="353" width="563" /&gt;&lt;/a&gt;&lt;/p&gt;</content>
+&lt;p&gt;&lt;a class="image" href="http://szabster.net/images/2008/03/glest_screenshot-1.png" title="glest_screenshot-1.png"&gt;&lt;img src="http://szabster.net/images/2008/03/glest_screenshot-1.png" alt="glest_screenshot-1.png" height="353" width="563" /&gt;&lt;/a&gt;&lt;/p&gt;</content>
 	<category term="glest"/><category term="rts"/><category term="game"/><category term="coding"/><category term="linux"/>
 </entry>
 
@@ -3321,9 +3321,9 @@ She's trading her win box for a white Apple laptop&lt;/p&gt;
 	<updated>2008-03-07T00:00:00+02:00</updated>
 	<id>http://szabster.net/2008/3/7/live-on-care-is-lame-big-time</id>
 	<content type="html">&lt;p&gt;Awwwwww ... a virus ... how nice ???&lt;/p&gt;
-&lt;p&gt;&lt;a class="image" href="/images/2008/03/clipboard01.png" title="clipboard01.png"&gt;&lt;img src="/images/2008/03/clipboard01.png" alt="clipboard01.png" /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class="image" href="http://szabster.net/images/2008/03/clipboard01.png" title="clipboard01.png"&gt;&lt;img src="http://szabster.net/images/2008/03/clipboard01.png" alt="clipboard01.png" /&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;... and the contents of the "virus" ... haha!&lt;/p&gt;
-&lt;p&gt;&lt;a class="image" href="/images/2008/03/clipboard02.png" title="clipboard02.png"&gt;&lt;img src="/images/2008/03/clipboard02.png" alt="clipboard02.png" /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class="image" href="http://szabster.net/images/2008/03/clipboard02.png" title="clipboard02.png"&gt;&lt;img src="http://szabster.net/images/2008/03/clipboard02.png" alt="clipboard02.png" /&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;... this is soooooooooo lame, it seriously cracked me up :)&lt;/p&gt;</content>
 	<category term="microsoft"/><category term="lame"/><category term="bug"/><category term="liveoncare"/><category term="fail"/>
 </entry>
@@ -3333,7 +3333,7 @@ She's trading her win box for a white Apple laptop&lt;/p&gt;
 	<link href="http://szabster.net/2008/3/4/operation-sexy-men-vids-yay"/>
 	<updated>2008-03-04T00:00:00+02:00</updated>
 	<id>http://szabster.net/2008/3/4/operation-sexy-men-vids-yay</id>
-	<content type="html">&lt;p&gt;&lt;a class="image" href="/images/2008/03/sexy_man_vids.png" title="sexy_man_vids.png"&gt;&lt;img src="/images/2008/03/sexy_man_vids.png" alt="sexy_man_vids.png" /&gt;&lt;/a&gt;&lt;/p&gt;</content>
+	<content type="html">&lt;p&gt;&lt;a class="image" href="http://szabster.net/images/2008/03/sexy_man_vids.png" title="sexy_man_vids.png"&gt;&lt;img src="http://szabster.net/images/2008/03/sexy_man_vids.png" alt="sexy_man_vids.png" /&gt;&lt;/a&gt;&lt;/p&gt;</content>
 	<category term="facebook"/><category term="lame"/><category term="joke"/><category term="linnea"/><category term="bogdan"/><category term="noah"/><category term="szaby"/><category term="sexy"/>
 </entry>
 
@@ -3343,7 +3343,7 @@ She's trading her win box for a white Apple laptop&lt;/p&gt;
 	<updated>2008-03-01T00:00:00+02:00</updated>
 	<id>http://szabster.net/2008/3/1/my-new-favorite-geek-chick</id>
 	<content type="html">&lt;p&gt;My new favorite geek chick is &lt;a href="http://leahculver.com/" title="Leah Culver" target="_blank"&gt;&lt;span style="font-weight:bold;" class="Apple-style-span"&gt;Leah Culver&lt;/span&gt;&lt;/a&gt;. You can see her &lt;span style="font-style:italic;" class="Apple-style-span"&gt;"in action"&lt;/span&gt; in this &lt;span style="font-weight:bold;" class="Apple-style-span"&gt;Systm&lt;/span&gt; episode by clicking &lt;a href="http://revision3.com/systm/cracked/" title="Systm" target="_blank"&gt; here &lt;/a&gt;.&lt;/p&gt;
-&lt;img src="/images/2008/03/665437087_4e09a2b1d4.jpg" alt="665437087_4e09a2b1d4.jpg" /&gt;</content>
+&lt;img src="http://szabster.net/images/2008/03/665437087_4e09a2b1d4.jpg" alt="665437087_4e09a2b1d4.jpg" /&gt;</content>
 	<category term="leah"/><category term="culver"/><category term="girl"/><category term="geek"/><category term="chick"/><category term="sexy"/><category term="favorite"/>
 </entry>
 
@@ -3353,7 +3353,7 @@ She's trading her win box for a white Apple laptop&lt;/p&gt;
 	<updated>2008-03-01T00:00:00+02:00</updated>
 	<id>http://szabster.net/2008/3/1/my-final-compiz-theme-wallpaper</id>
 	<content type="html">&lt;p&gt;Here is a screenshot with my favorite Compiz Theme and wallpaper featuring this great black sista' ... Ciara :D&lt;/p&gt;
-&lt;p&gt;&lt;a class="image" href="/images/2008/03/screenshot_latest.png" title="screenshot_latest.png"&gt;&lt;img src="/images/2008/03/screenshot_latest.png" alt="screenshot_latest.png" height="415" width="653" /&gt;&lt;/a&gt;&lt;/p&gt;</content>
+&lt;p&gt;&lt;a class="image" href="http://szabster.net/images/2008/03/screenshot_latest.png" title="screenshot_latest.png"&gt;&lt;img src="http://szabster.net/images/2008/03/screenshot_latest.png" alt="screenshot_latest.png" height="415" width="653" /&gt;&lt;/a&gt;&lt;/p&gt;</content>
 	<category term="linux"/><category term="compiz"/><category term="theme"/><category term="wallpaper"/><category term="ciara"/>
 </entry>
 
@@ -3373,7 +3373,7 @@ She's trading her win box for a white Apple laptop&lt;/p&gt;
 
 &lt;p&gt;Then restart compiz, and the borders should appear. Of course this assumes that you have installed the "NVidia" drivers (restricted) .&lt;/p&gt;
 &lt;p&gt;I also compiled the latest version of the "Kiba Dock", and played around with the Compiz settings. Now i'm in the hunt for the perfect theme and maybe background ...&lt;/p&gt;
-&lt;p&gt;&lt;a class="image" href="/images/2008/02/compiz_ubu.png" title="compiz_ubu.png"&gt;&lt;img src="/images/2008/02/compiz_ubu.png" alt="compiz_ubu.png" height="409" width="648" /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class="image" href="http://szabster.net/images/2008/02/compiz_ubu.png" title="compiz_ubu.png"&gt;&lt;img src="http://szabster.net/images/2008/02/compiz_ubu.png" alt="compiz_ubu.png" height="409" width="648" /&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;May the source be with you, and good night :D&lt;/p&gt;
 &lt;p&gt;PS: until now I didn't had the will to play around with these extensively ... haha!&lt;/p&gt;</content>
 	<category term="linux"/><category term="ubuntu"/><category term="compiz"/><category term="kiba"/><category term="dock"/><category term="nvidia"/><category term="border"/><category term="fix"/>
@@ -3385,7 +3385,7 @@ She's trading her win box for a white Apple laptop&lt;/p&gt;
 	<updated>2008-02-28T00:00:00+02:00</updated>
 	<id>http://szabster.net/2008/2/28/spring</id>
 	<content type="html">&lt;p&gt;Today I grabbed the latest version of the "Spring" RTS from the svn, and compiled it ... it took quite some time, but worth it. Then I downloaded a few maps and one mod to test it out... so here is a screenshot :D&lt;/p&gt;
-&lt;p&gt;&lt;a class="image" href="/images/2008/02/spring.png" title="spring.png"&gt;&lt;img src="/images/2008/02/spring.png" alt="spring.png" height="445" width="709" /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class="image" href="http://szabster.net/images/2008/02/spring.png" title="spring.png"&gt;&lt;img src="http://szabster.net/images/2008/02/spring.png" alt="spring.png" height="445" width="709" /&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Looks really nice ... i like it!&lt;/p&gt;</content>
 	<category term="game"/><category term="linux"/><category term="rts"/><category term="spring"/>
 </entry>
@@ -3395,7 +3395,7 @@ She's trading her win box for a white Apple laptop&lt;/p&gt;
 	<link href="http://szabster.net/2008/2/27/nice-stumbles"/>
 	<updated>2008-02-27T00:00:00+02:00</updated>
 	<id>http://szabster.net/2008/2/27/nice-stumbles</id>
-	<content type="html">&lt;p&gt;&lt;a class="image" href="/images/2008/02/nice-stumbles.jpg" title="nice-stumbles.jpg"&gt;&lt;img src="/images/2008/02/nice-stumbles.jpg" alt="nice-stumbles.jpg" border="0" height="469" width="589" /&gt;&lt;/a&gt;&lt;/p&gt;</content>
+	<content type="html">&lt;p&gt;&lt;a class="image" href="http://szabster.net/images/2008/02/nice-stumbles.jpg" title="nice-stumbles.jpg"&gt;&lt;img src="http://szabster.net/images/2008/02/nice-stumbles.jpg" alt="nice-stumbles.jpg" border="0" height="469" width="589" /&gt;&lt;/a&gt;&lt;/p&gt;</content>
 	<category term="fail"/><category term="fun"/><category term="crazy"/><category term="sexy"/>
 </entry>
 
@@ -3407,7 +3407,7 @@ She's trading her win box for a white Apple laptop&lt;/p&gt;
 	<content type="html">&lt;p&gt;I am in the race for a good "dark" theme for some time now, but today I just came up with my very own one ... haha!&lt;/p&gt;
 &lt;p&gt;When it comes to fixed size fonts, I prefer "Monaco" :D Also the guy who proposed that "blue" background for Borland C, Borland Pascal, etc was really clever ... haha.&lt;/p&gt;
 &lt;p&gt;Here is a screenshot with my very own theme.&lt;/p&gt;
-&lt;p&gt;&lt;a class="image" href="/images/2008/02/blueish.png" title="blueish.png"&gt;&lt;img src="/images/2008/02/blueish.png" alt="blueish.png" border="0" height="396" width="631" /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class="image" href="http://szabster.net/images/2008/02/blueish.png" title="blueish.png"&gt;&lt;img src="http://szabster.net/images/2008/02/blueish.png" alt="blueish.png" border="0" height="396" width="631" /&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;If you like it, you can download it right &lt;a href="http://nympho3d.googlecode.com/files/blueish.zip" title="Click here to download!" target="_blank"&gt;here&lt;/a&gt; .&lt;/p&gt;</content>
 	<category term="theme"/><category term="dark"/><category term="visual"/><category term="studio"/><category term="monaco"/><category term="blue"/>
 </entry>
@@ -3417,7 +3417,7 @@ She's trading her win box for a white Apple laptop&lt;/p&gt;
 	<link href="http://szabster.net/2008/2/11/skype-bug"/>
 	<updated>2008-02-11T00:00:00+02:00</updated>
 	<id>http://szabster.net/2008/2/11/skype-bug</id>
-	<content type="html">&lt;img src="/images/2008/02/skype_bug.png" alt="skype_bug.png" /&gt;</content>
+	<content type="html">&lt;img src="http://szabster.net/images/2008/02/skype_bug.png" alt="skype_bug.png" /&gt;</content>
 	<category term="skype"/><category term="bug"/><category term="fail"/><category term="funny"/>
 </entry>
 
@@ -3426,7 +3426,7 @@ She's trading her win box for a white Apple laptop&lt;/p&gt;
 	<link href="http://szabster.net/2008/2/8/anonmous"/>
 	<updated>2008-02-08T00:00:00+02:00</updated>
 	<id>http://szabster.net/2008/2/8/anonmous</id>
-	<content type="html">&lt;img src="/images/2008/02/anonymoussp5.gif" alt="anonymoussp5.gif" /&gt;</content>
+	<content type="html">&lt;img src="http://szabster.net/images/2008/02/anonymoussp5.gif" alt="anonymoussp5.gif" /&gt;</content>
 	<category term="anonymous"/><category term="funny"/><category term="big"/><category term="brother"/><category term="fuck"/>
 </entry>
 
@@ -3612,20 +3612,20 @@ helpful.  In no time you should be getting more sex than you know what to do wit
 	<id>http://szabster.net/2008/1/15/customize-you-ubuntu</id>
 	<content type="html">&lt;p&gt;I'm posting this, mostly because some people showed interest in how do I customized my Ubuntu's look and feel. So here we go ... an image worths more than 1 million words ... ha!&lt;/p&gt;
 &lt;p&gt;First take a look at the following screenshot.&lt;/p&gt;
-&lt;p&gt;&lt;a title="screenshot.png" class="image" href="/images/2008/01/screenshot.png"&gt;&lt;img src="/images/2008/01/screenshot.png" border="0" alt="screenshot.png" width="420" height="240" /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a title="screenshot.png" class="image" href="http://szabster.net/images/2008/01/screenshot.png"&gt;&lt;img src="http://szabster.net/images/2008/01/screenshot.png" border="0" alt="screenshot.png" width="420" height="240" /&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Nice huh? If you liked what you have seen, then continue, else STOP reading now.&lt;/p&gt;
 &lt;p&gt;The background can be found &lt;a title="Roar!" href="http://icebreaker.wordpress.com/2008/04/13/rip/" target="_self"&gt;here&lt;/a&gt; .&lt;/p&gt;
 &lt;p&gt;The theme is customized, so here are some screenshots:&lt;/p&gt;
-&lt;img src="/images/2008/01/screenshot-customize-theme.png" alt="screenshot-customize-theme.png" /&gt;
+&lt;img src="http://szabster.net/images/2008/01/screenshot-customize-theme.png" alt="screenshot-customize-theme.png" /&gt;
 
-&lt;img src="/images/2008/01/screenshot-customize-theme-1.png" alt="screenshot-customize-theme-1.png" /&gt;
+&lt;img src="http://szabster.net/images/2008/01/screenshot-customize-theme-1.png" alt="screenshot-customize-theme-1.png" /&gt;
 
-&lt;img src="/images/2008/01/screenshot-customize-theme-2.png" alt="screenshot-customize-theme-2.png" /&gt;
+&lt;img src="http://szabster.net/images/2008/01/screenshot-customize-theme-2.png" alt="screenshot-customize-theme-2.png" /&gt;
 
-&lt;img src="/images/2008/01/screenshot-customize-theme-3.png" alt="screenshot-customize-theme-3.png" /&gt;
+&lt;img src="http://szabster.net/images/2008/01/screenshot-customize-theme-3.png" alt="screenshot-customize-theme-3.png" /&gt;
 
 &lt;p&gt;Now a few words about the panel on the bottom. Well that's not the Kiba dock, that's just a normal dock. So here is an image on how to set that up  to achieve the look and feel of the one in the screenshot.&lt;/p&gt;
-&lt;img src="/images/2008/01/screenshot-panel-properties.png" alt="screenshot-panel-properties.png" /&gt;
+&lt;img src="http://szabster.net/images/2008/01/screenshot-panel-properties.png" alt="screenshot-panel-properties.png" /&gt;
 
 &lt;p&gt;The themes, etc. are from either &lt;a href="http://www.gnome-look.org" target="_blank"&gt;Gnome Look&lt;/a&gt; or &lt;a href="http://art.gnome.org" target="_blank"&gt;Gnome Art&lt;/a&gt; .&lt;a href="http://art.gnome.org" target="_blank"&gt; &lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Enjoy indefinitely .... haha!&lt;/p&gt;</content>
@@ -3638,7 +3638,7 @@ helpful.  In no time you should be getting more sex than you know what to do wit
 	<updated>2007-12-31T00:00:00+02:00</updated>
 	<id>http://szabster.net/2007/12/31/brain-test</id>
 	<content type="html">&lt;p&gt;This thing is really, really freaking me out :)) I found it over &lt;a href="http://delicategeniusblog.com/?p=552" title="))" target="_blank"&gt;here&lt;/a&gt;.&lt;/p&gt;
-&lt;img src="/images/2007/12/0568782000.gif" alt="Dancer" border="0" /&gt;
+&lt;img src="http://szabster.net/images/2007/12/0568782000.gif" alt="Dancer" border="0" /&gt;
 
 &lt;p&gt;I can see it spin clockwise too, but can reverse it at will.&lt;/p&gt;
 &lt;p&gt;Can you???&lt;/p&gt;</content>
@@ -3975,7 +3975,7 @@ but trial and error. &lt;/em&gt;
 	<updated>2007-02-25T00:00:00+02:00</updated>
 	<id>http://szabster.net/2007/2/25/rantradio</id>
 	<content type="html">&lt;p&gt;&lt;a href="http://www.rantradio.com" title=";-)" target="_blank"&gt;RantRadio&lt;/a&gt; . Sean Kennedy rocks!!!&lt;/p&gt;
-&lt;p&gt;&lt;a class="image" href="/images/2007/02/seank.jpg" title="Sean Kennedy"&gt;&lt;img src="/images/2007/02/seank.jpg" alt="Sean Kennedy" border="0" /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class="image" href="http://szabster.net/images/2007/02/seank.jpg" title="Sean Kennedy"&gt;&lt;img src="http://szabster.net/images/2007/02/seank.jpg" alt="Sean Kennedy" border="0" /&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Nothing more to say! Be sure to check it out ;-)&lt;/p&gt;</content>
 	<category term="rant"/><category term="radio"/><category term="rantradio"/><category term="sean"/><category term="kennedy"/>
 </entry>
