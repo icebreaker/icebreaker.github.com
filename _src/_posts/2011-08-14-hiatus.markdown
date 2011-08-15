@@ -14,13 +14,13 @@ in order to get back on track and clear my `records`.
 Here's a small run-down of some side-projects I've been hacking on during
 all these months when I didn't feel like working on **Lera3D**.
 
-* [Ancestria: Mini](#)
-* [Doxter](#)
-* [Templatizer](#)
-* [Proudify.me](#)
-* [pyGLox](#)
-* [rbGLox](#)
-* [VolumeIcon](#)
+* [Ancestria: Mini](https://github.com/icebreaker/ancestria-mini)
+* [Doxter](https://github.com/icebreaker/doxter)
+* [Templatizer](https://github.com/icebreaker/Templatizer)
+* [Proudify.me](https://github.com/icebreaker/proudify)
+* [pyGLox](https://github.com/icebreaker/pyGLox)
+* [rbGLox](https://github.com/icebreaker/rbGLox)
+* [VolumeIcon](https://github.com/icebreaker/volumeicon)
 * and [more](http://proudify.me) ...
 
 Olde New
