@@ -1,0 +1,157 @@
+<html>
+	<head>
+		
+		<title>
+		
+		
+			Wireless + Ubuntu 7.10 = love - Mihail Szabolcs
+		
+		
+		</title>
+		
+		<!-- Content Type -->
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<!-- Favicon -->
+		<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" /> 
+		<!-- Atom Feed -->
+		<link href="http://feeds.feedburner.com/szabsternet" rel="alternate" title="Mihail Szabolcs" type="application/atom+xml" /> 
+		<!-- Default -->
+		<link rel="stylesheet" type="text/css" href="/css/default.css" />
+		<!-- Pygments Syntax  -->
+		<link rel="stylesheet" type="text/css" href="/css/syntax.css" />
+		<!-- Blog  -->
+		<link rel="stylesheet" type="text/css" href="/css/blog.css" />
+		<!-- Fonts from Google's Web font directory at http://google.com/webfonts -->
+		<link href='http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic' rel='stylesheet' type='text/css' />
+		<link href='http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic' rel='stylesheet' type='text/css' />
+		
+		
+	</head>
+	<body>
+		
+		
+		<a href="http://github.com/icebreaker"><img style="position: fixed; top: 0; right: 0; border: 0; z-index: 1000;" src="https://a248.e.akamai.net/assets.github.com/img/e6bef7a091f5f3138b8cd40bc3e114258dd68ddf/687474703a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f7265645f6161303030302e706e67" alt="Fork me on GitHub"></a>
+		<div class="header">
+			<div class="text">
+				<div class="align left"><strong><a href="/">Mihail Szabolcs</a></strong> - <i>Senior Software Engineer, Open Source Evangelist</i></div>
+				<ul class="align right">
+					<li><a href="/">home</a></li>
+					<li><a href="http://proudify.me">projects</a></li>
+					<li><a href="/about">about</a></li>
+					<li><a href="http://feeds.feedburner.com/szabsternet">rss</a></li>
+				</ul>
+				<div class="clear"></div>
+			</div>
+		</div>
+		
+		<div class="content">
+			
+<a name="Wireless + Ubuntu 7.10 = love"></a>
+<h1>Wireless + Ubuntu 7.10 = love</h1>
+<div class="align right"><i>written on November 03, 2007</i></div>
+<div class="clear"></div>
+
+			<p>As almost everyone around here, I was waiting for the new Ubuntu mostly because it promised improved wireless support. 7.04 haven't even recognized my wireless card, after install, and also I had sound problems, though anything else seemed to work great.The 7.10 solved these right out of the box, <strong>but</strong> I still wasn't able to connect via WPA-TKIP and WPA2-AES to my wireless Netgear router.</p>
+<p>So, after a few days of digging and reading, I managed to make my wireless connection working. It's not the most elegant solution, but for me it works, and that's all what matters.
+In this guide, I assume that your wireless card is recognized by Ubuntu, and it's functional. In 7.10 you have the wpa_supplicant installed by default, so you won't have to worry about it.
+Here is with what I came up, and making my wireless working, exactly as it works under Windows.
+<ol>
+    <li>I removed the silly network-manager by typing "sudo apt-get remove network-manager" in a terminal.</li>
+    <li>Now go to System-&gt;Administration-&gt;Networking, and make sure to fill the fields with the correct info, and enable the wireless connection.</li>
+    <li>To make sure that everything is right, check your /etc/network/interfaces file. Open up the file by typing "gksudo gedit /etc/network/interfaces".</li>
+</ol>
+For WPA-TKIP:</p>
+<p style="margin-left:40px;">iface wlan0 inet static
+address 192.168.0.25
+netmask 255.255.255.0
+gateway &lt;your router's ip&gt;
+wpa-ap-scan 1
+wpa-pairwise TKIP
+wpa-group TKIP
+wpa-psk &lt;your long wpa key&gt;
+wpa-driver wext
+wpa-key-mgmt WPA-PSK
+wpa-proto WPA
+wpa-ssid &lt;your essid&gt;</p>
+
+<p>auto wlan0</p>
+<p>For WPA2-AES:</p>
+<p>iface wlan0 inet static
+address 192.168.0.25
+netmask 255.255.255.0
+gateway &lt;your router's ip&gt;
+wpa-ap-scan 1
+wpa-pairwise CCMP
+wpa-group CCMP
+wpa-psk &lt;your long wpa key&gt;
+wpa-driver wext
+wpa-key-mgmt WPA-PSK
+wpa-proto WPA2
+wpa-ssid &lt;your essid&gt;</p>
+<p>auto wlan0</p>
+<p>Make sure that these, are in the file, if not then add the lines, and save the file, then you can close the gedit window.
+4.   In a terminal type in the followings, exactly in this order:
+"sudo killall wpa_supplicant" [enter]
+"sudo /etc/init.d/networking stop" [enter]
+"sudo /etc/init.d/networking start" [enter]</p>
+<ol>
+<li>Now we should take a look at our connection status in the "Network Monitor" applet.</li>
+<li>Finally we can do a "ping google.com" right from the terminal.</li>
+</ol>
+<p>So, by now we should have a working wireless connection, but if you will restart your PC, you will have to type in the commands from "section 4.".
+That's really, really annoying, so here is the solution to get wireless at startup automatically.</p>
+<p>Type in a terminal "sudo gedit /etc/init.d/wifi" and paste the followings in the file (basically our 3 commands):
+<p style="margin-left:40px;">#!/bin/bash</p></p>
+<a name="kill all wpa_supplicant instances"></a>
+<h1>kill all wpa_supplicant instances</h1>
+<p>killall wpa_supplicant</p>
+<a name="stop the network interfaces"></a>
+<h1>stop the network interfaces</h1>
+<p>/etc/init.d/networking stop</p>
+<a name="start the network interfaces"></a>
+<h1>start the network interfaces</h1>
+<p>/etc/init.d/networking start</p>
+<p>Close the gedit window, and type "sudo chmod +x /etc/init.d/wifi" to make the script "executable". When done, we must add it to be executed at every system
+start-up as the last "thing". :))</p>
+<p>To do that type the following in a terminal window:
+<p style="margin-left:40px;">"sudo update-rc.d wifi defaults 99"</p>
+Later if you will like to disable this you have two choices:</p>
+<p style="margin-left:40px;">1. "sudo update-rc.d -f wifi remove" OR
+2. "sudo chmod -x /etc/init.d/wifi"</p>
+
+<p>Too test out this, just restart your computer and you should have internet access right after boot-up, just like on a Wind0ze machine. Totally rad huh?</p>
+<p><strong>[Updates Sun Mar 30, 2008]</strong></p>
+<p>This "post" proven to be really popular, so here are a few updates, to make even more users happy :)</p>
+<p>If you are getting your IP from your router automatically then you can replace this:</p>
+<p>iface wlan0 inet static
+address 192.168.0.25
+netmask 255.255.255.0</p>
+<p>with this</p>
+<p>iface wlan0 inet dhcp</p>
+<p>If you ping and you get no "reponse", then it worth to check out your /etc/resolv.conf and make sure that it contains the following lines:</p>
+<p>nameserver &lt;your router's ip&gt;</p>
+<p>You can edit / create this file by "sudo gedit /etc/resolv.conf".</p>
+<p>If it still doesn't work, you may try changing "wlan0" to "wifi0","ath0" ...</p>
+<p>If you get disconnected you can always fire up a terminal and run "sudo /etc/init.d/wifi" to get your connection back, without any hassle ...</p>
+<p>Because the silly "network-manager" was removed you can add an "Network Monitor" to one of your Gnome Panels ...</p>
+<p>Also I'm thinking on coding a nice little GUI tool to do all this stuff, so stay tuned!</p>
+<p><strong>[Updates Sat Apr 26, 2008]</strong></p>
+<p>This works perfectly in the final release of Ubuntu 8.04 (Hardy Heron), just like Dave confirmed that it works with the beta.</p>
+<p><strong>[Updates Sat May 10, 2008]</strong></p>
+<p>The development of little GUI tool is on hold, eventually I will continue the development if there will be enough requests, but I seriously doubt it :)</p>
+<p>Please feel free to post any comments/suggestions/experiences, etc. related to this. :))</p>
+			
+
+		</div>
+		
+		<div class="footer">
+			<div class="text">
+				<div class="align left">Feel free to shoot me a <a href="http://twitter.com/theicebreaker">tweet</a> or an <a href="mailto:szaby@szabster.net">email</a> if you have any comments or questions.</div>
+				<div class="align right"><a href="http://creativecommons.org/licenses/by-nc-sa/3.0/">CC BY-NC-SA 3.0</a></div>
+				<div class="clear"></div>
+			</div>
+		</div>
+		
+		
+	</body>
+</html>

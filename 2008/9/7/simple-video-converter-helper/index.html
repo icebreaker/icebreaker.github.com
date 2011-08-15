@@ -1,0 +1,142 @@
+<html>
+	<head>
+		
+		<title>
+		
+		
+			Simple Video Converter Helper - Mihail Szabolcs
+		
+		
+		</title>
+		
+		<!-- Content Type -->
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<!-- Favicon -->
+		<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" /> 
+		<!-- Atom Feed -->
+		<link href="http://feeds.feedburner.com/szabsternet" rel="alternate" title="Mihail Szabolcs" type="application/atom+xml" /> 
+		<!-- Default -->
+		<link rel="stylesheet" type="text/css" href="/css/default.css" />
+		<!-- Pygments Syntax  -->
+		<link rel="stylesheet" type="text/css" href="/css/syntax.css" />
+		<!-- Blog  -->
+		<link rel="stylesheet" type="text/css" href="/css/blog.css" />
+		<!-- Fonts from Google's Web font directory at http://google.com/webfonts -->
+		<link href='http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic' rel='stylesheet' type='text/css' />
+		<link href='http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic' rel='stylesheet' type='text/css' />
+		
+		
+	</head>
+	<body>
+		
+		
+		<a href="http://github.com/icebreaker"><img style="position: fixed; top: 0; right: 0; border: 0; z-index: 1000;" src="https://a248.e.akamai.net/assets.github.com/img/e6bef7a091f5f3138b8cd40bc3e114258dd68ddf/687474703a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f7265645f6161303030302e706e67" alt="Fork me on GitHub"></a>
+		<div class="header">
+			<div class="text">
+				<div class="align left"><strong><a href="/">Mihail Szabolcs</a></strong> - <i>Senior Software Engineer, Open Source Evangelist</i></div>
+				<ul class="align right">
+					<li><a href="/">home</a></li>
+					<li><a href="http://proudify.me">projects</a></li>
+					<li><a href="/about">about</a></li>
+					<li><a href="http://feeds.feedburner.com/szabsternet">rss</a></li>
+				</ul>
+				<div class="clear"></div>
+			</div>
+		</div>
+		
+		<div class="content">
+			
+<a name="Simple Video Converter Helper"></a>
+<h1>Simple Video Converter Helper</h1>
+<div class="align right"><i>written on September 07, 2008</i></div>
+<div class="clear"></div>
+
+			<p>I made this little script to be able to convert - resize videos easily, without typing in kilometric strings into the terminal.</p>
+<p>It's not the most elegant script you ever seen, but hey, it works :)</p>
+<p>As always, make it executable and put it in a safe place like /usr/bin :P</p>
+<div class="highlight"><pre><span class="c">#!/bin/bash</span>
+
+<p><span class="c"># Author: Icebreaker</span>
+<span class="c"># Description: Resize a video to 1280x720 (HD).</span>
+<span class="c"># I&#39;m using this script to resize videos to 1280x720</span>
+<span class="c"># ( maintaining the source quality )</span>
+<span class="c"># which can be posted to Vimeo.com for example and be converted</span>
+<span class="c"># automatically to a HD quality  video.</span>
+<span class="c">#</span>
+<span class="c"># This could be done a lot more elegantly ... I&#39;m sure, but it does</span>
+<span class="c"># the job for me and that&#39;s all what matters :)</span>
+<span class="c">#</span>
+<span class="c"># The argument &quot;parsing&quot; is not completely n00b proof :P</span>
+<span class="c">#</span>
+<span class="c"># PS: vimeo.com is cool :P</span>
+<span class="c">#</span>
+<span class="c"># Requires: ffmpeg</span>
+<span class="c">#</span>
+<span class="c"># Public Domain</span></p>
+<p><span class="k">if</span> <span class="o">[</span> <span class="nv">$# </span>-lt 2 <span class="o">]</span> ; <span class="k">then</span>
+<span class="nb">echo </span>Usage: mkhdv input.video output.video <span class="o">[</span>-t <span class="s2">&quot;some video title&quot;</span><span class="o">]</span> <span class="se">&lt;/span&gt;
+<span class="o">[</span>-s 1280x720<span class="o">]</span>
+<span class="nb">exit </span>13
+<span class="k">fi</span></p>
+<p><span class="k">if</span> <span class="o">[</span> <span class="nv">$# </span>-eq 4 <span class="o">]</span> ; <span class="k">then</span>
+    <span class="c"># title</span>
+    <span class="k">if</span> <span class="o">[</span> <span class="s2">&quot;$3&quot;</span> <span class="o">=</span> <span class="s2">&quot;-t&quot;</span> <span class="o">]</span> ; <span class="k">then</span>
+<span class="k">        </span>ffmpeg -i <span class="s2">&quot;$1&quot;</span> -sameq -s 1280x720 -title <span class="s2">&quot;$4&quot;</span> <span class="s2">&quot;$2&quot;</span>
+    <span class="k">else</span>
+        <span class="c"># size</span>
+        <span class="k">if</span> <span class="o">[</span> <span class="s2">&quot;$3&quot;</span> <span class="o">=</span> <span class="s2">&quot;-s&quot;</span> <span class="o">]</span> ; <span class="k">then</span>
+<span class="k">        </span>ffmpeg -i <span class="s2">&quot;$1&quot;</span> -sameq -s <span class="s2">&quot;$4&quot;</span> <span class="s2">&quot;$2&quot;</span>
+        <span class="k">else</span>
+<span class="k">        </span><span class="nb">echo </span>Usage: mkhdv input.video output.video <span class="se"> </span>
+<span class="o">[</span>-t <span class="s2">&quot;some video title&quot;</span><span class="o">]</span> <span class="o">[</span>-s 1280x720<span class="o">]</span>
+        <span class="nb">exit </span>666
+        <span class="k">fi</span>
+<span class="k">    fi</span>
+<span class="k">else</span>
+    <span class="c"># we have size and title</span>
+    <span class="k">if</span> <span class="o">[</span> <span class="nv">$# </span>-eq 6 <span class="o">]</span> ; <span class="k">then</span>
+<span class="k">        </span><span class="nv">TITLE</span><span class="o">=</span><span class="s2">&quot;&quot;</span>
+        <span class="nv">SIZE</span><span class="o">=</span><span class="s2">&quot;&quot;</span>
+        <span class="c"># look for title</span>
+        <span class="k">if</span> <span class="o">[</span> <span class="s2">&quot;$3&quot;</span> <span class="o">=</span> <span class="s2">&quot;-t&quot;</span> <span class="o">]</span> ; <span class="k">then</span>
+<span class="k">            </span><span class="nv">TITLE</span><span class="o">=</span><span class="s2">&quot;$4&quot;</span>
+        <span class="k">fi</span>
+<span class="k">        if</span> <span class="o">[</span> <span class="s2">&quot;$5&quot;</span> <span class="o">=</span> <span class="s2">&quot;-t&quot;</span> <span class="o">]</span> ; <span class="k">then</span>
+<span class="k">            </span><span class="nv">TITLE</span><span class="o">=</span><span class="s2">&quot;$6&quot;</span>
+        <span class="k">fi</span>
+        <span class="c"># look for size</span>
+        <span class="k">if</span> <span class="o">[</span> <span class="s2">&quot;$3&quot;</span> <span class="o">=</span> <span class="s2">&quot;-s&quot;</span> <span class="o">]</span> ; <span class="k">then</span>
+<span class="k">            </span><span class="nv">SIZE</span><span class="o">=</span><span class="s2">&quot;$4&quot;</span>
+        <span class="k">fi</span>
+<span class="k">        if</span> <span class="o">[</span> <span class="s2">&quot;$5&quot;</span> <span class="o">=</span> <span class="s2">&quot;-s&quot;</span> <span class="o">]</span> ; <span class="k">then</span>
+<span class="k">            </span><span class="nv">SIZE</span><span class="o">=</span><span class="s2">&quot;$6&quot;</span>
+        <span class="k">fi</span>
+<span class="k">        if</span> <span class="o">[</span> -z <span class="s2">&quot;$TITLE&quot;</span> <span class="o">]</span> ; <span class="k">then</span>
+<span class="k">            </span><span class="nv">TITLE</span><span class="o">=</span><span class="s2">&quot;Untitled Video&quot;</span>
+        <span class="k">fi</span>
+<span class="k">        if</span> <span class="o">[</span> -z <span class="s2">&quot;$SIZE&quot;</span> <span class="o">]</span> ; <span class="k">then</span>
+<span class="k">            </span><span class="nv">SIZE</span><span class="o">=</span><span class="s2">&quot;1280x720&quot;</span>
+        <span class="k">fi</span>
+<span class="k">        </span>ffmpeg -i <span class="s2">&quot;$1&quot;</span> -sameq -s <span class="s2">&quot;$SIZE&quot;</span> -title <span class="s2">&quot;$TITLE&quot;</span> <span class="s2">&quot;$2&quot;</span>
+    <span class="k">else</span>
+<span class="k">        </span>ffmpeg -i <span class="s2">&quot;$1&quot;</span> -sameq -s 1280x720 <span class="s2">&quot;$2&quot;</span>
+    <span class="k">fi</span>
+<span class="k">fi</span>
+<span class="nb">echo </span>Done
+<span class="nb">exit </span>1
+</pre></div></p>
+			
+
+		</div>
+		
+		<div class="footer">
+			<div class="text">
+				<div class="align left">Feel free to shoot me a <a href="http://twitter.com/theicebreaker">tweet</a> or an <a href="mailto:szaby@szabster.net">email</a> if you have any comments or questions.</div>
+				<div class="align right"><a href="http://creativecommons.org/licenses/by-nc-sa/3.0/">CC BY-NC-SA 3.0</a></div>
+				<div class="clear"></div>
+			</div>
+		</div>
+		
+		
+	</body>
+</html>

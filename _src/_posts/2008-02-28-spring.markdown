@@ -1,0 +1,11 @@
+--- 
+layout: post
+title: Spring
+tags: [game, linux, rts, spring]
+
+---
+Today I grabbed the latest version of the "Spring" RTS from the svn, and compiled it ... it took quite some time, but worth it. Then I downloaded a few maps and one mod to test it out... so here is a screenshot :D
+
+<a class="image" href="/images/2008/02/spring.png" title="spring.png"><img src="/images/2008/02/spring.png" alt="spring.png" height="445" width="709" /></a>
+
+Looks really nice ... i like it!

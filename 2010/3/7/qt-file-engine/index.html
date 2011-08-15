@@ -1,0 +1,116 @@
+<html>
+	<head>
+		
+		<title>
+		
+		
+			QT's File Engine - Mihail Szabolcs
+		
+		
+		</title>
+		
+		<!-- Content Type -->
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<!-- Favicon -->
+		<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" /> 
+		<!-- Atom Feed -->
+		<link href="http://feeds.feedburner.com/szabsternet" rel="alternate" title="Mihail Szabolcs" type="application/atom+xml" /> 
+		<!-- Default -->
+		<link rel="stylesheet" type="text/css" href="/css/default.css" />
+		<!-- Pygments Syntax  -->
+		<link rel="stylesheet" type="text/css" href="/css/syntax.css" />
+		<!-- Blog  -->
+		<link rel="stylesheet" type="text/css" href="/css/blog.css" />
+		<!-- Fonts from Google's Web font directory at http://google.com/webfonts -->
+		<link href='http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic' rel='stylesheet' type='text/css' />
+		<link href='http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic' rel='stylesheet' type='text/css' />
+		
+		
+	</head>
+	<body>
+		
+		
+		<a href="http://github.com/icebreaker"><img style="position: fixed; top: 0; right: 0; border: 0; z-index: 1000;" src="https://a248.e.akamai.net/assets.github.com/img/e6bef7a091f5f3138b8cd40bc3e114258dd68ddf/687474703a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f7265645f6161303030302e706e67" alt="Fork me on GitHub"></a>
+		<div class="header">
+			<div class="text">
+				<div class="align left"><strong><a href="/">Mihail Szabolcs</a></strong> - <i>Senior Software Engineer, Open Source Evangelist</i></div>
+				<ul class="align right">
+					<li><a href="/">home</a></li>
+					<li><a href="http://proudify.me">projects</a></li>
+					<li><a href="/about">about</a></li>
+					<li><a href="http://feeds.feedburner.com/szabsternet">rss</a></li>
+				</ul>
+				<div class="clear"></div>
+			</div>
+		</div>
+		
+		<div class="content">
+			
+<a name="QT's File Engine"></a>
+<h1>QT's File Engine</h1>
+<div class="align right"><i>written on March 07, 2010</i></div>
+<div class="clear"></div>
+
+			<p><a href="http://qt.nokia.com">QT's</a> <a href="http://doc.trolltech.com/4.6/qfsfileengine.html">QAbstractFileEngine</a> isn't a very well 
+documented subject, nor there are any good examples on how to make good use of it.</p>
+<p>It makes sense using it when the application needs a virtual filesytem for reading files directly from a ZIP
+or just restrict access to a certain directory.</p>
+<p>Lets say that you have a scriptable game and you don't want to allow access outside of the "data" folder which holds all
+the necessary data, with <a href="http://doc.trolltech.com/4.6/qfsfileengine.html">QAbstractFileEngine</a> this can be resolved in 
+a transparent way as shown in the code snippet below.</p>
+<div class="highlight"><pre><span class="p">...</span>
+
+<p><span class="c1">//! File System Class</span>
+<span class="k">class</span> <span class="nc">FileSystem</span> <span class="o">:</span> <span class="k">public</span> <span class="n">QFSFileEngine</span>
+<span class="p">{</span>
+    <span class="k">public</span><span class="o">:</span>
+        <span class="c1">//! Constructor</span>
+        <span class="n">FileSystem</span><span class="p">(</span><span class="k">const</span> <span class="n">QString</span> <span class="o">&amp;</span><span class="n">pFileName</span><span class="p">);</span>
+        <span class="c1">//! Destructor</span>
+        <span class="k">virtual</span> <span class="o">~</span><span class="n">FileSystem</span><span class="p">();</span>
+<span class="p">};</span></p>
+<p><span class="c1">//! File System Handler</span>
+<span class="k">class</span> <span class="nc">FileSystemHandler</span> <span class="o">:</span> <span class="k">public</span> <span class="n">QAbstractFileEngineHandler</span>
+<span class="p">{</span>
+    <span class="k">public</span><span class="o">:</span>
+        <span class="c1">//! Constructor</span>
+        <span class="n">QAbstractFileEngine</span> <span class="o">*</span><span class="n">create</span><span class="p">(</span><span class="k">const</span> <span class="n">QString</span> <span class="o">&amp;</span><span class="n">pFileName</span><span class="p">)</span> <span class="k">const</span><span class="p">;</span>
+<span class="p">};</span></p>
+<p><span class="p">...</span></p>
+<p><span class="kt">int</span> <span class="n">main</span><span class="p">(</span><span class="kt">int</span> <span class="n">argc</span><span class="p">,</span> <span class="kt">char</span> <span class="o">*</span><span class="n">argv</span><span class="p">[])</span>
+<span class="p">{</span>
+    <span class="n">FileSystemHandler</span> <span class="n">lFileSystemHandler</span><span class="p">;</span>
+    <span class="n">QFile</span> <span class="n">lFile</span><span class="p">(</span><span class="s">&quot;scripts/test.js&quot;</span><span class="p">);</span>
+    <span class="k">if</span><span class="p">(</span><span class="n">lFile</span><span class="p">.</span><span class="n">open</span><span class="p">(</span><span class="n">QFile</span><span class="o">::</span><span class="n">ReadOnly</span> <span class="o">|</span> <span class="n">QFile</span><span class="o">::</span><span class="n">Text</span><span class="p">))</span>
+    <span class="p">{</span>
+        <span class="p">...</span>
+    <span class="p">}</span>
+    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div></p>
+<p>In <em>our</em> <strong><em>FileSystem class</em></strong> we preprend our base path to the fileName, i.e <em>"./data/"</em> so 
+<a href="http://doc.trolltech.com/4.6/qfile.html">QFile</a>, <a href="http://doc.trolltech.com/4.6/qdir.html">QDir</a>, 
+<a href="http://doc.trolltech.com/4.6/qfileinfo.html">QFileInfo</a> all work the exact same way they did before registering 
+our file engine handler just the paths get altered in the background.</p>
+<p>The latest registered handler takes precedence over existing handlers.</p>
+<p>We could also do another nifty thing and register a handler which would respond to <strong>"fs://myfile.txt"</strong>.</p>
+<div class="highlight"><pre><span class="n">QFile</span> <span class="n">lFile</span><span class="p">(</span><span class="s">&quot;fs://myfile.txt&quot;</span><span class="p">);</span>
+</pre></div>
+
+<p>QT's internal resource system is implemented this way, so that's a good place to study especially if you want to implement a ZIP
+based virtual filesystem.</p>
+			
+
+		</div>
+		
+		<div class="footer">
+			<div class="text">
+				<div class="align left">Feel free to shoot me a <a href="http://twitter.com/theicebreaker">tweet</a> or an <a href="mailto:szaby@szabster.net">email</a> if you have any comments or questions.</div>
+				<div class="align right"><a href="http://creativecommons.org/licenses/by-nc-sa/3.0/">CC BY-NC-SA 3.0</a></div>
+				<div class="clear"></div>
+			</div>
+		</div>
+		
+		
+	</body>
+</html>

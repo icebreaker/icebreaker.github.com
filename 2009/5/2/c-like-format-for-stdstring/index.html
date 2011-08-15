@@ -1,0 +1,95 @@
+<html>
+	<head>
+		
+		<title>
+		
+		
+			C++ like format for std::string ... - Mihail Szabolcs
+		
+		
+		</title>
+		
+		<!-- Content Type -->
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<!-- Favicon -->
+		<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" /> 
+		<!-- Atom Feed -->
+		<link href="http://feeds.feedburner.com/szabsternet" rel="alternate" title="Mihail Szabolcs" type="application/atom+xml" /> 
+		<!-- Default -->
+		<link rel="stylesheet" type="text/css" href="/css/default.css" />
+		<!-- Pygments Syntax  -->
+		<link rel="stylesheet" type="text/css" href="/css/syntax.css" />
+		<!-- Blog  -->
+		<link rel="stylesheet" type="text/css" href="/css/blog.css" />
+		<!-- Fonts from Google's Web font directory at http://google.com/webfonts -->
+		<link href='http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic' rel='stylesheet' type='text/css' />
+		<link href='http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic' rel='stylesheet' type='text/css' />
+		
+		
+	</head>
+	<body>
+		
+		
+		<a href="http://github.com/icebreaker"><img style="position: fixed; top: 0; right: 0; border: 0; z-index: 1000;" src="https://a248.e.akamai.net/assets.github.com/img/e6bef7a091f5f3138b8cd40bc3e114258dd68ddf/687474703a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f7265645f6161303030302e706e67" alt="Fork me on GitHub"></a>
+		<div class="header">
+			<div class="text">
+				<div class="align left"><strong><a href="/">Mihail Szabolcs</a></strong> - <i>Senior Software Engineer, Open Source Evangelist</i></div>
+				<ul class="align right">
+					<li><a href="/">home</a></li>
+					<li><a href="http://proudify.me">projects</a></li>
+					<li><a href="/about">about</a></li>
+					<li><a href="http://feeds.feedburner.com/szabsternet">rss</a></li>
+				</ul>
+				<div class="clear"></div>
+			</div>
+		</div>
+		
+		<div class="content">
+			
+<a name="C++ like format for std::string ..."></a>
+<h1>C++ like format for std::string ...</h1>
+<div class="align right"><i>written on May 02, 2009</i></div>
+<div class="clear"></div>
+
+			<p>Now, the 'quite heavy' BOOST libs have some nice format(), and also MFC has it, but not the poor STL string container.</p>
+<p>I came up with a very nice and compact way to do this, and thought that I should share it.</p>
+<p>So, here we are, let's see the code ...</p>
+<div class="highlight"><pre><span class="cp">#include &lt;cstdarg&gt;</span>
+</pre></div>
+
+<p>... the format ...</p>
+<div class="highlight"><pre><span class="cp">#define BUFF_SIZE 4096</span>
+<span class="n">string</span> <span class="n">format</span><span class="p">(</span> <span class="k">const</span> <span class="n">string</span> <span class="o">&amp;</span><span class="n">msg</span><span class="p">,</span> <span class="p">...</span> <span class="p">)</span>
+<span class="p">{</span>
+    <span class="n">va_list</span> <span class="n">ap</span><span class="p">;</span>
+    <span class="kt">char</span> <span class="n">text</span><span class="p">[</span><span class="n">BUFF_SIZE</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span><span class="mi">0</span><span class="p">,};</span>
+    <span class="n">va_start</span><span class="p">(</span><span class="n">ap</span><span class="p">,</span> <span class="n">msg</span><span class="p">);</span>
+        <span class="n">vsnprintf</span><span class="p">(</span><span class="n">text</span><span class="p">,</span> <span class="n">BUFF_SIZE</span><span class="p">,</span> <span class="n">msg</span><span class="p">.</span><span class="n">c_str</span><span class="p">(),</span> <span class="n">ap</span><span class="p">);</span>
+    <span class="n">va_end</span><span class="p">(</span><span class="n">ap</span><span class="p">);</span>
+    <span class="k">return</span> <span class="n">string</span><span class="p">(</span> <span class="n">text</span> <span class="p">);</span>
+<span class="p">}</span>
+</pre></div>
+
+<p>BUFF_SIZE as 4096 should be enough, in most cases, but of course it can be tweaked as necessary, the rest is just the normal way to play with functions which have variable number of arguments.</p>
+<p>vsnprintf have been used in order to avoid buffer overflows and the like.</p>
+<div class="highlight"><pre><span class="n">cout</span><span class="o">&lt;&lt;</span><span class="n">format</span><span class="p">(</span><span class="n">string</span><span class="p">(</span><span class="s">&quot;%s hello&quot;</span><span class="p">)</span> <span class="o">+</span> <span class="n">string</span><span class="p">(</span><span class="s">&quot;world %d&quot;</span><span class="p">),</span><span class="s">&quot;this is&quot;</span><span class="p">,</span><span class="mi">13</span><span class="p">)</span><span class="o">&lt;&lt;</span><span class="n">endl</span><span class="p">;</span>
+</pre></div>
+
+<p>From the one liner above it is clearly visible, the cleanness and elegance of this approach.</p>
+<p>Neat isn't it?</p>
+<p>PS: I like the new Syntax Highlighter plug-in :P</p>
+			
+
+		</div>
+		
+		<div class="footer">
+			<div class="text">
+				<div class="align left">Feel free to shoot me a <a href="http://twitter.com/theicebreaker">tweet</a> or an <a href="mailto:szaby@szabster.net">email</a> if you have any comments or questions.</div>
+				<div class="align right"><a href="http://creativecommons.org/licenses/by-nc-sa/3.0/">CC BY-NC-SA 3.0</a></div>
+				<div class="clear"></div>
+			</div>
+		</div>
+		
+		
+	</body>
+</html>

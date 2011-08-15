@@ -1,0 +1,36 @@
+--- 
+layout: post
+title: WRTC ...
+tags: [coding, open, source, id, linux, games] 
+---
+
+### QuakeCon 2010
+
+Just about two days ago at QuakeCon 2010, John announced the release of the integral source code of *Wolfenstein: Return to Castle*
+and *Wolfenstein: Enemy Territory* both using modified versions of idTech3 (Quake3).
+
+This is another significant contribution to the open source community, even though some of us were expecting idTech4 (Doom3).
+
+More on this over [here](http://www.gamasutra.com/view/news/29903/QuakeCon_id_Software_Releases_Source_Code_For_Two_Wolfenstein_Titles.php) .
+ 
+### Build, Build, Build
+
+<a href="/images/2010/08/wrtc.png" class="image">
+<img src="/images/2010/08/wrtc_thumb.png"/>
+</a>
+
+I quickly grabbed the source code of the SP version (**Return to Castle**) and compiled it without any problems in less than a minute
+on my Linux Box.
+
+I don't own the *original* **Return to Castle** game so I searched for the demo version and copied the PAK file containing the game data. 
+
+Everything worked fine, except the sound which can be fixed easily:
+
+{% highlight bash %}
+su
+echo "wolfsp.x86 0 0 direct" > /proc/asound/card0/pcm0p/oss
+{% endhighlight %}
+
+I'm curious to see how the community will start cleaning up the code base just like it did with the good old idTech3. ( [ioquake](http://ioquake3.org/) )
+
+### End of Line

@@ -1,0 +1,32 @@
+--- 
+layout: post
+title: "Rant #N"
+tags: 
+- linux
+- shit
+- rant
+- talk
+---
+I'm really really irritated and frustrated by Ubuntu's road map; the last release I could call solid is 7.04, now that was A REALLY REALLY solid release from head to toes; all the upcoming releases were getting worse and worse which is unacceptable; don't get me started with 9.10 when it comes to upgrading an existing 9.04 system ... TOTAL MESS, and most of the time you end up with a completely fucked up system.
+
+Now to Debian or not to Debian? switch to Debian 'stable' or Not? ... well, gentlemen, Debian 5.0 is very very outdated and Debian 'Sid' is just as worse as Ubuntu but at least it's labeled and marketed as 'unstable' ; the rest of Debian based distros are a sort of mess.
+<p style="text-align: center;"><a class="image" href="/images/2010/01/ati-amd-fedora-fail.png"><img class="aligncenter" title="ati-amd-fedora-fail" src="/images/2010/01/ati-amd-fedora-fail.png" alt="" width="320" height="320" /></a></p>
+A viable solution to all this mess would be to switch to the good old Fedora which is up to date and it doesn't seem to break UNLESS ... *drum rolls* ... unless you install the proprietary ATI driver from AMD ... and BOOOM! totally fucked up X, black screen, END OF LINE.
+
+Personally I have no idea what the Fedora developers could have been thinking ... we are in fucking 2010, even LINUX people got some serious hardware in their machines ... but no, they are all for their crappy open source Radeon driver ... what the fuck? I'm all for open source and free software, but no community in this world will be able to make better drivers for a VIDEO CARD but the manufacturer itself. END OF STORY.
+
+As a developer I'm always seeking for the best distribution to develop on (especially 3D stuff whatever that means), the open source Radeon driver is fine with people who are willing to use Open Office, develop any non-multimedia thingies (hard to believe these days) or corporate customers, but it definitely won't suit the needs of a home-user or a more extravagant developer (but ... at least you have the freedom of choice).
+
+I hear you saying, OPEN SOURCE THE HARDWARE ... you must be fucking kidding (closed source hardware and software are a necessity for COMPETITION, no competition = no market), who the fuck cares if the kernel modules are 'closed source' but WORK GREAT and deliver awesome performance ... just think about it ... what keeps Windows alive? well I can think of two things, the first is MS Office and the other ... I hear you ... I hear you ... VIDEO GAMES .
+
+I also realize that Fedora is a 'generic distro' it doesn't focus on any particular area, but that shouldn't stop people from using their hardware if they want to and fully benefit of all the capabilities supported by the hardware; this is not the incompetence of AMD, this is the incompetence of Red Hat, who couldn't care less and synchronize a little bit ... just a little ... I'm sure AMD wouldn't say NO.
+
+Ok Ok ... I'm calming down ... cross platform gaming is starting to 'rise' which is a good sign (big thanks to all our fellow Indie game developers),but don't think about this as 'all games will be free and open sourced' take it instead as you can enjoy and play all these games using a completely free software ecosystem ... you don't need to buy Windows licenses, pay for upgrades, etc just buy quality games and play them ... yeaahh ... if you look around you will see that the actual 'small' Linux gamer camp is willing to pay for quality games which run natively under Linux ... almost no piracy involved.
+
+I don't know about Nvidia's proprietary driver and Fedora, but I guess that it's pretty much the same story (although people have tendencies to support Nvidia or even Intel more than AMD and ATI; what a shame when they are supporting FOSS); I'm telling you both that Nvidia's and ATI's closed source proprietary drivers work great and deliver good performance on Debian based distributions.
+
+Personally, I want to develop on the platform and not spend nights making simple things work, which are meant to work out of the BOX, or work with other distributions, this is not all about the kernel, it's about the software surrounding (and its developers) the kernel ... anyways ...
+
+So, right now I'm back to 9.10 (as Mint 8 'Helena') and waiting for Fedora 13 or the new Debian . *fingers crossed*
+
+Good night!

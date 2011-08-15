@@ -1,0 +1,85 @@
+<html>
+	<head>
+		
+		<title>
+		
+		
+			3D Slideshow - Mihail Szabolcs
+		
+		
+		</title>
+		
+		<!-- Content Type -->
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<!-- Favicon -->
+		<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" /> 
+		<!-- Atom Feed -->
+		<link href="http://feeds.feedburner.com/szabsternet" rel="alternate" title="Mihail Szabolcs" type="application/atom+xml" /> 
+		<!-- Default -->
+		<link rel="stylesheet" type="text/css" href="/css/default.css" />
+		<!-- Pygments Syntax  -->
+		<link rel="stylesheet" type="text/css" href="/css/syntax.css" />
+		<!-- Blog  -->
+		<link rel="stylesheet" type="text/css" href="/css/blog.css" />
+		<!-- Fonts from Google's Web font directory at http://google.com/webfonts -->
+		<link href='http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic' rel='stylesheet' type='text/css' />
+		<link href='http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic' rel='stylesheet' type='text/css' />
+		
+		
+	</head>
+	<body>
+		
+		
+		<a href="http://github.com/icebreaker"><img style="position: fixed; top: 0; right: 0; border: 0; z-index: 1000;" src="https://a248.e.akamai.net/assets.github.com/img/e6bef7a091f5f3138b8cd40bc3e114258dd68ddf/687474703a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f7265645f6161303030302e706e67" alt="Fork me on GitHub"></a>
+		<div class="header">
+			<div class="text">
+				<div class="align left"><strong><a href="/">Mihail Szabolcs</a></strong> - <i>Senior Software Engineer, Open Source Evangelist</i></div>
+				<ul class="align right">
+					<li><a href="/">home</a></li>
+					<li><a href="http://proudify.me">projects</a></li>
+					<li><a href="/about">about</a></li>
+					<li><a href="http://feeds.feedburner.com/szabsternet">rss</a></li>
+				</ul>
+				<div class="clear"></div>
+			</div>
+		</div>
+		
+		<div class="content">
+			
+<a name="3D Slideshow"></a>
+<h1>3D Slideshow</h1>
+<div class="align right"><i>written on August 09, 2009</i></div>
+<div class="clear"></div>
+
+			<p>Here is another quick prototype using QT+OpenGL.</p>
+<p>The source code is hosted at GitHub as usual ... right<a title="Get the source!" href="http://github.com/icebreaker/slider3d/tree/" target="_blank"> here </a>.</p>
+<p><object width="640" height="360"><param name="wmode" value="transparent" /><param name="allowfullscreen" value="true" /><param name="allowscriptaccess" value="always" /><param name="movie" value="http://vimeo.com/moogaloop.swf?clip_id=6020605&amp;server=vimeo.com&amp;show_title=1&amp;show_byline=1&amp;show_portrait=1&amp;color=FF7700&amp;fullscreen=1" /><embed src="http://vimeo.com/moogaloop.swf?clip_id=6020605&amp;server=vimeo.com&amp;show_title=1&amp;show_byline=1&amp;show_portrait=1&amp;color=FF7700&amp;fullscreen=1" type="application/x-shockwave-flash" allowfullscreen="true" allowscriptaccess="always" wmode="transparent" width="640" height="360"></embed></object></p>
+<p>Features (as of now):
+<ul>
+    <li>scans the current directory for photos (png &amp; jpg)</li>
+    <li>resizes photos internally before converting them to textures to either 512x512 or 1024x0124; so it should work fine with most video cards.</li>
+    <li>keeps the original aspect ratio of the photos</li>
+    <li>tries to activate and use 4x multi-sampling (anti-aliasing) if possible</li>
+    <li>multi-monitor support (by passing in the command line arguments --monitor X ; where X is the desired monitor to use)</li>
+    <li>simple floor reflection using the Stencil Buffer (it may not work with not T&amp;L cards)</li>
+    <li>scrolling left/right by using the arrow keys</li>
+    <li>automatic slide show mode can be switched on / off by pressing 'space' (switches every 3 seconds; two way)</li>
+    <li>displays file names under the current photo</li>
+</ul>
+It should work fine on most systems (even with those crappy integrated Intel graphic cards). Enjoy :)</p>
+<p>(PS: I'm really going to back to Lera3D now ...)</p>
+			
+
+		</div>
+		
+		<div class="footer">
+			<div class="text">
+				<div class="align left">Feel free to shoot me a <a href="http://twitter.com/theicebreaker">tweet</a> or an <a href="mailto:szaby@szabster.net">email</a> if you have any comments or questions.</div>
+				<div class="align right"><a href="http://creativecommons.org/licenses/by-nc-sa/3.0/">CC BY-NC-SA 3.0</a></div>
+				<div class="clear"></div>
+			</div>
+		</div>
+		
+		
+	</body>
+</html>

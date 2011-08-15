@@ -1,0 +1,27 @@
+--- 
+layout: post
+title: Hot Babe
+tags: 
+- linux
+- ubuntu
+- hot babe
+---
+<blockquote>
+<h2>What's Hot-Babe?</h2>
+Hot-babe is a small graphical utility which displays the system activity in a very special way.  When the CPU is idle, it displays a dressed girl, and when the activity goes up, as the temperature increases, the girl begins to undress, to finish totally naked when the system activity reaches 100%. Of course, if you can be shocked by nudity, don't use it!</blockquote>
+Screenshot with 0% CPU utilization :
+
+<a class="image" href="/images/2008/11/hb.png"><img class="alignnone size-thumbnail wp-image-389" title="hb" src="/images/2008/11/hb.png" alt="" width="245" height="339" /></a>
+
+Screenshot with 100% CPU utilization (NSFW) :
+
+<a class="image" href="/images/2008/11/hb_nsfw.png"><img class="alignnone size-thumbnail wp-image-390" title="hb_nsfw" src="/images/2008/11/hb_nsfw.png" alt="" width="201" height="334" /></a>
+
+( while compiling Blender with 4 jobs "scons -j4" )
+
+Get it <a title="Get Hot babe here!" href="http://dindinx.net/hotbabe/" target="_blank">here</a> .
+
+Pretty cool, but it's gets boring after a while, even though it's a cool way to spice up your desktop.
+
+Enjoy :)
+<blockquote></blockquote>

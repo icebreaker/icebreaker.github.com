@@ -1,0 +1,83 @@
+<html>
+	<head>
+		
+		<title>
+		
+		
+			Simple 'hack' - Mihail Szabolcs
+		
+		
+		</title>
+		
+		<!-- Content Type -->
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<!-- Favicon -->
+		<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" /> 
+		<!-- Atom Feed -->
+		<link href="http://feeds.feedburner.com/szabsternet" rel="alternate" title="Mihail Szabolcs" type="application/atom+xml" /> 
+		<!-- Default -->
+		<link rel="stylesheet" type="text/css" href="/css/default.css" />
+		<!-- Pygments Syntax  -->
+		<link rel="stylesheet" type="text/css" href="/css/syntax.css" />
+		<!-- Blog  -->
+		<link rel="stylesheet" type="text/css" href="/css/blog.css" />
+		<!-- Fonts from Google's Web font directory at http://google.com/webfonts -->
+		<link href='http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic' rel='stylesheet' type='text/css' />
+		<link href='http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic' rel='stylesheet' type='text/css' />
+		
+		
+	</head>
+	<body>
+		
+		
+		<a href="http://github.com/icebreaker"><img style="position: fixed; top: 0; right: 0; border: 0; z-index: 1000;" src="https://a248.e.akamai.net/assets.github.com/img/e6bef7a091f5f3138b8cd40bc3e114258dd68ddf/687474703a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f7265645f6161303030302e706e67" alt="Fork me on GitHub"></a>
+		<div class="header">
+			<div class="text">
+				<div class="align left"><strong><a href="/">Mihail Szabolcs</a></strong> - <i>Senior Software Engineer, Open Source Evangelist</i></div>
+				<ul class="align right">
+					<li><a href="/">home</a></li>
+					<li><a href="http://proudify.me">projects</a></li>
+					<li><a href="/about">about</a></li>
+					<li><a href="http://feeds.feedburner.com/szabsternet">rss</a></li>
+				</ul>
+				<div class="clear"></div>
+			</div>
+		</div>
+		
+		<div class="content">
+			
+<a name="Simple 'hack'"></a>
+<h1>Simple 'hack'</h1>
+<div class="align right"><i>written on July 06, 2007</i></div>
+<div class="clear"></div>
+
+			<p>Ever wanted to download all the photos in located in one album on <a href="http://www.photobucket.com" title="Click to visit!" target="_blank">PhotoBucket.com</a> ? If the answer is positive then here is my very <em>own</em> and very simple trick to do it.</p>
+<p>All you need is a browser and the little downloader named wget. Linux users most probably have it on their systems, and windows users can get it from <a href="http://users.ugent.be/~bpuype/wget/" title="Click to download wget!" target="_blank">here</a>.</p>
+<p>Now what this 'hack' consists of? Go to the PhotoBucket album you want to download and chose the "View All" to get a page with all the photos. Now view the source of the page and check the last "urlcodeN" where N is the total number of photos. Write down this or keep it in your mind, and paste the following script in your browsers address bar and replace the N with your number of photos.
+<h6><em>javascript:var wnd=window.open("about:blank"); for(var i=0;i&lt;N;i++){ wnd.document.write(document.getElementById("urlcode"+i).value+"&lt;br&gt;"); }</em></h6>
+Now press [Enter] and wait until the script finishes. It can take a few seconds.</p>
+<p>What this script will do anyway?  First of all it will open a new window with blank contents, and it will write all the "paths" to the photos inside it, each on a new line.</p>
+<p>Now that you have all the download paths to the photos, copy and paste the contents into a text file and open a terminal (windows users a command prompt - cmd) navigate to the directory where you saved the file with the list, and execute "wget -i saved_urls.txt" and sit back. This will download all the files. Windows users make sure that you have wget in your path else the command won't work.</p>
+<p>It's great to create a new directory and place the "saved_urls.txt" inside that, and this way you already organized the photos.</p>
+<p>This works 100% all the time, and you can have the photos you wanted almost with no effort.</p>
+<p>Enjoy :-)</p>
+<p>The script can be improved to prompt for the number of files, and this way we transformed it into a "bookmarklet" script!</p>
+<p>Here is the improved version:
+<h6><em>javascript:var n = prompt('Enter the number of photos:',0); if(n != null &amp;&amp; n &gt; 0) { var wnd=window.open("about:blank"); for(var i=0;i&lt;n;i++){ wnd.document.write(document.getElementById("urlcode"+i).value+"&lt;br&gt;"); }}</em></h6>
+You can put the last version in your Firefox "bookmarks" toolbar, and have it just a click away, when you want to get some photos.</p>
+<p>We always get what we want, because we can!</p>
+			
+
+		</div>
+		
+		<div class="footer">
+			<div class="text">
+				<div class="align left">Feel free to shoot me a <a href="http://twitter.com/theicebreaker">tweet</a> or an <a href="mailto:szaby@szabster.net">email</a> if you have any comments or questions.</div>
+				<div class="align right"><a href="http://creativecommons.org/licenses/by-nc-sa/3.0/">CC BY-NC-SA 3.0</a></div>
+				<div class="clear"></div>
+			</div>
+		</div>
+		
+		
+	</body>
+</html>

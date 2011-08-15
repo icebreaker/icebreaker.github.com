@@ -1,0 +1,111 @@
+<html>
+	<head>
+		
+		<title>
+		
+		
+			More Common Ubuntu 7.10 problem fixes :)) - Mihail Szabolcs
+		
+		
+		</title>
+		
+		<!-- Content Type -->
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<!-- Favicon -->
+		<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" /> 
+		<!-- Atom Feed -->
+		<link href="http://feeds.feedburner.com/szabsternet" rel="alternate" title="Mihail Szabolcs" type="application/atom+xml" /> 
+		<!-- Default -->
+		<link rel="stylesheet" type="text/css" href="/css/default.css" />
+		<!-- Pygments Syntax  -->
+		<link rel="stylesheet" type="text/css" href="/css/syntax.css" />
+		<!-- Blog  -->
+		<link rel="stylesheet" type="text/css" href="/css/blog.css" />
+		<!-- Fonts from Google's Web font directory at http://google.com/webfonts -->
+		<link href='http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic' rel='stylesheet' type='text/css' />
+		<link href='http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic' rel='stylesheet' type='text/css' />
+		
+		
+	</head>
+	<body>
+		
+		
+		<a href="http://github.com/icebreaker"><img style="position: fixed; top: 0; right: 0; border: 0; z-index: 1000;" src="https://a248.e.akamai.net/assets.github.com/img/e6bef7a091f5f3138b8cd40bc3e114258dd68ddf/687474703a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f7265645f6161303030302e706e67" alt="Fork me on GitHub"></a>
+		<div class="header">
+			<div class="text">
+				<div class="align left"><strong><a href="/">Mihail Szabolcs</a></strong> - <i>Senior Software Engineer, Open Source Evangelist</i></div>
+				<ul class="align right">
+					<li><a href="/">home</a></li>
+					<li><a href="http://proudify.me">projects</a></li>
+					<li><a href="/about">about</a></li>
+					<li><a href="http://feeds.feedburner.com/szabsternet">rss</a></li>
+				</ul>
+				<div class="clear"></div>
+			</div>
+		</div>
+		
+		<div class="content">
+			
+<a name="More Common Ubuntu 7.10 problem fixes :))"></a>
+<h1>More Common Ubuntu 7.10 problem fixes :))</h1>
+<div class="align right"><i>written on November 03, 2007</i></div>
+<div class="clear"></div>
+
+			<p>Today I found solutions to two other frequent problems with Ubuntu and newer laptops.</p>
+<p>1). When the headphone jack is plugged in the sound doesn't stops in the internal speakers.</p>
+<ul>
+<li>
+<p>The workaround to this problem is the following:</p>
+</li>
+<li>
+<p>compiling the latest alsa-driver, alsa-lib, alsa-utils and alsa-firmwire</p>
+</li>
+<li>
+<p>try adding the "options snd-hda-intel model=lenovo" line to the end of the "/etc/modprobe.d/alsa_base" file.</p>
+</li>
+<li>
+<p>and after a restart it will work as expected, or very very close to that :))</p>
+</li>
+</ul>
+<p>2).  Getting hardware acceleration enabled with the 'problematic' Geforce Go 7300.</p>
+<ul>
+<li>
+<p>Well in this case we could go the hard way, and re-compile our kernel and nvidia module by ourself,etc -- but there is  a lot more simple solution, and it will work almost 100% guaranteed.</p>
+</li>
+<li>
+<p>All we need to do is to get "envy". Debian/Ubuntu users just type in a terminal: "sudo apt-get install envy".use</p>
+</li>
+<li>
+<p>Now that we have envy installed we switch to the "real terminal" by pressing Ctrl+Alt+F1, and kill the GDM.</p>
+</li>
+<li>
+<p>"sudo /etc/init.d/gdm stop"</p>
+</li>
+<li>
+<p>after this we call "envy -t", and press 1.  You may have to solve some dependecies manually if the "process halts", but that's piece of cake especially under Debian/Ubuntu, because the problems will be listed by "apt" :)</p>
+</li>
+<li>
+<p>repeat the previous step after you solved the dependencies, and let the "envy" do his job.</p>
+</li>
+</ul>
+<p>When "envy" done, will ask you if you wanna let him to modify the "xorg.conf" -- answer yes to this question, then it will ask if you want to reboot -- chose yes again.</p>
+<p>Now, if everything worked well, you should get to the "login" screen. If anything goes wrong just copy back the backed up "xorg.conf" and restart just X or the whole machine.</p>
+<p>How to check if we have 3D acceleration? Well that's quite simple ... in a terminal  type: "glxinfo  | grep -i "direct"  "</p>
+<p>If you get "direct rendering: yes" then you can celebrate and you have 3D acceleration, if you get something else, then you may have to digg, and modify your xorg.conf, because there are big chances that the problem is in there.</p>
+<p>Also to check the 3D in action, type "glxgears" in a terminal window. :)) Enjoy :)</p>
+<p>Regarding to issue number two, I tried: Unreal Tournament 2003 (with all the details to maximum), OpenArena,Sauerbraten (a.k.a Cube2), just to name a few, and they all worked very very well :)</p>
+			
+
+		</div>
+		
+		<div class="footer">
+			<div class="text">
+				<div class="align left">Feel free to shoot me a <a href="http://twitter.com/theicebreaker">tweet</a> or an <a href="mailto:szaby@szabster.net">email</a> if you have any comments or questions.</div>
+				<div class="align right"><a href="http://creativecommons.org/licenses/by-nc-sa/3.0/">CC BY-NC-SA 3.0</a></div>
+				<div class="clear"></div>
+			</div>
+		</div>
+		
+		
+	</body>
+</html>

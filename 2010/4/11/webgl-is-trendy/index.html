@@ -1,0 +1,103 @@
+<html>
+	<head>
+		
+		<title>
+		
+		
+			WebGL is trendy ... - Mihail Szabolcs
+		
+		
+		</title>
+		
+		<!-- Content Type -->
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<!-- Favicon -->
+		<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" /> 
+		<!-- Atom Feed -->
+		<link href="http://feeds.feedburner.com/szabsternet" rel="alternate" title="Mihail Szabolcs" type="application/atom+xml" /> 
+		<!-- Default -->
+		<link rel="stylesheet" type="text/css" href="/css/default.css" />
+		<!-- Pygments Syntax  -->
+		<link rel="stylesheet" type="text/css" href="/css/syntax.css" />
+		<!-- Blog  -->
+		<link rel="stylesheet" type="text/css" href="/css/blog.css" />
+		<!-- Fonts from Google's Web font directory at http://google.com/webfonts -->
+		<link href='http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic' rel='stylesheet' type='text/css' />
+		<link href='http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic' rel='stylesheet' type='text/css' />
+		
+		
+	</head>
+	<body>
+		
+		
+		<a href="http://github.com/icebreaker"><img style="position: fixed; top: 0; right: 0; border: 0; z-index: 1000;" src="https://a248.e.akamai.net/assets.github.com/img/e6bef7a091f5f3138b8cd40bc3e114258dd68ddf/687474703a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f7265645f6161303030302e706e67" alt="Fork me on GitHub"></a>
+		<div class="header">
+			<div class="text">
+				<div class="align left"><strong><a href="/">Mihail Szabolcs</a></strong> - <i>Senior Software Engineer, Open Source Evangelist</i></div>
+				<ul class="align right">
+					<li><a href="/">home</a></li>
+					<li><a href="http://proudify.me">projects</a></li>
+					<li><a href="/about">about</a></li>
+					<li><a href="http://feeds.feedburner.com/szabsternet">rss</a></li>
+				</ul>
+				<div class="clear"></div>
+			</div>
+		</div>
+		
+		<div class="content">
+			
+<a name="WebGL is trendy ..."></a>
+<h1>WebGL is trendy ...</h1>
+<div class="align right"><i>written on April 11, 2010</i></div>
+<div class="clear"></div>
+
+			<h3>Mini3D</h3>
+<p>I'm a hardcore C/C++ programmer, but when I do 'web' my all time favorite is JavaScript; however I tend to take JavaScript to
+the extreme by doing OOP, this confuses 99% of the 'web' dudes who have no idea about optimizations or just pretty much 
+copied JavaScript from DHTML.com all their lives without ever knowing what's going on.</p>
+<p>Soooooooo, <em>drum rolls</em> ... I'm here to announce <a href="http://icebreaker.github.com/mini3d/">Mini3D</a> a small 3D engine written in pure JavaScript, built on the top of WebGL which uses the
+canvas element and it's part of the HTML5 standard.</p>
+<h3>Rant Begin</h3>
+<p>I should have rather spent time working on <a href="/tag/lera3d">Lera3D</a> instead, but after seeing the <a href="http://code.google.com/p/quake2-gwt-port/">Quake2 port to WebGL</a> and being pissed off by
+<a href="http://www.ambiera.com/copperlicht/index.html">CopperLicht</a> which is basically a subset of the crappy <a href="http://irrlicht.sourceforge.net/">irrLicht</a> ported to JavaScript and WebGL, I decided
+to build a 100% free alternative myself.</p>
+<h3>Rant End</h3>
+<p>Mini3D itself is fairly simple, yet written in a very elegant manner without any 3rd party libraries; it's quite light-weight.
+It has a modular design, so it's relatively easy to stick in a new module which can make use of other existing modules.</p>
+<p>To run this piece of shit you will need an unstable build of Chrome, Safari or Firefox. I'd recommend Chrome, because it seems
+to be ahead of the time and the WebGL implementation is quite solid (at least so it seems under Linux).</p>
+<h3>Development</h3>
+<p>The development of Mini3D took barely two weekends so don't expect too much, but it's quite usable already and abstracts most
+of the required functionalities well enough; the primary reason was to simplify things and provide boilerplate code so the 
+programmer can focus on the 'demo' or 'game' itself rather than writing miles of code every single time ...</p>
+<p>The 'low' level part is ready (more or less), now higher level stuff can be built on the top of it.</p>
+<p>This is a very very early version, but this time I stick to <em>'Release early, release often'</em>.</p>
+<h3>Demos</h3>
+<p><a href="http://icebreaker.github.com/mini3d/demos/cube/cube.html" class="image">
+<img src="/images/2010/04/cube.png"/>
+</a></p>
+<p><a href="http://icebreaker.github.com/mini3d/demos/clod/clod.html" class="image">
+<img src="/images/2010/04/clod.png"/>
+</a></p>
+<p>Click on the images above to start the demos. You will need a WebGL enabled browser in order to watch them; for more information about
+how to get a WebGL enabled browser please consult the following <a href="http://www.khronos.org/webgl/wiki/Getting_a_WebGL_Implementation">documentation</a> .</p>
+<h3>Source Code</h3>
+<p>The source is on GitHub, and can be found right <a href="https://github.com/icebreaker/mini3d">here</a> . </p>
+<p>Feel free to fork it, hack it and submit a pull request. Your contributions are more than welcome.</p>
+<p>Be sure to checkout the <a href="http://icebreaker.github.com/mini3d/docs/index.html">documentation</a> as well.</p>
+<h3>End of Line</h3>
+			
+
+		</div>
+		
+		<div class="footer">
+			<div class="text">
+				<div class="align left">Feel free to shoot me a <a href="http://twitter.com/theicebreaker">tweet</a> or an <a href="mailto:szaby@szabster.net">email</a> if you have any comments or questions.</div>
+				<div class="align right"><a href="http://creativecommons.org/licenses/by-nc-sa/3.0/">CC BY-NC-SA 3.0</a></div>
+				<div class="clear"></div>
+			</div>
+		</div>
+		
+		
+	</body>
+</html>

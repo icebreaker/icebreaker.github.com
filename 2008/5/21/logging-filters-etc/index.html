@@ -1,0 +1,129 @@
+<html>
+	<head>
+		
+		<title>
+		
+		
+			Logging &#38; Filters ... etc - Mihail Szabolcs
+		
+		
+		</title>
+		
+		<!-- Content Type -->
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<!-- Favicon -->
+		<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" /> 
+		<!-- Atom Feed -->
+		<link href="http://feeds.feedburner.com/szabsternet" rel="alternate" title="Mihail Szabolcs" type="application/atom+xml" /> 
+		<!-- Default -->
+		<link rel="stylesheet" type="text/css" href="/css/default.css" />
+		<!-- Pygments Syntax  -->
+		<link rel="stylesheet" type="text/css" href="/css/syntax.css" />
+		<!-- Blog  -->
+		<link rel="stylesheet" type="text/css" href="/css/blog.css" />
+		<!-- Fonts from Google's Web font directory at http://google.com/webfonts -->
+		<link href='http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic' rel='stylesheet' type='text/css' />
+		<link href='http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic' rel='stylesheet' type='text/css' />
+		
+		
+	</head>
+	<body>
+		
+		
+		<a href="http://github.com/icebreaker"><img style="position: fixed; top: 0; right: 0; border: 0; z-index: 1000;" src="https://a248.e.akamai.net/assets.github.com/img/e6bef7a091f5f3138b8cd40bc3e114258dd68ddf/687474703a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f7265645f6161303030302e706e67" alt="Fork me on GitHub"></a>
+		<div class="header">
+			<div class="text">
+				<div class="align left"><strong><a href="/">Mihail Szabolcs</a></strong> - <i>Senior Software Engineer, Open Source Evangelist</i></div>
+				<ul class="align right">
+					<li><a href="/">home</a></li>
+					<li><a href="http://proudify.me">projects</a></li>
+					<li><a href="/about">about</a></li>
+					<li><a href="http://feeds.feedburner.com/szabsternet">rss</a></li>
+				</ul>
+				<div class="clear"></div>
+			</div>
+		</div>
+		
+		<div class="content">
+			
+<a name="Logging &#38; Filters ... etc"></a>
+<h1>Logging &#38; Filters ... etc</h1>
+<div class="align right"><i>written on May 21, 2008</i></div>
+<div class="clear"></div>
+
+			<p>I think that is extremely beneficial for every desktop application having an flexible yet powerful logging system.</p>
+<p>This can "log" to a file, to a console (internal or not) or both. Anyway, the most important thing are the different log levels, and filters.</p>
+<p>Let's say that we have Text, Info, Warning, Error ... each represents an level. Then we can setup a filter to "show" only the Warnings, or the Errors supressing all the other messages. This is extremly useful if you have bunch messages showing up in your log file / console.</p>
+<p>Now let's see some code :)</p>
+<div class="highlight"><pre><span class="cp">#define SAFE_ARRAY_DELETE(x) if(x) {delete [] x; x=NULL;}</span>
+<span class="cp">#define INRANGE(x,min,max) ( (x &gt;= min) &amp;&amp; (x &lt;= max) )</span>
+
+<p><span class="k">namespace</span> <span class="n">Log</span>
+<span class="p">{</span>
+    <span class="k">const</span> <span class="kt">int</span> <span class="n">Text</span>        <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+    <span class="k">const</span> <span class="kt">int</span> <span class="n">Info</span>        <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
+    <span class="k">const</span> <span class="kt">int</span> <span class="n">Warning</span> <span class="o">=</span> <span class="mi">2</span><span class="p">;</span>
+    <span class="k">const</span> <span class="kt">int</span> <span class="n">Error</span>       <span class="o">=</span> <span class="mi">3</span><span class="p">;</span>
+    <span class="c1">// used only by the filtering</span>
+    <span class="k">const</span> <span class="kt">int</span> <span class="n">Any</span>     <span class="o">=</span> <span class="mi">4</span><span class="p">;</span>
+<span class="p">};</span></p>
+<p><span class="k">static</span> <span class="kt">int</span> <span class="n">g_logFilter</span> <span class="o">=</span> <span class="n">Log</span><span class="o">::</span><span class="n">Any</span><span class="p">;</span></p>
+<p><span class="kt">void</span> <span class="n">setConsoleLogFilter</span><span class="p">(</span> <span class="k">const</span> <span class="kt">int</span> <span class="n">logFilter</span> <span class="p">)</span>
+<span class="p">{</span>
+    <span class="k">if</span><span class="p">(</span> <span class="n">INRANGE</span><span class="p">(</span><span class="n">logFilter</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">5</span><span class="p">)</span> <span class="p">)</span>
+    <span class="p">{</span>
+        <span class="n">g_logFilter</span> <span class="o">=</span> <span class="n">logFilter</span><span class="p">;</span>
+        <span class="k">return</span><span class="p">;</span>
+    <span class="p">}</span>
+    <span class="n">g_logFilter</span> <span class="o">=</span> <span class="n">Log</span><span class="o">::</span><span class="n">Any</span><span class="p">;</span>
+<span class="p">}</span></p>
+<p><span class="kt">void</span> <span class="n">consoleLog</span><span class="p">(</span> <span class="k">const</span> <span class="kt">int</span> <span class="n">logLevel</span><span class="p">,</span> <span class="k">const</span> <span class="kt">char</span> <span class="o"><em></span><span class="n">msg</span><span class="p">,</span> <span class="p">...</span> <span class="p">)</span>
+<span class="p">{</span>
+    <span class="n">va_list</span> <span class="n">ap</span><span class="p">;</span>
+    <span class="c1">// is filtering turned on?</span>
+    <span class="k">if</span><span class="p">(</span> <span class="n">g_logFilter</span> <span class="o">!=</span> <span class="n">Log</span><span class="o">::</span><span class="n">Any</span> <span class="o">&amp;&amp;</span> <span class="n">g_logFilter</span> <span class="o">!=</span> <span class="n">logLevel</span> <span class="p">)</span>
+    <span class="p">{</span>
+        <span class="k">return</span><span class="p">;</span>
+    <span class="p">}</span>
+    <span class="kt">char</span> <span class="o"></em></span><span class="n">text</span> <span class="o">=</span> <span class="k">new</span> <span class="kt">char</span><span class="p">[</span> <span class="mi">2048</span> <span class="p">];</span>
+    <span class="n">assert</span><span class="p">(</span> <span class="n">text</span> <span class="p">);</span>
+    <span class="n">memset</span><span class="p">(</span><span class="n">text</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="k">sizeof</span><span class="p">(</span><span class="n">text</span><span class="p">));</span>
+    <span class="n">va_start</span><span class="p">(</span><span class="n">ap</span><span class="p">,</span> <span class="n">msg</span><span class="p">);</span>
+        <span class="n">vsprintf</span><span class="p">(</span><span class="n">text</span><span class="p">,</span> <span class="n">msg</span><span class="p">,</span> <span class="n">ap</span><span class="p">);</span>
+    <span class="n">va_end</span><span class="p">(</span><span class="n">ap</span><span class="p">);</span>
+    <span class="k">switch</span><span class="p">(</span> <span class="n">logLevel</span> <span class="p">)</span>
+    <span class="p">{</span>
+        <span class="k">case</span> <span class="n">Log</span><span class="o">::</span><span class="nl">Info:</span>
+            <span class="n">printf</span><span class="p">(</span> <span class="s">&quot;INFO: %s</span><span class="se">n</span><span class="s">&quot;</span><span class="p">,</span> <span class="n">text</span> <span class="p">);</span>
+            <span class="k">break</span><span class="p">;</span>
+        <span class="k">case</span> <span class="n">Log</span><span class="o">::</span><span class="nl">Warning:</span>
+            <span class="n">printf</span><span class="p">(</span> <span class="s">&quot;WARNING: %s</span><span class="se">n</span><span class="s">&quot;</span><span class="p">,</span> <span class="n">text</span> <span class="p">);</span>
+            <span class="k">break</span><span class="p">;</span>
+        <span class="k">case</span> <span class="n">Log</span><span class="o">::</span><span class="nl">Error:</span>
+            <span class="n">printf</span><span class="p">(</span> <span class="s">&quot;ERROR: %s</span><span class="se">n</span><span class="s">&quot;</span><span class="p">,</span> <span class="n">text</span> <span class="p">);</span>
+            <span class="k">break</span><span class="p">;</span>
+        <span class="k">default</span><span class="o">:</span>
+            <span class="n">printf</span><span class="p">(</span> <span class="s">&quot;%s</span><span class="se">n</span><span class="s">&quot;</span><span class="p">,</span> <span class="n">text</span> <span class="p">);</span>
+            <span class="k">break</span><span class="p">;</span>
+    <span class="p">}</span>
+    <span class="n">SAFE_ARRAY_DELETE</span><span class="p">(</span> <span class="n">text</span> <span class="p">);</span>
+<span class="p">}</span>
+</pre></div></p>
+<p>This is very very straightforward ... it's C++, but it can be adapted to C, by replacing the memory managment stuff ... new with malloc, delete [] with free :) and moving out the constants into an enum :)</p>
+<p>It works out great for me, and I use something very very similar to this on a day to day basis :D</p>
+<p>Happy coding!</p>
+			
+
+		</div>
+		
+		<div class="footer">
+			<div class="text">
+				<div class="align left">Feel free to shoot me a <a href="http://twitter.com/theicebreaker">tweet</a> or an <a href="mailto:szaby@szabster.net">email</a> if you have any comments or questions.</div>
+				<div class="align right"><a href="http://creativecommons.org/licenses/by-nc-sa/3.0/">CC BY-NC-SA 3.0</a></div>
+				<div class="clear"></div>
+			</div>
+		</div>
+		
+		
+	</body>
+</html>

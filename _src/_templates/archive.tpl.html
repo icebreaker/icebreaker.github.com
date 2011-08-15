@@ -1,0 +1,18 @@
+{% extends "default.tpl.html" %}
+{% block title %}
+{{ page.title }}
+{% endblock %}
+{% block content %}
+{{ super() }}
+<div class="posts">
+	<ul>
+		{% for post in site.posts %}
+		<li>
+			<span>{{ post.date | date_to_string }}</span>
+			<a href="{{ post.url }}">{{ post.title }}</a>
+			<div class="clear"></div>
+		</li>
+		{% endfor %}
+	</ul>
+</div>
+{% endblock content %}

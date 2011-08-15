@@ -1,0 +1,15 @@
+--- 
+layout: post
+title: Nimuh
+tags: 
+- game
+- linux
+- nimuh
+- play
+- ubuntu
+---
+This is another sweet game i stumbled across a while ago, but I don't think that I blogged about it, or maybe I'm wrong? Hmm... anyway, here are two screenshots as a teaser, and if you like it then grab it over <a title=")" href="http://www.nimuh.com/" target="_blank">here</a> .
+
+<a class="image" href="/images/2008/05/screenshot-nimuh-en-busca-del-tesoro-andaluz-1.png"><img class="alignnone size-medium wp-image-198" src="/images/2008/05/screenshot-nimuh-en-busca-del-tesoro-andaluz-1.png?w=300" alt="" width="300" height="225" /></a>
+
+<a class="image" href="/images/2008/05/screenshot-nimuh-en-busca-del-tesoro-andaluz.png"><img class="alignnone size-medium wp-image-199" src="/images/2008/05/screenshot-nimuh-en-busca-del-tesoro-andaluz.png?w=300" alt="" width="300" height="225" /></a>

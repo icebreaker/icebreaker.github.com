@@ -1,0 +1,102 @@
+<html>
+	<head>
+		
+		<title>
+		
+		
+			Frogatto - Mihail Szabolcs
+		
+		
+		</title>
+		
+		<!-- Content Type -->
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<!-- Favicon -->
+		<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" /> 
+		<!-- Atom Feed -->
+		<link href="http://feeds.feedburner.com/szabsternet" rel="alternate" title="Mihail Szabolcs" type="application/atom+xml" /> 
+		<!-- Default -->
+		<link rel="stylesheet" type="text/css" href="/css/default.css" />
+		<!-- Pygments Syntax  -->
+		<link rel="stylesheet" type="text/css" href="/css/syntax.css" />
+		<!-- Blog  -->
+		<link rel="stylesheet" type="text/css" href="/css/blog.css" />
+		<!-- Fonts from Google's Web font directory at http://google.com/webfonts -->
+		<link href='http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic' rel='stylesheet' type='text/css' />
+		<link href='http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic' rel='stylesheet' type='text/css' />
+		
+		
+	</head>
+	<body>
+		
+		
+		<a href="http://github.com/icebreaker"><img style="position: fixed; top: 0; right: 0; border: 0; z-index: 1000;" src="https://a248.e.akamai.net/assets.github.com/img/e6bef7a091f5f3138b8cd40bc3e114258dd68ddf/687474703a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f7265645f6161303030302e706e67" alt="Fork me on GitHub"></a>
+		<div class="header">
+			<div class="text">
+				<div class="align left"><strong><a href="/">Mihail Szabolcs</a></strong> - <i>Senior Software Engineer, Open Source Evangelist</i></div>
+				<ul class="align right">
+					<li><a href="/">home</a></li>
+					<li><a href="http://proudify.me">projects</a></li>
+					<li><a href="/about">about</a></li>
+					<li><a href="http://feeds.feedburner.com/szabsternet">rss</a></li>
+				</ul>
+				<div class="clear"></div>
+			</div>
+		</div>
+		
+		<div class="content">
+			
+<a name="Frogatto"></a>
+<h1>Frogatto</h1>
+<div class="align right"><i>written on October 07, 2008</i></div>
+<div class="clear"></div>
+
+			<p><em>"Frogatto is an old-style platform game, starring an anthropomorphic frog!" </em></p>
+<p>Linux is officially not supported, but it works perfectly with some slight modifications of the "Makefile".</p>
+<p>I checked out the latest version from the SVN, and modified the make file so it looks like this:</p>
+<div class="highlight"><pre>svn checkout http://frogatto.googlecode.com/svn/trunk/ frogatto
+<span class="nb">cd </span>frogatto
+vim Makefile
+</pre></div>
+
+<div class="highlight"><pre><span class="nv">objects</span> <span class="o">=</span> background.o character.o character_type.o color_utils.o custom_object.o custom_object_functions.o custom_object_type.o draw_number.o draw_scene.o draw_tile.o editor.o entity.o filesystem.o fluid.o font.o formula.o formula_function.o formula_tokenizer.o frame.o geometry.o item.o item_type.o joystick.o key.o level.o level_logic.o level_object.o load_level.o main.o message_dialog.o preferences.o preprocessor.o prop.o raster.o sound.o string_utils.o surface_cache.o surface_formula.o surface.o texture.o tile_map.o variant.o wml_node.o wml_parser.o wml_utils.o wml_writer.o
+
+<span class="nv">formula_test_objects</span> <span class="o">=</span> filesystem.o formula_function.o formula_tokenizer.o string_utils.o variant.o wml_node.o wml_parser.o wml_utils.o wml_writer.o
+
+<p>%.o : src/%.cpp
+g++ -g -O2 -I/usr/local/include/boost-1_34 -I/usr/include/SDL -I/usr/X11R6/include -D_GNU_SOURCE<span class="o">=</span>1 -D_REENTRANT -Wnon-virtual-dtor -Wreturn-type -fthreadsafe-statics -c <span class="nv">$&lt;</span></p>
+<p>game: <span class="k">$(</span>objects<span class="k">)</span>
+g++ -g -O2 -L/usr/lib -L/usr/X11R6/lib -lX11 -D_GNU_SOURCE<span class="o">=</span>1 -D_REENTRANT -Wnon-virtual-dtor -Wreturn-type -L/usr/lib -lSDLmain -lSDL -lGL -lGLU -lSDL_image -lSDL_ttf -lSDL_mixer -lboost_regex -lboost_thread-mt -fthreadsafe-statics *.o -o game</p>
+<p>formula_test: <span class="k">$(</span>formula_test_objects<span class="k">)</span>
+g++ -O2 -g -I/usr/include/SDL -D_GNU_SOURCE<span class="o">=</span>1 -D_REENTRANT -DUNIT_TEST_FORMULA -Wnon-virtual-dtor -Wreturn-type -L/usr/lib -lSDL -lGL -lGLU -lSDL_image -lSDL_ttf -lSDL_mixer -lboost_regex src/formula.cpp <span class="k">$(</span>formula_test_objects<span class="k">)</span> -o <span class="nb">test</span></p>
+<p>clean:
+rm *.o game
+</pre></div></p>
+<div class="highlight"><pre>:wq
+</pre></div>
+
+<p>Of course you will need SDL, SDL_Image, SDL_ttf, SDL_mixer and Boost Regexp and Thread in order to successfully compile it, since there is no configure script at the moment.</p>
+<p>Basically all I did is removing the '-framework' paramters and modifying the SDL include and lib paths.</p>
+<div class="highlight"><pre>make
+./game
+</pre></div>
+
+<p><a class="image" href="/images/2008/10/screenshot-game.jpg">
+<img class="alignnone size-thumbnail wp-image-360" title="screenshot-game" src="/images/2008/10/screenshot-game-400x300.jpg" alt="" width="400" height="300" />
+</a></p>
+<p>Enjoy!</p>
+			
+
+		</div>
+		
+		<div class="footer">
+			<div class="text">
+				<div class="align left">Feel free to shoot me a <a href="http://twitter.com/theicebreaker">tweet</a> or an <a href="mailto:szaby@szabster.net">email</a> if you have any comments or questions.</div>
+				<div class="align right"><a href="http://creativecommons.org/licenses/by-nc-sa/3.0/">CC BY-NC-SA 3.0</a></div>
+				<div class="clear"></div>
+			</div>
+		</div>
+		
+		
+	</body>
+</html>

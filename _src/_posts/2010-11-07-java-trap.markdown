@@ -1,0 +1,104 @@
+--- 
+layout: post
+title: The Java Trap
+tags: [java, c#, microsoft, google, oracle, rant, linux]
+article: true
+---
+
+### The empire strikes back or the return of the Jedi?
+
+After my controversial [CrapDroid](/2010/10/23/crapdroid/) post, it's time for me to 
+strike back with another *hot* topic, namely the Java or C# trap for that matter.
+
+The JVM and the .NET CLR are birds of the same feather and they kind of flock
+together; like it or not.
+
+Most of the time when *RMS* makes his position clear concerning issues
+like this very **early**, everybody is like:
+
+*"Arrgh, ignore that old man ..."*
+
+*"Did he take his medication first?"*
+
+### Who cares? or perhaps who should care?
+
+Companies should care more about this than the average Joe 
+who might use Eclipse as his IDE and OpenOffice to write his love letters.
+
+But *you*, the corporate guy, the enterprise engineer you build your shit on the top of it 
+and then find yourself in some delicate position when Oracle or Microsoft tighten the strings.
+
+There are two possible outcomes:
+
+Refuse to pay and waste tons of resources on rebuilding everything from scratch, which
+you could have done from the very beginning avoiding the whole thing.
+
+Continue to pay lots of money for stuff you are forced to use because you and your business
+depends on it, be it good or bad, like it or not.
+
+Either way, the result is the same, *you* lose, *you* waste your company's resources on CrapWare.
+
+Next time your consultant, advisor or CTO stands up and proclaims:
+
+*We'll use Java/C#! It's kick ass.*
+
+Back-hand him and make sure he doesn't need to walk in the office the next day.
+
+The average Joe will just find an alternative and move on, he got nothing to lose.
+
+### The root of all evil
+
+Every *bad* habit or thing can be traced back to the elemental *evil* which caused it in the first
+place, but more often than not we lose sight of this.
+
+In this case my biggest question is why do they teach any of these at school?
+
+Schools shouldn't teach students proprietary languages more than they provide them with free packs of cigarettes.
+
+If they want to teach students OOP without worrying about "low-level" stuff like "memory management" they could pick a
+scripting language like Python or PHP and don't damage their brains with proprietary crap. It's worse than *crack*!
+
+### Lessons learned?
+
+In fact, I'm quite happy about Oracle busting Google's ass, but only because of [CrapDroid](http://crapdroid.eu).
+
+Don't get me wrong Google makes some great web products but they should GTFO of this mobile business, it just doesn't suit them.
+
+Hopefully this will be a good lesson and make *you* corporate guys think twice before you fire up your CrapBeans
+or CrapStudio in order to build the *NEXT BIG THING*, because you might wake up in a morning and realize that you 
+don't *OWN* it anymore.
+
+This is not about competition we just don't need this Java and C# crap. We don't need *free implementations* or *tiers*,
+they just have to go down the toilet once for all.
+
+Why duplicate effort by building these *free runtime environments* ? We don't need them, there are far more
+important parts of the Linux user-land which need lots of love.
+
+### Defenders of the faith
+
+Java/C# guys, please for the sake of humanity do me a favor and if your comment
+is anything like these, *PLEASE* don't post it and move along.
+
+*"What do you know about Enterprise Level applications written in Java?"*
+
+*"Java is rock solid, yada yada yada ..."*
+
+*"How QT is different from Java?"*
+
+I'm not interested in listening to your abominations. Thanks.
+
+### References
+
+For your reading pleasure, make sure to read these before you start
+trolling around in the comments.
+
+1. [Java Trap](http://www.gnu.org/philosophy/java-trap.html)
+2. [Do not depend on Mono](http://www.fsf.org/news/dont-depend-on-mono)
+3. [JavaScript Trap](http://www.gnu.org/philosophy/javascript-trap.html)
+
+### Second thoughts?
+
+**Obfuscated** *JavaScript* is *another story*, we'll discuss it next time with
+[CopperLicht](http://www.ambiera.com/copperlicht/) on the radar. Stay tuned.
+
+### End of Line

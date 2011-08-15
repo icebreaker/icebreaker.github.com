@@ -1,0 +1,20 @@
+--- 
+layout: post
+title: SexyGrep
+tags: 
+- prototype
+- sexygrep
+---
+SexyGrep is another experimental prototype project thrown together in a few hours. I really wanted to do this for a long long time now, so here I am!
+
+The whole point of the project is to embed WebKit into a C++ application, expose some system functionalities to it, so they can be accessed via JavaScript and build the whole app using the well known and proven trio HTML+CSS+JavaScript.
+
+What's better for a setup like this than QT? nothing!
+
+<a class="image" href="/images/2010/01/sexygrep.png"><img class="aligncenter size-medium wp-image-798" title="sexygrep" src="/images/2010/01/sexygrep-500x281.png" alt="" width="500" height="281" /></a>
+
+Right now it works under *NIX only, but it shouldn't be hard to make it work under Windows as well; also this can be used as a 'base framework' to build other apps using this mindset. Who the hell needs Adobe Air? Most definitely not me! *sigh*
+
+The source code can be found on GitHub as usual right <a title="Get the source code now!" href="http://github.com/icebreaker/sexygrep/" target="_blank">here</a> .
+
+Until next time, as server said END OF LINE.

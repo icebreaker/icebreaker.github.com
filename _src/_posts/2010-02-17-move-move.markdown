@@ -1,0 +1,9 @@
+--- 
+layout: post
+title: Move, Move
+tags: [blog, move] 
+---
+
+Successfully moved to [Heroku](http://www.heroku.com). End of Line.
+
+Lots of interesting stuff is on the way! Stay tuned!

@@ -1,0 +1,83 @@
+--- 
+layout: post
+title: New Life, New Blog, New ...
+tags: [new, life, blog, heroku, github] 
+---
+
+### Reasons, Questions and Answers
+
+If you are a regular visitor here then you imediatelly noticed the changes. 
+Brand new layout and no more WordPress. **sigh**??!! . What does this mean?
+
+> **Q. Do I really need a shared hosting plan?**
+
+> **A.** No, I don't, because I'm using only a fraction of the provided services which means that 
+I'm wasting money on stuff I don't really make use of. Bad bad!
+
+> **Q. Why I didn't go with GitHub Pages?**
+
+> **A.** First of all I'm using my own fork of Jekyll, with enhanced tag support and a few other small convenience changes, 
+on the other hand I want to have at least a minimal server side control for dynamic pages, otherwise
+GitHub pages would be the perfect solution for blogging with Jekyll; I will re-evaluate this once I get my 7$ 
+GitHub subscription.
+
+> **Q. Why I didn't go with SliceHost?**
+
+> **A.** I bought a 256MB slice (which I recently canceled, 20$ / month), setup a Git remote repo with a hook 
+to re-generate the static html via Jekyll and served the pages via Nginx. 
+This worked very very well, but I realized that I don't need full VPS just to host this simple blog 
+and possibly a Trac (Edgewall) instance.
+
+> **Q. Why I didn't go with Posterous, Thumblr or some other blogging platform?**
+
+> **A.** I want full control over my **text** (I did that before) plus I want it versioned using Git and hosted GitHub. 
+Even though Posterous and Thumlr can be fully customized, they are still not there for *me*.
+
+> **Q. Heroku? Why?**
+
+> **A.** I'm most definitely not a big Ruby fan, *BUT* the free plan on [Heroku](http://www.heroku.com) really did catch my attention!
+They have a read-only file-system, so I can generate my static pages locally with my own Jekyll fork, commit and push them 
+to Heroku, plus push the **raw source material** to GitHub for easier access to the masses.
+
+### (Dr.) Jekyll
+
+[Jekyll](http://github.com/mojombo/jekyll) is an awesome piece of software written in Ruby, unfortunately I had to hack it a little bit in order to 
+enable generating nice Tag Clouds and Tag Pages. You can check out the [Archives](/archives-tags.html) page 
+to see what I mean. You can find my Jekyll fork right [here](http://github.com/icebreaker/jekyll) .
+
+Like I said, I also had to modify the WordPress importer in order to fetch tags and fix the image paths so 
+I could just move out my "uploads" directory into Jekyll's "images" directory.
+
+<script src="http://gist.github.com/303570.js?file=wordpress.rb"></script>
+
+I'm still learning Markdown as of typing up these words in VI.
+
+### Heroku, Text and Images
+
+Heroku limits the "Slug Size" to 20MB, which is HUGE if you want to server static HTML or other dynamically generated stuff, 
+but it's barely enough if you are planning to use images, they even recommend to go for Amazon S3 
+if you want to store media files.
+
+I rarely write up posts which contain images so I moved them into my DropBox, roughly 49MB (after the import from WordPress); 
+with this my slug size is around 380KB including 130 blog posts, the archives, rss feeds and about pages. 
+Maybe in 20 years I will fill up the 20MB. *ha!* :)
+
+I'm using [Sinatra](http://www.sinatrarb.com) to serve off the static HTML and stuff.
+
+<script src="http://gist.github.com/304015.js?file=config.ru"></script>
+
+<script src="http://gist.github.com/304016.js?file=masquerade.rb"></script>
+
+The great thing about [Sinatra](http://www.sinatrarb.com) is that I can easily silenty re-route my old URLs in the format 
+*/year/month/day/title* to */year/month/day/title.html* as you can see above.
+
+Heroku is definitely a **game changer** compared to other platforms like Google's [App Engine](http://appengine.google.com), 
+primarily because of the tight integration with Git making development and deployment piece of cake.
+
+In less then 5 minutes I had my very first "Hello World" app up and running.
+
+### End?!
+
+I'm very pleased with this setup, from now on I will blog a lot more, so stay tuned! (amazing stuff will follow). 
+Be sure to checkout my [GitHub repos](http://github.com/icebreaker) to get the latest code for all the stuff 
+I've been discussing about here .

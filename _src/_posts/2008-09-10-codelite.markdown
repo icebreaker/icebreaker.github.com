@@ -1,0 +1,15 @@
+--- 
+layout: post
+title: CodeLite
+tags: 
+- gcc
+- ubuntu
+- windows
+- codelite
+- ide
+---
+Today I found CodeLite, which seems to be a nice IDE. I compiled the latest version from the SVN, but haven't tested it yet. I'll write more about it later ...
+
+<a class="image" href="/images/2008/09/screenshot-codelite.jpg"><img class="alignnone size-thumbnail wp-image-331" title="screenshot-codelite" src="/images/2008/09/screenshot-codelite-400x225.jpg" alt="" width="400" height="225" /></a>
+
+You can get it <a title="Get it here!" href="http://codelite.org/" target="_blank">here</a> .

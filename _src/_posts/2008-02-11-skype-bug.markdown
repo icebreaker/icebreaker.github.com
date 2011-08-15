@@ -1,0 +1,7 @@
+--- 
+layout: post
+title: Skype Bug ...
+tags: [skype, bug, fail, funny]
+
+---
+<img src="/images/2008/02/skype_bug.png" alt="skype_bug.png" />

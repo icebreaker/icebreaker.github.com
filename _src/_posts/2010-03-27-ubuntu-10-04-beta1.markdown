@@ -1,0 +1,34 @@
+--- 
+layout: post
+title: Ubuntu 10.04 Beta 1
+tags: [ubuntu, linux, beta] 
+---
+
+10.04 is **rock solid**! The first **TRULY rock solid** *release* since **7.04**.
+
+There's only a small glitch related to the proprietary ATI driver; if you install the latest official one straight from the AMD/ATI driver site, 
+you will get a blank screen on boot, this is because the kernel module doesn't really like the new X shipped with this release.
+
+Fortunately, there is an unreleased fglrx in the official Ubuntu repositories which works great, except that after installing it
+gnome-power-manager seems to ignore the brightness value and resets it to 100%, at least on this ASUS K50AB series laptop.
+
+To overcome this brightness issue, I wrote a small script which I execute to reduce the brightness (0..15).
+
+(this will get fixed eventually before the release)
+
+{% highlight bash %}
+#!/bin/bash
+echo 8 > /proc/acpi/video/VGA1/LCDD/brightness
+{% endhighlight %}
+
+Ah, I almost forgot, it's easy to move the buttons to the right corner in metacity.
+
+Here is how to do it:
+
+* Launch **gconf-editor** by pressing *Alt-F2* then typing *gconf-editor*.
+* Navigate to **/app/metacity/general** and change the value of *button_layout* to *:minimize,maximize,close* .
+
+In less than 5 hours, I have my whole system right back with all the necessary packages (i did a clean-install) installed. **Huzzah**!!!
+
+### End of Line
+

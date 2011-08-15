@@ -1,0 +1,54 @@
+--- 
+layout: post
+title: App whore?!
+tags: [appstore, rant, linux, games] 
+article: true
+---
+
+App Whore? Ahhh, sorry I meant App Store, just in case you didn't notice they are very very trendy these days. 
+
+You almost cannot call yourself a *respectable* company down the valley if you haven't got your very own App Store.
+
+Look around ... Apple, Intel, Microsoft ... and now Canonical got one, right into their *"Ubuntu Software Center"*; this wasn't
+a totally unexpected move from them, considering that they built the whole Software Center in the first place.
+
+Linux, sadly still faces the **chicken<->egg** problem when it comes to the Desktop. 
+
+The server side of things is doing great, just look at Red Hat and you can tell right away; of course now with the CLOUD, the DESKTOP could be just replaced by your web
+browser as web apps start to resemble and replace desktop apps.
+
+I don't have anything special against Canonical and their will to bring in an App Store for Commercial Applications, but they
+should at least reconsider this move; why? for a shitload of reasons.
+
+Linux and *free software* are about the freedom of choice, and Linux itself really needs an App Store on its own where
+you could get and install *free* and *commercial* software for your favorite Linux distribution and not locked in to one
+distribution.
+
+This doesn't mean that they have to drop their own repositories or package formats, or have some unified interface.
+
+My point is to have one atomic App Store where developers can submit their software (*free or commercial*) and they would get
+packaged for all major distributions out there; the most dauting task for all those devs who are porting their games to Linux
+is to provide packages, but everybody could just benefit from this in general, even those who know-how-to package their software.
+
+This would be governed by a board of people just like every other major free software project, e.g: Gnome, combined with
+a transparent and streamlined submission process (no discrimination, but preventing shitty apps to get in) .
+
+The end-user would just bring down the App Store application from their favorite distribution's repository and have access
+to well *packaged high quality software*.
+
+Commercial software and especially games would benefit from a platform like this the most, considering that Steam is not going
+to have a Linux version anytime soon, which could solve and unify partially the commercial game distribution .
+
+Many times (most notably during the *Humble Indie Bundle*!) it has been shown that Linux users are more willing to pay for quality
+games than the other platforms. (namely MacOSX and Windows)
+
+The conclusion is that an App Store is needed in the Linux ecosystem, 
+but not one tied (and maintained by) to a specific distribution, not even a major one like *Ubuntu*.
+
+I truly believe, that (indie) games can make Linux mature and increase its adoption on the DESKTOP; but more on this later ...
+
+Without games, Windows would be a boring platform used by accountants who need M$ Excel, 
+just because they never heard of Open Office or don't care enough to consider an alternative or don't care about their freedom
+nor privacy ;)
+
+### End of Line

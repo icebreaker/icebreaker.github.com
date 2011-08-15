@@ -1,0 +1,92 @@
+body
+{
+	font-family: 'PT Serif', Georgia, Serif, Verdana;
+	width: 1024px;
+	margin: 0 auto;
+	background-color: #F6F6F6;
+}
+
+.content
+{
+	text-align: justify;
+	border: 1px solid #CACACA;
+	padding: 50px 20px 50px 20px;
+	background-color: #FFFFFF;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+	-moz-box-shadow: 0px 0px 8px #999999;
+	-webkit-box-shadow: 0px 0px 8px #999999;
+	box-shadow: 0px 0px 8px #999999;
+}
+
+.header, 
+.footer
+{
+	background-color: #DAE3E7;
+	background-color: rgba(218, 227, 231, 0.9);
+	color: #000000;
+	margin: 0;
+	padding: 10px;
+	left: 0;
+	right: 0;
+	position: fixed;
+	z-index: 999;
+	border: 1px solid #CACACA;
+}
+
+.header .text, 
+.footer .text
+{
+	width: 984px;
+	margin: 0 auto;
+}
+
+.header
+{
+	top: 0;
+	border-top: 0;
+	-webkit-box-shadow: 0 7px 8px rgba(0, 0, 0, 0.12);
+	-moz-box-shadow: 0 7px 8px rgba(0, 0, 0, 0.12);
+	box-shadow: 0 7px 8px rgba(0, 0, 0, 0.12);
+}
+
+.footer
+{
+	bottom: 0;
+	border-bottom: 0;
+	-webkit-box-shadow: 0 -7px 8px rgba(0, 0, 0, 0.12);
+	-moz-box-shadow: 0 -7px 8px rgba(0, 0, 0, 0.12);
+	box-shadow: 0 -7px 8px rgba(0, 0, 0, 0.12);
+}
+
+.header ul
+{
+	list-style-type: none;	
+	margin: 0;
+}
+
+.header ul li
+{
+	float: left;
+	margin-left: 10px;
+}
+
+.content .posts ul
+{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+.content .posts ul li
+{
+	padding: 5px 0;
+	border-bottom: 1px solid #CACACA; 
+}
+
+.content .posts ul li span
+{
+	float: right;
+	font-style: italic;
+}

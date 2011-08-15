@@ -1,0 +1,87 @@
+<html>
+	<head>
+		
+		<title>
+		
+		
+			WRTC ... - Mihail Szabolcs
+		
+		
+		</title>
+		
+		<!-- Content Type -->
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<!-- Favicon -->
+		<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" /> 
+		<!-- Atom Feed -->
+		<link href="http://feeds.feedburner.com/szabsternet" rel="alternate" title="Mihail Szabolcs" type="application/atom+xml" /> 
+		<!-- Default -->
+		<link rel="stylesheet" type="text/css" href="/css/default.css" />
+		<!-- Pygments Syntax  -->
+		<link rel="stylesheet" type="text/css" href="/css/syntax.css" />
+		<!-- Blog  -->
+		<link rel="stylesheet" type="text/css" href="/css/blog.css" />
+		<!-- Fonts from Google's Web font directory at http://google.com/webfonts -->
+		<link href='http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic' rel='stylesheet' type='text/css' />
+		<link href='http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic' rel='stylesheet' type='text/css' />
+		
+		
+	</head>
+	<body>
+		
+		
+		<a href="http://github.com/icebreaker"><img style="position: fixed; top: 0; right: 0; border: 0; z-index: 1000;" src="https://a248.e.akamai.net/assets.github.com/img/e6bef7a091f5f3138b8cd40bc3e114258dd68ddf/687474703a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f7265645f6161303030302e706e67" alt="Fork me on GitHub"></a>
+		<div class="header">
+			<div class="text">
+				<div class="align left"><strong><a href="/">Mihail Szabolcs</a></strong> - <i>Senior Software Engineer, Open Source Evangelist</i></div>
+				<ul class="align right">
+					<li><a href="/">home</a></li>
+					<li><a href="http://proudify.me">projects</a></li>
+					<li><a href="/about">about</a></li>
+					<li><a href="http://feeds.feedburner.com/szabsternet">rss</a></li>
+				</ul>
+				<div class="clear"></div>
+			</div>
+		</div>
+		
+		<div class="content">
+			
+<a name="WRTC ..."></a>
+<h1>WRTC ...</h1>
+<div class="align right"><i>written on August 14, 2010</i></div>
+<div class="clear"></div>
+
+			<h3>QuakeCon 2010</h3>
+<p>Just about two days ago at QuakeCon 2010, John announced the release of the integral source code of <em>Wolfenstein: Return to Castle</em>
+and <em>Wolfenstein: Enemy Territory</em> both using modified versions of idTech3 (Quake3).</p>
+<p>This is another significant contribution to the open source community, even though some of us were expecting idTech4 (Doom3).</p>
+<p>More on this over <a href="http://www.gamasutra.com/view/news/29903/QuakeCon_id_Software_Releases_Source_Code_For_Two_Wolfenstein_Titles.php">here</a> .</p>
+<h3>Build, Build, Build</h3>
+<p><a href="/images/2010/08/wrtc.png" class="image">
+<img src="/images/2010/08/wrtc_thumb.png"/>
+</a></p>
+<p>I quickly grabbed the source code of the SP version (<strong>Return to Castle</strong>) and compiled it without any problems in less than a minute
+on my Linux Box.</p>
+<p>I don't own the <em>original</em> <strong>Return to Castle</strong> game so I searched for the demo version and copied the PAK file containing the game data. </p>
+<p>Everything worked fine, except the sound which can be fixed easily:</p>
+<div class="highlight"><pre>su
+<span class="nb">echo</span> <span class="s2">&quot;wolfsp.x86 0 0 direct&quot;</span> &gt; /proc/asound/card0/pcm0p/oss
+</pre></div>
+
+<p>I'm curious to see how the community will start cleaning up the code base just like it did with the good old idTech3. ( <a href="http://ioquake3.org/">ioquake</a> )</p>
+<h3>End of Line</h3>
+			
+
+		</div>
+		
+		<div class="footer">
+			<div class="text">
+				<div class="align left">Feel free to shoot me a <a href="http://twitter.com/theicebreaker">tweet</a> or an <a href="mailto:szaby@szabster.net">email</a> if you have any comments or questions.</div>
+				<div class="align right"><a href="http://creativecommons.org/licenses/by-nc-sa/3.0/">CC BY-NC-SA 3.0</a></div>
+				<div class="clear"></div>
+			</div>
+		</div>
+		
+		
+	</body>
+</html>

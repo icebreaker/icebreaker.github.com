@@ -1,0 +1,73 @@
+<html>
+	<head>
+		
+		<title>
+		
+		
+			Windows Mail high CPU utilization fix - Mihail Szabolcs
+		
+		
+		</title>
+		
+		<!-- Content Type -->
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<!-- Favicon -->
+		<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" /> 
+		<!-- Atom Feed -->
+		<link href="http://feeds.feedburner.com/szabsternet" rel="alternate" title="Mihail Szabolcs" type="application/atom+xml" /> 
+		<!-- Default -->
+		<link rel="stylesheet" type="text/css" href="/css/default.css" />
+		<!-- Pygments Syntax  -->
+		<link rel="stylesheet" type="text/css" href="/css/syntax.css" />
+		<!-- Blog  -->
+		<link rel="stylesheet" type="text/css" href="/css/blog.css" />
+		<!-- Fonts from Google's Web font directory at http://google.com/webfonts -->
+		<link href='http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic' rel='stylesheet' type='text/css' />
+		<link href='http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic' rel='stylesheet' type='text/css' />
+		
+		
+	</head>
+	<body>
+		
+		
+		<a href="http://github.com/icebreaker"><img style="position: fixed; top: 0; right: 0; border: 0; z-index: 1000;" src="https://a248.e.akamai.net/assets.github.com/img/e6bef7a091f5f3138b8cd40bc3e114258dd68ddf/687474703a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f7265645f6161303030302e706e67" alt="Fork me on GitHub"></a>
+		<div class="header">
+			<div class="text">
+				<div class="align left"><strong><a href="/">Mihail Szabolcs</a></strong> - <i>Senior Software Engineer, Open Source Evangelist</i></div>
+				<ul class="align right">
+					<li><a href="/">home</a></li>
+					<li><a href="http://proudify.me">projects</a></li>
+					<li><a href="/about">about</a></li>
+					<li><a href="http://feeds.feedburner.com/szabsternet">rss</a></li>
+				</ul>
+				<div class="clear"></div>
+			</div>
+		</div>
+		
+		<div class="content">
+			
+<a name="Windows Mail high CPU utilization fix"></a>
+<h1>Windows Mail high CPU utilization fix</h1>
+<div class="align right"><i>written on May 07, 2008</i></div>
+<div class="clear"></div>
+
+			<p>I know that Thunderbird is a lot more powerful than Windows Mail, but I prefer it under Windows Vista, mostly because it's simple, and I absolutely love the "Junk Mail Filter". Anyway I don't want to open a war between the two camps, and that's not the point of this post.</p>
+<p>After some time, I noticed that once I start Windows Mail, my CPU goes to 100% and it stay there forever which obviously made the system unresponsive and very very unstable. Please note that the CPU was an single core AMD Turion ( 64bit ) running at 2.2Ghz with just 512kb as L2 cache.</p>
+<p>I started digging around, and stumbled accross users with similar issues, but none of the suggested "solutions" solved my problem, and then I took a look under the folder where Windows Mail actually stores the files, and BOOOM!</p>
+<p>What? There were like 10k EML files with 0kb size no subject, etc. Hmmm? I deleted them all, and started Windows Mail again, and it worked prefectly ever after. This is why it was struggling, and I have no idea how those files were created or anything, but deleting them solved the problem, and that's all what counts.</p>
+<p>What a story huh? LoL</p>
+			
+
+		</div>
+		
+		<div class="footer">
+			<div class="text">
+				<div class="align left">Feel free to shoot me a <a href="http://twitter.com/theicebreaker">tweet</a> or an <a href="mailto:szaby@szabster.net">email</a> if you have any comments or questions.</div>
+				<div class="align right"><a href="http://creativecommons.org/licenses/by-nc-sa/3.0/">CC BY-NC-SA 3.0</a></div>
+				<div class="clear"></div>
+			</div>
+		</div>
+		
+		
+	</body>
+</html>

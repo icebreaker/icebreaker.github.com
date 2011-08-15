@@ -1,0 +1,97 @@
+<html>
+	<head>
+		
+		<title>
+		
+		
+			Forging wallpapers ... - Mihail Szabolcs
+		
+		
+		</title>
+		
+		<!-- Content Type -->
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<!-- Favicon -->
+		<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" /> 
+		<!-- Atom Feed -->
+		<link href="http://feeds.feedburner.com/szabsternet" rel="alternate" title="Mihail Szabolcs" type="application/atom+xml" /> 
+		<!-- Default -->
+		<link rel="stylesheet" type="text/css" href="/css/default.css" />
+		<!-- Pygments Syntax  -->
+		<link rel="stylesheet" type="text/css" href="/css/syntax.css" />
+		<!-- Blog  -->
+		<link rel="stylesheet" type="text/css" href="/css/blog.css" />
+		<!-- Fonts from Google's Web font directory at http://google.com/webfonts -->
+		<link href='http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic' rel='stylesheet' type='text/css' />
+		<link href='http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic' rel='stylesheet' type='text/css' />
+		
+		
+	</head>
+	<body>
+		
+		
+		<a href="http://github.com/icebreaker"><img style="position: fixed; top: 0; right: 0; border: 0; z-index: 1000;" src="https://a248.e.akamai.net/assets.github.com/img/e6bef7a091f5f3138b8cd40bc3e114258dd68ddf/687474703a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f7265645f6161303030302e706e67" alt="Fork me on GitHub"></a>
+		<div class="header">
+			<div class="text">
+				<div class="align left"><strong><a href="/">Mihail Szabolcs</a></strong> - <i>Senior Software Engineer, Open Source Evangelist</i></div>
+				<ul class="align right">
+					<li><a href="/">home</a></li>
+					<li><a href="http://proudify.me">projects</a></li>
+					<li><a href="/about">about</a></li>
+					<li><a href="http://feeds.feedburner.com/szabsternet">rss</a></li>
+				</ul>
+				<div class="clear"></div>
+			</div>
+		</div>
+		
+		<div class="content">
+			
+<a name="Forging wallpapers ..."></a>
+<h1>Forging wallpapers ...</h1>
+<div class="align right"><i>written on April 13, 2008</i></div>
+<div class="clear"></div>
+
+			<p>Recently I bought a nice 19' wide LCD monitor with an 1440x900 resolution, so I quickly setup <strong>Twinview</strong> between my laptop running at 1280x800 and obviously moved down the first screen by 100 pixels, to achieve the same effect as "Extend my ..." Wind0ze.</p>
+<p>Everything was fine, until I wanted to set a wallpaper, and it hurt my eyes ... duhh, it was horible ... stretched between the two screens. yuck!</p>
+<p>The wallpapers designed for dual monitors assume that both have the same height, which obviously wasn't my case ... so the only viable solution was to create my own wallpaper by arranging two images in GIMP.</p>
+<p>I like to have the same wallpaper on both screens, so that wasn't a problem, but it was rather annoying after trying 2-3 wallpapers.</p>
+<p>Instead I thought of the nice utility package called "ImageMagick" ... Yay! and wrote a nice little bash script to generate the desired wallpaper from two images given as input.</p>
+<p>Here is the contents of the script:</p>
+<div class="highlight"><pre><span class="c">#!/bin/bash</span>
+
+<p><span class="k">if</span> <span class="o">[</span> <span class="nv">$# </span>-ne 3 <span class="o">]</span> ; <span class="k">then</span>
+<span class="nb">echo</span> <span class="s2">&quot;Usage: $0 image1.png image2.png outimage.png&quot;</span>
+<span class="nb">exit </span>13
+<span class="k">fi</span></p>
+<p>convert -size 2720x900 xc:black <span class="s2">&quot;$1&quot;</span> -geometry +0+100 -composite <span class="s2">&quot;$2&quot;</span> -geometry +1280+0 -composite <span class="s2">&quot;$3&quot;</span></p>
+<p><span class="nb">echo</span> <span class="s2">&quot;Done ...&quot;</span>
+<span class="nb">exit </span>1
+</pre></div></p>
+<p>I named it "mkwlp" , made it executable (chmod u+x mkwlp) then copied it into /usr/bin for convenience ...</p>
+<p>This can be customized for other resolutions, etc and it's fairly straight forward so i won't go into this.</p>
+<p>(I highlighted the customizable parts for convenience)</p>
+<p>Voila!!!</p>
+<p>Here are a few wallpapers i "forged" with this little script :) Enjoy! (click to see the bigger version)</p>
+<p><a class="image" href="/images/2008/04/rihanna_wall1.png"><img class="alignnone size-medium wp-image-162" src="/images/2008/04/rihanna_wall1.png?w=400" alt="" width="400" height="132" /></a></p>
+<p><a class="image" href="/images/2008/04/rihanna_wall2.png"><img class="alignnone size-medium wp-image-163" src="/images/2008/04/rihanna_wall2.png?w=400" alt="" width="400" height="132" /></a></p>
+<p><a class="image" href="/images/2008/04/arielle_wall1.png"><img class="alignnone size-medium wp-image-168" src="/images/2008/04/arielle_wall1.png?w=400" alt="" width="400" height="132" /></a></p>
+<p><a class="image" href="/images/2008/04/rihanna_wall3.png"><img class="alignnone size-medium wp-image-164" src="/images/2008/04/rihanna_wall3.png?w=400" alt="" width="400" height="132" /></a></p>
+<p><a class="image" href="/images/2008/04/swanepoel_wall1.png"><img class="alignnone size-medium wp-image-165" src="/images/2008/04/swanepoel_wall1.png?w=400" alt="" width="400" height="132" /></a></p>
+<p><a class="image" href="/images/2008/04/elisha_wall1.png"><img class="alignnone size-medium wp-image-166" src="/images/2008/04/elisha_wall1.png?w=400" alt="" width="400" height="132" /></a></p>
+<p><a class="image" href="/images/2008/04/angelina_wall1.png"><img class="alignnone size-medium wp-image-167" src="/images/2008/04/angelina_wall1.png?w=400" alt="" width="400" height="132" /></a></p>
+<p>Oh, I almost forgot to tell that <a title="Click to visit!" href="http://www.ewallpapers.eu" target="_blank">EWallpapers.eu</a> is my number #1 landing place when I'm looking for high resolution wide screen wallpapers ( but not only! ) and also <a title="Click to visit!" href="http://www.hollywooddesktop.com/" target="_blank">Hollywood Desktop</a>.</p>
+			
+
+		</div>
+		
+		<div class="footer">
+			<div class="text">
+				<div class="align left">Feel free to shoot me a <a href="http://twitter.com/theicebreaker">tweet</a> or an <a href="mailto:szaby@szabster.net">email</a> if you have any comments or questions.</div>
+				<div class="align right"><a href="http://creativecommons.org/licenses/by-nc-sa/3.0/">CC BY-NC-SA 3.0</a></div>
+				<div class="clear"></div>
+			</div>
+		</div>
+		
+		
+	</body>
+</html>

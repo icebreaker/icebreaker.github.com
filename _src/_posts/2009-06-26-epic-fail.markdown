@@ -1,0 +1,20 @@
+--- 
+layout: post
+title: EPIC FAIL
+tags: 
+- fun
+- stupid
+- epic
+- fail
+---
+Today, I stumbled across this blog <a href="http://theunixgeek.wordpress.com/">TheUnixGeek</a> and discovered the following:
+
+<a class="image" href="/images/2009/06/epicfail.png"><img class="alignleft size-full wp-image-596" title="epicfail" src="/images/2009/06/epicfail.png" alt="epicfail" width="447" height="137" /></a>
+
+<em><strong>EPIC FAIL!!!! </strong></em>(Fellow programmers (but not only) will know what I'm talking about <em>*cough, cough*</em>)
+
+IMHO, one shouldn't publish stuff on the internet unless he really has something to say, and HE IS ABSOLUTELY sure that he fully understands the given TOPIC.
+
+It's always wise to evaluate your skills before getting into something, because it's totally useless wasting your time trying to 'build' something; you know from the very begining that you just can't.
+
+Just my two eurocents ... apples and oranges ... LOL
