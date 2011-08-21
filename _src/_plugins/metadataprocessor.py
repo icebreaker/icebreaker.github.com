@@ -55,7 +55,11 @@ class MetadataProcessor(doxter.Processor):
 		if path:
 			d = [int(path.group(1)), int(path.group(2)), int(path.group(3))]
 
-			url = '%d/%d/%d/%s' % tuple(d + [path.group(4)])
+			if self.page.get('draft') == True:
+				url = 'drafts/%d/%d/%d/%s' % tuple(d + [path.group(4)])
+			else:
+				url = '%d/%d/%d/%s' % tuple(d + [path.group(4)])
+
 			self.page.set('path', url)
 			self.page.set('url', url)
 			self.page.set('type', 'post')
