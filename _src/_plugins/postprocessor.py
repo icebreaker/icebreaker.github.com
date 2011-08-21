@@ -38,9 +38,7 @@ class PostProcessor(doxter.Processor):
 		return self.output.process(root, extension, content)
 
 	def teardown(self):
-		self.posts.reverse()
-
-		self.site.set('posts', self.posts)
+		self.site.set('posts', sorted(self.posts, key=lambda post: post.date, reverse=True))
 		self.site.set('pages', self.pages)
 
 		for page in self.pages:
