@@ -19,10 +19,11 @@ class PostProcessor(doxter.Processor):
 		self.page.set('extension', extension)
 
 		page_type = self.page.get('type')
+		is_draft = self.page.get('draft')
 		if page_type == 'page':
 			self.pages.append(self.page.clone())
 			return None
-		elif page_type == 'post':
+		elif page_type == 'post' and not is_draft:
 			self.posts.append(self.page.clone())
 
 		return content
