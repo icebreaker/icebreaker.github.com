@@ -90,3 +90,13 @@ body
 	float: right;
 	font-style: italic;
 }
+
+.gravatar
+{
+	height: 20px;
+	float: left;
+	margin-right: 10px;
+	border-radius: 2px;
+	-moz-border-radius: 2px;
+	border: 2px solid #F8F8F8;
+}
