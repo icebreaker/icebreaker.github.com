@@ -2,6 +2,8 @@
 layout: page
 title: About
 ---
+<a href="/"><img class="gravatar profile" src="http://www.gravatar.com/avatar/c53d2d6c58f89f148fb56a136fa84d3e" /></a>
+
 I'm [Mihail Szabolcs](http://linkedin.com/in/mihailszabolcs) (icebreaker, 
 theicebreaker, coder_master, c0d3rguy, coderguy, szaby) a *senior* 
 [software engineer](http://en.wikipedia.org/wiki/Software_engineer) fluent in 

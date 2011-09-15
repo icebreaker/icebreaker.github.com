@@ -100,3 +100,9 @@ body
 	-moz-border-radius: 2px;
 	border: 2px solid #F8F8F8;
 }
+
+.profile
+{
+	height: auto;
+	border: 5px solid #DAE3E7;
+}
