@@ -1,0 +1,198 @@
+/**
+ * @author Hakim El Hattab
+ */
+
+
+/*********************************************
+ * FONT-FACE DEFINITIONS
+ *********************************************/
+
+@font-face {
+	font-family: 'League Gothic';
+	src: url('../fonts/leaguegothic/league_gothic-webfont.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+/*********************************************
+ * GLOBAL STYLES
+ *********************************************/
+
+html, body {
+	padding: 0;
+	margin: 0;
+	overflow: hidden;
+	
+	font-family: 'Crimson Text', Times, 'Times New Roman', serif;
+	font-size: 36px;
+	
+	background: #fff;
+	color: #eee;
+	
+	width: 100%;
+	height: 100%;
+	
+	background-image: -webkit-gradient(
+		radial, 
+		50% 50%, 0, 
+		50% 50%, 1000, 
+		from(rgba(30,30,30,1.0)), 
+		to(rgba(5,5,5,1.0))
+	);
+
+	background-image: -moz-radial-gradient(
+		50% 50% 90deg,
+		rgba(30,30,30,1.0) 0%, 
+		rgba(5,5,5,1.0) 100%
+	);
+	
+}
+
+
+/*********************************************
+ * HEADERS
+ *********************************************/
+h1, h2, h3, h4 {
+	margin: 0 0 20px 0;
+	font-family: 'League Gothic', Arial, Helvetica, sans-serif;
+	line-height: 0.9em;
+	text-transform: uppercase;
+}
+
+h1 { font-size: 136px; 	}
+h2 { font-size: 76px;	}
+h3 { font-size: 56px;	}
+h4 { font-size: 36px;	}
+
+/*********************************************
+ * SLIDES
+ *********************************************/
+#main {
+	position: absolute;
+	width: 800px;
+	height: 400px;
+	
+	left: 50%;
+	top: 50%;
+	margin-left: -400px;
+	margin-top: -200px;
+	
+	text-align: center;
+	
+	-webkit-perspective: 400px;
+ 	-webkit-perspective-origin: 50% 25%;
+ 	
+ 	text-shadow: 0px 0px 2px #777, 0px 0px 2px #555;
+}
+
+#main>section,
+#main>section>section {
+	display: none;
+	
+	position: absolute;
+	width: 100%;
+	min-height: 400px;
+	
+	-webkit-transform-style: preserve-3d;
+	
+	-webkit-transition: all 800ms cubic-bezier(0.260, 0.860, 0.440, 0.985); 
+	   -moz-transition: all 800ms cubic-bezier(0.260, 0.860, 0.440, 0.985); 
+	     -o-transition: all 800ms cubic-bezier(0.260, 0.860, 0.440, 0.985); 
+	        transition: all 800ms cubic-bezier(0.260, 0.860, 0.440, 0.985);
+}
+
+#main section.past {
+	display: block;
+	opacity: 0;
+	
+	-webkit-transform: 	translate3d(-100%, 0, 0) 
+						rotateY(-90deg) 
+						translate3d(-100%, 0, 0);
+}
+
+#main section.present {
+	display: block;
+}
+
+#main section.future {
+	display: block;
+	opacity: 0;
+	
+	-webkit-transform: 	translate3d(100%, 0, 0) 
+						rotateY(90deg) 
+						translate3d(100%, 0, 0);
+}
+
+#main section>section.past {
+	display: block;
+	opacity: 0;
+	
+	-webkit-transform: 	translate3d(0, -50%, 0) 
+						rotateX(70deg) 
+						translate3d(0, -50%, 0);
+}
+
+#main section>section.future {
+	display: block;
+	opacity: 0;
+	
+	-webkit-transform: 	translate3d(0, 50%, 0) 
+						rotateX(-70deg) 
+						translate3d(0, 50%, 0);
+}
+
+
+/*********************************************
+ * DEFAULT ELEMENT STYLES
+ *********************************************/
+ol {
+	list-style: decimal;
+	list-style-position: inside;
+}
+
+ul {
+	list-style: square;
+	list-style-position: inside;
+}
+
+ol, ul {
+	text-align: left;
+}
+
+li, p {
+	margin-bottom: 10px;
+}
+
+p.note {
+	margin-top: 30px;
+	margin-bottom: 0px;
+	font-size: 24px;
+	text-align: left;
+}
+
+p.small {
+	font-size: 24px;
+}
+
+a:not(.image) 
+{
+	color: #aaa;
+	text-decoration: none;
+}
+	
+a:not(.image):hover 
+{
+	color: #eee;
+	text-decoration: underline;
+}
+
+img 
+{
+	margin: 20px 0 0 0;
+	
+	-webkit-transition: all .11s linear;
+	   -moz-transition: all .11s linear;
+	     -o-transition: all .11s linear;
+	        transition: all .11s linear;
+}
