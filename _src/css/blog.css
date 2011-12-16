@@ -8,6 +8,7 @@ body
 
 .content
 {
+	position: relative;
 	text-align: justify;
 	border: 1px solid #CACACA;
 	padding: 50px 20px 50px 20px;
@@ -72,6 +73,11 @@ body
 	margin-left: 10px;
 }
 
+.content h1
+{
+	margin-bottom: 13px;
+}
+
 .content .posts ul
 {
 	list-style-type: none;
@@ -105,4 +111,10 @@ body
 {
 	height: auto;
 	border: 5px solid #DAE3E7;
+}
+
+.plus
+{
+	float: left;
+	margin-top: 7px;
 }

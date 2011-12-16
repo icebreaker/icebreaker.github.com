@@ -24,18 +24,18 @@ Ocassionally, I also write articles for [Hugi DiskMag](http://hugi.scene.org) an
 
 Contact
 -------
-If you think that you got something interesting to share, feel free to get in touch with me via [Twitter](http://twitter.com/theicebreaker) or [Email](mailto:szaby@szabster.net).
+If you think that you got something interesting to share, feel free to get in touch with me via [Twitter](http://twitter.com/theicebreaker), [Email](mailto:szaby@szabster.net) or [G+](http://plus.szabster.net).
 
 On the other hand if you have a strong wish to sell Viagra or Cialis at discount prices you should most definitely contact [spam@szabster.net](mailto:spam@szabster.net) and I'll thank you for your prosper business.
 
 Also, I'm very interested hearing about your 4 billion dollar fortune stuck in some Bank located in Kongo or Nigeria and how awful is the life of some Ghanian princess after her father's death, in either case again
 please do not hesitate to contact [spam@szabster.net](mailto:spam@szabster.net).
 
-Visit my [projects](http://proudify.me) page to find out more about what I'm hacking on at the moment and subscribe to the [rss](http://feeds.feedburner.com/szabsternet) feed in order to receive the latest
+Visit my [projects](http://proudify.me) page to find out more about what I'm hacking on at the moment and subscribe to the [rss feed](http://feeds.feedburner.com/szabsternet) in order to receive the latest
 and greatest updates while they are *hot*. You don't want to miss a thing, right?
 
-Disclaimer
-----------
+Legal Disclaimer
+----------------
 The opinions expressed herein are my own personal opinions and do not represent my employer's view in any way.
 
 This [blog](/) is not responsible for externally hosted material, including linked articles, photos or any other media.

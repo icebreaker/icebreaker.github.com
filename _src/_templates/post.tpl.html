@@ -2,7 +2,12 @@
 {% block content %}
 <a name="{{ page.title }}"></a>
 <h1>{{ page.title }}</h1>
-<div class="align right"><i>{% if page.draft %}draft{% endif %} written on {{ page.date | date_to_string }}</i></div>
+<div class="plus">
+	<g:plusone size="medium"></g:plusone>
+</div>
+<div class="align right">
+	<i>{% if page.draft %}draft{% endif %} written on {{ page.date | date_to_string }}</i>
+</div>
 <div class="clear"></div>
 {{ super() }}
 {% endblock content %}
