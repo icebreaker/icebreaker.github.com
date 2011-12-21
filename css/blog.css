@@ -10,7 +10,7 @@ body
 {
 	position: relative;
 	text-align: justify;
-	border: 1px solid #CACACA;
+	border: 1px solid #E5E5E5;
 	padding: 50px 20px 50px 20px;
 	background-color: #FFFFFF;
 	-moz-border-radius: 3px;
@@ -24,16 +24,16 @@ body
 .header, 
 .footer
 {
-	background-color: #DAE3E7;
-	background-color: rgba(218, 227, 231, 0.9);
-	color: #000000;
+	background-color: #F1F1F1;
+	background: -webkit-gradient(radial, 100 36, 0, 100 -40, 120, from(#FAFAFA), to(#F1F1F1)), #F1F1F1;
+	border-bottom: 1px solid #E5E5E5;
+	color: #333333;
 	margin: 0;
 	padding: 10px;
 	left: 0;
 	right: 0;
 	position: fixed;
 	z-index: 999;
-	border: 1px solid #CACACA;
 }
 
 .header .text, 
@@ -75,7 +75,38 @@ body
 
 .content h1
 {
+	border-bottom: 1px solid #E5E5E5; 
 	margin-bottom: 13px;
+}
+
+.content h2	
+{ 
+	border-top: 4px solid #E5E5E5; 
+}
+
+.content hr
+{ 
+	border: 2px solid #E5E5E5; 
+}
+
+.content pre, .content code
+{
+	font-family: 'PT Serif', Georgia, Serif, Verdana;
+	background-color: #F1F1F1;
+	background: -webkit-gradient(radial, 100 36, 0, 100 -40, 120, from(#FAFAFA), to(#F1F1F1)), #F1F1F1;
+	border: 1px solid #E5E5E5;
+}
+
+.content pre code
+{
+	-webkit-box-shadow: none;
+	border: 0;
+	padding: 0;	
+}
+
+.content img
+{
+	border: 4px solid #E5E5E5;
 }
 
 .content .posts ul
@@ -88,13 +119,40 @@ body
 .content .posts ul li
 {
 	padding: 5px 0;
-	border-bottom: 1px solid #CACACA; 
+	border-bottom: 1px solid #E5E5E5; 
 }
 
 .content .posts ul li span
 {
 	float: right;
 	font-style: italic;
+}
+
+.content table * tr 
+{
+	border-top: 1px solid #E5E5E5;
+}
+
+.content table * tr:nth-child(2n)
+{
+	background-color: #F1F1F1;
+}
+
+.content table * tr th,
+.content table * tr td 
+{
+	border: 1px solid #E5E5E5;
+}
+
+.content blockquote 
+{
+	color: #333333;
+}
+
+.content .info
+{
+	background-color: #F1F1F1;
+	border: 1px solid #E5E5E5;
 }
 
 .gravatar
@@ -104,13 +162,13 @@ body
 	margin-right: 10px;
 	border-radius: 2px;
 	-moz-border-radius: 2px;
-	border: 2px solid #F8F8F8;
+	border: 2px solid #E5E5E5;
 }
 
 .profile
 {
 	height: auto;
-	border: 5px solid #DAE3E7;
+	border: 5px solid #E5E5E5;
 }
 
 .plus
