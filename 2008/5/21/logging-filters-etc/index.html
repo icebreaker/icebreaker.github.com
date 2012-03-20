@@ -87,7 +87,7 @@
 <div class="highlight"><pre><span class="cp">#define SAFE_ARRAY_DELETE(x) if(x) {delete [] x; x=NULL;}</span>
 <span class="cp">#define INRANGE(x,min,max) ( (x &gt;= min) &amp;&amp; (x &lt;= max) )</span>
 
-<p><span class="k">namespace</span> <span class="n">Log</span>
+<span class="k">namespace</span> <span class="n">Log</span>
 <span class="p">{</span>
     <span class="k">const</span> <span class="kt">int</span> <span class="n">Text</span>        <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
     <span class="k">const</span> <span class="kt">int</span> <span class="n">Info</span>        <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
@@ -95,9 +95,11 @@
     <span class="k">const</span> <span class="kt">int</span> <span class="n">Error</span>       <span class="o">=</span> <span class="mi">3</span><span class="p">;</span>
     <span class="c1">// used only by the filtering</span>
     <span class="k">const</span> <span class="kt">int</span> <span class="n">Any</span>     <span class="o">=</span> <span class="mi">4</span><span class="p">;</span>
-<span class="p">};</span></p>
-<p><span class="k">static</span> <span class="kt">int</span> <span class="n">g_logFilter</span> <span class="o">=</span> <span class="n">Log</span><span class="o">::</span><span class="n">Any</span><span class="p">;</span></p>
-<p><span class="kt">void</span> <span class="n">setConsoleLogFilter</span><span class="p">(</span> <span class="k">const</span> <span class="kt">int</span> <span class="n">logFilter</span> <span class="p">)</span>
+<span class="p">};</span>
+
+<span class="k">static</span> <span class="kt">int</span> <span class="n">g_logFilter</span> <span class="o">=</span> <span class="n">Log</span><span class="o">::</span><span class="n">Any</span><span class="p">;</span>
+
+<span class="kt">void</span> <span class="n">setConsoleLogFilter</span><span class="p">(</span> <span class="k">const</span> <span class="kt">int</span> <span class="n">logFilter</span> <span class="p">)</span>
 <span class="p">{</span>
     <span class="k">if</span><span class="p">(</span> <span class="n">INRANGE</span><span class="p">(</span><span class="n">logFilter</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">5</span><span class="p">)</span> <span class="p">)</span>
     <span class="p">{</span>
@@ -105,8 +107,9 @@
         <span class="k">return</span><span class="p">;</span>
     <span class="p">}</span>
     <span class="n">g_logFilter</span> <span class="o">=</span> <span class="n">Log</span><span class="o">::</span><span class="n">Any</span><span class="p">;</span>
-<span class="p">}</span></p>
-<p><span class="kt">void</span> <span class="n">consoleLog</span><span class="p">(</span> <span class="k">const</span> <span class="kt">int</span> <span class="n">logLevel</span><span class="p">,</span> <span class="k">const</span> <span class="kt">char</span> <span class="o"><em></span><span class="n">msg</span><span class="p">,</span> <span class="p">...</span> <span class="p">)</span>
+<span class="p">}</span>
+
+<span class="kt">void</span> <span class="n">consoleLog</span><span class="p">(</span> <span class="k">const</span> <span class="kt">int</span> <span class="n">logLevel</span><span class="p">,</span> <span class="k">const</span> <span class="kt">char</span> <span class="o">*</span><span class="n">msg</span><span class="p">,</span> <span class="p">...</span> <span class="p">)</span>
 <span class="p">{</span>
     <span class="n">va_list</span> <span class="n">ap</span><span class="p">;</span>
     <span class="c1">// is filtering turned on?</span>
@@ -114,7 +117,7 @@
     <span class="p">{</span>
         <span class="k">return</span><span class="p">;</span>
     <span class="p">}</span>
-    <span class="kt">char</span> <span class="o"></em></span><span class="n">text</span> <span class="o">=</span> <span class="k">new</span> <span class="kt">char</span><span class="p">[</span> <span class="mi">2048</span> <span class="p">];</span>
+    <span class="kt">char</span> <span class="o">*</span><span class="n">text</span> <span class="o">=</span> <span class="k">new</span> <span class="kt">char</span><span class="p">[</span> <span class="mi">2048</span> <span class="p">];</span>
     <span class="n">assert</span><span class="p">(</span> <span class="n">text</span> <span class="p">);</span>
     <span class="n">memset</span><span class="p">(</span><span class="n">text</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="k">sizeof</span><span class="p">(</span><span class="n">text</span><span class="p">));</span>
     <span class="n">va_start</span><span class="p">(</span><span class="n">ap</span><span class="p">,</span> <span class="n">msg</span><span class="p">);</span>
@@ -123,21 +126,22 @@
     <span class="k">switch</span><span class="p">(</span> <span class="n">logLevel</span> <span class="p">)</span>
     <span class="p">{</span>
         <span class="k">case</span> <span class="n">Log</span><span class="o">::</span><span class="nl">Info:</span>
-            <span class="n">printf</span><span class="p">(</span> <span class="s">&quot;INFO: %s</span><span class="se">n</span><span class="s">&quot;</span><span class="p">,</span> <span class="n">text</span> <span class="p">);</span>
+            <span class="n">printf</span><span class="p">(</span> <span class="s">&quot;INFO: %s</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span> <span class="n">text</span> <span class="p">);</span>
             <span class="k">break</span><span class="p">;</span>
         <span class="k">case</span> <span class="n">Log</span><span class="o">::</span><span class="nl">Warning:</span>
-            <span class="n">printf</span><span class="p">(</span> <span class="s">&quot;WARNING: %s</span><span class="se">n</span><span class="s">&quot;</span><span class="p">,</span> <span class="n">text</span> <span class="p">);</span>
+            <span class="n">printf</span><span class="p">(</span> <span class="s">&quot;WARNING: %s</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span> <span class="n">text</span> <span class="p">);</span>
             <span class="k">break</span><span class="p">;</span>
         <span class="k">case</span> <span class="n">Log</span><span class="o">::</span><span class="nl">Error:</span>
-            <span class="n">printf</span><span class="p">(</span> <span class="s">&quot;ERROR: %s</span><span class="se">n</span><span class="s">&quot;</span><span class="p">,</span> <span class="n">text</span> <span class="p">);</span>
+            <span class="n">printf</span><span class="p">(</span> <span class="s">&quot;ERROR: %s</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span> <span class="n">text</span> <span class="p">);</span>
             <span class="k">break</span><span class="p">;</span>
         <span class="k">default</span><span class="o">:</span>
-            <span class="n">printf</span><span class="p">(</span> <span class="s">&quot;%s</span><span class="se">n</span><span class="s">&quot;</span><span class="p">,</span> <span class="n">text</span> <span class="p">);</span>
+            <span class="n">printf</span><span class="p">(</span> <span class="s">&quot;%s</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span> <span class="n">text</span> <span class="p">);</span>
             <span class="k">break</span><span class="p">;</span>
     <span class="p">}</span>
     <span class="n">SAFE_ARRAY_DELETE</span><span class="p">(</span> <span class="n">text</span> <span class="p">);</span>
 <span class="p">}</span>
-</pre></div></p>
+</pre></div>
+
 <p>This is very very straightforward ... it's C++, but it can be adapted to C, by replacing the memory managment stuff ... new with malloc, delete [] with free :) and moving out the constants into an enum :)</p>
 <p>It works out great for me, and I use something very very similar to this on a day to day basis :D</p>
 <p>Happy coding!</p>
