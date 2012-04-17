@@ -1,7 +1,7 @@
 This is the data for my blog
 ============================
 It is automatically transformed by [Doxter](http://github.com/icebreaker/doxter) into a 
-a beautiful `static site` hosted on `GitHub Pages`.
+`static site` and hosted on `GitHub Pages`.
 
 License
 -------

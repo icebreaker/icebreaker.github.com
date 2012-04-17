@@ -88,17 +88,14 @@
 <p>Here is the contents of the script:</p>
 <div class="highlight"><pre><span class="c">#!/bin/bash</span>
 
-<span class="k">if</span> <span class="o">[</span> <span class="nv">$# </span>-ne 3 <span class="o">]</span> ; <span class="k">then</span>
+<p><span class="k">if</span> <span class="o">[</span> <span class="nv">$# </span>-ne 3 <span class="o">]</span> ; <span class="k">then</span>
 <span class="nb">echo</span> <span class="s2">&quot;Usage: $0 image1.png image2.png outimage.png&quot;</span>
 <span class="nb">exit </span>13
-<span class="k">fi</span>
-
-convert -size 2720x900 xc:black <span class="s2">&quot;$1&quot;</span> -geometry +0+100 -composite <span class="s2">&quot;$2&quot;</span> -geometry +1280+0 -composite <span class="s2">&quot;$3&quot;</span>
-
-<span class="nb">echo</span> <span class="s2">&quot;Done ...&quot;</span>
+<span class="k">fi</span></p>
+<p>convert -size 2720x900 xc:black <span class="s2">&quot;$1&quot;</span> -geometry +0+100 -composite <span class="s2">&quot;$2&quot;</span> -geometry +1280+0 -composite <span class="s2">&quot;$3&quot;</span></p>
+<p><span class="nb">echo</span> <span class="s2">&quot;Done ...&quot;</span>
 <span class="nb">exit </span>1
-</pre></div>
-
+</pre></div></p>
 <p>I named it "mkwlp" , made it executable (chmod u+x mkwlp) then copied it into /usr/bin for convenience ...</p>
 <p>This can be customized for other resolutions, etc and it's fairly straight forward so i won't go into this.</p>
 <p>(I highlighted the customizable parts for convenience)</p>
