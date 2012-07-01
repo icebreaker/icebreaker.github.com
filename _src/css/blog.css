@@ -1,6 +1,7 @@
 body
 {
-	font-family: 'PT Serif', Georgia, Serif, Verdana;
+	font-family: 'OpenSans', sans-serif;
+	font-weight: 400;
 	width: 1024px;
 	margin: 0 auto;
 	background-color: #F6F6F6;
