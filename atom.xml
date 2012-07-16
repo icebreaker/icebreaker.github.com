@@ -4,12 +4,47 @@
 <title>Mihail Szabolcs</title>
 <link href="http://szabster.net/atom.xml" rel="self"/>
 <link href="http://szabster.net/"/>
-<updated>2012-07-01T00:00:00+02:00</updated>
+<updated>2012-07-17T00:00:00+02:00</updated>
 <id>http://szabster.net/</id>
 <author>
 	<name>Mihail Szabolcs</name>
 </author>
 
+
+<entry>
+	<title type="html">Lera3D - Architecture Overview</title>
+	<link href="http://szabster.net/2012/6/17/lera3d-architecture-overview"/>
+	<updated>2012-06-17T00:00:00+02:00</updated>
+	<id>http://szabster.net/2012/6/17/lera3d-architecture-overview</id>
+	<content type="html">&lt;p&gt;Once again after a long-hiatus I'm back and kicking ass, very close to having enough technology ready to start the pre-production of &lt;strong&gt;Ancestria&lt;/strong&gt;, our steam-punk action-adventure.&lt;/p&gt;
+&lt;p&gt;Personally, I put a lot of effort into the general design and architecture, always reworking and refactoring until it feels easy to use, this is why certain things take longer or seem to take forever for an outsider. There's no pre-mature optimization or overengineering going on, everything must be easy and powerful enough for me to use on a day-to-day basis.&lt;/p&gt;
+&lt;p&gt;A couple of key principles:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;light-weight (minimum carefully selected depedencies, &lt;strong&gt;NO STL or BOOST&lt;/strong&gt;)&lt;/li&gt;
+&lt;li&gt;written in ANSI C++ with portability in mind (compiles with &lt;code&gt;-Wall -Wextra -pedantic -ansi&lt;/code&gt;)&lt;/li&gt;
+&lt;li&gt;quality vs quantity (in terms of features you won't find the latest photon mapping)&lt;/li&gt;
+&lt;li&gt;scalability (full support for low-end hardware, will run on your craptop)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;This is the first of a series of posts in which I want to detail the design and general architecture as well as go into implementation specifics where necessary or makes sense.&lt;/p&gt;
+&lt;p&gt;After I catch up, I intend to post regurarly about the new stuff added or modified.&lt;/p&gt;
+&lt;p&gt;In terms of graphics (a.k.a renderer), like I mentioned above, low-end hardware will be fully supported out of the box, I cannot say as of now &lt;em&gt;how low is low?&lt;/em&gt;; that will reveal itself during the coming months; one can expect &lt;em&gt;Tomb Raider: Anniversary&lt;/em&gt; (~ 2007) level graphics on the day of release.&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://szabster.net/images/2012/06/17/tra1.jpg"&gt;&lt;img alt="Tomb Raider Anniversary" src="http://szabster.net/images/2012/06/17/tra1_thumb.jpg" title="Tomb Raider Anniversary" /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://szabster.net/images/2012/06/17/tra2.jpg"&gt;&lt;img alt="Tomb Raider Anniversary" src="http://szabster.net/images/2012/06/17/tra2_thumb.jpg" title="Tomb Raider Anniversary" /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://szabster.net/images/2012/06/17/tra3.jpg"&gt;&lt;img alt="Tomb Raider Anniversary" src="http://szabster.net/images/2012/06/17/tra3_thumb.jpg" title="Tomb Raider Anniversary" /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Without any further ado, some &lt;em&gt;diagrams&lt;/em&gt; offering a high level overview of Lera3D's portable architecture.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Lera3D" src="http://szabster.net/images/2012/06/17/lr3d-arch.png" title="Lera3D" /&gt;&lt;/p&gt;
+&lt;h3&gt;Core&lt;/h3&gt;
+&lt;p&gt;&lt;img alt="Lera3D" src="http://szabster.net/images/2012/06/17/lr3d-arch-core.png" title="Lera3D" /&gt;&lt;/p&gt;
+&lt;h3&gt;Interfaces&lt;/h3&gt;
+&lt;p&gt;&lt;img alt="Lera3D" src="http://szabster.net/images/2012/06/17/lr3d-arch-interfaces.png" title="Lera3D" /&gt;&lt;/p&gt;
+&lt;h3&gt;Plugins&lt;/h3&gt;
+&lt;p&gt;&lt;img alt="Lera3D" src="http://szabster.net/images/2012/06/17/lr3d-arch-plugins.png" title="Lera3D" /&gt;&lt;/p&gt;
+&lt;h3&gt;Game&lt;/h3&gt;
+&lt;p&gt;&lt;img alt="Lera3D" src="http://szabster.net/images/2012/06/17/lr3d-arch-game.png" title="Lera3D" /&gt;&lt;/p&gt;
+&lt;p&gt;I consider the &lt;em&gt;core&lt;/em&gt; frozen now, which means that there won't be any major changes in the coming weeks and I'm in the process of building up the default set of &lt;em&gt;plugins&lt;/em&gt; that will be bundled out of the box and will power the first episode of &lt;strong&gt;Ancestria&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;Next time, we'll take a deeper look into the &lt;em&gt;core&lt;/em&gt; and its underlyings.&lt;/p&gt;</content>
+	<category term="lera3d"/><category term="architecture"/><category term="design"/>
+</entry>
 
 <entry>
 	<title type="html">Operation ShareCraft</title>
