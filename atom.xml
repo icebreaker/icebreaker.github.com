@@ -4,7 +4,7 @@
 <title>Mihail Szabolcs</title>
 <link href="http://szabster.net/atom.xml" rel="self"/>
 <link href="http://szabster.net/"/>
-<updated>2012-07-17T00:00:00+02:00</updated>
+<updated>2012-08-18T00:00:00+02:00</updated>
 <id>http://szabster.net/</id>
 <author>
 	<name>Mihail Szabolcs</name>
@@ -1793,7 +1793,7 @@ when it comes to the back-end rendering architecture.&lt;/p&gt;
 &lt;/ul&gt;
 &lt;p&gt;Here is my .vimrc for those who might want to take a look.&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="k"&gt;set&lt;/span&gt; &lt;span class="nb"&gt;nowrap&lt;/span&gt;
-&lt;span class="k"&gt;set&lt;/span&gt; &lt;span class="nb"&gt;complete&lt;/span&gt;&lt;span class="p"&gt;-=&lt;/span&gt;i
+&lt;span class="k"&gt;set&lt;/span&gt; &lt;span class="nb"&gt;complete&lt;/span&gt;&lt;span class="p"&gt;-=&lt;/span&gt;&lt;span class="k"&gt;i&lt;/span&gt;
 &lt;span class="k"&gt;set&lt;/span&gt; &lt;span class="nb"&gt;wildmenu&lt;/span&gt;
 &lt;span class="k"&gt;set&lt;/span&gt; &lt;span class="nb"&gt;fileformats&lt;/span&gt;&lt;span class="p"&gt;=&lt;/span&gt;unix&lt;span class="p"&gt;,&lt;/span&gt;mac&lt;span class="p"&gt;,&lt;/span&gt;dos
 &lt;span class="k"&gt;set&lt;/span&gt; &lt;span class="nb"&gt;nocp&lt;/span&gt;
@@ -1823,23 +1823,22 @@ when it comes to the back-end rendering architecture.&lt;/p&gt;
 &lt;span class="k"&gt;set&lt;/span&gt; &lt;span class="nb"&gt;shortmess&lt;/span&gt;&lt;span class="p"&gt;=&lt;/span&gt;&lt;span class="k"&gt;as&lt;/span&gt;
 &lt;span class="k"&gt;set&lt;/span&gt; &lt;span class="nb"&gt;showcmd&lt;/span&gt;
 &lt;span class="k"&gt;set&lt;/span&gt; &lt;span class="nb"&gt;ttyfast&lt;/span&gt;
-&lt;span class="k"&gt;set&lt;/span&gt; &lt;span class="nb"&gt;mouse&lt;/span&gt;&lt;span class="p"&gt;=&lt;/span&gt;a
+&lt;span class="k"&gt;set&lt;/span&gt; &lt;span class="nb"&gt;mouse&lt;/span&gt;&lt;span class="p"&gt;=&lt;/span&gt;&lt;span class="k"&gt;a&lt;/span&gt;
 
-&lt;span class="k"&gt;colorscheme&lt;/span&gt; zenburn
+&lt;p&gt;&lt;span class="k"&gt;colorscheme&lt;/span&gt; zenburn
 &lt;span class="k"&gt;filetype&lt;/span&gt; plugin &lt;span class="k"&gt;on&lt;/span&gt;
 &lt;span class="k"&gt;filetype&lt;/span&gt; plugin indent &lt;span class="k"&gt;on&lt;/span&gt;
 &lt;span class="k"&gt;filetype&lt;/span&gt; &lt;span class="k"&gt;on&lt;/span&gt;
-&lt;span class="nb"&gt;syntax&lt;/span&gt; &lt;span class="k"&gt;on&lt;/span&gt;
-
+&lt;span class="nb"&gt;syntax&lt;/span&gt; &lt;span class="k"&gt;on&lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;&lt;span class="c"&gt;&amp;quot; Word Completion&lt;/span&gt;
 &lt;span class="k"&gt;function&lt;/span&gt;&lt;span class="p"&gt;!&lt;/span&gt; Tab_Or_Complete&lt;span class="p"&gt;()&lt;/span&gt;
     &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="k"&gt;col&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;.&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;)&amp;gt;&lt;/span&gt;&lt;span class="m"&gt;1&lt;/span&gt; &amp;amp;&amp;amp; strpart&lt;span class="p"&gt;(&lt;/span&gt; getline&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;.&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;),&lt;/span&gt; &lt;span class="k"&gt;col&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;.&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="m"&gt;-2&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="m"&gt;3&lt;/span&gt; &lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="p"&gt;=~&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;^w&amp;#39;&lt;/span&gt;
-        &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="c"&gt;&amp;quot;&amp;amp;lt;C-N&amp;gt;&amp;quot;&lt;/span&gt;
+        &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;&amp;amp;lt;C-N&amp;gt;&amp;quot;&lt;/span&gt;
     &lt;span class="k"&gt;else&lt;/span&gt;
-        &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="c"&gt;&amp;quot;&amp;amp;lt;Tab&amp;gt;&amp;quot;&lt;/span&gt;
+        &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;&amp;amp;lt;Tab&amp;gt;&amp;quot;&lt;/span&gt;
     &lt;span class="k"&gt;endif&lt;/span&gt;
 &lt;span class="k"&gt;endfunction&lt;/span&gt;
-inoremap &lt;span class="p"&gt;&amp;lt;&lt;/span&gt;Tab&lt;span class="p"&gt;&amp;gt;&lt;/span&gt; &lt;span class="p"&gt;&amp;lt;&lt;/span&gt;C&lt;span class="p"&gt;-&lt;/span&gt;R&lt;span class="p"&gt;&amp;gt;=&lt;/span&gt;Tab_Or_Complete&lt;span class="p"&gt;()&amp;lt;&lt;/span&gt;CR&lt;span class="p"&gt;&amp;gt;&lt;/span&gt;
+&lt;span class="nb"&gt;inoremap&lt;/span&gt; &lt;span class="p"&gt;&amp;lt;&lt;/span&gt;Tab&lt;span class="p"&gt;&amp;gt;&lt;/span&gt; &lt;span class="p"&gt;&amp;lt;&lt;/span&gt;C&lt;span class="p"&gt;-&lt;/span&gt;R&lt;span class="p"&gt;&amp;gt;=&lt;/span&gt;Tab_Or_Complete&lt;span class="p"&gt;()&amp;lt;&lt;/span&gt;CR&lt;span class="p"&gt;&amp;gt;&lt;/span&gt;
 &lt;span class="k"&gt;set&lt;/span&gt; &lt;span class="nb"&gt;dictionary&lt;/span&gt;&lt;span class="p"&gt;=&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;/usr/share/dict/words&amp;quot;&lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;&lt;span class="c"&gt;&amp;quot; Default Markdown Blog Post Template (to be used with Jekyll)&lt;/span&gt;
 autocmd &lt;span class="nb"&gt;BufNewFile&lt;/span&gt; *.markdown &lt;span class="k"&gt;silent&lt;/span&gt;&lt;span class="p"&gt;!&lt;/span&gt; &lt;span class="m"&gt;0&lt;/span&gt;r $HOME&lt;span class="sr"&gt;/.vim/&lt;/span&gt;templates/markdown.&lt;span class="k"&gt;vim&lt;/span&gt;

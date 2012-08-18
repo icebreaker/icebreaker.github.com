@@ -22,7 +22,8 @@
 		<!-- Blog  -->
 		<link rel="stylesheet" type="text/css" href="/css/blog.css" />
 		<!-- Fonts -->
-		<link rel="stylesheet" type="text/css" href="/fonts/open-sans.css" />
+		<link href='http://fonts.googleapis.com/css?family=Quando' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Buenard' rel='stylesheet' type='text/css'>
 		
 		<script type="text/javascript">
 			var _gaq = _gaq || [];
@@ -49,13 +50,10 @@
 	<body>
 		
 		
-		<a href="http://github.com/icebreaker"><img style="position: fixed; top: 0; right: 0; border: 0; z-index: 1000;" src="/images/ribbon.png" alt="Fork me on GitHub"></a>
+		<a href="http://github.com/icebreaker/icebreaker.github.com"><img style="position: fixed; top: 0; right: 0; border: 0; z-index: 1000;" src="/images/ribbon.png" alt="Fork me on GitHub"></a>
 		<div class="header">
 			<div class="text">
-				<div class="align left">
-					<a href="/"><img class="gravatar" src="http://www.gravatar.com/avatar/c53d2d6c58f89f148fb56a136fa84d3e" /></a>
-					<strong><a href="/">Mihail Szabolcs</a></strong> - <i>Senior Software Engineer, Open Source Evangelist</i>
-				</div>
+				<div class="align left"></div>
 				<ul class="align right">
 					<li><a href="/">home</a></li>
 					<li><a href="http://proudify.me">projects</a></li>
@@ -86,7 +84,7 @@
 </ul>
 <p>Here is my .vimrc for those who might want to take a look.</p>
 <div class="highlight"><pre><span class="k">set</span> <span class="nb">nowrap</span>
-<span class="k">set</span> <span class="nb">complete</span><span class="p">-=</span>i
+<span class="k">set</span> <span class="nb">complete</span><span class="p">-=</span><span class="k">i</span>
 <span class="k">set</span> <span class="nb">wildmenu</span>
 <span class="k">set</span> <span class="nb">fileformats</span><span class="p">=</span>unix<span class="p">,</span>mac<span class="p">,</span>dos
 <span class="k">set</span> <span class="nb">nocp</span>
@@ -116,23 +114,22 @@
 <span class="k">set</span> <span class="nb">shortmess</span><span class="p">=</span><span class="k">as</span>
 <span class="k">set</span> <span class="nb">showcmd</span>
 <span class="k">set</span> <span class="nb">ttyfast</span>
-<span class="k">set</span> <span class="nb">mouse</span><span class="p">=</span>a
+<span class="k">set</span> <span class="nb">mouse</span><span class="p">=</span><span class="k">a</span>
 
-<span class="k">colorscheme</span> zenburn
+<p><span class="k">colorscheme</span> zenburn
 <span class="k">filetype</span> plugin <span class="k">on</span>
 <span class="k">filetype</span> plugin indent <span class="k">on</span>
 <span class="k">filetype</span> <span class="k">on</span>
-<span class="nb">syntax</span> <span class="k">on</span>
-
+<span class="nb">syntax</span> <span class="k">on</span></p>
 <p><span class="c">&quot; Word Completion</span>
 <span class="k">function</span><span class="p">!</span> Tab_Or_Complete<span class="p">()</span>
     <span class="k">if</span> <span class="k">col</span><span class="p">(</span><span class="s1">&#39;.&#39;</span><span class="p">)&gt;</span><span class="m">1</span> &amp;&amp; strpart<span class="p">(</span> getline<span class="p">(</span><span class="s1">&#39;.&#39;</span><span class="p">),</span> <span class="k">col</span><span class="p">(</span><span class="s1">&#39;.&#39;</span><span class="p">)</span><span class="m">-2</span><span class="p">,</span> <span class="m">3</span> <span class="p">)</span> <span class="p">=~</span> <span class="s1">&#39;^w&#39;</span>
-        <span class="k">return</span> <span class="c">&quot;&amp;lt;C-N&gt;&quot;</span>
+        <span class="k">return</span> <span class="s2">&quot;&amp;lt;C-N&gt;&quot;</span>
     <span class="k">else</span>
-        <span class="k">return</span> <span class="c">&quot;&amp;lt;Tab&gt;&quot;</span>
+        <span class="k">return</span> <span class="s2">&quot;&amp;lt;Tab&gt;&quot;</span>
     <span class="k">endif</span>
 <span class="k">endfunction</span>
-inoremap <span class="p">&lt;</span>Tab<span class="p">&gt;</span> <span class="p">&lt;</span>C<span class="p">-</span>R<span class="p">&gt;=</span>Tab_Or_Complete<span class="p">()&lt;</span>CR<span class="p">&gt;</span>
+<span class="nb">inoremap</span> <span class="p">&lt;</span>Tab<span class="p">&gt;</span> <span class="p">&lt;</span>C<span class="p">-</span>R<span class="p">&gt;=</span>Tab_Or_Complete<span class="p">()&lt;</span>CR<span class="p">&gt;</span>
 <span class="k">set</span> <span class="nb">dictionary</span><span class="p">=</span><span class="s2">&quot;/usr/share/dict/words&quot;</span></p>
 <p><span class="c">&quot; Default Markdown Blog Post Template (to be used with Jekyll)</span>
 autocmd <span class="nb">BufNewFile</span> *.markdown <span class="k">silent</span><span class="p">!</span> <span class="m">0</span>r $HOME<span class="sr">/.vim/</span>templates/markdown.<span class="k">vim</span>
@@ -150,8 +147,6 @@ create <strong>somefile.markdown</strong> it will automatically get filled with 
 		
 		<div class="footer">
 			<div class="text">
-				<div class="align left">Feel free to shoot me a <a href="http://twitter.com/theicebreaker">tweet</a>, an <a href="mailto:szaby@szabster.net">email</a> or <a href="http://plus.szabster.net/">add me</a> to your circles.</div>
-				<div class="align right"><span style="font-size: 13px">(built with <a href="https://github.com/icebreaker/doxter" target="_blank">Doxter</a>)</span> | <a href="http://creativecommons.org/licenses/by-nc-sa/3.0/">CC BY-NC-SA 3.0</a></div>
 				<div class="clear"></div>
 			</div>
 		</div>
