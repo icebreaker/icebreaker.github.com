@@ -6,7 +6,7 @@
 	<g:plusone size="medium"></g:plusone>
 </div>
 <div class="align right">
-	<i>{% if page.draft %}draft{% endif %} written on {{ page.date | date_to_string }}</i>
+	{% if page.draft %}draft{% endif %} written on {{ page.date | date_to_string }}
 </div>
 <div class="clear"></div>
 {{ super() }}

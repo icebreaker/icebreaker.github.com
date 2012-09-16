@@ -1,7 +1,8 @@
 body
 {
-	font-family: 'Buenard', sans-serif;
-	font-size: 16pt;
+	font-family: 'Signika Negative', sans-serif;
+	font-size: 1.2em;
+	font-weight: 300;
 	width: 1024px;
 	margin: 0 auto;
 	color: #333333;
@@ -63,7 +64,9 @@ body
 
 .content h1, h2, h3, h4, h5, h6
 {
-	font-family: 'Quando', sans-serif;
+	font-family: 'Passion One', 'Arial Black', sans-serif;
+	text-transform: uppercase;
+	font-weight: 400;
 }
 
 .content h1
@@ -71,6 +74,7 @@ body
 	border-bottom: 0;
 	margin-bottom: 0;
 	margin-top: 8px;
+	color: #B80000;
 }
 
 .content h2	
@@ -86,8 +90,7 @@ body
 
 .content pre, .content code
 {
-	font-family: 'Droid Sans Mono', monospace;
-	font-size: 14pt;
+	font-family: 'Ubuntu Mono', monospace;
 	background-color: #F1F1F1;
 	background: -webkit-gradient(radial, 100 36, 0, 100 -40, 120, from(#FAFAFA), to(#F1F1F1)), #F1F1F1;
 	border: 1px solid #E5E5E5;
@@ -103,8 +106,7 @@ body
 
 .content code
 {
-	font-family: 'Buenard';
-	font-size: 16pt;
+	font-family: 'Signika Negative';
 	padding: 0;
 }
 
@@ -178,4 +180,11 @@ body
 {
 	float: left;
 	margin-top: 10px;
+}
+
+::selection, ::-moz-selection
+{
+	background: #A22222;
+	color: #FFFFFF;
+	text-shadow: none;
 }
