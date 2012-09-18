@@ -4,12 +4,21 @@
 <title>Mihail Szabolcs</title>
 <link href="http://szabster.net/atom.xml" rel="self"/>
 <link href="http://szabster.net/"/>
-<updated>2012-09-16T00:00:00+02:00</updated>
+<updated>2012-09-18T00:00:00+02:00</updated>
 <id>http://szabster.net/</id>
 <author>
 	<name>Mihail Szabolcs</name>
 </author>
 
+
+<entry>
+	<title type="html">Declaration of Romantic Intent</title>
+	<link href="http://szabster.net/2012/9/18/declaration-of-romantic-intent"/>
+	<updated>2012-09-18T00:00:00+02:00</updated>
+	<id>http://szabster.net/2012/9/18/declaration-of-romantic-intent</id>
+	<content type="html">&lt;p&gt;&lt;img alt="" src="http://szabster.net/images/2012/09/18/decl.jpg" /&gt;&lt;/p&gt;</content>
+	<category term="joke"/><category term="love"/><category term="romance"/>
+</entry>
 
 <entry>
 	<title type="html">Substance vs Style</title>
@@ -1295,8 +1304,9 @@ existing Makefile based projects.&lt;/p&gt;
     rake clobber
 &lt;span class="nf"&gt;realclean&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;distclean&lt;/span&gt;
 
-&lt;p&gt;&lt;span class="nf"&gt;.PHONY&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;all release debug clean distclean realclean&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;&lt;/p&gt;
+&lt;span class="nf"&gt;.PHONY&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="m"&gt;all release debug clean distclean realclean&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
 &lt;h3&gt;What's missing&lt;/h3&gt;
 &lt;p&gt;What I consider that it's missing at this point is a &lt;em&gt;configure&lt;/em&gt; &lt;strong&gt;stage&lt;/strong&gt; which can check for 'external' dependencies and do a
 complete report if something isn't the way it was originally expected.&lt;/p&gt;
@@ -1705,7 +1715,7 @@ the necessary data, with &lt;a href="http://doc.trolltech.com/4.6/qfsfileengine.
 a transparent way as shown in the code snippet below.&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="p"&gt;...&lt;/span&gt;
 
-&lt;p&gt;&lt;span class="c1"&gt;//! File System Class&lt;/span&gt;
+&lt;span class="c1"&gt;//! File System Class&lt;/span&gt;
 &lt;span class="k"&gt;class&lt;/span&gt; &lt;span class="nc"&gt;FileSystem&lt;/span&gt; &lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="k"&gt;public&lt;/span&gt; &lt;span class="n"&gt;QFSFileEngine&lt;/span&gt;
 &lt;span class="p"&gt;{&lt;/span&gt;
     &lt;span class="k"&gt;public&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;
@@ -1713,16 +1723,19 @@ a transparent way as shown in the code snippet below.&lt;/p&gt;
         &lt;span class="n"&gt;FileSystem&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="k"&gt;const&lt;/span&gt; &lt;span class="n"&gt;QString&lt;/span&gt; &lt;span class="o"&gt;&amp;amp;&lt;/span&gt;&lt;span class="n"&gt;pFileName&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
         &lt;span class="c1"&gt;//! Destructor&lt;/span&gt;
         &lt;span class="k"&gt;virtual&lt;/span&gt; &lt;span class="o"&gt;~&lt;/span&gt;&lt;span class="n"&gt;FileSystem&lt;/span&gt;&lt;span class="p"&gt;();&lt;/span&gt;
-&lt;span class="p"&gt;};&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span class="c1"&gt;//! File System Handler&lt;/span&gt;
+&lt;span class="p"&gt;};&lt;/span&gt;
+
+&lt;span class="c1"&gt;//! File System Handler&lt;/span&gt;
 &lt;span class="k"&gt;class&lt;/span&gt; &lt;span class="nc"&gt;FileSystemHandler&lt;/span&gt; &lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="k"&gt;public&lt;/span&gt; &lt;span class="n"&gt;QAbstractFileEngineHandler&lt;/span&gt;
 &lt;span class="p"&gt;{&lt;/span&gt;
     &lt;span class="k"&gt;public&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;
         &lt;span class="c1"&gt;//! Constructor&lt;/span&gt;
         &lt;span class="n"&gt;QAbstractFileEngine&lt;/span&gt; &lt;span class="o"&gt;*&lt;/span&gt;&lt;span class="n"&gt;create&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="k"&gt;const&lt;/span&gt; &lt;span class="n"&gt;QString&lt;/span&gt; &lt;span class="o"&gt;&amp;amp;&lt;/span&gt;&lt;span class="n"&gt;pFileName&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="k"&gt;const&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
-&lt;span class="p"&gt;};&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span class="p"&gt;...&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span class="kt"&gt;int&lt;/span&gt; &lt;span class="n"&gt;main&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="kt"&gt;int&lt;/span&gt; &lt;span class="n"&gt;argc&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="kt"&gt;char&lt;/span&gt; &lt;span class="o"&gt;*&lt;/span&gt;&lt;span class="n"&gt;argv&lt;/span&gt;&lt;span class="p"&gt;[])&lt;/span&gt;
+&lt;span class="p"&gt;};&lt;/span&gt;
+
+&lt;span class="p"&gt;...&lt;/span&gt;
+
+&lt;span class="kt"&gt;int&lt;/span&gt; &lt;span class="n"&gt;main&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="kt"&gt;int&lt;/span&gt; &lt;span class="n"&gt;argc&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="kt"&gt;char&lt;/span&gt; &lt;span class="o"&gt;*&lt;/span&gt;&lt;span class="n"&gt;argv&lt;/span&gt;&lt;span class="p"&gt;[])&lt;/span&gt;
 &lt;span class="p"&gt;{&lt;/span&gt;
     &lt;span class="n"&gt;FileSystemHandler&lt;/span&gt; &lt;span class="n"&gt;lFileSystemHandler&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
     &lt;span class="n"&gt;QFile&lt;/span&gt; &lt;span class="n"&gt;lFile&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;scripts/test.js&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
@@ -1732,7 +1745,8 @@ a transparent way as shown in the code snippet below.&lt;/p&gt;
     &lt;span class="p"&gt;}&lt;/span&gt;
     &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
 &lt;span class="p"&gt;}&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;&lt;/p&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
 &lt;p&gt;In &lt;em&gt;our&lt;/em&gt; &lt;strong&gt;&lt;em&gt;FileSystem class&lt;/em&gt;&lt;/strong&gt; we preprend our base path to the fileName, i.e &lt;em&gt;"./data/"&lt;/em&gt; so 
 &lt;a href="http://doc.trolltech.com/4.6/qfile.html"&gt;QFile&lt;/a&gt;, &lt;a href="http://doc.trolltech.com/4.6/qdir.html"&gt;QDir&lt;/a&gt;, 
 &lt;a href="http://doc.trolltech.com/4.6/qfileinfo.html"&gt;QFileInfo&lt;/a&gt; all work the exact same way they did before registering 
@@ -1907,24 +1921,27 @@ when it comes to the back-end rendering architecture.&lt;/p&gt;
 &lt;span class="k"&gt;set&lt;/span&gt; &lt;span class="nb"&gt;ttyfast&lt;/span&gt;
 &lt;span class="k"&gt;set&lt;/span&gt; &lt;span class="nb"&gt;mouse&lt;/span&gt;&lt;span class="p"&gt;=&lt;/span&gt;&lt;span class="k"&gt;a&lt;/span&gt;
 
-&lt;p&gt;&lt;span class="k"&gt;colorscheme&lt;/span&gt; zenburn
+&lt;span class="k"&gt;colorscheme&lt;/span&gt; zenburn
 &lt;span class="k"&gt;filetype&lt;/span&gt; plugin &lt;span class="k"&gt;on&lt;/span&gt;
 &lt;span class="k"&gt;filetype&lt;/span&gt; plugin indent &lt;span class="k"&gt;on&lt;/span&gt;
 &lt;span class="k"&gt;filetype&lt;/span&gt; &lt;span class="k"&gt;on&lt;/span&gt;
-&lt;span class="nb"&gt;syntax&lt;/span&gt; &lt;span class="k"&gt;on&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span class="c"&gt;&amp;quot; Word Completion&lt;/span&gt;
+&lt;span class="nb"&gt;syntax&lt;/span&gt; &lt;span class="k"&gt;on&lt;/span&gt;
+
+&lt;span class="c"&gt;&amp;quot; Word Completion&lt;/span&gt;
 &lt;span class="k"&gt;function&lt;/span&gt;&lt;span class="p"&gt;!&lt;/span&gt; Tab_Or_Complete&lt;span class="p"&gt;()&lt;/span&gt;
-    &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="k"&gt;col&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;.&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;)&amp;gt;&lt;/span&gt;&lt;span class="m"&gt;1&lt;/span&gt; &amp;amp;&amp;amp; strpart&lt;span class="p"&gt;(&lt;/span&gt; getline&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;.&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;),&lt;/span&gt; &lt;span class="k"&gt;col&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;.&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="m"&gt;-2&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="m"&gt;3&lt;/span&gt; &lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="p"&gt;=~&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;^w&amp;#39;&lt;/span&gt;
-        &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;&amp;amp;lt;C-N&amp;gt;&amp;quot;&lt;/span&gt;
+    &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="k"&gt;col&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;.&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;)&amp;gt;&lt;/span&gt;&lt;span class="m"&gt;1&lt;/span&gt; &amp;amp;&amp;amp; strpart&lt;span class="p"&gt;(&lt;/span&gt; getline&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;.&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;),&lt;/span&gt; &lt;span class="k"&gt;col&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;.&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="m"&gt;-2&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="m"&gt;3&lt;/span&gt; &lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="p"&gt;=~&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;^\w&amp;#39;&lt;/span&gt;
+        &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;\&amp;lt;C-N&amp;gt;&amp;quot;&lt;/span&gt;
     &lt;span class="k"&gt;else&lt;/span&gt;
-        &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;&amp;amp;lt;Tab&amp;gt;&amp;quot;&lt;/span&gt;
+        &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;\&amp;lt;Tab&amp;gt;&amp;quot;&lt;/span&gt;
     &lt;span class="k"&gt;endif&lt;/span&gt;
 &lt;span class="k"&gt;endfunction&lt;/span&gt;
 &lt;span class="nb"&gt;inoremap&lt;/span&gt; &lt;span class="p"&gt;&amp;lt;&lt;/span&gt;Tab&lt;span class="p"&gt;&amp;gt;&lt;/span&gt; &lt;span class="p"&gt;&amp;lt;&lt;/span&gt;C&lt;span class="p"&gt;-&lt;/span&gt;R&lt;span class="p"&gt;&amp;gt;=&lt;/span&gt;Tab_Or_Complete&lt;span class="p"&gt;()&amp;lt;&lt;/span&gt;CR&lt;span class="p"&gt;&amp;gt;&lt;/span&gt;
-&lt;span class="k"&gt;set&lt;/span&gt; &lt;span class="nb"&gt;dictionary&lt;/span&gt;&lt;span class="p"&gt;=&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;/usr/share/dict/words&amp;quot;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span class="c"&gt;&amp;quot; Default Markdown Blog Post Template (to be used with Jekyll)&lt;/span&gt;
+&lt;span class="k"&gt;set&lt;/span&gt; &lt;span class="nb"&gt;dictionary&lt;/span&gt;&lt;span class="p"&gt;=&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;/usr/share/dict/words&amp;quot;&lt;/span&gt;
+
+&lt;span class="c"&gt;&amp;quot; Default Markdown Blog Post Template (to be used with Jekyll)&lt;/span&gt;
 autocmd &lt;span class="nb"&gt;BufNewFile&lt;/span&gt; *.markdown &lt;span class="k"&gt;silent&lt;/span&gt;&lt;span class="p"&gt;!&lt;/span&gt; &lt;span class="m"&gt;0&lt;/span&gt;r $HOME&lt;span class="sr"&gt;/.vim/&lt;/span&gt;templates/markdown.&lt;span class="k"&gt;vim&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;&lt;/p&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
 &lt;p&gt;I would like to highlight two things:&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;Word Completion&lt;/li&gt;
@@ -2120,6 +2137,7 @@ Wow, this post got really really long ... lots of blah, blah ... just another la
 	<updated>2009-11-21T00:00:00+02:00</updated>
 	<id>http://szabster.net/2009/11/21/tripple-x</id>
 	<content type="html">&lt;p style="text-align: center;"&gt;&lt;a title="Click for bigger &amp;amp; better!" class="image" href="http://szabster.net/images/2009/11/MG_2361.jpg" target="_blank"&gt;&lt;img class="aligncenter size-full wp-image-688" title="_MG_2361" src="http://szabster.net/images/2009/11/MG_2361.jpg" alt="_MG_2361" width="545" height="818" /&gt;&lt;/a&gt;&lt;/p&gt;
+
 &lt;p style="text-align: center;"&gt;(Source: &lt;a title="THEM THANGS" href="http://jblyth.com/blog_08.html" target="_blank"&gt;THEM THANS&lt;/a&gt;)&lt;/p&gt;</content>
 	<category term="girl"/><category term="xxx"/><category term="p0rn"/><category term="cyber"/><category term="art"/>
 </entry>
@@ -2285,9 +2303,13 @@ It should work fine on most systems (even with those crappy integrated Intel gra
 	<updated>2009-07-13T00:00:00+02:00</updated>
 	<id>http://szabster.net/2009/7/13/dino-and-the-aliens</id>
 	<content type="html">&lt;p style="text-align: left;"&gt;Initially I wanted to write up and article series about reverse engineering &lt;span&gt;&lt;strong&gt;&lt;a id="e2lz" title="Click for the DEMO or BUY!" href="http://www.oberongames.com/dino_and_aliens.asp" target="_blank"&gt;Dino And the Aliens&lt;/a&gt; &lt;/strong&gt;by &lt;strong&gt;&lt;a id="vg2g" title="Visit NevoSoft!" href="http://www.nevosoft.com/" target="_blank"&gt;NevoSoft&lt;/a&gt;&lt;/strong&gt;&lt;/span&gt;, but I kinda lost interest after I reversed the PAK file format. (I may return later and continue the work here ... who knows .. reversing the custom model format, etc ... lol)&lt;/p&gt;
+
 &lt;p style="text-align: left;"&gt;To make the long story short, the files inside the Package File are encrypted with their filenames, so now I'm releasing the source code to manipulate (extract, replace, create, etc) these PAK files.&lt;/p&gt;
+
 &lt;p style="text-align: left;"&gt;With this it is possible to create new levels because the level files are in plain text format and it's not that hard to figure out what character translates to what just by looking at the other levels.&lt;/p&gt;
+
 &lt;p style="text-align: left;"&gt;I reversed the demo version, but I don't think that there are any differences, so the code should work pretty much fine with the full version as well.&lt;/p&gt;
+
 &lt;p style="text-align: left;"&gt;If you like the game please BUY it . (IMHO, the best INDIE game ever! -- works under &lt;em&gt;Wine&lt;/em&gt; as well :))&lt;/p&gt;
 
 &lt;blockquote&gt;Dino and Aliens
@@ -2385,25 +2407,30 @@ So far it's around 4 days of work, I really hope to finish it this weekend, then
     &lt;span class="p"&gt;}&lt;/span&gt;
 &lt;span class="p"&gt;}&lt;/span&gt;
 
-&lt;p&gt;&lt;span class="k"&gt;namespace&lt;/span&gt;
+&lt;span class="k"&gt;namespace&lt;/span&gt;
 &lt;span class="p"&gt;{&lt;/span&gt;
     &lt;span class="kt"&gt;bool&lt;/span&gt; &lt;span class="n"&gt;debug&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="kc"&gt;false&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
-&lt;span class="p"&gt;}&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span class="k"&gt;class&lt;/span&gt; &lt;span class="nc"&gt;MyClass&lt;/span&gt; &lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="k"&gt;public&lt;/span&gt; &lt;span class="n"&gt;Core&lt;/span&gt;&lt;span class="o"&gt;::&lt;/span&gt;&lt;span class="n"&gt;Internal&lt;/span&gt;&lt;span class="o"&gt;::&lt;/span&gt;&lt;span class="n"&gt;anotherclass&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+
+&lt;span class="k"&gt;class&lt;/span&gt; &lt;span class="nc"&gt;MyClass&lt;/span&gt; &lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="k"&gt;public&lt;/span&gt; &lt;span class="n"&gt;Core&lt;/span&gt;&lt;span class="o"&gt;::&lt;/span&gt;&lt;span class="n"&gt;Internal&lt;/span&gt;&lt;span class="o"&gt;::&lt;/span&gt;&lt;span class="n"&gt;anotherclass&lt;/span&gt;
 &lt;span class="p"&gt;{&lt;/span&gt;
     &lt;span class="p"&gt;...&lt;/span&gt;
 &lt;span class="p"&gt;}&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;&lt;/p&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
 &lt;p&gt;Instead of doing something like this:&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="cp"&gt;#include &amp;lt;Core/Internal&amp;gt;&lt;/span&gt;
 
-&lt;p&gt;&lt;span class="k"&gt;using&lt;/span&gt; &lt;span class="k"&gt;namespace&lt;/span&gt; &lt;span class="n"&gt;Core&lt;/span&gt;&lt;span class="o"&gt;::&lt;/span&gt;&lt;span class="n"&gt;Internal&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span class="kt"&gt;bool&lt;/span&gt; &lt;span class="n"&gt;debug&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="kc"&gt;false&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span class="k"&gt;class&lt;/span&gt; &lt;span class="nc"&gt;MyClass&lt;/span&gt; &lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="k"&gt;public&lt;/span&gt; &lt;span class="n"&gt;anotherclass&lt;/span&gt;
+&lt;span class="k"&gt;using&lt;/span&gt; &lt;span class="k"&gt;namespace&lt;/span&gt; &lt;span class="n"&gt;Core&lt;/span&gt;&lt;span class="o"&gt;::&lt;/span&gt;&lt;span class="n"&gt;Internal&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+
+&lt;span class="kt"&gt;bool&lt;/span&gt; &lt;span class="n"&gt;debug&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="kc"&gt;false&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+
+&lt;span class="k"&gt;class&lt;/span&gt; &lt;span class="nc"&gt;MyClass&lt;/span&gt; &lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="k"&gt;public&lt;/span&gt; &lt;span class="n"&gt;anotherclass&lt;/span&gt;
 &lt;span class="p"&gt;{&lt;/span&gt;
     &lt;span class="p"&gt;...&lt;/span&gt;
 &lt;span class="p"&gt;}&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;&lt;/p&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
 &lt;p&gt;Why is the 1st approach important, clean and a lot more self explaining?&lt;/p&gt;
 &lt;p&gt;Now think about that you will include the file containing MyClass in some other file, this will lead to the inclusion of &amp;lt;Core/Internal&amp;gt; and even worse the whole Core::Internal name-space, which can lead to variable collisions and tons of other frustrations.&lt;/p&gt;
 &lt;p&gt;With the first approach, everything is fully incapsulated, and there are virtually no side effects thus leading to a way much cleaner design with almost no extra work.&lt;/p&gt;
@@ -2594,18 +2621,26 @@ realclean: clean
 	<updated>2009-03-15T00:00:00+02:00</updated>
 	<id>http://szabster.net/2009/3/15/embed-python</id>
 	<content type="html">&lt;p&gt;Last night, I started playing a little bit with embedding python + exposing classes via Boost::Python, because I wanna integrate this kind of functionalities in my 3D engine.&lt;/p&gt;
+
 &lt;p&gt;Since my system is fully modular, and each sub-system lives in its own shared object ( or dynamic linking library under win32 ), it turned out quite easy to make those python modules as well.&lt;/p&gt;
+
 &lt;p&gt;(I use Gists @ GistHub to post the source code instead of having it in the post itself, since it's easier to manage over time)&lt;/p&gt;
+
 &lt;p&gt;Here is some boilerplate code for a sample sub-subsystem header and implementation:&lt;/p&gt;
+
 &lt;p&gt;&lt;script src="http://gist.github.com/79333.js"&gt;&lt;/script&gt; &lt;script src="http://gist.github.com/79334.js"&gt;&lt;/script&gt;&lt;/p&gt;
+
 &lt;p&gt;It is clearly visibile that it is a singleton class, hence the getInstance static method. I've also chosen to use the "py" prefix for the actual module name.&lt;/p&gt;
+
 &lt;p&gt;Now this can be compiled to a nice shared object or dynamic linking library and used right away.&lt;/p&gt;
 
 &lt;div class="highlight"&gt;&lt;pre&gt;g++ LeraSystem.cpp -shared -o pyLeraSystem.so -I/usr/include/python2.6 -lboost_python
 &lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;I provide compile commands for Linux + GCC only, since it is my primary development platform, but this is very similar under Windows, there you one would get two files like pyLeraSystem.dll + pyLeraSystem.lib .&lt;/p&gt;
+
 &lt;p&gt;Again some boilerplate code and the expected output produced by it here ( cmd -- &lt;em&gt;python pyLeraTest.py&lt;/em&gt; ):&lt;/p&gt;
+
 &lt;p&gt;&lt;script src="http://gist.github.com/79339.js"&gt;&lt;/script&gt; Produced Output:&lt;/p&gt;
 
 &lt;div class="highlight"&gt;&lt;pre&gt;hello world
@@ -2617,10 +2652,15 @@ hello world
 &lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;Yayy! With this the singleton thingy was working, but wasn't the end of the journey :) Why? The answer is quite simple, I had to embed the python interpreter in order to take full advantage of this.  &lt;script src="http://gist.github.com/79342.js"&gt;&lt;/script&gt;&lt;/p&gt;
+
 &lt;p&gt;I already had my sub-system as an shared object (even before exposing anything to python), so I just had to link it to interpreter stub to make the full magic happen between C++ &amp;amp; Python working with truly the same instance of a sub-system.&lt;/p&gt;
+
 &lt;p&gt;A hack needs to be done here by doing an symbolic link from pyLeraSystem.so to libLeraSystem.so which can be achieved with the following command (assuming that the files are in the current working directory):&lt;/p&gt;
+
 &lt;p&gt;ln -s pyLeraSystem.so libLeraSystem.so&lt;/p&gt;
+
 &lt;p&gt;( this is not necessary under Windows, because there the .lib file is used to link against an dynamic linking library )&lt;/p&gt;
+
 &lt;p&gt;... to compile the embedded python interpreter ...&lt;/p&gt;
 
 &lt;div class="highlight"&gt;&lt;pre&gt;g++ LeraPythonEmbed.cpp -I/usr/include/python2.6 -L. -lpython2.6 -lm -lLeraSystem -o leraTestEmbed
@@ -2632,8 +2672,11 @@ hello world
 &lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;( this is again not necessary under Windows )&lt;/p&gt;
+
 &lt;p&gt;Also the python script needs to be adjusted a little:&lt;/p&gt;
+
 &lt;p&gt;&lt;script src="http://gist.github.com/79347.js"&gt;&lt;/script&gt;&lt;/p&gt;
+
 &lt;p&gt;Now running ./leraTestEmbed produces the following output:&lt;/p&gt;
 
 &lt;div class="highlight"&gt;&lt;pre&gt;this message was &lt;span class="nb"&gt;set &lt;/span&gt;from C++ and printed by Python
@@ -2641,8 +2684,11 @@ this message was &lt;span class="nb"&gt;set &lt;/span&gt;from Python and printed
 &lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;With this I reached my final goal, python and c++ fully interacting, using the same singleton sub-system class at runtime.&lt;/p&gt;
+
 &lt;p&gt;The approach of using modules instead of exposing classes, etc. directly from the embed interpreter adds a great deal of flexibility, and makes exposing existing plugins to python using Boost::Python piece of cake.&lt;/p&gt;
+
 &lt;p&gt;In the real life scenario ( my 3d engine and framework ) the actual sub-subsystems are not linked against the stub, they are dynamically loaded, and instantiated once in their full lifetime, but this is pretty much the same story.&lt;/p&gt;
+
 &lt;p&gt;Uffff, 548 words at the moment of typing this ... duhhh, I really need to get a life :))&lt;/p&gt;</content>
 	<category term="c"/><category term="coding"/><category term="lera3d"/><category term="python"/><category term="embed"/>
 </entry>
@@ -2743,10 +2789,11 @@ tar xzvf vte-0.17.4.tar.gz
 wget http://patches.ubuntu.com/v/vte/extracted/93_add_alt_screen_scroll_toggle.patch
 patch -p1 &amp;amp;lt; 93_add_alt_screen_scroll_toggle.patch
 
-&lt;p&gt;./configure
+./configure
 make
 make install
-&lt;/pre&gt;&lt;/div&gt;&lt;/p&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
 &lt;p&gt;... and BOOM, now it should work since the method is there :)&lt;/p&gt;
 &lt;p&gt;Enjoy :)&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;UPDATE: 2/26/2009&lt;/strong&gt;&lt;/p&gt;
@@ -2802,15 +2849,19 @@ vim Makefile
 
 &lt;span class="nv"&gt;formula_test_objects&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; filesystem.o formula_function.o formula_tokenizer.o string_utils.o variant.o wml_node.o wml_parser.o wml_utils.o wml_writer.o
 
-&lt;p&gt;%.o : src/%.cpp
-g++ -g -O2 -I/usr/local/include/boost-1_34 -I/usr/include/SDL -I/usr/X11R6/include -D_GNU_SOURCE&lt;span class="o"&gt;=&lt;/span&gt;1 -D_REENTRANT -Wnon-virtual-dtor -Wreturn-type -fthreadsafe-statics -c &lt;span class="nv"&gt;$&amp;lt;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;game: &lt;span class="k"&gt;$(&lt;/span&gt;objects&lt;span class="k"&gt;)&lt;/span&gt;
-g++ -g -O2 -L/usr/lib -L/usr/X11R6/lib -lX11 -D_GNU_SOURCE&lt;span class="o"&gt;=&lt;/span&gt;1 -D_REENTRANT -Wnon-virtual-dtor -Wreturn-type -L/usr/lib -lSDLmain -lSDL -lGL -lGLU -lSDL_image -lSDL_ttf -lSDL_mixer -lboost_regex -lboost_thread-mt -fthreadsafe-statics *.o -o game&lt;/p&gt;
-&lt;p&gt;formula_test: &lt;span class="k"&gt;$(&lt;/span&gt;formula_test_objects&lt;span class="k"&gt;)&lt;/span&gt;
-g++ -O2 -g -I/usr/include/SDL -D_GNU_SOURCE&lt;span class="o"&gt;=&lt;/span&gt;1 -D_REENTRANT -DUNIT_TEST_FORMULA -Wnon-virtual-dtor -Wreturn-type -L/usr/lib -lSDL -lGL -lGLU -lSDL_image -lSDL_ttf -lSDL_mixer -lboost_regex src/formula.cpp &lt;span class="k"&gt;$(&lt;/span&gt;formula_test_objects&lt;span class="k"&gt;)&lt;/span&gt; -o &lt;span class="nb"&gt;test&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;clean:
+%.o : src/%.cpp
+g++ -g -O2 -I/usr/local/include/boost-1_34 -I/usr/include/SDL -I/usr/X11R6/include -D_GNU_SOURCE&lt;span class="o"&gt;=&lt;/span&gt;1 -D_REENTRANT -Wnon-virtual-dtor -Wreturn-type -fthreadsafe-statics -c &lt;span class="nv"&gt;$&amp;lt;&lt;/span&gt;
+
+game: &lt;span class="k"&gt;$(&lt;/span&gt;objects&lt;span class="k"&gt;)&lt;/span&gt;
+g++ -g -O2 -L/usr/lib -L/usr/X11R6/lib -lX11 -D_GNU_SOURCE&lt;span class="o"&gt;=&lt;/span&gt;1 -D_REENTRANT -Wnon-virtual-dtor -Wreturn-type -L/usr/lib -lSDLmain -lSDL -lGL -lGLU -lSDL_image -lSDL_ttf -lSDL_mixer -lboost_regex -lboost_thread-mt -fthreadsafe-statics *.o -o game
+
+formula_test: &lt;span class="k"&gt;$(&lt;/span&gt;formula_test_objects&lt;span class="k"&gt;)&lt;/span&gt;
+g++ -O2 -g -I/usr/include/SDL -D_GNU_SOURCE&lt;span class="o"&gt;=&lt;/span&gt;1 -D_REENTRANT -DUNIT_TEST_FORMULA -Wnon-virtual-dtor -Wreturn-type -L/usr/lib -lSDL -lGL -lGLU -lSDL_image -lSDL_ttf -lSDL_mixer -lboost_regex src/formula.cpp &lt;span class="k"&gt;$(&lt;/span&gt;formula_test_objects&lt;span class="k"&gt;)&lt;/span&gt; -o &lt;span class="nb"&gt;test&lt;/span&gt;
+
+clean:
 rm *.o game
-&lt;/pre&gt;&lt;/div&gt;&lt;/p&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
 &lt;div class="highlight"&gt;&lt;pre&gt;:wq
 &lt;/pre&gt;&lt;/div&gt;
 
@@ -3001,7 +3052,7 @@ More info at &lt;a title="The Free Software Song" href="http://en.wikipedia.org/
 &lt;p&gt;As always, make it executable and put it in a safe place like /usr/bin :P&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="c"&gt;#!/bin/bash&lt;/span&gt;
 
-&lt;p&gt;&lt;span class="c"&gt;# Author: Icebreaker&lt;/span&gt;
+&lt;span class="c"&gt;# Author: Icebreaker&lt;/span&gt;
 &lt;span class="c"&gt;# Description: Resize a video to 1280x720 (HD).&lt;/span&gt;
 &lt;span class="c"&gt;# I&amp;#39;m using this script to resize videos to 1280x720&lt;/span&gt;
 &lt;span class="c"&gt;# ( maintaining the source quality )&lt;/span&gt;
@@ -3017,13 +3068,15 @@ More info at &lt;a title="The Free Software Song" href="http://en.wikipedia.org/
 &lt;span class="c"&gt;#&lt;/span&gt;
 &lt;span class="c"&gt;# Requires: ffmpeg&lt;/span&gt;
 &lt;span class="c"&gt;#&lt;/span&gt;
-&lt;span class="c"&gt;# Public Domain&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="o"&gt;[&lt;/span&gt; &lt;span class="nv"&gt;$# &lt;/span&gt;-lt 2 &lt;span class="o"&gt;]&lt;/span&gt; ; &lt;span class="k"&gt;then&lt;/span&gt;
-&lt;span class="nb"&gt;echo &lt;/span&gt;Usage: mkhdv input.video output.video &lt;span class="o"&gt;[&lt;/span&gt;-t &lt;span class="s2"&gt;&amp;quot;some video title&amp;quot;&lt;/span&gt;&lt;span class="o"&gt;]&lt;/span&gt; &lt;span class="se"&gt;&amp;lt;/span&amp;gt;
+&lt;span class="c"&gt;# Public Domain&lt;/span&gt;
+
+&lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="o"&gt;[&lt;/span&gt; &lt;span class="nv"&gt;$# &lt;/span&gt;-lt 2 &lt;span class="o"&gt;]&lt;/span&gt; ; &lt;span class="k"&gt;then&lt;/span&gt;
+&lt;span class="nb"&gt;echo &lt;/span&gt;Usage: mkhdv input.video output.video &lt;span class="o"&gt;[&lt;/span&gt;-t &lt;span class="s2"&gt;&amp;quot;some video title&amp;quot;&lt;/span&gt;&lt;span class="o"&gt;]&lt;/span&gt; &lt;span class="se"&gt;\&lt;/span&gt;
 &lt;span class="o"&gt;[&lt;/span&gt;-s 1280x720&lt;span class="o"&gt;]&lt;/span&gt;
 &lt;span class="nb"&gt;exit &lt;/span&gt;13
-&lt;span class="k"&gt;fi&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="o"&gt;[&lt;/span&gt; &lt;span class="nv"&gt;$# &lt;/span&gt;-eq 4 &lt;span class="o"&gt;]&lt;/span&gt; ; &lt;span class="k"&gt;then&lt;/span&gt;
+&lt;span class="k"&gt;fi&lt;/span&gt;
+
+&lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="o"&gt;[&lt;/span&gt; &lt;span class="nv"&gt;$# &lt;/span&gt;-eq 4 &lt;span class="o"&gt;]&lt;/span&gt; ; &lt;span class="k"&gt;then&lt;/span&gt;
     &lt;span class="c"&gt;# title&lt;/span&gt;
     &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="o"&gt;[&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;$3&amp;quot;&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;-t&amp;quot;&lt;/span&gt; &lt;span class="o"&gt;]&lt;/span&gt; ; &lt;span class="k"&gt;then&lt;/span&gt;
 &lt;span class="k"&gt;        &lt;/span&gt;ffmpeg -i &lt;span class="s2"&gt;&amp;quot;$1&amp;quot;&lt;/span&gt; -sameq -s 1280x720 -title &lt;span class="s2"&gt;&amp;quot;$4&amp;quot;&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;$2&amp;quot;&lt;/span&gt;
@@ -3032,7 +3085,7 @@ More info at &lt;a title="The Free Software Song" href="http://en.wikipedia.org/
         &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="o"&gt;[&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;$3&amp;quot;&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;-s&amp;quot;&lt;/span&gt; &lt;span class="o"&gt;]&lt;/span&gt; ; &lt;span class="k"&gt;then&lt;/span&gt;
 &lt;span class="k"&gt;        &lt;/span&gt;ffmpeg -i &lt;span class="s2"&gt;&amp;quot;$1&amp;quot;&lt;/span&gt; -sameq -s &lt;span class="s2"&gt;&amp;quot;$4&amp;quot;&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;$2&amp;quot;&lt;/span&gt;
         &lt;span class="k"&gt;else&lt;/span&gt;
-&lt;span class="k"&gt;        &lt;/span&gt;&lt;span class="nb"&gt;echo &lt;/span&gt;Usage: mkhdv input.video output.video &lt;span class="se"&gt; &lt;/span&gt;
+&lt;span class="k"&gt;        &lt;/span&gt;&lt;span class="nb"&gt;echo &lt;/span&gt;Usage: mkhdv input.video output.video &lt;span class="se"&gt;\ &lt;/span&gt;
 &lt;span class="o"&gt;[&lt;/span&gt;-t &lt;span class="s2"&gt;&amp;quot;some video title&amp;quot;&lt;/span&gt;&lt;span class="o"&gt;]&lt;/span&gt; &lt;span class="o"&gt;[&lt;/span&gt;-s 1280x720&lt;span class="o"&gt;]&lt;/span&gt;
         &lt;span class="nb"&gt;exit &lt;/span&gt;666
         &lt;span class="k"&gt;fi&lt;/span&gt;
@@ -3069,7 +3122,7 @@ More info at &lt;a title="The Free Software Song" href="http://en.wikipedia.org/
 &lt;span class="k"&gt;fi&lt;/span&gt;
 &lt;span class="nb"&gt;echo &lt;/span&gt;Done
 &lt;span class="nb"&gt;exit &lt;/span&gt;1
-&lt;/pre&gt;&lt;/div&gt;&lt;/p&gt;</content>
+&lt;/pre&gt;&lt;/div&gt;</content>
 	<category term="bash"/><category term="script"/><category term="video"/><category term="resize"/><category term="ffmpeg"/>
 </entry>
 
@@ -3344,7 +3397,7 @@ ls *.png | awk &lt;span class="s1"&gt;&amp;#39;{ printf(&amp;quot;Converting %s 
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="cp"&gt;#define SAFE_ARRAY_DELETE(x) if(x) {delete [] x; x=NULL;}&lt;/span&gt;
 &lt;span class="cp"&gt;#define INRANGE(x,min,max) ( (x &amp;gt;= min) &amp;amp;&amp;amp; (x &amp;lt;= max) )&lt;/span&gt;
 
-&lt;p&gt;&lt;span class="k"&gt;namespace&lt;/span&gt; &lt;span class="n"&gt;Log&lt;/span&gt;
+&lt;span class="k"&gt;namespace&lt;/span&gt; &lt;span class="n"&gt;Log&lt;/span&gt;
 &lt;span class="p"&gt;{&lt;/span&gt;
     &lt;span class="k"&gt;const&lt;/span&gt; &lt;span class="kt"&gt;int&lt;/span&gt; &lt;span class="n"&gt;Text&lt;/span&gt;        &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
     &lt;span class="k"&gt;const&lt;/span&gt; &lt;span class="kt"&gt;int&lt;/span&gt; &lt;span class="n"&gt;Info&lt;/span&gt;        &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
@@ -3352,9 +3405,11 @@ ls *.png | awk &lt;span class="s1"&gt;&amp;#39;{ printf(&amp;quot;Converting %s 
     &lt;span class="k"&gt;const&lt;/span&gt; &lt;span class="kt"&gt;int&lt;/span&gt; &lt;span class="n"&gt;Error&lt;/span&gt;       &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mi"&gt;3&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
     &lt;span class="c1"&gt;// used only by the filtering&lt;/span&gt;
     &lt;span class="k"&gt;const&lt;/span&gt; &lt;span class="kt"&gt;int&lt;/span&gt; &lt;span class="n"&gt;Any&lt;/span&gt;     &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mi"&gt;4&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
-&lt;span class="p"&gt;};&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span class="k"&gt;static&lt;/span&gt; &lt;span class="kt"&gt;int&lt;/span&gt; &lt;span class="n"&gt;g_logFilter&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;Log&lt;/span&gt;&lt;span class="o"&gt;::&lt;/span&gt;&lt;span class="n"&gt;Any&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span class="kt"&gt;void&lt;/span&gt; &lt;span class="n"&gt;setConsoleLogFilter&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt; &lt;span class="k"&gt;const&lt;/span&gt; &lt;span class="kt"&gt;int&lt;/span&gt; &lt;span class="n"&gt;logFilter&lt;/span&gt; &lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="p"&gt;};&lt;/span&gt;
+
+&lt;span class="k"&gt;static&lt;/span&gt; &lt;span class="kt"&gt;int&lt;/span&gt; &lt;span class="n"&gt;g_logFilter&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;Log&lt;/span&gt;&lt;span class="o"&gt;::&lt;/span&gt;&lt;span class="n"&gt;Any&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+
+&lt;span class="kt"&gt;void&lt;/span&gt; &lt;span class="n"&gt;setConsoleLogFilter&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt; &lt;span class="k"&gt;const&lt;/span&gt; &lt;span class="kt"&gt;int&lt;/span&gt; &lt;span class="n"&gt;logFilter&lt;/span&gt; &lt;span class="p"&gt;)&lt;/span&gt;
 &lt;span class="p"&gt;{&lt;/span&gt;
     &lt;span class="k"&gt;if&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt; &lt;span class="n"&gt;INRANGE&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;logFilter&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="mi"&gt;5&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="p"&gt;)&lt;/span&gt;
     &lt;span class="p"&gt;{&lt;/span&gt;
@@ -3362,8 +3417,9 @@ ls *.png | awk &lt;span class="s1"&gt;&amp;#39;{ printf(&amp;quot;Converting %s 
         &lt;span class="k"&gt;return&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
     &lt;span class="p"&gt;}&lt;/span&gt;
     &lt;span class="n"&gt;g_logFilter&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;Log&lt;/span&gt;&lt;span class="o"&gt;::&lt;/span&gt;&lt;span class="n"&gt;Any&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
-&lt;span class="p"&gt;}&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span class="kt"&gt;void&lt;/span&gt; &lt;span class="n"&gt;consoleLog&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt; &lt;span class="k"&gt;const&lt;/span&gt; &lt;span class="kt"&gt;int&lt;/span&gt; &lt;span class="n"&gt;logLevel&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="k"&gt;const&lt;/span&gt; &lt;span class="kt"&gt;char&lt;/span&gt; &lt;span class="o"&gt;&lt;em&gt;&lt;/span&gt;&lt;span class="n"&gt;msg&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="p"&gt;...&lt;/span&gt; &lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+
+&lt;span class="kt"&gt;void&lt;/span&gt; &lt;span class="n"&gt;consoleLog&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt; &lt;span class="k"&gt;const&lt;/span&gt; &lt;span class="kt"&gt;int&lt;/span&gt; &lt;span class="n"&gt;logLevel&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="k"&gt;const&lt;/span&gt; &lt;span class="kt"&gt;char&lt;/span&gt; &lt;span class="o"&gt;*&lt;/span&gt;&lt;span class="n"&gt;msg&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="p"&gt;...&lt;/span&gt; &lt;span class="p"&gt;)&lt;/span&gt;
 &lt;span class="p"&gt;{&lt;/span&gt;
     &lt;span class="n"&gt;va_list&lt;/span&gt; &lt;span class="n"&gt;ap&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
     &lt;span class="c1"&gt;// is filtering turned on?&lt;/span&gt;
@@ -3371,7 +3427,7 @@ ls *.png | awk &lt;span class="s1"&gt;&amp;#39;{ printf(&amp;quot;Converting %s 
     &lt;span class="p"&gt;{&lt;/span&gt;
         &lt;span class="k"&gt;return&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
     &lt;span class="p"&gt;}&lt;/span&gt;
-    &lt;span class="kt"&gt;char&lt;/span&gt; &lt;span class="o"&gt;&lt;/em&gt;&lt;/span&gt;&lt;span class="n"&gt;text&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="k"&gt;new&lt;/span&gt; &lt;span class="kt"&gt;char&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt; &lt;span class="mi"&gt;2048&lt;/span&gt; &lt;span class="p"&gt;];&lt;/span&gt;
+    &lt;span class="kt"&gt;char&lt;/span&gt; &lt;span class="o"&gt;*&lt;/span&gt;&lt;span class="n"&gt;text&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="k"&gt;new&lt;/span&gt; &lt;span class="kt"&gt;char&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt; &lt;span class="mi"&gt;2048&lt;/span&gt; &lt;span class="p"&gt;];&lt;/span&gt;
     &lt;span class="n"&gt;assert&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt; &lt;span class="n"&gt;text&lt;/span&gt; &lt;span class="p"&gt;);&lt;/span&gt;
     &lt;span class="n"&gt;memset&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;text&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="k"&gt;sizeof&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;text&lt;/span&gt;&lt;span class="p"&gt;));&lt;/span&gt;
     &lt;span class="n"&gt;va_start&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;ap&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;msg&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
@@ -3380,21 +3436,22 @@ ls *.png | awk &lt;span class="s1"&gt;&amp;#39;{ printf(&amp;quot;Converting %s 
     &lt;span class="k"&gt;switch&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt; &lt;span class="n"&gt;logLevel&lt;/span&gt; &lt;span class="p"&gt;)&lt;/span&gt;
     &lt;span class="p"&gt;{&lt;/span&gt;
         &lt;span class="k"&gt;case&lt;/span&gt; &lt;span class="n"&gt;Log&lt;/span&gt;&lt;span class="o"&gt;::&lt;/span&gt;&lt;span class="nl"&gt;Info:&lt;/span&gt;
-            &lt;span class="n"&gt;printf&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt; &lt;span class="s"&gt;&amp;quot;INFO: %s&lt;/span&gt;&lt;span class="se"&gt;n&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;text&lt;/span&gt; &lt;span class="p"&gt;);&lt;/span&gt;
+            &lt;span class="n"&gt;printf&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt; &lt;span class="s"&gt;&amp;quot;INFO: %s&lt;/span&gt;&lt;span class="se"&gt;\n&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;text&lt;/span&gt; &lt;span class="p"&gt;);&lt;/span&gt;
             &lt;span class="k"&gt;break&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
         &lt;span class="k"&gt;case&lt;/span&gt; &lt;span class="n"&gt;Log&lt;/span&gt;&lt;span class="o"&gt;::&lt;/span&gt;&lt;span class="nl"&gt;Warning:&lt;/span&gt;
-            &lt;span class="n"&gt;printf&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt; &lt;span class="s"&gt;&amp;quot;WARNING: %s&lt;/span&gt;&lt;span class="se"&gt;n&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;text&lt;/span&gt; &lt;span class="p"&gt;);&lt;/span&gt;
+            &lt;span class="n"&gt;printf&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt; &lt;span class="s"&gt;&amp;quot;WARNING: %s&lt;/span&gt;&lt;span class="se"&gt;\n&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;text&lt;/span&gt; &lt;span class="p"&gt;);&lt;/span&gt;
             &lt;span class="k"&gt;break&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
         &lt;span class="k"&gt;case&lt;/span&gt; &lt;span class="n"&gt;Log&lt;/span&gt;&lt;span class="o"&gt;::&lt;/span&gt;&lt;span class="nl"&gt;Error:&lt;/span&gt;
-            &lt;span class="n"&gt;printf&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt; &lt;span class="s"&gt;&amp;quot;ERROR: %s&lt;/span&gt;&lt;span class="se"&gt;n&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;text&lt;/span&gt; &lt;span class="p"&gt;);&lt;/span&gt;
+            &lt;span class="n"&gt;printf&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt; &lt;span class="s"&gt;&amp;quot;ERROR: %s&lt;/span&gt;&lt;span class="se"&gt;\n&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;text&lt;/span&gt; &lt;span class="p"&gt;);&lt;/span&gt;
             &lt;span class="k"&gt;break&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
         &lt;span class="k"&gt;default&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;
-            &lt;span class="n"&gt;printf&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt; &lt;span class="s"&gt;&amp;quot;%s&lt;/span&gt;&lt;span class="se"&gt;n&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;text&lt;/span&gt; &lt;span class="p"&gt;);&lt;/span&gt;
+            &lt;span class="n"&gt;printf&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt; &lt;span class="s"&gt;&amp;quot;%s&lt;/span&gt;&lt;span class="se"&gt;\n&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;text&lt;/span&gt; &lt;span class="p"&gt;);&lt;/span&gt;
             &lt;span class="k"&gt;break&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
     &lt;span class="p"&gt;}&lt;/span&gt;
     &lt;span class="n"&gt;SAFE_ARRAY_DELETE&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt; &lt;span class="n"&gt;text&lt;/span&gt; &lt;span class="p"&gt;);&lt;/span&gt;
 &lt;span class="p"&gt;}&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;&lt;/p&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
 &lt;p&gt;This is very very straightforward ... it's C++, but it can be adapted to C, by replacing the memory managment stuff ... new with malloc, delete [] with free :) and moving out the constants into an enum :)&lt;/p&gt;
 &lt;p&gt;It works out great for me, and I use something very very similar to this on a day to day basis :D&lt;/p&gt;
 &lt;p&gt;Happy coding!&lt;/p&gt;</content>
@@ -3642,14 +3699,17 @@ She's trading her win box for a white Apple laptop&lt;/p&gt;
 &lt;p&gt;Here is the contents of the script:&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="c"&gt;#!/bin/bash&lt;/span&gt;
 
-&lt;p&gt;&lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="o"&gt;[&lt;/span&gt; &lt;span class="nv"&gt;$# &lt;/span&gt;-ne 3 &lt;span class="o"&gt;]&lt;/span&gt; ; &lt;span class="k"&gt;then&lt;/span&gt;
+&lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="o"&gt;[&lt;/span&gt; &lt;span class="nv"&gt;$# &lt;/span&gt;-ne 3 &lt;span class="o"&gt;]&lt;/span&gt; ; &lt;span class="k"&gt;then&lt;/span&gt;
 &lt;span class="nb"&gt;echo&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;Usage: $0 image1.png image2.png outimage.png&amp;quot;&lt;/span&gt;
 &lt;span class="nb"&gt;exit &lt;/span&gt;13
-&lt;span class="k"&gt;fi&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;convert -size 2720x900 xc:black &lt;span class="s2"&gt;&amp;quot;$1&amp;quot;&lt;/span&gt; -geometry +0+100 -composite &lt;span class="s2"&gt;&amp;quot;$2&amp;quot;&lt;/span&gt; -geometry +1280+0 -composite &lt;span class="s2"&gt;&amp;quot;$3&amp;quot;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span class="nb"&gt;echo&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;Done ...&amp;quot;&lt;/span&gt;
+&lt;span class="k"&gt;fi&lt;/span&gt;
+
+convert -size 2720x900 xc:black &lt;span class="s2"&gt;&amp;quot;$1&amp;quot;&lt;/span&gt; -geometry +0+100 -composite &lt;span class="s2"&gt;&amp;quot;$2&amp;quot;&lt;/span&gt; -geometry +1280+0 -composite &lt;span class="s2"&gt;&amp;quot;$3&amp;quot;&lt;/span&gt;
+
+&lt;span class="nb"&gt;echo&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;Done ...&amp;quot;&lt;/span&gt;
 &lt;span class="nb"&gt;exit &lt;/span&gt;1
-&lt;/pre&gt;&lt;/div&gt;&lt;/p&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
 &lt;p&gt;I named it "mkwlp" , made it executable (chmod u+x mkwlp) then copied it into /usr/bin for convenience ...&lt;/p&gt;
 &lt;p&gt;This can be customized for other resolutions, etc and it's fairly straight forward so i won't go into this.&lt;/p&gt;
 &lt;p&gt;(I highlighted the customizable parts for convenience)&lt;/p&gt;
@@ -4304,28 +4364,41 @@ who he is?
 i shall tell him
 of the barriers
 to be climbed?&lt;/em&gt;
-&lt;/p&gt;&lt;p align="center"&gt;&amp;nbsp;&lt;/p&gt;
+&lt;/p&gt;
+
+&lt;p align="center"&gt;&amp;nbsp;&lt;/p&gt;
 
 &lt;p align="center"&gt;&lt;em&gt;A sunny day-
 go out and cherish
 one, or many
 (i love a mouse, she says
 but i'm not minnie).&lt;/em&gt;
-&lt;/p&gt;&lt;p align="center"&gt;&amp;nbsp;&lt;/p&gt;
+&lt;/p&gt;
+
+&lt;p align="center"&gt;&amp;nbsp;&lt;/p&gt;
 
 &lt;p align="center"&gt;&lt;em&gt;shall i tell him-
 the truth of it?
 the eternal secret?&lt;/em&gt;
-&lt;/p&gt;&lt;p align="center"&gt;&amp;nbsp;&lt;/p&gt;
+&lt;/p&gt;
+
+&lt;p align="center"&gt;&amp;nbsp;&lt;/p&gt;
+
 &lt;p align="center"&gt;&lt;em&gt;what is real?&lt;/em&gt;&lt;/p&gt;
+
 &lt;p align="center"&gt;&amp;nbsp;&lt;/p&gt;
 
 &lt;p align="center"&gt;&lt;em&gt;to tell some things would
 be folly, the mouse learns
 but trial and error. &lt;/em&gt;
-&lt;/p&gt;&lt;p align="center"&gt;&amp;nbsp;&lt;/p&gt;
-&lt;p class="richp" align="center"&gt;&lt;em&gt; &lt;/em&gt;&lt;/p&gt;
+&lt;/p&gt;
+
 &lt;p align="center"&gt;&amp;nbsp;&lt;/p&gt;
+
+&lt;p class="richp" align="center"&gt;&lt;em&gt; &lt;/em&gt;&lt;/p&gt;
+
+&lt;p align="center"&gt;&amp;nbsp;&lt;/p&gt;
+
 &lt;p class="richp" align="center"&gt;&lt;em&gt;for mickey... hehe&lt;/em&gt;&lt;/p&gt;
 
 &lt;blockquote&gt;&lt;/blockquote&gt;

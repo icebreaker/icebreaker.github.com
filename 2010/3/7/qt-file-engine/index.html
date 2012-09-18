@@ -85,7 +85,7 @@ the necessary data, with <a href="http://doc.trolltech.com/4.6/qfsfileengine.htm
 a transparent way as shown in the code snippet below.</p>
 <div class="highlight"><pre><span class="p">...</span>
 
-<p><span class="c1">//! File System Class</span>
+<span class="c1">//! File System Class</span>
 <span class="k">class</span> <span class="nc">FileSystem</span> <span class="o">:</span> <span class="k">public</span> <span class="n">QFSFileEngine</span>
 <span class="p">{</span>
     <span class="k">public</span><span class="o">:</span>
@@ -93,16 +93,19 @@ a transparent way as shown in the code snippet below.</p>
         <span class="n">FileSystem</span><span class="p">(</span><span class="k">const</span> <span class="n">QString</span> <span class="o">&amp;</span><span class="n">pFileName</span><span class="p">);</span>
         <span class="c1">//! Destructor</span>
         <span class="k">virtual</span> <span class="o">~</span><span class="n">FileSystem</span><span class="p">();</span>
-<span class="p">};</span></p>
-<p><span class="c1">//! File System Handler</span>
+<span class="p">};</span>
+
+<span class="c1">//! File System Handler</span>
 <span class="k">class</span> <span class="nc">FileSystemHandler</span> <span class="o">:</span> <span class="k">public</span> <span class="n">QAbstractFileEngineHandler</span>
 <span class="p">{</span>
     <span class="k">public</span><span class="o">:</span>
         <span class="c1">//! Constructor</span>
         <span class="n">QAbstractFileEngine</span> <span class="o">*</span><span class="n">create</span><span class="p">(</span><span class="k">const</span> <span class="n">QString</span> <span class="o">&amp;</span><span class="n">pFileName</span><span class="p">)</span> <span class="k">const</span><span class="p">;</span>
-<span class="p">};</span></p>
-<p><span class="p">...</span></p>
-<p><span class="kt">int</span> <span class="n">main</span><span class="p">(</span><span class="kt">int</span> <span class="n">argc</span><span class="p">,</span> <span class="kt">char</span> <span class="o">*</span><span class="n">argv</span><span class="p">[])</span>
+<span class="p">};</span>
+
+<span class="p">...</span>
+
+<span class="kt">int</span> <span class="n">main</span><span class="p">(</span><span class="kt">int</span> <span class="n">argc</span><span class="p">,</span> <span class="kt">char</span> <span class="o">*</span><span class="n">argv</span><span class="p">[])</span>
 <span class="p">{</span>
     <span class="n">FileSystemHandler</span> <span class="n">lFileSystemHandler</span><span class="p">;</span>
     <span class="n">QFile</span> <span class="n">lFile</span><span class="p">(</span><span class="s">&quot;scripts/test.js&quot;</span><span class="p">);</span>
@@ -112,7 +115,8 @@ a transparent way as shown in the code snippet below.</p>
     <span class="p">}</span>
     <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
 <span class="p">}</span>
-</pre></div></p>
+</pre></div>
+
 <p>In <em>our</em> <strong><em>FileSystem class</em></strong> we preprend our base path to the fileName, i.e <em>"./data/"</em> so 
 <a href="http://doc.trolltech.com/4.6/qfile.html">QFile</a>, <a href="http://doc.trolltech.com/4.6/qdir.html">QDir</a>, 
 <a href="http://doc.trolltech.com/4.6/qfileinfo.html">QFileInfo</a> all work the exact same way they did before registering 

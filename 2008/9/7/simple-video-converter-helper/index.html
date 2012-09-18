@@ -81,7 +81,7 @@
 <p>As always, make it executable and put it in a safe place like /usr/bin :P</p>
 <div class="highlight"><pre><span class="c">#!/bin/bash</span>
 
-<p><span class="c"># Author: Icebreaker</span>
+<span class="c"># Author: Icebreaker</span>
 <span class="c"># Description: Resize a video to 1280x720 (HD).</span>
 <span class="c"># I&#39;m using this script to resize videos to 1280x720</span>
 <span class="c"># ( maintaining the source quality )</span>
@@ -97,13 +97,15 @@
 <span class="c">#</span>
 <span class="c"># Requires: ffmpeg</span>
 <span class="c">#</span>
-<span class="c"># Public Domain</span></p>
-<p><span class="k">if</span> <span class="o">[</span> <span class="nv">$# </span>-lt 2 <span class="o">]</span> ; <span class="k">then</span>
-<span class="nb">echo </span>Usage: mkhdv input.video output.video <span class="o">[</span>-t <span class="s2">&quot;some video title&quot;</span><span class="o">]</span> <span class="se">&lt;/span&gt;
+<span class="c"># Public Domain</span>
+
+<span class="k">if</span> <span class="o">[</span> <span class="nv">$# </span>-lt 2 <span class="o">]</span> ; <span class="k">then</span>
+<span class="nb">echo </span>Usage: mkhdv input.video output.video <span class="o">[</span>-t <span class="s2">&quot;some video title&quot;</span><span class="o">]</span> <span class="se">\</span>
 <span class="o">[</span>-s 1280x720<span class="o">]</span>
 <span class="nb">exit </span>13
-<span class="k">fi</span></p>
-<p><span class="k">if</span> <span class="o">[</span> <span class="nv">$# </span>-eq 4 <span class="o">]</span> ; <span class="k">then</span>
+<span class="k">fi</span>
+
+<span class="k">if</span> <span class="o">[</span> <span class="nv">$# </span>-eq 4 <span class="o">]</span> ; <span class="k">then</span>
     <span class="c"># title</span>
     <span class="k">if</span> <span class="o">[</span> <span class="s2">&quot;$3&quot;</span> <span class="o">=</span> <span class="s2">&quot;-t&quot;</span> <span class="o">]</span> ; <span class="k">then</span>
 <span class="k">        </span>ffmpeg -i <span class="s2">&quot;$1&quot;</span> -sameq -s 1280x720 -title <span class="s2">&quot;$4&quot;</span> <span class="s2">&quot;$2&quot;</span>
@@ -112,7 +114,7 @@
         <span class="k">if</span> <span class="o">[</span> <span class="s2">&quot;$3&quot;</span> <span class="o">=</span> <span class="s2">&quot;-s&quot;</span> <span class="o">]</span> ; <span class="k">then</span>
 <span class="k">        </span>ffmpeg -i <span class="s2">&quot;$1&quot;</span> -sameq -s <span class="s2">&quot;$4&quot;</span> <span class="s2">&quot;$2&quot;</span>
         <span class="k">else</span>
-<span class="k">        </span><span class="nb">echo </span>Usage: mkhdv input.video output.video <span class="se"> </span>
+<span class="k">        </span><span class="nb">echo </span>Usage: mkhdv input.video output.video <span class="se">\ </span>
 <span class="o">[</span>-t <span class="s2">&quot;some video title&quot;</span><span class="o">]</span> <span class="o">[</span>-s 1280x720<span class="o">]</span>
         <span class="nb">exit </span>666
         <span class="k">fi</span>
@@ -149,7 +151,7 @@
 <span class="k">fi</span>
 <span class="nb">echo </span>Done
 <span class="nb">exit </span>1
-</pre></div></p>
+</pre></div>
 			
 
 		</div>

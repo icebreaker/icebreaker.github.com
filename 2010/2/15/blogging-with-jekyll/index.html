@@ -116,24 +116,27 @@
 <span class="k">set</span> <span class="nb">ttyfast</span>
 <span class="k">set</span> <span class="nb">mouse</span><span class="p">=</span><span class="k">a</span>
 
-<p><span class="k">colorscheme</span> zenburn
+<span class="k">colorscheme</span> zenburn
 <span class="k">filetype</span> plugin <span class="k">on</span>
 <span class="k">filetype</span> plugin indent <span class="k">on</span>
 <span class="k">filetype</span> <span class="k">on</span>
-<span class="nb">syntax</span> <span class="k">on</span></p>
-<p><span class="c">&quot; Word Completion</span>
+<span class="nb">syntax</span> <span class="k">on</span>
+
+<span class="c">&quot; Word Completion</span>
 <span class="k">function</span><span class="p">!</span> Tab_Or_Complete<span class="p">()</span>
-    <span class="k">if</span> <span class="k">col</span><span class="p">(</span><span class="s1">&#39;.&#39;</span><span class="p">)&gt;</span><span class="m">1</span> &amp;&amp; strpart<span class="p">(</span> getline<span class="p">(</span><span class="s1">&#39;.&#39;</span><span class="p">),</span> <span class="k">col</span><span class="p">(</span><span class="s1">&#39;.&#39;</span><span class="p">)</span><span class="m">-2</span><span class="p">,</span> <span class="m">3</span> <span class="p">)</span> <span class="p">=~</span> <span class="s1">&#39;^w&#39;</span>
-        <span class="k">return</span> <span class="s2">&quot;&amp;lt;C-N&gt;&quot;</span>
+    <span class="k">if</span> <span class="k">col</span><span class="p">(</span><span class="s1">&#39;.&#39;</span><span class="p">)&gt;</span><span class="m">1</span> &amp;&amp; strpart<span class="p">(</span> getline<span class="p">(</span><span class="s1">&#39;.&#39;</span><span class="p">),</span> <span class="k">col</span><span class="p">(</span><span class="s1">&#39;.&#39;</span><span class="p">)</span><span class="m">-2</span><span class="p">,</span> <span class="m">3</span> <span class="p">)</span> <span class="p">=~</span> <span class="s1">&#39;^\w&#39;</span>
+        <span class="k">return</span> <span class="s2">&quot;\&lt;C-N&gt;&quot;</span>
     <span class="k">else</span>
-        <span class="k">return</span> <span class="s2">&quot;&amp;lt;Tab&gt;&quot;</span>
+        <span class="k">return</span> <span class="s2">&quot;\&lt;Tab&gt;&quot;</span>
     <span class="k">endif</span>
 <span class="k">endfunction</span>
 <span class="nb">inoremap</span> <span class="p">&lt;</span>Tab<span class="p">&gt;</span> <span class="p">&lt;</span>C<span class="p">-</span>R<span class="p">&gt;=</span>Tab_Or_Complete<span class="p">()&lt;</span>CR<span class="p">&gt;</span>
-<span class="k">set</span> <span class="nb">dictionary</span><span class="p">=</span><span class="s2">&quot;/usr/share/dict/words&quot;</span></p>
-<p><span class="c">&quot; Default Markdown Blog Post Template (to be used with Jekyll)</span>
+<span class="k">set</span> <span class="nb">dictionary</span><span class="p">=</span><span class="s2">&quot;/usr/share/dict/words&quot;</span>
+
+<span class="c">&quot; Default Markdown Blog Post Template (to be used with Jekyll)</span>
 autocmd <span class="nb">BufNewFile</span> *.markdown <span class="k">silent</span><span class="p">!</span> <span class="m">0</span>r $HOME<span class="sr">/.vim/</span>templates/markdown.<span class="k">vim</span>
-</pre></div></p>
+</pre></div>
+
 <p>I would like to highlight two things:</p>
 <ol>
 <li>Word Completion</li>
