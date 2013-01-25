@@ -28,8 +28,22 @@
 		<!-- Blog  -->
 		<link rel="stylesheet" type="text/css" href="/css/blog.css" />
 		<!-- Fonts -->
-		<link href="http://fonts.googleapis.com/css?family=Passion+One|Ubuntu+Mono|Signika+Negative" rel="stylesheet" type="text/css" />
+		<link href="http://fonts.googleapis.com/css?family=Droid+Sans|Droid+Sans+Mono" rel="stylesheet" type="text/css" />
 		{% endblock css %}
+		{% if page.mathjax %}
+		<script type="text/x-mathjax-config">
+			MathJax.Hub.Config(
+			{
+				tex2jax:
+				{
+					inlineMath: [['$', '$']],
+					skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code', 'object']
+				}
+			});
+		</script>
+		<!-- MathJax -->
+		<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+		{% endif %}
 		<script type="text/javascript">
 			var _gaq = _gaq || [];
 			_gaq.push(['_setAccount', 'UA-3042007-2']);
@@ -70,6 +84,11 @@
 			</div>
 		</div>
 		{% endblock header %}
+		{% if page.propaganda %}
+		<div class="propaganda_{{ page.propaganda }}"></div>
+		{% else %}
+		<div class="propaganda_4"></div>
+		{% endif %}
 		<div class="content">
 			{% block content %}
 			{{ content }}

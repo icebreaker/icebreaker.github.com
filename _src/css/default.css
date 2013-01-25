@@ -171,7 +171,7 @@ blockquote:after
 	padding-right: 20px;
 	color: #FFFFFF;
 	margin-bottom: 10px;
-	-webkit-box-shadow: rgba(0,0,0,0.07) 0 1px 2px inset;
+	-webkit-box-shadow: rgba(0,0,0,0.09) 0 1px 2px inset;
 	-webkit-border-radius: 3px;
 	-moz-border-radius: 3px;
 	border-radius: 3px;

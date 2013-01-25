@@ -1,18 +1,45 @@
+.propaganda_1
+{
+	background: url('/images/propaganda_01.png');
+	height: 405px;
+}
+
+.propaganda_2
+{
+	background: url('/images/propaganda_02.png');
+	height: 405px;
+}
+
+.propaganda_3
+{
+	background: url('/images/propaganda_03.png');
+	height: 405px;
+}
+
+.propaganda_4
+{
+	background: url('/images/propaganda_04.png');
+	height: 405px;
+}
+
 body
 {
-	font-family: 'Signika Negative', sans-serif;
+	font-family: 'Droid Sans', sans-serif;
 	font-size: 1.2em;
 	font-weight: 300;
+	word-spacing: 0.15em;
 	width: 1024px;
 	margin: 0 auto;
-	color: #333333;
+	color: #000000;
 	background-color: #FFFFFF;
 }
 
 .content
 {
 	text-align: justify;
-	padding: 0px 20px 0px 20px;
+	padding: 0px 18px 0px 18px;
+	border-left: 1px solid #E5E5E5;
+	border-right: 1px solid #E5E5E5;
 }
 
 .header, 
@@ -41,8 +68,8 @@ body
 
 .header .text
 {
-	border-bottom: 1px solid #E5E5E5;
 	padding-bottom: 5px;
+	font-weight: bold;
 }
 
 .footer .text
@@ -64,16 +91,16 @@ body
 
 .content h1, h2, h3, h4, h5, h6
 {
-	font-family: 'Passion One', 'Arial Black', sans-serif;
+/*	font-family: 'Arial Black', sans-serif;*/
 	text-transform: uppercase;
-	font-weight: 400;
+/*	font-weight: 400;*/
 }
 
 .content h1
 {
 	border-bottom: 0;
 	margin-bottom: 0;
-	margin-top: 8px;
+	padding-top: 8px;
 	color: #B80000;
 }
 
@@ -90,7 +117,8 @@ body
 
 .content pre, .content code
 {
-	font-family: 'Ubuntu Mono', monospace;
+	font-family: 'Droid Sans Mono', monospace;
+/*	background-color: #fdf6e3; */
 	background-color: #F1F1F1;
 	background: -webkit-gradient(radial, 100 36, 0, 100 -40, 120, from(#FAFAFA), to(#F1F1F1)), #F1F1F1;
 	border: 1px solid #E5E5E5;
@@ -106,7 +134,7 @@ body
 
 .content code
 {
-	font-family: 'Signika Negative';
+	font-family: 'Droid Sans';
 	padding: 0;
 }
 

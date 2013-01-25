@@ -4,7 +4,7 @@
 <title>Mihail Szabolcs</title>
 <link href="http://szabster.net/atom.xml" rel="self"/>
 <link href="http://szabster.net/"/>
-<updated>2012-09-18T00:00:00+02:00</updated>
+<updated>2013-01-25T00:00:00+02:00</updated>
 <id>http://szabster.net/</id>
 <author>
 	<name>Mihail Szabolcs</name>
@@ -1195,11 +1195,11 @@ I re-used/borrowed a couple of textures from there.&lt;/p&gt;
 heavy and complicated, I like Python but Scons feels over-engineered; even a simple thing like adding an additional 'include' path 
 can't be done in a reasonably intuitive way. I don't want to open a war between the Pythonist and Rubyst camps, these are my
 own personal thoughts, don't take them as granted.&lt;/p&gt;
-&lt;p&gt;LemonTea as well as my other QT based projects use &lt;a href="#QMake"&gt;QMake&lt;/a&gt;; is much better design wise, but it's QT centric which
+&lt;p&gt;LemonTea as well as my other QT based projects use &lt;a href="#"&gt;QMake&lt;/a&gt;; is much better design wise, but it's QT centric which
 makes it feel awkward when used to build Non-QT projects.&lt;/p&gt;
-&lt;p&gt;At some point I considered migrating Lera3D to &lt;a href="#QMake"&gt;QMake&lt;/a&gt;, but changed my mind ... and opted for Rake. I'm most definitely not a
+&lt;p&gt;At some point I considered migrating Lera3D to &lt;a href="#"&gt;QMake&lt;/a&gt;, but changed my mind ... and opted for Rake. I'm most definitely not a
 Ruby fan boy and I'm not becoming one, but Ruby &lt;em&gt;feels natural&lt;/em&gt; ... (this is purely a matter of personal taste / choice)&lt;/p&gt;
-&lt;p&gt;Don't get me started when it comes to &lt;a href="#CMake"&gt;CMake&lt;/a&gt; et al.&lt;/p&gt;
+&lt;p&gt;Don't get me started when it comes to &lt;a href="#"&gt;CMake&lt;/a&gt; et al.&lt;/p&gt;
 &lt;h3&gt;Going Rake&lt;/h3&gt;
 &lt;p&gt;Rake is surprisingly well documented, there are hundreds of Ruby &lt;strong&gt;addicts&lt;/strong&gt; and despite the &lt;em&gt;rumors&lt;/em&gt; saying that it's not easy
 to handle &lt;em&gt;sub-modules&lt;/em&gt;, I find it quite intuitive . There is no need for writing additional wrappers or abstraction layers
@@ -1466,7 +1466,7 @@ the changes immediately.&lt;/p&gt;
 	<updated>2010-03-31T00:00:00+02:00</updated>
 	<id>http://szabster.net/2010/3/31/lera3d-released</id>
 	<content type="html">&lt;p&gt;Taaanaaaaa ... &lt;strong&gt;Lera3D&lt;/strong&gt; has been released !!!&lt;/p&gt;
-&lt;p&gt;The source code is on GitHub as usual right &lt;a href="http://en.wikipedia.org/wiki/April_Fools&amp;apos;_Day"&gt;here&lt;/a&gt; .&lt;/p&gt;
+&lt;p&gt;The source code is on GitHub as usual right &lt;a href="http://en.wikipedia.org/wiki/April_Fools'_Day"&gt;here&lt;/a&gt; .&lt;/p&gt;
 &lt;p&gt;Until next time, as server said ...&lt;/p&gt;
 &lt;h3&gt;End of Line&lt;/h3&gt;</content>
 	<category term="april"/><category term="fool"/>
@@ -2315,6 +2315,7 @@ It should work fine on most systems (even with those crappy integrated Intel gra
 &lt;blockquote&gt;Dino and Aliens
 
 Mean aliens land on Dino's peaceful planet intent on blowing it up with lasers and explosives. Help Dino deploy his magic powers to battle the aliens and reclaim his carefree world in this whimsical fantasy game! "&lt;/blockquote&gt;
+
 &lt;p style="text-align: center;"&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;a class="image" href="http://szabster.net/images/2009/07/dfzz4ggw_803d2qk9xfg_b.jpeg" target="_blank"&gt;&lt;img class="size-thumbnail wp-image-611" title="dfzz4ggw_803d2qk9xfg_b" src="http://szabster.net/images/2009/07/dfzz4ggw_803d2qk9xfg_b-400x300.jpg" alt="Click for bigger version!" width="400" height="300" /&gt;&lt;/a&gt;&lt;/p&gt;
@@ -2707,8 +2708,7 @@ this message was &lt;span class="nb"&gt;set &lt;/span&gt;from Python and printed
 &lt;p&gt;If you have lots of music like I do in the MP3 format, it's worth installing the &lt;strong&gt;&lt;em&gt;"Fluendo"&lt;/em&gt;&lt;/strong&gt; mp3 decoder GStreamer plugin, to get the most out of sound quality.&lt;/p&gt;
 &lt;p&gt;For the first time since the very first Ubuntu release, I didn't had to remove the "network manager" in order to make my wireless work flawlessly with WPA2-TKIP.&lt;/p&gt;
 &lt;p&gt;Anyway I'm most impressed by the improved 'font rendering', it's getting quite close to the smoothed and antialised font look popular and well know from MacOSX. Good job here ;)&lt;/p&gt;
-&lt;img class="alignnone size-medium wp-image-422" title="font-rendering-ubuntu" src="http://szabster.net/images/2009/02/font-rendering-ubuntu-500x236.png" alt="font-rendering-ubuntu" width="500" height="236" /&gt;
-
+&lt;p&gt;&lt;img class="alignnone size-medium wp-image-422" title="font-rendering-ubuntu" src="http://szabster.net/images/2009/02/font-rendering-ubuntu-500x236.png" alt="font-rendering-ubuntu" width="500" height="236" /&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Font&lt;/strong&gt; : &lt;em&gt;Droid Sans Mono&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;GEdit Theme&lt;/strong&gt;: &lt;em&gt;Django&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;There is a lot of buzz about the blazing fast boot time, but yeah, with ext4 partitions it's about 10-14 seconds on my modest system ( dual core @ 1,8ghz, 2GB ram, and 120gb 5400 rpm hdd ) .&lt;/p&gt;
@@ -2725,10 +2725,8 @@ this message was &lt;span class="nb"&gt;set &lt;/span&gt;from Python and printed
 	<updated>2009-02-03T00:00:00+02:00</updated>
 	<id>http://szabster.net/2009/2/3/mysticmine</id>
 	<content type="html">&lt;p&gt;Mystic Mine finally arrived .... hooorraaaay!&lt;/p&gt;
-&lt;img class="alignnone size-thumbnail wp-image-412" title="startup" src="http://szabster.net/images/2009/02/startup-400x300.jpg" alt="startup" width="400" height="300" /&gt;
-
-&lt;img class="alignnone size-thumbnail wp-image-413" title="gameplay" src="http://szabster.net/images/2009/02/gameplay-400x300.jpg" alt="gameplay" width="400" height="300" /&gt;
-
+&lt;p&gt;&lt;img class="alignnone size-thumbnail wp-image-412" title="startup" src="http://szabster.net/images/2009/02/startup-400x300.jpg" alt="startup" width="400" height="300" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img class="alignnone size-thumbnail wp-image-413" title="gameplay" src="http://szabster.net/images/2009/02/gameplay-400x300.jpg" alt="gameplay" width="400" height="300" /&gt;&lt;/p&gt;
 &lt;p&gt;Get the demo &lt;a title="Get it here!" href="http://www.koonsolo.com/mysticmine/" target="_blank"&gt;here&lt;/a&gt; .&lt;/p&gt;</content>
 	<category term="game"/><category term="review"/><category term="mistic"/><category term="mine"/><category term="demo"/>
 </entry>
@@ -3269,8 +3267,7 @@ More info at &lt;a title="The Free Software Song" href="http://en.wikipedia.org/
 	<updated>2008-06-15T00:00:00+02:00</updated>
 	<id>http://szabster.net/2008/6/15/is-the-shit</id>
 	<content type="html">&lt;p&gt;&lt;a class="image" href="http://szabster.net/images/2008/06/cbinsxfl.jpg"&gt;&lt;img class="alignnone size-full wp-image-228" title="cbinsxfl" src="http://szabster.net/images/2008/06/cbinsxfl.jpg" alt="" width="500" height="437" /&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;img class="alignnone size-full wp-image-229" title="dygmjspz" src="http://szabster.net/images/2008/06/dygmjspz.jpg" alt="" width="413" height="456" /&gt;
-
+&lt;p&gt;&lt;img class="alignnone size-full wp-image-229" title="dygmjspz" src="http://szabster.net/images/2008/06/dygmjspz.jpg" alt="" width="413" height="456" /&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a class="image" href="http://szabster.net/images/2008/06/hdfqrfty.jpg"&gt;&lt;img class="alignnone size-thumbnail wp-image-230" title="hdfqrfty" src="http://szabster.net/images/2008/06/hdfqrfty-400x188.jpg" alt="" width="400" height="188" /&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a class="image" href="http://szabster.net/images/2008/06/jmthpumr.jpg"&gt;&lt;img class="alignnone size-thumbnail wp-image-231" title="jmthpumr" src="http://szabster.net/images/2008/06/jmthpumr-400x287.jpg" alt="" width="400" height="287" /&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a class="image" href="http://szabster.net/images/2008/06/nzrgvlrk.jpg"&gt;&lt;img class="alignnone size-thumbnail wp-image-232" title="nzrgvlrk" src="http://szabster.net/images/2008/06/nzrgvlrk-400x331.jpg" alt="" width="400" height="331" /&gt;&lt;/a&gt;&lt;/p&gt;</content>
@@ -3795,7 +3792,7 @@ convert -size 2720x900 xc:black &lt;span class="s2"&gt;&amp;quot;$1&amp;quot;&lt
 	<updated>2008-03-01T00:00:00+02:00</updated>
 	<id>http://szabster.net/2008/3/1/my-new-favorite-geek-chick</id>
 	<content type="html">&lt;p&gt;My new favorite geek chick is &lt;a href="http://leahculver.com/" title="Leah Culver" target="_blank"&gt;&lt;span style="font-weight:bold;" class="Apple-style-span"&gt;Leah Culver&lt;/span&gt;&lt;/a&gt;. You can see her &lt;span style="font-style:italic;" class="Apple-style-span"&gt;"in action"&lt;/span&gt; in this &lt;span style="font-weight:bold;" class="Apple-style-span"&gt;Systm&lt;/span&gt; episode by clicking &lt;a href="http://revision3.com/systm/cracked/" title="Systm" target="_blank"&gt; here &lt;/a&gt;.&lt;/p&gt;
-&lt;img src="http://szabster.net/images/2008/03/665437087_4e09a2b1d4.jpg" alt="665437087_4e09a2b1d4.jpg" /&gt;</content>
+&lt;p&gt;&lt;img src="http://szabster.net/images/2008/03/665437087_4e09a2b1d4.jpg" alt="665437087_4e09a2b1d4.jpg" /&gt;&lt;/p&gt;</content>
 	<category term="leah"/><category term="culver"/><category term="girl"/><category term="geek"/><category term="chick"/><category term="sexy"/><category term="favorite"/>
 </entry>
 
@@ -3859,7 +3856,7 @@ convert -size 2720x900 xc:black &lt;span class="s2"&gt;&amp;quot;$1&amp;quot;&lt
 	<link href="http://szabster.net/2008/2/11/skype-bug"/>
 	<updated>2008-02-11T00:00:00+02:00</updated>
 	<id>http://szabster.net/2008/2/11/skype-bug</id>
-	<content type="html">&lt;img src="http://szabster.net/images/2008/02/skype_bug.png" alt="skype_bug.png" /&gt;</content>
+	<content type="html">&lt;p&gt;&lt;img src="http://szabster.net/images/2008/02/skype_bug.png" alt="skype_bug.png" /&gt;&lt;/p&gt;</content>
 	<category term="skype"/><category term="bug"/><category term="fail"/><category term="funny"/>
 </entry>
 
@@ -3868,7 +3865,7 @@ convert -size 2720x900 xc:black &lt;span class="s2"&gt;&amp;quot;$1&amp;quot;&lt
 	<link href="http://szabster.net/2008/2/8/anonmous"/>
 	<updated>2008-02-08T00:00:00+02:00</updated>
 	<id>http://szabster.net/2008/2/8/anonmous</id>
-	<content type="html">&lt;img src="http://szabster.net/images/2008/02/anonymoussp5.gif" alt="anonymoussp5.gif" /&gt;</content>
+	<content type="html">&lt;p&gt;&lt;img src="http://szabster.net/images/2008/02/anonymoussp5.gif" alt="anonymoussp5.gif" /&gt;&lt;/p&gt;</content>
 	<category term="anonymous"/><category term="funny"/><category term="big"/><category term="brother"/><category term="fuck"/>
 </entry>
 
@@ -4058,17 +4055,12 @@ helpful.  In no time you should be getting more sex than you know what to do wit
 &lt;p&gt;Nice huh? If you liked what you have seen, then continue, else STOP reading now.&lt;/p&gt;
 &lt;p&gt;The background can be found &lt;a title="Roar!" href="http://icebreaker.wordpress.com/2008/04/13/rip/" target="_self"&gt;here&lt;/a&gt; .&lt;/p&gt;
 &lt;p&gt;The theme is customized, so here are some screenshots:&lt;/p&gt;
-&lt;img src="http://szabster.net/images/2008/01/screenshot-customize-theme.png" alt="screenshot-customize-theme.png" /&gt;
-
-&lt;img src="http://szabster.net/images/2008/01/screenshot-customize-theme-1.png" alt="screenshot-customize-theme-1.png" /&gt;
-
-&lt;img src="http://szabster.net/images/2008/01/screenshot-customize-theme-2.png" alt="screenshot-customize-theme-2.png" /&gt;
-
-&lt;img src="http://szabster.net/images/2008/01/screenshot-customize-theme-3.png" alt="screenshot-customize-theme-3.png" /&gt;
-
+&lt;p&gt;&lt;img src="http://szabster.net/images/2008/01/screenshot-customize-theme.png" alt="screenshot-customize-theme.png" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src="http://szabster.net/images/2008/01/screenshot-customize-theme-1.png" alt="screenshot-customize-theme-1.png" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src="http://szabster.net/images/2008/01/screenshot-customize-theme-2.png" alt="screenshot-customize-theme-2.png" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src="http://szabster.net/images/2008/01/screenshot-customize-theme-3.png" alt="screenshot-customize-theme-3.png" /&gt;&lt;/p&gt;
 &lt;p&gt;Now a few words about the panel on the bottom. Well that's not the Kiba dock, that's just a normal dock. So here is an image on how to set that up  to achieve the look and feel of the one in the screenshot.&lt;/p&gt;
-&lt;img src="http://szabster.net/images/2008/01/screenshot-panel-properties.png" alt="screenshot-panel-properties.png" /&gt;
-
+&lt;p&gt;&lt;img src="http://szabster.net/images/2008/01/screenshot-panel-properties.png" alt="screenshot-panel-properties.png" /&gt;&lt;/p&gt;
 &lt;p&gt;The themes, etc. are from either &lt;a href="http://www.gnome-look.org" target="_blank"&gt;Gnome Look&lt;/a&gt; or &lt;a href="http://art.gnome.org" target="_blank"&gt;Gnome Art&lt;/a&gt; .&lt;a href="http://art.gnome.org" target="_blank"&gt; &lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Enjoy indefinitely .... haha!&lt;/p&gt;</content>
 	<category term="background"/><category term="customize"/><category term="gtk"/><category term="icons"/><category term="linux"/><category term="theme"/><category term="titi"/><category term="ubuntu"/><category term="wallpaper"/>
@@ -4080,8 +4072,7 @@ helpful.  In no time you should be getting more sex than you know what to do wit
 	<updated>2007-12-31T00:00:00+02:00</updated>
 	<id>http://szabster.net/2007/12/31/brain-test</id>
 	<content type="html">&lt;p&gt;This thing is really, really freaking me out :)) I found it over &lt;a href="http://delicategeniusblog.com/?p=552" title="))" target="_blank"&gt;here&lt;/a&gt;.&lt;/p&gt;
-&lt;img src="http://szabster.net/images/2007/12/0568782000.gif" alt="Dancer" border="0" /&gt;
-
+&lt;p&gt;&lt;img src="http://szabster.net/images/2007/12/0568782000.gif" alt="Dancer" border="0" /&gt;&lt;/p&gt;
 &lt;p&gt;I can see it spin clockwise too, but can reverse it at will.&lt;/p&gt;
 &lt;p&gt;Can you???&lt;/p&gt;</content>
 	<category term="brain"/><category term="test"/><category term="funny"/>

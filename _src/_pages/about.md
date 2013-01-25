@@ -1,9 +1,8 @@
 ---
 layout: page
 title: About
+propaganda: 2
 ---
-<a href="/"><img class="gravatar profile" src="http://www.gravatar.com/avatar/c53d2d6c58f89f148fb56a136fa84d3e" /></a>
-
 I'm [Mihail "Szaby" Szabolcs](http://linkedin.com/in/mihailszabolcs) a *senior* 
 [software engineer](http://en.wikipedia.org/wiki/Software_engineer) and [open
 source evangelist](http://en.wikipedia.org/wiki/Open-source_advocacy), fluent in 
