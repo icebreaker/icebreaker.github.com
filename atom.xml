@@ -4,12 +4,38 @@
 <title>Mihail Szabolcs</title>
 <link href="http://szabster.net/atom.xml" rel="self"/>
 <link href="http://szabster.net/"/>
-<updated>2013-01-25T00:00:00+02:00</updated>
+<updated>2013-02-14T00:00:00+02:00</updated>
 <id>http://szabster.net/</id>
 <author>
 	<name>Mihail Szabolcs</name>
 </author>
 
+
+<entry>
+	<title type="html">Facebook Birthday Wishes</title>
+	<link href="http://szabster.net/2013/2/13/facebook-birthday-wishes"/>
+	<updated>2013-02-13T00:00:00+02:00</updated>
+	<id>http://szabster.net/2013/2/13/facebook-birthday-wishes</id>
+	<content type="html">&lt;p&gt;On Monday it was my 26th birthday (damn!) and a bunch of people (44!) took the time
+to wish me 'Happy Birthday' on Facebook.&lt;/p&gt;
+&lt;p&gt;I made an &lt;a href="https://developers.facebook.com/docs/technical-guides/fql/"&gt;FQL&lt;/a&gt; query to extract 
+this data in order to play with it just for the LoLs.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="k"&gt;SELECT&lt;/span&gt; &lt;span class="n"&gt;relationship_status&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;sex&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;birthday_date&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;current_location&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;devices&lt;/span&gt; &lt;span class="k"&gt;FROM&lt;/span&gt; &lt;span class="k"&gt;user&lt;/span&gt; 
+&lt;span class="k"&gt;WHERE&lt;/span&gt; &lt;span class="n"&gt;uid&lt;/span&gt; &lt;span class="o"&gt;!=&lt;/span&gt; &lt;span class="n"&gt;me&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt; &lt;span class="k"&gt;AND&lt;/span&gt; &lt;span class="n"&gt;uid&lt;/span&gt; &lt;span class="k"&gt;IN&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="k"&gt;SELECT&lt;/span&gt; &lt;span class="n"&gt;actor_id&lt;/span&gt; &lt;span class="k"&gt;FROM&lt;/span&gt; &lt;span class="n"&gt;stream&lt;/span&gt; &lt;span class="k"&gt;WHERE&lt;/span&gt; &lt;span class="n"&gt;source_id&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;me&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+&lt;span class="k"&gt;AND&lt;/span&gt; &lt;span class="n"&gt;created_time&lt;/span&gt; &lt;span class="o"&gt;&amp;gt;&lt;/span&gt;  &lt;span class="mi"&gt;1360353517&lt;/span&gt; &lt;span class="k"&gt;AND&lt;/span&gt; &lt;span class="n"&gt;created_time&lt;/span&gt; &lt;span class="o"&gt;&amp;lt;&lt;/span&gt; &lt;span class="mi"&gt;1360622536&lt;/span&gt; &lt;span class="k"&gt;LIMIT&lt;/span&gt; &lt;span class="mi"&gt;100&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Without any further ado, here are (some) lovely charts plotted in &lt;a href="https://docs.google.com/"&gt;Google
+Spreadsheet&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Please note:&lt;/strong&gt; &lt;em&gt;'n/a' = no data available, due to privacy or other settings.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="" src="http://szabster.net/images/2013/02/13/gender.png" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="" src="http://szabster.net/images/2013/02/13/age.png" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="" src="http://szabster.net/images/2013/02/13/relationship.png" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="" src="http://szabster.net/images/2013/02/13/country.png" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="" src="http://szabster.net/images/2013/02/13/world.png" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="" src="http://szabster.net/images/2013/02/13/mobile.png" /&gt;&lt;/p&gt;</content>
+	<category term="facebook"/><category term="birthday"/><category term="stats"/><category term="fun"/><category term="hack"/><category term="fql"/><category term="sphreadsheet"/><category term="google"/>
+</entry>
 
 <entry>
 	<title type="html">Declaration of Romantic Intent</title>
