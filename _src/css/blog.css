@@ -24,9 +24,9 @@
 
 body
 {
-	font-family: 'Droid Sans', sans-serif;
-	font-size: 1.2em;
-	font-weight: 300;
+	font-family: 'Oxygen', 'Droid Sans', sans-serif;
+/*	font-size: 1.2em; */
+	font-weight: 400;
 	word-spacing: 0.15em;
 	width: 1024px;
 	margin: 0 auto;
@@ -134,7 +134,7 @@ body
 
 .content code
 {
-	font-family: 'Droid Sans';
+	font-family: 'Oxygen', 'Droid Sans';
 	padding: 0;
 }
 
