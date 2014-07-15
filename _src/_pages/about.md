@@ -28,7 +28,8 @@ This [blog](/) is built with [Doxter](https://github.com/icebreaker/doxter) and 
 
 Contact
 -------
-If you think you got something interesting to share, feel free to get in touch with me via [Twitter](http://twitter.com/theicebreaker), [Email](mailto:szaby@szabster.net) or [G+](http://plus.szabster.net).
+If you think you got something interesting to share, feel free to get in touch
+with me via [Twitter](http://twitter.com/c0d3rguy), [Email](mailto:szaby@szabster.net) or [G+](http://plus.szabster.net).
 
 On the other hand if you have a strong wish to sell Viagra or Cialis at discount prices you should most definitely contact [spam@szabster.net](mailto:spam@szabster.net) and I'll thank you for your prosper business.
 

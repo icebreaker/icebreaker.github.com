@@ -97,12 +97,12 @@
 <p>It can work with Scons as well, all we need is a simple "wrapper" makefile like this:</p>
 <div class="highlight"><pre><span class="nf">all</span><span class="o">:</span>
 <span class="err">scons</span> <span class="err">-Q</span> <span class="err">-j3</span> <span class="nv">nocolors</span><span class="o">=</span>1
-clean:
-scons -c <span class="nv">nocolors</span><span class="o">=</span>1
-distclean: clean
-realclean: clean
+<span class="nf">clean</span><span class="o">:</span>
+<span class="err">scons</span> <span class="err">-c</span> <span class="nv">nocolors</span><span class="o">=</span>1
+<span class="nf">distclean</span><span class="o">:</span> <span class="m">clean</span>
+<span class="nf">realclean</span><span class="o">:</span> <span class="m">clean</span>
 
-.PHONY: all clean distclean realclean
+<span class="nf">.PHONY</span><span class="o">:</span> <span class="m">all clean distclean realclean</span>
 </pre></div>
 
 <p><em>(Qt Creator seems to be the only viable enemy to Visual Studio at the time being)</em></p>
