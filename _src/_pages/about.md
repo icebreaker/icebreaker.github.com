@@ -14,8 +14,7 @@ covering both [desktop](http://en.wikipedia.org/wiki/Desktop_application) and
 
 I'm working for [Reea](http://reea.net), developing [open source software](http://en.wikipedia.org/wiki/Open-source_software), 
 running <s>[Ubuntu](http://ubuntu.com)</s>
-<s>[Crunchbang](http://crunchbanglinux.org/)</s> [Open
-Suse](http://opensuse.org), bootstraping [LeraGames](http://leragames.com), 
+<s>[Crunchbang](http://crunchbanglinux.org/)</s> [OpenSuse](http://opensuse.org), bootstraping [LeraGames](http://leragames.com), 
 listening to [gangsta rap](http://en.wikipedia.org/wiki/Gangsta_rap), 
 still not loving police, but definitely loving 
 russian blondies and/or brunettes ([no discrimination](https://www.liberty-human-rights.org.uk/human-rights/what-are-human-rights/human-rights-act/article-14-no-discrimination)) with [cute accents](http://youtube.com/watch?v=UIFPB25PBwA), currently living in [Romania](http://maps.google.com/maps?f=q&source=s_q&hl=en&geocode=&q=Reghin,+Mures,+Romania&sll=37.0625,-95.677068&sspn=44.928295,92.724609&ie=UTF8&hq=&hnear=Reghin,+Romania&z=14), but seriously
