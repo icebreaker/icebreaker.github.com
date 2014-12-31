@@ -4,12 +4,170 @@
 <title>Mihail Szabolcs</title>
 <link href="http://szabster.net/atom.xml" rel="self"/>
 <link href="http://szabster.net/"/>
-<updated>2014-07-27T00:00:00+02:00</updated>
+<updated>2014-12-31T00:00:00+02:00</updated>
 <id>http://szabster.net/</id>
 <author>
 	<name>Mihail Szabolcs</name>
 </author>
 
+
+<entry>
+	<title type="html">2014 Shakedown</title>
+	<link href="http://szabster.net/2014/12/31/2014-shakedown"/>
+	<updated>2014-12-31T00:00:00+02:00</updated>
+	<id>http://szabster.net/2014/12/31/2014-shakedown</id>
+	<content type="html">&lt;p&gt;It's been a quite long time since I discussed anything on this blog.&lt;/p&gt;
+&lt;p&gt;One could say that I neglected it, which is not an entirely accurate
+claim, but it's not very far from the truth.&lt;/p&gt;
+&lt;p&gt;I do have a bunch of ideas to write posts about, but most of them
+would conflict with my basic rule of three: &lt;em&gt;No sex, politics or religion&lt;/em&gt; on the blog.&lt;/p&gt;
+&lt;p&gt;Anyways, all is well, &lt;em&gt;2014&lt;/em&gt; has been a year where I released quite a few open 
+source projects.&lt;/p&gt;
+&lt;p&gt;I will talk about some of my &lt;em&gt;work-in-progress-not-yet-open-source&lt;/em&gt; projects in 
+a series of separate posts starting next year.&lt;/p&gt;
+&lt;p&gt;Please note, the projects listed below are not in chronological order of their release date.&lt;/p&gt;
+&lt;p&gt;Oh, and by the way, I didn't get married.&lt;/p&gt;
+&lt;a name="Floppy Bird"&gt;&lt;/a&gt;
+&lt;h2&gt;Floppy Bird&lt;/h2&gt;
+&lt;p&gt;Floppy Bird is a clone of the infamous Flappy Bird written in 16 bit (x86) assembly.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="" src="http://szabster.net/images/2014/12/31/floppy_bird_demo.gif" /&gt;&lt;/p&gt;
+&lt;p&gt;You can find out more about it over &lt;a href="https://github.com/icebreaker/floppybird"&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;a name="Fz2D"&gt;&lt;/a&gt;
+&lt;h2&gt;Fz2D&lt;/h2&gt;
+&lt;p&gt;Fz2D is a 2D game engine and framework.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="" src="http://szabster.net/images/2014/12/31/fz2d_demo.png" /&gt;&lt;/p&gt;
+&lt;p&gt;You can find out more about it over &lt;a href="https://github.com/icebreaker/fz2d"&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;a name="NVX"&gt;&lt;/a&gt;
+&lt;h2&gt;NVX&lt;/h2&gt;
+&lt;p&gt;NVX is an image "voxalizer". It will take a 2D image and create a 3D model.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="" src="http://szabster.net/images/2014/12/31/nvx_demo.png" /&gt;&lt;/p&gt;
+&lt;p&gt;You can find out more about it over &lt;a href="https://github.com/icebreaker/nvx"&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;a name="Nine Dots Dungeon"&gt;&lt;/a&gt;
+&lt;h2&gt;Nine Dots Dungeon&lt;/h2&gt;
+&lt;p&gt;Nine Dots Dungeon was my entry for &lt;a href="http://ludumdare.com"&gt;Ludum Dare 31&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="" src="http://szabster.net/images/2014/12/31/ndd_demo.png" /&gt;&lt;/p&gt;
+&lt;p&gt;You can find out more about it over &lt;a href="https://github.com/icebreaker/ninedotsdungeon"&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;a name="Sniknej"&gt;&lt;/a&gt;
+&lt;h2&gt;Sniknej&lt;/h2&gt;
+&lt;p&gt;Sniknej is a standalone front-end for &lt;a href="http://jenkins-ci.org/"&gt;Jenkins&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="" src="http://szabster.net/images/2014/12/31/sniknej_demo.png" /&gt;&lt;/p&gt;
+&lt;p&gt;You can find out more about it over &lt;a href="https://github.com/icebreaker/sniknej"&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;a name="Jsonoid"&gt;&lt;/a&gt;
+&lt;h2&gt;Jsonoid&lt;/h2&gt;
+&lt;p&gt;A simple serverless NoSQL (JSON) document storage system.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nb"&gt;require&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;jsonoid&amp;#39;&lt;/span&gt;
+
+&lt;span class="no"&gt;Jsonoid&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;configure&lt;/span&gt; &lt;span class="k"&gt;do&lt;/span&gt; &lt;span class="o"&gt;|&lt;/span&gt;&lt;span class="n"&gt;config&lt;/span&gt;&lt;span class="o"&gt;|&lt;/span&gt;
+  &lt;span class="n"&gt;config&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;db&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="no"&gt;File&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;join&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="no"&gt;File&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;dirname&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="bp"&gt;__FILE__&lt;/span&gt;&lt;span class="p"&gt;),&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;db&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="k"&gt;end&lt;/span&gt;
+
+&lt;span class="k"&gt;class&lt;/span&gt; &lt;span class="nc"&gt;Post&lt;/span&gt;
+  &lt;span class="kp"&gt;include&lt;/span&gt; &lt;span class="ss"&gt;Jsonoid&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="ss"&gt;:Document&lt;/span&gt;
+  &lt;span class="kp"&gt;include&lt;/span&gt; &lt;span class="ss"&gt;Jsonoid&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="ss"&gt;:Timestamp&lt;/span&gt;
+
+  &lt;span class="n"&gt;before_save&lt;/span&gt; &lt;span class="ss"&gt;:add_byline&lt;/span&gt;
+
+  &lt;span class="n"&gt;field&lt;/span&gt; &lt;span class="ss"&gt;:title&lt;/span&gt;
+  &lt;span class="n"&gt;field&lt;/span&gt; &lt;span class="ss"&gt;:description&lt;/span&gt;
+  &lt;span class="n"&gt;field&lt;/span&gt; &lt;span class="ss"&gt;:author&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="ss"&gt;:type&lt;/span&gt; &lt;span class="o"&gt;=&amp;gt;&lt;/span&gt; &lt;span class="nb"&gt;String&lt;/span&gt;
+  &lt;span class="n"&gt;field&lt;/span&gt; &lt;span class="ss"&gt;:score&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="ss"&gt;:type&lt;/span&gt; &lt;span class="o"&gt;=&amp;gt;&lt;/span&gt; &lt;span class="nb"&gt;Integer&lt;/span&gt;
+
+  &lt;span class="kp"&gt;protected&lt;/span&gt;
+
+  &lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;add_byline&lt;/span&gt;
+    &lt;span class="nb"&gt;self&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;description&lt;/span&gt; &lt;span class="o"&gt;+=&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;&lt;span class="se"&gt;\n&lt;/span&gt;&lt;span class="si"&gt;#{&lt;/span&gt;&lt;span class="nb"&gt;self&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;author&lt;/span&gt;&lt;span class="si"&gt;}&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&lt;/span&gt; &lt;span class="k"&gt;unless&lt;/span&gt; &lt;span class="nb"&gt;self&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;author&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;nil?&lt;/span&gt;
+  &lt;span class="k"&gt;end&lt;/span&gt;
+&lt;span class="k"&gt;end&lt;/span&gt;
+
+&lt;span class="n"&gt;post&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="no"&gt;Post&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;new&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="ss"&gt;:title&lt;/span&gt; &lt;span class="o"&gt;=&amp;gt;&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;Hello World&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="n"&gt;post&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;description&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;The quick brown fox jumps over the lazy dog.&amp;#39;&lt;/span&gt;
+&lt;span class="n"&gt;post&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;author&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;Fox&amp;#39;&lt;/span&gt;
+&lt;span class="n"&gt;post&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;score&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mi"&gt;10&lt;/span&gt;
+&lt;span class="n"&gt;post&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;save&lt;/span&gt;
+&lt;span class="n"&gt;post&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="no"&gt;Post&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;find&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;2cfe7b2e885f225746264b3c6c0beb57&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="n"&gt;post&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;destroy&lt;/span&gt; &lt;span class="k"&gt;unless&lt;/span&gt; &lt;span class="n"&gt;post&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;nil?&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;You can find out more about it over &lt;a href="https://github.com/icebreaker/jsonoid"&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;a name="Cowmos"&gt;&lt;/a&gt;
+&lt;h2&gt;Cowmos&lt;/h2&gt;
+&lt;p&gt;Cowmos is a &lt;em&gt;small&lt;/em&gt; birthro for Valeria. You can watch it over &lt;a href="http://szabster.net/cowmos"&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="" src="http://szabster.net/images/2014/12/31/cowmos_demo.png" /&gt;&lt;/p&gt;
+&lt;p&gt;You can find out more about it over &lt;a href="https://github.com/icebreaker/cowmos"&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;a name="nanoenum.rb"&gt;&lt;/a&gt;
+&lt;h2&gt;nanoenum.rb&lt;/h2&gt;
+&lt;p&gt;A small &lt;code&gt;enum&lt;/code&gt; implementation for Ruby.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="k"&gt;class&lt;/span&gt; &lt;span class="nc"&gt;Model&lt;/span&gt;
+  &lt;span class="kp"&gt;include&lt;/span&gt; &lt;span class="ss"&gt;Mongoid&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="ss"&gt;:Document&lt;/span&gt;
+  &lt;span class="kp"&gt;include&lt;/span&gt; &lt;span class="no"&gt;NanoEnum&lt;/span&gt;
+
+  &lt;span class="no"&gt;TYPE&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;enum&lt;/span&gt; &lt;span class="ss"&gt;:apple&lt;/span&gt; &lt;span class="o"&gt;=&amp;gt;&lt;/span&gt; &lt;span class="mi"&gt;15&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="ss"&gt;:orange&lt;/span&gt; &lt;span class="o"&gt;=&amp;gt;&lt;/span&gt; &lt;span class="mi"&gt;16&lt;/span&gt;
+
+  &lt;span class="n"&gt;field&lt;/span&gt; &lt;span class="ss"&gt;:type&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="ss"&gt;:type&lt;/span&gt; &lt;span class="o"&gt;=&amp;gt;&lt;/span&gt; &lt;span class="no"&gt;TYPE&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="ss"&gt;:default&lt;/span&gt; &lt;span class="o"&gt;=&amp;gt;&lt;/span&gt; &lt;span class="ss"&gt;TYPE&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="ss"&gt;:ORANGE&lt;/span&gt;
+  &lt;span class="c1"&gt;# field :type, :type =&amp;gt; Integer, :default =&amp;gt; TYPE::ORANGE&lt;/span&gt;
+  &lt;span class="n"&gt;validates_inclusion_of&lt;/span&gt; &lt;span class="ss"&gt;:type&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="ss"&gt;:in&lt;/span&gt; &lt;span class="o"&gt;=&amp;gt;&lt;/span&gt; &lt;span class="no"&gt;TYPE&lt;/span&gt;
+&lt;span class="k"&gt;end&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;You can find out more about it over &lt;a href="https://gist.github.com/icebreaker/ea6958c675a730b6579d"&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;a name="Gimp Font Atlas Creator"&gt;&lt;/a&gt;
+&lt;h2&gt;Gimp Font Atlas Creator&lt;/h2&gt;
+&lt;p&gt;A small Script FU plugin for GIMP that creates font atlases. Ideal for mono-spaced fonts.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="" src="http://szabster.net/images/2014/12/31/fatlas_demo.png" /&gt;&lt;/p&gt;
+&lt;p&gt;You can find out more about it over &lt;a href="https://gist.github.com/icebreaker/a3809db1e08de7af9f81"&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;a name="vm.rb"&gt;&lt;/a&gt;
+&lt;h2&gt;vm.rb&lt;/h2&gt;
+&lt;p&gt;A small "experimental" (x86 like) &lt;em&gt;virtual machine&lt;/em&gt; written in Ruby.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="c1"&gt;;&lt;/span&gt;
+&lt;span class="c1"&gt;; Prints first N from the Fibonacci sequence.&lt;/span&gt;
+&lt;span class="c1"&gt;;&lt;/span&gt;
+&lt;span class="nl"&gt;read_n:&lt;/span&gt;
+  &lt;span class="nf"&gt;mov&lt;/span&gt; &lt;span class="nb"&gt;dx&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;78&lt;/span&gt;
+  &lt;span class="nf"&gt;prc&lt;/span&gt; &lt;span class="nb"&gt;dx&lt;/span&gt;
+
+  &lt;span class="nf"&gt;mov&lt;/span&gt; &lt;span class="nb"&gt;dx&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;58&lt;/span&gt;
+  &lt;span class="nf"&gt;prc&lt;/span&gt; &lt;span class="nb"&gt;dx&lt;/span&gt;
+
+  &lt;span class="nf"&gt;rdr&lt;/span&gt; &lt;span class="nb"&gt;dx&lt;/span&gt;
+  &lt;span class="nf"&gt;cmp&lt;/span&gt; &lt;span class="nb"&gt;dx&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt;
+  &lt;span class="nf"&gt;je&lt;/span&gt; &lt;span class="nv"&gt;read_n&lt;/span&gt;
+
+&lt;span class="nf"&gt;mov&lt;/span&gt; &lt;span class="nb"&gt;cx&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt;
+&lt;span class="nf"&gt;mov&lt;/span&gt; &lt;span class="nb"&gt;ax&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt;
+&lt;span class="nf"&gt;mov&lt;/span&gt; &lt;span class="nb"&gt;bx&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt;
+
+&lt;span class="nl"&gt;loop:&lt;/span&gt;
+  &lt;span class="nf"&gt;prr&lt;/span&gt; &lt;span class="nb"&gt;bx&lt;/span&gt;
+
+  &lt;span class="nf"&gt;push&lt;/span&gt; &lt;span class="nb"&gt;bx&lt;/span&gt;
+  &lt;span class="nf"&gt;add&lt;/span&gt; &lt;span class="nb"&gt;bx&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="nb"&gt;ax&lt;/span&gt;
+  &lt;span class="nf"&gt;pop&lt;/span&gt; &lt;span class="nb"&gt;ax&lt;/span&gt;
+
+  &lt;span class="nf"&gt;add&lt;/span&gt; &lt;span class="nb"&gt;cx&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt;
+  &lt;span class="nf"&gt;cmp&lt;/span&gt; &lt;span class="nb"&gt;cx&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="nb"&gt;dx&lt;/span&gt;
+  &lt;span class="nf"&gt;jne&lt;/span&gt; &lt;span class="nv"&gt;loop&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;div class="highlight"&gt;&lt;pre&gt;ruby vm.rb fibo.asm
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;You can find out more about it over &lt;a href="https://gist.github.com/icebreaker/3c260812b94ff434c303"&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;a name="pong.rb"&gt;&lt;/a&gt;
+&lt;h2&gt;pong.rb&lt;/h2&gt;
+&lt;p&gt;Quick and dirty Pong clone written in Ruby that runs in your terminal. Requires &lt;code&gt;ncurses&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="" src="http://szabster.net/images/2014/12/31/pong_demo.png" /&gt;&lt;/p&gt;
+&lt;p&gt;You can find out more about it over &lt;a href="https://gist.github.com/icebreaker/156be660281ab5dcb5b4"&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;a name="scrsat"&gt;&lt;/a&gt;
+&lt;h2&gt;scrsat&lt;/h2&gt;
+&lt;p&gt;Screenshot Saturday Twitter Scrapper.&lt;/p&gt;
+&lt;p&gt;You can find out more about it over &lt;a href="https://gist.github.com/icebreaker/594e135c5087b7a0f261"&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;a name="mkatlas"&gt;&lt;/a&gt;
+&lt;h2&gt;mkatlas&lt;/h2&gt;
+&lt;p&gt;BASH script to build a texture atlas for games. Requires &lt;code&gt;ImageMagick&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;While not entirely written by me, I did some improvements to it.&lt;/p&gt;
+&lt;p&gt;You can find out more about it over &lt;a href="https://gist.github.com/icebreaker/80f1538a79a3184ce788"&gt;here&lt;/a&gt;.&lt;/p&gt;</content>
+	<category term="nye"/><category term="resolution"/><category term="projects"/><category term="opensource"/>
+</entry>
 
 <entry>
 	<title type="html">Facebook Birthday Wishes</title>
