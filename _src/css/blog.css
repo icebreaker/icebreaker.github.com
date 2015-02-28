@@ -22,6 +22,24 @@
 	height: 405px;
 }
 
+.propaganda_5
+{
+	background: url('/images/propaganda_05.png');
+	height: 405px;
+}
+
+.propaganda_6
+{
+	background: url('/images/propaganda_06.png');
+	height: 405px;
+}
+
+.propaganda_7
+{
+	background: url('/images/propaganda_07.png');
+	height: 405px;
+}
+
 body
 {
 	font-family: 'Oxygen', 'Droid Sans', sans-serif;
