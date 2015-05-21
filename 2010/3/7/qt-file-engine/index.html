@@ -58,7 +58,7 @@
 					<li><a href="/">home</a></li>
 					<li><a href="/games">games</a></li>
 					<li><a href="http://proudify.me">projects</a></li>
-					<li><a href="/dotfiles">dotfiles</a></li>
+					<li><a href="http://github.com/icebreaker/dotfiles">dotfiles</a></li>
 					<li><a href="/about">about</a></li>
 					<li><a href="http://feeds.feedburner.com/szabsternet">rss</a></li>
 				</ul>
@@ -93,7 +93,7 @@ a transparent way as shown in the code snippet below.</p>
 <span class="c1">//! File System Class</span>
 <span class="k">class</span> <span class="nc">FileSystem</span> <span class="o">:</span> <span class="k">public</span> <span class="n">QFSFileEngine</span>
 <span class="p">{</span>
-    <span class="nl">public:</span>
+    <span class="k">public</span><span class="o">:</span>
         <span class="c1">//! Constructor</span>
         <span class="n">FileSystem</span><span class="p">(</span><span class="k">const</span> <span class="n">QString</span> <span class="o">&amp;</span><span class="n">pFileName</span><span class="p">);</span>
         <span class="c1">//! Destructor</span>
@@ -103,7 +103,7 @@ a transparent way as shown in the code snippet below.</p>
 <span class="c1">//! File System Handler</span>
 <span class="k">class</span> <span class="nc">FileSystemHandler</span> <span class="o">:</span> <span class="k">public</span> <span class="n">QAbstractFileEngineHandler</span>
 <span class="p">{</span>
-    <span class="nl">public:</span>
+    <span class="k">public</span><span class="o">:</span>
         <span class="c1">//! Constructor</span>
         <span class="n">QAbstractFileEngine</span> <span class="o">*</span><span class="n">create</span><span class="p">(</span><span class="k">const</span> <span class="n">QString</span> <span class="o">&amp;</span><span class="n">pFileName</span><span class="p">)</span> <span class="k">const</span><span class="p">;</span>
 <span class="p">};</span>
@@ -113,7 +113,7 @@ a transparent way as shown in the code snippet below.</p>
 <span class="kt">int</span> <span class="n">main</span><span class="p">(</span><span class="kt">int</span> <span class="n">argc</span><span class="p">,</span> <span class="kt">char</span> <span class="o">*</span><span class="n">argv</span><span class="p">[])</span>
 <span class="p">{</span>
     <span class="n">FileSystemHandler</span> <span class="n">lFileSystemHandler</span><span class="p">;</span>
-    <span class="n">QFile</span> <span class="nf">lFile</span><span class="p">(</span><span class="s">&quot;scripts/test.js&quot;</span><span class="p">);</span>
+    <span class="n">QFile</span> <span class="n">lFile</span><span class="p">(</span><span class="s">&quot;scripts/test.js&quot;</span><span class="p">);</span>
     <span class="k">if</span><span class="p">(</span><span class="n">lFile</span><span class="p">.</span><span class="n">open</span><span class="p">(</span><span class="n">QFile</span><span class="o">::</span><span class="n">ReadOnly</span> <span class="o">|</span> <span class="n">QFile</span><span class="o">::</span><span class="n">Text</span><span class="p">))</span>
     <span class="p">{</span>
         <span class="p">...</span>
@@ -128,7 +128,7 @@ a transparent way as shown in the code snippet below.</p>
 our file engine handler just the paths get altered in the background.</p>
 <p>The latest registered handler takes precedence over existing handlers.</p>
 <p>We could also do another nifty thing and register a handler which would respond to <strong>"fs://myfile.txt"</strong>.</p>
-<div class="highlight"><pre><span class="n">QFile</span> <span class="nf">lFile</span><span class="p">(</span><span class="s">&quot;fs://myfile.txt&quot;</span><span class="p">);</span>
+<div class="highlight"><pre><span class="n">QFile</span> <span class="n">lFile</span><span class="p">(</span><span class="s">&quot;fs://myfile.txt&quot;</span><span class="p">);</span>
 </pre></div>
 
 <p>QT's internal resource system is implemented this way, so that's a good place to study especially if you want to implement a ZIP

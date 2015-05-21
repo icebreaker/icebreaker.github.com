@@ -58,7 +58,7 @@
 					<li><a href="/">home</a></li>
 					<li><a href="/games">games</a></li>
 					<li><a href="http://proudify.me">projects</a></li>
-					<li><a href="/dotfiles">dotfiles</a></li>
+					<li><a href="http://github.com/icebreaker/dotfiles">dotfiles</a></li>
 					<li><a href="/about">about</a></li>
 					<li><a href="http://feeds.feedburner.com/szabsternet">rss</a></li>
 				</ul>
@@ -173,9 +173,9 @@ that all these parts have been hacked together in order to create something whic
 <p>An example of this hacky design from <strong>source/renderer/Renderer.cpp</strong>:</p>
 <div class="highlight"><pre><span class="kt">bool</span> <span class="n">CRenderer</span><span class="o">::</span><span class="n">IsTextureTransparent</span><span class="p">(</span><span class="n">CTexture</span><span class="o">*</span> <span class="n">texture</span><span class="p">)</span>
 <span class="p">{</span>
-    <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="n">texture</span><span class="p">)</span> <span class="k">return</span> <span class="nb">false</span><span class="p">;</span>
+    <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="n">texture</span><span class="p">)</span> <span class="k">return</span> <span class="kc">false</span><span class="p">;</span>
     <span class="n">Handle</span> <span class="n">h</span><span class="o">=</span><span class="n">texture</span><span class="o">-&gt;</span><span class="n">GetHandle</span><span class="p">();</span>
-    <span class="kt">size_t</span> <span class="n">flags</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>   <span class="c1">// assume no alpha on failure</span>
+    <span class="n">size_t</span> <span class="n">flags</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>   <span class="c1">// assume no alpha on failure</span>
     <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="n">ogl_tex_get_format</span><span class="p">(</span><span class="n">h</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">flags</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>
     <span class="k">return</span> <span class="p">(</span><span class="n">flags</span> <span class="o">&amp;</span> <span class="n">TEX_ALPHA</span><span class="p">)</span> <span class="o">!=</span> <span class="mi">0</span><span class="p">;</span>
 <span class="p">}</span>
