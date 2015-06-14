@@ -57,7 +57,7 @@
 				<ul class="align right">
 					<li><a href="/">home</a></li>
 					<li><a href="/games">games</a></li>
-					<li><a href="http://proudify.me">projects</a></li>
+					<li><a href="/proudify">projects</a></li>
 					<li><a href="http://github.com/icebreaker/dotfiles">dotfiles</a></li>
 					<li><a href="/about">about</a></li>
 					<li><a href="http://feeds.feedburner.com/szabsternet">rss</a></li>
@@ -100,7 +100,7 @@
 
 <span class="k">static</span> <span class="kt">int</span> <span class="n">g_logFilter</span> <span class="o">=</span> <span class="n">Log</span><span class="o">::</span><span class="n">Any</span><span class="p">;</span>
 
-<span class="kt">void</span> <span class="n">setConsoleLogFilter</span><span class="p">(</span> <span class="k">const</span> <span class="kt">int</span> <span class="n">logFilter</span> <span class="p">)</span>
+<span class="kt">void</span> <span class="nf">setConsoleLogFilter</span><span class="p">(</span> <span class="k">const</span> <span class="kt">int</span> <span class="n">logFilter</span> <span class="p">)</span>
 <span class="p">{</span>
     <span class="k">if</span><span class="p">(</span> <span class="n">INRANGE</span><span class="p">(</span><span class="n">logFilter</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">5</span><span class="p">)</span> <span class="p">)</span>
     <span class="p">{</span>
@@ -110,9 +110,9 @@
     <span class="n">g_logFilter</span> <span class="o">=</span> <span class="n">Log</span><span class="o">::</span><span class="n">Any</span><span class="p">;</span>
 <span class="p">}</span>
 
-<span class="kt">void</span> <span class="n">consoleLog</span><span class="p">(</span> <span class="k">const</span> <span class="kt">int</span> <span class="n">logLevel</span><span class="p">,</span> <span class="k">const</span> <span class="kt">char</span> <span class="o">*</span><span class="n">msg</span><span class="p">,</span> <span class="p">...</span> <span class="p">)</span>
+<span class="kt">void</span> <span class="nf">consoleLog</span><span class="p">(</span> <span class="k">const</span> <span class="kt">int</span> <span class="n">logLevel</span><span class="p">,</span> <span class="k">const</span> <span class="kt">char</span> <span class="o">*</span><span class="n">msg</span><span class="p">,</span> <span class="p">...</span> <span class="p">)</span>
 <span class="p">{</span>
-    <span class="n">va_list</span> <span class="n">ap</span><span class="p">;</span>
+    <span class="kt">va_list</span> <span class="n">ap</span><span class="p">;</span>
     <span class="c1">// is filtering turned on?</span>
     <span class="k">if</span><span class="p">(</span> <span class="n">g_logFilter</span> <span class="o">!=</span> <span class="n">Log</span><span class="o">::</span><span class="n">Any</span> <span class="o">&amp;&amp;</span> <span class="n">g_logFilter</span> <span class="o">!=</span> <span class="n">logLevel</span> <span class="p">)</span>
     <span class="p">{</span>
@@ -126,16 +126,16 @@
     <span class="n">va_end</span><span class="p">(</span><span class="n">ap</span><span class="p">);</span>
     <span class="k">switch</span><span class="p">(</span> <span class="n">logLevel</span> <span class="p">)</span>
     <span class="p">{</span>
-        <span class="k">case</span> <span class="n">Log</span><span class="o">::</span><span class="nl">Info:</span>
+        <span class="k">case</span> <span class="n">Log</span>:<span class="o">:</span><span class="n">Info</span><span class="o">:</span>
             <span class="n">printf</span><span class="p">(</span> <span class="s">&quot;INFO: %s</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span> <span class="n">text</span> <span class="p">);</span>
             <span class="k">break</span><span class="p">;</span>
-        <span class="k">case</span> <span class="n">Log</span><span class="o">::</span><span class="nl">Warning:</span>
+        <span class="k">case</span> <span class="n">Log</span>:<span class="o">:</span><span class="n">Warning</span><span class="o">:</span>
             <span class="n">printf</span><span class="p">(</span> <span class="s">&quot;WARNING: %s</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span> <span class="n">text</span> <span class="p">);</span>
             <span class="k">break</span><span class="p">;</span>
-        <span class="k">case</span> <span class="n">Log</span><span class="o">::</span><span class="nl">Error:</span>
+        <span class="k">case</span> <span class="n">Log</span>:<span class="o">:</span><span class="n">Error</span><span class="o">:</span>
             <span class="n">printf</span><span class="p">(</span> <span class="s">&quot;ERROR: %s</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span> <span class="n">text</span> <span class="p">);</span>
             <span class="k">break</span><span class="p">;</span>
-        <span class="k">default</span><span class="o">:</span>
+        <span class="nl">default:</span>
             <span class="n">printf</span><span class="p">(</span> <span class="s">&quot;%s</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span> <span class="n">text</span> <span class="p">);</span>
             <span class="k">break</span><span class="p">;</span>
     <span class="p">}</span>

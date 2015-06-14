@@ -57,7 +57,7 @@
 				<ul class="align right">
 					<li><a href="/">home</a></li>
 					<li><a href="/games">games</a></li>
-					<li><a href="http://proudify.me">projects</a></li>
+					<li><a href="/proudify">projects</a></li>
 					<li><a href="http://github.com/icebreaker/dotfiles">dotfiles</a></li>
 					<li><a href="/about">about</a></li>
 					<li><a href="http://feeds.feedburner.com/szabsternet">rss</a></li>
@@ -127,8 +127,8 @@ a series of separate posts starting next year.</p>
 <span class="k">end</span>
 
 <span class="k">class</span> <span class="nc">Post</span>
-  <span class="kp">include</span> <span class="no">Jsonoid</span><span class="o">::</span><span class="no">Document</span>
-  <span class="kp">include</span> <span class="no">Jsonoid</span><span class="o">::</span><span class="no">Timestamp</span>
+  <span class="kp">include</span> <span class="ss">Jsonoid</span><span class="p">:</span><span class="ss">:Document</span>
+  <span class="kp">include</span> <span class="ss">Jsonoid</span><span class="p">:</span><span class="ss">:Timestamp</span>
 
   <span class="n">before_save</span> <span class="ss">:add_byline</span>
 
@@ -163,12 +163,12 @@ a series of separate posts starting next year.</p>
 <h2>nanoenum.rb</h2>
 <p>A small <code>enum</code> implementation for Ruby.</p>
 <div class="highlight"><pre><span class="k">class</span> <span class="nc">Model</span>
-  <span class="kp">include</span> <span class="no">Mongoid</span><span class="o">::</span><span class="no">Document</span>
+  <span class="kp">include</span> <span class="ss">Mongoid</span><span class="p">:</span><span class="ss">:Document</span>
   <span class="kp">include</span> <span class="no">NanoEnum</span>
 
   <span class="no">TYPE</span> <span class="o">=</span> <span class="n">enum</span> <span class="ss">:apple</span> <span class="o">=&gt;</span> <span class="mi">15</span><span class="p">,</span> <span class="ss">:orange</span> <span class="o">=&gt;</span> <span class="mi">16</span>
 
-  <span class="n">field</span> <span class="ss">:type</span><span class="p">,</span> <span class="ss">:type</span> <span class="o">=&gt;</span> <span class="no">TYPE</span><span class="p">,</span> <span class="ss">:default</span> <span class="o">=&gt;</span> <span class="no">TYPE</span><span class="o">::</span><span class="no">ORANGE</span>
+  <span class="n">field</span> <span class="ss">:type</span><span class="p">,</span> <span class="ss">:type</span> <span class="o">=&gt;</span> <span class="no">TYPE</span><span class="p">,</span> <span class="ss">:default</span> <span class="o">=&gt;</span> <span class="ss">TYPE</span><span class="p">:</span><span class="ss">:ORANGE</span>
   <span class="c1"># field :type, :type =&gt; Integer, :default =&gt; TYPE::ORANGE</span>
   <span class="n">validates_inclusion_of</span> <span class="ss">:type</span><span class="p">,</span> <span class="ss">:in</span> <span class="o">=&gt;</span> <span class="no">TYPE</span>
 <span class="k">end</span>

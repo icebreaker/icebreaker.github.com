@@ -57,7 +57,7 @@
 				<ul class="align right">
 					<li><a href="/">home</a></li>
 					<li><a href="/games">games</a></li>
-					<li><a href="http://proudify.me">projects</a></li>
+					<li><a href="/proudify">projects</a></li>
 					<li><a href="http://github.com/icebreaker/dotfiles">dotfiles</a></li>
 					<li><a href="/about">about</a></li>
 					<li><a href="http://feeds.feedburner.com/szabsternet">rss</a></li>
@@ -89,9 +89,9 @@
 
 <p>... the format ...</p>
 <div class="highlight"><pre><span class="cp">#define BUFF_SIZE 4096</span>
-<span class="n">string</span> <span class="n">format</span><span class="p">(</span> <span class="k">const</span> <span class="n">string</span> <span class="o">&amp;</span><span class="n">msg</span><span class="p">,</span> <span class="p">...</span> <span class="p">)</span>
+<span class="n">string</span> <span class="nf">format</span><span class="p">(</span> <span class="k">const</span> <span class="n">string</span> <span class="o">&amp;</span><span class="n">msg</span><span class="p">,</span> <span class="p">...</span> <span class="p">)</span>
 <span class="p">{</span>
-    <span class="n">va_list</span> <span class="n">ap</span><span class="p">;</span>
+    <span class="kt">va_list</span> <span class="n">ap</span><span class="p">;</span>
     <span class="kt">char</span> <span class="n">text</span><span class="p">[</span><span class="n">BUFF_SIZE</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span><span class="mi">0</span><span class="p">,};</span>
     <span class="n">va_start</span><span class="p">(</span><span class="n">ap</span><span class="p">,</span> <span class="n">msg</span><span class="p">);</span>
         <span class="n">vsnprintf</span><span class="p">(</span><span class="n">text</span><span class="p">,</span> <span class="n">BUFF_SIZE</span><span class="p">,</span> <span class="n">msg</span><span class="p">.</span><span class="n">c_str</span><span class="p">(),</span> <span class="n">ap</span><span class="p">);</span>
