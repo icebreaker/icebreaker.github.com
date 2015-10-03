@@ -4,7 +4,27 @@ title: Games
 propaganda: 5
 ---
 This page contains a selection of my **game** related projects.
-For a complete list of *all my projects* please click [here](http://proudify.me).
+For a complete list of *all my projects* please click [here](/proudify).
+
+Simon8
+------
+Simon8 is a Chip 8 disassembler and emulator written in C.
+
+![](/images/games/simon8.png)
+
+You can find out more about it over
+[here](http://github.com/icebreaker/simon8).
+
+Snakr
+-----
+Snakr is a "Snake clone" with a twist.
+
+![](/images/games/snakr.png)
+
+You can find out more about it over
+[here](http://github.com/icebreaker/snakr). If you just want to play it, you
+can do so by clicking
+[here](/snakr).
 
 ZeeCraft
 --------
