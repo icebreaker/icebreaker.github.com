@@ -136,6 +136,12 @@ crap, basically everything that wasn't &lt;em&gt;implemented&lt;/em&gt; by Mono.
 
 &lt;p&gt;You can find out more about it over
 &lt;a href="http://github.com/icebreaker/2dimagefilter"&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;a name="fastopen.vim"&gt;&lt;/a&gt;
+&lt;h2&gt;fastopen.vim&lt;/h2&gt;
+&lt;p&gt;fastopen.vim is a quick "file opener" using "dmenu". It is my very first &lt;strong&gt;Vim plugin&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="" src="http://mihail.co/images/misc/fastopen.png" /&gt;&lt;/p&gt;
+&lt;p&gt;You can find out more about it over
+&lt;a href="http://github.com/icebreaker/fastopen.vim"&gt;here&lt;/a&gt;.&lt;/p&gt;
 &lt;a name="Nexeh"&gt;&lt;/a&gt;
 &lt;h2&gt;Nexeh&lt;/h2&gt;
 &lt;p&gt;Around a year ago, I had the idea of building an old-school first person shooter from scratch.

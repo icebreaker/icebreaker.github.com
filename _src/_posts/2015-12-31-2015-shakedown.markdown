@@ -169,6 +169,15 @@ ImageResizer /load in.png /resize auto "XBR 4x(2,thresholds=0,vbounds=wrap)" /sa
 You can find out more about it over
 [here](http://github.com/icebreaker/2dimagefilter).
 
+fastopen.vim
+------------
+fastopen.vim is a quick "file opener" using "dmenu". It is my very first **Vim plugin**.
+
+![](/images/misc/fastopen.png)
+
+You can find out more about it over
+[here](http://github.com/icebreaker/fastopen.vim).
+
 Nexeh
 -----
 Around a year ago, I had the idea of building an old-school first person shooter from scratch.
