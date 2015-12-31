@@ -14,7 +14,7 @@
 		<!-- Favicon -->
 		<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" /> 
 		<!-- Atom Feed -->
-		<link href="http://feeds.feedburner.com/szabsternet" rel="alternate" title="Mihail Szabolcs" type="application/atom+xml" /> 
+		<link href="http://feeds.feedburner.com/mihailco" rel="alternate" title="Mihail Szabolcs" type="application/atom+xml" /> 
 		<!-- Default -->
 		<link rel="stylesheet" type="text/css" href="/css/default.css" />
 		<!-- Pygments Syntax  -->
@@ -60,7 +60,7 @@
 					<li><a href="/proudify">projects</a></li>
 					<li><a href="http://github.com/icebreaker/dotfiles">dotfiles</a></li>
 					<li><a href="/about">about</a></li>
-					<li><a href="http://feeds.feedburner.com/szabsternet">rss</a></li>
+					<li><a href="http://feeds.feedburner.com/mihailco">rss</a></li>
 				</ul>
 				<div class="clear"></div>
 			</div>
@@ -89,12 +89,12 @@
 <p>Here is the contents of the script:</p>
 <div class="highlight"><pre><span class="c">#!/bin/bash</span>
 
-<span class="k">if</span> <span class="o">[</span> <span class="nv">$# </span>-ne 3 <span class="o">]</span> ; <span class="k">then</span>
-<span class="nb">echo</span> <span class="s2">&quot;Usage: $0 image1.png image2.png outimage.png&quot;</span>
+<span class="k">if</span> <span class="o">[</span> <span class="nv">$# </span>-ne <span class="m">3</span> <span class="o">]</span> <span class="p">;</span> <span class="k">then</span>
+<span class="nb">echo</span> <span class="s2">&quot;Usage: </span><span class="nv">$0</span><span class="s2"> image1.png image2.png outimage.png&quot;</span>
 <span class="nb">exit </span>13
 <span class="k">fi</span>
 
-convert -size 2720x900 xc:black <span class="s2">&quot;$1&quot;</span> -geometry +0+100 -composite <span class="s2">&quot;$2&quot;</span> -geometry +1280+0 -composite <span class="s2">&quot;$3&quot;</span>
+convert -size 2720x900 xc:black <span class="s2">&quot;</span><span class="nv">$1</span><span class="s2">&quot;</span> -geometry +0+100 -composite <span class="s2">&quot;</span><span class="nv">$2</span><span class="s2">&quot;</span> -geometry +1280+0 -composite <span class="s2">&quot;</span><span class="nv">$3</span><span class="s2">&quot;</span>
 
 <span class="nb">echo</span> <span class="s2">&quot;Done ...&quot;</span>
 <span class="nb">exit </span>1

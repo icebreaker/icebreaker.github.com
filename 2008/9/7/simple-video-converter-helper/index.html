@@ -14,7 +14,7 @@
 		<!-- Favicon -->
 		<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" /> 
 		<!-- Atom Feed -->
-		<link href="http://feeds.feedburner.com/szabsternet" rel="alternate" title="Mihail Szabolcs" type="application/atom+xml" /> 
+		<link href="http://feeds.feedburner.com/mihailco" rel="alternate" title="Mihail Szabolcs" type="application/atom+xml" /> 
 		<!-- Default -->
 		<link rel="stylesheet" type="text/css" href="/css/default.css" />
 		<!-- Pygments Syntax  -->
@@ -60,7 +60,7 @@
 					<li><a href="/proudify">projects</a></li>
 					<li><a href="http://github.com/icebreaker/dotfiles">dotfiles</a></li>
 					<li><a href="/about">about</a></li>
-					<li><a href="http://feeds.feedburner.com/szabsternet">rss</a></li>
+					<li><a href="http://feeds.feedburner.com/mihailco">rss</a></li>
 				</ul>
 				<div class="clear"></div>
 			</div>
@@ -104,54 +104,54 @@
 <span class="c">#</span>
 <span class="c"># Public Domain</span>
 
-<span class="k">if</span> <span class="o">[</span> <span class="nv">$# </span>-lt 2 <span class="o">]</span> ; <span class="k">then</span>
+<span class="k">if</span> <span class="o">[</span> <span class="nv">$# </span>-lt <span class="m">2</span> <span class="o">]</span> <span class="p">;</span> <span class="k">then</span>
 <span class="nb">echo </span>Usage: mkhdv input.video output.video <span class="o">[</span>-t <span class="s2">&quot;some video title&quot;</span><span class="o">]</span> <span class="se">\</span>
 <span class="o">[</span>-s 1280x720<span class="o">]</span>
 <span class="nb">exit </span>13
 <span class="k">fi</span>
 
-<span class="k">if</span> <span class="o">[</span> <span class="nv">$# </span>-eq 4 <span class="o">]</span> ; <span class="k">then</span>
+<span class="k">if</span> <span class="o">[</span> <span class="nv">$# </span>-eq <span class="m">4</span> <span class="o">]</span> <span class="p">;</span> <span class="k">then</span>
     <span class="c"># title</span>
-    <span class="k">if</span> <span class="o">[</span> <span class="s2">&quot;$3&quot;</span> <span class="o">=</span> <span class="s2">&quot;-t&quot;</span> <span class="o">]</span> ; <span class="k">then</span>
-<span class="k">        </span>ffmpeg -i <span class="s2">&quot;$1&quot;</span> -sameq -s 1280x720 -title <span class="s2">&quot;$4&quot;</span> <span class="s2">&quot;$2&quot;</span>
+    <span class="k">if</span> <span class="o">[</span> <span class="s2">&quot;</span><span class="nv">$3</span><span class="s2">&quot;</span> <span class="o">=</span> <span class="s2">&quot;-t&quot;</span> <span class="o">]</span> <span class="p">;</span> <span class="k">then</span>
+        ffmpeg -i <span class="s2">&quot;</span><span class="nv">$1</span><span class="s2">&quot;</span> -sameq -s 1280x720 -title <span class="s2">&quot;</span><span class="nv">$4</span><span class="s2">&quot;</span> <span class="s2">&quot;</span><span class="nv">$2</span><span class="s2">&quot;</span>
     <span class="k">else</span>
         <span class="c"># size</span>
-        <span class="k">if</span> <span class="o">[</span> <span class="s2">&quot;$3&quot;</span> <span class="o">=</span> <span class="s2">&quot;-s&quot;</span> <span class="o">]</span> ; <span class="k">then</span>
-<span class="k">        </span>ffmpeg -i <span class="s2">&quot;$1&quot;</span> -sameq -s <span class="s2">&quot;$4&quot;</span> <span class="s2">&quot;$2&quot;</span>
+        <span class="k">if</span> <span class="o">[</span> <span class="s2">&quot;</span><span class="nv">$3</span><span class="s2">&quot;</span> <span class="o">=</span> <span class="s2">&quot;-s&quot;</span> <span class="o">]</span> <span class="p">;</span> <span class="k">then</span>
+        ffmpeg -i <span class="s2">&quot;</span><span class="nv">$1</span><span class="s2">&quot;</span> -sameq -s <span class="s2">&quot;</span><span class="nv">$4</span><span class="s2">&quot;</span> <span class="s2">&quot;</span><span class="nv">$2</span><span class="s2">&quot;</span>
         <span class="k">else</span>
-<span class="k">        </span><span class="nb">echo </span>Usage: mkhdv input.video output.video <span class="se">\ </span>
+        <span class="nb">echo </span>Usage: mkhdv input.video output.video <span class="se">\ </span>
 <span class="o">[</span>-t <span class="s2">&quot;some video title&quot;</span><span class="o">]</span> <span class="o">[</span>-s 1280x720<span class="o">]</span>
         <span class="nb">exit </span>666
         <span class="k">fi</span>
-<span class="k">    fi</span>
+    <span class="k">fi</span>
 <span class="k">else</span>
     <span class="c"># we have size and title</span>
-    <span class="k">if</span> <span class="o">[</span> <span class="nv">$# </span>-eq 6 <span class="o">]</span> ; <span class="k">then</span>
-<span class="k">        </span><span class="nv">TITLE</span><span class="o">=</span><span class="s2">&quot;&quot;</span>
+    <span class="k">if</span> <span class="o">[</span> <span class="nv">$# </span>-eq <span class="m">6</span> <span class="o">]</span> <span class="p">;</span> <span class="k">then</span>
+        <span class="nv">TITLE</span><span class="o">=</span><span class="s2">&quot;&quot;</span>
         <span class="nv">SIZE</span><span class="o">=</span><span class="s2">&quot;&quot;</span>
         <span class="c"># look for title</span>
-        <span class="k">if</span> <span class="o">[</span> <span class="s2">&quot;$3&quot;</span> <span class="o">=</span> <span class="s2">&quot;-t&quot;</span> <span class="o">]</span> ; <span class="k">then</span>
-<span class="k">            </span><span class="nv">TITLE</span><span class="o">=</span><span class="s2">&quot;$4&quot;</span>
+        <span class="k">if</span> <span class="o">[</span> <span class="s2">&quot;</span><span class="nv">$3</span><span class="s2">&quot;</span> <span class="o">=</span> <span class="s2">&quot;-t&quot;</span> <span class="o">]</span> <span class="p">;</span> <span class="k">then</span>
+            <span class="nv">TITLE</span><span class="o">=</span><span class="s2">&quot;</span><span class="nv">$4</span><span class="s2">&quot;</span>
         <span class="k">fi</span>
-<span class="k">        if</span> <span class="o">[</span> <span class="s2">&quot;$5&quot;</span> <span class="o">=</span> <span class="s2">&quot;-t&quot;</span> <span class="o">]</span> ; <span class="k">then</span>
-<span class="k">            </span><span class="nv">TITLE</span><span class="o">=</span><span class="s2">&quot;$6&quot;</span>
+        <span class="k">if</span> <span class="o">[</span> <span class="s2">&quot;</span><span class="nv">$5</span><span class="s2">&quot;</span> <span class="o">=</span> <span class="s2">&quot;-t&quot;</span> <span class="o">]</span> <span class="p">;</span> <span class="k">then</span>
+            <span class="nv">TITLE</span><span class="o">=</span><span class="s2">&quot;</span><span class="nv">$6</span><span class="s2">&quot;</span>
         <span class="k">fi</span>
         <span class="c"># look for size</span>
-        <span class="k">if</span> <span class="o">[</span> <span class="s2">&quot;$3&quot;</span> <span class="o">=</span> <span class="s2">&quot;-s&quot;</span> <span class="o">]</span> ; <span class="k">then</span>
-<span class="k">            </span><span class="nv">SIZE</span><span class="o">=</span><span class="s2">&quot;$4&quot;</span>
+        <span class="k">if</span> <span class="o">[</span> <span class="s2">&quot;</span><span class="nv">$3</span><span class="s2">&quot;</span> <span class="o">=</span> <span class="s2">&quot;-s&quot;</span> <span class="o">]</span> <span class="p">;</span> <span class="k">then</span>
+            <span class="nv">SIZE</span><span class="o">=</span><span class="s2">&quot;</span><span class="nv">$4</span><span class="s2">&quot;</span>
         <span class="k">fi</span>
-<span class="k">        if</span> <span class="o">[</span> <span class="s2">&quot;$5&quot;</span> <span class="o">=</span> <span class="s2">&quot;-s&quot;</span> <span class="o">]</span> ; <span class="k">then</span>
-<span class="k">            </span><span class="nv">SIZE</span><span class="o">=</span><span class="s2">&quot;$6&quot;</span>
+        <span class="k">if</span> <span class="o">[</span> <span class="s2">&quot;</span><span class="nv">$5</span><span class="s2">&quot;</span> <span class="o">=</span> <span class="s2">&quot;-s&quot;</span> <span class="o">]</span> <span class="p">;</span> <span class="k">then</span>
+            <span class="nv">SIZE</span><span class="o">=</span><span class="s2">&quot;</span><span class="nv">$6</span><span class="s2">&quot;</span>
         <span class="k">fi</span>
-<span class="k">        if</span> <span class="o">[</span> -z <span class="s2">&quot;$TITLE&quot;</span> <span class="o">]</span> ; <span class="k">then</span>
-<span class="k">            </span><span class="nv">TITLE</span><span class="o">=</span><span class="s2">&quot;Untitled Video&quot;</span>
+        <span class="k">if</span> <span class="o">[</span> -z <span class="s2">&quot;</span><span class="nv">$TITLE</span><span class="s2">&quot;</span> <span class="o">]</span> <span class="p">;</span> <span class="k">then</span>
+            <span class="nv">TITLE</span><span class="o">=</span><span class="s2">&quot;Untitled Video&quot;</span>
         <span class="k">fi</span>
-<span class="k">        if</span> <span class="o">[</span> -z <span class="s2">&quot;$SIZE&quot;</span> <span class="o">]</span> ; <span class="k">then</span>
-<span class="k">            </span><span class="nv">SIZE</span><span class="o">=</span><span class="s2">&quot;1280x720&quot;</span>
+        <span class="k">if</span> <span class="o">[</span> -z <span class="s2">&quot;</span><span class="nv">$SIZE</span><span class="s2">&quot;</span> <span class="o">]</span> <span class="p">;</span> <span class="k">then</span>
+            <span class="nv">SIZE</span><span class="o">=</span><span class="s2">&quot;1280x720&quot;</span>
         <span class="k">fi</span>
-<span class="k">        </span>ffmpeg -i <span class="s2">&quot;$1&quot;</span> -sameq -s <span class="s2">&quot;$SIZE&quot;</span> -title <span class="s2">&quot;$TITLE&quot;</span> <span class="s2">&quot;$2&quot;</span>
+        ffmpeg -i <span class="s2">&quot;</span><span class="nv">$1</span><span class="s2">&quot;</span> -sameq -s <span class="s2">&quot;</span><span class="nv">$SIZE</span><span class="s2">&quot;</span> -title <span class="s2">&quot;</span><span class="nv">$TITLE</span><span class="s2">&quot;</span> <span class="s2">&quot;</span><span class="nv">$2</span><span class="s2">&quot;</span>
     <span class="k">else</span>
-<span class="k">        </span>ffmpeg -i <span class="s2">&quot;$1&quot;</span> -sameq -s 1280x720 <span class="s2">&quot;$2&quot;</span>
+        ffmpeg -i <span class="s2">&quot;</span><span class="nv">$1</span><span class="s2">&quot;</span> -sameq -s 1280x720 <span class="s2">&quot;</span><span class="nv">$2</span><span class="s2">&quot;</span>
     <span class="k">fi</span>
 <span class="k">fi</span>
 <span class="nb">echo </span>Done

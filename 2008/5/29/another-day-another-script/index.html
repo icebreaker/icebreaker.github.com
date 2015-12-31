@@ -14,7 +14,7 @@
 		<!-- Favicon -->
 		<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" /> 
 		<!-- Atom Feed -->
-		<link href="http://feeds.feedburner.com/szabsternet" rel="alternate" title="Mihail Szabolcs" type="application/atom+xml" /> 
+		<link href="http://feeds.feedburner.com/mihailco" rel="alternate" title="Mihail Szabolcs" type="application/atom+xml" /> 
 		<!-- Default -->
 		<link rel="stylesheet" type="text/css" href="/css/default.css" />
 		<!-- Pygments Syntax  -->
@@ -60,7 +60,7 @@
 					<li><a href="/proudify">projects</a></li>
 					<li><a href="http://github.com/icebreaker/dotfiles">dotfiles</a></li>
 					<li><a href="/about">about</a></li>
-					<li><a href="http://feeds.feedburner.com/szabsternet">rss</a></li>
+					<li><a href="http://feeds.feedburner.com/mihailco">rss</a></li>
 				</ul>
 				<div class="clear"></div>
 			</div>
@@ -84,7 +84,7 @@
 			<p>A few weeks ago I posted a script I made to make customized wallpapers for my system using twinview. Recently I made another nice little script to convert all the images in PNG format from a folder to JPG format.</p>
 <p>This is really simple and it fits my needs ... of course as always there is room for improvement :)</p>
 <div class="highlight"><pre><span class="c">#!/bin/bash</span>
-ls *.png | awk <span class="s1">&#39;{ printf(&quot;Converting %s ... &quot;,$0); \</span>
+ls *.png <span class="p">|</span> awk <span class="s1">&#39;{ printf(&quot;Converting %s ... &quot;,$0); \</span>
 <span class="s1">system(&quot;convert &quot; $0 &quot; &quot; substr($0,0,length($0)-3)&quot;.jpg&quot; ); \</span>
 <span class="s1">printf(&quot;Done!\n&quot;); }&#39;</span>
 </pre></div>

@@ -1,6 +1,6 @@
 title: 'Mihail Szabolcs'
-url: 'http://szabster.net/'
+url: 'http://mihail.co/'
 author: 'Mihail Szabolcs'
 files: ['_posts/*.markdown', '_drafts/*.markdown', '_pages/*.*']
-extra_files: ['lera3d', 'files', 'css', 'js', 'fonts', 'images', 'favicon.ico', 'CNAME', 'README.md']
+extra_files: ['3', 'files', 'css', 'js', 'fonts', 'images', 'favicon.ico', 'CNAME', 'README.md']
 output_dir: '../'

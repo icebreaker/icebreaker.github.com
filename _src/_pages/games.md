@@ -6,6 +6,50 @@ propaganda: 5
 This page contains a selection of my **game** related projects.
 For a complete list of *all my projects* please click [here](/proudify).
 
+Deermas
+-------
+A mini adventure game for [Maral](http://twitter.com/_maral).
+
+![](/images/games/deermas.png)
+
+You can find out more about it over
+[here](http://github.com/icebreaker/deermas). If you just want to play it, you
+can do so by clicking
+[here](/deermas).
+
+Bricks of Babel
+---------------
+Bricks of Babel is a physics based tower building game. Initially built for [Ludum Dare](http://ludumdare.com).
+
+![](/images/games/bob.png)
+
+You can find out more about it over
+[here](http://github.com/icebreaker/bricksofbabel). If you just want to play it, you
+can do so by clicking
+[here](/bricksofbabel).
+
+3
+-
+Minimalist *Breakout clone*.
+
+![](/images/games/3.png)
+
+If you want to play it, you can do so by clicking [here](/3).
+
+2dimagefilter
+-------------
+I *forked* [2dimagefilter](https://code.google.com/p/2dimagefilter/) and removed all exotic *GUI*
+crap, basically everything that wasn't *implemented* by Mono.
+
+The command line interface is now usable on any platform where Mono is supported.
+
+```bash
+ImageResizer /load in.png /resize auto "XBR 4x(2,thresholds=0,vbounds=wrap)" /save out.png
+```
+
+You can find out more about it over
+[here](http://github.com/icebreaker/2dimagefilter).
+
 Simon8
 ------
 Simon8 is a Chip 8 disassembler and emulator written in C.

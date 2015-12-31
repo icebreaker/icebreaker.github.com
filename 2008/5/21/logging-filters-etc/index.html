@@ -14,7 +14,7 @@
 		<!-- Favicon -->
 		<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" /> 
 		<!-- Atom Feed -->
-		<link href="http://feeds.feedburner.com/szabsternet" rel="alternate" title="Mihail Szabolcs" type="application/atom+xml" /> 
+		<link href="http://feeds.feedburner.com/mihailco" rel="alternate" title="Mihail Szabolcs" type="application/atom+xml" /> 
 		<!-- Default -->
 		<link rel="stylesheet" type="text/css" href="/css/default.css" />
 		<!-- Pygments Syntax  -->
@@ -60,7 +60,7 @@
 					<li><a href="/proudify">projects</a></li>
 					<li><a href="http://github.com/icebreaker/dotfiles">dotfiles</a></li>
 					<li><a href="/about">about</a></li>
-					<li><a href="http://feeds.feedburner.com/szabsternet">rss</a></li>
+					<li><a href="http://feeds.feedburner.com/mihailco">rss</a></li>
 				</ul>
 				<div class="clear"></div>
 			</div>
@@ -126,16 +126,16 @@
     <span class="n">va_end</span><span class="p">(</span><span class="n">ap</span><span class="p">);</span>
     <span class="k">switch</span><span class="p">(</span> <span class="n">logLevel</span> <span class="p">)</span>
     <span class="p">{</span>
-        <span class="k">case</span> <span class="n">Log</span>:<span class="o">:</span><span class="n">Info</span><span class="o">:</span>
+        <span class="k">case</span> <span class="n">Log</span><span class="o">::</span><span class="nl">Info</span><span class="p">:</span>
             <span class="n">printf</span><span class="p">(</span> <span class="s">&quot;INFO: %s</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span> <span class="n">text</span> <span class="p">);</span>
             <span class="k">break</span><span class="p">;</span>
-        <span class="k">case</span> <span class="n">Log</span>:<span class="o">:</span><span class="n">Warning</span><span class="o">:</span>
+        <span class="k">case</span> <span class="n">Log</span><span class="o">::</span><span class="nl">Warning</span><span class="p">:</span>
             <span class="n">printf</span><span class="p">(</span> <span class="s">&quot;WARNING: %s</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span> <span class="n">text</span> <span class="p">);</span>
             <span class="k">break</span><span class="p">;</span>
-        <span class="k">case</span> <span class="n">Log</span>:<span class="o">:</span><span class="n">Error</span><span class="o">:</span>
+        <span class="k">case</span> <span class="n">Log</span><span class="o">::</span><span class="nl">Error</span><span class="p">:</span>
             <span class="n">printf</span><span class="p">(</span> <span class="s">&quot;ERROR: %s</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span> <span class="n">text</span> <span class="p">);</span>
             <span class="k">break</span><span class="p">;</span>
-        <span class="nl">default:</span>
+        <span class="k">default</span><span class="o">:</span>
             <span class="n">printf</span><span class="p">(</span> <span class="s">&quot;%s</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span> <span class="n">text</span> <span class="p">);</span>
             <span class="k">break</span><span class="p">;</span>
     <span class="p">}</span>

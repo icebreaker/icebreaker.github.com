@@ -14,7 +14,7 @@
 		<!-- Favicon -->
 		<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" /> 
 		<!-- Atom Feed -->
-		<link href="http://feeds.feedburner.com/szabsternet" rel="alternate" title="Mihail Szabolcs" type="application/atom+xml" /> 
+		<link href="http://feeds.feedburner.com/mihailco" rel="alternate" title="Mihail Szabolcs" type="application/atom+xml" /> 
 		<!-- Default -->
 		<link rel="stylesheet" type="text/css" href="/css/default.css" />
 		<!-- Pygments Syntax  -->
@@ -60,7 +60,7 @@
 					<li><a href="/proudify">projects</a></li>
 					<li><a href="http://github.com/icebreaker/dotfiles">dotfiles</a></li>
 					<li><a href="/about">about</a></li>
-					<li><a href="http://feeds.feedburner.com/szabsternet">rss</a></li>
+					<li><a href="http://feeds.feedburner.com/mihailco">rss</a></li>
 				</ul>
 				<div class="clear"></div>
 			</div>
@@ -93,14 +93,14 @@ vim Makefile
 
 <span class="nv">formula_test_objects</span> <span class="o">=</span> filesystem.o formula_function.o formula_tokenizer.o string_utils.o variant.o wml_node.o wml_parser.o wml_utils.o wml_writer.o
 
-<span class="nf">%.o </span><span class="o">:</span> <span class="m">src/%.cpp</span>
-<span class="err">g++</span> <span class="err">-g</span> <span class="err">-O2</span> <span class="err">-I/usr/local/include/boost-1_34</span> <span class="err">-I/usr/include/SDL</span> <span class="err">-I/usr/X11R6/include</span> <span class="nv">-D_GNU_SOURCE</span><span class="o">=</span>1 -D_REENTRANT -Wnon-virtual-dtor -Wreturn-type -fthreadsafe-statics -c <span class="nv">$&lt;</span>
+<span class="nf">%.o </span><span class="o">:</span> <span class="n">src</span>/%.<span class="n">cpp</span>
+<span class="err">g++</span> <span class="err">-g</span> <span class="err">-O2</span> <span class="err">-I/usr/local/include/boost-1_34</span> <span class="err">-I/usr/include/SDL</span> <span class="err">-I/usr/X11R6/include</span> <span class="nv">-D_GNU_SOURCE</span><span class="o">=</span><span class="m">1</span> -D_REENTRANT -Wnon-virtual-dtor -Wreturn-type -fthreadsafe-statics -c <span class="nv">$&lt;</span>
 
-<span class="nf">game</span><span class="o">:</span> <span class="m">$(objects)</span>
-<span class="err">g++</span> <span class="err">-g</span> <span class="err">-O2</span> <span class="err">-L/usr/lib</span> <span class="err">-L/usr/X11R6/lib</span> <span class="err">-lX11</span> <span class="nv">-D_GNU_SOURCE</span><span class="o">=</span>1 -D_REENTRANT -Wnon-virtual-dtor -Wreturn-type -L/usr/lib -lSDLmain -lSDL -lGL -lGLU -lSDL_image -lSDL_ttf -lSDL_mixer -lboost_regex -lboost_thread-mt -fthreadsafe-statics *.o -o game
+<span class="nf">game</span><span class="o">:</span> <span class="k">$(</span><span class="nv">objects</span><span class="k">)</span>
+<span class="err">g++</span> <span class="err">-g</span> <span class="err">-O2</span> <span class="err">-L/usr/lib</span> <span class="err">-L/usr/X11R6/lib</span> <span class="err">-lX11</span> <span class="nv">-D_GNU_SOURCE</span><span class="o">=</span><span class="m">1</span> -D_REENTRANT -Wnon-virtual-dtor -Wreturn-type -L/usr/lib -lSDLmain -lSDL -lGL -lGLU -lSDL_image -lSDL_ttf -lSDL_mixer -lboost_regex -lboost_thread-mt -fthreadsafe-statics *.o -o game
 
-<span class="nf">formula_test</span><span class="o">:</span> <span class="m">$(formula_test_objects)</span>
-<span class="err">g++</span> <span class="err">-O2</span> <span class="err">-g</span> <span class="err">-I/usr/include/SDL</span> <span class="nv">-D_GNU_SOURCE</span><span class="o">=</span>1 -D_REENTRANT -DUNIT_TEST_FORMULA -Wnon-virtual-dtor -Wreturn-type -L/usr/lib -lSDL -lGL -lGLU -lSDL_image -lSDL_ttf -lSDL_mixer -lboost_regex src/formula.cpp <span class="k">$(</span>formula_test_objects<span class="k">)</span> -o <span class="nb">test</span>
+<span class="nf">formula_test</span><span class="o">:</span> <span class="k">$(</span><span class="nv">formula_test_objects</span><span class="k">)</span>
+<span class="err">g++</span> <span class="err">-O2</span> <span class="err">-g</span> <span class="err">-I/usr/include/SDL</span> <span class="nv">-D_GNU_SOURCE</span><span class="o">=</span><span class="m">1</span> -D_REENTRANT -DUNIT_TEST_FORMULA -Wnon-virtual-dtor -Wreturn-type -L/usr/lib -lSDL -lGL -lGLU -lSDL_image -lSDL_ttf -lSDL_mixer -lboost_regex src/formula.cpp <span class="k">$(</span>formula_test_objects<span class="k">)</span> -o <span class="nb">test</span>
 
 <span class="nf">clean</span><span class="o">:</span>
 <span class="err">rm</span> <span class="err">*.o</span> <span class="err">game</span>

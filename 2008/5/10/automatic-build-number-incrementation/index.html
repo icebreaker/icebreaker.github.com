@@ -14,7 +14,7 @@
 		<!-- Favicon -->
 		<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" /> 
 		<!-- Atom Feed -->
-		<link href="http://feeds.feedburner.com/szabsternet" rel="alternate" title="Mihail Szabolcs" type="application/atom+xml" /> 
+		<link href="http://feeds.feedburner.com/mihailco" rel="alternate" title="Mihail Szabolcs" type="application/atom+xml" /> 
 		<!-- Default -->
 		<link rel="stylesheet" type="text/css" href="/css/default.css" />
 		<!-- Pygments Syntax  -->
@@ -60,7 +60,7 @@
 					<li><a href="/proudify">projects</a></li>
 					<li><a href="http://github.com/icebreaker/dotfiles">dotfiles</a></li>
 					<li><a href="/about">about</a></li>
-					<li><a href="http://feeds.feedburner.com/szabsternet">rss</a></li>
+					<li><a href="http://feeds.feedburner.com/mihailco">rss</a></li>
 				</ul>
 				<div class="clear"></div>
 			</div>
@@ -84,7 +84,7 @@
 			<p>Automatic build number incrementation always was a <em>hot topic</em> especially under Linux. My solution is fairly simple to implement, so let's see some "code" right away:</p>
 <div class="highlight"><pre><span class="c">#!/bin/bash</span>
 <span class="nb">echo </span>Fetching and updating build number ...
-cat Core/Build.cpp | awk <span class="s1">&#39;{ printf(&quot;unsigned int g_internalbuildNumber = %d ;\n&quot;,$5+1); }&#39;</span> &gt; Core/_Build.cpp
+cat Core/Build.cpp <span class="p">|</span> awk <span class="s1">&#39;{ printf(&quot;unsigned int g_internalbuildNumber = %d ;\n&quot;,$5+1); }&#39;</span> &gt; Core/_Build.cpp
 rm Core/Build.cpp
 mv Core/_Build.cpp Core/Build.cpp
 </pre></div>
