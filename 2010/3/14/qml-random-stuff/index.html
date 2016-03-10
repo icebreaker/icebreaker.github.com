@@ -22,7 +22,7 @@
 		<!-- Blog  -->
 		<link rel="stylesheet" type="text/css" href="/css/blog.css" />
 		<!-- Fonts -->
-		<link href="http://fonts.googleapis.com/css?family=Droid+Sans|Droid+Sans+Mono|Oxygen" rel="stylesheet" type="text/css" />
+		<link href="http://fonts.googleapis.com/css?family=Droid+Sans|Droid+Sans+Mono|Andada" rel="stylesheet" type="text/css" />
 		
 		
 		<script type="text/javascript">
@@ -120,10 +120,10 @@ paths (fixed or shader), etc.</p>
 <p><a href="/images/2010/03/0ad-animals-closeup.png" class="image">
 <img src="/images/2010/03/0ad-animals-closeup_thumb.png"></a></p>
 <p>The actual code base is quite messy and not everything is clearly separated or grouped together where necessary.</p>
-<div class="highlight"><pre>c0d3rguy@Seth:/opt/0ad/source/maths<span class="nv">$ </span>ls -l
+<div class="highlight"><pre><span></span>c0d3rguy@Seth:/opt/0ad/source/maths$ ls -l
 total 160
--rw-r--r-- <span class="m">1</span> c0d3rguy c0d3rguy  <span class="m">6315</span> 2010-03-13 16:59 Bound.cpp       <span class="c"># point of interest</span>
--rw-r--r-- <span class="m">1</span> c0d3rguy c0d3rguy  <span class="m">2717</span> 2010-03-13 16:59 Bound.h     <span class="c"># point of interest</span>
+-rw-r--r-- <span class="m">1</span> c0d3rguy c0d3rguy  <span class="m">6315</span> 2010-03-13 16:59 Bound.cpp       <span class="c1"># point of interest</span>
+-rw-r--r-- <span class="m">1</span> c0d3rguy c0d3rguy  <span class="m">2717</span> 2010-03-13 16:59 Bound.h     <span class="c1"># point of interest</span>
 -rw-r--r-- <span class="m">1</span> c0d3rguy c0d3rguy  <span class="m">7913</span> 2010-03-13 16:59 Brush.cpp
 -rw-r--r-- <span class="m">1</span> c0d3rguy c0d3rguy  <span class="m">2521</span> 2010-03-13 16:59 Brush.h
 -rw-r--r-- <span class="m">1</span> c0d3rguy c0d3rguy  <span class="m">1422</span> 2010-03-13 16:59 Fixed.cpp
@@ -139,8 +139,8 @@ total 160
 -rw-r--r-- <span class="m">1</span> c0d3rguy c0d3rguy  <span class="m">1643</span> 2010-03-13 16:59 Noise.h
 -rw-r--r-- <span class="m">1</span> c0d3rguy c0d3rguy  <span class="m">7260</span> 2010-03-13 16:59 NUSpline.cpp
 -rw-r--r-- <span class="m">1</span> c0d3rguy c0d3rguy  <span class="m">2560</span> 2010-03-13 16:59 NUSpline.h
--rw-r--r-- <span class="m">1</span> c0d3rguy c0d3rguy  <span class="m">3152</span> 2010-03-13 16:59 Plane.cpp       <span class="c"># point of interest</span>
--rw-r--r-- <span class="m">1</span> c0d3rguy c0d3rguy  <span class="m">2015</span> 2010-03-13 16:59 Plane.h     <span class="c"># point of interest</span>
+-rw-r--r-- <span class="m">1</span> c0d3rguy c0d3rguy  <span class="m">3152</span> 2010-03-13 16:59 Plane.cpp       <span class="c1"># point of interest</span>
+-rw-r--r-- <span class="m">1</span> c0d3rguy c0d3rguy  <span class="m">2015</span> 2010-03-13 16:59 Plane.h     <span class="c1"># point of interest</span>
 -rw-r--r-- <span class="m">1</span> c0d3rguy c0d3rguy  <span class="m">7352</span> 2010-03-13 16:59 Quaternion.cpp
 -rw-r--r-- <span class="m">1</span> c0d3rguy c0d3rguy  <span class="m">2291</span> 2010-03-13 16:59 Quaternion.h
 drwxr-xr-x <span class="m">3</span> c0d3rguy c0d3rguy  <span class="m">4096</span> 2010-03-13 16:59 scripting
@@ -171,7 +171,7 @@ a good idea to merge all these into the <strong>renderer</strong> . [The frustum
 <p>In <strong>source/renderer</strong> the render paths are OK, they are well separated but I feel like it has been over engineered, it's clearly visible
 that all these parts have been hacked together in order to create something which works rather than designing it carefully .</p>
 <p>An example of this hacky design from <strong>source/renderer/Renderer.cpp</strong>:</p>
-<div class="highlight"><pre><span class="kt">bool</span> <span class="n">CRenderer</span><span class="o">::</span><span class="n">IsTextureTransparent</span><span class="p">(</span><span class="n">CTexture</span><span class="o">*</span> <span class="n">texture</span><span class="p">)</span>
+<div class="highlight"><pre><span></span><span class="kt">bool</span> <span class="n">CRenderer</span><span class="o">::</span><span class="n">IsTextureTransparent</span><span class="p">(</span><span class="n">CTexture</span><span class="o">*</span> <span class="n">texture</span><span class="p">)</span>
 <span class="p">{</span>
     <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="n">texture</span><span class="p">)</span> <span class="k">return</span> <span class="nb">false</span><span class="p">;</span>
     <span class="n">Handle</span> <span class="n">h</span><span class="o">=</span><span class="n">texture</span><span class="o">-&gt;</span><span class="n">GetHandle</span><span class="p">();</span>

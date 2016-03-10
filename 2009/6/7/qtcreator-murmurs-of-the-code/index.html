@@ -22,7 +22,7 @@
 		<!-- Blog  -->
 		<link rel="stylesheet" type="text/css" href="/css/blog.css" />
 		<!-- Fonts -->
-		<link href="http://fonts.googleapis.com/css?family=Droid+Sans|Droid+Sans+Mono|Oxygen" rel="stylesheet" type="text/css" />
+		<link href="http://fonts.googleapis.com/css?family=Droid+Sans|Droid+Sans+Mono|Andada" rel="stylesheet" type="text/css" />
 		
 		
 		<script type="text/javascript">
@@ -83,7 +83,7 @@
 
 			<p>QtCreator has a quite strict coding style, but there is one important thing I would like to highlight. The pollution of the header files is minimal ... and when I'm say pollution I'm referring to the inclusion of other header files.</p>
 <p>If you look at a regular header file from the code base, you will notice stuff like this:</p>
-<div class="highlight"><pre><span class="k">namespace</span> <span class="n">Core</span>
+<div class="highlight"><pre><span></span><span class="k">namespace</span> <span class="n">Core</span>
 <span class="p">{</span>
     <span class="k">class</span> <span class="nc">someclass</span><span class="p">;</span>
     <span class="k">namespace</span> <span class="n">Internal</span>
@@ -104,7 +104,7 @@
 </pre></div>
 
 <p>Instead of doing something like this:</p>
-<div class="highlight"><pre><span class="cp">#include &lt;Core/Internal&gt;</span>
+<div class="highlight"><pre><span></span><span class="cp">#include</span> <span class="cpf">&lt;Core/Internal&gt;</span><span class="cp"></span>
 
 <span class="k">using</span> <span class="k">namespace</span> <span class="n">Core</span><span class="o">::</span><span class="n">Internal</span><span class="p">;</span>
 

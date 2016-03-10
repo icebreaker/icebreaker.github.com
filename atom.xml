@@ -70,11 +70,11 @@ can do so by clicking &lt;a href="http://mihail.co/bricksofbabel"&gt;here&lt;/a&
 &lt;p&gt;This is something that I wanted to do for so long, but never really took the time to do it.
 Here it is, full blown suite of tools composed of a disassembler and an emulator for the Chip 8.&lt;/p&gt;
 &lt;p&gt;The tools follow the *nix principles and support pipes, as well as file arguments.&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;build/disasm roms/MAZE
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;build/disasm roms/MAZE
 cat roms/MAZE &lt;span class="p"&gt;|&lt;/span&gt; build/disasm
 &lt;/pre&gt;&lt;/div&gt;
 
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="err"&gt;0&lt;/span&gt;&lt;span class="nl"&gt;x200:&lt;/span&gt; &lt;span class="nf"&gt;LD&lt;/span&gt;    &lt;span class="no"&gt;I&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;0x21E&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="err"&gt;0&lt;/span&gt;&lt;span class="nl"&gt;x200:&lt;/span&gt; &lt;span class="nf"&gt;LD&lt;/span&gt;    &lt;span class="no"&gt;I&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;0x21E&lt;/span&gt;
 &lt;span class="err"&gt;0&lt;/span&gt;&lt;span class="nl"&gt;x202:&lt;/span&gt; &lt;span class="nf"&gt;RND&lt;/span&gt;  &lt;span class="no"&gt;V2&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;0x01&lt;/span&gt;
 &lt;span class="err"&gt;0&lt;/span&gt;&lt;span class="nl"&gt;x204:&lt;/span&gt; &lt;span class="nf"&gt;SE&lt;/span&gt;   &lt;span class="no"&gt;V2&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;0x01&lt;/span&gt;
 &lt;span class="err"&gt;0&lt;/span&gt;&lt;span class="nl"&gt;x206:&lt;/span&gt; &lt;span class="nf"&gt;LD&lt;/span&gt;    &lt;span class="no"&gt;I&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;0x21A&lt;/span&gt;
@@ -131,7 +131,7 @@ any &lt;em&gt;DOS&lt;/em&gt; like environment.&lt;/p&gt;
 &lt;p&gt;I &lt;em&gt;forked&lt;/em&gt; &lt;a href="https://code.google.com/p/2dimagefilter/"&gt;2dimagefilter&lt;/a&gt; and removed all exotic &lt;em&gt;GUI&lt;/em&gt;
 crap, basically everything that wasn't &lt;em&gt;implemented&lt;/em&gt; by Mono.&lt;/p&gt;
 &lt;p&gt;The command line interface is now usable on any platform where Mono is supported.&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;ImageResizer /load in.png /resize auto &lt;span class="s2"&gt;&amp;quot;XBR 4x(2,thresholds=0,vbounds=wrap)&amp;quot;&lt;/span&gt; /save out.png
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;ImageResizer /load in.png /resize auto &lt;span class="s2"&gt;&amp;quot;XBR 4x(2,thresholds=0,vbounds=wrap)&amp;quot;&lt;/span&gt; /save out.png
 &lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;You can find out more about it over
@@ -252,7 +252,7 @@ a series of separate posts starting next year.&lt;/p&gt;
 &lt;a name="Jsonoid"&gt;&lt;/a&gt;
 &lt;h2&gt;Jsonoid&lt;/h2&gt;
 &lt;p&gt;A simple serverless NoSQL (JSON) document storage system.&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nb"&gt;require&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;jsonoid&amp;#39;&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="nb"&gt;require&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;jsonoid&amp;#39;&lt;/span&gt;
 
 &lt;span class="no"&gt;Jsonoid&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;configure&lt;/span&gt; &lt;span class="k"&gt;do&lt;/span&gt; &lt;span class="o"&gt;|&lt;/span&gt;&lt;span class="n"&gt;config&lt;/span&gt;&lt;span class="o"&gt;|&lt;/span&gt;
   &lt;span class="n"&gt;config&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;db&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="no"&gt;File&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;join&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="no"&gt;File&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;dirname&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="bp"&gt;__FILE__&lt;/span&gt;&lt;span class="p"&gt;),&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;db&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
@@ -294,7 +294,7 @@ a series of separate posts starting next year.&lt;/p&gt;
 &lt;a name="nanoenum.rb"&gt;&lt;/a&gt;
 &lt;h2&gt;nanoenum.rb&lt;/h2&gt;
 &lt;p&gt;A small &lt;code&gt;enum&lt;/code&gt; implementation for Ruby.&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="k"&gt;class&lt;/span&gt; &lt;span class="nc"&gt;Model&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="k"&gt;class&lt;/span&gt; &lt;span class="nc"&gt;Model&lt;/span&gt;
   &lt;span class="kp"&gt;include&lt;/span&gt; &lt;span class="no"&gt;Mongoid&lt;/span&gt;&lt;span class="o"&gt;::&lt;/span&gt;&lt;span class="no"&gt;Document&lt;/span&gt;
   &lt;span class="kp"&gt;include&lt;/span&gt; &lt;span class="no"&gt;NanoEnum&lt;/span&gt;
 
@@ -315,7 +315,7 @@ a series of separate posts starting next year.&lt;/p&gt;
 &lt;a name="vm.rb"&gt;&lt;/a&gt;
 &lt;h2&gt;vm.rb&lt;/h2&gt;
 &lt;p&gt;A small "experimental" (x86 like) &lt;em&gt;virtual machine&lt;/em&gt; written in Ruby.&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="c1"&gt;;&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="c1"&gt;;&lt;/span&gt;
 &lt;span class="c1"&gt;; Prints first N from the Fibonacci sequence.&lt;/span&gt;
 &lt;span class="c1"&gt;;&lt;/span&gt;
 &lt;span class="nl"&gt;read_n:&lt;/span&gt;
@@ -345,7 +345,7 @@ a series of separate posts starting next year.&lt;/p&gt;
   &lt;span class="nf"&gt;jne&lt;/span&gt; &lt;span class="nv"&gt;loop&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
-&lt;div class="highlight"&gt;&lt;pre&gt;ruby vm.rb fibo.asm
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;ruby vm.rb fibo.asm
 &lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;You can find out more about it over &lt;a href="https://gist.github.com/icebreaker/3c260812b94ff434c303"&gt;here&lt;/a&gt;.&lt;/p&gt;
@@ -375,7 +375,7 @@ a series of separate posts starting next year.&lt;/p&gt;
 to wish me 'Happy Birthday' on Facebook.&lt;/p&gt;
 &lt;p&gt;I made an &lt;a href="https://developers.facebook.com/docs/technical-guides/fql/"&gt;FQL&lt;/a&gt; query to extract 
 this data in order to play with it just for the LoLs.&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="k"&gt;SELECT&lt;/span&gt; &lt;span class="n"&gt;relationship_status&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;sex&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;birthday_date&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;current_location&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;devices&lt;/span&gt; &lt;span class="k"&gt;FROM&lt;/span&gt; &lt;span class="k"&gt;user&lt;/span&gt; 
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="k"&gt;SELECT&lt;/span&gt; &lt;span class="n"&gt;relationship_status&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;sex&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;birthday_date&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;current_location&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;devices&lt;/span&gt; &lt;span class="k"&gt;FROM&lt;/span&gt; &lt;span class="k"&gt;user&lt;/span&gt; 
 &lt;span class="k"&gt;WHERE&lt;/span&gt; &lt;span class="n"&gt;uid&lt;/span&gt; &lt;span class="o"&gt;!=&lt;/span&gt; &lt;span class="n"&gt;me&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt; &lt;span class="k"&gt;AND&lt;/span&gt; &lt;span class="n"&gt;uid&lt;/span&gt; &lt;span class="k"&gt;IN&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="k"&gt;SELECT&lt;/span&gt; &lt;span class="n"&gt;actor_id&lt;/span&gt; &lt;span class="k"&gt;FROM&lt;/span&gt; &lt;span class="n"&gt;stream&lt;/span&gt; &lt;span class="k"&gt;WHERE&lt;/span&gt; &lt;span class="n"&gt;source_id&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;me&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
 &lt;span class="k"&gt;AND&lt;/span&gt; &lt;span class="n"&gt;created_time&lt;/span&gt; &lt;span class="o"&gt;&amp;gt;&lt;/span&gt;  &lt;span class="mi"&gt;1360353517&lt;/span&gt; &lt;span class="k"&gt;AND&lt;/span&gt; &lt;span class="n"&gt;created_time&lt;/span&gt; &lt;span class="o"&gt;&amp;lt;&lt;/span&gt; &lt;span class="mi"&gt;1360622536&lt;/span&gt; &lt;span class="k"&gt;LIMIT&lt;/span&gt; &lt;span class="mi"&gt;100&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
@@ -904,11 +904,11 @@ justify having them at all. Who the hell is going to browse your posts by tags n
 &lt;p&gt;The comments are also gone (bye, bye little Troll creatures) so you'll be forced
 to think twice before your dirty little fingers hit the keyboard.&lt;/p&gt;
 &lt;p&gt;Much nicer and richer syntax highlighting:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;HelloWorld&lt;/span&gt;&lt;span class="p"&gt;():&lt;/span&gt;
-    &lt;span class="k"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;&amp;#39;Hello World&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;HelloWorld&lt;/span&gt;&lt;span class="p"&gt;():&lt;/span&gt;
+    &lt;span class="k"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;Hello World&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="k"&gt;class&lt;/span&gt; &lt;span class="nc"&gt;HelloWorld&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="k"&gt;class&lt;/span&gt; &lt;span class="nc"&gt;HelloWorld&lt;/span&gt;
 &lt;span class="p"&gt;{&lt;/span&gt;
     &lt;span class="k"&gt;public&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;
         &lt;span class="n"&gt;HelloWorld&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="kt"&gt;void&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="p"&gt;{}&lt;/span&gt;
@@ -1504,7 +1504,7 @@ and &lt;em&gt;Wolfenstein: Enemy Territory&lt;/em&gt; both using modified versio
 on my Linux Box.&lt;/p&gt;
 &lt;p&gt;I don't own the &lt;em&gt;original&lt;/em&gt; &lt;strong&gt;Return to Castle&lt;/strong&gt; game so I searched for the demo version and copied the PAK file containing the game data. &lt;/p&gt;
 &lt;p&gt;Everything worked fine, except the sound which can be fixed easily:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;su
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;su
 &lt;span class="nb"&gt;echo&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;wolfsp.x86 0 0 direct&amp;quot;&lt;/span&gt; &amp;gt; /proc/asound/card0/pcm0p/oss
 &lt;/pre&gt;&lt;/div&gt;
 
@@ -1653,9 +1653,9 @@ don't have to worry about it.&lt;/p&gt;
 &lt;p&gt;There's also automatic dependency linking which can be turned off if needed, but it comes handy when you have to link
 to modules with an executable module.&lt;/p&gt;
 &lt;p&gt;For this scenario the RakeBuild project file for the executable would be something like this:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="l-Scalar-Plain"&gt;name&lt;/span&gt;&lt;span class="p-Indicator"&gt;:&lt;/span&gt; &lt;span class="l-Scalar-Plain"&gt;hello_world&lt;/span&gt;
-&lt;span class="l-Scalar-Plain"&gt;type&lt;/span&gt;&lt;span class="p-Indicator"&gt;:&lt;/span&gt; &lt;span class="l-Scalar-Plain"&gt;app&lt;/span&gt;
-&lt;span class="l-Scalar-Plain"&gt;deps&lt;/span&gt;&lt;span class="p-Indicator"&gt;:&lt;/span&gt; &lt;span class="p-Indicator"&gt;[&lt;/span&gt;&lt;span class="nv"&gt;lib1&lt;/span&gt;&lt;span class="p-Indicator"&gt;,&lt;/span&gt; &lt;span class="nv"&gt;lib2&lt;/span&gt;&lt;span class="p-Indicator"&gt;]&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="l l-Scalar l-Scalar-Plain"&gt;name&lt;/span&gt;&lt;span class="p p-Indicator"&gt;:&lt;/span&gt; &lt;span class="l l-Scalar l-Scalar-Plain"&gt;hello_world&lt;/span&gt;
+&lt;span class="l l-Scalar l-Scalar-Plain"&gt;type&lt;/span&gt;&lt;span class="p p-Indicator"&gt;:&lt;/span&gt; &lt;span class="l l-Scalar l-Scalar-Plain"&gt;app&lt;/span&gt;
+&lt;span class="l l-Scalar l-Scalar-Plain"&gt;deps&lt;/span&gt;&lt;span class="p p-Indicator"&gt;:&lt;/span&gt; &lt;span class="p p-Indicator"&gt;[&lt;/span&gt;&lt;span class="nv"&gt;lib1&lt;/span&gt;&lt;span class="p p-Indicator"&gt;,&lt;/span&gt; &lt;span class="nv"&gt;lib2&lt;/span&gt;&lt;span class="p p-Indicator"&gt;]&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;The &lt;strong&gt;deps&lt;/strong&gt; is an array of module directory names from within the top level &lt;em&gt;src&lt;/em&gt; directory; with automatic dependency
@@ -1673,7 +1673,7 @@ by looking at the provided samples.&lt;/p&gt;
 can be done in a lot more elegant or simpler way .&lt;/p&gt;
 &lt;p&gt;With a simple Makefile like below, RakeBuild can be used with QT Creator or other IDEs which have support for &lt;em&gt;importing&lt;/em&gt; 
 existing Makefile based projects.&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nf"&gt;all&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="nf"&gt;all&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;
     rake
 &lt;span class="nf"&gt;release&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;
     rake release
@@ -1891,8 +1891,8 @@ you will get a blank screen on boot, this is because the kernel module doesn't r
 gnome-power-manager seems to ignore the brightness value and resets it to 100%, at least on this ASUS K50AB series laptop.&lt;/p&gt;
 &lt;p&gt;To overcome this brightness issue, I wrote a small script which I execute to reduce the brightness (0..15).&lt;/p&gt;
 &lt;p&gt;(this will get fixed eventually before the release)&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="c"&gt;#!/bin/bash&lt;/span&gt;
-&lt;span class="nb"&gt;echo &lt;/span&gt;&lt;span class="m"&gt;8&lt;/span&gt; &amp;gt; /proc/acpi/video/VGA1/LCDD/brightness
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="ch"&gt;#!/bin/bash&lt;/span&gt;
+&lt;span class="nb"&gt;echo&lt;/span&gt; &lt;span class="m"&gt;8&lt;/span&gt; &amp;gt; /proc/acpi/video/VGA1/LCDD/brightness
 &lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;Ah, I almost forgot, it's easy to move the buttons to the right corner in metacity.&lt;/p&gt;
@@ -1967,10 +1967,10 @@ paths (fixed or shader), etc.&lt;/p&gt;
 &lt;p&gt;&lt;a href="http://mihail.co/images/2010/03/0ad-animals-closeup.png" class="image"&gt;
 &lt;img src="http://mihail.co/images/2010/03/0ad-animals-closeup_thumb.png"&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;The actual code base is quite messy and not everything is clearly separated or grouped together where necessary.&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;c0d3rguy@Seth:/opt/0ad/source/maths&lt;span class="nv"&gt;$ &lt;/span&gt;ls -l
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;c0d3rguy@Seth:/opt/0ad/source/maths$ ls -l
 total 160
--rw-r--r-- &lt;span class="m"&gt;1&lt;/span&gt; c0d3rguy c0d3rguy  &lt;span class="m"&gt;6315&lt;/span&gt; 2010-03-13 16:59 Bound.cpp       &lt;span class="c"&gt;# point of interest&lt;/span&gt;
--rw-r--r-- &lt;span class="m"&gt;1&lt;/span&gt; c0d3rguy c0d3rguy  &lt;span class="m"&gt;2717&lt;/span&gt; 2010-03-13 16:59 Bound.h     &lt;span class="c"&gt;# point of interest&lt;/span&gt;
+-rw-r--r-- &lt;span class="m"&gt;1&lt;/span&gt; c0d3rguy c0d3rguy  &lt;span class="m"&gt;6315&lt;/span&gt; 2010-03-13 16:59 Bound.cpp       &lt;span class="c1"&gt;# point of interest&lt;/span&gt;
+-rw-r--r-- &lt;span class="m"&gt;1&lt;/span&gt; c0d3rguy c0d3rguy  &lt;span class="m"&gt;2717&lt;/span&gt; 2010-03-13 16:59 Bound.h     &lt;span class="c1"&gt;# point of interest&lt;/span&gt;
 -rw-r--r-- &lt;span class="m"&gt;1&lt;/span&gt; c0d3rguy c0d3rguy  &lt;span class="m"&gt;7913&lt;/span&gt; 2010-03-13 16:59 Brush.cpp
 -rw-r--r-- &lt;span class="m"&gt;1&lt;/span&gt; c0d3rguy c0d3rguy  &lt;span class="m"&gt;2521&lt;/span&gt; 2010-03-13 16:59 Brush.h
 -rw-r--r-- &lt;span class="m"&gt;1&lt;/span&gt; c0d3rguy c0d3rguy  &lt;span class="m"&gt;1422&lt;/span&gt; 2010-03-13 16:59 Fixed.cpp
@@ -1986,8 +1986,8 @@ total 160
 -rw-r--r-- &lt;span class="m"&gt;1&lt;/span&gt; c0d3rguy c0d3rguy  &lt;span class="m"&gt;1643&lt;/span&gt; 2010-03-13 16:59 Noise.h
 -rw-r--r-- &lt;span class="m"&gt;1&lt;/span&gt; c0d3rguy c0d3rguy  &lt;span class="m"&gt;7260&lt;/span&gt; 2010-03-13 16:59 NUSpline.cpp
 -rw-r--r-- &lt;span class="m"&gt;1&lt;/span&gt; c0d3rguy c0d3rguy  &lt;span class="m"&gt;2560&lt;/span&gt; 2010-03-13 16:59 NUSpline.h
--rw-r--r-- &lt;span class="m"&gt;1&lt;/span&gt; c0d3rguy c0d3rguy  &lt;span class="m"&gt;3152&lt;/span&gt; 2010-03-13 16:59 Plane.cpp       &lt;span class="c"&gt;# point of interest&lt;/span&gt;
--rw-r--r-- &lt;span class="m"&gt;1&lt;/span&gt; c0d3rguy c0d3rguy  &lt;span class="m"&gt;2015&lt;/span&gt; 2010-03-13 16:59 Plane.h     &lt;span class="c"&gt;# point of interest&lt;/span&gt;
+-rw-r--r-- &lt;span class="m"&gt;1&lt;/span&gt; c0d3rguy c0d3rguy  &lt;span class="m"&gt;3152&lt;/span&gt; 2010-03-13 16:59 Plane.cpp       &lt;span class="c1"&gt;# point of interest&lt;/span&gt;
+-rw-r--r-- &lt;span class="m"&gt;1&lt;/span&gt; c0d3rguy c0d3rguy  &lt;span class="m"&gt;2015&lt;/span&gt; 2010-03-13 16:59 Plane.h     &lt;span class="c1"&gt;# point of interest&lt;/span&gt;
 -rw-r--r-- &lt;span class="m"&gt;1&lt;/span&gt; c0d3rguy c0d3rguy  &lt;span class="m"&gt;7352&lt;/span&gt; 2010-03-13 16:59 Quaternion.cpp
 -rw-r--r-- &lt;span class="m"&gt;1&lt;/span&gt; c0d3rguy c0d3rguy  &lt;span class="m"&gt;2291&lt;/span&gt; 2010-03-13 16:59 Quaternion.h
 drwxr-xr-x &lt;span class="m"&gt;3&lt;/span&gt; c0d3rguy c0d3rguy  &lt;span class="m"&gt;4096&lt;/span&gt; 2010-03-13 16:59 scripting
@@ -2018,7 +2018,7 @@ a good idea to merge all these into the &lt;strong&gt;renderer&lt;/strong&gt; . 
 &lt;p&gt;In &lt;strong&gt;source/renderer&lt;/strong&gt; the render paths are OK, they are well separated but I feel like it has been over engineered, it's clearly visible
 that all these parts have been hacked together in order to create something which works rather than designing it carefully .&lt;/p&gt;
 &lt;p&gt;An example of this hacky design from &lt;strong&gt;source/renderer/Renderer.cpp&lt;/strong&gt;:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="kt"&gt;bool&lt;/span&gt; &lt;span class="n"&gt;CRenderer&lt;/span&gt;&lt;span class="o"&gt;::&lt;/span&gt;&lt;span class="n"&gt;IsTextureTransparent&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;CTexture&lt;/span&gt;&lt;span class="o"&gt;*&lt;/span&gt; &lt;span class="n"&gt;texture&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kt"&gt;bool&lt;/span&gt; &lt;span class="n"&gt;CRenderer&lt;/span&gt;&lt;span class="o"&gt;::&lt;/span&gt;&lt;span class="n"&gt;IsTextureTransparent&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;CTexture&lt;/span&gt;&lt;span class="o"&gt;*&lt;/span&gt; &lt;span class="n"&gt;texture&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
 &lt;span class="p"&gt;{&lt;/span&gt;
     &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="o"&gt;!&lt;/span&gt;&lt;span class="n"&gt;texture&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="nb"&gt;false&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
     &lt;span class="n"&gt;Handle&lt;/span&gt; &lt;span class="n"&gt;h&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="n"&gt;texture&lt;/span&gt;&lt;span class="o"&gt;-&amp;gt;&lt;/span&gt;&lt;span class="n"&gt;GetHandle&lt;/span&gt;&lt;span class="p"&gt;();&lt;/span&gt;
@@ -2094,7 +2094,7 @@ or just restrict access to a certain directory.&lt;/p&gt;
 &lt;p&gt;Lets say that you have a scriptable game and you don't want to allow access outside of the "data" folder which holds all
 the necessary data, with &lt;a href="http://doc.trolltech.com/4.6/qfsfileengine.html"&gt;QAbstractFileEngine&lt;/a&gt; this can be resolved in 
 a transparent way as shown in the code snippet below.&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="p"&gt;...&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="p"&gt;...&lt;/span&gt;
 
 &lt;span class="c1"&gt;//! File System Class&lt;/span&gt;
 &lt;span class="k"&gt;class&lt;/span&gt; &lt;span class="nc"&gt;FileSystem&lt;/span&gt; &lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="k"&gt;public&lt;/span&gt; &lt;span class="n"&gt;QFSFileEngine&lt;/span&gt;
@@ -2134,7 +2134,7 @@ a transparent way as shown in the code snippet below.&lt;/p&gt;
 our file engine handler just the paths get altered in the background.&lt;/p&gt;
 &lt;p&gt;The latest registered handler takes precedence over existing handlers.&lt;/p&gt;
 &lt;p&gt;We could also do another nifty thing and register a handler which would respond to &lt;strong&gt;"fs://myfile.txt"&lt;/strong&gt;.&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="n"&gt;QFile&lt;/span&gt; &lt;span class="nf"&gt;lFile&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;fs://myfile.txt&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;QFile&lt;/span&gt; &lt;span class="nf"&gt;lFile&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;fs://myfile.txt&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;QT's internal resource system is implemented this way, so that's a good place to study especially if you want to implement a ZIP
@@ -2269,7 +2269,7 @@ when it comes to the back-end rendering architecture.&lt;/p&gt;
 &lt;li&gt;QtCreator&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Here is my .vimrc for those who might want to take a look.&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="k"&gt;set&lt;/span&gt; &lt;span class="nb"&gt;nowrap&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="k"&gt;set&lt;/span&gt; &lt;span class="nb"&gt;nowrap&lt;/span&gt;
 &lt;span class="k"&gt;set&lt;/span&gt; &lt;span class="nb"&gt;complete&lt;/span&gt;&lt;span class="p"&gt;-=&lt;/span&gt;&lt;span class="k"&gt;i&lt;/span&gt;
 &lt;span class="k"&gt;set&lt;/span&gt; &lt;span class="nb"&gt;wildmenu&lt;/span&gt;
 &lt;span class="k"&gt;set&lt;/span&gt; &lt;span class="nb"&gt;fileformats&lt;/span&gt;&lt;span class="p"&gt;=&lt;/span&gt;unix&lt;span class="p"&gt;,&lt;/span&gt;mac&lt;span class="p"&gt;,&lt;/span&gt;dos
@@ -2780,7 +2780,7 @@ So far it's around 4 days of work, I really hope to finish it this weekend, then
 	<id>http://mihail.co/2009/6/7/qtcreator-murmurs-of-the-code</id>
 	<content type="html">&lt;p&gt;QtCreator has a quite strict coding style, but there is one important thing I would like to highlight. The pollution of the header files is minimal ... and when I'm say pollution I'm referring to the inclusion of other header files.&lt;/p&gt;
 &lt;p&gt;If you look at a regular header file from the code base, you will notice stuff like this:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="k"&gt;namespace&lt;/span&gt; &lt;span class="n"&gt;Core&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="k"&gt;namespace&lt;/span&gt; &lt;span class="n"&gt;Core&lt;/span&gt;
 &lt;span class="p"&gt;{&lt;/span&gt;
     &lt;span class="k"&gt;class&lt;/span&gt; &lt;span class="nc"&gt;someclass&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
     &lt;span class="k"&gt;namespace&lt;/span&gt; &lt;span class="n"&gt;Internal&lt;/span&gt;
@@ -2801,7 +2801,7 @@ So far it's around 4 days of work, I really hope to finish it this weekend, then
 &lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;Instead of doing something like this:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="cp"&gt;#include &amp;lt;Core/Internal&amp;gt;&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="cp"&gt;#include&lt;/span&gt; &lt;span class="cpf"&gt;&amp;lt;Core/Internal&amp;gt;&lt;/span&gt;&lt;span class="cp"&gt;&lt;/span&gt;
 
 &lt;span class="k"&gt;using&lt;/span&gt; &lt;span class="k"&gt;namespace&lt;/span&gt; &lt;span class="n"&gt;Core&lt;/span&gt;&lt;span class="o"&gt;::&lt;/span&gt;&lt;span class="n"&gt;Internal&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
 
@@ -2853,7 +2853,7 @@ It is available in my forked repository:&lt;/p&gt;
 &lt;p&gt;Oh, and I "ported" over the "Desert" color scheme from Gedit, and set the default font to Droid Sans Mono ( but you already noticed that from the screenshot ) :P&lt;/p&gt;
 &lt;p&gt;From now on Qt Creator is definitely my IDE of choice, even though I don't have any QT based projects at the moment.&lt;/p&gt;
 &lt;p&gt;It can work with Scons as well, all we need is a simple "wrapper" makefile like this:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nf"&gt;all&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="nf"&gt;all&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;
 &lt;span class="err"&gt;scons&lt;/span&gt; &lt;span class="err"&gt;-Q&lt;/span&gt; &lt;span class="err"&gt;-j3&lt;/span&gt; &lt;span class="nv"&gt;nocolors&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;1
 &lt;span class="nf"&gt;clean&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;
 &lt;span class="err"&gt;scons&lt;/span&gt; &lt;span class="err"&gt;-c&lt;/span&gt; &lt;span class="nv"&gt;nocolors&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;1
@@ -2891,11 +2891,11 @@ It is available in my forked repository:&lt;/p&gt;
 	<content type="html">&lt;p&gt;Now, the 'quite heavy' BOOST libs have some nice format(), and also MFC has it, but not the poor STL string container.&lt;/p&gt;
 &lt;p&gt;I came up with a very nice and compact way to do this, and thought that I should share it.&lt;/p&gt;
 &lt;p&gt;So, here we are, let's see the code ...&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="cp"&gt;#include &amp;lt;cstdarg&amp;gt;&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="cp"&gt;#include&lt;/span&gt; &lt;span class="cpf"&gt;&amp;lt;cstdarg&amp;gt;&lt;/span&gt;&lt;span class="cp"&gt;&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;... the format ...&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="cp"&gt;#define BUFF_SIZE 4096&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="cp"&gt;#define BUFF_SIZE 4096&lt;/span&gt;
 &lt;span class="n"&gt;string&lt;/span&gt; &lt;span class="nf"&gt;format&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt; &lt;span class="k"&gt;const&lt;/span&gt; &lt;span class="n"&gt;string&lt;/span&gt; &lt;span class="o"&gt;&amp;amp;&lt;/span&gt;&lt;span class="n"&gt;msg&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="p"&gt;...&lt;/span&gt; &lt;span class="p"&gt;)&lt;/span&gt;
 &lt;span class="p"&gt;{&lt;/span&gt;
     &lt;span class="kt"&gt;va_list&lt;/span&gt; &lt;span class="n"&gt;ap&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
@@ -2909,7 +2909,7 @@ It is available in my forked repository:&lt;/p&gt;
 
 &lt;p&gt;BUFF_SIZE as 4096 should be enough, in most cases, but of course it can be tweaked as necessary, the rest is just the normal way to play with functions which have variable number of arguments.&lt;/p&gt;
 &lt;p&gt;vsnprintf have been used in order to avoid buffer overflows and the like.&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="n"&gt;cout&lt;/span&gt;&lt;span class="o"&gt;&amp;lt;&amp;lt;&lt;/span&gt;&lt;span class="n"&gt;format&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;string&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;%s hello&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="n"&gt;string&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;world %d&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;),&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;this is&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="mi"&gt;13&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="o"&gt;&amp;lt;&amp;lt;&lt;/span&gt;&lt;span class="n"&gt;endl&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;cout&lt;/span&gt;&lt;span class="o"&gt;&amp;lt;&amp;lt;&lt;/span&gt;&lt;span class="n"&gt;format&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;string&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;%s hello&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="n"&gt;string&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;world %d&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;),&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;this is&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="mi"&gt;13&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="o"&gt;&amp;lt;&amp;lt;&lt;/span&gt;&lt;span class="n"&gt;endl&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;From the one liner above it is clearly visible, the cleanness and elegance of this approach.&lt;/p&gt;
@@ -2952,13 +2952,13 @@ It is available in my forked repository:&lt;/p&gt;
 &lt;p&gt;The best way to go is to copy the examples directory into your home directory or desktop for convenience. I will modify the examples/OpenGL/basic/26_toon_shadding sample program.&lt;/p&gt;
 &lt;p&gt;First we need to edt 26_toon_shading.c in order to change the &lt;em&gt;&lt;strong&gt;"GL/GLUT.h"&lt;/strong&gt;&lt;/em&gt; include to &lt;em&gt;&lt;strong&gt;"GL/freeglut.h"&lt;/strong&gt;&lt;/em&gt;, and after this modifying the Makefile.&lt;/p&gt;
 &lt;p&gt;First of all I added :
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;CFLAGS&lt;/span&gt; &lt;span class="o"&gt;+=&lt;/span&gt; -I&lt;span class="s2"&gt;&amp;quot;/opt/csw/include&amp;quot;&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="nv"&gt;CFLAGS&lt;/span&gt; &lt;span class="o"&gt;+=&lt;/span&gt; -I&lt;span class="s2"&gt;&amp;quot;/opt/csw/include&amp;quot;&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;&lt;/p&gt;
 &lt;p&gt;This is required because the Freeglut package will install there, and modified &lt;strong&gt;&lt;em&gt;CLINKFLAGS&lt;/em&gt;&lt;/strong&gt; by appending &lt;em&gt;&lt;strong&gt;-L/opt/csw/lib&lt;/strong&gt;&lt;/em&gt; so it looks like this:
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;CLINKFLAGS&lt;/span&gt; &lt;span class="o"&gt;+=&lt;/span&gt; -L/usr/X11R6/lib64 -L/usr/X11R6/lib -L/opt/csw/lib
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="nv"&gt;CLINKFLAGS&lt;/span&gt; &lt;span class="o"&gt;+=&lt;/span&gt; -L/usr/X11R6/lib64 -L/usr/X11R6/lib -L/opt/csw/lib
 &lt;/pre&gt;&lt;/div&gt;&lt;/p&gt;
 &lt;p&gt;After this, a regular 'make' will do the job, but when running the executable there will be an error saying that the freeglut shared object cannot be found. This is fixed by prepending the &lt;strong&gt;&lt;em&gt;/opt/csw/lib&lt;/em&gt;&lt;/strong&gt; to the &lt;em&gt;&lt;strong&gt;LD_LIBRARY_PATH&lt;/strong&gt;&lt;/em&gt; environment variable with the following shell command:
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nb"&gt;export &lt;/span&gt;&lt;span class="nv"&gt;LD_LIBRARY_PATH&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;/opt/csw/lib:&lt;span class="nv"&gt;$LD_LIBRARY_PATH&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="nb"&gt;export&lt;/span&gt; &lt;span class="nv"&gt;LD_LIBRARY_PATH&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;/opt/csw/lib:&lt;span class="nv"&gt;$LD_LIBRARY_PATH&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;&lt;/p&gt;
 &lt;p&gt;... there you go :D up and running.&lt;/p&gt;
 &lt;p&gt;&lt;a class="image" href="http://mihail.co/images/2009/04/screen.jpg"&gt;
@@ -2976,7 +2976,7 @@ It is available in my forked repository:&lt;/p&gt;
 	<updated>2009-04-05T00:00:00+02:00</updated>
 	<id>http://mihail.co/2009/4/5/c-like-string-transform</id>
 	<content type="html">&lt;p&gt;All we need is a naked class with the&lt;strong&gt; () operator&lt;/strong&gt; overloaded to execute and wrap the "real" &lt;em&gt;&lt;strong&gt;tolower&lt;/strong&gt;&lt;/em&gt;.&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="k"&gt;struct&lt;/span&gt; &lt;span class="n"&gt;toLower&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="k"&gt;struct&lt;/span&gt; &lt;span class="n"&gt;toLower&lt;/span&gt;
 &lt;span class="p"&gt;{&lt;/span&gt;
     &lt;span class="kt"&gt;int&lt;/span&gt; &lt;span class="k"&gt;operator&lt;/span&gt;&lt;span class="p"&gt;()(&lt;/span&gt;&lt;span class="kt"&gt;int&lt;/span&gt; &lt;span class="n"&gt;ch&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
     &lt;span class="p"&gt;{&lt;/span&gt;
@@ -2986,11 +2986,11 @@ It is available in my forked repository:&lt;/p&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;With this our &lt;em&gt;transform&lt;/em&gt; will resume to this &lt;em&gt;beautiful&lt;/em&gt; and &lt;em&gt;elegant&lt;/em&gt; line ...&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="n"&gt;transform&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt; &lt;span class="n"&gt;s&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;begin&lt;/span&gt;&lt;span class="p"&gt;(),&lt;/span&gt; &lt;span class="n"&gt;s&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;end&lt;/span&gt;&lt;span class="p"&gt;(),&lt;/span&gt; &lt;span class="n"&gt;s&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;begin&lt;/span&gt;&lt;span class="p"&gt;(),&lt;/span&gt; &lt;span class="n"&gt;toLower&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt; &lt;span class="p"&gt;);&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;transform&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt; &lt;span class="n"&gt;s&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;begin&lt;/span&gt;&lt;span class="p"&gt;(),&lt;/span&gt; &lt;span class="n"&gt;s&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;end&lt;/span&gt;&lt;span class="p"&gt;(),&lt;/span&gt; &lt;span class="n"&gt;s&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;begin&lt;/span&gt;&lt;span class="p"&gt;(),&lt;/span&gt; &lt;span class="n"&gt;toLower&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt; &lt;span class="p"&gt;);&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;... instead of the very &lt;em&gt;'C like'&lt;/em&gt; looking (even if we used C++ like casting):&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="n"&gt;transform&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt; &lt;span class="n"&gt;s&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;begin&lt;/span&gt;&lt;span class="p"&gt;(),&lt;/span&gt; &lt;span class="n"&gt;s&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;end&lt;/span&gt;&lt;span class="p"&gt;(),&lt;/span&gt; &lt;span class="n"&gt;s&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;begin&lt;/span&gt;&lt;span class="p"&gt;(),&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="kt"&gt;int&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="o"&gt;*&lt;/span&gt;&lt;span class="p"&gt;)(&lt;/span&gt;&lt;span class="kt"&gt;int&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;&lt;span class="n"&gt;tolower&lt;/span&gt; &lt;span class="p"&gt;);&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;transform&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt; &lt;span class="n"&gt;s&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;begin&lt;/span&gt;&lt;span class="p"&gt;(),&lt;/span&gt; &lt;span class="n"&gt;s&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;end&lt;/span&gt;&lt;span class="p"&gt;(),&lt;/span&gt; &lt;span class="n"&gt;s&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;begin&lt;/span&gt;&lt;span class="p"&gt;(),&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="kt"&gt;int&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="o"&gt;*&lt;/span&gt;&lt;span class="p"&gt;)(&lt;/span&gt;&lt;span class="kt"&gt;int&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;&lt;span class="n"&gt;tolower&lt;/span&gt; &lt;span class="p"&gt;);&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;Pretty, pretty :D&lt;/p&gt;</content>
@@ -3016,7 +3016,7 @@ It is available in my forked repository:&lt;/p&gt;
 
 &lt;p&gt;Now this can be compiled to a nice shared object or dynamic linking library and used right away.&lt;/p&gt;
 
-&lt;div class="highlight"&gt;&lt;pre&gt;g++ LeraSystem.cpp -shared -o pyLeraSystem.so -I/usr/include/python2.6 -lboost_python
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;g++ LeraSystem.cpp -shared -o pyLeraSystem.so -I/usr/include/python2.6 -lboost_python
 &lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;I provide compile commands for Linux + GCC only, since it is my primary development platform, but this is very similar under Windows, there you one would get two files like pyLeraSystem.dll + pyLeraSystem.lib .&lt;/p&gt;
@@ -3025,7 +3025,7 @@ It is available in my forked repository:&lt;/p&gt;
 
 &lt;p&gt;&lt;script src="http://gist.github.com/79339.js"&gt;&lt;/script&gt; Produced Output:&lt;/p&gt;
 
-&lt;div class="highlight"&gt;&lt;pre&gt;hello world
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;hello world
 Instance check ...
 &amp;lt;pyLeraSystem.leraSystem object at 0xb7cb7534&amp;gt;
 &amp;lt;pyLeraSystem.leraSystem object at 0xb7cb7534&amp;gt;
@@ -3045,12 +3045,12 @@ hello world
 
 &lt;p&gt;... to compile the embedded python interpreter ...&lt;/p&gt;
 
-&lt;div class="highlight"&gt;&lt;pre&gt;g++ LeraPythonEmbed.cpp -I/usr/include/python2.6 -L. -lpython2.6 -lm -lLeraSystem -o leraTestEmbed
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;g++ LeraPythonEmbed.cpp -I/usr/include/python2.6 -L. -lpython2.6 -lm -lLeraSystem -o leraTestEmbed
 &lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;To make it run one more hack is necessary, and that is adjusting the LD_LIBRARY_PATH to include the current working directory with a command like:&lt;/p&gt;
 
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nb"&gt;export &lt;/span&gt;&lt;span class="nv"&gt;LD_LIBRARY_PATH&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;.:&lt;span class="nv"&gt;$LD_LIBRARY_PATH&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="nb"&gt;export&lt;/span&gt; &lt;span class="nv"&gt;LD_LIBRARY_PATH&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;.:&lt;span class="nv"&gt;$LD_LIBRARY_PATH&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;( this is again not necessary under Windows )&lt;/p&gt;
@@ -3061,8 +3061,8 @@ hello world
 
 &lt;p&gt;Now running ./leraTestEmbed produces the following output:&lt;/p&gt;
 
-&lt;div class="highlight"&gt;&lt;pre&gt;this message was &lt;span class="nb"&gt;set &lt;/span&gt;from C++ and printed by Python
-this message was &lt;span class="nb"&gt;set &lt;/span&gt;from Python and printed by C++
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;this message was &lt;span class="nb"&gt;set&lt;/span&gt; from C++ and printed by Python
+this message was &lt;span class="nb"&gt;set&lt;/span&gt; from Python and printed by C++
 &lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;With this I reached my final goal, python and c++ fully interacting, using the same singleton sub-system class at runtime.&lt;/p&gt;
@@ -3161,9 +3161,9 @@ Hot-babe is a small graphical utility which displays the system activity in a ve
 	<updated>2008-11-01T00:00:00+02:00</updated>
 	<id>http://mihail.co/2008/11/1/vte_terminal_set_alternate_screen_scroll</id>
 	<content type="html">&lt;p&gt;I upgraded to Intrepid last night, and it broke my gnome-terminal. So after some digging, etc. here is what I did to make it work:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;wget http://ftp.gnome.org/pub/gnome/sources/vte/0.17/vte-0.17.4.tar.gz
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;wget http://ftp.gnome.org/pub/gnome/sources/vte/0.17/vte-0.17.4.tar.gz
 tar xzvf vte-0.17.4.tar.gz
-&lt;span class="nb"&gt;cd &lt;/span&gt;vte-0.17.4
+&lt;span class="nb"&gt;cd&lt;/span&gt; vte-0.17.4
 
 wget http://patches.ubuntu.com/v/vte/extracted/93_add_alt_screen_scroll_toggle.patch
 patch -p1 &lt;span class="p"&gt;&amp;amp;&lt;/span&gt;lt&lt;span class="p"&gt;;&lt;/span&gt; 93_add_alt_screen_scroll_toggle.patch
@@ -3219,17 +3219,17 @@ make install
 	<content type="html">&lt;p&gt;&lt;em&gt;"Frogatto is an old-style platform game, starring an anthropomorphic frog!" &lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;Linux is officially not supported, but it works perfectly with some slight modifications of the "Makefile".&lt;/p&gt;
 &lt;p&gt;I checked out the latest version from the SVN, and modified the make file so it looks like this:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;svn checkout http://frogatto.googlecode.com/svn/trunk/ frogatto
-&lt;span class="nb"&gt;cd &lt;/span&gt;frogatto
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;svn checkout http://frogatto.googlecode.com/svn/trunk/ frogatto
+&lt;span class="nb"&gt;cd&lt;/span&gt; frogatto
 vim Makefile
 &lt;/pre&gt;&lt;/div&gt;
 
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nv"&gt;objects&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; background.o character.o character_type.o color_utils.o custom_object.o custom_object_functions.o custom_object_type.o draw_number.o draw_scene.o draw_tile.o editor.o entity.o filesystem.o fluid.o font.o formula.o formula_function.o formula_tokenizer.o frame.o geometry.o item.o item_type.o joystick.o key.o level.o level_logic.o level_object.o load_level.o main.o message_dialog.o preferences.o preprocessor.o prop.o raster.o sound.o string_utils.o surface_cache.o surface_formula.o surface.o texture.o tile_map.o variant.o wml_node.o wml_parser.o wml_utils.o wml_writer.o
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="nv"&gt;objects&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; background.o character.o character_type.o color_utils.o custom_object.o custom_object_functions.o custom_object_type.o draw_number.o draw_scene.o draw_tile.o editor.o entity.o filesystem.o fluid.o font.o formula.o formula_function.o formula_tokenizer.o frame.o geometry.o item.o item_type.o joystick.o key.o level.o level_logic.o level_object.o load_level.o main.o message_dialog.o preferences.o preprocessor.o prop.o raster.o sound.o string_utils.o surface_cache.o surface_formula.o surface.o texture.o tile_map.o variant.o wml_node.o wml_parser.o wml_utils.o wml_writer.o
 
 &lt;span class="nv"&gt;formula_test_objects&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; filesystem.o formula_function.o formula_tokenizer.o string_utils.o variant.o wml_node.o wml_parser.o wml_utils.o wml_writer.o
 
 &lt;span class="nf"&gt;%.o &lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="n"&gt;src&lt;/span&gt;/%.&lt;span class="n"&gt;cpp&lt;/span&gt;
-&lt;span class="err"&gt;g++&lt;/span&gt; &lt;span class="err"&gt;-g&lt;/span&gt; &lt;span class="err"&gt;-O2&lt;/span&gt; &lt;span class="err"&gt;-I/usr/local/include/boost-1_34&lt;/span&gt; &lt;span class="err"&gt;-I/usr/include/SDL&lt;/span&gt; &lt;span class="err"&gt;-I/usr/X11R6/include&lt;/span&gt; &lt;span class="nv"&gt;-D_GNU_SOURCE&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="m"&gt;1&lt;/span&gt; -D_REENTRANT -Wnon-virtual-dtor -Wreturn-type -fthreadsafe-statics -c &lt;span class="nv"&gt;$&amp;lt;&lt;/span&gt;
+&lt;span class="err"&gt;g++&lt;/span&gt; &lt;span class="err"&gt;-g&lt;/span&gt; &lt;span class="err"&gt;-O2&lt;/span&gt; &lt;span class="err"&gt;-I/usr/local/include/boost-1_34&lt;/span&gt; &lt;span class="err"&gt;-I/usr/include/SDL&lt;/span&gt; &lt;span class="err"&gt;-I/usr/X11R6/include&lt;/span&gt; &lt;span class="nv"&gt;-D_GNU_SOURCE&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="m"&gt;1&lt;/span&gt; -D_REENTRANT -Wnon-virtual-dtor -Wreturn-type -fthreadsafe-statics -c $&amp;lt;
 
 &lt;span class="nf"&gt;game&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="k"&gt;$(&lt;/span&gt;&lt;span class="nv"&gt;objects&lt;/span&gt;&lt;span class="k"&gt;)&lt;/span&gt;
 &lt;span class="err"&gt;g++&lt;/span&gt; &lt;span class="err"&gt;-g&lt;/span&gt; &lt;span class="err"&gt;-O2&lt;/span&gt; &lt;span class="err"&gt;-L/usr/lib&lt;/span&gt; &lt;span class="err"&gt;-L/usr/X11R6/lib&lt;/span&gt; &lt;span class="err"&gt;-lX11&lt;/span&gt; &lt;span class="nv"&gt;-D_GNU_SOURCE&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="m"&gt;1&lt;/span&gt; -D_REENTRANT -Wnon-virtual-dtor -Wreturn-type -L/usr/lib -lSDLmain -lSDL -lGL -lGLU -lSDL_image -lSDL_ttf -lSDL_mixer -lboost_regex -lboost_thread-mt -fthreadsafe-statics *.o -o game
@@ -3241,12 +3241,12 @@ vim Makefile
 &lt;span class="err"&gt;rm&lt;/span&gt; &lt;span class="err"&gt;*.o&lt;/span&gt; &lt;span class="err"&gt;game&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
-&lt;div class="highlight"&gt;&lt;pre&gt;:wq
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;:wq
 &lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;Of course you will need SDL, SDL_Image, SDL_ttf, SDL_mixer and Boost Regexp and Thread in order to successfully compile it, since there is no configure script at the moment.&lt;/p&gt;
 &lt;p&gt;Basically all I did is removing the '-framework' paramters and modifying the SDL include and lib paths.&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;make
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;make
 ./game
 &lt;/pre&gt;&lt;/div&gt;
 
@@ -3429,59 +3429,59 @@ More info at &lt;a title="The Free Software Song" href="http://en.wikipedia.org/
 	<content type="html">&lt;p&gt;I made this little script to be able to convert - resize videos easily, without typing in kilometric strings into the terminal.&lt;/p&gt;
 &lt;p&gt;It's not the most elegant script you ever seen, but hey, it works :)&lt;/p&gt;
 &lt;p&gt;As always, make it executable and put it in a safe place like /usr/bin :P&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="c"&gt;#!/bin/bash&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="ch"&gt;#!/bin/bash&lt;/span&gt;
 
-&lt;span class="c"&gt;# Author: Icebreaker&lt;/span&gt;
-&lt;span class="c"&gt;# Description: Resize a video to 1280x720 (HD).&lt;/span&gt;
-&lt;span class="c"&gt;# I&amp;#39;m using this script to resize videos to 1280x720&lt;/span&gt;
-&lt;span class="c"&gt;# ( maintaining the source quality )&lt;/span&gt;
-&lt;span class="c"&gt;# which can be posted to Vimeo.com for example and be converted&lt;/span&gt;
-&lt;span class="c"&gt;# automatically to a HD quality  video.&lt;/span&gt;
-&lt;span class="c"&gt;#&lt;/span&gt;
-&lt;span class="c"&gt;# This could be done a lot more elegantly ... I&amp;#39;m sure, but it does&lt;/span&gt;
-&lt;span class="c"&gt;# the job for me and that&amp;#39;s all what matters :)&lt;/span&gt;
-&lt;span class="c"&gt;#&lt;/span&gt;
-&lt;span class="c"&gt;# The argument &amp;quot;parsing&amp;quot; is not completely n00b proof :P&lt;/span&gt;
-&lt;span class="c"&gt;#&lt;/span&gt;
-&lt;span class="c"&gt;# PS: vimeo.com is cool :P&lt;/span&gt;
-&lt;span class="c"&gt;#&lt;/span&gt;
-&lt;span class="c"&gt;# Requires: ffmpeg&lt;/span&gt;
-&lt;span class="c"&gt;#&lt;/span&gt;
-&lt;span class="c"&gt;# Public Domain&lt;/span&gt;
+&lt;span class="c1"&gt;# Author: Icebreaker&lt;/span&gt;
+&lt;span class="c1"&gt;# Description: Resize a video to 1280x720 (HD).&lt;/span&gt;
+&lt;span class="c1"&gt;# I&amp;#39;m using this script to resize videos to 1280x720&lt;/span&gt;
+&lt;span class="c1"&gt;# ( maintaining the source quality )&lt;/span&gt;
+&lt;span class="c1"&gt;# which can be posted to Vimeo.com for example and be converted&lt;/span&gt;
+&lt;span class="c1"&gt;# automatically to a HD quality  video.&lt;/span&gt;
+&lt;span class="c1"&gt;#&lt;/span&gt;
+&lt;span class="c1"&gt;# This could be done a lot more elegantly ... I&amp;#39;m sure, but it does&lt;/span&gt;
+&lt;span class="c1"&gt;# the job for me and that&amp;#39;s all what matters :)&lt;/span&gt;
+&lt;span class="c1"&gt;#&lt;/span&gt;
+&lt;span class="c1"&gt;# The argument &amp;quot;parsing&amp;quot; is not completely n00b proof :P&lt;/span&gt;
+&lt;span class="c1"&gt;#&lt;/span&gt;
+&lt;span class="c1"&gt;# PS: vimeo.com is cool :P&lt;/span&gt;
+&lt;span class="c1"&gt;#&lt;/span&gt;
+&lt;span class="c1"&gt;# Requires: ffmpeg&lt;/span&gt;
+&lt;span class="c1"&gt;#&lt;/span&gt;
+&lt;span class="c1"&gt;# Public Domain&lt;/span&gt;
 
-&lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="o"&gt;[&lt;/span&gt; &lt;span class="nv"&gt;$# &lt;/span&gt;-lt &lt;span class="m"&gt;2&lt;/span&gt; &lt;span class="o"&gt;]&lt;/span&gt; &lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="k"&gt;then&lt;/span&gt;
-&lt;span class="nb"&gt;echo &lt;/span&gt;Usage: mkhdv input.video output.video &lt;span class="o"&gt;[&lt;/span&gt;-t &lt;span class="s2"&gt;&amp;quot;some video title&amp;quot;&lt;/span&gt;&lt;span class="o"&gt;]&lt;/span&gt; &lt;span class="se"&gt;\&lt;/span&gt;
+&lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="o"&gt;[&lt;/span&gt; &lt;span class="nv"&gt;$#&lt;/span&gt; -lt &lt;span class="m"&gt;2&lt;/span&gt; &lt;span class="o"&gt;]&lt;/span&gt; &lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="k"&gt;then&lt;/span&gt;
+&lt;span class="nb"&gt;echo&lt;/span&gt; Usage: mkhdv input.video output.video &lt;span class="o"&gt;[&lt;/span&gt;-t &lt;span class="s2"&gt;&amp;quot;some video title&amp;quot;&lt;/span&gt;&lt;span class="o"&gt;]&lt;/span&gt; &lt;span class="se"&gt;\&lt;/span&gt;
 &lt;span class="o"&gt;[&lt;/span&gt;-s 1280x720&lt;span class="o"&gt;]&lt;/span&gt;
-&lt;span class="nb"&gt;exit &lt;/span&gt;13
+&lt;span class="nb"&gt;exit&lt;/span&gt; 13
 &lt;span class="k"&gt;fi&lt;/span&gt;
 
-&lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="o"&gt;[&lt;/span&gt; &lt;span class="nv"&gt;$# &lt;/span&gt;-eq &lt;span class="m"&gt;4&lt;/span&gt; &lt;span class="o"&gt;]&lt;/span&gt; &lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="k"&gt;then&lt;/span&gt;
-    &lt;span class="c"&gt;# title&lt;/span&gt;
+&lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="o"&gt;[&lt;/span&gt; &lt;span class="nv"&gt;$#&lt;/span&gt; -eq &lt;span class="m"&gt;4&lt;/span&gt; &lt;span class="o"&gt;]&lt;/span&gt; &lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="k"&gt;then&lt;/span&gt;
+    &lt;span class="c1"&gt;# title&lt;/span&gt;
     &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="o"&gt;[&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;&lt;span class="nv"&gt;$3&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;-t&amp;quot;&lt;/span&gt; &lt;span class="o"&gt;]&lt;/span&gt; &lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="k"&gt;then&lt;/span&gt;
         ffmpeg -i &lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;&lt;span class="nv"&gt;$1&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&lt;/span&gt; -sameq -s 1280x720 -title &lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;&lt;span class="nv"&gt;$4&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;&lt;span class="nv"&gt;$2&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;
     &lt;span class="k"&gt;else&lt;/span&gt;
-        &lt;span class="c"&gt;# size&lt;/span&gt;
+        &lt;span class="c1"&gt;# size&lt;/span&gt;
         &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="o"&gt;[&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;&lt;span class="nv"&gt;$3&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;-s&amp;quot;&lt;/span&gt; &lt;span class="o"&gt;]&lt;/span&gt; &lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="k"&gt;then&lt;/span&gt;
         ffmpeg -i &lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;&lt;span class="nv"&gt;$1&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&lt;/span&gt; -sameq -s &lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;&lt;span class="nv"&gt;$4&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;&lt;span class="nv"&gt;$2&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;
         &lt;span class="k"&gt;else&lt;/span&gt;
-        &lt;span class="nb"&gt;echo &lt;/span&gt;Usage: mkhdv input.video output.video &lt;span class="se"&gt;\ &lt;/span&gt;
+        &lt;span class="nb"&gt;echo&lt;/span&gt; Usage: mkhdv input.video output.video &lt;span class="se"&gt;\ &lt;/span&gt;
 &lt;span class="o"&gt;[&lt;/span&gt;-t &lt;span class="s2"&gt;&amp;quot;some video title&amp;quot;&lt;/span&gt;&lt;span class="o"&gt;]&lt;/span&gt; &lt;span class="o"&gt;[&lt;/span&gt;-s 1280x720&lt;span class="o"&gt;]&lt;/span&gt;
-        &lt;span class="nb"&gt;exit &lt;/span&gt;666
+        &lt;span class="nb"&gt;exit&lt;/span&gt; 666
         &lt;span class="k"&gt;fi&lt;/span&gt;
     &lt;span class="k"&gt;fi&lt;/span&gt;
 &lt;span class="k"&gt;else&lt;/span&gt;
-    &lt;span class="c"&gt;# we have size and title&lt;/span&gt;
-    &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="o"&gt;[&lt;/span&gt; &lt;span class="nv"&gt;$# &lt;/span&gt;-eq &lt;span class="m"&gt;6&lt;/span&gt; &lt;span class="o"&gt;]&lt;/span&gt; &lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="k"&gt;then&lt;/span&gt;
+    &lt;span class="c1"&gt;# we have size and title&lt;/span&gt;
+    &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="o"&gt;[&lt;/span&gt; &lt;span class="nv"&gt;$#&lt;/span&gt; -eq &lt;span class="m"&gt;6&lt;/span&gt; &lt;span class="o"&gt;]&lt;/span&gt; &lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="k"&gt;then&lt;/span&gt;
         &lt;span class="nv"&gt;TITLE&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&amp;quot;&lt;/span&gt;
         &lt;span class="nv"&gt;SIZE&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&amp;quot;&lt;/span&gt;
-        &lt;span class="c"&gt;# look for title&lt;/span&gt;
+        &lt;span class="c1"&gt;# look for title&lt;/span&gt;
         &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="o"&gt;[&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;&lt;span class="nv"&gt;$3&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;-t&amp;quot;&lt;/span&gt; &lt;span class="o"&gt;]&lt;/span&gt; &lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="k"&gt;then&lt;/span&gt;
             &lt;span class="nv"&gt;TITLE&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;&lt;span class="nv"&gt;$4&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;
         &lt;span class="k"&gt;fi&lt;/span&gt;
         &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="o"&gt;[&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;&lt;span class="nv"&gt;$5&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;-t&amp;quot;&lt;/span&gt; &lt;span class="o"&gt;]&lt;/span&gt; &lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="k"&gt;then&lt;/span&gt;
             &lt;span class="nv"&gt;TITLE&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;&lt;span class="nv"&gt;$6&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;
         &lt;span class="k"&gt;fi&lt;/span&gt;
-        &lt;span class="c"&gt;# look for size&lt;/span&gt;
+        &lt;span class="c1"&gt;# look for size&lt;/span&gt;
         &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="o"&gt;[&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;&lt;span class="nv"&gt;$3&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;-s&amp;quot;&lt;/span&gt; &lt;span class="o"&gt;]&lt;/span&gt; &lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="k"&gt;then&lt;/span&gt;
             &lt;span class="nv"&gt;SIZE&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;&lt;span class="nv"&gt;$4&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;
         &lt;span class="k"&gt;fi&lt;/span&gt;
@@ -3499,8 +3499,8 @@ More info at &lt;a title="The Free Software Song" href="http://en.wikipedia.org/
         ffmpeg -i &lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;&lt;span class="nv"&gt;$1&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&lt;/span&gt; -sameq -s 1280x720 &lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;&lt;span class="nv"&gt;$2&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;
     &lt;span class="k"&gt;fi&lt;/span&gt;
 &lt;span class="k"&gt;fi&lt;/span&gt;
-&lt;span class="nb"&gt;echo &lt;/span&gt;Done
-&lt;span class="nb"&gt;exit &lt;/span&gt;1
+&lt;span class="nb"&gt;echo&lt;/span&gt; Done
+&lt;span class="nb"&gt;exit&lt;/span&gt; 1
 &lt;/pre&gt;&lt;/div&gt;</content>
 	<category term="bash"/><category term="script"/><category term="video"/><category term="resize"/><category term="ffmpeg"/>
 </entry>
@@ -3673,7 +3673,7 @@ More info at &lt;a title="The Free Software Song" href="http://en.wikipedia.org/
 	<content type="html">&lt;p&gt;I'll start a series of programming tips and tricks in various languages, and this will be the first one :)&lt;/p&gt;
 &lt;p&gt;These are very rare, strange and uncommon stuff for the normal mortals ... oK enough chit-chat let's see some code.&lt;/p&gt;
 &lt;p&gt;What's wrong with the following code snippet?&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="k"&gt;template&lt;/span&gt; &lt;span class="o"&gt;&amp;lt;&lt;/span&gt;&lt;span class="k"&gt;typename&lt;/span&gt; &lt;span class="n"&gt;T&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="k"&gt;template&lt;/span&gt; &lt;span class="o"&gt;&amp;lt;&lt;/span&gt;&lt;span class="k"&gt;typename&lt;/span&gt; &lt;span class="n"&gt;T&lt;/span&gt;&lt;span class="o"&gt;&amp;gt;&lt;/span&gt;
 &lt;span class="k"&gt;class&lt;/span&gt; &lt;span class="nc"&gt;obj&lt;/span&gt;
 &lt;span class="p"&gt;{&lt;/span&gt;
     &lt;span class="k"&gt;public&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;
@@ -3730,7 +3730,7 @@ More info at &lt;a title="The Free Software Song" href="http://en.wikipedia.org/
 	<id>http://mihail.co/2008/5/29/another-day-another-script</id>
 	<content type="html">&lt;p&gt;A few weeks ago I posted a script I made to make customized wallpapers for my system using twinview. Recently I made another nice little script to convert all the images in PNG format from a folder to JPG format.&lt;/p&gt;
 &lt;p&gt;This is really simple and it fits my needs ... of course as always there is room for improvement :)&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="c"&gt;#!/bin/bash&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="ch"&gt;#!/bin/bash&lt;/span&gt;
 ls *.png &lt;span class="p"&gt;|&lt;/span&gt; awk &lt;span class="s1"&gt;&amp;#39;{ printf(&amp;quot;Converting %s ... &amp;quot;,$0); \&lt;/span&gt;
 &lt;span class="s1"&gt;system(&amp;quot;convert &amp;quot; $0 &amp;quot; &amp;quot; substr($0,0,length($0)-3)&amp;quot;.jpg&amp;quot; ); \&lt;/span&gt;
 &lt;span class="s1"&gt;printf(&amp;quot;Done!\n&amp;quot;); }&amp;#39;&lt;/span&gt;
@@ -3772,7 +3772,7 @@ ls *.png &lt;span class="p"&gt;|&lt;/span&gt; awk &lt;span class="s1"&gt;&amp;#3
 &lt;p&gt;This can "log" to a file, to a console (internal or not) or both. Anyway, the most important thing are the different log levels, and filters.&lt;/p&gt;
 &lt;p&gt;Let's say that we have Text, Info, Warning, Error ... each represents an level. Then we can setup a filter to "show" only the Warnings, or the Errors supressing all the other messages. This is extremly useful if you have bunch messages showing up in your log file / console.&lt;/p&gt;
 &lt;p&gt;Now let's see some code :)&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="cp"&gt;#define SAFE_ARRAY_DELETE(x) if(x) {delete [] x; x=NULL;}&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="cp"&gt;#define SAFE_ARRAY_DELETE(x) if(x) {delete [] x; x=NULL;}&lt;/span&gt;
 &lt;span class="cp"&gt;#define INRANGE(x,min,max) ( (x &amp;gt;= min) &amp;amp;&amp;amp; (x &amp;lt;= max) )&lt;/span&gt;
 
 &lt;span class="k"&gt;namespace&lt;/span&gt; &lt;span class="n"&gt;Log&lt;/span&gt;
@@ -3854,8 +3854,8 @@ ls *.png &lt;span class="p"&gt;|&lt;/span&gt; awk &lt;span class="s1"&gt;&amp;#3
 	<updated>2008-05-10T00:00:00+02:00</updated>
 	<id>http://mihail.co/2008/5/10/automatic-build-number-incrementation</id>
 	<content type="html">&lt;p&gt;Automatic build number incrementation always was a &lt;em&gt;hot topic&lt;/em&gt; especially under Linux. My solution is fairly simple to implement, so let's see some "code" right away:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="c"&gt;#!/bin/bash&lt;/span&gt;
-&lt;span class="nb"&gt;echo &lt;/span&gt;Fetching and updating build number ...
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="ch"&gt;#!/bin/bash&lt;/span&gt;
+&lt;span class="nb"&gt;echo&lt;/span&gt; Fetching and updating build number ...
 cat Core/Build.cpp &lt;span class="p"&gt;|&lt;/span&gt; awk &lt;span class="s1"&gt;&amp;#39;{ printf(&amp;quot;unsigned int g_internalbuildNumber = %d ;\n&amp;quot;,$5+1); }&amp;#39;&lt;/span&gt; &amp;gt; Core/_Build.cpp
 rm Core/Build.cpp
 mv Core/_Build.cpp Core/Build.cpp
@@ -3893,7 +3893,7 @@ mv Core/_Build.cpp Core/Build.cpp
 &lt;p&gt;I haven't made one myself yet, but I downloaded touchlib and I found it quite annoying that it used my built-in cam from my toshiba sattelite laptop however I plugged in another external one.&lt;/p&gt;
 &lt;p&gt;So, I did a quick fix to be able to use /dev/video1 ... oh yeah, I tried this under Linux, more specifically Ubuntu, because I was lazy to setup all the libs with headers and shits under Windows.&lt;/p&gt;
 &lt;p&gt;In the CvCaptureFilter.cpp right in the void CvCaptureFilter::setParamater( ... ) I added two more lines, so my version looks like this:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="kt"&gt;void&lt;/span&gt; &lt;span class="n"&gt;CvCaptureFilter&lt;/span&gt;&lt;span class="o"&gt;::&lt;/span&gt;&lt;span class="n"&gt;setParameter&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="k"&gt;const&lt;/span&gt; &lt;span class="kt"&gt;char&lt;/span&gt; &lt;span class="o"&gt;*&lt;/span&gt;&lt;span class="n"&gt;name&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kt"&gt;void&lt;/span&gt; &lt;span class="n"&gt;CvCaptureFilter&lt;/span&gt;&lt;span class="o"&gt;::&lt;/span&gt;&lt;span class="n"&gt;setParameter&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="k"&gt;const&lt;/span&gt; &lt;span class="kt"&gt;char&lt;/span&gt; &lt;span class="o"&gt;*&lt;/span&gt;&lt;span class="n"&gt;name&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
                                    &lt;span class="k"&gt;const&lt;/span&gt; &lt;span class="kt"&gt;char&lt;/span&gt; &lt;span class="o"&gt;*&lt;/span&gt;&lt;span class="n"&gt;value&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
 &lt;span class="p"&gt;{&lt;/span&gt;
    &lt;span class="k"&gt;if&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="o"&gt;!&lt;/span&gt;&lt;span class="n"&gt;capture&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
@@ -4075,17 +4075,17 @@ She's trading her win box for a white Apple laptop&lt;/p&gt;
 &lt;p&gt;I like to have the same wallpaper on both screens, so that wasn't a problem, but it was rather annoying after trying 2-3 wallpapers.&lt;/p&gt;
 &lt;p&gt;Instead I thought of the nice utility package called "ImageMagick" ... Yay! and wrote a nice little bash script to generate the desired wallpaper from two images given as input.&lt;/p&gt;
 &lt;p&gt;Here is the contents of the script:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="c"&gt;#!/bin/bash&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="ch"&gt;#!/bin/bash&lt;/span&gt;
 
-&lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="o"&gt;[&lt;/span&gt; &lt;span class="nv"&gt;$# &lt;/span&gt;-ne &lt;span class="m"&gt;3&lt;/span&gt; &lt;span class="o"&gt;]&lt;/span&gt; &lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="k"&gt;then&lt;/span&gt;
+&lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="o"&gt;[&lt;/span&gt; &lt;span class="nv"&gt;$#&lt;/span&gt; -ne &lt;span class="m"&gt;3&lt;/span&gt; &lt;span class="o"&gt;]&lt;/span&gt; &lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="k"&gt;then&lt;/span&gt;
 &lt;span class="nb"&gt;echo&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;Usage: &lt;/span&gt;&lt;span class="nv"&gt;$0&lt;/span&gt;&lt;span class="s2"&gt; image1.png image2.png outimage.png&amp;quot;&lt;/span&gt;
-&lt;span class="nb"&gt;exit &lt;/span&gt;13
+&lt;span class="nb"&gt;exit&lt;/span&gt; 13
 &lt;span class="k"&gt;fi&lt;/span&gt;
 
 convert -size 2720x900 xc:black &lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;&lt;span class="nv"&gt;$1&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&lt;/span&gt; -geometry +0+100 -composite &lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;&lt;span class="nv"&gt;$2&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&lt;/span&gt; -geometry +1280+0 -composite &lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;&lt;span class="nv"&gt;$3&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;
 
 &lt;span class="nb"&gt;echo&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;Done ...&amp;quot;&lt;/span&gt;
-&lt;span class="nb"&gt;exit &lt;/span&gt;1
+&lt;span class="nb"&gt;exit&lt;/span&gt; 1
 &lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;I named it "mkwlp" , made it executable (chmod u+x mkwlp) then copied it into /usr/bin for convenience ...&lt;/p&gt;
@@ -4122,7 +4122,7 @@ convert -size 2720x900 xc:black &lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;&l
 	<id>http://mihail.co/2008/3/23/drunken-escapades-with-glest</id>
 	<content type="html">&lt;p&gt;I grabbed Glest tonight, and wanted to compile it, but BOOM! when I wanted to compile the map editor, tons of errors related to wxWidgets popped up ... of course the 1st thing on what I was thinking is that my wxWidgets version is too old ... and so it was, so I grabbed the latest wxWidgets and after compiling it several times enabling one by one every feature required by the Glest map editor i did it ... Yay!&lt;/p&gt;
 &lt;p&gt;Here is my "configure" command ( just for the curious ):&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;./configure --enable-unicode --enable-config --enable-std_string --enable-std_iostreams --with-gl --with-gtk
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;./configure --enable-unicode --enable-config --enable-std_string --enable-std_iostreams --with-gl --with-gtk
 &lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;wxWidgets takes quite some time to compile, even on my dual-core @ 1.8Ghz ... damn, usually I compile in a "yakuake" session so I can forget about it :P&lt;/p&gt;
@@ -4184,11 +4184,11 @@ convert -size 2720x900 xc:black &lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;&l
 	<id>http://mihail.co/2008/2/29/finally-ubuntu-compiz-kiba-dock</id>
 	<content type="html">&lt;p&gt;We all know that the Geforce 7300 series are somewhat problematic under Linux and obviously under Ubuntu especially when it comes to Compiz ... and if you don't have compiz you can't run 'eye' candy apps which make use of a composition manager ... yeaaak!&lt;/p&gt;
 &lt;p&gt;Compiz was working fine for me except that the Windows Borders never showed up, no matter what I did. So here is how I made this work ... make sure that you have this line in your /etc/X11/xorg.conf .&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;Option &lt;span class="s2"&gt;&amp;quot;AddARGBGLXVisuals&amp;quot;&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;True&amp;quot;&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;Option &lt;span class="s2"&gt;&amp;quot;AddARGBGLXVisuals&amp;quot;&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;True&amp;quot;&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;The easiest way to do this, is to fire up a terminal and type in the following:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;sudo nvidia-xconfig --add-argb-glx-visuals -d 24
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;sudo nvidia-xconfig --add-argb-glx-visuals -d 24
 &lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;Then restart compiz, and the borders should appear. Of course this assumes that you have installed the "NVidia" drivers (restricted) .&lt;/p&gt;

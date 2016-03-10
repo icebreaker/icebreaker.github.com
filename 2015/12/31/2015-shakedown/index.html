@@ -22,7 +22,7 @@
 		<!-- Blog  -->
 		<link rel="stylesheet" type="text/css" href="/css/blog.css" />
 		<!-- Fonts -->
-		<link href="http://fonts.googleapis.com/css?family=Droid+Sans|Droid+Sans+Mono|Oxygen" rel="stylesheet" type="text/css" />
+		<link href="http://fonts.googleapis.com/css?family=Droid+Sans|Droid+Sans+Mono|Andada" rel="stylesheet" type="text/css" />
 		
 		
 		<script type="text/javascript">
@@ -133,11 +133,11 @@ can do so by clicking <a href="/bricksofbabel">here</a>.</p>
 <p>This is something that I wanted to do for so long, but never really took the time to do it.
 Here it is, full blown suite of tools composed of a disassembler and an emulator for the Chip 8.</p>
 <p>The tools follow the *nix principles and support pipes, as well as file arguments.</p>
-<div class="highlight"><pre>build/disasm roms/MAZE
+<div class="highlight"><pre><span></span>build/disasm roms/MAZE
 cat roms/MAZE <span class="p">|</span> build/disasm
 </pre></div>
 
-<div class="highlight"><pre><span class="err">0</span><span class="nl">x200:</span> <span class="nf">LD</span>    <span class="no">I</span><span class="p">,</span> <span class="mi">0x21E</span>
+<div class="highlight"><pre><span></span><span class="err">0</span><span class="nl">x200:</span> <span class="nf">LD</span>    <span class="no">I</span><span class="p">,</span> <span class="mi">0x21E</span>
 <span class="err">0</span><span class="nl">x202:</span> <span class="nf">RND</span>  <span class="no">V2</span><span class="p">,</span> <span class="mi">0x01</span>
 <span class="err">0</span><span class="nl">x204:</span> <span class="nf">SE</span>   <span class="no">V2</span><span class="p">,</span> <span class="mi">0x01</span>
 <span class="err">0</span><span class="nl">x206:</span> <span class="nf">LD</span>    <span class="no">I</span><span class="p">,</span> <span class="mi">0x21A</span>
@@ -194,7 +194,7 @@ any <em>DOS</em> like environment.</p>
 <p>I <em>forked</em> <a href="https://code.google.com/p/2dimagefilter/">2dimagefilter</a> and removed all exotic <em>GUI</em>
 crap, basically everything that wasn't <em>implemented</em> by Mono.</p>
 <p>The command line interface is now usable on any platform where Mono is supported.</p>
-<div class="highlight"><pre>ImageResizer /load in.png /resize auto <span class="s2">&quot;XBR 4x(2,thresholds=0,vbounds=wrap)&quot;</span> /save out.png
+<div class="highlight"><pre><span></span>ImageResizer /load in.png /resize auto <span class="s2">&quot;XBR 4x(2,thresholds=0,vbounds=wrap)&quot;</span> /save out.png
 </pre></div>
 
 <p>You can find out more about it over

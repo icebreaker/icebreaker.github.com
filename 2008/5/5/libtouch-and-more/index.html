@@ -22,7 +22,7 @@
 		<!-- Blog  -->
 		<link rel="stylesheet" type="text/css" href="/css/blog.css" />
 		<!-- Fonts -->
-		<link href="http://fonts.googleapis.com/css?family=Droid+Sans|Droid+Sans+Mono|Oxygen" rel="stylesheet" type="text/css" />
+		<link href="http://fonts.googleapis.com/css?family=Droid+Sans|Droid+Sans+Mono|Andada" rel="stylesheet" type="text/css" />
 		
 		
 		<script type="text/javascript">
@@ -85,7 +85,7 @@
 <p>I haven't made one myself yet, but I downloaded touchlib and I found it quite annoying that it used my built-in cam from my toshiba sattelite laptop however I plugged in another external one.</p>
 <p>So, I did a quick fix to be able to use /dev/video1 ... oh yeah, I tried this under Linux, more specifically Ubuntu, because I was lazy to setup all the libs with headers and shits under Windows.</p>
 <p>In the CvCaptureFilter.cpp right in the void CvCaptureFilter::setParamater( ... ) I added two more lines, so my version looks like this:</p>
-<div class="highlight"><pre><span class="kt">void</span> <span class="n">CvCaptureFilter</span><span class="o">::</span><span class="n">setParameter</span><span class="p">(</span><span class="k">const</span> <span class="kt">char</span> <span class="o">*</span><span class="n">name</span><span class="p">,</span>
+<div class="highlight"><pre><span></span><span class="kt">void</span> <span class="n">CvCaptureFilter</span><span class="o">::</span><span class="n">setParameter</span><span class="p">(</span><span class="k">const</span> <span class="kt">char</span> <span class="o">*</span><span class="n">name</span><span class="p">,</span>
                                    <span class="k">const</span> <span class="kt">char</span> <span class="o">*</span><span class="n">value</span><span class="p">)</span>
 <span class="p">{</span>
    <span class="k">if</span><span class="p">(</span><span class="o">!</span><span class="n">capture</span><span class="p">)</span>

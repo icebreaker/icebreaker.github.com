@@ -22,7 +22,7 @@
 		<!-- Blog  -->
 		<link rel="stylesheet" type="text/css" href="/css/blog.css" />
 		<!-- Fonts -->
-		<link href="http://fonts.googleapis.com/css?family=Droid+Sans|Droid+Sans+Mono|Oxygen" rel="stylesheet" type="text/css" />
+		<link href="http://fonts.googleapis.com/css?family=Droid+Sans|Droid+Sans+Mono|Andada" rel="stylesheet" type="text/css" />
 		
 		
 		<script type="text/javascript">
@@ -83,11 +83,11 @@
 
 			<p>We all know that the Geforce 7300 series are somewhat problematic under Linux and obviously under Ubuntu especially when it comes to Compiz ... and if you don't have compiz you can't run 'eye' candy apps which make use of a composition manager ... yeaaak!</p>
 <p>Compiz was working fine for me except that the Windows Borders never showed up, no matter what I did. So here is how I made this work ... make sure that you have this line in your /etc/X11/xorg.conf .</p>
-<div class="highlight"><pre>Option <span class="s2">&quot;AddARGBGLXVisuals&quot;</span> <span class="s2">&quot;True&quot;</span>
+<div class="highlight"><pre><span></span>Option <span class="s2">&quot;AddARGBGLXVisuals&quot;</span> <span class="s2">&quot;True&quot;</span>
 </pre></div>
 
 <p>The easiest way to do this, is to fire up a terminal and type in the following:</p>
-<div class="highlight"><pre>sudo nvidia-xconfig --add-argb-glx-visuals -d 24
+<div class="highlight"><pre><span></span>sudo nvidia-xconfig --add-argb-glx-visuals -d 24
 </pre></div>
 
 <p>Then restart compiz, and the borders should appear. Of course this assumes that you have installed the "NVidia" drivers (restricted) .</p>

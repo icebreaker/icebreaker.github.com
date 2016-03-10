@@ -22,7 +22,7 @@
 		<!-- Blog  -->
 		<link rel="stylesheet" type="text/css" href="/css/blog.css" />
 		<!-- Fonts -->
-		<link href="http://fonts.googleapis.com/css?family=Droid+Sans|Droid+Sans+Mono|Oxygen" rel="stylesheet" type="text/css" />
+		<link href="http://fonts.googleapis.com/css?family=Droid+Sans|Droid+Sans+Mono|Andada" rel="stylesheet" type="text/css" />
 		
 		
 		<script type="text/javascript">
@@ -84,59 +84,59 @@
 			<p>I made this little script to be able to convert - resize videos easily, without typing in kilometric strings into the terminal.</p>
 <p>It's not the most elegant script you ever seen, but hey, it works :)</p>
 <p>As always, make it executable and put it in a safe place like /usr/bin :P</p>
-<div class="highlight"><pre><span class="c">#!/bin/bash</span>
+<div class="highlight"><pre><span></span><span class="ch">#!/bin/bash</span>
 
-<span class="c"># Author: Icebreaker</span>
-<span class="c"># Description: Resize a video to 1280x720 (HD).</span>
-<span class="c"># I&#39;m using this script to resize videos to 1280x720</span>
-<span class="c"># ( maintaining the source quality )</span>
-<span class="c"># which can be posted to Vimeo.com for example and be converted</span>
-<span class="c"># automatically to a HD quality  video.</span>
-<span class="c">#</span>
-<span class="c"># This could be done a lot more elegantly ... I&#39;m sure, but it does</span>
-<span class="c"># the job for me and that&#39;s all what matters :)</span>
-<span class="c">#</span>
-<span class="c"># The argument &quot;parsing&quot; is not completely n00b proof :P</span>
-<span class="c">#</span>
-<span class="c"># PS: vimeo.com is cool :P</span>
-<span class="c">#</span>
-<span class="c"># Requires: ffmpeg</span>
-<span class="c">#</span>
-<span class="c"># Public Domain</span>
+<span class="c1"># Author: Icebreaker</span>
+<span class="c1"># Description: Resize a video to 1280x720 (HD).</span>
+<span class="c1"># I&#39;m using this script to resize videos to 1280x720</span>
+<span class="c1"># ( maintaining the source quality )</span>
+<span class="c1"># which can be posted to Vimeo.com for example and be converted</span>
+<span class="c1"># automatically to a HD quality  video.</span>
+<span class="c1">#</span>
+<span class="c1"># This could be done a lot more elegantly ... I&#39;m sure, but it does</span>
+<span class="c1"># the job for me and that&#39;s all what matters :)</span>
+<span class="c1">#</span>
+<span class="c1"># The argument &quot;parsing&quot; is not completely n00b proof :P</span>
+<span class="c1">#</span>
+<span class="c1"># PS: vimeo.com is cool :P</span>
+<span class="c1">#</span>
+<span class="c1"># Requires: ffmpeg</span>
+<span class="c1">#</span>
+<span class="c1"># Public Domain</span>
 
-<span class="k">if</span> <span class="o">[</span> <span class="nv">$# </span>-lt <span class="m">2</span> <span class="o">]</span> <span class="p">;</span> <span class="k">then</span>
-<span class="nb">echo </span>Usage: mkhdv input.video output.video <span class="o">[</span>-t <span class="s2">&quot;some video title&quot;</span><span class="o">]</span> <span class="se">\</span>
+<span class="k">if</span> <span class="o">[</span> <span class="nv">$#</span> -lt <span class="m">2</span> <span class="o">]</span> <span class="p">;</span> <span class="k">then</span>
+<span class="nb">echo</span> Usage: mkhdv input.video output.video <span class="o">[</span>-t <span class="s2">&quot;some video title&quot;</span><span class="o">]</span> <span class="se">\</span>
 <span class="o">[</span>-s 1280x720<span class="o">]</span>
-<span class="nb">exit </span>13
+<span class="nb">exit</span> 13
 <span class="k">fi</span>
 
-<span class="k">if</span> <span class="o">[</span> <span class="nv">$# </span>-eq <span class="m">4</span> <span class="o">]</span> <span class="p">;</span> <span class="k">then</span>
-    <span class="c"># title</span>
+<span class="k">if</span> <span class="o">[</span> <span class="nv">$#</span> -eq <span class="m">4</span> <span class="o">]</span> <span class="p">;</span> <span class="k">then</span>
+    <span class="c1"># title</span>
     <span class="k">if</span> <span class="o">[</span> <span class="s2">&quot;</span><span class="nv">$3</span><span class="s2">&quot;</span> <span class="o">=</span> <span class="s2">&quot;-t&quot;</span> <span class="o">]</span> <span class="p">;</span> <span class="k">then</span>
         ffmpeg -i <span class="s2">&quot;</span><span class="nv">$1</span><span class="s2">&quot;</span> -sameq -s 1280x720 -title <span class="s2">&quot;</span><span class="nv">$4</span><span class="s2">&quot;</span> <span class="s2">&quot;</span><span class="nv">$2</span><span class="s2">&quot;</span>
     <span class="k">else</span>
-        <span class="c"># size</span>
+        <span class="c1"># size</span>
         <span class="k">if</span> <span class="o">[</span> <span class="s2">&quot;</span><span class="nv">$3</span><span class="s2">&quot;</span> <span class="o">=</span> <span class="s2">&quot;-s&quot;</span> <span class="o">]</span> <span class="p">;</span> <span class="k">then</span>
         ffmpeg -i <span class="s2">&quot;</span><span class="nv">$1</span><span class="s2">&quot;</span> -sameq -s <span class="s2">&quot;</span><span class="nv">$4</span><span class="s2">&quot;</span> <span class="s2">&quot;</span><span class="nv">$2</span><span class="s2">&quot;</span>
         <span class="k">else</span>
-        <span class="nb">echo </span>Usage: mkhdv input.video output.video <span class="se">\ </span>
+        <span class="nb">echo</span> Usage: mkhdv input.video output.video <span class="se">\ </span>
 <span class="o">[</span>-t <span class="s2">&quot;some video title&quot;</span><span class="o">]</span> <span class="o">[</span>-s 1280x720<span class="o">]</span>
-        <span class="nb">exit </span>666
+        <span class="nb">exit</span> 666
         <span class="k">fi</span>
     <span class="k">fi</span>
 <span class="k">else</span>
-    <span class="c"># we have size and title</span>
-    <span class="k">if</span> <span class="o">[</span> <span class="nv">$# </span>-eq <span class="m">6</span> <span class="o">]</span> <span class="p">;</span> <span class="k">then</span>
+    <span class="c1"># we have size and title</span>
+    <span class="k">if</span> <span class="o">[</span> <span class="nv">$#</span> -eq <span class="m">6</span> <span class="o">]</span> <span class="p">;</span> <span class="k">then</span>
         <span class="nv">TITLE</span><span class="o">=</span><span class="s2">&quot;&quot;</span>
         <span class="nv">SIZE</span><span class="o">=</span><span class="s2">&quot;&quot;</span>
-        <span class="c"># look for title</span>
+        <span class="c1"># look for title</span>
         <span class="k">if</span> <span class="o">[</span> <span class="s2">&quot;</span><span class="nv">$3</span><span class="s2">&quot;</span> <span class="o">=</span> <span class="s2">&quot;-t&quot;</span> <span class="o">]</span> <span class="p">;</span> <span class="k">then</span>
             <span class="nv">TITLE</span><span class="o">=</span><span class="s2">&quot;</span><span class="nv">$4</span><span class="s2">&quot;</span>
         <span class="k">fi</span>
         <span class="k">if</span> <span class="o">[</span> <span class="s2">&quot;</span><span class="nv">$5</span><span class="s2">&quot;</span> <span class="o">=</span> <span class="s2">&quot;-t&quot;</span> <span class="o">]</span> <span class="p">;</span> <span class="k">then</span>
             <span class="nv">TITLE</span><span class="o">=</span><span class="s2">&quot;</span><span class="nv">$6</span><span class="s2">&quot;</span>
         <span class="k">fi</span>
-        <span class="c"># look for size</span>
+        <span class="c1"># look for size</span>
         <span class="k">if</span> <span class="o">[</span> <span class="s2">&quot;</span><span class="nv">$3</span><span class="s2">&quot;</span> <span class="o">=</span> <span class="s2">&quot;-s&quot;</span> <span class="o">]</span> <span class="p">;</span> <span class="k">then</span>
             <span class="nv">SIZE</span><span class="o">=</span><span class="s2">&quot;</span><span class="nv">$4</span><span class="s2">&quot;</span>
         <span class="k">fi</span>
@@ -154,8 +154,8 @@
         ffmpeg -i <span class="s2">&quot;</span><span class="nv">$1</span><span class="s2">&quot;</span> -sameq -s 1280x720 <span class="s2">&quot;</span><span class="nv">$2</span><span class="s2">&quot;</span>
     <span class="k">fi</span>
 <span class="k">fi</span>
-<span class="nb">echo </span>Done
-<span class="nb">exit </span>1
+<span class="nb">echo</span> Done
+<span class="nb">exit</span> 1
 </pre></div>
 			
 

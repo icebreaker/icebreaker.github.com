@@ -22,7 +22,7 @@
 		<!-- Blog  -->
 		<link rel="stylesheet" type="text/css" href="/css/blog.css" />
 		<!-- Fonts -->
-		<link href="http://fonts.googleapis.com/css?family=Droid+Sans|Droid+Sans+Mono|Oxygen" rel="stylesheet" type="text/css" />
+		<link href="http://fonts.googleapis.com/css?family=Droid+Sans|Droid+Sans+Mono|Andada" rel="stylesheet" type="text/css" />
 		
 		
 		<script type="text/javascript">
@@ -83,7 +83,7 @@
 
 			<p>A few weeks ago I posted a script I made to make customized wallpapers for my system using twinview. Recently I made another nice little script to convert all the images in PNG format from a folder to JPG format.</p>
 <p>This is really simple and it fits my needs ... of course as always there is room for improvement :)</p>
-<div class="highlight"><pre><span class="c">#!/bin/bash</span>
+<div class="highlight"><pre><span></span><span class="ch">#!/bin/bash</span>
 ls *.png <span class="p">|</span> awk <span class="s1">&#39;{ printf(&quot;Converting %s ... &quot;,$0); \</span>
 <span class="s1">system(&quot;convert &quot; $0 &quot; &quot; substr($0,0,length($0)-3)&quot;.jpg&quot; ); \</span>
 <span class="s1">printf(&quot;Done!\n&quot;); }&#39;</span>

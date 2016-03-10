@@ -22,7 +22,7 @@
 		<!-- Blog  -->
 		<link rel="stylesheet" type="text/css" href="/css/blog.css" />
 		<!-- Fonts -->
-		<link href="http://fonts.googleapis.com/css?family=Droid+Sans|Droid+Sans+Mono|Oxygen" rel="stylesheet" type="text/css" />
+		<link href="http://fonts.googleapis.com/css?family=Droid+Sans|Droid+Sans+Mono|Andada" rel="stylesheet" type="text/css" />
 		
 		
 		<script type="text/javascript">
@@ -164,9 +164,9 @@ don't have to worry about it.</p>
 <p>There's also automatic dependency linking which can be turned off if needed, but it comes handy when you have to link
 to modules with an executable module.</p>
 <p>For this scenario the RakeBuild project file for the executable would be something like this:</p>
-<div class="highlight"><pre><span class="l-Scalar-Plain">name</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">hello_world</span>
-<span class="l-Scalar-Plain">type</span><span class="p-Indicator">:</span> <span class="l-Scalar-Plain">app</span>
-<span class="l-Scalar-Plain">deps</span><span class="p-Indicator">:</span> <span class="p-Indicator">[</span><span class="nv">lib1</span><span class="p-Indicator">,</span> <span class="nv">lib2</span><span class="p-Indicator">]</span>
+<div class="highlight"><pre><span></span><span class="l l-Scalar l-Scalar-Plain">name</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">hello_world</span>
+<span class="l l-Scalar l-Scalar-Plain">type</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">app</span>
+<span class="l l-Scalar l-Scalar-Plain">deps</span><span class="p p-Indicator">:</span> <span class="p p-Indicator">[</span><span class="nv">lib1</span><span class="p p-Indicator">,</span> <span class="nv">lib2</span><span class="p p-Indicator">]</span>
 </pre></div>
 
 <p>The <strong>deps</strong> is an array of module directory names from within the top level <em>src</em> directory; with automatic dependency
@@ -184,7 +184,7 @@ by looking at the provided samples.</p>
 can be done in a lot more elegant or simpler way .</p>
 <p>With a simple Makefile like below, RakeBuild can be used with QT Creator or other IDEs which have support for <em>importing</em> 
 existing Makefile based projects.</p>
-<div class="highlight"><pre><span class="nf">all</span><span class="o">:</span>
+<div class="highlight"><pre><span></span><span class="nf">all</span><span class="o">:</span>
     rake
 <span class="nf">release</span><span class="o">:</span>
     rake release

@@ -22,7 +22,7 @@
 		<!-- Blog  -->
 		<link rel="stylesheet" type="text/css" href="/css/blog.css" />
 		<!-- Fonts -->
-		<link href="http://fonts.googleapis.com/css?family=Droid+Sans|Droid+Sans+Mono|Oxygen" rel="stylesheet" type="text/css" />
+		<link href="http://fonts.googleapis.com/css?family=Droid+Sans|Droid+Sans+Mono|Andada" rel="stylesheet" type="text/css" />
 		
 		
 		<script type="text/javascript">
@@ -87,13 +87,13 @@
 <p>The best way to go is to copy the examples directory into your home directory or desktop for convenience. I will modify the examples/OpenGL/basic/26_toon_shadding sample program.</p>
 <p>First we need to edt 26_toon_shading.c in order to change the <em><strong>"GL/GLUT.h"</strong></em> include to <em><strong>"GL/freeglut.h"</strong></em>, and after this modifying the Makefile.</p>
 <p>First of all I added :
-<div class="highlight"><pre><span class="nv">CFLAGS</span> <span class="o">+=</span> -I<span class="s2">&quot;/opt/csw/include&quot;</span>
+<div class="highlight"><pre><span></span><span class="nv">CFLAGS</span> <span class="o">+=</span> -I<span class="s2">&quot;/opt/csw/include&quot;</span>
 </pre></div></p>
 <p>This is required because the Freeglut package will install there, and modified <strong><em>CLINKFLAGS</em></strong> by appending <em><strong>-L/opt/csw/lib</strong></em> so it looks like this:
-<div class="highlight"><pre><span class="nv">CLINKFLAGS</span> <span class="o">+=</span> -L/usr/X11R6/lib64 -L/usr/X11R6/lib -L/opt/csw/lib
+<div class="highlight"><pre><span></span><span class="nv">CLINKFLAGS</span> <span class="o">+=</span> -L/usr/X11R6/lib64 -L/usr/X11R6/lib -L/opt/csw/lib
 </pre></div></p>
 <p>After this, a regular 'make' will do the job, but when running the executable there will be an error saying that the freeglut shared object cannot be found. This is fixed by prepending the <strong><em>/opt/csw/lib</em></strong> to the <em><strong>LD_LIBRARY_PATH</strong></em> environment variable with the following shell command:
-<div class="highlight"><pre><span class="nb">export </span><span class="nv">LD_LIBRARY_PATH</span><span class="o">=</span>/opt/csw/lib:<span class="nv">$LD_LIBRARY_PATH</span>
+<div class="highlight"><pre><span></span><span class="nb">export</span> <span class="nv">LD_LIBRARY_PATH</span><span class="o">=</span>/opt/csw/lib:<span class="nv">$LD_LIBRARY_PATH</span>
 </pre></div></p>
 <p>... there you go :D up and running.</p>
 <p><a class="image" href="/images/2009/04/screen.jpg">

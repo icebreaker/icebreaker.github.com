@@ -22,7 +22,7 @@
 		<!-- Blog  -->
 		<link rel="stylesheet" type="text/css" href="/css/blog.css" />
 		<!-- Fonts -->
-		<link href="http://fonts.googleapis.com/css?family=Droid+Sans|Droid+Sans+Mono|Oxygen" rel="stylesheet" type="text/css" />
+		<link href="http://fonts.googleapis.com/css?family=Droid+Sans|Droid+Sans+Mono|Andada" rel="stylesheet" type="text/css" />
 		
 		
 		<script type="text/javascript">
@@ -82,8 +82,8 @@
 <div class="clear"></div>
 
 			<p>Automatic build number incrementation always was a <em>hot topic</em> especially under Linux. My solution is fairly simple to implement, so let's see some "code" right away:</p>
-<div class="highlight"><pre><span class="c">#!/bin/bash</span>
-<span class="nb">echo </span>Fetching and updating build number ...
+<div class="highlight"><pre><span></span><span class="ch">#!/bin/bash</span>
+<span class="nb">echo</span> Fetching and updating build number ...
 cat Core/Build.cpp <span class="p">|</span> awk <span class="s1">&#39;{ printf(&quot;unsigned int g_internalbuildNumber = %d ;\n&quot;,$5+1); }&#39;</span> &gt; Core/_Build.cpp
 rm Core/Build.cpp
 mv Core/_Build.cpp Core/Build.cpp

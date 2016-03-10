@@ -22,7 +22,7 @@
 		<!-- Blog  -->
 		<link rel="stylesheet" type="text/css" href="/css/blog.css" />
 		<!-- Fonts -->
-		<link href="http://fonts.googleapis.com/css?family=Droid+Sans|Droid+Sans+Mono|Oxygen" rel="stylesheet" type="text/css" />
+		<link href="http://fonts.googleapis.com/css?family=Droid+Sans|Droid+Sans+Mono|Andada" rel="stylesheet" type="text/css" />
 		
 		
 		<script type="text/javascript">
@@ -85,7 +85,7 @@
 <p>This can "log" to a file, to a console (internal or not) or both. Anyway, the most important thing are the different log levels, and filters.</p>
 <p>Let's say that we have Text, Info, Warning, Error ... each represents an level. Then we can setup a filter to "show" only the Warnings, or the Errors supressing all the other messages. This is extremly useful if you have bunch messages showing up in your log file / console.</p>
 <p>Now let's see some code :)</p>
-<div class="highlight"><pre><span class="cp">#define SAFE_ARRAY_DELETE(x) if(x) {delete [] x; x=NULL;}</span>
+<div class="highlight"><pre><span></span><span class="cp">#define SAFE_ARRAY_DELETE(x) if(x) {delete [] x; x=NULL;}</span>
 <span class="cp">#define INRANGE(x,min,max) ( (x &gt;= min) &amp;&amp; (x &lt;= max) )</span>
 
 <span class="k">namespace</span> <span class="n">Log</span>

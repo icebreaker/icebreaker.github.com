@@ -42,8 +42,8 @@
 
 body
 {
-	font-family: 'Oxygen', 'Droid Sans', sans-serif;
-/*	font-size: 1.2em; */
+	font-family: 'Andada', 'Droid Sans', sans-serif;
+	font-size: 1.25em;
 	font-weight: 400;
 	word-spacing: 0.15em;
 	width: 1024px;
@@ -152,7 +152,7 @@ body
 
 .content code
 {
-	font-family: 'Oxygen', 'Droid Sans';
+	font-family: 'Andada', 'Droid Sans';
 	padding: 0;
 }
 

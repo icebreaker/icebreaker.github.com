@@ -22,7 +22,7 @@
 		<!-- Blog  -->
 		<link rel="stylesheet" type="text/css" href="/css/blog.css" />
 		<!-- Fonts -->
-		<link href="http://fonts.googleapis.com/css?family=Droid+Sans|Droid+Sans+Mono|Oxygen" rel="stylesheet" type="text/css" />
+		<link href="http://fonts.googleapis.com/css?family=Droid+Sans|Droid+Sans+Mono|Andada" rel="stylesheet" type="text/css" />
 		
 		
 		<script type="text/javascript">
@@ -88,7 +88,7 @@ or just restrict access to a certain directory.</p>
 <p>Lets say that you have a scriptable game and you don't want to allow access outside of the "data" folder which holds all
 the necessary data, with <a href="http://doc.trolltech.com/4.6/qfsfileengine.html">QAbstractFileEngine</a> this can be resolved in 
 a transparent way as shown in the code snippet below.</p>
-<div class="highlight"><pre><span class="p">...</span>
+<div class="highlight"><pre><span></span><span class="p">...</span>
 
 <span class="c1">//! File System Class</span>
 <span class="k">class</span> <span class="nc">FileSystem</span> <span class="o">:</span> <span class="k">public</span> <span class="n">QFSFileEngine</span>
@@ -128,7 +128,7 @@ a transparent way as shown in the code snippet below.</p>
 our file engine handler just the paths get altered in the background.</p>
 <p>The latest registered handler takes precedence over existing handlers.</p>
 <p>We could also do another nifty thing and register a handler which would respond to <strong>"fs://myfile.txt"</strong>.</p>
-<div class="highlight"><pre><span class="n">QFile</span> <span class="nf">lFile</span><span class="p">(</span><span class="s">&quot;fs://myfile.txt&quot;</span><span class="p">);</span>
+<div class="highlight"><pre><span></span><span class="n">QFile</span> <span class="nf">lFile</span><span class="p">(</span><span class="s">&quot;fs://myfile.txt&quot;</span><span class="p">);</span>
 </pre></div>
 
 <p>QT's internal resource system is implemented this way, so that's a good place to study especially if you want to implement a ZIP

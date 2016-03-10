@@ -22,7 +22,7 @@
 		<!-- Blog  -->
 		<link rel="stylesheet" type="text/css" href="/css/blog.css" />
 		<!-- Fonts -->
-		<link href="http://fonts.googleapis.com/css?family=Droid+Sans|Droid+Sans+Mono|Oxygen" rel="stylesheet" type="text/css" />
+		<link href="http://fonts.googleapis.com/css?family=Droid+Sans|Droid+Sans+Mono|Andada" rel="stylesheet" type="text/css" />
 		
 		
 		<script type="text/javascript">
@@ -95,7 +95,7 @@
 
 <p>Now this can be compiled to a nice shared object or dynamic linking library and used right away.</p>
 
-<div class="highlight"><pre>g++ LeraSystem.cpp -shared -o pyLeraSystem.so -I/usr/include/python2.6 -lboost_python
+<div class="highlight"><pre><span></span>g++ LeraSystem.cpp -shared -o pyLeraSystem.so -I/usr/include/python2.6 -lboost_python
 </pre></div>
 
 <p>I provide compile commands for Linux + GCC only, since it is my primary development platform, but this is very similar under Windows, there you one would get two files like pyLeraSystem.dll + pyLeraSystem.lib .</p>
@@ -104,7 +104,7 @@
 
 <p><script src="http://gist.github.com/79339.js"></script> Produced Output:</p>
 
-<div class="highlight"><pre>hello world
+<div class="highlight"><pre><span></span>hello world
 Instance check ...
 &lt;pyLeraSystem.leraSystem object at 0xb7cb7534&gt;
 &lt;pyLeraSystem.leraSystem object at 0xb7cb7534&gt;
@@ -124,12 +124,12 @@ hello world
 
 <p>... to compile the embedded python interpreter ...</p>
 
-<div class="highlight"><pre>g++ LeraPythonEmbed.cpp -I/usr/include/python2.6 -L. -lpython2.6 -lm -lLeraSystem -o leraTestEmbed
+<div class="highlight"><pre><span></span>g++ LeraPythonEmbed.cpp -I/usr/include/python2.6 -L. -lpython2.6 -lm -lLeraSystem -o leraTestEmbed
 </pre></div>
 
 <p>To make it run one more hack is necessary, and that is adjusting the LD_LIBRARY_PATH to include the current working directory with a command like:</p>
 
-<div class="highlight"><pre><span class="nb">export </span><span class="nv">LD_LIBRARY_PATH</span><span class="o">=</span>.:<span class="nv">$LD_LIBRARY_PATH</span>
+<div class="highlight"><pre><span></span><span class="nb">export</span> <span class="nv">LD_LIBRARY_PATH</span><span class="o">=</span>.:<span class="nv">$LD_LIBRARY_PATH</span>
 </pre></div>
 
 <p>( this is again not necessary under Windows )</p>
@@ -140,8 +140,8 @@ hello world
 
 <p>Now running ./leraTestEmbed produces the following output:</p>
 
-<div class="highlight"><pre>this message was <span class="nb">set </span>from C++ and printed by Python
-this message was <span class="nb">set </span>from Python and printed by C++
+<div class="highlight"><pre><span></span>this message was <span class="nb">set</span> from C++ and printed by Python
+this message was <span class="nb">set</span> from Python and printed by C++
 </pre></div>
 
 <p>With this I reached my final goal, python and c++ fully interacting, using the same singleton sub-system class at runtime.</p>

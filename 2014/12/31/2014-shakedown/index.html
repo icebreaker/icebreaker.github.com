@@ -22,7 +22,7 @@
 		<!-- Blog  -->
 		<link rel="stylesheet" type="text/css" href="/css/blog.css" />
 		<!-- Fonts -->
-		<link href="http://fonts.googleapis.com/css?family=Droid+Sans|Droid+Sans+Mono|Oxygen" rel="stylesheet" type="text/css" />
+		<link href="http://fonts.googleapis.com/css?family=Droid+Sans|Droid+Sans+Mono|Andada" rel="stylesheet" type="text/css" />
 		
 		
 		<script type="text/javascript">
@@ -120,7 +120,7 @@ a series of separate posts starting next year.</p>
 <a name="Jsonoid"></a>
 <h2>Jsonoid</h2>
 <p>A simple serverless NoSQL (JSON) document storage system.</p>
-<div class="highlight"><pre><span class="nb">require</span> <span class="s1">&#39;jsonoid&#39;</span>
+<div class="highlight"><pre><span></span><span class="nb">require</span> <span class="s1">&#39;jsonoid&#39;</span>
 
 <span class="no">Jsonoid</span><span class="o">.</span><span class="n">configure</span> <span class="k">do</span> <span class="o">|</span><span class="n">config</span><span class="o">|</span>
   <span class="n">config</span><span class="o">.</span><span class="n">db</span> <span class="o">=</span> <span class="no">File</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="no">File</span><span class="o">.</span><span class="n">dirname</span><span class="p">(</span><span class="bp">__FILE__</span><span class="p">),</span> <span class="s1">&#39;db&#39;</span><span class="p">)</span>
@@ -162,7 +162,7 @@ a series of separate posts starting next year.</p>
 <a name="nanoenum.rb"></a>
 <h2>nanoenum.rb</h2>
 <p>A small <code>enum</code> implementation for Ruby.</p>
-<div class="highlight"><pre><span class="k">class</span> <span class="nc">Model</span>
+<div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">Model</span>
   <span class="kp">include</span> <span class="no">Mongoid</span><span class="o">::</span><span class="no">Document</span>
   <span class="kp">include</span> <span class="no">NanoEnum</span>
 
@@ -183,7 +183,7 @@ a series of separate posts starting next year.</p>
 <a name="vm.rb"></a>
 <h2>vm.rb</h2>
 <p>A small "experimental" (x86 like) <em>virtual machine</em> written in Ruby.</p>
-<div class="highlight"><pre><span class="c1">;</span>
+<div class="highlight"><pre><span></span><span class="c1">;</span>
 <span class="c1">; Prints first N from the Fibonacci sequence.</span>
 <span class="c1">;</span>
 <span class="nl">read_n:</span>
@@ -213,7 +213,7 @@ a series of separate posts starting next year.</p>
   <span class="nf">jne</span> <span class="nv">loop</span>
 </pre></div>
 
-<div class="highlight"><pre>ruby vm.rb fibo.asm
+<div class="highlight"><pre><span></span>ruby vm.rb fibo.asm
 </pre></div>
 
 <p>You can find out more about it over <a href="https://gist.github.com/icebreaker/3c260812b94ff434c303">here</a>.</p>

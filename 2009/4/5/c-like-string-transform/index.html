@@ -22,7 +22,7 @@
 		<!-- Blog  -->
 		<link rel="stylesheet" type="text/css" href="/css/blog.css" />
 		<!-- Fonts -->
-		<link href="http://fonts.googleapis.com/css?family=Droid+Sans|Droid+Sans+Mono|Oxygen" rel="stylesheet" type="text/css" />
+		<link href="http://fonts.googleapis.com/css?family=Droid+Sans|Droid+Sans+Mono|Andada" rel="stylesheet" type="text/css" />
 		
 		
 		<script type="text/javascript">
@@ -82,7 +82,7 @@
 <div class="clear"></div>
 
 			<p>All we need is a naked class with the<strong> () operator</strong> overloaded to execute and wrap the "real" <em><strong>tolower</strong></em>.</p>
-<div class="highlight"><pre><span class="k">struct</span> <span class="n">toLower</span>
+<div class="highlight"><pre><span></span><span class="k">struct</span> <span class="n">toLower</span>
 <span class="p">{</span>
     <span class="kt">int</span> <span class="k">operator</span><span class="p">()(</span><span class="kt">int</span> <span class="n">ch</span><span class="p">)</span>
     <span class="p">{</span>
@@ -92,11 +92,11 @@
 </pre></div>
 
 <p>With this our <em>transform</em> will resume to this <em>beautiful</em> and <em>elegant</em> line ...</p>
-<div class="highlight"><pre><span class="n">transform</span><span class="p">(</span> <span class="n">s</span><span class="p">.</span><span class="n">begin</span><span class="p">(),</span> <span class="n">s</span><span class="p">.</span><span class="n">end</span><span class="p">(),</span> <span class="n">s</span><span class="p">.</span><span class="n">begin</span><span class="p">(),</span> <span class="n">toLower</span><span class="p">()</span> <span class="p">);</span>
+<div class="highlight"><pre><span></span><span class="n">transform</span><span class="p">(</span> <span class="n">s</span><span class="p">.</span><span class="n">begin</span><span class="p">(),</span> <span class="n">s</span><span class="p">.</span><span class="n">end</span><span class="p">(),</span> <span class="n">s</span><span class="p">.</span><span class="n">begin</span><span class="p">(),</span> <span class="n">toLower</span><span class="p">()</span> <span class="p">);</span>
 </pre></div>
 
 <p>... instead of the very <em>'C like'</em> looking (even if we used C++ like casting):</p>
-<div class="highlight"><pre><span class="n">transform</span><span class="p">(</span> <span class="n">s</span><span class="p">.</span><span class="n">begin</span><span class="p">(),</span> <span class="n">s</span><span class="p">.</span><span class="n">end</span><span class="p">(),</span> <span class="n">s</span><span class="p">.</span><span class="n">begin</span><span class="p">(),</span> <span class="p">(</span><span class="kt">int</span><span class="p">(</span><span class="o">*</span><span class="p">)(</span><span class="kt">int</span><span class="p">))</span><span class="n">tolower</span> <span class="p">);</span>
+<div class="highlight"><pre><span></span><span class="n">transform</span><span class="p">(</span> <span class="n">s</span><span class="p">.</span><span class="n">begin</span><span class="p">(),</span> <span class="n">s</span><span class="p">.</span><span class="n">end</span><span class="p">(),</span> <span class="n">s</span><span class="p">.</span><span class="n">begin</span><span class="p">(),</span> <span class="p">(</span><span class="kt">int</span><span class="p">(</span><span class="o">*</span><span class="p">)(</span><span class="kt">int</span><span class="p">))</span><span class="n">tolower</span> <span class="p">);</span>
 </pre></div>
 
 <p>Pretty, pretty :D</p>
