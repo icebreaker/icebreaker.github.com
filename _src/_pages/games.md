@@ -6,6 +6,17 @@ propaganda: 5
 This page contains a selection of my **game** related projects.
 For a complete list of *all my projects* please click [here](/proudify).
 
+Menhir
+------
+A simple puzzle game.
+
+![](/images/games/menhir.png)
+
+You can find out more about it over
+[here](http://github.com/icebreaker/menhir). If you just want to play it, you
+can do so by clicking
+[here](/menhir).
+
 Deermas
 -------
 A mini adventure game for [Maral](http://twitter.com/_maral).
