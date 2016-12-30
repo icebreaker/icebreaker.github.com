@@ -9,9 +9,538 @@
 	<name>Mihail Szabolcs</name>
 </author>
 
-<updated>2015-12-31T00:00:00+02:00</updated>
+<updated>2016-12-31T00:00:00+02:00</updated>
 
 
+
+<entry>
+	<title type="html">2016 Shakedown</title>
+	<link href="http://mihail.co/2016/12/31/2016-shakedown"/>
+	<updated>2016-12-31T00:00:00+02:00</updated>
+	<id>http://mihail.co/2016/12/31/2016-shakedown</id>
+	<content type="html">&lt;p&gt;Another year is behind us and I am here once again posting a &lt;em&gt;summary&lt;/em&gt; of what I've been &lt;em&gt;hacking&lt;/em&gt;
+on in my spare time, which translates to &lt;em&gt;evenings&lt;/em&gt; and &lt;em&gt;weekends&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;This year was more of a &lt;em&gt;year of ideas&lt;/em&gt; when it comes to my personal projects. I did not &lt;em&gt;release&lt;/em&gt; 
+a great many things, but fiddled with various ideas and crystallized the road ahead.&lt;/p&gt;
+&lt;p&gt;To put things into perspective, here are some charts &lt;em&gt;generated&lt;/em&gt; by &lt;a href="http://github.com/icebreaker"&gt;GitHub&lt;/a&gt;.&lt;/p&gt;
+&lt;h4&gt;2016 vs 2015&lt;/h4&gt;
+&lt;p&gt;&lt;img alt="" src="http://mihail.co/images/github/2016.png" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="" src="http://mihail.co/images/github/2015.png" /&gt;&lt;/p&gt;
+&lt;a name="Menhir"&gt;&lt;/a&gt;
+&lt;h2&gt;Menhir&lt;/h2&gt;
+&lt;p&gt;&lt;a href="http://github.com/icebreaker/menhir"&gt;Menhir&lt;/a&gt; is a simple puzzle game, the player's sole purpose is 
+to try to clear the &lt;em&gt;board&lt;/em&gt; by utilizing &lt;em&gt;empty&lt;/em&gt; spots.&lt;/p&gt;
+&lt;p&gt;This is modeled after a "board game", I really enjoyed in my childhood.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="" src="http://mihail.co/images/games/menhir.png" /&gt;&lt;/p&gt;
+&lt;p&gt;Special thanks go out to &lt;a href="http://kenney.nl"&gt;Kenney "Asset" Jesus&lt;/a&gt; for the sprites.&lt;/p&gt;
+&lt;p&gt;If you want to try it out, you can do so by clicking &lt;a href="http://mihail.co/menhir"&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;a name="Fz2D"&gt;&lt;/a&gt;
+&lt;h2&gt;Fz2D&lt;/h2&gt;
+&lt;p&gt;&lt;a href="http://github.com/icebreaker/fz2d"&gt;Fz2D&lt;/a&gt; received a couple of more updates, and slowly but
+surely getting closer to graduating from alpha into beta.&lt;/p&gt;
+&lt;p&gt;I'd like to add / wrap-up the following things next year:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Fz2D.Camera (scrolling, etc)&lt;/li&gt;
+&lt;li&gt;Built-in asset pipeline (texture and font atlas generation)&lt;/li&gt;
+&lt;li&gt;Improved (painless) handling of dependencies&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Feel free to take a peek at the documentation available over &lt;a href="http://mihail.co/fz2d/docs/"&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;a name="nyan.c"&gt;&lt;/a&gt;
+&lt;h2&gt;nyan.c&lt;/h2&gt;
+&lt;p&gt;This was a warm-up for &lt;a href="http://www.ioccc.org/"&gt;IOCCC&lt;/a&gt;, but then it turned out that there was no
+competition held this year. Oh well ....&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="cp"&gt;#include&lt;/span&gt; &lt;span class="cpf"&gt;&amp;lt;stdio.h&amp;gt;&lt;/span&gt;&lt;span class="cp"&gt;&lt;/span&gt;
+&lt;span class="cp"&gt;#include&lt;/span&gt; &lt;span class="cpf"&gt;&amp;lt;unistd.h&amp;gt;&lt;/span&gt;&lt;span class="cp"&gt;&lt;/span&gt;
+
+&lt;span class="kt"&gt;int&lt;/span&gt; &lt;span class="nf"&gt;main&lt;/span&gt;&lt;span class="p"&gt;(){&lt;/span&gt;&lt;span class="k"&gt;const&lt;/span&gt; &lt;span class="kt"&gt;char&lt;/span&gt; &lt;span class="o"&gt;*&lt;/span&gt;&lt;span class="n"&gt;O_o&lt;/span&gt;&lt;span class="p"&gt;[]&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="cm"&gt;/*msz*/&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;
+&lt;span class="s"&gt;&amp;quot; ,------,&lt;/span&gt;&lt;span class="se"&gt;\n&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;&lt;/span&gt;  &lt;span class="s"&gt;&amp;quot;v|   /&lt;/span&gt;&lt;span class="se"&gt;\\&lt;/span&gt;&lt;span class="s"&gt;__/&lt;/span&gt;&lt;span class="se"&gt;\\&lt;/span&gt;&lt;span class="s"&gt; &lt;/span&gt;&lt;span class="se"&gt;\n&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;&lt;/span&gt; 
+&lt;span class="s"&gt;&amp;quot; |__( ^ w ^) &lt;/span&gt;&lt;span class="se"&gt;\n&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;&lt;/span&gt; &lt;span class="s"&gt;&amp;quot;     &lt;/span&gt;&lt;span class="se"&gt;\&amp;quot;&lt;/span&gt;&lt;span class="s"&gt;  &lt;/span&gt;&lt;span class="se"&gt;\&amp;quot;\n&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+         &lt;span class="s"&gt;&amp;quot; ,------,&lt;/span&gt;&lt;span class="se"&gt;\n&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;&lt;/span&gt;
+         &lt;span class="s"&gt;&amp;quot;~|    /&lt;/span&gt;&lt;span class="se"&gt;\\&lt;/span&gt;&lt;span class="s"&gt;__/&lt;/span&gt;&lt;span class="se"&gt;\\\n&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;&lt;/span&gt;
+         &lt;span class="s"&gt;&amp;quot; |___( ^ w ^) &lt;/span&gt;&lt;span class="se"&gt;\n&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;&lt;/span&gt;
+         &lt;span class="s"&gt;&amp;quot;     &lt;/span&gt;&lt;span class="se"&gt;\&amp;quot;&lt;/span&gt;&lt;span class="s"&gt;  &lt;/span&gt;&lt;span class="se"&gt;\&amp;quot;\n&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;span class="s"&gt;&amp;quot; ,------,&lt;/span&gt;&lt;span class="se"&gt;\n&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;&lt;/span&gt; &lt;span class="s"&gt;&amp;quot;^|    /&lt;/span&gt;&lt;span class="se"&gt;\\&lt;/span&gt;&lt;span class="s"&gt;__/&lt;/span&gt;&lt;span class="se"&gt;\\\n&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;&lt;/span&gt;
+&lt;span class="s"&gt;&amp;quot; |___( ^ w ^) &lt;/span&gt;&lt;span class="se"&gt;\n&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;&lt;/span&gt;  &lt;span class="s"&gt;&amp;quot;     &lt;/span&gt;&lt;span class="se"&gt;\&amp;quot;&lt;/span&gt;&lt;span class="s"&gt;  &lt;/span&gt;&lt;span class="se"&gt;\&amp;quot;\n&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;&lt;/span&gt; &lt;span class="p"&gt;};&lt;/span&gt;
+&lt;span class="kt"&gt;int&lt;/span&gt; &lt;span class="n"&gt;i&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;&lt;span class="k"&gt;for&lt;/span&gt;&lt;span class="p"&gt;(;;){&lt;/span&gt;&lt;span class="n"&gt;printf&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;%s&lt;/span&gt;&lt;span class="se"&gt;\x1b&lt;/span&gt;&lt;span class="s"&gt;[4A&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+&lt;span class="n"&gt;O_o&lt;/span&gt;&lt;span class="p"&gt;[(&lt;/span&gt;&lt;span class="n"&gt;i&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;i&lt;/span&gt;&lt;span class="o"&gt;+&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="o"&gt;%&lt;/span&gt;&lt;span class="mi"&gt;3&lt;/span&gt;&lt;span class="p"&gt;)]);&lt;/span&gt;&lt;span class="n"&gt;usleep&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;200000&lt;/span&gt;&lt;span class="p"&gt;);}}&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;a name="ZeeCraft"&gt;&lt;/a&gt;
+&lt;h2&gt;ZeeCraft&lt;/h2&gt;
+&lt;p&gt;Added an &lt;strong&gt;HD&lt;/strong&gt; mode to my &lt;a href="http://github.com/icebreaker/zeecraft"&gt;ZeeCraft&lt;/a&gt; project.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="" src="http://mihail.co/images/games/zeecraft_hd.png" /&gt;&lt;/p&gt;
+&lt;p&gt;Special thanks, once again go out to &lt;a href="http://kenney.nl"&gt;Kenney "Asset" Jesus&lt;/a&gt; for the textures.&lt;/p&gt;
+&lt;a name="fastopen.vim"&gt;&lt;/a&gt;
+&lt;h2&gt;fastopen.vim&lt;/h2&gt;
+&lt;p&gt;I made a few updates to &lt;a href="http://github.com/icebreaker/fastopen.vim"&gt;fastopen.vim&lt;/a&gt;. A quick 
+"file opener" for &lt;a href="http://www.vim.org"&gt;vim&lt;/a&gt; using "dmenu".&lt;/p&gt;
+&lt;p&gt;&lt;img alt="" src="http://mihail.co/images/misc/fastopen.png" /&gt;&lt;/p&gt;
+&lt;a name="JSIP"&gt;&lt;/a&gt;
+&lt;h2&gt;JSIP&lt;/h2&gt;
+&lt;p&gt;&lt;a href="http://github.com/icebreaker/jsip"&gt;JSIP&lt;/a&gt; can &lt;em&gt;pack&lt;/em&gt; a piece of JS into a plain PNG image. Does not rely
+on any &lt;em&gt;custom chunks&lt;/em&gt; or other exploits.&lt;/p&gt;
+&lt;h4&gt;input: helloworld.js&lt;/h4&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="nx"&gt;alert&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;hello world&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h4&gt;output: helloworld.html&lt;/h4&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="p"&gt;&amp;lt;&lt;/span&gt;&lt;span class="nt"&gt;html&lt;/span&gt;&lt;span class="p"&gt;&amp;gt;&lt;/span&gt;
+  &lt;span class="p"&gt;&amp;lt;&lt;/span&gt;&lt;span class="nt"&gt;head&lt;/span&gt;&lt;span class="p"&gt;&amp;gt;&lt;/span&gt;
+    &lt;span class="p"&gt;&amp;lt;&lt;/span&gt;&lt;span class="nt"&gt;title&lt;/span&gt;&lt;span class="p"&gt;&amp;gt;&lt;/span&gt;Helloworld&lt;span class="p"&gt;&amp;lt;/&lt;/span&gt;&lt;span class="nt"&gt;title&lt;/span&gt;&lt;span class="p"&gt;&amp;gt;&lt;/span&gt;
+  &lt;span class="p"&gt;&amp;lt;/&lt;/span&gt;&lt;span class="nt"&gt;head&lt;/span&gt;&lt;span class="p"&gt;&amp;gt;&lt;/span&gt;
+  &lt;span class="p"&gt;&amp;lt;&lt;/span&gt;&lt;span class="nt"&gt;body&lt;/span&gt;&lt;span class="p"&gt;&amp;gt;&lt;/span&gt;
+    &lt;span class="p"&gt;&amp;lt;&lt;/span&gt;&lt;span class="nt"&gt;img&lt;/span&gt; &lt;span class="na"&gt;src&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQAAAAABCAAAAAAUMi+rAAAAIUlEQVR42mNI&lt;/span&gt;
+&lt;span class="s"&gt;zEktKtFQz0jNyclXKM8vyklR17RWGDkAAJWCJK98ao+pAAAAAElFTkSuQmCC&lt;/span&gt;
+&lt;span class="s"&gt;&amp;quot;&lt;/span&gt; 
+         &lt;span class="na"&gt;style&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;visibility: hidden; position: absolute; top: 0; left: 0;&amp;quot;&lt;/span&gt; 
+         &lt;span class="na"&gt;onload&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;this.remove(); var c=document.createElement(&amp;#39;canvas&amp;#39;).getContext(&amp;#39;2d&amp;#39;); c.canvas.width=this.width; c.canvas.height=this.height; c.drawImage(this,0,0); var p=c.getImageData(0,0,this.width,this.height).data; var s=&amp;#39;&amp;#39;;for(var i=0;i&amp;lt;p.length;i+=4)s+=String.fromCharCode(p[i]); (1,eval)(s);&amp;quot;&lt;/span&gt; &lt;span class="na"&gt;onerror&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;this.remove();&amp;quot;&lt;/span&gt; &lt;span class="p"&gt;/&amp;gt;&lt;/span&gt;
+  &lt;span class="p"&gt;&amp;lt;/&lt;/span&gt;&lt;span class="nt"&gt;body&lt;/span&gt;&lt;span class="p"&gt;&amp;gt;&lt;/span&gt;
+&lt;span class="p"&gt;&amp;lt;/&lt;/span&gt;&lt;span class="nt"&gt;html&lt;/span&gt;&lt;span class="p"&gt;&amp;gt;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Even with the &lt;em&gt;indirect&lt;/em&gt; eval, the resulting &lt;em&gt;code&lt;/em&gt; is slower than the same &lt;em&gt;code&lt;/em&gt; included and
+executed directly; but it was a fun thing to experiment with, nonetheless.&lt;/p&gt;
+&lt;p&gt;To view a &lt;em&gt;non-interactive&lt;/em&gt; visual demo produced by JSIP, click &lt;a href="http://mihail.co/jsip"&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;a name="Noty"&gt;&lt;/a&gt;
+&lt;h2&gt;Noty&lt;/h2&gt;
+&lt;p&gt;Noty is a small &lt;em&gt;note&lt;/em&gt; taking application, I written in pure bash script. It's roughly 200 lines long,
+including comments and stores notes in &lt;a href="https://guides.github.com/features/mastering-markdown/"&gt;GFM&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;It is possible to store all notes in a user specified location by exporting the &lt;code&gt;NOTY_DB&lt;/code&gt; variable
+in your &lt;code&gt;.bashrc&lt;/code&gt; like so:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="nb"&gt;export&lt;/span&gt; &lt;span class="nv"&gt;NOTY_DB&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="nv"&gt;$HOME&lt;/span&gt;/Dropbox/.noty
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;The command line interface is really simple.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;Noty v1.0.0
+
+usage: noty &lt;span class="nb"&gt;command&lt;/span&gt; &lt;span class="o"&gt;[&lt;/span&gt;arg&lt;span class="o"&gt;]&lt;/span&gt; &lt;span class="o"&gt;[&lt;/span&gt;note&lt;span class="o"&gt;]&lt;/span&gt;
+
+commands:
+  c - create a new note
+  l - list notes
+  m - mark a note
+  u - unmark a note
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;A little example is in order to demonstrate how lean and mean it is to use.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;~ $ noty c &lt;span class="s1"&gt;&amp;#39;hello world&amp;#39;&lt;/span&gt;
+Initialized &lt;span class="s1"&gt;&amp;#39;testdb&amp;#39;&lt;/span&gt; ...
+Initialized &lt;span class="s1"&gt;&amp;#39;2016-12-30&amp;#39;&lt;/span&gt; ...
+Added note &lt;span class="s1"&gt;&amp;#39;hello world&amp;#39;&lt;/span&gt; ...
+ ~ $ noty l
+2016-12-30
+----------
+1. &lt;span class="o"&gt;[&lt;/span&gt; &lt;span class="o"&gt;]&lt;/span&gt; hello world
+ ~ $ noty c &lt;span class="s1"&gt;&amp;#39;make cake&amp;#39;&lt;/span&gt;
+Added note &lt;span class="s1"&gt;&amp;#39;make cake&amp;#39;&lt;/span&gt; ...
+ ~ $ noty m 1
+Marked note &lt;span class="s1"&gt;&amp;#39;1&amp;#39;&lt;/span&gt; ...
+ ~ $ noty l
+2016-12-30
+----------
+1. &lt;span class="o"&gt;[&lt;/span&gt;x&lt;span class="o"&gt;]&lt;/span&gt; hello world
+2. &lt;span class="o"&gt;[&lt;/span&gt; &lt;span class="o"&gt;]&lt;/span&gt; make cake
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="ch"&gt;#!/bin/bash&lt;/span&gt;
+
+&lt;span class="c1"&gt;# {{{ license&lt;/span&gt;
+&lt;span class="c1"&gt;#&lt;/span&gt;
+&lt;span class="c1"&gt;# MIT LICENSE&lt;/span&gt;
+&lt;span class="c1"&gt;# &lt;/span&gt;
+&lt;span class="c1"&gt;# Copyright (c) 2016, Mihail Szabolcs&lt;/span&gt;
+&lt;span class="c1"&gt;# &lt;/span&gt;
+&lt;span class="c1"&gt;# Permission is hereby granted, free of charge, to any person obtaining a copy&lt;/span&gt;
+&lt;span class="c1"&gt;# of this software and associated documentation files (the &amp;#39;Software&amp;#39;), to deal&lt;/span&gt;
+&lt;span class="c1"&gt;# in the Software without restriction, including without limitation the rights&lt;/span&gt;
+&lt;span class="c1"&gt;# to use, copy, modify, merge, publish, distribute, sublicense, and/or sell&lt;/span&gt;
+&lt;span class="c1"&gt;# copies of the Software, and to permit persons to whom the Software is&lt;/span&gt;
+&lt;span class="c1"&gt;# furnished to do so, subject to the following conditions:&lt;/span&gt;
+&lt;span class="c1"&gt;# &lt;/span&gt;
+&lt;span class="c1"&gt;# The above copyright notice and this permission notice shall be included in all&lt;/span&gt;
+&lt;span class="c1"&gt;# copies or substantial portions of the Software.&lt;/span&gt;
+&lt;span class="c1"&gt;# &lt;/span&gt;
+&lt;span class="c1"&gt;# THE SOFTWARE IS PROVIDED &amp;#39;AS IS&amp;#39;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR&lt;/span&gt;
+&lt;span class="c1"&gt;# IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,&lt;/span&gt;
+&lt;span class="c1"&gt;# FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE&lt;/span&gt;
+&lt;span class="c1"&gt;# AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER&lt;/span&gt;
+&lt;span class="c1"&gt;# LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,&lt;/span&gt;
+&lt;span class="c1"&gt;# OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE&lt;/span&gt;
+&lt;span class="c1"&gt;# SOFTWARE.&lt;/span&gt;
+&lt;span class="c1"&gt;#&lt;/span&gt;
+&lt;span class="c1"&gt;# }}} license&lt;/span&gt;
+
+&lt;span class="c1"&gt;# {{{ globals&lt;/span&gt;
+&lt;span class="nv"&gt;NOTY_VERSION&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;1.0.0&amp;#39;&lt;/span&gt;
+
+&lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="o"&gt;[[&lt;/span&gt; -z &lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;&lt;span class="nv"&gt;$NOTY_DB&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&lt;/span&gt; &lt;span class="o"&gt;]]&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="k"&gt;then&lt;/span&gt;
+    &lt;span class="nv"&gt;NOTY_DB&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;&lt;span class="nv"&gt;$HOME&lt;/span&gt;&lt;span class="s2"&gt;/.noty&amp;quot;&lt;/span&gt;
+&lt;span class="k"&gt;fi&lt;/span&gt;
+&lt;span class="c1"&gt;# }}}&lt;/span&gt;
+
+&lt;span class="c1"&gt;# {{{ utils&lt;/span&gt;
+&lt;span class="k"&gt;function&lt;/span&gt; get_current_date&lt;span class="o"&gt;()&lt;/span&gt;
+&lt;span class="o"&gt;{&lt;/span&gt;
+    date +&lt;span class="s1"&gt;&amp;#39;%Y-%m-%d&amp;#39;&lt;/span&gt;
+&lt;span class="o"&gt;}&lt;/span&gt;
+
+&lt;span class="k"&gt;function&lt;/span&gt; preg_replace&lt;span class="o"&gt;()&lt;/span&gt;
+&lt;span class="o"&gt;{&lt;/span&gt;
+    sed -i -e &lt;span class="s2"&gt;&amp;quot;s/&lt;/span&gt;&lt;span class="nv"&gt;$1&lt;/span&gt;&lt;span class="s2"&gt;/&lt;/span&gt;&lt;span class="nv"&gt;$2&lt;/span&gt;&lt;span class="s2"&gt;/&amp;quot;&lt;/span&gt; &lt;span class="nv"&gt;$3&lt;/span&gt;
+&lt;span class="o"&gt;}&lt;/span&gt;
+
+&lt;span class="k"&gt;function&lt;/span&gt; preg_remove&lt;span class="o"&gt;()&lt;/span&gt;
+&lt;span class="o"&gt;{&lt;/span&gt;
+    sed -i -e &lt;span class="s2"&gt;&amp;quot;/&lt;/span&gt;&lt;span class="nv"&gt;$1&lt;/span&gt;&lt;span class="s2"&gt;/d&amp;quot;&lt;/span&gt; &lt;span class="nv"&gt;$2&lt;/span&gt;
+&lt;span class="o"&gt;}&lt;/span&gt;
+
+&lt;span class="c1"&gt;# }}}&lt;/span&gt;
+
+&lt;span class="c1"&gt;# {{{ db&lt;/span&gt;
+&lt;span class="k"&gt;function&lt;/span&gt; db_init&lt;span class="o"&gt;()&lt;/span&gt;
+&lt;span class="o"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="o"&gt;[[&lt;/span&gt; ! -f &lt;span class="nv"&gt;$NOTY_DB&lt;/span&gt; &lt;span class="o"&gt;]]&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="k"&gt;then&lt;/span&gt;
+        &lt;span class="nb"&gt;echo&lt;/span&gt; -e &lt;span class="s2"&gt;&amp;quot;Noty v&lt;/span&gt;&lt;span class="nv"&gt;$NOTY_VERSION&lt;/span&gt;&lt;span class="s2"&gt;\n===========&amp;quot;&lt;/span&gt; &amp;gt;&amp;gt; &lt;span class="nv"&gt;$NOTY_DB&lt;/span&gt;
+        &lt;span class="nb"&gt;echo&lt;/span&gt; -e &lt;span class="s2"&gt;&amp;quot;You have a total of 0 notes.&amp;quot;&lt;/span&gt; &amp;gt;&amp;gt; &lt;span class="nv"&gt;$NOTY_DB&lt;/span&gt;
+        &lt;span class="nb"&gt;echo&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;Initialized &amp;#39;&lt;/span&gt;&lt;span class="nv"&gt;$NOTY_DB&lt;/span&gt;&lt;span class="s2"&gt;&amp;#39; ...&amp;quot;&lt;/span&gt;
+    &lt;span class="k"&gt;fi&lt;/span&gt;
+&lt;span class="o"&gt;}&lt;/span&gt;
+
+&lt;span class="k"&gt;function&lt;/span&gt; db_get_id&lt;span class="o"&gt;()&lt;/span&gt;
+&lt;span class="o"&gt;{&lt;/span&gt;
+    &lt;span class="nb"&gt;local&lt;/span&gt; &lt;span class="nv"&gt;OLD_ID&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="k"&gt;$(&lt;/span&gt;grep -m &lt;span class="m"&gt;1&lt;/span&gt; -P &lt;span class="s1"&gt;&amp;#39;^You have a total of \d+ notes.$&amp;#39;&lt;/span&gt; &lt;span class="nv"&gt;$NOTY_DB&lt;/span&gt; &lt;span class="p"&gt;|&lt;/span&gt; cut -d &lt;span class="s1"&gt;&amp;#39; &amp;#39;&lt;/span&gt; -f 6&lt;span class="k"&gt;)&lt;/span&gt;
+    &lt;span class="nb"&gt;local&lt;/span&gt; &lt;span class="nv"&gt;NEW_ID&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="k"&gt;$((&lt;/span&gt;OLD_ID &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="m"&gt;1&lt;/span&gt;&lt;span class="k"&gt;))&lt;/span&gt;
+
+    preg_replace &lt;span class="s2"&gt;&amp;quot;^You have a total of &lt;/span&gt;&lt;span class="nv"&gt;$OLD_ID&lt;/span&gt;&lt;span class="s2"&gt; notes.&lt;/span&gt;$&lt;span class="s2"&gt;&amp;quot;&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;You have a total of &lt;/span&gt;&lt;span class="nv"&gt;$NEW_ID&lt;/span&gt;&lt;span class="s2"&gt; notes.&amp;quot;&lt;/span&gt; &lt;span class="nv"&gt;$NOTY_DB&lt;/span&gt;
+
+    &lt;span class="nb"&gt;echo&lt;/span&gt; &lt;span class="nv"&gt;$NEW_ID&lt;/span&gt;
+&lt;span class="o"&gt;}&lt;/span&gt;
+
+&lt;span class="k"&gt;function&lt;/span&gt; db_write_note&lt;span class="o"&gt;()&lt;/span&gt;
+&lt;span class="o"&gt;{&lt;/span&gt;
+    db_init
+
+    &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="o"&gt;[[&lt;/span&gt; -z &lt;span class="k"&gt;$(&lt;/span&gt;grep &lt;span class="s2"&gt;&amp;quot;^&lt;/span&gt;&lt;span class="k"&gt;$(&lt;/span&gt;get_current_date&lt;span class="k"&gt;)&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&lt;/span&gt; &lt;span class="nv"&gt;$NOTY_DB&lt;/span&gt;&lt;span class="k"&gt;)&lt;/span&gt; &lt;span class="o"&gt;]]&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="k"&gt;then&lt;/span&gt;
+        &lt;span class="nb"&gt;echo&lt;/span&gt; -e &lt;span class="s2"&gt;&amp;quot;\n&lt;/span&gt;&lt;span class="k"&gt;$(&lt;/span&gt;get_current_date&lt;span class="k"&gt;)&lt;/span&gt;&lt;span class="s2"&gt;\n----------&amp;quot;&lt;/span&gt; &amp;gt;&amp;gt; &lt;span class="nv"&gt;$NOTY_DB&lt;/span&gt;
+        &lt;span class="nb"&gt;echo&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;Initialized &amp;#39;&lt;/span&gt;&lt;span class="k"&gt;$(&lt;/span&gt;get_current_date&lt;span class="k"&gt;)&lt;/span&gt;&lt;span class="s2"&gt;&amp;#39; ...&amp;quot;&lt;/span&gt;
+    &lt;span class="k"&gt;fi&lt;/span&gt;
+
+    &lt;span class="nb"&gt;echo&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;&lt;span class="k"&gt;$(&lt;/span&gt;db_get_id&lt;span class="k"&gt;)&lt;/span&gt;&lt;span class="s2"&gt;. [ ] &lt;/span&gt;&lt;span class="nv"&gt;$@&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&lt;/span&gt; &amp;gt;&amp;gt; &lt;span class="nv"&gt;$NOTY_DB&lt;/span&gt;
+    &lt;span class="nb"&gt;echo&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;Added note &amp;#39;&lt;/span&gt;&lt;span class="nv"&gt;$@&lt;/span&gt;&lt;span class="s2"&gt;&amp;#39; ...&amp;quot;&lt;/span&gt;
+&lt;span class="o"&gt;}&lt;/span&gt;
+
+&lt;span class="k"&gt;function&lt;/span&gt; db_delete_note&lt;span class="o"&gt;()&lt;/span&gt;
+&lt;span class="o"&gt;{&lt;/span&gt;
+    preg_remove &lt;span class="s2"&gt;&amp;quot;^&lt;/span&gt;&lt;span class="nv"&gt;$1&lt;/span&gt;&lt;span class="s2"&gt;. \[ \]&amp;quot;&lt;/span&gt; &lt;span class="nv"&gt;$NOTY_DB&lt;/span&gt;
+    &lt;span class="nb"&gt;echo&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;Deleted note &amp;#39;&lt;/span&gt;&lt;span class="nv"&gt;$1&lt;/span&gt;&lt;span class="s2"&gt;&amp;#39; ...&amp;quot;&lt;/span&gt;
+&lt;span class="o"&gt;}&lt;/span&gt;
+
+&lt;span class="k"&gt;function&lt;/span&gt; db_get_notes&lt;span class="o"&gt;()&lt;/span&gt;
+&lt;span class="o"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="o"&gt;[[&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;&lt;span class="nv"&gt;$1&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&lt;/span&gt; &lt;span class="o"&gt;==&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;all&amp;quot;&lt;/span&gt; &lt;span class="o"&gt;]]&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="k"&gt;then&lt;/span&gt;
+        cat &lt;span class="si"&gt;${&lt;/span&gt;&lt;span class="nv"&gt;NOTY_DB&lt;/span&gt;&lt;span class="si"&gt;}&lt;/span&gt;
+    &lt;span class="k"&gt;else&lt;/span&gt;
+        &lt;span class="nb"&gt;local&lt;/span&gt; &lt;span class="nv"&gt;LINE&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="k"&gt;$(&lt;/span&gt;grep -m &lt;span class="m"&gt;1&lt;/span&gt; -n -P &lt;span class="s2"&gt;&amp;quot;^&lt;/span&gt;&lt;span class="nv"&gt;$1&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&lt;/span&gt; &lt;span class="nv"&gt;$NOTY_DB&lt;/span&gt; &lt;span class="p"&gt;|&lt;/span&gt; cut -d &lt;span class="s1"&gt;&amp;#39;:&amp;#39;&lt;/span&gt; -f 1&lt;span class="k"&gt;)&lt;/span&gt;
+        &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="o"&gt;[[&lt;/span&gt; -n &lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;&lt;span class="nv"&gt;$LINE&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&lt;/span&gt; &lt;span class="o"&gt;]]&lt;/span&gt; &lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="k"&gt;then&lt;/span&gt;
+            tail -n +&lt;span class="nv"&gt;$LINE&lt;/span&gt; &lt;span class="nv"&gt;$NOTY_DB&lt;/span&gt;
+        &lt;span class="k"&gt;fi&lt;/span&gt;
+    &lt;span class="k"&gt;fi&lt;/span&gt;
+&lt;span class="o"&gt;}&lt;/span&gt;
+
+&lt;span class="k"&gt;function&lt;/span&gt; db_mark_note&lt;span class="o"&gt;()&lt;/span&gt;
+&lt;span class="o"&gt;{&lt;/span&gt;
+    preg_replace &lt;span class="s2"&gt;&amp;quot;^&lt;/span&gt;&lt;span class="nv"&gt;$1&lt;/span&gt;&lt;span class="s2"&gt;. \[ \]&amp;quot;&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;&lt;span class="nv"&gt;$1&lt;/span&gt;&lt;span class="s2"&gt;. \[x\]&amp;quot;&lt;/span&gt; &lt;span class="nv"&gt;$NOTY_DB&lt;/span&gt;
+    &lt;span class="nb"&gt;echo&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;Marked note &amp;#39;&lt;/span&gt;&lt;span class="nv"&gt;$1&lt;/span&gt;&lt;span class="s2"&gt;&amp;#39; ...&amp;quot;&lt;/span&gt;
+&lt;span class="o"&gt;}&lt;/span&gt;
+
+&lt;span class="k"&gt;function&lt;/span&gt; db_unmark_note&lt;span class="o"&gt;()&lt;/span&gt;
+&lt;span class="o"&gt;{&lt;/span&gt;
+    preg_replace &lt;span class="s2"&gt;&amp;quot;^&lt;/span&gt;&lt;span class="nv"&gt;$1&lt;/span&gt;&lt;span class="s2"&gt;. \[x\]&amp;quot;&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;&lt;span class="nv"&gt;$1&lt;/span&gt;&lt;span class="s2"&gt;. \[ \]&amp;quot;&lt;/span&gt; &lt;span class="nv"&gt;$NOTY_DB&lt;/span&gt;
+    &lt;span class="nb"&gt;echo&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;Un-Marked note &amp;#39;&lt;/span&gt;&lt;span class="nv"&gt;$1&lt;/span&gt;&lt;span class="s2"&gt;&amp;#39; ...&amp;quot;&lt;/span&gt;
+&lt;span class="o"&gt;}&lt;/span&gt;
+&lt;span class="c1"&gt;# }}}&lt;/span&gt;
+
+&lt;span class="c1"&gt;# {{{ commands&lt;/span&gt;
+&lt;span class="k"&gt;function&lt;/span&gt; command_c&lt;span class="o"&gt;()&lt;/span&gt;
+&lt;span class="o"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="o"&gt;[[&lt;/span&gt; -z &lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;&lt;span class="nv"&gt;$1&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&lt;/span&gt; &lt;span class="o"&gt;]]&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="k"&gt;then&lt;/span&gt;
+        &lt;span class="nb"&gt;echo&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;You must provide a valid note.&amp;quot;&lt;/span&gt;
+        &lt;span class="nb"&gt;exit&lt;/span&gt; -1
+    &lt;span class="k"&gt;else&lt;/span&gt;
+        db_write_note &lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;&lt;span class="nv"&gt;$@&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;
+    &lt;span class="k"&gt;fi&lt;/span&gt;
+&lt;span class="o"&gt;}&lt;/span&gt;
+
+&lt;span class="k"&gt;function&lt;/span&gt; command_d&lt;span class="o"&gt;()&lt;/span&gt;
+&lt;span class="o"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="o"&gt;[[&lt;/span&gt; -z &lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;&lt;span class="nv"&gt;$1&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&lt;/span&gt; &lt;span class="o"&gt;]]&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="k"&gt;then&lt;/span&gt;
+        &lt;span class="nb"&gt;echo&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;You must provide a valid note id&amp;quot;&lt;/span&gt;
+        &lt;span class="nb"&gt;exit&lt;/span&gt; -1
+    &lt;span class="k"&gt;else&lt;/span&gt;
+        db_delete_note &lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;&lt;span class="nv"&gt;$1&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;
+    &lt;span class="k"&gt;fi&lt;/span&gt;
+&lt;span class="o"&gt;}&lt;/span&gt;
+
+&lt;span class="k"&gt;function&lt;/span&gt; command_l&lt;span class="o"&gt;()&lt;/span&gt;
+&lt;span class="o"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="o"&gt;[[&lt;/span&gt; -z &lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;&lt;span class="nv"&gt;$1&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&lt;/span&gt; &lt;span class="o"&gt;]]&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="k"&gt;then&lt;/span&gt;
+        db_get_notes &lt;span class="k"&gt;$(&lt;/span&gt;get_current_date&lt;span class="k"&gt;)&lt;/span&gt;
+    &lt;span class="k"&gt;else&lt;/span&gt;
+        db_get_notes &lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;&lt;span class="nv"&gt;$1&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;
+    &lt;span class="k"&gt;fi&lt;/span&gt;
+&lt;span class="o"&gt;}&lt;/span&gt;
+
+&lt;span class="k"&gt;function&lt;/span&gt; command_m&lt;span class="o"&gt;()&lt;/span&gt;
+&lt;span class="o"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="o"&gt;[[&lt;/span&gt; -z &lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;&lt;span class="nv"&gt;$1&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&lt;/span&gt; &lt;span class="o"&gt;]]&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="k"&gt;then&lt;/span&gt;
+        &lt;span class="nb"&gt;echo&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;You must provide a valid note id&amp;quot;&lt;/span&gt;
+        &lt;span class="nb"&gt;exit&lt;/span&gt; -1
+    &lt;span class="k"&gt;else&lt;/span&gt;
+        db_mark_note &lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;&lt;span class="nv"&gt;$1&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;
+    &lt;span class="k"&gt;fi&lt;/span&gt;
+&lt;span class="o"&gt;}&lt;/span&gt;
+
+&lt;span class="k"&gt;function&lt;/span&gt; command_u&lt;span class="o"&gt;()&lt;/span&gt;
+&lt;span class="o"&gt;{&lt;/span&gt;
+    &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="o"&gt;[[&lt;/span&gt; -z &lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;&lt;span class="nv"&gt;$1&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&lt;/span&gt; &lt;span class="o"&gt;]]&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="k"&gt;then&lt;/span&gt;
+        &lt;span class="nb"&gt;echo&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;You must provide a valid note id&amp;quot;&lt;/span&gt;
+        &lt;span class="nb"&gt;exit&lt;/span&gt; -1
+    &lt;span class="k"&gt;else&lt;/span&gt;
+        db_unmark_note &lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;&lt;span class="nv"&gt;$1&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;
+    &lt;span class="k"&gt;fi&lt;/span&gt;
+&lt;span class="o"&gt;}&lt;/span&gt;
+&lt;span class="c1"&gt;# }}}&lt;/span&gt;
+
+&lt;span class="c1"&gt;# {{{ help&lt;/span&gt;
+&lt;span class="k"&gt;function&lt;/span&gt; help&lt;span class="o"&gt;()&lt;/span&gt;
+&lt;span class="o"&gt;{&lt;/span&gt;
+    &lt;span class="nb"&gt;echo&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;Noty v&lt;/span&gt;&lt;span class="nv"&gt;$NOTY_VERSION&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;
+    &lt;span class="nb"&gt;echo&lt;/span&gt; -e &lt;span class="s2"&gt;&amp;quot;\nusage: &lt;/span&gt;&lt;span class="k"&gt;$(&lt;/span&gt;basename &lt;span class="nv"&gt;$0&lt;/span&gt;&lt;span class="k"&gt;)&lt;/span&gt;&lt;span class="s2"&gt; command [arg] [note]&amp;quot;&lt;/span&gt;
+    &lt;span class="nb"&gt;echo&lt;/span&gt; -e &lt;span class="s2"&gt;&amp;quot;\ncommands:&amp;quot;&lt;/span&gt;
+    &lt;span class="nb"&gt;echo&lt;/span&gt; -e &lt;span class="s2"&gt;&amp;quot;\tc - create a new note&amp;quot;&lt;/span&gt;
+    &lt;span class="nb"&gt;echo&lt;/span&gt; -e &lt;span class="s2"&gt;&amp;quot;\tl - list notes&amp;quot;&lt;/span&gt;
+    &lt;span class="nb"&gt;echo&lt;/span&gt; -e &lt;span class="s2"&gt;&amp;quot;\tm - mark a note&amp;quot;&lt;/span&gt;
+    &lt;span class="nb"&gt;echo&lt;/span&gt; -e &lt;span class="s2"&gt;&amp;quot;\tu - unmark a note&amp;quot;&lt;/span&gt;
+    &lt;span class="nb"&gt;exit&lt;/span&gt; -1
+&lt;span class="o"&gt;}&lt;/span&gt;
+&lt;span class="c1"&gt;# }}}&lt;/span&gt;
+
+&lt;span class="c1"&gt;# {{{ main&lt;/span&gt;
+&lt;span class="k"&gt;function&lt;/span&gt; main&lt;span class="o"&gt;()&lt;/span&gt;
+&lt;span class="o"&gt;{&lt;/span&gt;
+    &lt;span class="nb"&gt;local&lt;/span&gt; &lt;span class="nv"&gt;CMD&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;&lt;span class="nv"&gt;$1&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;
+    &lt;span class="nb"&gt;shift&lt;/span&gt;
+
+    &lt;span class="nb"&gt;local&lt;/span&gt; &lt;span class="nv"&gt;FUNCTION_TYPE&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="k"&gt;$(&lt;/span&gt;&lt;span class="nb"&gt;type&lt;/span&gt; -t &lt;span class="s2"&gt;&amp;quot;command_&lt;/span&gt;&lt;span class="si"&gt;${&lt;/span&gt;&lt;span class="nv"&gt;CMD&lt;/span&gt;&lt;span class="si"&gt;}&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;&lt;span class="k"&gt;)&lt;/span&gt;
+
+    &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="o"&gt;[&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;&lt;span class="nv"&gt;$FUNCTION_TYPE&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&lt;/span&gt; &lt;span class="o"&gt;==&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;function&amp;quot;&lt;/span&gt; &lt;span class="o"&gt;]&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="k"&gt;then&lt;/span&gt;
+        command_&lt;span class="si"&gt;${&lt;/span&gt;&lt;span class="nv"&gt;CMD&lt;/span&gt;&lt;span class="si"&gt;}&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;&lt;span class="nv"&gt;$@&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;
+    &lt;span class="k"&gt;else&lt;/span&gt;
+        &lt;span class="nb"&gt;help&lt;/span&gt;
+    &lt;span class="k"&gt;fi&lt;/span&gt;
+&lt;span class="o"&gt;}&lt;/span&gt;
+
+main &lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;&lt;span class="nv"&gt;$@&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;
+&lt;span class="c1"&gt;# }}}&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;a name="SteamSpy"&gt;&lt;/a&gt;
+&lt;h2&gt;SteamSpy&lt;/h2&gt;
+&lt;p&gt;If you like to &lt;em&gt;spy&lt;/em&gt; on Steam games a lot like I do, then you might find the bookmarklet
+or the TamperMonkey script below very very useful.&lt;/p&gt;
+&lt;h4&gt;Bookmarklet&lt;/h4&gt;
+&lt;p&gt;Open SteamSpy on any Steam store page with a single click.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="nx"&gt;javascript&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;&lt;span class="nb"&gt;window&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;open&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nb"&gt;window&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;location&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;href&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;replace&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;store.steampowered&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;steamspy&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h4&gt;TamperMonkey Script&lt;/h4&gt;
+&lt;p&gt;This &lt;em&gt;script&lt;/em&gt; adds a &lt;em&gt;SteamSpy&lt;/em&gt; button to every Steam store page.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="" src="http://mihail.co/images/games/nomanssky_steamspy.png" /&gt;&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="c1"&gt;// ==UserScript==&lt;/span&gt;
+&lt;span class="c1"&gt;// @name         SteamSpy&lt;/span&gt;
+&lt;span class="c1"&gt;// @namespace    http://mihail.co&lt;/span&gt;
+&lt;span class="c1"&gt;// @version      0.1&lt;/span&gt;
+&lt;span class="c1"&gt;// @description  Adds a Steam Spy button to every Steam store page.&lt;/span&gt;
+&lt;span class="c1"&gt;// @author       Mihail Szabolcs&lt;/span&gt;
+&lt;span class="c1"&gt;// @match        http://store.steampowered.com/app/*&lt;/span&gt;
+&lt;span class="c1"&gt;// @grant        none&lt;/span&gt;
+&lt;span class="c1"&gt;// ==/UserScript==&lt;/span&gt;
+&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="kd"&gt;function&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="s1"&gt;&amp;#39;use strict&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="kd"&gt;var&lt;/span&gt; &lt;span class="nx"&gt;el&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="nb"&gt;document&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;querySelector&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;.apphub_OtherSiteInfo&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
+    &lt;span class="k"&gt;if&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="o"&gt;!&lt;/span&gt;&lt;span class="nx"&gt;el&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="k"&gt;return&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+
+    &lt;span class="kd"&gt;var&lt;/span&gt; &lt;span class="nx"&gt;a&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="nx"&gt;el&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;querySelector&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;a&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
+    &lt;span class="k"&gt;if&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="o"&gt;!&lt;/span&gt;&lt;span class="nx"&gt;a&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="k"&gt;return&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+
+    &lt;span class="kd"&gt;var&lt;/span&gt; &lt;span class="nx"&gt;newa&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="nx"&gt;a&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;cloneNode&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="kc"&gt;true&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;    
+    &lt;span class="nx"&gt;newa&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;href&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;javascript: window.open(&amp;quot;https://steamspy.com&amp;#39;&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="nx"&gt;a&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;href&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;match&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="sr"&gt;/\/app\/([0-9]+)/&lt;/span&gt;&lt;span class="p"&gt;)[&lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;&amp;quot;);&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+
+    &lt;span class="kd"&gt;var&lt;/span&gt; &lt;span class="nx"&gt;text&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="nx"&gt;newa&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;querySelector&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;span&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
+    &lt;span class="k"&gt;if&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="o"&gt;!&lt;/span&gt;&lt;span class="nx"&gt;text&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="k"&gt;return&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+
+    &lt;span class="nx"&gt;text&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;innerHTML&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;Steam Spy&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+
+    &lt;span class="nx"&gt;el&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nx"&gt;appendChild&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nx"&gt;newa&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
+&lt;span class="p"&gt;})();&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;a name="Hamunaputra"&gt;&lt;/a&gt;
+&lt;h2&gt;Hamunaputra&lt;/h2&gt;
+&lt;p&gt;Hamunaputra started as a 32KB room-based &lt;em&gt;roguelite&lt;/em&gt; for DOS, written in plain 16-bit
+ASM, with everything being &lt;em&gt;packed&lt;/em&gt; into a single &lt;em&gt;.COM&lt;/em&gt; executable. No external files,
+or dependencies of any kind.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="" src="http://mihail.co/images/games/hamunaputra.png" /&gt;&lt;/p&gt;
+&lt;p&gt;Never finished it, and currently sits in the back burner.&lt;/p&gt;
+&lt;a name="Nexeh &amp;amp; Nixel"&gt;&lt;/a&gt;
+&lt;h2&gt;Nexeh &amp;amp; Nixel&lt;/h2&gt;
+&lt;p&gt;This has been my primary focus this year, and will continue to be next year. 
+Like I mentioned before, I would like to build and old-school first person shooter, 
+retaining as many &lt;em&gt;original&lt;/em&gt; elements as possible, while at the same time throwing a couple 
+of new twists into the mix for good measure.&lt;/p&gt;
+&lt;p&gt;My definition of old-school includes (but not limited to), games like:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;DOOM&lt;/li&gt;
+&lt;li&gt;Hexen and Heretic&lt;/li&gt;
+&lt;li&gt;Duke Nukem 3D&lt;/li&gt;
+&lt;li&gt;Painkiller&lt;/li&gt;
+&lt;li&gt;Shadow Warrior&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img alt="" src="http://mihail.co/images/games/shadow_warrior_bunnies.png" /&gt;&lt;/p&gt;
+&lt;p&gt;I want to go for the 2.5D look, with 3D world geometry and 2D sprite based
+(billboard) entities. Haven't settled for a general look and feel yet, because I am still working
+on some of the core tech.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="" src="http://mihail.co/images/games/nexeh.gif" /&gt;&lt;/p&gt;
+&lt;p&gt;... with some &lt;em&gt;sprites&lt;/em&gt; ripped from Hexen ...&lt;/p&gt;
+&lt;p&gt;&lt;img alt="" src="http://mihail.co/images/games/nexeh_ripped.gif" /&gt;&lt;/p&gt;
+&lt;p&gt;... and compiled with &lt;a href="http://kripken.github.io/emscripten-site/"&gt;emscripten&lt;/a&gt; ...&lt;/p&gt;
+&lt;p&gt;&lt;img alt="" src="http://mihail.co/images/games/nexeh_2016.png" /&gt;&lt;/p&gt;
+&lt;p&gt;I managed to figure out most of the architectural questions; will try to blog about some of the
+technical &lt;em&gt;stuff&lt;/em&gt; in the weeks to come. Stay tuned.&lt;/p&gt;
+&lt;p&gt;Like I promised, it's all going to be &lt;em&gt;open source&lt;/em&gt; when it comes to the &lt;em&gt;code&lt;/em&gt; and &lt;em&gt;tech&lt;/em&gt;. 
+When am I going to open source it? Well, that remains to be seen, but most likely only after
+I have something more or less playable in my hands.&lt;/p&gt;
+&lt;a name="Greed"&gt;&lt;/a&gt;
+&lt;h2&gt;Greed&lt;/h2&gt;
+&lt;p&gt;Stumbled upon &lt;a href="http://www.redshadowsoftware.com/projects/greed"&gt;In Pursuit of Greed&lt;/a&gt; and
+decided to modernize and port it, keeping the &lt;em&gt;original&lt;/em&gt; software renderer intact, while
+allowing for higher resolutions, both &lt;em&gt;upscaled&lt;/em&gt; (from 320x200) and native.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="" src="http://mihail.co/images/games/greed_poster.png" /&gt;&lt;/p&gt;
+&lt;p&gt;Here you can see a screenshot of the game running at &lt;em&gt;whopping&lt;/em&gt; 800x600 resolution.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="" src="http://mihail.co/images/games/greed.png" /&gt;&lt;/p&gt;
+&lt;p&gt;This is still very much work in progress, and I work on it every once in a while, but we'll
+get there sooner or later.&lt;/p&gt;
+&lt;a name="Writings"&gt;&lt;/a&gt;
+&lt;h2&gt;Writings&lt;/h2&gt;
+&lt;p&gt;There is plenty of &lt;em&gt;literature&lt;/em&gt; when it comes to &lt;em&gt;game development&lt;/em&gt;, but none of it is focusing
+on the actual so called &lt;strong&gt;practical&lt;/strong&gt; side of things. There are &lt;em&gt;bits&lt;/em&gt; scattered here and there,
+but nothing exhaustive or conclusive.&lt;/p&gt;
+&lt;p&gt;Most of the books, just rehash and regurgitate the very same things, perhaps &lt;em&gt;updated&lt;/em&gt; or
+&lt;em&gt;modernized&lt;/em&gt; in places, but still presented in rather outdated formats.&lt;/p&gt;
+&lt;p&gt;To change the status quo, I started &lt;em&gt;sketching&lt;/em&gt; out three books, &lt;em&gt;Software Rendering for the 
+practical game developer&lt;/em&gt;, &lt;em&gt;Game programming for the practical game developer&lt;/em&gt; and a companion
+guide entitled, &lt;em&gt;Mathematics for the practical game developer&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;I want to focus purely on the &lt;em&gt;practical side&lt;/em&gt; of things, avoid &lt;em&gt;platitudes&lt;/em&gt; and &lt;em&gt;urban myths&lt;/em&gt;, however, 
+when any of these will turn into actual &lt;em&gt;paper&lt;/em&gt; that one can hold in their hands, one again, it
+remains to be seen ...&lt;/p&gt;
+&lt;p&gt;On a different note, there's still considerable interest in my &lt;a href="http://mihail.co/floppybird"&gt;FloppyBird&lt;/a&gt; project, which
+means that it's time for me to write a &lt;em&gt;Making of Floppy Bird&lt;/em&gt;, sometime next year ...&lt;/p&gt;
+&lt;a name="Pyramid Hologram"&gt;&lt;/a&gt;
+&lt;h2&gt;Pyramid Hologram&lt;/h2&gt;
+&lt;p&gt;Before I even get started, yes, yes, yes, it's not a &lt;em&gt;real hologram&lt;/em&gt;, but it's still 10x more
+interesting than the idiotic thing we call &lt;strong&gt;VR&lt;/strong&gt;. Who on Earth wants to stick half a kilogram of
+equipment on their head? Apparently quite a few. Good luck with destroying your eyesight faster
+than a good old CRT would.&lt;/p&gt;
+&lt;p&gt;Now that we have that settled, let me dive into the details.&lt;/p&gt;
+&lt;p&gt;The so called &lt;em&gt;"DYI holograms"&lt;/em&gt; have been circulating on the Internets for quite some time, but all
+efforts seem to be focused on &lt;em&gt;displaying&lt;/em&gt; animations, instead of &lt;em&gt;real-time&lt;/em&gt; applications, like
+video games.&lt;/p&gt;
+&lt;p&gt;&lt;iframe width="760" height="428" src="https://www.youtube.com/embed/nvJ70BThiHc" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;&lt;/p&gt;
+&lt;p&gt;Basically, you build a &lt;em&gt;pyramid&lt;/em&gt; and then you use a &lt;em&gt;tablet&lt;/em&gt; or another device to &lt;em&gt;project&lt;/em&gt; on it by
+placing it on the top, you can see this in action in the video above.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="" src="http://mihail.co/images/hologram_pyramid.png" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;(Source: &lt;a href="http://myweb.fcu.edu.tw/~mhsung/NPDP/Tech/Papercraft/PC_EX20.htm"&gt;~mhsung&lt;/a&gt;)&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;In order to &lt;em&gt;achieve&lt;/em&gt; the effect, one has to &lt;em&gt;prepare&lt;/em&gt; a special &lt;em&gt;video&lt;/em&gt;, which you can see below.&lt;/p&gt;
+&lt;p&gt;&lt;iframe width="760" height="428" src="https://www.youtube.com/embed/TcUHV6bHOeg" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;&lt;/p&gt;
+&lt;p&gt;What's really going on here? The answer is really simple. It's the same &lt;em&gt;thing&lt;/em&gt; rendered from 4 different
+angles, which is then &lt;em&gt;reflected&lt;/em&gt; on the 4 sides of the pyramid, giving the &lt;em&gt;illusion&lt;/em&gt; of a volumetric
+hologram.&lt;/p&gt;
+&lt;p&gt;Do you see where this is going? When it comes to &lt;em&gt;games&lt;/em&gt;, all one has to do is &lt;em&gt;render&lt;/em&gt; in real time
+the &lt;em&gt;visible scene&lt;/em&gt; from 4 different angles, by rotating the so called &lt;em&gt;camera&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;Isn't that expensive, to render &lt;em&gt;almost&lt;/em&gt; the same thing 4 times? Well, it really depends on a couple of
+things like: complexity of the scene, output resolution and overall graphical fidelity.&lt;/p&gt;
+&lt;p&gt;I want to build a prototype with something relatively &lt;em&gt;simple&lt;/em&gt;, like &lt;em&gt;Tux Racer&lt;/em&gt;. Take a look at the 
+small &lt;em&gt;sketch&lt;/em&gt; I made to illustrate the concept, in order to put things into perspective.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="" src="http://mihail.co/images/hologram_pyramid_sketch.png" /&gt;&lt;/p&gt;
+&lt;p&gt;In many respects this is similar to &lt;em&gt;split screen local couch co-op&lt;/em&gt;, where the &lt;em&gt;screen&lt;/em&gt; is split into
+2 to 4 individual viewports giving each player the ability to roam around freely.&lt;/p&gt;
+&lt;h5&gt;Left 4 Dead 2&lt;/h5&gt;
+&lt;p&gt;&lt;img alt="" src="http://mihail.co/images/games/left4dead2coop.png" /&gt;&lt;/p&gt;
+&lt;h5&gt;Super Mario Kart&lt;/h5&gt;
+&lt;p&gt;&lt;img alt="" src="http://mihail.co/images/games/smccoop.png" /&gt;&lt;/p&gt;
+&lt;p&gt;Imagine sitting at a table and each player seeing the very same world from a different &lt;em&gt;view&lt;/em&gt;. Wouldn't
+that be super duper cool? I'll let you decide ...&lt;/p&gt;
+&lt;a name="Rover"&gt;&lt;/a&gt;
+&lt;h2&gt;Rover&lt;/h2&gt;
+&lt;p&gt;Even though Elon Musk is very very optimistic when it comes to colonizing Mars, and yes he is definitely
+going to &lt;em&gt;democratize&lt;/em&gt; the &lt;em&gt;rocket&lt;/em&gt; business, but we are very very far away from &lt;em&gt;man&lt;/em&gt; setting foot on
+Mars.&lt;/p&gt;
+&lt;p&gt;NASA got their &lt;em&gt;rover&lt;/em&gt; moving around, snapping a few photos here and there, but every time something
+&lt;em&gt;interesting&lt;/em&gt; pops-up on one of those photos, they always seem to be very eager to discredit it or just
+blatantly ignore it.&lt;/p&gt;
+&lt;p&gt;I fully understand, you can't just move around a few billion dollars worth of machinery, willy nilly, as you please.
+I get that 100%, but when there's considerable doubt when it comes to &lt;em&gt;certain&lt;/em&gt; geological features that appear
+to resemble &lt;em&gt;man-made&lt;/em&gt; structures or statues, the silence and the same old same charade becomes quite annoying.&lt;/p&gt;
+&lt;p&gt;Nobody is saying that every &lt;em&gt;rock formation&lt;/em&gt; that looks suspicious is a statue or some relic left there
+by some ancient civilization, but all it would take is to move closer to one instance and take a closer
+photo. That's all it would take, and then all the crazy conspiracy theorists would just shut up and
+crawl back into the caves they emerged from.&lt;/p&gt;
+&lt;p&gt;I've been thinking about this, what if, we could create an &lt;em&gt;inexpesive&lt;/em&gt; machine which could roam around
+freely, with its sole purpose being taking high resolution close-up photographs of certain points of
+interests.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="" src="http://mihail.co/images/rover.png" /&gt;&lt;/p&gt;
+&lt;p&gt;A few details about the &lt;em&gt;sketch&lt;/em&gt; above:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;in terms of scale, it should be the size of a regular &lt;em&gt;sitting ball&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;the outer &lt;em&gt;shell&lt;/em&gt; rotates around the inner &lt;em&gt;shell&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;the inner &lt;em&gt;shell&lt;/em&gt; is always axis aligned, regardless of the outer &lt;em&gt;shell&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;3 solar panels, which means that two of them will receive &lt;em&gt;sunlight&lt;/em&gt; regardless of the rotation
+of the outer &lt;em&gt;shell&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;the inner &lt;em&gt;shell&lt;/em&gt; contains a &lt;em&gt;black-box&lt;/em&gt; with all the &lt;em&gt;equipment&lt;/em&gt; (camera, comm-link, a mini PC, etc)&lt;/li&gt;
+&lt;li&gt;the outer shell should absorb any &lt;em&gt;shock&lt;/em&gt; (i.e when &lt;em&gt;landing&lt;/em&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;I am pretty sure that there are &lt;em&gt;many&lt;/em&gt; things that I didn't think of, or things that are just plain wrong
+or impossible with such a &lt;em&gt;design&lt;/em&gt;, but the general idea would be to build a dozen of these and then
+let them loose on the surface or Mars. Each of these could &lt;em&gt;visit&lt;/em&gt; a place of interest and send back
+high resolution photographs.&lt;/p&gt;
+&lt;p&gt;Since it wouldn't contain any &lt;em&gt;expensive&lt;/em&gt; scientific equipment the building costs should be minimal, 
+compared the rovers that have been deployed in the past.&lt;/p&gt;
+&lt;a name="SketchFab"&gt;&lt;/a&gt;
+&lt;h2&gt;SketchFab&lt;/h2&gt;
+&lt;p&gt;A couple of my favorite &lt;a href="https://sketchfab.com/theicebreaker/likes"&gt;&lt;em&gt;sketchfabs&lt;/em&gt;&lt;/a&gt;.&lt;/p&gt;
+&lt;div class="sketchfab-embed-wrapper" style="margin-bottom: 20px;"&gt;&lt;iframe width="980" height="480" src="https://sketchfab.com/models/aad4c32e997f4efc9571294c7e1d0c8c/embed" frameborder="0" allowvr allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" onmousewheel=""&gt;&lt;/iframe&gt;&lt;/div&gt;
+
+&lt;div class="sketchfab-embed-wrapper"&gt;&lt;iframe width="980" height="480" src="https://sketchfab.com/models/ea79b3b36fc04ded845ddfe1de08957a/embed" frameborder="0" allowvr allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" onmousewheel=""&gt;&lt;/iframe&gt;&lt;/div&gt;
+
+&lt;a name="End"&gt;&lt;/a&gt;
+&lt;h2&gt;End&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;Phew&lt;/em&gt;, if you managed reach &lt;strong&gt;THE END&lt;/strong&gt;, you are as brave as you are foolish. All in all, it has been
+an interesting year, like I mentioned above, my main focus for 2017 is going to be my old school first
+person shooter project. It would be nice to reach some sort of a &lt;em&gt;playable&lt;/em&gt; tech-demo state, sooner
+rather than later.&lt;/p&gt;
+&lt;p&gt;Since I am not a &lt;em&gt;console&lt;/em&gt; gamer, my new years resolutions cannot be as simple as &lt;em&gt;720p&lt;/em&gt;, I hope that
+you can understand that. &lt;strong&gt;(PC MASTER RACE FOR LIFE REPRESENT)&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Oh, I almost forgot, mostly because I've been rambling for so long, my game of the year, &lt;strong&gt;IS&lt;/strong&gt; most definitely,
+without a shadow of a doubt, &lt;em&gt;silence and drum rolls&lt;/em&gt;, &lt;a href="http://www.firewatchgame.com/"&gt;Firewatch&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="" src="http://mihail.co/images/games/firewatch.png" /&gt;&lt;/p&gt;
+&lt;p&gt;To view all the photos I took in-game, click &lt;a href="https://firewatch.camera/EvergreenTwoForksFirs/"&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://twitter.com/thatjaneng"&gt;Jane Ng&lt;/a&gt; and the rest of the team did an amazing job when it comes
+to crafting the &lt;em&gt;world&lt;/em&gt; of Firewatch.&lt;/p&gt;
+&lt;p&gt;&lt;iframe width="760" height="428" src="https://www.youtube.com/embed/hTqmk1Zs_1I" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;&lt;/p&gt;
+&lt;p&gt;&lt;iframe width="760" height="428" src="https://www.youtube.com/embed/ZYnS3kKTcGg" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;&lt;/p&gt;
+&lt;p&gt;Until next time, as server said, &lt;strong&gt;END OF LINE&lt;/strong&gt;.&lt;/p&gt;</content>
+	<category term="nye"/><category term="resolution"/><category term="projects"/><category term="opensource"/>
+</entry>
 
 <entry>
 	<title type="html">2015 Shakedown</title>

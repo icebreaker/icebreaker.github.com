@@ -1,0 +1,617 @@
+<html>
+	<head>
+		
+		<title>
+		
+		
+			2016 Shakedown - Mihail Szabolcs
+		
+		
+		</title>
+		
+		<!-- Content Type -->
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<!-- Favicon -->
+		<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" /> 
+		<!-- Atom Feed -->
+		<link href="http://feeds.feedburner.com/mihailco" rel="alternate" title="Mihail Szabolcs" type="application/atom+xml" /> 
+		<!-- Default -->
+		<link rel="stylesheet" type="text/css" href="/css/default.css" />
+		<!-- Pygments Syntax  -->
+		<link rel="stylesheet" type="text/css" href="/css/syntax.css" />
+		<!-- Blog  -->
+		<link rel="stylesheet" type="text/css" href="/css/blog.css" />
+		<!-- Fonts -->
+		<link href="http://fonts.googleapis.com/css?family=Droid+Sans|Droid+Sans+Mono|Andada" rel="stylesheet" type="text/css" />
+		
+		
+		<script type="text/javascript">
+			var _gaq = _gaq || [];
+			_gaq.push(['_setAccount', 'UA-3042007-2']);
+			_gaq.push(['_trackPageview']);
+
+			(function() 
+			{
+				var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+				ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+				var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+			})();
+		</script>
+		<script type="text/javascript">
+			(function() 
+			{
+				var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+				po.src = 'https://apis.google.com/js/plusone.js';
+				var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+			})();
+		</script>
+		
+	</head>
+	<body>
+		
+		
+		<a href="http://github.com/icebreaker/icebreaker.github.com"><img style="position: fixed; top: 0; right: 0; border: 0; z-index: 1000;" src="/images/ribbon.png" alt="Fork me on GitHub"></a>
+		<div class="header">
+			<div class="text">
+				<div class="align left"></div>
+				<ul class="align right">
+					<li><a href="/">home</a></li>
+					<li><a href="/games">games</a></li>
+					<li><a href="/proudify">projects</a></li>
+					<li><a href="http://github.com/icebreaker/dotfiles">dotfiles</a></li>
+					<li><a href="/about">about</a></li>
+					<li><a href="http://feeds.feedburner.com/mihailco">rss</a></li>
+				</ul>
+				<div class="clear"></div>
+			</div>
+		</div>
+		
+		
+		<div class="propaganda_5"></div>
+		
+		<div class="content">
+			
+<a name="2016 Shakedown"></a>
+<h1>2016 Shakedown</h1>
+<div class="plus">
+	<g:plusone size="medium"></g:plusone>
+</div>
+<div class="align right">
+	 written on December 31, 2016
+</div>
+<div class="clear"></div>
+
+			<p>Another year is behind us and I am here once again posting a <em>summary</em> of what I've been <em>hacking</em>
+on in my spare time, which translates to <em>evenings</em> and <em>weekends</em>.</p>
+<p>This year was more of a <em>year of ideas</em> when it comes to my personal projects. I did not <em>release</em> 
+a great many things, but fiddled with various ideas and crystallized the road ahead.</p>
+<p>To put things into perspective, here are some charts <em>generated</em> by <a href="http://github.com/icebreaker">GitHub</a>.</p>
+<h4>2016 vs 2015</h4>
+<p><img alt="" src="/images/github/2016.png" /></p>
+<p><img alt="" src="/images/github/2015.png" /></p>
+<a name="Menhir"></a>
+<h2>Menhir</h2>
+<p><a href="http://github.com/icebreaker/menhir">Menhir</a> is a simple puzzle game, the player's sole purpose is 
+to try to clear the <em>board</em> by utilizing <em>empty</em> spots.</p>
+<p>This is modeled after a "board game", I really enjoyed in my childhood.</p>
+<p><img alt="" src="/images/games/menhir.png" /></p>
+<p>Special thanks go out to <a href="http://kenney.nl">Kenney "Asset" Jesus</a> for the sprites.</p>
+<p>If you want to try it out, you can do so by clicking <a href="/menhir">here</a>.</p>
+<a name="Fz2D"></a>
+<h2>Fz2D</h2>
+<p><a href="http://github.com/icebreaker/fz2d">Fz2D</a> received a couple of more updates, and slowly but
+surely getting closer to graduating from alpha into beta.</p>
+<p>I'd like to add / wrap-up the following things next year:</p>
+<ul>
+<li>Fz2D.Camera (scrolling, etc)</li>
+<li>Built-in asset pipeline (texture and font atlas generation)</li>
+<li>Improved (painless) handling of dependencies</li>
+</ul>
+<p>Feel free to take a peek at the documentation available over <a href="http://mihail.co/fz2d/docs/">here</a>.</p>
+<a name="nyan.c"></a>
+<h2>nyan.c</h2>
+<p>This was a warm-up for <a href="http://www.ioccc.org/">IOCCC</a>, but then it turned out that there was no
+competition held this year. Oh well ....</p>
+<div class="highlight"><pre><span></span><span class="cp">#include</span> <span class="cpf">&lt;stdio.h&gt;</span><span class="cp"></span>
+<span class="cp">#include</span> <span class="cpf">&lt;unistd.h&gt;</span><span class="cp"></span>
+
+<span class="kt">int</span> <span class="nf">main</span><span class="p">(){</span><span class="k">const</span> <span class="kt">char</span> <span class="o">*</span><span class="n">O_o</span><span class="p">[]</span><span class="o">=</span><span class="cm">/*msz*/</span><span class="p">{</span>
+<span class="s">&quot; ,------,</span><span class="se">\n</span><span class="s">&quot;</span>  <span class="s">&quot;v|   /</span><span class="se">\\</span><span class="s">__/</span><span class="se">\\</span><span class="s"> </span><span class="se">\n</span><span class="s">&quot;</span> 
+<span class="s">&quot; |__( ^ w ^) </span><span class="se">\n</span><span class="s">&quot;</span> <span class="s">&quot;     </span><span class="se">\&quot;</span><span class="s">  </span><span class="se">\&quot;\n</span><span class="s">&quot;</span><span class="p">,</span>
+         <span class="s">&quot; ,------,</span><span class="se">\n</span><span class="s">&quot;</span>
+         <span class="s">&quot;~|    /</span><span class="se">\\</span><span class="s">__/</span><span class="se">\\\n</span><span class="s">&quot;</span>
+         <span class="s">&quot; |___( ^ w ^) </span><span class="se">\n</span><span class="s">&quot;</span>
+         <span class="s">&quot;     </span><span class="se">\&quot;</span><span class="s">  </span><span class="se">\&quot;\n</span><span class="s">&quot;</span><span class="p">,</span>
+<span class="s">&quot; ,------,</span><span class="se">\n</span><span class="s">&quot;</span> <span class="s">&quot;^|    /</span><span class="se">\\</span><span class="s">__/</span><span class="se">\\\n</span><span class="s">&quot;</span>
+<span class="s">&quot; |___( ^ w ^) </span><span class="se">\n</span><span class="s">&quot;</span>  <span class="s">&quot;     </span><span class="se">\&quot;</span><span class="s">  </span><span class="se">\&quot;\n</span><span class="s">&quot;</span> <span class="p">};</span>
+<span class="kt">int</span> <span class="n">i</span><span class="o">=</span><span class="mi">1</span><span class="p">;</span><span class="k">for</span><span class="p">(;;){</span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;%s</span><span class="se">\x1b</span><span class="s">[4A&quot;</span><span class="p">,</span>
+<span class="n">O_o</span><span class="p">[(</span><span class="n">i</span><span class="o">=</span><span class="p">(</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span><span class="o">%</span><span class="mi">3</span><span class="p">)]);</span><span class="n">usleep</span><span class="p">(</span><span class="mi">200000</span><span class="p">);}}</span>
+</pre></div>
+
+<a name="ZeeCraft"></a>
+<h2>ZeeCraft</h2>
+<p>Added an <strong>HD</strong> mode to my <a href="http://github.com/icebreaker/zeecraft">ZeeCraft</a> project.</p>
+<p><img alt="" src="/images/games/zeecraft_hd.png" /></p>
+<p>Special thanks, once again go out to <a href="http://kenney.nl">Kenney "Asset" Jesus</a> for the textures.</p>
+<a name="fastopen.vim"></a>
+<h2>fastopen.vim</h2>
+<p>I made a few updates to <a href="http://github.com/icebreaker/fastopen.vim">fastopen.vim</a>. A quick 
+"file opener" for <a href="http://www.vim.org">vim</a> using "dmenu".</p>
+<p><img alt="" src="/images/misc/fastopen.png" /></p>
+<a name="JSIP"></a>
+<h2>JSIP</h2>
+<p><a href="http://github.com/icebreaker/jsip">JSIP</a> can <em>pack</em> a piece of JS into a plain PNG image. Does not rely
+on any <em>custom chunks</em> or other exploits.</p>
+<h4>input: helloworld.js</h4>
+<div class="highlight"><pre><span></span><span class="nx">alert</span><span class="p">(</span><span class="s1">&#39;hello world&#39;</span><span class="p">);</span>
+</pre></div>
+
+<h4>output: helloworld.html</h4>
+<div class="highlight"><pre><span></span><span class="p">&lt;</span><span class="nt">html</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span>Helloworld<span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
+  <span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">img</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQAAAAABCAAAAAAUMi+rAAAAIUlEQVR42mNI</span>
+<span class="s">zEktKtFQz0jNyclXKM8vyklR17RWGDkAAJWCJK98ao+pAAAAAElFTkSuQmCC</span>
+<span class="s">&quot;</span> 
+         <span class="na">style</span><span class="o">=</span><span class="s">&quot;visibility: hidden; position: absolute; top: 0; left: 0;&quot;</span> 
+         <span class="na">onload</span><span class="o">=</span><span class="s">&quot;this.remove(); var c=document.createElement(&#39;canvas&#39;).getContext(&#39;2d&#39;); c.canvas.width=this.width; c.canvas.height=this.height; c.drawImage(this,0,0); var p=c.getImageData(0,0,this.width,this.height).data; var s=&#39;&#39;;for(var i=0;i&lt;p.length;i+=4)s+=String.fromCharCode(p[i]); (1,eval)(s);&quot;</span> <span class="na">onerror</span><span class="o">=</span><span class="s">&quot;this.remove();&quot;</span> <span class="p">/&gt;</span>
+  <span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
+</pre></div>
+
+<p>Even with the <em>indirect</em> eval, the resulting <em>code</em> is slower than the same <em>code</em> included and
+executed directly; but it was a fun thing to experiment with, nonetheless.</p>
+<p>To view a <em>non-interactive</em> visual demo produced by JSIP, click <a href="/jsip">here</a>.</p>
+<a name="Noty"></a>
+<h2>Noty</h2>
+<p>Noty is a small <em>note</em> taking application, I written in pure bash script. It's roughly 200 lines long,
+including comments and stores notes in <a href="https://guides.github.com/features/mastering-markdown/">GFM</a>.</p>
+<p>It is possible to store all notes in a user specified location by exporting the <code>NOTY_DB</code> variable
+in your <code>.bashrc</code> like so:</p>
+<div class="highlight"><pre><span></span><span class="nb">export</span> <span class="nv">NOTY_DB</span><span class="o">=</span><span class="nv">$HOME</span>/Dropbox/.noty
+</pre></div>
+
+<p>The command line interface is really simple.</p>
+<div class="highlight"><pre><span></span>Noty v1.0.0
+
+usage: noty <span class="nb">command</span> <span class="o">[</span>arg<span class="o">]</span> <span class="o">[</span>note<span class="o">]</span>
+
+commands:
+  c - create a new note
+  l - list notes
+  m - mark a note
+  u - unmark a note
+</pre></div>
+
+<p>A little example is in order to demonstrate how lean and mean it is to use.</p>
+<div class="highlight"><pre><span></span>~ $ noty c <span class="s1">&#39;hello world&#39;</span>
+Initialized <span class="s1">&#39;testdb&#39;</span> ...
+Initialized <span class="s1">&#39;2016-12-30&#39;</span> ...
+Added note <span class="s1">&#39;hello world&#39;</span> ...
+ ~ $ noty l
+2016-12-30
+----------
+1. <span class="o">[</span> <span class="o">]</span> hello world
+ ~ $ noty c <span class="s1">&#39;make cake&#39;</span>
+Added note <span class="s1">&#39;make cake&#39;</span> ...
+ ~ $ noty m 1
+Marked note <span class="s1">&#39;1&#39;</span> ...
+ ~ $ noty l
+2016-12-30
+----------
+1. <span class="o">[</span>x<span class="o">]</span> hello world
+2. <span class="o">[</span> <span class="o">]</span> make cake
+</pre></div>
+
+<div class="highlight"><pre><span></span><span class="ch">#!/bin/bash</span>
+
+<span class="c1"># {{{ license</span>
+<span class="c1">#</span>
+<span class="c1"># MIT LICENSE</span>
+<span class="c1"># </span>
+<span class="c1"># Copyright (c) 2016, Mihail Szabolcs</span>
+<span class="c1"># </span>
+<span class="c1"># Permission is hereby granted, free of charge, to any person obtaining a copy</span>
+<span class="c1"># of this software and associated documentation files (the &#39;Software&#39;), to deal</span>
+<span class="c1"># in the Software without restriction, including without limitation the rights</span>
+<span class="c1"># to use, copy, modify, merge, publish, distribute, sublicense, and/or sell</span>
+<span class="c1"># copies of the Software, and to permit persons to whom the Software is</span>
+<span class="c1"># furnished to do so, subject to the following conditions:</span>
+<span class="c1"># </span>
+<span class="c1"># The above copyright notice and this permission notice shall be included in all</span>
+<span class="c1"># copies or substantial portions of the Software.</span>
+<span class="c1"># </span>
+<span class="c1"># THE SOFTWARE IS PROVIDED &#39;AS IS&#39;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR</span>
+<span class="c1"># IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,</span>
+<span class="c1"># FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE</span>
+<span class="c1"># AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER</span>
+<span class="c1"># LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,</span>
+<span class="c1"># OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE</span>
+<span class="c1"># SOFTWARE.</span>
+<span class="c1">#</span>
+<span class="c1"># }}} license</span>
+
+<span class="c1"># {{{ globals</span>
+<span class="nv">NOTY_VERSION</span><span class="o">=</span><span class="s1">&#39;1.0.0&#39;</span>
+
+<span class="k">if</span> <span class="o">[[</span> -z <span class="s2">&quot;</span><span class="nv">$NOTY_DB</span><span class="s2">&quot;</span> <span class="o">]]</span><span class="p">;</span> <span class="k">then</span>
+    <span class="nv">NOTY_DB</span><span class="o">=</span><span class="s2">&quot;</span><span class="nv">$HOME</span><span class="s2">/.noty&quot;</span>
+<span class="k">fi</span>
+<span class="c1"># }}}</span>
+
+<span class="c1"># {{{ utils</span>
+<span class="k">function</span> get_current_date<span class="o">()</span>
+<span class="o">{</span>
+    date +<span class="s1">&#39;%Y-%m-%d&#39;</span>
+<span class="o">}</span>
+
+<span class="k">function</span> preg_replace<span class="o">()</span>
+<span class="o">{</span>
+    sed -i -e <span class="s2">&quot;s/</span><span class="nv">$1</span><span class="s2">/</span><span class="nv">$2</span><span class="s2">/&quot;</span> <span class="nv">$3</span>
+<span class="o">}</span>
+
+<span class="k">function</span> preg_remove<span class="o">()</span>
+<span class="o">{</span>
+    sed -i -e <span class="s2">&quot;/</span><span class="nv">$1</span><span class="s2">/d&quot;</span> <span class="nv">$2</span>
+<span class="o">}</span>
+
+<span class="c1"># }}}</span>
+
+<span class="c1"># {{{ db</span>
+<span class="k">function</span> db_init<span class="o">()</span>
+<span class="o">{</span>
+    <span class="k">if</span> <span class="o">[[</span> ! -f <span class="nv">$NOTY_DB</span> <span class="o">]]</span><span class="p">;</span> <span class="k">then</span>
+        <span class="nb">echo</span> -e <span class="s2">&quot;Noty v</span><span class="nv">$NOTY_VERSION</span><span class="s2">\n===========&quot;</span> &gt;&gt; <span class="nv">$NOTY_DB</span>
+        <span class="nb">echo</span> -e <span class="s2">&quot;You have a total of 0 notes.&quot;</span> &gt;&gt; <span class="nv">$NOTY_DB</span>
+        <span class="nb">echo</span> <span class="s2">&quot;Initialized &#39;</span><span class="nv">$NOTY_DB</span><span class="s2">&#39; ...&quot;</span>
+    <span class="k">fi</span>
+<span class="o">}</span>
+
+<span class="k">function</span> db_get_id<span class="o">()</span>
+<span class="o">{</span>
+    <span class="nb">local</span> <span class="nv">OLD_ID</span><span class="o">=</span><span class="k">$(</span>grep -m <span class="m">1</span> -P <span class="s1">&#39;^You have a total of \d+ notes.$&#39;</span> <span class="nv">$NOTY_DB</span> <span class="p">|</span> cut -d <span class="s1">&#39; &#39;</span> -f 6<span class="k">)</span>
+    <span class="nb">local</span> <span class="nv">NEW_ID</span><span class="o">=</span><span class="k">$((</span>OLD_ID <span class="o">+</span> <span class="m">1</span><span class="k">))</span>
+
+    preg_replace <span class="s2">&quot;^You have a total of </span><span class="nv">$OLD_ID</span><span class="s2"> notes.</span>$<span class="s2">&quot;</span> <span class="s2">&quot;You have a total of </span><span class="nv">$NEW_ID</span><span class="s2"> notes.&quot;</span> <span class="nv">$NOTY_DB</span>
+
+    <span class="nb">echo</span> <span class="nv">$NEW_ID</span>
+<span class="o">}</span>
+
+<span class="k">function</span> db_write_note<span class="o">()</span>
+<span class="o">{</span>
+    db_init
+
+    <span class="k">if</span> <span class="o">[[</span> -z <span class="k">$(</span>grep <span class="s2">&quot;^</span><span class="k">$(</span>get_current_date<span class="k">)</span><span class="s2">&quot;</span> <span class="nv">$NOTY_DB</span><span class="k">)</span> <span class="o">]]</span><span class="p">;</span> <span class="k">then</span>
+        <span class="nb">echo</span> -e <span class="s2">&quot;\n</span><span class="k">$(</span>get_current_date<span class="k">)</span><span class="s2">\n----------&quot;</span> &gt;&gt; <span class="nv">$NOTY_DB</span>
+        <span class="nb">echo</span> <span class="s2">&quot;Initialized &#39;</span><span class="k">$(</span>get_current_date<span class="k">)</span><span class="s2">&#39; ...&quot;</span>
+    <span class="k">fi</span>
+
+    <span class="nb">echo</span> <span class="s2">&quot;</span><span class="k">$(</span>db_get_id<span class="k">)</span><span class="s2">. [ ] </span><span class="nv">$@</span><span class="s2">&quot;</span> &gt;&gt; <span class="nv">$NOTY_DB</span>
+    <span class="nb">echo</span> <span class="s2">&quot;Added note &#39;</span><span class="nv">$@</span><span class="s2">&#39; ...&quot;</span>
+<span class="o">}</span>
+
+<span class="k">function</span> db_delete_note<span class="o">()</span>
+<span class="o">{</span>
+    preg_remove <span class="s2">&quot;^</span><span class="nv">$1</span><span class="s2">. \[ \]&quot;</span> <span class="nv">$NOTY_DB</span>
+    <span class="nb">echo</span> <span class="s2">&quot;Deleted note &#39;</span><span class="nv">$1</span><span class="s2">&#39; ...&quot;</span>
+<span class="o">}</span>
+
+<span class="k">function</span> db_get_notes<span class="o">()</span>
+<span class="o">{</span>
+    <span class="k">if</span> <span class="o">[[</span> <span class="s2">&quot;</span><span class="nv">$1</span><span class="s2">&quot;</span> <span class="o">==</span> <span class="s2">&quot;all&quot;</span> <span class="o">]]</span><span class="p">;</span> <span class="k">then</span>
+        cat <span class="si">${</span><span class="nv">NOTY_DB</span><span class="si">}</span>
+    <span class="k">else</span>
+        <span class="nb">local</span> <span class="nv">LINE</span><span class="o">=</span><span class="k">$(</span>grep -m <span class="m">1</span> -n -P <span class="s2">&quot;^</span><span class="nv">$1</span><span class="s2">&quot;</span> <span class="nv">$NOTY_DB</span> <span class="p">|</span> cut -d <span class="s1">&#39;:&#39;</span> -f 1<span class="k">)</span>
+        <span class="k">if</span> <span class="o">[[</span> -n <span class="s2">&quot;</span><span class="nv">$LINE</span><span class="s2">&quot;</span> <span class="o">]]</span> <span class="p">;</span> <span class="k">then</span>
+            tail -n +<span class="nv">$LINE</span> <span class="nv">$NOTY_DB</span>
+        <span class="k">fi</span>
+    <span class="k">fi</span>
+<span class="o">}</span>
+
+<span class="k">function</span> db_mark_note<span class="o">()</span>
+<span class="o">{</span>
+    preg_replace <span class="s2">&quot;^</span><span class="nv">$1</span><span class="s2">. \[ \]&quot;</span> <span class="s2">&quot;</span><span class="nv">$1</span><span class="s2">. \[x\]&quot;</span> <span class="nv">$NOTY_DB</span>
+    <span class="nb">echo</span> <span class="s2">&quot;Marked note &#39;</span><span class="nv">$1</span><span class="s2">&#39; ...&quot;</span>
+<span class="o">}</span>
+
+<span class="k">function</span> db_unmark_note<span class="o">()</span>
+<span class="o">{</span>
+    preg_replace <span class="s2">&quot;^</span><span class="nv">$1</span><span class="s2">. \[x\]&quot;</span> <span class="s2">&quot;</span><span class="nv">$1</span><span class="s2">. \[ \]&quot;</span> <span class="nv">$NOTY_DB</span>
+    <span class="nb">echo</span> <span class="s2">&quot;Un-Marked note &#39;</span><span class="nv">$1</span><span class="s2">&#39; ...&quot;</span>
+<span class="o">}</span>
+<span class="c1"># }}}</span>
+
+<span class="c1"># {{{ commands</span>
+<span class="k">function</span> command_c<span class="o">()</span>
+<span class="o">{</span>
+    <span class="k">if</span> <span class="o">[[</span> -z <span class="s2">&quot;</span><span class="nv">$1</span><span class="s2">&quot;</span> <span class="o">]]</span><span class="p">;</span> <span class="k">then</span>
+        <span class="nb">echo</span> <span class="s2">&quot;You must provide a valid note.&quot;</span>
+        <span class="nb">exit</span> -1
+    <span class="k">else</span>
+        db_write_note <span class="s2">&quot;</span><span class="nv">$@</span><span class="s2">&quot;</span>
+    <span class="k">fi</span>
+<span class="o">}</span>
+
+<span class="k">function</span> command_d<span class="o">()</span>
+<span class="o">{</span>
+    <span class="k">if</span> <span class="o">[[</span> -z <span class="s2">&quot;</span><span class="nv">$1</span><span class="s2">&quot;</span> <span class="o">]]</span><span class="p">;</span> <span class="k">then</span>
+        <span class="nb">echo</span> <span class="s2">&quot;You must provide a valid note id&quot;</span>
+        <span class="nb">exit</span> -1
+    <span class="k">else</span>
+        db_delete_note <span class="s2">&quot;</span><span class="nv">$1</span><span class="s2">&quot;</span>
+    <span class="k">fi</span>
+<span class="o">}</span>
+
+<span class="k">function</span> command_l<span class="o">()</span>
+<span class="o">{</span>
+    <span class="k">if</span> <span class="o">[[</span> -z <span class="s2">&quot;</span><span class="nv">$1</span><span class="s2">&quot;</span> <span class="o">]]</span><span class="p">;</span> <span class="k">then</span>
+        db_get_notes <span class="k">$(</span>get_current_date<span class="k">)</span>
+    <span class="k">else</span>
+        db_get_notes <span class="s2">&quot;</span><span class="nv">$1</span><span class="s2">&quot;</span>
+    <span class="k">fi</span>
+<span class="o">}</span>
+
+<span class="k">function</span> command_m<span class="o">()</span>
+<span class="o">{</span>
+    <span class="k">if</span> <span class="o">[[</span> -z <span class="s2">&quot;</span><span class="nv">$1</span><span class="s2">&quot;</span> <span class="o">]]</span><span class="p">;</span> <span class="k">then</span>
+        <span class="nb">echo</span> <span class="s2">&quot;You must provide a valid note id&quot;</span>
+        <span class="nb">exit</span> -1
+    <span class="k">else</span>
+        db_mark_note <span class="s2">&quot;</span><span class="nv">$1</span><span class="s2">&quot;</span>
+    <span class="k">fi</span>
+<span class="o">}</span>
+
+<span class="k">function</span> command_u<span class="o">()</span>
+<span class="o">{</span>
+    <span class="k">if</span> <span class="o">[[</span> -z <span class="s2">&quot;</span><span class="nv">$1</span><span class="s2">&quot;</span> <span class="o">]]</span><span class="p">;</span> <span class="k">then</span>
+        <span class="nb">echo</span> <span class="s2">&quot;You must provide a valid note id&quot;</span>
+        <span class="nb">exit</span> -1
+    <span class="k">else</span>
+        db_unmark_note <span class="s2">&quot;</span><span class="nv">$1</span><span class="s2">&quot;</span>
+    <span class="k">fi</span>
+<span class="o">}</span>
+<span class="c1"># }}}</span>
+
+<span class="c1"># {{{ help</span>
+<span class="k">function</span> help<span class="o">()</span>
+<span class="o">{</span>
+    <span class="nb">echo</span> <span class="s2">&quot;Noty v</span><span class="nv">$NOTY_VERSION</span><span class="s2">&quot;</span>
+    <span class="nb">echo</span> -e <span class="s2">&quot;\nusage: </span><span class="k">$(</span>basename <span class="nv">$0</span><span class="k">)</span><span class="s2"> command [arg] [note]&quot;</span>
+    <span class="nb">echo</span> -e <span class="s2">&quot;\ncommands:&quot;</span>
+    <span class="nb">echo</span> -e <span class="s2">&quot;\tc - create a new note&quot;</span>
+    <span class="nb">echo</span> -e <span class="s2">&quot;\tl - list notes&quot;</span>
+    <span class="nb">echo</span> -e <span class="s2">&quot;\tm - mark a note&quot;</span>
+    <span class="nb">echo</span> -e <span class="s2">&quot;\tu - unmark a note&quot;</span>
+    <span class="nb">exit</span> -1
+<span class="o">}</span>
+<span class="c1"># }}}</span>
+
+<span class="c1"># {{{ main</span>
+<span class="k">function</span> main<span class="o">()</span>
+<span class="o">{</span>
+    <span class="nb">local</span> <span class="nv">CMD</span><span class="o">=</span><span class="s2">&quot;</span><span class="nv">$1</span><span class="s2">&quot;</span>
+    <span class="nb">shift</span>
+
+    <span class="nb">local</span> <span class="nv">FUNCTION_TYPE</span><span class="o">=</span><span class="k">$(</span><span class="nb">type</span> -t <span class="s2">&quot;command_</span><span class="si">${</span><span class="nv">CMD</span><span class="si">}</span><span class="s2">&quot;</span><span class="k">)</span>
+
+    <span class="k">if</span> <span class="o">[</span> <span class="s2">&quot;</span><span class="nv">$FUNCTION_TYPE</span><span class="s2">&quot;</span> <span class="o">==</span> <span class="s2">&quot;function&quot;</span> <span class="o">]</span><span class="p">;</span> <span class="k">then</span>
+        command_<span class="si">${</span><span class="nv">CMD</span><span class="si">}</span> <span class="s2">&quot;</span><span class="nv">$@</span><span class="s2">&quot;</span>
+    <span class="k">else</span>
+        <span class="nb">help</span>
+    <span class="k">fi</span>
+<span class="o">}</span>
+
+main <span class="s2">&quot;</span><span class="nv">$@</span><span class="s2">&quot;</span>
+<span class="c1"># }}}</span>
+</pre></div>
+
+<a name="SteamSpy"></a>
+<h2>SteamSpy</h2>
+<p>If you like to <em>spy</em> on Steam games a lot like I do, then you might find the bookmarklet
+or the TamperMonkey script below very very useful.</p>
+<h4>Bookmarklet</h4>
+<p>Open SteamSpy on any Steam store page with a single click.</p>
+<div class="highlight"><pre><span></span><span class="nx">javascript</span><span class="o">:</span><span class="nb">window</span><span class="p">.</span><span class="nx">open</span><span class="p">(</span><span class="nb">window</span><span class="p">.</span><span class="nx">location</span><span class="p">.</span><span class="nx">href</span><span class="p">.</span><span class="nx">replace</span><span class="p">(</span><span class="s1">&#39;store.steampowered&#39;</span><span class="p">,</span> <span class="s1">&#39;steamspy&#39;</span><span class="p">))</span>
+</pre></div>
+
+<h4>TamperMonkey Script</h4>
+<p>This <em>script</em> adds a <em>SteamSpy</em> button to every Steam store page.</p>
+<p><img alt="" src="/images/games/nomanssky_steamspy.png" /></p>
+<div class="highlight"><pre><span></span><span class="c1">// ==UserScript==</span>
+<span class="c1">// @name         SteamSpy</span>
+<span class="c1">// @namespace    http://mihail.co</span>
+<span class="c1">// @version      0.1</span>
+<span class="c1">// @description  Adds a Steam Spy button to every Steam store page.</span>
+<span class="c1">// @author       Mihail Szabolcs</span>
+<span class="c1">// @match        http://store.steampowered.com/app/*</span>
+<span class="c1">// @grant        none</span>
+<span class="c1">// ==/UserScript==</span>
+<span class="p">(</span><span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+    <span class="s1">&#39;use strict&#39;</span><span class="p">;</span>
+    <span class="kd">var</span> <span class="nx">el</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">querySelector</span><span class="p">(</span><span class="s1">&#39;.apphub_OtherSiteInfo&#39;</span><span class="p">);</span>
+    <span class="k">if</span><span class="p">(</span><span class="o">!</span><span class="nx">el</span><span class="p">)</span> <span class="k">return</span><span class="p">;</span>
+
+    <span class="kd">var</span> <span class="nx">a</span> <span class="o">=</span> <span class="nx">el</span><span class="p">.</span><span class="nx">querySelector</span><span class="p">(</span><span class="s1">&#39;a&#39;</span><span class="p">);</span>
+    <span class="k">if</span><span class="p">(</span><span class="o">!</span><span class="nx">a</span><span class="p">)</span> <span class="k">return</span><span class="p">;</span>
+
+    <span class="kd">var</span> <span class="nx">newa</span> <span class="o">=</span> <span class="nx">a</span><span class="p">.</span><span class="nx">cloneNode</span><span class="p">(</span><span class="kc">true</span><span class="p">);</span>    
+    <span class="nx">newa</span><span class="p">.</span><span class="nx">href</span> <span class="o">=</span> <span class="s1">&#39;javascript: window.open(&quot;https://steamspy.com&#39;</span> <span class="o">+</span> <span class="nx">a</span><span class="p">.</span><span class="nx">href</span><span class="p">.</span><span class="nx">match</span><span class="p">(</span><span class="sr">/\/app\/([0-9]+)/</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span> <span class="o">+</span> <span class="s1">&#39;&quot;);&#39;</span><span class="p">;</span>
+
+    <span class="kd">var</span> <span class="nx">text</span> <span class="o">=</span> <span class="nx">newa</span><span class="p">.</span><span class="nx">querySelector</span><span class="p">(</span><span class="s1">&#39;span&#39;</span><span class="p">);</span>
+    <span class="k">if</span><span class="p">(</span><span class="o">!</span><span class="nx">text</span><span class="p">)</span> <span class="k">return</span><span class="p">;</span>
+
+    <span class="nx">text</span><span class="p">.</span><span class="nx">innerHTML</span> <span class="o">=</span> <span class="s1">&#39;Steam Spy&#39;</span><span class="p">;</span>
+
+    <span class="nx">el</span><span class="p">.</span><span class="nx">appendChild</span><span class="p">(</span><span class="nx">newa</span><span class="p">);</span>
+<span class="p">})();</span>
+</pre></div>
+
+<a name="Hamunaputra"></a>
+<h2>Hamunaputra</h2>
+<p>Hamunaputra started as a 32KB room-based <em>roguelite</em> for DOS, written in plain 16-bit
+ASM, with everything being <em>packed</em> into a single <em>.COM</em> executable. No external files,
+or dependencies of any kind.</p>
+<p><img alt="" src="/images/games/hamunaputra.png" /></p>
+<p>Never finished it, and currently sits in the back burner.</p>
+<a name="Nexeh &amp; Nixel"></a>
+<h2>Nexeh &amp; Nixel</h2>
+<p>This has been my primary focus this year, and will continue to be next year. 
+Like I mentioned before, I would like to build and old-school first person shooter, 
+retaining as many <em>original</em> elements as possible, while at the same time throwing a couple 
+of new twists into the mix for good measure.</p>
+<p>My definition of old-school includes (but not limited to), games like:</p>
+<ul>
+<li>DOOM</li>
+<li>Hexen and Heretic</li>
+<li>Duke Nukem 3D</li>
+<li>Painkiller</li>
+<li>Shadow Warrior</li>
+</ul>
+<p><img alt="" src="/images/games/shadow_warrior_bunnies.png" /></p>
+<p>I want to go for the 2.5D look, with 3D world geometry and 2D sprite based
+(billboard) entities. Haven't settled for a general look and feel yet, because I am still working
+on some of the core tech.</p>
+<p><img alt="" src="/images/games/nexeh.gif" /></p>
+<p>... with some <em>sprites</em> ripped from Hexen ...</p>
+<p><img alt="" src="/images/games/nexeh_ripped.gif" /></p>
+<p>... and compiled with <a href="http://kripken.github.io/emscripten-site/">emscripten</a> ...</p>
+<p><img alt="" src="/images/games/nexeh_2016.png" /></p>
+<p>I managed to figure out most of the architectural questions; will try to blog about some of the
+technical <em>stuff</em> in the weeks to come. Stay tuned.</p>
+<p>Like I promised, it's all going to be <em>open source</em> when it comes to the <em>code</em> and <em>tech</em>. 
+When am I going to open source it? Well, that remains to be seen, but most likely only after
+I have something more or less playable in my hands.</p>
+<a name="Greed"></a>
+<h2>Greed</h2>
+<p>Stumbled upon <a href="http://www.redshadowsoftware.com/projects/greed">In Pursuit of Greed</a> and
+decided to modernize and port it, keeping the <em>original</em> software renderer intact, while
+allowing for higher resolutions, both <em>upscaled</em> (from 320x200) and native.</p>
+<p><img alt="" src="/images/games/greed_poster.png" /></p>
+<p>Here you can see a screenshot of the game running at <em>whopping</em> 800x600 resolution.</p>
+<p><img alt="" src="/images/games/greed.png" /></p>
+<p>This is still very much work in progress, and I work on it every once in a while, but we'll
+get there sooner or later.</p>
+<a name="Writings"></a>
+<h2>Writings</h2>
+<p>There is plenty of <em>literature</em> when it comes to <em>game development</em>, but none of it is focusing
+on the actual so called <strong>practical</strong> side of things. There are <em>bits</em> scattered here and there,
+but nothing exhaustive or conclusive.</p>
+<p>Most of the books, just rehash and regurgitate the very same things, perhaps <em>updated</em> or
+<em>modernized</em> in places, but still presented in rather outdated formats.</p>
+<p>To change the status quo, I started <em>sketching</em> out three books, <em>Software Rendering for the 
+practical game developer</em>, <em>Game programming for the practical game developer</em> and a companion
+guide entitled, <em>Mathematics for the practical game developer</em>.</p>
+<p>I want to focus purely on the <em>practical side</em> of things, avoid <em>platitudes</em> and <em>urban myths</em>, however, 
+when any of these will turn into actual <em>paper</em> that one can hold in their hands, one again, it
+remains to be seen ...</p>
+<p>On a different note, there's still considerable interest in my <a href="/floppybird">FloppyBird</a> project, which
+means that it's time for me to write a <em>Making of Floppy Bird</em>, sometime next year ...</p>
+<a name="Pyramid Hologram"></a>
+<h2>Pyramid Hologram</h2>
+<p>Before I even get started, yes, yes, yes, it's not a <em>real hologram</em>, but it's still 10x more
+interesting than the idiotic thing we call <strong>VR</strong>. Who on Earth wants to stick half a kilogram of
+equipment on their head? Apparently quite a few. Good luck with destroying your eyesight faster
+than a good old CRT would.</p>
+<p>Now that we have that settled, let me dive into the details.</p>
+<p>The so called <em>"DYI holograms"</em> have been circulating on the Internets for quite some time, but all
+efforts seem to be focused on <em>displaying</em> animations, instead of <em>real-time</em> applications, like
+video games.</p>
+<p><iframe width="760" height="428" src="https://www.youtube.com/embed/nvJ70BThiHc" frameborder="0" allowfullscreen></iframe></p>
+<p>Basically, you build a <em>pyramid</em> and then you use a <em>tablet</em> or another device to <em>project</em> on it by
+placing it on the top, you can see this in action in the video above.</p>
+<p><img alt="" src="/images/hologram_pyramid.png" /></p>
+<p><em>(Source: <a href="http://myweb.fcu.edu.tw/~mhsung/NPDP/Tech/Papercraft/PC_EX20.htm">~mhsung</a>)</em></p>
+<p>In order to <em>achieve</em> the effect, one has to <em>prepare</em> a special <em>video</em>, which you can see below.</p>
+<p><iframe width="760" height="428" src="https://www.youtube.com/embed/TcUHV6bHOeg" frameborder="0" allowfullscreen></iframe></p>
+<p>What's really going on here? The answer is really simple. It's the same <em>thing</em> rendered from 4 different
+angles, which is then <em>reflected</em> on the 4 sides of the pyramid, giving the <em>illusion</em> of a volumetric
+hologram.</p>
+<p>Do you see where this is going? When it comes to <em>games</em>, all one has to do is <em>render</em> in real time
+the <em>visible scene</em> from 4 different angles, by rotating the so called <em>camera</em>.</p>
+<p>Isn't that expensive, to render <em>almost</em> the same thing 4 times? Well, it really depends on a couple of
+things like: complexity of the scene, output resolution and overall graphical fidelity.</p>
+<p>I want to build a prototype with something relatively <em>simple</em>, like <em>Tux Racer</em>. Take a look at the 
+small <em>sketch</em> I made to illustrate the concept, in order to put things into perspective.</p>
+<p><img alt="" src="/images/hologram_pyramid_sketch.png" /></p>
+<p>In many respects this is similar to <em>split screen local couch co-op</em>, where the <em>screen</em> is split into
+2 to 4 individual viewports giving each player the ability to roam around freely.</p>
+<h5>Left 4 Dead 2</h5>
+<p><img alt="" src="/images/games/left4dead2coop.png" /></p>
+<h5>Super Mario Kart</h5>
+<p><img alt="" src="/images/games/smccoop.png" /></p>
+<p>Imagine sitting at a table and each player seeing the very same world from a different <em>view</em>. Wouldn't
+that be super duper cool? I'll let you decide ...</p>
+<a name="Rover"></a>
+<h2>Rover</h2>
+<p>Even though Elon Musk is very very optimistic when it comes to colonizing Mars, and yes he is definitely
+going to <em>democratize</em> the <em>rocket</em> business, but we are very very far away from <em>man</em> setting foot on
+Mars.</p>
+<p>NASA got their <em>rover</em> moving around, snapping a few photos here and there, but every time something
+<em>interesting</em> pops-up on one of those photos, they always seem to be very eager to discredit it or just
+blatantly ignore it.</p>
+<p>I fully understand, you can't just move around a few billion dollars worth of machinery, willy nilly, as you please.
+I get that 100%, but when there's considerable doubt when it comes to <em>certain</em> geological features that appear
+to resemble <em>man-made</em> structures or statues, the silence and the same old same charade becomes quite annoying.</p>
+<p>Nobody is saying that every <em>rock formation</em> that looks suspicious is a statue or some relic left there
+by some ancient civilization, but all it would take is to move closer to one instance and take a closer
+photo. That's all it would take, and then all the crazy conspiracy theorists would just shut up and
+crawl back into the caves they emerged from.</p>
+<p>I've been thinking about this, what if, we could create an <em>inexpesive</em> machine which could roam around
+freely, with its sole purpose being taking high resolution close-up photographs of certain points of
+interests.</p>
+<p><img alt="" src="/images/rover.png" /></p>
+<p>A few details about the <em>sketch</em> above:</p>
+<ul>
+<li>in terms of scale, it should be the size of a regular <em>sitting ball</em></li>
+<li>the outer <em>shell</em> rotates around the inner <em>shell</em></li>
+<li>the inner <em>shell</em> is always axis aligned, regardless of the outer <em>shell</em></li>
+<li>3 solar panels, which means that two of them will receive <em>sunlight</em> regardless of the rotation
+of the outer <em>shell</em></li>
+<li>the inner <em>shell</em> contains a <em>black-box</em> with all the <em>equipment</em> (camera, comm-link, a mini PC, etc)</li>
+<li>the outer shell should absorb any <em>shock</em> (i.e when <em>landing</em>)</li>
+</ul>
+<p>I am pretty sure that there are <em>many</em> things that I didn't think of, or things that are just plain wrong
+or impossible with such a <em>design</em>, but the general idea would be to build a dozen of these and then
+let them loose on the surface or Mars. Each of these could <em>visit</em> a place of interest and send back
+high resolution photographs.</p>
+<p>Since it wouldn't contain any <em>expensive</em> scientific equipment the building costs should be minimal, 
+compared the rovers that have been deployed in the past.</p>
+<a name="SketchFab"></a>
+<h2>SketchFab</h2>
+<p>A couple of my favorite <a href="https://sketchfab.com/theicebreaker/likes"><em>sketchfabs</em></a>.</p>
+<div class="sketchfab-embed-wrapper" style="margin-bottom: 20px;"><iframe width="980" height="480" src="https://sketchfab.com/models/aad4c32e997f4efc9571294c7e1d0c8c/embed" frameborder="0" allowvr allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" onmousewheel=""></iframe></div>
+
+<div class="sketchfab-embed-wrapper"><iframe width="980" height="480" src="https://sketchfab.com/models/ea79b3b36fc04ded845ddfe1de08957a/embed" frameborder="0" allowvr allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" onmousewheel=""></iframe></div>
+
+<a name="End"></a>
+<h2>End</h2>
+<p><em>Phew</em>, if you managed reach <strong>THE END</strong>, you are as brave as you are foolish. All in all, it has been
+an interesting year, like I mentioned above, my main focus for 2017 is going to be my old school first
+person shooter project. It would be nice to reach some sort of a <em>playable</em> tech-demo state, sooner
+rather than later.</p>
+<p>Since I am not a <em>console</em> gamer, my new years resolutions cannot be as simple as <em>720p</em>, I hope that
+you can understand that. <strong>(PC MASTER RACE FOR LIFE REPRESENT)</strong></p>
+<p>Oh, I almost forgot, mostly because I've been rambling for so long, my game of the year, <strong>IS</strong> most definitely,
+without a shadow of a doubt, <em>silence and drum rolls</em>, <a href="http://www.firewatchgame.com/">Firewatch</a>.</p>
+<p><img alt="" src="/images/games/firewatch.png" /></p>
+<p>To view all the photos I took in-game, click <a href="https://firewatch.camera/EvergreenTwoForksFirs/">here</a>.</p>
+<p><a href="https://twitter.com/thatjaneng">Jane Ng</a> and the rest of the team did an amazing job when it comes
+to crafting the <em>world</em> of Firewatch.</p>
+<p><iframe width="760" height="428" src="https://www.youtube.com/embed/hTqmk1Zs_1I" frameborder="0" allowfullscreen></iframe></p>
+<p><iframe width="760" height="428" src="https://www.youtube.com/embed/ZYnS3kKTcGg" frameborder="0" allowfullscreen></iframe></p>
+<p>Until next time, as server said, <strong>END OF LINE</strong>.</p>
+			
+
+		</div>
+		
+		<div class="footer">
+			<div class="text">
+				<div class="clear"></div>
+			</div>
+		</div>
+		
+		
+	</body>
+</html>
