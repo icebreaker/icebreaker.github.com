@@ -148,8 +148,6 @@ Fz2D
 ----
 Fz2D is a 2D game engine and framework written in CoffeeScript. 
 
-Try a demo *game* over [here](/fz2d).
-
 ![](/images/games/fz2d.png)
 
 You can find out more about it over [here](http://github.com/icebreaker/fz2d).
