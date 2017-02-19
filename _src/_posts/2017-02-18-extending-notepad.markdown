@@ -872,7 +872,7 @@ void Run(HWND hWnd, DWORD dwWSHEngine)
     return;
 
   // FIXME: wnsprintf
-  wsprintf(lpFileName, L"%swscrpad.tmp", wszPath);
+  wsprintf(wszFileName, L"%swscrpad.tmp", wszPath);
 
   hFile = CreateFile(wszFileName,
                      GENERIC_WRITE,

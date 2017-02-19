@@ -822,7 +822,7 @@ to something slightly more appropriate like <strong>HKEY_CURRENT_USER\Software\M
     <span class="k">return</span><span class="p">;</span>
 
   <span class="c1">// FIXME: wnsprintf</span>
-  <span class="n">wsprintf</span><span class="p">(</span><span class="n">lpFileName</span><span class="p">,</span> <span class="s">L&quot;%swscrpad.tmp&quot;</span><span class="p">,</span> <span class="n">wszPath</span><span class="p">);</span>
+  <span class="n">wsprintf</span><span class="p">(</span><span class="n">wszFileName</span><span class="p">,</span> <span class="s">L&quot;%swscrpad.tmp&quot;</span><span class="p">,</span> <span class="n">wszPath</span><span class="p">);</span>
 
   <span class="n">hFile</span> <span class="o">=</span> <span class="n">CreateFile</span><span class="p">(</span><span class="n">wszFileName</span><span class="p">,</span>
                      <span class="n">GENERIC_WRITE</span><span class="p">,</span>
