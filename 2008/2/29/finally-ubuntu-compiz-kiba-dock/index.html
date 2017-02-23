@@ -32,6 +32,8 @@
 
 			(function() 
 			{
+				if(document.location.host.indexOf('localhost') == 0) return;
+
 				var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
 				ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
 				var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
@@ -40,6 +42,8 @@
 		<script type="text/javascript">
 			(function() 
 			{
+				if(document.location.host.indexOf('localhost') == 0) return;
+
 				var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
 				po.src = 'https://apis.google.com/js/plusone.js';
 				var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
@@ -87,7 +91,7 @@
 </pre></div>
 
 <p>The easiest way to do this, is to fire up a terminal and type in the following:</p>
-<div class="highlight"><pre><span></span>sudo nvidia-xconfig --add-argb-glx-visuals -d 24
+<div class="highlight"><pre><span></span>sudo nvidia-xconfig --add-argb-glx-visuals -d <span class="m">24</span>
 </pre></div>
 
 <p>Then restart compiz, and the borders should appear. Of course this assumes that you have installed the "NVidia" drivers (restricted) .</p>

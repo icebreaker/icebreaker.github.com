@@ -32,6 +32,8 @@
 
 			(function() 
 			{
+				if(document.location.host.indexOf('localhost') == 0) return;
+
 				var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
 				ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
 				var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
@@ -40,6 +42,8 @@
 		<script type="text/javascript">
 			(function() 
 			{
+				if(document.location.host.indexOf('localhost') == 0) return;
+
 				var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
 				po.src = 'https://apis.google.com/js/plusone.js';
 				var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
@@ -191,18 +195,18 @@ Initialized <span class="s1">&#39;testdb&#39;</span> ...
 Initialized <span class="s1">&#39;2016-12-30&#39;</span> ...
 Added note <span class="s1">&#39;hello world&#39;</span> ...
  ~ $ noty l
-2016-12-30
+<span class="m">2016</span>-12-30
 ----------
-1. <span class="o">[</span> <span class="o">]</span> hello world
+<span class="m">1</span>. <span class="o">[</span> <span class="o">]</span> hello world
  ~ $ noty c <span class="s1">&#39;make cake&#39;</span>
 Added note <span class="s1">&#39;make cake&#39;</span> ...
- ~ $ noty m 1
+ ~ $ noty m <span class="m">1</span>
 Marked note <span class="s1">&#39;1&#39;</span> ...
  ~ $ noty l
-2016-12-30
+<span class="m">2016</span>-12-30
 ----------
-1. <span class="o">[</span>x<span class="o">]</span> hello world
-2. <span class="o">[</span> <span class="o">]</span> make cake
+<span class="m">1</span>. <span class="o">[</span>x<span class="o">]</span> hello world
+<span class="m">2</span>. <span class="o">[</span> <span class="o">]</span> make cake
 </pre></div>
 
 <div class="highlight"><pre><span></span><span class="ch">#!/bin/bash</span>
@@ -271,7 +275,7 @@ Marked note <span class="s1">&#39;1&#39;</span> ...
 
 <span class="k">function</span> db_get_id<span class="o">()</span>
 <span class="o">{</span>
-    <span class="nb">local</span> <span class="nv">OLD_ID</span><span class="o">=</span><span class="k">$(</span>grep -m <span class="m">1</span> -P <span class="s1">&#39;^You have a total of \d+ notes.$&#39;</span> <span class="nv">$NOTY_DB</span> <span class="p">|</span> cut -d <span class="s1">&#39; &#39;</span> -f 6<span class="k">)</span>
+    <span class="nb">local</span> <span class="nv">OLD_ID</span><span class="o">=</span><span class="k">$(</span>grep -m <span class="m">1</span> -P <span class="s1">&#39;^You have a total of \d+ notes.$&#39;</span> <span class="nv">$NOTY_DB</span> <span class="p">|</span> cut -d <span class="s1">&#39; &#39;</span> -f <span class="m">6</span><span class="k">)</span>
     <span class="nb">local</span> <span class="nv">NEW_ID</span><span class="o">=</span><span class="k">$((</span>OLD_ID <span class="o">+</span> <span class="m">1</span><span class="k">))</span>
 
     preg_replace <span class="s2">&quot;^You have a total of </span><span class="nv">$OLD_ID</span><span class="s2"> notes.</span>$<span class="s2">&quot;</span> <span class="s2">&quot;You have a total of </span><span class="nv">$NEW_ID</span><span class="s2"> notes.&quot;</span> <span class="nv">$NOTY_DB</span>
@@ -303,7 +307,7 @@ Marked note <span class="s1">&#39;1&#39;</span> ...
     <span class="k">if</span> <span class="o">[[</span> <span class="s2">&quot;</span><span class="nv">$1</span><span class="s2">&quot;</span> <span class="o">==</span> <span class="s2">&quot;all&quot;</span> <span class="o">]]</span><span class="p">;</span> <span class="k">then</span>
         cat <span class="si">${</span><span class="nv">NOTY_DB</span><span class="si">}</span>
     <span class="k">else</span>
-        <span class="nb">local</span> <span class="nv">LINE</span><span class="o">=</span><span class="k">$(</span>grep -m <span class="m">1</span> -n -P <span class="s2">&quot;^</span><span class="nv">$1</span><span class="s2">&quot;</span> <span class="nv">$NOTY_DB</span> <span class="p">|</span> cut -d <span class="s1">&#39;:&#39;</span> -f 1<span class="k">)</span>
+        <span class="nb">local</span> <span class="nv">LINE</span><span class="o">=</span><span class="k">$(</span>grep -m <span class="m">1</span> -n -P <span class="s2">&quot;^</span><span class="nv">$1</span><span class="s2">&quot;</span> <span class="nv">$NOTY_DB</span> <span class="p">|</span> cut -d <span class="s1">&#39;:&#39;</span> -f <span class="m">1</span><span class="k">)</span>
         <span class="k">if</span> <span class="o">[[</span> -n <span class="s2">&quot;</span><span class="nv">$LINE</span><span class="s2">&quot;</span> <span class="o">]]</span> <span class="p">;</span> <span class="k">then</span>
             tail -n +<span class="nv">$LINE</span> <span class="nv">$NOTY_DB</span>
         <span class="k">fi</span>

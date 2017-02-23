@@ -32,6 +32,8 @@
 
 			(function() 
 			{
+				if(document.location.host.indexOf('localhost') == 0) return;
+
 				var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
 				ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
 				var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
@@ -40,6 +42,8 @@
 		<script type="text/javascript">
 			(function() 
 			{
+				if(document.location.host.indexOf('localhost') == 0) return;
+
 				var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
 				po.src = 'https://apis.google.com/js/plusone.js';
 				var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
@@ -107,7 +111,7 @@
 <span class="k">if</span> <span class="o">[</span> <span class="nv">$#</span> -lt <span class="m">2</span> <span class="o">]</span> <span class="p">;</span> <span class="k">then</span>
 <span class="nb">echo</span> Usage: mkhdv input.video output.video <span class="o">[</span>-t <span class="s2">&quot;some video title&quot;</span><span class="o">]</span> <span class="se">\</span>
 <span class="o">[</span>-s 1280x720<span class="o">]</span>
-<span class="nb">exit</span> 13
+<span class="nb">exit</span> <span class="m">13</span>
 <span class="k">fi</span>
 
 <span class="k">if</span> <span class="o">[</span> <span class="nv">$#</span> -eq <span class="m">4</span> <span class="o">]</span> <span class="p">;</span> <span class="k">then</span>
@@ -121,7 +125,7 @@
         <span class="k">else</span>
         <span class="nb">echo</span> Usage: mkhdv input.video output.video <span class="se">\ </span>
 <span class="o">[</span>-t <span class="s2">&quot;some video title&quot;</span><span class="o">]</span> <span class="o">[</span>-s 1280x720<span class="o">]</span>
-        <span class="nb">exit</span> 666
+        <span class="nb">exit</span> <span class="m">666</span>
         <span class="k">fi</span>
     <span class="k">fi</span>
 <span class="k">else</span>
@@ -155,7 +159,7 @@
     <span class="k">fi</span>
 <span class="k">fi</span>
 <span class="nb">echo</span> Done
-<span class="nb">exit</span> 1
+<span class="nb">exit</span> <span class="m">1</span>
 </pre></div>
 			
 

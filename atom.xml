@@ -48,11 +48,11 @@ Why? Just for the lolz and to make &lt;a href="https://en.wikipedia.org/wiki/Cha
   &lt;span class="k"&gt;switch&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;dwReason&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
   &lt;span class="p"&gt;{&lt;/span&gt;
     &lt;span class="k"&gt;case&lt;/span&gt; &lt;span class="nl"&gt;DLL_PROCESS_ATTACH&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
-      &lt;span class="n"&gt;MessageBoxW&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nb"&gt;NULL&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s"&gt;L&amp;quot;DLL Attached&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s"&gt;L&amp;quot;WScrpad&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
+      &lt;span class="n"&gt;MessageBoxW&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nb"&gt;NULL&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="sa"&gt;L&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;DLL Attached&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="sa"&gt;L&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;WScrpad&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
       &lt;span class="k"&gt;break&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
 
     &lt;span class="k"&gt;case&lt;/span&gt; &lt;span class="nl"&gt;DLL_PROCESS_DETACH&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
-      &lt;span class="n"&gt;MessageBoxW&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nb"&gt;NULL&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s"&gt;L&amp;quot;DLL Detached&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s"&gt;L&amp;quot;WScrpad&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
+      &lt;span class="n"&gt;MessageBoxW&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="nb"&gt;NULL&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="sa"&gt;L&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;DLL Detached&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="sa"&gt;L&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;WScrpad&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
       &lt;span class="k"&gt;break&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
   &lt;span class="p"&gt;}&lt;/span&gt;
 
@@ -97,15 +97,15 @@ plain old &lt;strong&gt;null terminated&lt;/strong&gt; ANSI &lt;em&gt;string&lt;
 &lt;p&gt;Let me explain what went down in the past few screenshots.&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="nf"&gt;ASCII&lt;/span&gt; &lt;span class="err"&gt;&amp;quot;&lt;/span&gt;&lt;span class="no"&gt;wscrpad.dll&lt;/span&gt;&lt;span class="err"&gt;&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt;
 
-&lt;span class="nf"&gt;pushad&lt;/span&gt;                    &lt;span class="err"&gt;;&lt;/span&gt; &lt;span class="no"&gt;save&lt;/span&gt; &lt;span class="no"&gt;all&lt;/span&gt; &lt;span class="no"&gt;registers&lt;/span&gt;
-&lt;span class="nf"&gt;push&lt;/span&gt; &lt;span class="no"&gt;ASCII&lt;/span&gt; &lt;span class="err"&gt;&amp;quot;&lt;/span&gt;&lt;span class="no"&gt;wscrpad.dll&lt;/span&gt;&lt;span class="err"&gt;&amp;quot;&lt;/span&gt;  &lt;span class="err"&gt;;&lt;/span&gt; &lt;span class="no"&gt;push&lt;/span&gt; &lt;span class="no"&gt;the&lt;/span&gt; &lt;span class="no"&gt;name&lt;/span&gt; &lt;span class="no"&gt;of&lt;/span&gt; &lt;span class="no"&gt;the&lt;/span&gt; &lt;span class="no"&gt;DLL&lt;/span&gt; &lt;span class="no"&gt;into&lt;/span&gt; &lt;span class="no"&gt;the&lt;/span&gt; &lt;span class="no"&gt;stack&lt;/span&gt;
-&lt;span class="nf"&gt;call&lt;/span&gt; &lt;span class="no"&gt;LoadLibraryA&lt;/span&gt;         &lt;span class="err"&gt;;&lt;/span&gt; &lt;span class="no"&gt;call&lt;/span&gt; &lt;span class="no"&gt;Kernel32.LoadLibraryA&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="no"&gt;ANSI&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-&lt;span class="nf"&gt;popad&lt;/span&gt;                     &lt;span class="err"&gt;;&lt;/span&gt; &lt;span class="no"&gt;restore&lt;/span&gt; &lt;span class="no"&gt;all&lt;/span&gt; &lt;span class="no"&gt;registers&lt;/span&gt;
+&lt;span class="nf"&gt;pushad&lt;/span&gt;                    &lt;span class="c"&gt;; save all registers&lt;/span&gt;
+&lt;span class="no"&gt;push&lt;/span&gt; &lt;span class="no"&gt;ASCII&lt;/span&gt; &lt;span class="err"&gt;&amp;quot;&lt;/span&gt;&lt;span class="no"&gt;wscrpad.dll&lt;/span&gt;&lt;span class="err"&gt;&amp;quot;&lt;/span&gt;  &lt;span class="c"&gt;; push the name of the DLL into the stack&lt;/span&gt;
+&lt;span class="no"&gt;call&lt;/span&gt; &lt;span class="no"&gt;LoadLibraryA&lt;/span&gt;         &lt;span class="c"&gt;; call Kernel32.LoadLibraryA (ANSI)&lt;/span&gt;
+&lt;span class="no"&gt;popad&lt;/span&gt;                     &lt;span class="c"&gt;; restore all registers&lt;/span&gt;
 
-&lt;span class="nf"&gt;push&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt;                    &lt;span class="err"&gt;;&lt;/span&gt; &lt;span class="no"&gt;push&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt; &lt;span class="no"&gt;into&lt;/span&gt; &lt;span class="no"&gt;the&lt;/span&gt; &lt;span class="no"&gt;stack&lt;/span&gt;
-&lt;span class="nf"&gt;call&lt;/span&gt; &lt;span class="mi"&gt;01001&lt;/span&gt;&lt;span class="no"&gt;C42&lt;/span&gt;             &lt;span class="err"&gt;;&lt;/span&gt; &lt;span class="no"&gt;call&lt;/span&gt; &lt;span class="no"&gt;the&lt;/span&gt; &lt;span class="no"&gt;original&lt;/span&gt; &lt;span class="err"&gt;&amp;quot;&lt;/span&gt;&lt;span class="no"&gt;function&lt;/span&gt;&lt;span class="err"&gt;&amp;quot;&lt;/span&gt; &lt;span class="no"&gt;from&lt;/span&gt; &lt;span class="no"&gt;our&lt;/span&gt; &lt;span class="err"&gt;&amp;quot;&lt;/span&gt;&lt;span class="no"&gt;first&lt;/span&gt; &lt;span class="no"&gt;spot&lt;/span&gt;&lt;span class="err"&gt;&amp;quot;&lt;/span&gt;
+&lt;span class="nf"&gt;push&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt;                    &lt;span class="c"&gt;; push 1 into the stack&lt;/span&gt;
+&lt;span class="no"&gt;call&lt;/span&gt; &lt;span class="mi"&gt;01001&lt;/span&gt;&lt;span class="no"&gt;C42&lt;/span&gt;             &lt;span class="c"&gt;; call the original &amp;quot;function&amp;quot; from our &amp;quot;first spot&amp;quot;&lt;/span&gt;
 
-&lt;span class="nf"&gt;jmp&lt;/span&gt; &lt;span class="mi"&gt;010047&lt;/span&gt;&lt;span class="no"&gt;BE&lt;/span&gt;              &lt;span class="err"&gt;;&lt;/span&gt; &lt;span class="no"&gt;jump&lt;/span&gt; &lt;span class="no"&gt;back&lt;/span&gt; &lt;span class="no"&gt;to&lt;/span&gt; &lt;span class="no"&gt;our&lt;/span&gt; &lt;span class="err"&gt;&amp;quot;&lt;/span&gt;&lt;span class="no"&gt;first&lt;/span&gt; &lt;span class="no"&gt;spot&lt;/span&gt;&lt;span class="err"&gt;&amp;quot;&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="no"&gt;see&lt;/span&gt; &lt;span class="no"&gt;below&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="nf"&gt;jmp&lt;/span&gt; &lt;span class="mi"&gt;010047&lt;/span&gt;&lt;span class="no"&gt;BE&lt;/span&gt;              &lt;span class="c"&gt;; jump back to our &amp;quot;first spot&amp;quot; (see below)&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;&lt;img alt="" src="http://mihail.co/images/2017/02/18/step13.png" /&gt;&lt;/p&gt;
@@ -115,8 +115,8 @@ plain old &lt;strong&gt;null terminated&lt;/strong&gt; ANSI &lt;em&gt;string&lt;
 &lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;with:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="nf"&gt;jmp&lt;/span&gt; &lt;span class="mi"&gt;01008755&lt;/span&gt; &lt;span class="err"&gt;;&lt;/span&gt; &lt;span class="no"&gt;jump&lt;/span&gt; &lt;span class="no"&gt;to&lt;/span&gt; &lt;span class="no"&gt;our&lt;/span&gt; &lt;span class="err"&gt;&amp;quot;&lt;/span&gt;&lt;span class="no"&gt;second&lt;/span&gt; &lt;span class="no"&gt;spot&lt;/span&gt;&lt;span class="err"&gt;&amp;quot;&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="no"&gt;see&lt;/span&gt; &lt;span class="no"&gt;above&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-&lt;span class="nf"&gt;nop&lt;/span&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="nf"&gt;jmp&lt;/span&gt; &lt;span class="mi"&gt;01008755&lt;/span&gt; &lt;span class="c"&gt;; jump to our &amp;quot;second spot&amp;quot; (see above)&lt;/span&gt;
+&lt;span class="no"&gt;nop&lt;/span&gt;
 &lt;span class="nf"&gt;nop&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
@@ -148,7 +148,7 @@ string, which means roughly &lt;em&gt;two bytes&lt;/em&gt; per character.&lt;/p&
 
 &lt;span class="kt"&gt;void&lt;/span&gt; &lt;span class="nf"&gt;Initialize&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;HMODULE&lt;/span&gt; &lt;span class="n"&gt;hModule&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
 &lt;span class="p"&gt;{&lt;/span&gt;
-  &lt;span class="n"&gt;HWND&lt;/span&gt; &lt;span class="n"&gt;hWnd&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;FindWindow&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;L&amp;quot;WScrpad&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="nb"&gt;NULL&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
+  &lt;span class="n"&gt;HWND&lt;/span&gt; &lt;span class="n"&gt;hWnd&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;FindWindow&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="sa"&gt;L&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;WScrpad&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="nb"&gt;NULL&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
   &lt;span class="n"&gt;EnableMenuItem&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;GetMenu&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;hWnd&lt;/span&gt;&lt;span class="p"&gt;),&lt;/span&gt; &lt;span class="mi"&gt;4&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;MF_BYPOSITION&lt;/span&gt; &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;MF_GRAYED&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
 &lt;span class="p"&gt;}&lt;/span&gt;
 
@@ -177,12 +177,12 @@ than one window open this could lead to problems, because multiple windows could
 
 &lt;span class="kt"&gt;void&lt;/span&gt; &lt;span class="nf"&gt;Initialize&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;HMODULE&lt;/span&gt; &lt;span class="n"&gt;hModule&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
 &lt;span class="p"&gt;{&lt;/span&gt;
-  &lt;span class="n"&gt;HWND&lt;/span&gt; &lt;span class="n"&gt;hWnd&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;FindWindow&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;L&amp;quot;WScrpad&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="nb"&gt;NULL&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
+  &lt;span class="n"&gt;HWND&lt;/span&gt; &lt;span class="n"&gt;hWnd&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;FindWindow&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="sa"&gt;L&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;WScrpad&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="nb"&gt;NULL&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
   &lt;span class="n"&gt;HMENU&lt;/span&gt; &lt;span class="n"&gt;hMenu&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;GetMenu&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;hWnd&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
   &lt;span class="n"&gt;HMENU&lt;/span&gt; &lt;span class="n"&gt;hNewMenu&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;CreateMenu&lt;/span&gt;&lt;span class="p"&gt;();&lt;/span&gt;
 
-  &lt;span class="n"&gt;AppendMenu&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;hMenu&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;MF_STRING&lt;/span&gt; &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;MF_POPUP&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;UINT_PTR&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="n"&gt;hNewMenu&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s"&gt;L&amp;quot;Run&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
-  &lt;span class="n"&gt;AppendMenu&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;hNewMenu&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;MF_STRING&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;RUN_MENU_ID&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s"&gt;L&amp;quot;&amp;amp;Run&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
+  &lt;span class="n"&gt;AppendMenu&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;hMenu&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;MF_STRING&lt;/span&gt; &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;MF_POPUP&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;UINT_PTR&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="n"&gt;hNewMenu&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="sa"&gt;L&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;Run&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
+  &lt;span class="n"&gt;AppendMenu&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;hNewMenu&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;MF_STRING&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;RUN_MENU_ID&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="sa"&gt;L&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;&amp;amp;Run&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
 
   &lt;span class="n"&gt;DrawMenuBar&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;hWnd&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
 &lt;span class="p"&gt;}&lt;/span&gt;
@@ -223,7 +223,7 @@ the &lt;em&gt;original&lt;/em&gt;. This way we have full control and can even &l
       &lt;span class="k"&gt;switch&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;LOWORD&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;wParam&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;
       &lt;span class="p"&gt;{&lt;/span&gt;
         &lt;span class="k"&gt;case&lt;/span&gt; &lt;span class="nl"&gt;IDC_MENU_RUN&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;
-          &lt;span class="n"&gt;MessageBox&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;hWnd&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s"&gt;L&amp;quot;Hello World&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s"&gt;L&amp;quot;Run&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;MB_ICONERROR&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
+          &lt;span class="n"&gt;MessageBox&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;hWnd&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="sa"&gt;L&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;Hello World&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="sa"&gt;L&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;Run&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;MB_ICONERROR&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
           &lt;span class="k"&gt;break&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
       &lt;span class="p"&gt;}&lt;/span&gt;
     &lt;span class="p"&gt;}&lt;/span&gt;
@@ -235,12 +235,12 @@ the &lt;em&gt;original&lt;/em&gt;. This way we have full control and can even &l
 
 &lt;span class="kt"&gt;void&lt;/span&gt; &lt;span class="nf"&gt;Initialize&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;HMODULE&lt;/span&gt; &lt;span class="n"&gt;hModule&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
 &lt;span class="p"&gt;{&lt;/span&gt;
-  &lt;span class="n"&gt;HWND&lt;/span&gt; &lt;span class="n"&gt;hWnd&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;FindWindow&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;L&amp;quot;WScrpad&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="nb"&gt;NULL&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
+  &lt;span class="n"&gt;HWND&lt;/span&gt; &lt;span class="n"&gt;hWnd&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;FindWindow&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="sa"&gt;L&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;WScrpad&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="nb"&gt;NULL&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
   &lt;span class="n"&gt;HMENU&lt;/span&gt; &lt;span class="n"&gt;hMenu&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;GetMenu&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;hWnd&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
   &lt;span class="n"&gt;HMENU&lt;/span&gt; &lt;span class="n"&gt;hNewMenu&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;CreateMenu&lt;/span&gt;&lt;span class="p"&gt;();&lt;/span&gt;
 
-  &lt;span class="n"&gt;AppendMenu&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;hMenu&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;MF_STRING&lt;/span&gt; &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;MF_POPUP&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;UINT_PTR&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="n"&gt;hNewMenu&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s"&gt;L&amp;quot;Run&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
-  &lt;span class="n"&gt;AppendMenu&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;hNewMenu&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;MF_STRING&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;IDC_MENU_RUN&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s"&gt;L&amp;quot;&amp;amp;Run&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
+  &lt;span class="n"&gt;AppendMenu&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;hMenu&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;MF_STRING&lt;/span&gt; &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="n"&gt;MF_POPUP&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;UINT_PTR&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="n"&gt;hNewMenu&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="sa"&gt;L&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;Run&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
+  &lt;span class="n"&gt;AppendMenu&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;hNewMenu&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;MF_STRING&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;IDC_MENU_RUN&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="sa"&gt;L&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;&amp;amp;Run&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
 
   &lt;span class="n"&gt;DrawMenuBar&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;hWnd&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
 
@@ -326,7 +326,7 @@ adjust it in both of the &lt;em&gt;resources&lt;/em&gt;.&lt;/p&gt;
   &lt;span class="n"&gt;WCHAR&lt;/span&gt; &lt;span class="n"&gt;wszFileName&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;MAX_PATH&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="p"&gt;};&lt;/span&gt;
   &lt;span class="n"&gt;WCHAR&lt;/span&gt; &lt;span class="n"&gt;wszCmd&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;MAX_PATH&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="p"&gt;};&lt;/span&gt;
 
-  &lt;span class="n"&gt;hEdit&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;FindWindowEx&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;hWnd&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="nb"&gt;NULL&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s"&gt;L&amp;quot;Edit&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="nb"&gt;NULL&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
+  &lt;span class="n"&gt;hEdit&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;FindWindowEx&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;hWnd&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="nb"&gt;NULL&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="sa"&gt;L&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;Edit&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="nb"&gt;NULL&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
 
   &lt;span class="n"&gt;dwTextLength&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;GetWindowTextLength&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;hEdit&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
   &lt;span class="k"&gt;if&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;dwTextLength&lt;/span&gt; &lt;span class="o"&gt;==&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
@@ -344,7 +344,7 @@ adjust it in both of the &lt;em&gt;resources&lt;/em&gt;.&lt;/p&gt;
     &lt;span class="k"&gt;return&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
 
   &lt;span class="c1"&gt;// FIXME: wnsprintf&lt;/span&gt;
-  &lt;span class="n"&gt;wsprintf&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;wszFileName&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s"&gt;L&amp;quot;%swscrpad.tmp&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;wszPath&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
+  &lt;span class="n"&gt;wsprintf&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;wszFileName&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="sa"&gt;L&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;%swscrpad.tmp&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;wszPath&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
 
   &lt;span class="n"&gt;hFile&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;CreateFile&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;wszFileName&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
                      &lt;span class="n"&gt;GENERIC_WRITE&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
@@ -365,13 +365,13 @@ adjust it in both of the &lt;em&gt;resources&lt;/em&gt;.&lt;/p&gt;
   &lt;span class="n"&gt;CloseHandle&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;hFile&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
 
   &lt;span class="c1"&gt;// FIXME: wnsprintf&lt;/span&gt;
-  &lt;span class="n"&gt;wsprintf&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;wszCmd&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s"&gt;L&amp;quot;//E:vbscript %s&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;wszFileName&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
-  &lt;span class="n"&gt;ShellExecute&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;hWnd&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s"&gt;L&amp;quot;open&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s"&gt;L&amp;quot;wscript&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;wszCmd&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="nb"&gt;NULL&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;SW_SHOWNORMAL&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
+  &lt;span class="n"&gt;wsprintf&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;wszCmd&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="sa"&gt;L&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;//E:vbscript %s&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;wszFileName&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
+  &lt;span class="n"&gt;ShellExecute&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;hWnd&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="sa"&gt;L&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;open&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="sa"&gt;L&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;wscript&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;wszCmd&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="nb"&gt;NULL&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;SW_SHOWNORMAL&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
 &lt;span class="p"&gt;}&lt;/span&gt;
 
 &lt;span class="kt"&gt;void&lt;/span&gt; &lt;span class="nf"&gt;Initialize&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;HMODULE&lt;/span&gt; &lt;span class="n"&gt;hModule&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
 &lt;span class="p"&gt;{&lt;/span&gt;
-  &lt;span class="n"&gt;HWND&lt;/span&gt; &lt;span class="n"&gt;hWnd&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;FindWindow&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;L&amp;quot;WScrpad&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="nb"&gt;NULL&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
+  &lt;span class="n"&gt;HWND&lt;/span&gt; &lt;span class="n"&gt;hWnd&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;FindWindow&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="sa"&gt;L&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;WScrpad&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="nb"&gt;NULL&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
   &lt;span class="n"&gt;pOldWndProc&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;WNDPROC&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="n"&gt;SetWindowLong&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;hWnd&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;GWL_WNDPROC&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;LONG&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="n"&gt;WndProc&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
 &lt;span class="p"&gt;}&lt;/span&gt;
 
@@ -515,7 +515,7 @@ resource file, compile it and bundle it inside the DLL.&lt;/p&gt;&lt;/div&gt;
   &lt;span class="n"&gt;WCHAR&lt;/span&gt; &lt;span class="n"&gt;wszFileName&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;MAX_PATH&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="p"&gt;};&lt;/span&gt;
   &lt;span class="n"&gt;WCHAR&lt;/span&gt; &lt;span class="n"&gt;wszCmd&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;MAX_PATH&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="p"&gt;};&lt;/span&gt;
 
-  &lt;span class="n"&gt;hEdit&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;FindWindowEx&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;hWnd&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="nb"&gt;NULL&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s"&gt;L&amp;quot;Edit&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="nb"&gt;NULL&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
+  &lt;span class="n"&gt;hEdit&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;FindWindowEx&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;hWnd&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="nb"&gt;NULL&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="sa"&gt;L&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;Edit&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="nb"&gt;NULL&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
 
   &lt;span class="n"&gt;dwTextLength&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;GetWindowTextLength&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;hEdit&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
   &lt;span class="k"&gt;if&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;dwTextLength&lt;/span&gt; &lt;span class="o"&gt;==&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
@@ -533,7 +533,7 @@ resource file, compile it and bundle it inside the DLL.&lt;/p&gt;&lt;/div&gt;
     &lt;span class="k"&gt;return&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
 
   &lt;span class="c1"&gt;// FIXME: wnsprintf&lt;/span&gt;
-  &lt;span class="n"&gt;wsprintf&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;wszFileName&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s"&gt;L&amp;quot;%swscrpad.tmp&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;wszPath&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
+  &lt;span class="n"&gt;wsprintf&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;wszFileName&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="sa"&gt;L&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;%swscrpad.tmp&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;wszPath&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
 
   &lt;span class="n"&gt;hFile&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;CreateFile&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;wszFileName&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
                      &lt;span class="n"&gt;GENERIC_WRITE&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
@@ -555,15 +555,15 @@ resource file, compile it and bundle it inside the DLL.&lt;/p&gt;&lt;/div&gt;
 
   &lt;span class="c1"&gt;// FIXME: wnsprintf&lt;/span&gt;
   &lt;span class="n"&gt;wsprintf&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;wszCmd&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
-           &lt;span class="s"&gt;L&amp;quot;//E:%s %s&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; 
-           &lt;span class="n"&gt;dwWSHEngine&lt;/span&gt; &lt;span class="o"&gt;?&lt;/span&gt; &lt;span class="s"&gt;L&amp;quot;jscript&amp;quot;&lt;/span&gt; &lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="s"&gt;L&amp;quot;vbscript&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+           &lt;span class="sa"&gt;L&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;//E:%s %s&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; 
+           &lt;span class="n"&gt;dwWSHEngine&lt;/span&gt; &lt;span class="o"&gt;?&lt;/span&gt; &lt;span class="sa"&gt;L&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;jscript&amp;quot;&lt;/span&gt; &lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="sa"&gt;L&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;vbscript&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
            &lt;span class="n"&gt;wszFileName&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
-  &lt;span class="n"&gt;ShellExecute&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;hWnd&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s"&gt;L&amp;quot;open&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s"&gt;L&amp;quot;wscript&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;wszCmd&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="nb"&gt;NULL&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;SW_SHOWNORMAL&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
+  &lt;span class="n"&gt;ShellExecute&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;hWnd&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="sa"&gt;L&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;open&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="sa"&gt;L&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;wscript&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;wszCmd&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="nb"&gt;NULL&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;SW_SHOWNORMAL&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
 &lt;span class="p"&gt;}&lt;/span&gt;
 
 &lt;span class="kt"&gt;void&lt;/span&gt; &lt;span class="nf"&gt;Initialize&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;HMODULE&lt;/span&gt; &lt;span class="n"&gt;hModule&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
 &lt;span class="p"&gt;{&lt;/span&gt;
-  &lt;span class="n"&gt;HWND&lt;/span&gt; &lt;span class="n"&gt;hWnd&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;FindWindow&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;L&amp;quot;WScrpad&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="nb"&gt;NULL&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
+  &lt;span class="n"&gt;HWND&lt;/span&gt; &lt;span class="n"&gt;hWnd&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;FindWindow&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="sa"&gt;L&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;WScrpad&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="nb"&gt;NULL&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
   &lt;span class="n"&gt;pOldWndProc&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;WNDPROC&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="n"&gt;SetWindowLong&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;hWnd&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;GWL_WNDPROC&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;LONG&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="n"&gt;WndProc&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
 &lt;span class="p"&gt;}&lt;/span&gt;
 
@@ -590,8 +590,8 @@ whenever the user hits the &lt;strong&gt;Save&lt;/strong&gt; button.&lt;/p&gt;
 &lt;p&gt;During &lt;strong&gt;Run()&lt;/strong&gt;, the selected engine is used based on the value of the &lt;strong&gt;dwWSHEngine&lt;/strong&gt; variable.&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="c1"&gt;// FIXME: wnsprintf&lt;/span&gt;
 &lt;span class="n"&gt;wsprintf&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;wszCmd&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
-         &lt;span class="s"&gt;L&amp;quot;//E:%s %s&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; 
-         &lt;span class="n"&gt;dwWSHEngine&lt;/span&gt; &lt;span class="o"&gt;?&lt;/span&gt; &lt;span class="s"&gt;L&amp;quot;jscript&amp;quot;&lt;/span&gt; &lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="s"&gt;L&amp;quot;vbscript&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+         &lt;span class="sa"&gt;L&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;//E:%s %s&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; 
+         &lt;span class="n"&gt;dwWSHEngine&lt;/span&gt; &lt;span class="o"&gt;?&lt;/span&gt; &lt;span class="sa"&gt;L&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;jscript&amp;quot;&lt;/span&gt; &lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="sa"&gt;L&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;vbscript&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
          &lt;span class="n"&gt;wszFileName&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
@@ -741,7 +741,7 @@ to something slightly more appropriate like &lt;strong&gt;HKEY_CURRENT_USER\Soft
   &lt;span class="n"&gt;WCHAR&lt;/span&gt; &lt;span class="n"&gt;wszFileName&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;MAX_PATH&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="p"&gt;};&lt;/span&gt;
   &lt;span class="n"&gt;WCHAR&lt;/span&gt; &lt;span class="n"&gt;wszCmd&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;MAX_PATH&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="p"&gt;};&lt;/span&gt;
 
-  &lt;span class="n"&gt;hEdit&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;FindWindowEx&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;hWnd&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="nb"&gt;NULL&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s"&gt;L&amp;quot;Edit&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="nb"&gt;NULL&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
+  &lt;span class="n"&gt;hEdit&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;FindWindowEx&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;hWnd&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="nb"&gt;NULL&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="sa"&gt;L&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;Edit&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="nb"&gt;NULL&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
 
   &lt;span class="n"&gt;dwTextLength&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;GetWindowTextLength&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;hEdit&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
   &lt;span class="k"&gt;if&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;dwTextLength&lt;/span&gt; &lt;span class="o"&gt;==&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
@@ -759,7 +759,7 @@ to something slightly more appropriate like &lt;strong&gt;HKEY_CURRENT_USER\Soft
     &lt;span class="k"&gt;return&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
 
   &lt;span class="c1"&gt;// FIXME: wnsprintf&lt;/span&gt;
-  &lt;span class="n"&gt;wsprintf&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;wszFileName&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s"&gt;L&amp;quot;%swscrpad.tmp&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;wszPath&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
+  &lt;span class="n"&gt;wsprintf&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;wszFileName&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="sa"&gt;L&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;%swscrpad.tmp&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;wszPath&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
 
   &lt;span class="n"&gt;hFile&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;CreateFile&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;wszFileName&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
                      &lt;span class="n"&gt;GENERIC_WRITE&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
@@ -781,15 +781,15 @@ to something slightly more appropriate like &lt;strong&gt;HKEY_CURRENT_USER\Soft
 
   &lt;span class="c1"&gt;// FIXME: wnsprintf&lt;/span&gt;
   &lt;span class="n"&gt;wsprintf&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;wszCmd&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
-           &lt;span class="s"&gt;L&amp;quot;//E:%s %s&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
-           &lt;span class="n"&gt;dwWSHEngine&lt;/span&gt; &lt;span class="o"&gt;?&lt;/span&gt; &lt;span class="s"&gt;L&amp;quot;jscript&amp;quot;&lt;/span&gt; &lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="s"&gt;L&amp;quot;vbscript&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; 
+           &lt;span class="sa"&gt;L&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;//E:%s %s&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+           &lt;span class="n"&gt;dwWSHEngine&lt;/span&gt; &lt;span class="o"&gt;?&lt;/span&gt; &lt;span class="sa"&gt;L&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;jscript&amp;quot;&lt;/span&gt; &lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="sa"&gt;L&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;vbscript&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; 
            &lt;span class="n"&gt;wszFileName&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
-  &lt;span class="n"&gt;ShellExecute&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;hWnd&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s"&gt;L&amp;quot;open&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s"&gt;L&amp;quot;wscript&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;wszCmd&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="nb"&gt;NULL&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;SW_SHOWNORMAL&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
+  &lt;span class="n"&gt;ShellExecute&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;hWnd&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="sa"&gt;L&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;open&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="sa"&gt;L&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;wscript&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;wszCmd&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="nb"&gt;NULL&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;SW_SHOWNORMAL&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
 &lt;span class="p"&gt;}&lt;/span&gt;
 
 &lt;span class="kt"&gt;void&lt;/span&gt; &lt;span class="nf"&gt;Initialize&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;HMODULE&lt;/span&gt; &lt;span class="n"&gt;hModule&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
 &lt;span class="p"&gt;{&lt;/span&gt;
-  &lt;span class="n"&gt;HWND&lt;/span&gt; &lt;span class="n"&gt;hWnd&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;FindWindow&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;L&amp;quot;WScrpad&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="nb"&gt;NULL&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
+  &lt;span class="n"&gt;HWND&lt;/span&gt; &lt;span class="n"&gt;hWnd&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;FindWindow&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="sa"&gt;L&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;WScrpad&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="nb"&gt;NULL&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
   &lt;span class="n"&gt;pOldWndProc&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;WNDPROC&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="n"&gt;SetWindowLong&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;hWnd&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;GWL_WNDPROC&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;LONG&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="n"&gt;WndProc&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
   &lt;span class="n"&gt;dwWSHEngine&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;QueryDWORD&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;REGISTRY_VALUE_NAME&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
 &lt;span class="p"&gt;}&lt;/span&gt;
@@ -937,18 +937,18 @@ Initialized &lt;span class="s1"&gt;&amp;#39;testdb&amp;#39;&lt;/span&gt; ...
 Initialized &lt;span class="s1"&gt;&amp;#39;2016-12-30&amp;#39;&lt;/span&gt; ...
 Added note &lt;span class="s1"&gt;&amp;#39;hello world&amp;#39;&lt;/span&gt; ...
  ~ $ noty l
-2016-12-30
+&lt;span class="m"&gt;2016&lt;/span&gt;-12-30
 ----------
-1. &lt;span class="o"&gt;[&lt;/span&gt; &lt;span class="o"&gt;]&lt;/span&gt; hello world
+&lt;span class="m"&gt;1&lt;/span&gt;. &lt;span class="o"&gt;[&lt;/span&gt; &lt;span class="o"&gt;]&lt;/span&gt; hello world
  ~ $ noty c &lt;span class="s1"&gt;&amp;#39;make cake&amp;#39;&lt;/span&gt;
 Added note &lt;span class="s1"&gt;&amp;#39;make cake&amp;#39;&lt;/span&gt; ...
- ~ $ noty m 1
+ ~ $ noty m &lt;span class="m"&gt;1&lt;/span&gt;
 Marked note &lt;span class="s1"&gt;&amp;#39;1&amp;#39;&lt;/span&gt; ...
  ~ $ noty l
-2016-12-30
+&lt;span class="m"&gt;2016&lt;/span&gt;-12-30
 ----------
-1. &lt;span class="o"&gt;[&lt;/span&gt;x&lt;span class="o"&gt;]&lt;/span&gt; hello world
-2. &lt;span class="o"&gt;[&lt;/span&gt; &lt;span class="o"&gt;]&lt;/span&gt; make cake
+&lt;span class="m"&gt;1&lt;/span&gt;. &lt;span class="o"&gt;[&lt;/span&gt;x&lt;span class="o"&gt;]&lt;/span&gt; hello world
+&lt;span class="m"&gt;2&lt;/span&gt;. &lt;span class="o"&gt;[&lt;/span&gt; &lt;span class="o"&gt;]&lt;/span&gt; make cake
 &lt;/pre&gt;&lt;/div&gt;
 
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="ch"&gt;#!/bin/bash&lt;/span&gt;
@@ -1017,7 +1017,7 @@ Marked note &lt;span class="s1"&gt;&amp;#39;1&amp;#39;&lt;/span&gt; ...
 
 &lt;span class="k"&gt;function&lt;/span&gt; db_get_id&lt;span class="o"&gt;()&lt;/span&gt;
 &lt;span class="o"&gt;{&lt;/span&gt;
-    &lt;span class="nb"&gt;local&lt;/span&gt; &lt;span class="nv"&gt;OLD_ID&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="k"&gt;$(&lt;/span&gt;grep -m &lt;span class="m"&gt;1&lt;/span&gt; -P &lt;span class="s1"&gt;&amp;#39;^You have a total of \d+ notes.$&amp;#39;&lt;/span&gt; &lt;span class="nv"&gt;$NOTY_DB&lt;/span&gt; &lt;span class="p"&gt;|&lt;/span&gt; cut -d &lt;span class="s1"&gt;&amp;#39; &amp;#39;&lt;/span&gt; -f 6&lt;span class="k"&gt;)&lt;/span&gt;
+    &lt;span class="nb"&gt;local&lt;/span&gt; &lt;span class="nv"&gt;OLD_ID&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="k"&gt;$(&lt;/span&gt;grep -m &lt;span class="m"&gt;1&lt;/span&gt; -P &lt;span class="s1"&gt;&amp;#39;^You have a total of \d+ notes.$&amp;#39;&lt;/span&gt; &lt;span class="nv"&gt;$NOTY_DB&lt;/span&gt; &lt;span class="p"&gt;|&lt;/span&gt; cut -d &lt;span class="s1"&gt;&amp;#39; &amp;#39;&lt;/span&gt; -f &lt;span class="m"&gt;6&lt;/span&gt;&lt;span class="k"&gt;)&lt;/span&gt;
     &lt;span class="nb"&gt;local&lt;/span&gt; &lt;span class="nv"&gt;NEW_ID&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="k"&gt;$((&lt;/span&gt;OLD_ID &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="m"&gt;1&lt;/span&gt;&lt;span class="k"&gt;))&lt;/span&gt;
 
     preg_replace &lt;span class="s2"&gt;&amp;quot;^You have a total of &lt;/span&gt;&lt;span class="nv"&gt;$OLD_ID&lt;/span&gt;&lt;span class="s2"&gt; notes.&lt;/span&gt;$&lt;span class="s2"&gt;&amp;quot;&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;You have a total of &lt;/span&gt;&lt;span class="nv"&gt;$NEW_ID&lt;/span&gt;&lt;span class="s2"&gt; notes.&amp;quot;&lt;/span&gt; &lt;span class="nv"&gt;$NOTY_DB&lt;/span&gt;
@@ -1049,7 +1049,7 @@ Marked note &lt;span class="s1"&gt;&amp;#39;1&amp;#39;&lt;/span&gt; ...
     &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="o"&gt;[[&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;&lt;span class="nv"&gt;$1&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&lt;/span&gt; &lt;span class="o"&gt;==&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;all&amp;quot;&lt;/span&gt; &lt;span class="o"&gt;]]&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="k"&gt;then&lt;/span&gt;
         cat &lt;span class="si"&gt;${&lt;/span&gt;&lt;span class="nv"&gt;NOTY_DB&lt;/span&gt;&lt;span class="si"&gt;}&lt;/span&gt;
     &lt;span class="k"&gt;else&lt;/span&gt;
-        &lt;span class="nb"&gt;local&lt;/span&gt; &lt;span class="nv"&gt;LINE&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="k"&gt;$(&lt;/span&gt;grep -m &lt;span class="m"&gt;1&lt;/span&gt; -n -P &lt;span class="s2"&gt;&amp;quot;^&lt;/span&gt;&lt;span class="nv"&gt;$1&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&lt;/span&gt; &lt;span class="nv"&gt;$NOTY_DB&lt;/span&gt; &lt;span class="p"&gt;|&lt;/span&gt; cut -d &lt;span class="s1"&gt;&amp;#39;:&amp;#39;&lt;/span&gt; -f 1&lt;span class="k"&gt;)&lt;/span&gt;
+        &lt;span class="nb"&gt;local&lt;/span&gt; &lt;span class="nv"&gt;LINE&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="k"&gt;$(&lt;/span&gt;grep -m &lt;span class="m"&gt;1&lt;/span&gt; -n -P &lt;span class="s2"&gt;&amp;quot;^&lt;/span&gt;&lt;span class="nv"&gt;$1&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&lt;/span&gt; &lt;span class="nv"&gt;$NOTY_DB&lt;/span&gt; &lt;span class="p"&gt;|&lt;/span&gt; cut -d &lt;span class="s1"&gt;&amp;#39;:&amp;#39;&lt;/span&gt; -f &lt;span class="m"&gt;1&lt;/span&gt;&lt;span class="k"&gt;)&lt;/span&gt;
         &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="o"&gt;[[&lt;/span&gt; -n &lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;&lt;span class="nv"&gt;$LINE&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&lt;/span&gt; &lt;span class="o"&gt;]]&lt;/span&gt; &lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="k"&gt;then&lt;/span&gt;
             tail -n +&lt;span class="nv"&gt;$LINE&lt;/span&gt; &lt;span class="nv"&gt;$NOTY_DB&lt;/span&gt;
         &lt;span class="k"&gt;fi&lt;/span&gt;
@@ -3306,36 +3306,36 @@ paths (fixed or shader), etc.&lt;/p&gt;
 &lt;img src="http://mihail.co/images/2010/03/0ad-animals-closeup_thumb.png"&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;The actual code base is quite messy and not everything is clearly separated or grouped together where necessary.&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;c0d3rguy@Seth:/opt/0ad/source/maths$ ls -l
-total 160
--rw-r--r-- &lt;span class="m"&gt;1&lt;/span&gt; c0d3rguy c0d3rguy  &lt;span class="m"&gt;6315&lt;/span&gt; 2010-03-13 16:59 Bound.cpp       &lt;span class="c1"&gt;# point of interest&lt;/span&gt;
--rw-r--r-- &lt;span class="m"&gt;1&lt;/span&gt; c0d3rguy c0d3rguy  &lt;span class="m"&gt;2717&lt;/span&gt; 2010-03-13 16:59 Bound.h     &lt;span class="c1"&gt;# point of interest&lt;/span&gt;
--rw-r--r-- &lt;span class="m"&gt;1&lt;/span&gt; c0d3rguy c0d3rguy  &lt;span class="m"&gt;7913&lt;/span&gt; 2010-03-13 16:59 Brush.cpp
--rw-r--r-- &lt;span class="m"&gt;1&lt;/span&gt; c0d3rguy c0d3rguy  &lt;span class="m"&gt;2521&lt;/span&gt; 2010-03-13 16:59 Brush.h
--rw-r--r-- &lt;span class="m"&gt;1&lt;/span&gt; c0d3rguy c0d3rguy  &lt;span class="m"&gt;1422&lt;/span&gt; 2010-03-13 16:59 Fixed.cpp
--rw-r--r-- &lt;span class="m"&gt;1&lt;/span&gt; c0d3rguy c0d3rguy  &lt;span class="m"&gt;4436&lt;/span&gt; 2010-03-13 16:59 Fixed.h
--rw-r--r-- &lt;span class="m"&gt;1&lt;/span&gt; c0d3rguy c0d3rguy  &lt;span class="m"&gt;2782&lt;/span&gt; 2010-03-13 16:59 FixedVector2D.h
--rw-r--r-- &lt;span class="m"&gt;1&lt;/span&gt; c0d3rguy c0d3rguy  &lt;span class="m"&gt;4054&lt;/span&gt; 2010-03-13 16:59 FixedVector3D.h
--rw-r--r-- &lt;span class="m"&gt;1&lt;/span&gt; c0d3rguy c0d3rguy  &lt;span class="m"&gt;1685&lt;/span&gt; 2010-03-13 16:59 MathUtil.h
--rw-r--r-- &lt;span class="m"&gt;1&lt;/span&gt; c0d3rguy c0d3rguy &lt;span class="m"&gt;14111&lt;/span&gt; 2010-03-13 16:59 Matrix3D.cpp
--rw-r--r-- &lt;span class="m"&gt;1&lt;/span&gt; c0d3rguy c0d3rguy  &lt;span class="m"&gt;5286&lt;/span&gt; 2010-03-13 16:59 Matrix3D.h
--rw-r--r-- &lt;span class="m"&gt;1&lt;/span&gt; c0d3rguy c0d3rguy  &lt;span class="m"&gt;6385&lt;/span&gt; 2010-03-13 16:59 MD5.cpp
--rw-r--r-- &lt;span class="m"&gt;1&lt;/span&gt; c0d3rguy c0d3rguy  &lt;span class="m"&gt;1239&lt;/span&gt; 2010-03-13 16:59 MD5.h
--rw-r--r-- &lt;span class="m"&gt;1&lt;/span&gt; c0d3rguy c0d3rguy  &lt;span class="m"&gt;4265&lt;/span&gt; 2010-03-13 16:59 Noise.cpp
--rw-r--r-- &lt;span class="m"&gt;1&lt;/span&gt; c0d3rguy c0d3rguy  &lt;span class="m"&gt;1643&lt;/span&gt; 2010-03-13 16:59 Noise.h
--rw-r--r-- &lt;span class="m"&gt;1&lt;/span&gt; c0d3rguy c0d3rguy  &lt;span class="m"&gt;7260&lt;/span&gt; 2010-03-13 16:59 NUSpline.cpp
--rw-r--r-- &lt;span class="m"&gt;1&lt;/span&gt; c0d3rguy c0d3rguy  &lt;span class="m"&gt;2560&lt;/span&gt; 2010-03-13 16:59 NUSpline.h
--rw-r--r-- &lt;span class="m"&gt;1&lt;/span&gt; c0d3rguy c0d3rguy  &lt;span class="m"&gt;3152&lt;/span&gt; 2010-03-13 16:59 Plane.cpp       &lt;span class="c1"&gt;# point of interest&lt;/span&gt;
--rw-r--r-- &lt;span class="m"&gt;1&lt;/span&gt; c0d3rguy c0d3rguy  &lt;span class="m"&gt;2015&lt;/span&gt; 2010-03-13 16:59 Plane.h     &lt;span class="c1"&gt;# point of interest&lt;/span&gt;
--rw-r--r-- &lt;span class="m"&gt;1&lt;/span&gt; c0d3rguy c0d3rguy  &lt;span class="m"&gt;7352&lt;/span&gt; 2010-03-13 16:59 Quaternion.cpp
--rw-r--r-- &lt;span class="m"&gt;1&lt;/span&gt; c0d3rguy c0d3rguy  &lt;span class="m"&gt;2291&lt;/span&gt; 2010-03-13 16:59 Quaternion.h
-drwxr-xr-x &lt;span class="m"&gt;3&lt;/span&gt; c0d3rguy c0d3rguy  &lt;span class="m"&gt;4096&lt;/span&gt; 2010-03-13 16:59 scripting
--rw-r--r-- &lt;span class="m"&gt;1&lt;/span&gt; c0d3rguy c0d3rguy  &lt;span class="m"&gt;1434&lt;/span&gt; 2010-03-13 16:59 Sqrt.cpp
--rw-r--r-- &lt;span class="m"&gt;1&lt;/span&gt; c0d3rguy c0d3rguy   &lt;span class="m"&gt;919&lt;/span&gt; 2010-03-13 16:59 Sqrt.h
-drwxr-xr-x &lt;span class="m"&gt;3&lt;/span&gt; c0d3rguy c0d3rguy  &lt;span class="m"&gt;4096&lt;/span&gt; 2010-03-13 18:27 tests
--rw-r--r-- &lt;span class="m"&gt;1&lt;/span&gt; c0d3rguy c0d3rguy  &lt;span class="m"&gt;2518&lt;/span&gt; 2010-03-13 16:59 Vector2D.h
--rw-r--r-- &lt;span class="m"&gt;1&lt;/span&gt; c0d3rguy c0d3rguy  &lt;span class="m"&gt;3247&lt;/span&gt; 2010-03-13 16:59 Vector3D.cpp
--rw-r--r-- &lt;span class="m"&gt;1&lt;/span&gt; c0d3rguy c0d3rguy  &lt;span class="m"&gt;2457&lt;/span&gt; 2010-03-13 16:59 Vector3D.h
--rw-r--r-- &lt;span class="m"&gt;1&lt;/span&gt; c0d3rguy c0d3rguy  &lt;span class="m"&gt;3131&lt;/span&gt; 2010-03-13 16:59 Vector4D.h
+total &lt;span class="m"&gt;160&lt;/span&gt;
+-rw-r--r-- &lt;span class="m"&gt;1&lt;/span&gt; c0d3rguy c0d3rguy  &lt;span class="m"&gt;6315&lt;/span&gt; &lt;span class="m"&gt;2010&lt;/span&gt;-03-13 &lt;span class="m"&gt;16&lt;/span&gt;:59 Bound.cpp     &lt;span class="c1"&gt;# point of interest&lt;/span&gt;
+-rw-r--r-- &lt;span class="m"&gt;1&lt;/span&gt; c0d3rguy c0d3rguy  &lt;span class="m"&gt;2717&lt;/span&gt; &lt;span class="m"&gt;2010&lt;/span&gt;-03-13 &lt;span class="m"&gt;16&lt;/span&gt;:59 Bound.h       &lt;span class="c1"&gt;# point of interest&lt;/span&gt;
+-rw-r--r-- &lt;span class="m"&gt;1&lt;/span&gt; c0d3rguy c0d3rguy  &lt;span class="m"&gt;7913&lt;/span&gt; &lt;span class="m"&gt;2010&lt;/span&gt;-03-13 &lt;span class="m"&gt;16&lt;/span&gt;:59 Brush.cpp
+-rw-r--r-- &lt;span class="m"&gt;1&lt;/span&gt; c0d3rguy c0d3rguy  &lt;span class="m"&gt;2521&lt;/span&gt; &lt;span class="m"&gt;2010&lt;/span&gt;-03-13 &lt;span class="m"&gt;16&lt;/span&gt;:59 Brush.h
+-rw-r--r-- &lt;span class="m"&gt;1&lt;/span&gt; c0d3rguy c0d3rguy  &lt;span class="m"&gt;1422&lt;/span&gt; &lt;span class="m"&gt;2010&lt;/span&gt;-03-13 &lt;span class="m"&gt;16&lt;/span&gt;:59 Fixed.cpp
+-rw-r--r-- &lt;span class="m"&gt;1&lt;/span&gt; c0d3rguy c0d3rguy  &lt;span class="m"&gt;4436&lt;/span&gt; &lt;span class="m"&gt;2010&lt;/span&gt;-03-13 &lt;span class="m"&gt;16&lt;/span&gt;:59 Fixed.h
+-rw-r--r-- &lt;span class="m"&gt;1&lt;/span&gt; c0d3rguy c0d3rguy  &lt;span class="m"&gt;2782&lt;/span&gt; &lt;span class="m"&gt;2010&lt;/span&gt;-03-13 &lt;span class="m"&gt;16&lt;/span&gt;:59 FixedVector2D.h
+-rw-r--r-- &lt;span class="m"&gt;1&lt;/span&gt; c0d3rguy c0d3rguy  &lt;span class="m"&gt;4054&lt;/span&gt; &lt;span class="m"&gt;2010&lt;/span&gt;-03-13 &lt;span class="m"&gt;16&lt;/span&gt;:59 FixedVector3D.h
+-rw-r--r-- &lt;span class="m"&gt;1&lt;/span&gt; c0d3rguy c0d3rguy  &lt;span class="m"&gt;1685&lt;/span&gt; &lt;span class="m"&gt;2010&lt;/span&gt;-03-13 &lt;span class="m"&gt;16&lt;/span&gt;:59 MathUtil.h
+-rw-r--r-- &lt;span class="m"&gt;1&lt;/span&gt; c0d3rguy c0d3rguy &lt;span class="m"&gt;14111&lt;/span&gt; &lt;span class="m"&gt;2010&lt;/span&gt;-03-13 &lt;span class="m"&gt;16&lt;/span&gt;:59 Matrix3D.cpp
+-rw-r--r-- &lt;span class="m"&gt;1&lt;/span&gt; c0d3rguy c0d3rguy  &lt;span class="m"&gt;5286&lt;/span&gt; &lt;span class="m"&gt;2010&lt;/span&gt;-03-13 &lt;span class="m"&gt;16&lt;/span&gt;:59 Matrix3D.h
+-rw-r--r-- &lt;span class="m"&gt;1&lt;/span&gt; c0d3rguy c0d3rguy  &lt;span class="m"&gt;6385&lt;/span&gt; &lt;span class="m"&gt;2010&lt;/span&gt;-03-13 &lt;span class="m"&gt;16&lt;/span&gt;:59 MD5.cpp
+-rw-r--r-- &lt;span class="m"&gt;1&lt;/span&gt; c0d3rguy c0d3rguy  &lt;span class="m"&gt;1239&lt;/span&gt; &lt;span class="m"&gt;2010&lt;/span&gt;-03-13 &lt;span class="m"&gt;16&lt;/span&gt;:59 MD5.h
+-rw-r--r-- &lt;span class="m"&gt;1&lt;/span&gt; c0d3rguy c0d3rguy  &lt;span class="m"&gt;4265&lt;/span&gt; &lt;span class="m"&gt;2010&lt;/span&gt;-03-13 &lt;span class="m"&gt;16&lt;/span&gt;:59 Noise.cpp
+-rw-r--r-- &lt;span class="m"&gt;1&lt;/span&gt; c0d3rguy c0d3rguy  &lt;span class="m"&gt;1643&lt;/span&gt; &lt;span class="m"&gt;2010&lt;/span&gt;-03-13 &lt;span class="m"&gt;16&lt;/span&gt;:59 Noise.h
+-rw-r--r-- &lt;span class="m"&gt;1&lt;/span&gt; c0d3rguy c0d3rguy  &lt;span class="m"&gt;7260&lt;/span&gt; &lt;span class="m"&gt;2010&lt;/span&gt;-03-13 &lt;span class="m"&gt;16&lt;/span&gt;:59 NUSpline.cpp
+-rw-r--r-- &lt;span class="m"&gt;1&lt;/span&gt; c0d3rguy c0d3rguy  &lt;span class="m"&gt;2560&lt;/span&gt; &lt;span class="m"&gt;2010&lt;/span&gt;-03-13 &lt;span class="m"&gt;16&lt;/span&gt;:59 NUSpline.h
+-rw-r--r-- &lt;span class="m"&gt;1&lt;/span&gt; c0d3rguy c0d3rguy  &lt;span class="m"&gt;3152&lt;/span&gt; &lt;span class="m"&gt;2010&lt;/span&gt;-03-13 &lt;span class="m"&gt;16&lt;/span&gt;:59 Plane.cpp     &lt;span class="c1"&gt;# point of interest&lt;/span&gt;
+-rw-r--r-- &lt;span class="m"&gt;1&lt;/span&gt; c0d3rguy c0d3rguy  &lt;span class="m"&gt;2015&lt;/span&gt; &lt;span class="m"&gt;2010&lt;/span&gt;-03-13 &lt;span class="m"&gt;16&lt;/span&gt;:59 Plane.h       &lt;span class="c1"&gt;# point of interest&lt;/span&gt;
+-rw-r--r-- &lt;span class="m"&gt;1&lt;/span&gt; c0d3rguy c0d3rguy  &lt;span class="m"&gt;7352&lt;/span&gt; &lt;span class="m"&gt;2010&lt;/span&gt;-03-13 &lt;span class="m"&gt;16&lt;/span&gt;:59 Quaternion.cpp
+-rw-r--r-- &lt;span class="m"&gt;1&lt;/span&gt; c0d3rguy c0d3rguy  &lt;span class="m"&gt;2291&lt;/span&gt; &lt;span class="m"&gt;2010&lt;/span&gt;-03-13 &lt;span class="m"&gt;16&lt;/span&gt;:59 Quaternion.h
+drwxr-xr-x &lt;span class="m"&gt;3&lt;/span&gt; c0d3rguy c0d3rguy  &lt;span class="m"&gt;4096&lt;/span&gt; &lt;span class="m"&gt;2010&lt;/span&gt;-03-13 &lt;span class="m"&gt;16&lt;/span&gt;:59 scripting
+-rw-r--r-- &lt;span class="m"&gt;1&lt;/span&gt; c0d3rguy c0d3rguy  &lt;span class="m"&gt;1434&lt;/span&gt; &lt;span class="m"&gt;2010&lt;/span&gt;-03-13 &lt;span class="m"&gt;16&lt;/span&gt;:59 Sqrt.cpp
+-rw-r--r-- &lt;span class="m"&gt;1&lt;/span&gt; c0d3rguy c0d3rguy   &lt;span class="m"&gt;919&lt;/span&gt; &lt;span class="m"&gt;2010&lt;/span&gt;-03-13 &lt;span class="m"&gt;16&lt;/span&gt;:59 Sqrt.h
+drwxr-xr-x &lt;span class="m"&gt;3&lt;/span&gt; c0d3rguy c0d3rguy  &lt;span class="m"&gt;4096&lt;/span&gt; &lt;span class="m"&gt;2010&lt;/span&gt;-03-13 &lt;span class="m"&gt;18&lt;/span&gt;:27 tests
+-rw-r--r-- &lt;span class="m"&gt;1&lt;/span&gt; c0d3rguy c0d3rguy  &lt;span class="m"&gt;2518&lt;/span&gt; &lt;span class="m"&gt;2010&lt;/span&gt;-03-13 &lt;span class="m"&gt;16&lt;/span&gt;:59 Vector2D.h
+-rw-r--r-- &lt;span class="m"&gt;1&lt;/span&gt; c0d3rguy c0d3rguy  &lt;span class="m"&gt;3247&lt;/span&gt; &lt;span class="m"&gt;2010&lt;/span&gt;-03-13 &lt;span class="m"&gt;16&lt;/span&gt;:59 Vector3D.cpp
+-rw-r--r-- &lt;span class="m"&gt;1&lt;/span&gt; c0d3rguy c0d3rguy  &lt;span class="m"&gt;2457&lt;/span&gt; &lt;span class="m"&gt;2010&lt;/span&gt;-03-13 &lt;span class="m"&gt;16&lt;/span&gt;:59 Vector3D.h
+-rw-r--r-- &lt;span class="m"&gt;1&lt;/span&gt; c0d3rguy c0d3rguy  &lt;span class="m"&gt;3131&lt;/span&gt; &lt;span class="m"&gt;2010&lt;/span&gt;-03-13 &lt;span class="m"&gt;16&lt;/span&gt;:59 Vector4D.h
 &lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;Soo, the &lt;em&gt;"maths"&lt;/em&gt;, in addition to the &lt;em&gt;usual&lt;/em&gt; VectorND and Matrix classes the Plane and Bound can be a valuable source of inspiration
@@ -4192,9 +4192,9 @@ It is available in my forked repository:&lt;/p&gt;
 &lt;p&gt;From now on Qt Creator is definitely my IDE of choice, even though I don't have any QT based projects at the moment.&lt;/p&gt;
 &lt;p&gt;It can work with Scons as well, all we need is a simple "wrapper" makefile like this:&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="nf"&gt;all&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;
-&lt;span class="err"&gt;scons&lt;/span&gt; &lt;span class="err"&gt;-Q&lt;/span&gt; &lt;span class="err"&gt;-j3&lt;/span&gt; &lt;span class="nv"&gt;nocolors&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;1
+&lt;span class="err"&gt;scons&lt;/span&gt; &lt;span class="err"&gt;-Q&lt;/span&gt; &lt;span class="err"&gt;-j3&lt;/span&gt; &lt;span class="nv"&gt;nocolors&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="m"&gt;1&lt;/span&gt;
 &lt;span class="nf"&gt;clean&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt;
-&lt;span class="err"&gt;scons&lt;/span&gt; &lt;span class="err"&gt;-c&lt;/span&gt; &lt;span class="nv"&gt;nocolors&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;1
+&lt;span class="err"&gt;scons&lt;/span&gt; &lt;span class="err"&gt;-c&lt;/span&gt; &lt;span class="nv"&gt;nocolors&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="m"&gt;1&lt;/span&gt;
 &lt;span class="nf"&gt;distclean&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="n"&gt;clean&lt;/span&gt;
 &lt;span class="nf"&gt;realclean&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="n"&gt;clean&lt;/span&gt;
 
@@ -4790,7 +4790,7 @@ More info at &lt;a title="The Free Software Song" href="http://en.wikipedia.org/
 &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="o"&gt;[&lt;/span&gt; &lt;span class="nv"&gt;$#&lt;/span&gt; -lt &lt;span class="m"&gt;2&lt;/span&gt; &lt;span class="o"&gt;]&lt;/span&gt; &lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="k"&gt;then&lt;/span&gt;
 &lt;span class="nb"&gt;echo&lt;/span&gt; Usage: mkhdv input.video output.video &lt;span class="o"&gt;[&lt;/span&gt;-t &lt;span class="s2"&gt;&amp;quot;some video title&amp;quot;&lt;/span&gt;&lt;span class="o"&gt;]&lt;/span&gt; &lt;span class="se"&gt;\&lt;/span&gt;
 &lt;span class="o"&gt;[&lt;/span&gt;-s 1280x720&lt;span class="o"&gt;]&lt;/span&gt;
-&lt;span class="nb"&gt;exit&lt;/span&gt; 13
+&lt;span class="nb"&gt;exit&lt;/span&gt; &lt;span class="m"&gt;13&lt;/span&gt;
 &lt;span class="k"&gt;fi&lt;/span&gt;
 
 &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="o"&gt;[&lt;/span&gt; &lt;span class="nv"&gt;$#&lt;/span&gt; -eq &lt;span class="m"&gt;4&lt;/span&gt; &lt;span class="o"&gt;]&lt;/span&gt; &lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="k"&gt;then&lt;/span&gt;
@@ -4804,7 +4804,7 @@ More info at &lt;a title="The Free Software Song" href="http://en.wikipedia.org/
         &lt;span class="k"&gt;else&lt;/span&gt;
         &lt;span class="nb"&gt;echo&lt;/span&gt; Usage: mkhdv input.video output.video &lt;span class="se"&gt;\ &lt;/span&gt;
 &lt;span class="o"&gt;[&lt;/span&gt;-t &lt;span class="s2"&gt;&amp;quot;some video title&amp;quot;&lt;/span&gt;&lt;span class="o"&gt;]&lt;/span&gt; &lt;span class="o"&gt;[&lt;/span&gt;-s 1280x720&lt;span class="o"&gt;]&lt;/span&gt;
-        &lt;span class="nb"&gt;exit&lt;/span&gt; 666
+        &lt;span class="nb"&gt;exit&lt;/span&gt; &lt;span class="m"&gt;666&lt;/span&gt;
         &lt;span class="k"&gt;fi&lt;/span&gt;
     &lt;span class="k"&gt;fi&lt;/span&gt;
 &lt;span class="k"&gt;else&lt;/span&gt;
@@ -4838,7 +4838,7 @@ More info at &lt;a title="The Free Software Song" href="http://en.wikipedia.org/
     &lt;span class="k"&gt;fi&lt;/span&gt;
 &lt;span class="k"&gt;fi&lt;/span&gt;
 &lt;span class="nb"&gt;echo&lt;/span&gt; Done
-&lt;span class="nb"&gt;exit&lt;/span&gt; 1
+&lt;span class="nb"&gt;exit&lt;/span&gt; &lt;span class="m"&gt;1&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;</content>
 	<category term="bash"/><category term="script"/><category term="video"/><category term="resize"/><category term="ffmpeg"/>
 </entry>
@@ -5417,13 +5417,13 @@ She's trading her win box for a white Apple laptop&lt;/p&gt;
 
 &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="o"&gt;[&lt;/span&gt; &lt;span class="nv"&gt;$#&lt;/span&gt; -ne &lt;span class="m"&gt;3&lt;/span&gt; &lt;span class="o"&gt;]&lt;/span&gt; &lt;span class="p"&gt;;&lt;/span&gt; &lt;span class="k"&gt;then&lt;/span&gt;
 &lt;span class="nb"&gt;echo&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;Usage: &lt;/span&gt;&lt;span class="nv"&gt;$0&lt;/span&gt;&lt;span class="s2"&gt; image1.png image2.png outimage.png&amp;quot;&lt;/span&gt;
-&lt;span class="nb"&gt;exit&lt;/span&gt; 13
+&lt;span class="nb"&gt;exit&lt;/span&gt; &lt;span class="m"&gt;13&lt;/span&gt;
 &lt;span class="k"&gt;fi&lt;/span&gt;
 
 convert -size 2720x900 xc:black &lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;&lt;span class="nv"&gt;$1&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&lt;/span&gt; -geometry +0+100 -composite &lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;&lt;span class="nv"&gt;$2&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&lt;/span&gt; -geometry +1280+0 -composite &lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;&lt;span class="nv"&gt;$3&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;
 
 &lt;span class="nb"&gt;echo&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;Done ...&amp;quot;&lt;/span&gt;
-&lt;span class="nb"&gt;exit&lt;/span&gt; 1
+&lt;span class="nb"&gt;exit&lt;/span&gt; &lt;span class="m"&gt;1&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;I named it "mkwlp" , made it executable (chmod u+x mkwlp) then copied it into /usr/bin for convenience ...&lt;/p&gt;
@@ -5526,7 +5526,7 @@ convert -size 2720x900 xc:black &lt;span class="s2"&gt;&amp;quot;&lt;/span&gt;&l
 &lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;The easiest way to do this, is to fire up a terminal and type in the following:&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;sudo nvidia-xconfig --add-argb-glx-visuals -d 24
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;sudo nvidia-xconfig --add-argb-glx-visuals -d &lt;span class="m"&gt;24&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;Then restart compiz, and the borders should appear. Of course this assumes that you have installed the "NVidia" drivers (restricted) .&lt;/p&gt;

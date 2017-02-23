@@ -32,6 +32,8 @@
 
 			(function() 
 			{
+				if(document.location.host.indexOf('localhost') == 0) return;
+
 				var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
 				ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
 				var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
@@ -40,6 +42,8 @@
 		<script type="text/javascript">
 			(function() 
 			{
+				if(document.location.host.indexOf('localhost') == 0) return;
+
 				var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
 				po.src = 'https://apis.google.com/js/plusone.js';
 				var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
@@ -97,9 +101,9 @@
 <p>From now on Qt Creator is definitely my IDE of choice, even though I don't have any QT based projects at the moment.</p>
 <p>It can work with Scons as well, all we need is a simple "wrapper" makefile like this:</p>
 <div class="highlight"><pre><span></span><span class="nf">all</span><span class="o">:</span>
-<span class="err">scons</span> <span class="err">-Q</span> <span class="err">-j3</span> <span class="nv">nocolors</span><span class="o">=</span>1
+<span class="err">scons</span> <span class="err">-Q</span> <span class="err">-j3</span> <span class="nv">nocolors</span><span class="o">=</span><span class="m">1</span>
 <span class="nf">clean</span><span class="o">:</span>
-<span class="err">scons</span> <span class="err">-c</span> <span class="nv">nocolors</span><span class="o">=</span>1
+<span class="err">scons</span> <span class="err">-c</span> <span class="nv">nocolors</span><span class="o">=</span><span class="m">1</span>
 <span class="nf">distclean</span><span class="o">:</span> <span class="n">clean</span>
 <span class="nf">realclean</span><span class="o">:</span> <span class="n">clean</span>
 

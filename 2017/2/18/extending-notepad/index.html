@@ -32,6 +32,8 @@
 
 			(function() 
 			{
+				if(document.location.host.indexOf('localhost') == 0) return;
+
 				var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
 				ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
 				var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
@@ -40,6 +42,8 @@
 		<script type="text/javascript">
 			(function() 
 			{
+				if(document.location.host.indexOf('localhost') == 0) return;
+
 				var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
 				po.src = 'https://apis.google.com/js/plusone.js';
 				var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
@@ -111,11 +115,11 @@ Why? Just for the lolz and to make <a href="https://en.wikipedia.org/wiki/Charle
   <span class="k">switch</span><span class="p">(</span><span class="n">dwReason</span><span class="p">)</span>
   <span class="p">{</span>
     <span class="k">case</span> <span class="nl">DLL_PROCESS_ATTACH</span><span class="p">:</span>
-      <span class="n">MessageBoxW</span><span class="p">(</span><span class="nb">NULL</span><span class="p">,</span> <span class="s">L&quot;DLL Attached&quot;</span><span class="p">,</span> <span class="s">L&quot;WScrpad&quot;</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>
+      <span class="n">MessageBoxW</span><span class="p">(</span><span class="nb">NULL</span><span class="p">,</span> <span class="sa">L</span><span class="s">&quot;DLL Attached&quot;</span><span class="p">,</span> <span class="sa">L</span><span class="s">&quot;WScrpad&quot;</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>
       <span class="k">break</span><span class="p">;</span>
 
     <span class="k">case</span> <span class="nl">DLL_PROCESS_DETACH</span><span class="p">:</span>
-      <span class="n">MessageBoxW</span><span class="p">(</span><span class="nb">NULL</span><span class="p">,</span> <span class="s">L&quot;DLL Detached&quot;</span><span class="p">,</span> <span class="s">L&quot;WScrpad&quot;</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>
+      <span class="n">MessageBoxW</span><span class="p">(</span><span class="nb">NULL</span><span class="p">,</span> <span class="sa">L</span><span class="s">&quot;DLL Detached&quot;</span><span class="p">,</span> <span class="sa">L</span><span class="s">&quot;WScrpad&quot;</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>
       <span class="k">break</span><span class="p">;</span>
   <span class="p">}</span>
 
@@ -160,15 +164,15 @@ plain old <strong>null terminated</strong> ANSI <em>string</em>.</p>
 <p>Let me explain what went down in the past few screenshots.</p>
 <div class="highlight"><pre><span></span><span class="nf">ASCII</span> <span class="err">&quot;</span><span class="no">wscrpad.dll</span><span class="err">&quot;</span><span class="p">,</span> <span class="mi">0</span>
 
-<span class="nf">pushad</span>                    <span class="err">;</span> <span class="no">save</span> <span class="no">all</span> <span class="no">registers</span>
-<span class="nf">push</span> <span class="no">ASCII</span> <span class="err">&quot;</span><span class="no">wscrpad.dll</span><span class="err">&quot;</span>  <span class="err">;</span> <span class="no">push</span> <span class="no">the</span> <span class="no">name</span> <span class="no">of</span> <span class="no">the</span> <span class="no">DLL</span> <span class="no">into</span> <span class="no">the</span> <span class="no">stack</span>
-<span class="nf">call</span> <span class="no">LoadLibraryA</span>         <span class="err">;</span> <span class="no">call</span> <span class="no">Kernel32.LoadLibraryA</span> <span class="p">(</span><span class="no">ANSI</span><span class="p">)</span>
-<span class="nf">popad</span>                     <span class="err">;</span> <span class="no">restore</span> <span class="no">all</span> <span class="no">registers</span>
+<span class="nf">pushad</span>                    <span class="c">; save all registers</span>
+<span class="no">push</span> <span class="no">ASCII</span> <span class="err">&quot;</span><span class="no">wscrpad.dll</span><span class="err">&quot;</span>  <span class="c">; push the name of the DLL into the stack</span>
+<span class="no">call</span> <span class="no">LoadLibraryA</span>         <span class="c">; call Kernel32.LoadLibraryA (ANSI)</span>
+<span class="no">popad</span>                     <span class="c">; restore all registers</span>
 
-<span class="nf">push</span> <span class="mi">1</span>                    <span class="err">;</span> <span class="no">push</span> <span class="mi">1</span> <span class="no">into</span> <span class="no">the</span> <span class="no">stack</span>
-<span class="nf">call</span> <span class="mi">01001</span><span class="no">C42</span>             <span class="err">;</span> <span class="no">call</span> <span class="no">the</span> <span class="no">original</span> <span class="err">&quot;</span><span class="no">function</span><span class="err">&quot;</span> <span class="no">from</span> <span class="no">our</span> <span class="err">&quot;</span><span class="no">first</span> <span class="no">spot</span><span class="err">&quot;</span>
+<span class="nf">push</span> <span class="mi">1</span>                    <span class="c">; push 1 into the stack</span>
+<span class="no">call</span> <span class="mi">01001</span><span class="no">C42</span>             <span class="c">; call the original &quot;function&quot; from our &quot;first spot&quot;</span>
 
-<span class="nf">jmp</span> <span class="mi">010047</span><span class="no">BE</span>              <span class="err">;</span> <span class="no">jump</span> <span class="no">back</span> <span class="no">to</span> <span class="no">our</span> <span class="err">&quot;</span><span class="no">first</span> <span class="no">spot</span><span class="err">&quot;</span> <span class="p">(</span><span class="no">see</span> <span class="no">below</span><span class="p">)</span>
+<span class="nf">jmp</span> <span class="mi">010047</span><span class="no">BE</span>              <span class="c">; jump back to our &quot;first spot&quot; (see below)</span>
 </pre></div>
 
 <p><img alt="" src="/images/2017/02/18/step13.png" /></p>
@@ -178,8 +182,8 @@ plain old <strong>null terminated</strong> ANSI <em>string</em>.</p>
 </pre></div>
 
 <p>with:</p>
-<div class="highlight"><pre><span></span><span class="nf">jmp</span> <span class="mi">01008755</span> <span class="err">;</span> <span class="no">jump</span> <span class="no">to</span> <span class="no">our</span> <span class="err">&quot;</span><span class="no">second</span> <span class="no">spot</span><span class="err">&quot;</span> <span class="p">(</span><span class="no">see</span> <span class="no">above</span><span class="p">)</span>
-<span class="nf">nop</span>
+<div class="highlight"><pre><span></span><span class="nf">jmp</span> <span class="mi">01008755</span> <span class="c">; jump to our &quot;second spot&quot; (see above)</span>
+<span class="no">nop</span>
 <span class="nf">nop</span>
 </pre></div>
 
@@ -211,7 +215,7 @@ string, which means roughly <em>two bytes</em> per character.</p>
 
 <span class="kt">void</span> <span class="nf">Initialize</span><span class="p">(</span><span class="n">HMODULE</span> <span class="n">hModule</span><span class="p">)</span>
 <span class="p">{</span>
-  <span class="n">HWND</span> <span class="n">hWnd</span> <span class="o">=</span> <span class="n">FindWindow</span><span class="p">(</span><span class="s">L&quot;WScrpad&quot;</span><span class="p">,</span> <span class="nb">NULL</span><span class="p">);</span>
+  <span class="n">HWND</span> <span class="n">hWnd</span> <span class="o">=</span> <span class="n">FindWindow</span><span class="p">(</span><span class="sa">L</span><span class="s">&quot;WScrpad&quot;</span><span class="p">,</span> <span class="nb">NULL</span><span class="p">);</span>
   <span class="n">EnableMenuItem</span><span class="p">(</span><span class="n">GetMenu</span><span class="p">(</span><span class="n">hWnd</span><span class="p">),</span> <span class="mi">4</span><span class="p">,</span> <span class="n">MF_BYPOSITION</span> <span class="o">|</span> <span class="n">MF_GRAYED</span><span class="p">);</span>
 <span class="p">}</span>
 
@@ -240,12 +244,12 @@ than one window open this could lead to problems, because multiple windows could
 
 <span class="kt">void</span> <span class="nf">Initialize</span><span class="p">(</span><span class="n">HMODULE</span> <span class="n">hModule</span><span class="p">)</span>
 <span class="p">{</span>
-  <span class="n">HWND</span> <span class="n">hWnd</span> <span class="o">=</span> <span class="n">FindWindow</span><span class="p">(</span><span class="s">L&quot;WScrpad&quot;</span><span class="p">,</span> <span class="nb">NULL</span><span class="p">);</span>
+  <span class="n">HWND</span> <span class="n">hWnd</span> <span class="o">=</span> <span class="n">FindWindow</span><span class="p">(</span><span class="sa">L</span><span class="s">&quot;WScrpad&quot;</span><span class="p">,</span> <span class="nb">NULL</span><span class="p">);</span>
   <span class="n">HMENU</span> <span class="n">hMenu</span> <span class="o">=</span> <span class="n">GetMenu</span><span class="p">(</span><span class="n">hWnd</span><span class="p">);</span>
   <span class="n">HMENU</span> <span class="n">hNewMenu</span> <span class="o">=</span> <span class="n">CreateMenu</span><span class="p">();</span>
 
-  <span class="n">AppendMenu</span><span class="p">(</span><span class="n">hMenu</span><span class="p">,</span> <span class="n">MF_STRING</span> <span class="o">|</span> <span class="n">MF_POPUP</span><span class="p">,</span> <span class="p">(</span><span class="n">UINT_PTR</span><span class="p">)</span> <span class="n">hNewMenu</span><span class="p">,</span> <span class="s">L&quot;Run&quot;</span><span class="p">);</span>
-  <span class="n">AppendMenu</span><span class="p">(</span><span class="n">hNewMenu</span><span class="p">,</span> <span class="n">MF_STRING</span><span class="p">,</span> <span class="n">RUN_MENU_ID</span><span class="p">,</span> <span class="s">L&quot;&amp;Run&quot;</span><span class="p">);</span>
+  <span class="n">AppendMenu</span><span class="p">(</span><span class="n">hMenu</span><span class="p">,</span> <span class="n">MF_STRING</span> <span class="o">|</span> <span class="n">MF_POPUP</span><span class="p">,</span> <span class="p">(</span><span class="n">UINT_PTR</span><span class="p">)</span> <span class="n">hNewMenu</span><span class="p">,</span> <span class="sa">L</span><span class="s">&quot;Run&quot;</span><span class="p">);</span>
+  <span class="n">AppendMenu</span><span class="p">(</span><span class="n">hNewMenu</span><span class="p">,</span> <span class="n">MF_STRING</span><span class="p">,</span> <span class="n">RUN_MENU_ID</span><span class="p">,</span> <span class="sa">L</span><span class="s">&quot;&amp;Run&quot;</span><span class="p">);</span>
 
   <span class="n">DrawMenuBar</span><span class="p">(</span><span class="n">hWnd</span><span class="p">);</span>
 <span class="p">}</span>
@@ -286,7 +290,7 @@ the <em>original</em>. This way we have full control and can even <em>swallow</e
       <span class="k">switch</span><span class="p">(</span><span class="n">LOWORD</span><span class="p">(</span><span class="n">wParam</span><span class="p">))</span>
       <span class="p">{</span>
         <span class="k">case</span> <span class="nl">IDC_MENU_RUN</span><span class="p">:</span>
-          <span class="n">MessageBox</span><span class="p">(</span><span class="n">hWnd</span><span class="p">,</span> <span class="s">L&quot;Hello World&quot;</span><span class="p">,</span> <span class="s">L&quot;Run&quot;</span><span class="p">,</span> <span class="n">MB_ICONERROR</span><span class="p">);</span>
+          <span class="n">MessageBox</span><span class="p">(</span><span class="n">hWnd</span><span class="p">,</span> <span class="sa">L</span><span class="s">&quot;Hello World&quot;</span><span class="p">,</span> <span class="sa">L</span><span class="s">&quot;Run&quot;</span><span class="p">,</span> <span class="n">MB_ICONERROR</span><span class="p">);</span>
           <span class="k">break</span><span class="p">;</span>
       <span class="p">}</span>
     <span class="p">}</span>
@@ -298,12 +302,12 @@ the <em>original</em>. This way we have full control and can even <em>swallow</e
 
 <span class="kt">void</span> <span class="nf">Initialize</span><span class="p">(</span><span class="n">HMODULE</span> <span class="n">hModule</span><span class="p">)</span>
 <span class="p">{</span>
-  <span class="n">HWND</span> <span class="n">hWnd</span> <span class="o">=</span> <span class="n">FindWindow</span><span class="p">(</span><span class="s">L&quot;WScrpad&quot;</span><span class="p">,</span> <span class="nb">NULL</span><span class="p">);</span>
+  <span class="n">HWND</span> <span class="n">hWnd</span> <span class="o">=</span> <span class="n">FindWindow</span><span class="p">(</span><span class="sa">L</span><span class="s">&quot;WScrpad&quot;</span><span class="p">,</span> <span class="nb">NULL</span><span class="p">);</span>
   <span class="n">HMENU</span> <span class="n">hMenu</span> <span class="o">=</span> <span class="n">GetMenu</span><span class="p">(</span><span class="n">hWnd</span><span class="p">);</span>
   <span class="n">HMENU</span> <span class="n">hNewMenu</span> <span class="o">=</span> <span class="n">CreateMenu</span><span class="p">();</span>
 
-  <span class="n">AppendMenu</span><span class="p">(</span><span class="n">hMenu</span><span class="p">,</span> <span class="n">MF_STRING</span> <span class="o">|</span> <span class="n">MF_POPUP</span><span class="p">,</span> <span class="p">(</span><span class="n">UINT_PTR</span><span class="p">)</span> <span class="n">hNewMenu</span><span class="p">,</span> <span class="s">L&quot;Run&quot;</span><span class="p">);</span>
-  <span class="n">AppendMenu</span><span class="p">(</span><span class="n">hNewMenu</span><span class="p">,</span> <span class="n">MF_STRING</span><span class="p">,</span> <span class="n">IDC_MENU_RUN</span><span class="p">,</span> <span class="s">L&quot;&amp;Run&quot;</span><span class="p">);</span>
+  <span class="n">AppendMenu</span><span class="p">(</span><span class="n">hMenu</span><span class="p">,</span> <span class="n">MF_STRING</span> <span class="o">|</span> <span class="n">MF_POPUP</span><span class="p">,</span> <span class="p">(</span><span class="n">UINT_PTR</span><span class="p">)</span> <span class="n">hNewMenu</span><span class="p">,</span> <span class="sa">L</span><span class="s">&quot;Run&quot;</span><span class="p">);</span>
+  <span class="n">AppendMenu</span><span class="p">(</span><span class="n">hNewMenu</span><span class="p">,</span> <span class="n">MF_STRING</span><span class="p">,</span> <span class="n">IDC_MENU_RUN</span><span class="p">,</span> <span class="sa">L</span><span class="s">&quot;&amp;Run&quot;</span><span class="p">);</span>
 
   <span class="n">DrawMenuBar</span><span class="p">(</span><span class="n">hWnd</span><span class="p">);</span>
 
@@ -389,7 +393,7 @@ adjust it in both of the <em>resources</em>.</p>
   <span class="n">WCHAR</span> <span class="n">wszFileName</span><span class="p">[</span><span class="n">MAX_PATH</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span><span class="mi">0</span><span class="p">,</span> <span class="p">};</span>
   <span class="n">WCHAR</span> <span class="n">wszCmd</span><span class="p">[</span><span class="n">MAX_PATH</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span><span class="mi">0</span><span class="p">,</span> <span class="p">};</span>
 
-  <span class="n">hEdit</span> <span class="o">=</span> <span class="n">FindWindowEx</span><span class="p">(</span><span class="n">hWnd</span><span class="p">,</span> <span class="nb">NULL</span><span class="p">,</span> <span class="s">L&quot;Edit&quot;</span><span class="p">,</span> <span class="nb">NULL</span><span class="p">);</span>
+  <span class="n">hEdit</span> <span class="o">=</span> <span class="n">FindWindowEx</span><span class="p">(</span><span class="n">hWnd</span><span class="p">,</span> <span class="nb">NULL</span><span class="p">,</span> <span class="sa">L</span><span class="s">&quot;Edit&quot;</span><span class="p">,</span> <span class="nb">NULL</span><span class="p">);</span>
 
   <span class="n">dwTextLength</span> <span class="o">=</span> <span class="n">GetWindowTextLength</span><span class="p">(</span><span class="n">hEdit</span><span class="p">);</span>
   <span class="k">if</span><span class="p">(</span><span class="n">dwTextLength</span> <span class="o">==</span> <span class="mi">0</span><span class="p">)</span>
@@ -407,7 +411,7 @@ adjust it in both of the <em>resources</em>.</p>
     <span class="k">return</span><span class="p">;</span>
 
   <span class="c1">// FIXME: wnsprintf</span>
-  <span class="n">wsprintf</span><span class="p">(</span><span class="n">wszFileName</span><span class="p">,</span> <span class="s">L&quot;%swscrpad.tmp&quot;</span><span class="p">,</span> <span class="n">wszPath</span><span class="p">);</span>
+  <span class="n">wsprintf</span><span class="p">(</span><span class="n">wszFileName</span><span class="p">,</span> <span class="sa">L</span><span class="s">&quot;%swscrpad.tmp&quot;</span><span class="p">,</span> <span class="n">wszPath</span><span class="p">);</span>
 
   <span class="n">hFile</span> <span class="o">=</span> <span class="n">CreateFile</span><span class="p">(</span><span class="n">wszFileName</span><span class="p">,</span>
                      <span class="n">GENERIC_WRITE</span><span class="p">,</span>
@@ -428,13 +432,13 @@ adjust it in both of the <em>resources</em>.</p>
   <span class="n">CloseHandle</span><span class="p">(</span><span class="n">hFile</span><span class="p">);</span>
 
   <span class="c1">// FIXME: wnsprintf</span>
-  <span class="n">wsprintf</span><span class="p">(</span><span class="n">wszCmd</span><span class="p">,</span> <span class="s">L&quot;//E:vbscript %s&quot;</span><span class="p">,</span> <span class="n">wszFileName</span><span class="p">);</span>
-  <span class="n">ShellExecute</span><span class="p">(</span><span class="n">hWnd</span><span class="p">,</span> <span class="s">L&quot;open&quot;</span><span class="p">,</span> <span class="s">L&quot;wscript&quot;</span><span class="p">,</span> <span class="n">wszCmd</span><span class="p">,</span> <span class="nb">NULL</span><span class="p">,</span> <span class="n">SW_SHOWNORMAL</span><span class="p">);</span>
+  <span class="n">wsprintf</span><span class="p">(</span><span class="n">wszCmd</span><span class="p">,</span> <span class="sa">L</span><span class="s">&quot;//E:vbscript %s&quot;</span><span class="p">,</span> <span class="n">wszFileName</span><span class="p">);</span>
+  <span class="n">ShellExecute</span><span class="p">(</span><span class="n">hWnd</span><span class="p">,</span> <span class="sa">L</span><span class="s">&quot;open&quot;</span><span class="p">,</span> <span class="sa">L</span><span class="s">&quot;wscript&quot;</span><span class="p">,</span> <span class="n">wszCmd</span><span class="p">,</span> <span class="nb">NULL</span><span class="p">,</span> <span class="n">SW_SHOWNORMAL</span><span class="p">);</span>
 <span class="p">}</span>
 
 <span class="kt">void</span> <span class="nf">Initialize</span><span class="p">(</span><span class="n">HMODULE</span> <span class="n">hModule</span><span class="p">)</span>
 <span class="p">{</span>
-  <span class="n">HWND</span> <span class="n">hWnd</span> <span class="o">=</span> <span class="n">FindWindow</span><span class="p">(</span><span class="s">L&quot;WScrpad&quot;</span><span class="p">,</span> <span class="nb">NULL</span><span class="p">);</span>
+  <span class="n">HWND</span> <span class="n">hWnd</span> <span class="o">=</span> <span class="n">FindWindow</span><span class="p">(</span><span class="sa">L</span><span class="s">&quot;WScrpad&quot;</span><span class="p">,</span> <span class="nb">NULL</span><span class="p">);</span>
   <span class="n">pOldWndProc</span> <span class="o">=</span> <span class="p">(</span><span class="n">WNDPROC</span><span class="p">)</span> <span class="n">SetWindowLong</span><span class="p">(</span><span class="n">hWnd</span><span class="p">,</span> <span class="n">GWL_WNDPROC</span><span class="p">,</span> <span class="p">(</span><span class="n">LONG</span><span class="p">)</span> <span class="n">WndProc</span><span class="p">);</span>
 <span class="p">}</span>
 
@@ -578,7 +582,7 @@ resource file, compile it and bundle it inside the DLL.</p></div>
   <span class="n">WCHAR</span> <span class="n">wszFileName</span><span class="p">[</span><span class="n">MAX_PATH</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span><span class="mi">0</span><span class="p">,</span> <span class="p">};</span>
   <span class="n">WCHAR</span> <span class="n">wszCmd</span><span class="p">[</span><span class="n">MAX_PATH</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span><span class="mi">0</span><span class="p">,</span> <span class="p">};</span>
 
-  <span class="n">hEdit</span> <span class="o">=</span> <span class="n">FindWindowEx</span><span class="p">(</span><span class="n">hWnd</span><span class="p">,</span> <span class="nb">NULL</span><span class="p">,</span> <span class="s">L&quot;Edit&quot;</span><span class="p">,</span> <span class="nb">NULL</span><span class="p">);</span>
+  <span class="n">hEdit</span> <span class="o">=</span> <span class="n">FindWindowEx</span><span class="p">(</span><span class="n">hWnd</span><span class="p">,</span> <span class="nb">NULL</span><span class="p">,</span> <span class="sa">L</span><span class="s">&quot;Edit&quot;</span><span class="p">,</span> <span class="nb">NULL</span><span class="p">);</span>
 
   <span class="n">dwTextLength</span> <span class="o">=</span> <span class="n">GetWindowTextLength</span><span class="p">(</span><span class="n">hEdit</span><span class="p">);</span>
   <span class="k">if</span><span class="p">(</span><span class="n">dwTextLength</span> <span class="o">==</span> <span class="mi">0</span><span class="p">)</span>
@@ -596,7 +600,7 @@ resource file, compile it and bundle it inside the DLL.</p></div>
     <span class="k">return</span><span class="p">;</span>
 
   <span class="c1">// FIXME: wnsprintf</span>
-  <span class="n">wsprintf</span><span class="p">(</span><span class="n">wszFileName</span><span class="p">,</span> <span class="s">L&quot;%swscrpad.tmp&quot;</span><span class="p">,</span> <span class="n">wszPath</span><span class="p">);</span>
+  <span class="n">wsprintf</span><span class="p">(</span><span class="n">wszFileName</span><span class="p">,</span> <span class="sa">L</span><span class="s">&quot;%swscrpad.tmp&quot;</span><span class="p">,</span> <span class="n">wszPath</span><span class="p">);</span>
 
   <span class="n">hFile</span> <span class="o">=</span> <span class="n">CreateFile</span><span class="p">(</span><span class="n">wszFileName</span><span class="p">,</span>
                      <span class="n">GENERIC_WRITE</span><span class="p">,</span>
@@ -618,15 +622,15 @@ resource file, compile it and bundle it inside the DLL.</p></div>
 
   <span class="c1">// FIXME: wnsprintf</span>
   <span class="n">wsprintf</span><span class="p">(</span><span class="n">wszCmd</span><span class="p">,</span>
-           <span class="s">L&quot;//E:%s %s&quot;</span><span class="p">,</span> 
-           <span class="n">dwWSHEngine</span> <span class="o">?</span> <span class="s">L&quot;jscript&quot;</span> <span class="o">:</span> <span class="s">L&quot;vbscript&quot;</span><span class="p">,</span>
+           <span class="sa">L</span><span class="s">&quot;//E:%s %s&quot;</span><span class="p">,</span> 
+           <span class="n">dwWSHEngine</span> <span class="o">?</span> <span class="sa">L</span><span class="s">&quot;jscript&quot;</span> <span class="o">:</span> <span class="sa">L</span><span class="s">&quot;vbscript&quot;</span><span class="p">,</span>
            <span class="n">wszFileName</span><span class="p">);</span>
-  <span class="n">ShellExecute</span><span class="p">(</span><span class="n">hWnd</span><span class="p">,</span> <span class="s">L&quot;open&quot;</span><span class="p">,</span> <span class="s">L&quot;wscript&quot;</span><span class="p">,</span> <span class="n">wszCmd</span><span class="p">,</span> <span class="nb">NULL</span><span class="p">,</span> <span class="n">SW_SHOWNORMAL</span><span class="p">);</span>
+  <span class="n">ShellExecute</span><span class="p">(</span><span class="n">hWnd</span><span class="p">,</span> <span class="sa">L</span><span class="s">&quot;open&quot;</span><span class="p">,</span> <span class="sa">L</span><span class="s">&quot;wscript&quot;</span><span class="p">,</span> <span class="n">wszCmd</span><span class="p">,</span> <span class="nb">NULL</span><span class="p">,</span> <span class="n">SW_SHOWNORMAL</span><span class="p">);</span>
 <span class="p">}</span>
 
 <span class="kt">void</span> <span class="nf">Initialize</span><span class="p">(</span><span class="n">HMODULE</span> <span class="n">hModule</span><span class="p">)</span>
 <span class="p">{</span>
-  <span class="n">HWND</span> <span class="n">hWnd</span> <span class="o">=</span> <span class="n">FindWindow</span><span class="p">(</span><span class="s">L&quot;WScrpad&quot;</span><span class="p">,</span> <span class="nb">NULL</span><span class="p">);</span>
+  <span class="n">HWND</span> <span class="n">hWnd</span> <span class="o">=</span> <span class="n">FindWindow</span><span class="p">(</span><span class="sa">L</span><span class="s">&quot;WScrpad&quot;</span><span class="p">,</span> <span class="nb">NULL</span><span class="p">);</span>
   <span class="n">pOldWndProc</span> <span class="o">=</span> <span class="p">(</span><span class="n">WNDPROC</span><span class="p">)</span> <span class="n">SetWindowLong</span><span class="p">(</span><span class="n">hWnd</span><span class="p">,</span> <span class="n">GWL_WNDPROC</span><span class="p">,</span> <span class="p">(</span><span class="n">LONG</span><span class="p">)</span> <span class="n">WndProc</span><span class="p">);</span>
 <span class="p">}</span>
 
@@ -653,8 +657,8 @@ whenever the user hits the <strong>Save</strong> button.</p>
 <p>During <strong>Run()</strong>, the selected engine is used based on the value of the <strong>dwWSHEngine</strong> variable.</p>
 <div class="highlight"><pre><span></span><span class="c1">// FIXME: wnsprintf</span>
 <span class="n">wsprintf</span><span class="p">(</span><span class="n">wszCmd</span><span class="p">,</span>
-         <span class="s">L&quot;//E:%s %s&quot;</span><span class="p">,</span> 
-         <span class="n">dwWSHEngine</span> <span class="o">?</span> <span class="s">L&quot;jscript&quot;</span> <span class="o">:</span> <span class="s">L&quot;vbscript&quot;</span><span class="p">,</span>
+         <span class="sa">L</span><span class="s">&quot;//E:%s %s&quot;</span><span class="p">,</span> 
+         <span class="n">dwWSHEngine</span> <span class="o">?</span> <span class="sa">L</span><span class="s">&quot;jscript&quot;</span> <span class="o">:</span> <span class="sa">L</span><span class="s">&quot;vbscript&quot;</span><span class="p">,</span>
          <span class="n">wszFileName</span><span class="p">);</span>
 </pre></div>
 
@@ -804,7 +808,7 @@ to something slightly more appropriate like <strong>HKEY_CURRENT_USER\Software\M
   <span class="n">WCHAR</span> <span class="n">wszFileName</span><span class="p">[</span><span class="n">MAX_PATH</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span><span class="mi">0</span><span class="p">,</span> <span class="p">};</span>
   <span class="n">WCHAR</span> <span class="n">wszCmd</span><span class="p">[</span><span class="n">MAX_PATH</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span><span class="mi">0</span><span class="p">,</span> <span class="p">};</span>
 
-  <span class="n">hEdit</span> <span class="o">=</span> <span class="n">FindWindowEx</span><span class="p">(</span><span class="n">hWnd</span><span class="p">,</span> <span class="nb">NULL</span><span class="p">,</span> <span class="s">L&quot;Edit&quot;</span><span class="p">,</span> <span class="nb">NULL</span><span class="p">);</span>
+  <span class="n">hEdit</span> <span class="o">=</span> <span class="n">FindWindowEx</span><span class="p">(</span><span class="n">hWnd</span><span class="p">,</span> <span class="nb">NULL</span><span class="p">,</span> <span class="sa">L</span><span class="s">&quot;Edit&quot;</span><span class="p">,</span> <span class="nb">NULL</span><span class="p">);</span>
 
   <span class="n">dwTextLength</span> <span class="o">=</span> <span class="n">GetWindowTextLength</span><span class="p">(</span><span class="n">hEdit</span><span class="p">);</span>
   <span class="k">if</span><span class="p">(</span><span class="n">dwTextLength</span> <span class="o">==</span> <span class="mi">0</span><span class="p">)</span>
@@ -822,7 +826,7 @@ to something slightly more appropriate like <strong>HKEY_CURRENT_USER\Software\M
     <span class="k">return</span><span class="p">;</span>
 
   <span class="c1">// FIXME: wnsprintf</span>
-  <span class="n">wsprintf</span><span class="p">(</span><span class="n">wszFileName</span><span class="p">,</span> <span class="s">L&quot;%swscrpad.tmp&quot;</span><span class="p">,</span> <span class="n">wszPath</span><span class="p">);</span>
+  <span class="n">wsprintf</span><span class="p">(</span><span class="n">wszFileName</span><span class="p">,</span> <span class="sa">L</span><span class="s">&quot;%swscrpad.tmp&quot;</span><span class="p">,</span> <span class="n">wszPath</span><span class="p">);</span>
 
   <span class="n">hFile</span> <span class="o">=</span> <span class="n">CreateFile</span><span class="p">(</span><span class="n">wszFileName</span><span class="p">,</span>
                      <span class="n">GENERIC_WRITE</span><span class="p">,</span>
@@ -844,15 +848,15 @@ to something slightly more appropriate like <strong>HKEY_CURRENT_USER\Software\M
 
   <span class="c1">// FIXME: wnsprintf</span>
   <span class="n">wsprintf</span><span class="p">(</span><span class="n">wszCmd</span><span class="p">,</span>
-           <span class="s">L&quot;//E:%s %s&quot;</span><span class="p">,</span>
-           <span class="n">dwWSHEngine</span> <span class="o">?</span> <span class="s">L&quot;jscript&quot;</span> <span class="o">:</span> <span class="s">L&quot;vbscript&quot;</span><span class="p">,</span> 
+           <span class="sa">L</span><span class="s">&quot;//E:%s %s&quot;</span><span class="p">,</span>
+           <span class="n">dwWSHEngine</span> <span class="o">?</span> <span class="sa">L</span><span class="s">&quot;jscript&quot;</span> <span class="o">:</span> <span class="sa">L</span><span class="s">&quot;vbscript&quot;</span><span class="p">,</span> 
            <span class="n">wszFileName</span><span class="p">);</span>
-  <span class="n">ShellExecute</span><span class="p">(</span><span class="n">hWnd</span><span class="p">,</span> <span class="s">L&quot;open&quot;</span><span class="p">,</span> <span class="s">L&quot;wscript&quot;</span><span class="p">,</span> <span class="n">wszCmd</span><span class="p">,</span> <span class="nb">NULL</span><span class="p">,</span> <span class="n">SW_SHOWNORMAL</span><span class="p">);</span>
+  <span class="n">ShellExecute</span><span class="p">(</span><span class="n">hWnd</span><span class="p">,</span> <span class="sa">L</span><span class="s">&quot;open&quot;</span><span class="p">,</span> <span class="sa">L</span><span class="s">&quot;wscript&quot;</span><span class="p">,</span> <span class="n">wszCmd</span><span class="p">,</span> <span class="nb">NULL</span><span class="p">,</span> <span class="n">SW_SHOWNORMAL</span><span class="p">);</span>
 <span class="p">}</span>
 
 <span class="kt">void</span> <span class="nf">Initialize</span><span class="p">(</span><span class="n">HMODULE</span> <span class="n">hModule</span><span class="p">)</span>
 <span class="p">{</span>
-  <span class="n">HWND</span> <span class="n">hWnd</span> <span class="o">=</span> <span class="n">FindWindow</span><span class="p">(</span><span class="s">L&quot;WScrpad&quot;</span><span class="p">,</span> <span class="nb">NULL</span><span class="p">);</span>
+  <span class="n">HWND</span> <span class="n">hWnd</span> <span class="o">=</span> <span class="n">FindWindow</span><span class="p">(</span><span class="sa">L</span><span class="s">&quot;WScrpad&quot;</span><span class="p">,</span> <span class="nb">NULL</span><span class="p">);</span>
   <span class="n">pOldWndProc</span> <span class="o">=</span> <span class="p">(</span><span class="n">WNDPROC</span><span class="p">)</span> <span class="n">SetWindowLong</span><span class="p">(</span><span class="n">hWnd</span><span class="p">,</span> <span class="n">GWL_WNDPROC</span><span class="p">,</span> <span class="p">(</span><span class="n">LONG</span><span class="p">)</span> <span class="n">WndProc</span><span class="p">);</span>
   <span class="n">dwWSHEngine</span> <span class="o">=</span> <span class="n">QueryDWORD</span><span class="p">(</span><span class="n">REGISTRY_VALUE_NAME</span><span class="p">);</span>
 <span class="p">}</span>

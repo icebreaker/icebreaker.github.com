@@ -32,6 +32,8 @@
 
 			(function() 
 			{
+				if(document.location.host.indexOf('localhost') == 0) return;
+
 				var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
 				ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
 				var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
@@ -40,6 +42,8 @@
 		<script type="text/javascript">
 			(function() 
 			{
+				if(document.location.host.indexOf('localhost') == 0) return;
+
 				var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
 				po.src = 'https://apis.google.com/js/plusone.js';
 				var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
@@ -121,36 +125,36 @@ paths (fixed or shader), etc.</p>
 <img src="/images/2010/03/0ad-animals-closeup_thumb.png"></a></p>
 <p>The actual code base is quite messy and not everything is clearly separated or grouped together where necessary.</p>
 <div class="highlight"><pre><span></span>c0d3rguy@Seth:/opt/0ad/source/maths$ ls -l
-total 160
--rw-r--r-- <span class="m">1</span> c0d3rguy c0d3rguy  <span class="m">6315</span> 2010-03-13 16:59 Bound.cpp       <span class="c1"># point of interest</span>
--rw-r--r-- <span class="m">1</span> c0d3rguy c0d3rguy  <span class="m">2717</span> 2010-03-13 16:59 Bound.h     <span class="c1"># point of interest</span>
--rw-r--r-- <span class="m">1</span> c0d3rguy c0d3rguy  <span class="m">7913</span> 2010-03-13 16:59 Brush.cpp
--rw-r--r-- <span class="m">1</span> c0d3rguy c0d3rguy  <span class="m">2521</span> 2010-03-13 16:59 Brush.h
--rw-r--r-- <span class="m">1</span> c0d3rguy c0d3rguy  <span class="m">1422</span> 2010-03-13 16:59 Fixed.cpp
--rw-r--r-- <span class="m">1</span> c0d3rguy c0d3rguy  <span class="m">4436</span> 2010-03-13 16:59 Fixed.h
--rw-r--r-- <span class="m">1</span> c0d3rguy c0d3rguy  <span class="m">2782</span> 2010-03-13 16:59 FixedVector2D.h
--rw-r--r-- <span class="m">1</span> c0d3rguy c0d3rguy  <span class="m">4054</span> 2010-03-13 16:59 FixedVector3D.h
--rw-r--r-- <span class="m">1</span> c0d3rguy c0d3rguy  <span class="m">1685</span> 2010-03-13 16:59 MathUtil.h
--rw-r--r-- <span class="m">1</span> c0d3rguy c0d3rguy <span class="m">14111</span> 2010-03-13 16:59 Matrix3D.cpp
--rw-r--r-- <span class="m">1</span> c0d3rguy c0d3rguy  <span class="m">5286</span> 2010-03-13 16:59 Matrix3D.h
--rw-r--r-- <span class="m">1</span> c0d3rguy c0d3rguy  <span class="m">6385</span> 2010-03-13 16:59 MD5.cpp
--rw-r--r-- <span class="m">1</span> c0d3rguy c0d3rguy  <span class="m">1239</span> 2010-03-13 16:59 MD5.h
--rw-r--r-- <span class="m">1</span> c0d3rguy c0d3rguy  <span class="m">4265</span> 2010-03-13 16:59 Noise.cpp
--rw-r--r-- <span class="m">1</span> c0d3rguy c0d3rguy  <span class="m">1643</span> 2010-03-13 16:59 Noise.h
--rw-r--r-- <span class="m">1</span> c0d3rguy c0d3rguy  <span class="m">7260</span> 2010-03-13 16:59 NUSpline.cpp
--rw-r--r-- <span class="m">1</span> c0d3rguy c0d3rguy  <span class="m">2560</span> 2010-03-13 16:59 NUSpline.h
--rw-r--r-- <span class="m">1</span> c0d3rguy c0d3rguy  <span class="m">3152</span> 2010-03-13 16:59 Plane.cpp       <span class="c1"># point of interest</span>
--rw-r--r-- <span class="m">1</span> c0d3rguy c0d3rguy  <span class="m">2015</span> 2010-03-13 16:59 Plane.h     <span class="c1"># point of interest</span>
--rw-r--r-- <span class="m">1</span> c0d3rguy c0d3rguy  <span class="m">7352</span> 2010-03-13 16:59 Quaternion.cpp
--rw-r--r-- <span class="m">1</span> c0d3rguy c0d3rguy  <span class="m">2291</span> 2010-03-13 16:59 Quaternion.h
-drwxr-xr-x <span class="m">3</span> c0d3rguy c0d3rguy  <span class="m">4096</span> 2010-03-13 16:59 scripting
--rw-r--r-- <span class="m">1</span> c0d3rguy c0d3rguy  <span class="m">1434</span> 2010-03-13 16:59 Sqrt.cpp
--rw-r--r-- <span class="m">1</span> c0d3rguy c0d3rguy   <span class="m">919</span> 2010-03-13 16:59 Sqrt.h
-drwxr-xr-x <span class="m">3</span> c0d3rguy c0d3rguy  <span class="m">4096</span> 2010-03-13 18:27 tests
--rw-r--r-- <span class="m">1</span> c0d3rguy c0d3rguy  <span class="m">2518</span> 2010-03-13 16:59 Vector2D.h
--rw-r--r-- <span class="m">1</span> c0d3rguy c0d3rguy  <span class="m">3247</span> 2010-03-13 16:59 Vector3D.cpp
--rw-r--r-- <span class="m">1</span> c0d3rguy c0d3rguy  <span class="m">2457</span> 2010-03-13 16:59 Vector3D.h
--rw-r--r-- <span class="m">1</span> c0d3rguy c0d3rguy  <span class="m">3131</span> 2010-03-13 16:59 Vector4D.h
+total <span class="m">160</span>
+-rw-r--r-- <span class="m">1</span> c0d3rguy c0d3rguy  <span class="m">6315</span> <span class="m">2010</span>-03-13 <span class="m">16</span>:59 Bound.cpp     <span class="c1"># point of interest</span>
+-rw-r--r-- <span class="m">1</span> c0d3rguy c0d3rguy  <span class="m">2717</span> <span class="m">2010</span>-03-13 <span class="m">16</span>:59 Bound.h       <span class="c1"># point of interest</span>
+-rw-r--r-- <span class="m">1</span> c0d3rguy c0d3rguy  <span class="m">7913</span> <span class="m">2010</span>-03-13 <span class="m">16</span>:59 Brush.cpp
+-rw-r--r-- <span class="m">1</span> c0d3rguy c0d3rguy  <span class="m">2521</span> <span class="m">2010</span>-03-13 <span class="m">16</span>:59 Brush.h
+-rw-r--r-- <span class="m">1</span> c0d3rguy c0d3rguy  <span class="m">1422</span> <span class="m">2010</span>-03-13 <span class="m">16</span>:59 Fixed.cpp
+-rw-r--r-- <span class="m">1</span> c0d3rguy c0d3rguy  <span class="m">4436</span> <span class="m">2010</span>-03-13 <span class="m">16</span>:59 Fixed.h
+-rw-r--r-- <span class="m">1</span> c0d3rguy c0d3rguy  <span class="m">2782</span> <span class="m">2010</span>-03-13 <span class="m">16</span>:59 FixedVector2D.h
+-rw-r--r-- <span class="m">1</span> c0d3rguy c0d3rguy  <span class="m">4054</span> <span class="m">2010</span>-03-13 <span class="m">16</span>:59 FixedVector3D.h
+-rw-r--r-- <span class="m">1</span> c0d3rguy c0d3rguy  <span class="m">1685</span> <span class="m">2010</span>-03-13 <span class="m">16</span>:59 MathUtil.h
+-rw-r--r-- <span class="m">1</span> c0d3rguy c0d3rguy <span class="m">14111</span> <span class="m">2010</span>-03-13 <span class="m">16</span>:59 Matrix3D.cpp
+-rw-r--r-- <span class="m">1</span> c0d3rguy c0d3rguy  <span class="m">5286</span> <span class="m">2010</span>-03-13 <span class="m">16</span>:59 Matrix3D.h
+-rw-r--r-- <span class="m">1</span> c0d3rguy c0d3rguy  <span class="m">6385</span> <span class="m">2010</span>-03-13 <span class="m">16</span>:59 MD5.cpp
+-rw-r--r-- <span class="m">1</span> c0d3rguy c0d3rguy  <span class="m">1239</span> <span class="m">2010</span>-03-13 <span class="m">16</span>:59 MD5.h
+-rw-r--r-- <span class="m">1</span> c0d3rguy c0d3rguy  <span class="m">4265</span> <span class="m">2010</span>-03-13 <span class="m">16</span>:59 Noise.cpp
+-rw-r--r-- <span class="m">1</span> c0d3rguy c0d3rguy  <span class="m">1643</span> <span class="m">2010</span>-03-13 <span class="m">16</span>:59 Noise.h
+-rw-r--r-- <span class="m">1</span> c0d3rguy c0d3rguy  <span class="m">7260</span> <span class="m">2010</span>-03-13 <span class="m">16</span>:59 NUSpline.cpp
+-rw-r--r-- <span class="m">1</span> c0d3rguy c0d3rguy  <span class="m">2560</span> <span class="m">2010</span>-03-13 <span class="m">16</span>:59 NUSpline.h
+-rw-r--r-- <span class="m">1</span> c0d3rguy c0d3rguy  <span class="m">3152</span> <span class="m">2010</span>-03-13 <span class="m">16</span>:59 Plane.cpp     <span class="c1"># point of interest</span>
+-rw-r--r-- <span class="m">1</span> c0d3rguy c0d3rguy  <span class="m">2015</span> <span class="m">2010</span>-03-13 <span class="m">16</span>:59 Plane.h       <span class="c1"># point of interest</span>
+-rw-r--r-- <span class="m">1</span> c0d3rguy c0d3rguy  <span class="m">7352</span> <span class="m">2010</span>-03-13 <span class="m">16</span>:59 Quaternion.cpp
+-rw-r--r-- <span class="m">1</span> c0d3rguy c0d3rguy  <span class="m">2291</span> <span class="m">2010</span>-03-13 <span class="m">16</span>:59 Quaternion.h
+drwxr-xr-x <span class="m">3</span> c0d3rguy c0d3rguy  <span class="m">4096</span> <span class="m">2010</span>-03-13 <span class="m">16</span>:59 scripting
+-rw-r--r-- <span class="m">1</span> c0d3rguy c0d3rguy  <span class="m">1434</span> <span class="m">2010</span>-03-13 <span class="m">16</span>:59 Sqrt.cpp
+-rw-r--r-- <span class="m">1</span> c0d3rguy c0d3rguy   <span class="m">919</span> <span class="m">2010</span>-03-13 <span class="m">16</span>:59 Sqrt.h
+drwxr-xr-x <span class="m">3</span> c0d3rguy c0d3rguy  <span class="m">4096</span> <span class="m">2010</span>-03-13 <span class="m">18</span>:27 tests
+-rw-r--r-- <span class="m">1</span> c0d3rguy c0d3rguy  <span class="m">2518</span> <span class="m">2010</span>-03-13 <span class="m">16</span>:59 Vector2D.h
+-rw-r--r-- <span class="m">1</span> c0d3rguy c0d3rguy  <span class="m">3247</span> <span class="m">2010</span>-03-13 <span class="m">16</span>:59 Vector3D.cpp
+-rw-r--r-- <span class="m">1</span> c0d3rguy c0d3rguy  <span class="m">2457</span> <span class="m">2010</span>-03-13 <span class="m">16</span>:59 Vector3D.h
+-rw-r--r-- <span class="m">1</span> c0d3rguy c0d3rguy  <span class="m">3131</span> <span class="m">2010</span>-03-13 <span class="m">16</span>:59 Vector4D.h
 </pre></div>
 
 <p>Soo, the <em>"maths"</em>, in addition to the <em>usual</em> VectorND and Matrix classes the Plane and Bound can be a valuable source of inspiration
