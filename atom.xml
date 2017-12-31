@@ -9,9 +9,198 @@
 	<name>Mihail Szabolcs</name>
 </author>
 
-<updated>2017-02-18T00:00:00+02:00</updated>
+<updated>2017-12-31T00:00:00+02:00</updated>
 
 
+
+<entry>
+	<title type="html">2017 Shakedown</title>
+	<link href="http://mihail.co/2017/12/31/2017-shakedown"/>
+	<updated>2017-12-31T00:00:00+02:00</updated>
+	<id>http://mihail.co/2017/12/31/2017-shakedown</id>
+	<content type="html">&lt;p&gt;Oh, it's &lt;em&gt;dat time&lt;/em&gt; of the year again. All in all, it was a good year, but aren't they all good?&lt;/p&gt;
+&lt;p&gt;To put things into perspective, here are some charts &lt;em&gt;generated&lt;/em&gt; by &lt;a href="https://github.com/icebreaker"&gt;GitHub&lt;/a&gt;.&lt;/p&gt;
+&lt;h4&gt;2017&lt;/h4&gt;
+&lt;p&gt;&lt;img alt="" src="http://mihail.co/images/github/2017.png" /&gt;&lt;/p&gt;
+&lt;h4&gt;2016&lt;/h4&gt;
+&lt;p&gt;&lt;img alt="" src="http://mihail.co/images/github/2016.png" /&gt;&lt;/p&gt;
+&lt;h4&gt;2015&lt;/h4&gt;
+&lt;p&gt;&lt;img alt="" src="http://mihail.co/images/github/2015.png" /&gt;&lt;/p&gt;
+&lt;p&gt;A tad bit less &lt;em&gt;contributions&lt;/em&gt; this year, compared to 2016, but as you can see on the chart it has been
+"more concentrated" (meaning, more dark green spots).&lt;/p&gt;
+&lt;a name="Fz2D"&gt;&lt;/a&gt;
+&lt;h2&gt;Fz2D&lt;/h2&gt;
+&lt;p&gt;&lt;a href="https://github.com/icebreaker/fz2d"&gt;Fz2D&lt;/a&gt; received a batch of small updates, but it still didn't graduate from alpha to 
+beta, like I would have hoped.&lt;/p&gt;
+&lt;p&gt;With the advent of ES5 and ES6 being rolled out in all major browsers, I feel like the 5
+minutes of fame of CoffeeScript &lt;em&gt;expired&lt;/em&gt; and we can start writing slightly more structured
+things in pure JS, without resorting to all those 1998 style tricks.&lt;/p&gt;
+&lt;p&gt;All that being said, most likely I will "transpile" the code-base into &lt;em&gt;modern JS&lt;/em&gt; with a tool
+like &lt;a href="https://github.com/decaffeinate/decaffeinate"&gt;decaffeinate&lt;/a&gt; and then of course clean it by hand as necessary.&lt;/p&gt;
+&lt;p&gt;Feel free to take a peek at the documentation available over &lt;a href="http://mihail.co/fz2d/docs"&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;a name="Simon8"&gt;&lt;/a&gt;
+&lt;h2&gt;Simon8&lt;/h2&gt;
+&lt;p&gt;In other news, I &lt;em&gt;ported&lt;/em&gt; my &lt;a href="https://en.wikipedia.org/wiki/CHIP-8"&gt;Chip 8&lt;/a&gt; &lt;em&gt;emulator&lt;/em&gt; (&lt;em&gt;read: interpreter&lt;/em&gt;) to JavaScript via &lt;a href="https://github.com/kripken/emscripten"&gt;emscripten&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;You can check it out over &lt;a href="http://mihail.co/simon8/"&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;a name="Testa"&gt;&lt;/a&gt;
+&lt;h2&gt;Testa&lt;/h2&gt;
+&lt;p&gt;I also released Testa which is a &lt;em&gt;portable&lt;/em&gt; single file &lt;em&gt;"(unit) test framework"&lt;/em&gt; for C/C++.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="" src="http://mihail.co/images/2017/testa.png" /&gt;&lt;/p&gt;
+&lt;p&gt;You can check it out over &lt;a href="https://github.com/icebreaker/testa"&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;a name="ASMToy"&gt;&lt;/a&gt;
+&lt;h2&gt;ASMToy&lt;/h2&gt;
+&lt;p&gt;This was something that I wanted to try out for quite some time now.&lt;/p&gt;
+&lt;p&gt;ASMToy is &lt;em&gt;dosbox&lt;/em&gt; compiled to JavaScript running a modified &lt;a href="https://flatassembler.net/"&gt;Flat Assembler&lt;/a&gt; IDE for
+DOS.&lt;/p&gt;
+&lt;p&gt;The changes do not let you reboot or escape the confines of the IDE.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="" src="http://mihail.co/images/2017/asmtoy.png" /&gt;&lt;/p&gt;
+&lt;p&gt;In effect, it lets you play with 16-bit &lt;em&gt;assembly&lt;/em&gt; in DOS, right in your browser.&lt;/p&gt;
+&lt;a name="Doom Brush"&gt;&lt;/a&gt;
+&lt;h2&gt;Doom Brush&lt;/h2&gt;
+&lt;p&gt;This has been inspired by &lt;a href="https://twitter.com/JoshuaSkelly"&gt;Joshua Skelly's&lt;/a&gt; work, who is writing a small tool that
+can "transpile" a TMX Map (produced by the &lt;a href="http://www.mapeditor.org/"&gt;Tiled&lt;/a&gt; 2D map editor) into a Quake &lt;em&gt;map&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;In my case, I had two goals:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;"transpile" a Wavefront OBJ model file into brushes and entities&lt;/li&gt;
+&lt;li&gt;write a Tiled plugin exporter plugin, that can export "object layers" as brushes
+and entities; with the brushes being constructed from the "polygon" objects defined
+within the editor itself (should be reasonably simple ..)&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Managed to &lt;em&gt;achieve&lt;/em&gt; the first goal and I am quite happy with the &lt;em&gt;library&lt;/em&gt; I wrote,
+but it still needs a little bit of clean-up, because some the of API is a bit
+confusing at the moment.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="" src="http://mihail.co/images/2017/db.png" /&gt;&lt;/p&gt;
+&lt;p&gt;As far as the second goal is concerned, I managed to "sketch" out the skeleton of the
+exporter plugin, but didn't get to implement any of the actual functionality.&lt;/p&gt;
+&lt;p&gt;I'll release the source code most likely sometime next year.&lt;/p&gt;
+&lt;a name="Nixel"&gt;&lt;/a&gt;
+&lt;h2&gt;Nixel&lt;/h2&gt;
+&lt;p&gt;Yet again, my primary focus has been &lt;em&gt;Nixel&lt;/em&gt; which is the codename of the game engine
+and framework I've been hacking on for ages.&lt;/p&gt;
+&lt;p&gt;This year, I managed to figure out a number of technical conundrums and investigated
+which "GUI framework" to use for the &lt;em&gt;tools&lt;/em&gt;. In the end, I just decided to
+roll my own "Immediate Mode GUI" (IMGUI), because everything had too many dependencies
+or some weird and intricate layout system.&lt;/p&gt;
+&lt;p&gt;For some time, I considered that perhaps Electron could be the answer, because now that
+we have &lt;em&gt;flexbox&lt;/em&gt;, one doesn't have to resort to "floating elements" and "tables" to make
+reasonably &lt;em&gt;complicated&lt;/em&gt; layouts.&lt;/p&gt;
+&lt;p&gt;But in the end, it felt like pulling in way too many dependencies and that is something
+that I am paying enormous amounts of attention to.&lt;/p&gt;
+&lt;p&gt;One of the primary problems of both closed and open source projects are dependencies.&lt;/p&gt;
+&lt;p&gt;If the dependencies are hard to &lt;em&gt;install&lt;/em&gt; or hard &lt;em&gt;build&lt;/em&gt; and not self-contained enough
+to be &lt;em&gt;bundled&lt;/em&gt; with the project, then it becomes a nightmare to build and maintain
+the project. In turn this will automatically increase the barrier of entry for &lt;em&gt;new&lt;/em&gt;
+contributors, as well as hinder porting and general maintenance over time.&lt;/p&gt;
+&lt;p&gt;I also decided to roll with JS as a scripting language, relying on the excellent
+&lt;a href="http://duktape.org/"&gt;Duktape&lt;/a&gt;, instead of Lua. We'll see how this will pan out in the long run,
+but so far it appears that it will be "fast" enough and the GC can be kept under
+control.&lt;/p&gt;
+&lt;p&gt;You have to realize that, we are talking about a very tight event loop, where every
+millisecond is precious and one wants to waste as few as possible.&lt;/p&gt;
+&lt;p&gt;Next year, I'll try to delve into these things in a little bit more detail, so you 
+can expect more content from me, rather than the average of 1-2 posts per year,
+which is nothing less than appalling if you ask me.&lt;/p&gt;
+&lt;a name="Nintendo Switch"&gt;&lt;/a&gt;
+&lt;h2&gt;Nintendo Switch&lt;/h2&gt;
+&lt;p&gt;Like millions of people around this piece of this of a rock floating in space, I got
+a Nintendo Switch, shortly after its release, together with the &lt;a href="https://www.nintendo.com/amiibo/detail/wolf-link-amiibo"&gt;Wolf Link Amiibo&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;iframe width="760" height="428" src="https://www.youtube.com/embed/oFkF6j-mcDY" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Game&lt;/th&gt;
+&lt;th&gt;Medium&lt;/th&gt;
+&lt;th&gt;Hours Played&lt;/th&gt;
+&lt;th&gt;Notes&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;The Legend of Zelda: BOTW&lt;/td&gt;
+&lt;td&gt;cartridge&lt;/td&gt;
+&lt;td&gt;200+&lt;/td&gt;
+&lt;td&gt;n/a&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Kingdom&lt;/td&gt;
+&lt;td&gt;digital&lt;/td&gt;
+&lt;td&gt;30+&lt;/td&gt;
+&lt;td&gt;n/a&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Skyrim&lt;/td&gt;
+&lt;td&gt;digital&lt;/td&gt;
+&lt;td&gt;10+&lt;/td&gt;
+&lt;td&gt;n/a&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Snake Pass&lt;/td&gt;
+&lt;td&gt;digital&lt;/td&gt;
+&lt;td&gt;2 or less&lt;/td&gt;
+&lt;td&gt;n/a&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Mario Kart 8 Deluxe&lt;/td&gt;
+&lt;td&gt;digital&lt;/td&gt;
+&lt;td&gt;1 or less&lt;/td&gt;
+&lt;td&gt;n/a&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Oceanhorn&lt;/td&gt;
+&lt;td&gt;digital&lt;/td&gt;
+&lt;td&gt;1 or less&lt;/td&gt;
+&lt;td&gt;n/a&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Shephy&lt;/td&gt;
+&lt;td&gt;digital&lt;/td&gt;
+&lt;td&gt;1 or less&lt;/td&gt;
+&lt;td&gt;n/a&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Morphite&lt;/td&gt;
+&lt;td&gt;digital&lt;/td&gt;
+&lt;td&gt;1 or less&lt;/td&gt;
+&lt;td&gt;n/a&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Little Inferno&lt;/td&gt;
+&lt;td&gt;digital&lt;/td&gt;
+&lt;td&gt;1 or less&lt;/td&gt;
+&lt;td&gt;completed on PC&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;World of Goo&lt;/td&gt;
+&lt;td&gt;digital&lt;/td&gt;
+&lt;td&gt;1 or less&lt;/td&gt;
+&lt;td&gt;completed on PC&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;The Flame in The Flood&lt;/td&gt;
+&lt;td&gt;digital&lt;/td&gt;
+&lt;td&gt;1 or less&lt;/td&gt;
+&lt;td&gt;n/a&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;By the way, &lt;strong&gt;NO&lt;/strong&gt;, I didn't lick the cartridge.&lt;/p&gt;
+&lt;p&gt;All I can say is that Nintendo did it again. If only Sony would have &lt;em&gt;invested&lt;/em&gt;
+slightly more in the PS Vita (which I also own), I think that this could have been
+more of a &lt;em&gt;battle&lt;/em&gt;, rather than just stealing the show without any competition.&lt;/p&gt;
+&lt;p&gt;The dual &lt;em&gt;function&lt;/em&gt; of the Switch is the prime thing that makes it apart and
+contributed to its resounding success.&lt;/p&gt;
+&lt;p&gt;After all, we all know that the Switch was been &lt;a href="https://www.nintendo.com/games/detail/doom-switch"&gt;DOOMed&lt;/a&gt; from the get go, right?&lt;/p&gt;
+&lt;a name="End"&gt;&lt;/a&gt;
+&lt;h2&gt;End&lt;/h2&gt;
+&lt;p&gt;And here we are. Before I wrap this up though, my game of the year has been
+The Legend of Zelda: BOTW, without any doubts. I mean, it's quite self evident
+given the number of hours I sank into it.&lt;/p&gt;
+&lt;p&gt;Oh and also, after many years of using Meslo LG Mono as my primary font, a few
+months ago I made the switch to IBM Plex Mono. So far so good, but it still
+remains to be seen if I'll revert, because I am not totally convinced just yet.&lt;/p&gt;
+&lt;p&gt;Until next time, as server said, &lt;strong&gt;END OF LINE&lt;/strong&gt;.&lt;/p&gt;</content>
+	<category term="nye"/><category term="resolution"/><category term="projects"/><category term="opensource"/>
+</entry>
 
 <entry>
 	<title type="html">Extending Notepad</title>

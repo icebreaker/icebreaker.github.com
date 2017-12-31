@@ -1,0 +1,257 @@
+<html>
+	<head>
+		
+		<title>
+		
+		
+			2017 Shakedown - Mihail Szabolcs
+		
+		
+		</title>
+		
+		<!-- Content Type -->
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<!-- Favicon -->
+		<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" /> 
+		<!-- Atom Feed -->
+		<link href="http://feeds.feedburner.com/mihailco" rel="alternate" title="Mihail Szabolcs" type="application/atom+xml" /> 
+		<!-- Default -->
+		<link rel="stylesheet" type="text/css" href="/css/default.css" />
+		<!-- Pygments Syntax  -->
+		<link rel="stylesheet" type="text/css" href="/css/syntax.css" />
+		<!-- Blog  -->
+		<link rel="stylesheet" type="text/css" href="/css/blog.css" />
+		<!-- Fonts -->
+		<link href="http://fonts.googleapis.com/css?family=Droid+Sans|Droid+Sans+Mono|Andada" rel="stylesheet" type="text/css" />
+		
+		
+		
+	</head>
+	<body>
+		
+		
+		<a href="http://github.com/icebreaker/icebreaker.github.com"><img style="position: fixed; top: 0; right: 0; border: 0; z-index: 1000;" src="/images/ribbon.png" alt="Fork me on GitHub"></a>
+		<div class="header">
+			<div class="text">
+				<div class="align left"></div>
+				<ul class="align right">
+					<li><a href="/">home</a></li>
+					<li><a href="/games">games</a></li>
+					<li><a href="/proudify">projects</a></li>
+					<li><a href="http://github.com/icebreaker/dotfiles">dotfiles</a></li>
+					<li><a href="/about">about</a></li>
+					<li><a href="http://feeds.feedburner.com/mihailco">rss</a></li>
+				</ul>
+				<div class="clear"></div>
+			</div>
+		</div>
+		
+		
+		<div class="propaganda_6"></div>
+		
+		<div class="content">
+			
+<a name="2017 Shakedown"></a>
+<h1>2017 Shakedown</h1>
+<div class="plus">
+	<g:plusone size="medium"></g:plusone>
+</div>
+<div class="align right">
+	 written on December 31, 2017
+</div>
+<div class="clear"></div>
+
+			<p>Oh, it's <em>dat time</em> of the year again. All in all, it was a good year, but aren't they all good?</p>
+<p>To put things into perspective, here are some charts <em>generated</em> by <a href="https://github.com/icebreaker">GitHub</a>.</p>
+<h4>2017</h4>
+<p><img alt="" src="/images/github/2017.png" /></p>
+<h4>2016</h4>
+<p><img alt="" src="/images/github/2016.png" /></p>
+<h4>2015</h4>
+<p><img alt="" src="/images/github/2015.png" /></p>
+<p>A tad bit less <em>contributions</em> this year, compared to 2016, but as you can see on the chart it has been
+"more concentrated" (meaning, more dark green spots).</p>
+<a name="Fz2D"></a>
+<h2>Fz2D</h2>
+<p><a href="https://github.com/icebreaker/fz2d">Fz2D</a> received a batch of small updates, but it still didn't graduate from alpha to 
+beta, like I would have hoped.</p>
+<p>With the advent of ES5 and ES6 being rolled out in all major browsers, I feel like the 5
+minutes of fame of CoffeeScript <em>expired</em> and we can start writing slightly more structured
+things in pure JS, without resorting to all those 1998 style tricks.</p>
+<p>All that being said, most likely I will "transpile" the code-base into <em>modern JS</em> with a tool
+like <a href="https://github.com/decaffeinate/decaffeinate">decaffeinate</a> and then of course clean it by hand as necessary.</p>
+<p>Feel free to take a peek at the documentation available over <a href="http://mihail.co/fz2d/docs">here</a>.</p>
+<a name="Simon8"></a>
+<h2>Simon8</h2>
+<p>In other news, I <em>ported</em> my <a href="https://en.wikipedia.org/wiki/CHIP-8">Chip 8</a> <em>emulator</em> (<em>read: interpreter</em>) to JavaScript via <a href="https://github.com/kripken/emscripten">emscripten</a>.</p>
+<p>You can check it out over <a href="http://mihail.co/simon8/">here</a>.</p>
+<a name="Testa"></a>
+<h2>Testa</h2>
+<p>I also released Testa which is a <em>portable</em> single file <em>"(unit) test framework"</em> for C/C++.</p>
+<p><img alt="" src="/images/2017/testa.png" /></p>
+<p>You can check it out over <a href="https://github.com/icebreaker/testa">here</a>.</p>
+<a name="ASMToy"></a>
+<h2>ASMToy</h2>
+<p>This was something that I wanted to try out for quite some time now.</p>
+<p>ASMToy is <em>dosbox</em> compiled to JavaScript running a modified <a href="https://flatassembler.net/">Flat Assembler</a> IDE for
+DOS.</p>
+<p>The changes do not let you reboot or escape the confines of the IDE.</p>
+<p><img alt="" src="/images/2017/asmtoy.png" /></p>
+<p>In effect, it lets you play with 16-bit <em>assembly</em> in DOS, right in your browser.</p>
+<a name="Doom Brush"></a>
+<h2>Doom Brush</h2>
+<p>This has been inspired by <a href="https://twitter.com/JoshuaSkelly">Joshua Skelly's</a> work, who is writing a small tool that
+can "transpile" a TMX Map (produced by the <a href="http://www.mapeditor.org/">Tiled</a> 2D map editor) into a Quake <em>map</em>.</p>
+<p>In my case, I had two goals:</p>
+<ol>
+<li>"transpile" a Wavefront OBJ model file into brushes and entities</li>
+<li>write a Tiled plugin exporter plugin, that can export "object layers" as brushes
+and entities; with the brushes being constructed from the "polygon" objects defined
+within the editor itself (should be reasonably simple ..)</li>
+</ol>
+<p>Managed to <em>achieve</em> the first goal and I am quite happy with the <em>library</em> I wrote,
+but it still needs a little bit of clean-up, because some the of API is a bit
+confusing at the moment.</p>
+<p><img alt="" src="/images/2017/db.png" /></p>
+<p>As far as the second goal is concerned, I managed to "sketch" out the skeleton of the
+exporter plugin, but didn't get to implement any of the actual functionality.</p>
+<p>I'll release the source code most likely sometime next year.</p>
+<a name="Nixel"></a>
+<h2>Nixel</h2>
+<p>Yet again, my primary focus has been <em>Nixel</em> which is the codename of the game engine
+and framework I've been hacking on for ages.</p>
+<p>This year, I managed to figure out a number of technical conundrums and investigated
+which "GUI framework" to use for the <em>tools</em>. In the end, I just decided to
+roll my own "Immediate Mode GUI" (IMGUI), because everything had too many dependencies
+or some weird and intricate layout system.</p>
+<p>For some time, I considered that perhaps Electron could be the answer, because now that
+we have <em>flexbox</em>, one doesn't have to resort to "floating elements" and "tables" to make
+reasonably <em>complicated</em> layouts.</p>
+<p>But in the end, it felt like pulling in way too many dependencies and that is something
+that I am paying enormous amounts of attention to.</p>
+<p>One of the primary problems of both closed and open source projects are dependencies.</p>
+<p>If the dependencies are hard to <em>install</em> or hard <em>build</em> and not self-contained enough
+to be <em>bundled</em> with the project, then it becomes a nightmare to build and maintain
+the project. In turn this will automatically increase the barrier of entry for <em>new</em>
+contributors, as well as hinder porting and general maintenance over time.</p>
+<p>I also decided to roll with JS as a scripting language, relying on the excellent
+<a href="http://duktape.org/">Duktape</a>, instead of Lua. We'll see how this will pan out in the long run,
+but so far it appears that it will be "fast" enough and the GC can be kept under
+control.</p>
+<p>You have to realize that, we are talking about a very tight event loop, where every
+millisecond is precious and one wants to waste as few as possible.</p>
+<p>Next year, I'll try to delve into these things in a little bit more detail, so you 
+can expect more content from me, rather than the average of 1-2 posts per year,
+which is nothing less than appalling if you ask me.</p>
+<a name="Nintendo Switch"></a>
+<h2>Nintendo Switch</h2>
+<p>Like millions of people around this piece of this of a rock floating in space, I got
+a Nintendo Switch, shortly after its release, together with the <a href="https://www.nintendo.com/amiibo/detail/wolf-link-amiibo">Wolf Link Amiibo</a>.</p>
+<p><iframe width="760" height="428" src="https://www.youtube.com/embed/oFkF6j-mcDY" frameborder="0" allowfullscreen></iframe></p>
+<table>
+<thead>
+<tr>
+<th>Game</th>
+<th>Medium</th>
+<th>Hours Played</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>The Legend of Zelda: BOTW</td>
+<td>cartridge</td>
+<td>200+</td>
+<td>n/a</td>
+</tr>
+<tr>
+<td>Kingdom</td>
+<td>digital</td>
+<td>30+</td>
+<td>n/a</td>
+</tr>
+<tr>
+<td>Skyrim</td>
+<td>digital</td>
+<td>10+</td>
+<td>n/a</td>
+</tr>
+<tr>
+<td>Snake Pass</td>
+<td>digital</td>
+<td>2 or less</td>
+<td>n/a</td>
+</tr>
+<tr>
+<td>Mario Kart 8 Deluxe</td>
+<td>digital</td>
+<td>1 or less</td>
+<td>n/a</td>
+</tr>
+<tr>
+<td>Oceanhorn</td>
+<td>digital</td>
+<td>1 or less</td>
+<td>n/a</td>
+</tr>
+<tr>
+<td>Shephy</td>
+<td>digital</td>
+<td>1 or less</td>
+<td>n/a</td>
+</tr>
+<tr>
+<td>Morphite</td>
+<td>digital</td>
+<td>1 or less</td>
+<td>n/a</td>
+</tr>
+<tr>
+<td>Little Inferno</td>
+<td>digital</td>
+<td>1 or less</td>
+<td>completed on PC</td>
+</tr>
+<tr>
+<td>World of Goo</td>
+<td>digital</td>
+<td>1 or less</td>
+<td>completed on PC</td>
+</tr>
+<tr>
+<td>The Flame in The Flood</td>
+<td>digital</td>
+<td>1 or less</td>
+<td>n/a</td>
+</tr>
+</tbody>
+</table>
+<p>By the way, <strong>NO</strong>, I didn't lick the cartridge.</p>
+<p>All I can say is that Nintendo did it again. If only Sony would have <em>invested</em>
+slightly more in the PS Vita (which I also own), I think that this could have been
+more of a <em>battle</em>, rather than just stealing the show without any competition.</p>
+<p>The dual <em>function</em> of the Switch is the prime thing that makes it apart and
+contributed to its resounding success.</p>
+<p>After all, we all know that the Switch was been <a href="https://www.nintendo.com/games/detail/doom-switch">DOOMed</a> from the get go, right?</p>
+<a name="End"></a>
+<h2>End</h2>
+<p>And here we are. Before I wrap this up though, my game of the year has been
+The Legend of Zelda: BOTW, without any doubts. I mean, it's quite self evident
+given the number of hours I sank into it.</p>
+<p>Oh and also, after many years of using Meslo LG Mono as my primary font, a few
+months ago I made the switch to IBM Plex Mono. So far so good, but it still
+remains to be seen if I'll revert, because I am not totally convinced just yet.</p>
+<p>Until next time, as server said, <strong>END OF LINE</strong>.</p>
+			
+
+		</div>
+		
+		<div class="footer">
+			<div class="text">
+				<div class="clear"></div>
+			</div>
+		</div>
+		
+		
+	</body>
+</html>
