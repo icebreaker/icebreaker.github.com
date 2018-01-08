@@ -17,7 +17,7 @@ Why I am saying that it's "almost" there? Well, there are two important reason f
 
 First, we have to make sure that everybody on this piece of rock is *connected*, because 
 right now only about 47% of the peoples of Earth have access to the _internet_. The situation
-is getting better by the day, but it has to improving at a lot faster pace.
+is getting better by the day, but it has to start improving at a lot faster pace.
 
 Second, we need to figure out and build a FTF (read: *"faster-than-fiber"*) *network*, considering
 that Mars is around 13 *light minutes* away, our current so called technology stack is just not going
