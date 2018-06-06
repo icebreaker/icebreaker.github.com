@@ -13,9 +13,9 @@ covering both [desktop](http://en.wikipedia.org/wiki/Desktop_application) and
 [web](http://en.wikipedia.org/wiki/Web_application).
 
 I'm working for [Reea](http://reea.net), developing [open source software](http://en.wikipedia.org/wiki/Open-source_software), 
-running <s>[Ubuntu](http://ubuntu.com)</s>
+running <s>[Red Hat](https://redhat.com)</s> <s>[Debian](https://debian.org)</s> <s>[Fedora](http://getfedora.org)</s> <s>[Ubuntu](https://ubuntu.com)</s>
 <s>[Crunchbang](http://crunchbanglinux.org/)</s>
-[OpenSuse](http://opensuse.org), bootstraping
+<s>[OpenSuse](https://opensuse.org)</s> [Arch](https://www.archlinux.org), bootstraping
 <s>[LeraGames](http://leragames.com)</s> [Olen Games](http://olengames.com), 
 listening to [gangsta rap](http://en.wikipedia.org/wiki/Gangsta_rap), 
 still not loving police, but definitely loving 

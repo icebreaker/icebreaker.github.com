@@ -6,6 +6,63 @@ propaganda: 5
 This page contains a selection of my **game** related projects.
 For a complete list of *all my projects* please click [here](/proudify).
 
+Floppy Bird (OS)
+----------------
+Floppy Bird (OS) is a clone of the infamous Flappy Bird written in 16 bit (x86) assembly.
+
+![](/images/games/floppybirdos.gif)
+
+You can find out more about it over
+[here](http://github.com/icebreaker/floppybird).
+
+ZeeCraft
+--------
+ZeeCraft is a mini Minecraft clone in 588 lines of C.
+
+![](/images/games/zeecraft.gif)
+
+You can find out more about it over
+[here](http://github.com/icebreaker/zeecraft).
+
+Simon8
+------
+Simon8 is a Chip 8 disassembler and emulator written in C.
+
+![](/images/games/simon8.png)
+
+You can find out more about it over
+[here](http://github.com/icebreaker/simon8).
+
+Nvx
+---
+NVX is an image **"voxalizer"** written in C. It will take a 2D image and create a 3D model.
+
+![](/images/games/nvx.png)
+
+You can find out more about it over [here](http://github.com/icebreaker/nvx).
+
+Fz2D
+----
+Fz2D is a 2D game engine and framework written in CoffeeScript. 
+
+![](/images/games/fz2d.png)
+
+You can find out more about it over [here](http://github.com/icebreaker/fz2d).
+
+2dimagefilter
+-------------
+I *forked* [2dimagefilter](https://code.google.com/p/2dimagefilter/) and removed all exotic *GUI*
+crap, basically everything that wasn't *implemented* by Mono.
+
+The command line interface is now usable on any platform where Mono is supported.
+
+```bash
+ImageResizer /load in.png /resize auto "XBR 4x(2,thresholds=0,vbounds=wrap)" /save out.png
+```
+
+You can find out more about it over
+[here](http://github.com/icebreaker/2dimagefilter).
+
 Menhir
 ------
 A simple puzzle game.
@@ -47,29 +104,6 @@ Minimalist *Breakout clone*.
 
 If you want to play it, you can do so by clicking [here](/3).
 
-2dimagefilter
--------------
-I *forked* [2dimagefilter](https://code.google.com/p/2dimagefilter/) and removed all exotic *GUI*
-crap, basically everything that wasn't *implemented* by Mono.
-
-The command line interface is now usable on any platform where Mono is supported.
-
-```bash
-ImageResizer /load in.png /resize auto "XBR 4x(2,thresholds=0,vbounds=wrap)" /save out.png
-```
-
-You can find out more about it over
-[here](http://github.com/icebreaker/2dimagefilter).
-
-Simon8
-------
-Simon8 is a Chip 8 disassembler and emulator written in C.
-
-![](/images/games/simon8.png)
-
-You can find out more about it over
-[here](http://github.com/icebreaker/simon8).
-
 Snakr
 -----
 Snakr is a "Snake clone" with a twist.
@@ -80,24 +114,6 @@ You can find out more about it over
 [here](http://github.com/icebreaker/snakr). If you just want to play it, you
 can do so by clicking
 [here](/snakr).
-
-ZeeCraft
---------
-ZeeCraft is a mini Minecraft clone in 588 lines of C.
-
-![](/images/games/zeecraft.gif)
-
-You can find out more about it over
-[here](http://github.com/icebreaker/zeecraft).
-
-Floppy Bird (OS)
-----------------
-Floppy Bird (OS) is a clone of the infamous Flappy Bird written in 16 bit (x86) assembly.
-
-![](/images/games/floppybirdos.gif)
-
-You can find out more about it over
-[here](http://github.com/icebreaker/floppybird).
 
 Paper Balloon
 -------------
@@ -143,22 +159,6 @@ It that runs in your standard terminal and requires **ncurses**.
 
 You can find out more about it over
 [here](https://gist.github.com/icebreaker/156be660281ab5dcb5b4).
-
-Fz2D
-----
-Fz2D is a 2D game engine and framework written in CoffeeScript. 
-
-![](/images/games/fz2d.png)
-
-You can find out more about it over [here](http://github.com/icebreaker/fz2d).
-
-Nvx
----
-NVX is an image **"voxalizer"** written in C. It will take a 2D image and create a 3D model.
-
-![](/images/games/nvx.png)
-
-You can find out more about it over [here](http://github.com/icebreaker/nvx).
 
 Kruto.js
 --------
