@@ -13,7 +13,7 @@ Floppy Bird (OS) is a clone of the infamous Flappy Bird written in 16 bit (x86) 
 ![](/images/games/floppybirdos.gif)
 
 You can find out more about it over
-[here](http://github.com/icebreaker/floppybird).
+[here](https://github.com/icebreaker/floppybird).
 
 ZeeCraft
 --------
@@ -22,7 +22,7 @@ ZeeCraft is a mini Minecraft clone in 588 lines of C.
 ![](/images/games/zeecraft.gif)
 
 You can find out more about it over
-[here](http://github.com/icebreaker/zeecraft).
+[here](https://github.com/icebreaker/zeecraft).
 
 Simon8
 ------
@@ -31,23 +31,7 @@ Simon8 is a Chip 8 disassembler and emulator written in C.
 ![](/images/games/simon8.png)
 
 You can find out more about it over
-[here](http://github.com/icebreaker/simon8).
-
-Nvx
----
-NVX is an image **"voxalizer"** written in C. It will take a 2D image and create a 3D model.
-
-![](/images/games/nvx.png)
-
-You can find out more about it over [here](http://github.com/icebreaker/nvx).
-
-Fz2D
-----
-Fz2D is a 2D game engine and framework written in CoffeeScript. 
-
-![](/images/games/fz2d.png)
-
-You can find out more about it over [here](http://github.com/icebreaker/fz2d).
+[here](https://github.com/icebreaker/simon8).
 
 2dimagefilter
 -------------
@@ -61,7 +45,23 @@ ImageResizer /load in.png /resize auto "XBR 4x(2,thresholds=0,vbounds=wrap)" /sa
 ```
 
 You can find out more about it over
-[here](http://github.com/icebreaker/2dimagefilter).
+[here](https://github.com/icebreaker/2dimagefilter).
+
+Fz2D
+----
+Fz2D is a 2D game engine and framework written in CoffeeScript. 
+
+![](/images/games/fz2d.png)
+
+You can find out more about it over [here](https://github.com/icebreaker/fz2d).
+
+Nvx
+---
+NVX is an image **"voxalizer"** written in C. It will take a 2D image and create a 3D model.
+
+![](/images/games/nvx.png)
+
+You can find out more about it over [here](https://github.com/icebreaker/nvx).
 
 Menhir
 ------
@@ -70,29 +70,29 @@ A simple puzzle game.
 ![](/images/games/menhir.png)
 
 You can find out more about it over
-[here](http://github.com/icebreaker/menhir). If you just want to play it, you
+[here](https://github.com/icebreaker/menhir). If you just want to play it, you
 can do so by clicking
 [here](/menhir).
 
 Deermas
 -------
-A mini adventure game for [Maral](http://twitter.com/_maral).
+A mini adventure game for [Maral](https://twitter.com/_maral).
 
 ![](/images/games/deermas.png)
 
 You can find out more about it over
-[here](http://github.com/icebreaker/deermas). If you just want to play it, you
+[here](https://github.com/icebreaker/deermas). If you just want to play it, you
 can do so by clicking
 [here](/deermas).
 
 Bricks of Babel
 ---------------
-Bricks of Babel is a physics based tower building game. Initially built for [Ludum Dare](http://ludumdare.com).
+Bricks of Babel is a physics based tower building game. Initially built for [Ludum Dare](https://ludumdare.com).
 
 ![](/images/games/bob.png)
 
 You can find out more about it over
-[here](http://github.com/icebreaker/bricksofbabel). If you just want to play it, you
+[here](https://github.com/icebreaker/bricksofbabel). If you just want to play it, you
 can do so by clicking
 [here](/bricksofbabel).
 
@@ -111,7 +111,7 @@ Snakr is a "Snake clone" with a twist.
 ![](/images/games/snakr.png)
 
 You can find out more about it over
-[here](http://github.com/icebreaker/snakr). If you just want to play it, you
+[here](https://github.com/icebreaker/snakr). If you just want to play it, you
 can do so by clicking
 [here](/snakr).
 
@@ -122,7 +122,7 @@ Paper Balloon is a small tower defense game written in JavaScript.
 ![](/images/games/paperballoon.png)
 
 You can find out more about it over
-[here](http://github.com/icebreaker/paperballoon). If you just want to play it, you
+[here](https://github.com/icebreaker/paperballoon). If you just want to play it, you
 can do so by clicking
 [here](/paperballoon).
 
@@ -134,7 +134,7 @@ for **Ludum Dare 31**.
 ![](/images/games/ndd.png)
 
 You can find out more about it over
-[here](http://github.com/icebreaker/ninedotsdungeon). If you just want to play it, you
+[here](https://github.com/icebreaker/ninedotsdungeon). If you just want to play it, you
 can do so by clicking
 [here](/ninedotsdungeon).
 
@@ -145,7 +145,7 @@ Ancestria: Mini is a math-3 style game written in Action Script 3.
 ![](/images/games/ancestriamini.png)
 
 You can find out more about it over
-[here](http://github.com/icebreaker/ancestria-mini). If you just want to play it, you
+[here](https://github.com/icebreaker/ancestria-mini). If you just want to play it, you
 can do so by clicking
 [here](http://www.kongregate.com/games/c0d3rguy/ancestria-mini).
 
@@ -170,7 +170,7 @@ It is written in C++.
 ![](/images/games/kruto.png)
 
 You can find out more about it over
-[here](http://github.com/icebreaker/kruto.js).
+[here](https://github.com/icebreaker/kruto.js).
 
 Kruto+
 ------
@@ -180,7 +180,7 @@ written in C++.
 ![](/images/games/kruto.png)
 
 You can find out more about it over
-[here](http://github.com/icebreaker/krutoplus).
+[here](https://github.com/icebreaker/krutoplus).
 
 KrutoC
 ------
@@ -191,7 +191,7 @@ height="448" frameborder="0" webkitallowfullscreen mozallowfullscreen
 allowfullscreen></iframe>
 
 You can find out more about it over
-[here](http://github.com/icebreaker/krutoc).
+[here](https://github.com/icebreaker/krutoc).
 
 GIMP Font Atlas Creator
 -----------------------
