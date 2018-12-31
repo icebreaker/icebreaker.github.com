@@ -1,0 +1,274 @@
+<html>
+	<head>
+		
+		<title>
+		
+		
+			2018 Shakedown - Mihail Szabolcs
+		
+		
+		</title>
+		
+		<!-- Content Type -->
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<!-- Favicon -->
+		<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" /> 
+		<!-- Atom Feed -->
+		<link href="http://feeds.feedburner.com/mihailco" rel="alternate" title="Mihail Szabolcs" type="application/atom+xml" /> 
+		<!-- Default -->
+		<link rel="stylesheet" type="text/css" href="/css/default.css" />
+		<!-- Pygments Syntax  -->
+		<link rel="stylesheet" type="text/css" href="/css/syntax.css" />
+		<!-- Blog  -->
+		<link rel="stylesheet" type="text/css" href="/css/blog.css" />
+		<!-- Fonts -->
+		<link href="//fonts.googleapis.com/css?family=Droid+Sans|Droid+Sans+Mono|Andada" rel="stylesheet" type="text/css" />
+		
+		
+		
+	</head>
+	<body>
+		
+		
+		<a href="//github.com/icebreaker/icebreaker.github.com"><img style="position: fixed; top: 0; right: 0; border: 0; z-index: 1000;" src="/images/ribbon.png" alt="Fork me on GitHub"></a>
+		<div class="header">
+			<div class="text">
+				<div class="align left"></div>
+				<ul class="align right">
+					<li><a href="/">home</a></li>
+					<li><a href="/games">games</a></li>
+					<li><a href="/proudify">projects</a></li>
+					<li><a href="//github.com/icebreaker/dotfiles">dotfiles</a></li>
+					<li><a href="/about">about</a></li>
+					<li><a href="http://feeds.feedburner.com/mihailco">rss</a></li>
+				</ul>
+				<div class="clear"></div>
+			</div>
+		</div>
+		
+		
+		<div class="propaganda_1"></div>
+		
+		<div class="content">
+			
+<a name="2018 Shakedown"></a>
+<h1>2018 Shakedown</h1>
+<div class="plus">
+	<g:plusone size="medium"></g:plusone>
+</div>
+<div class="align right">
+	 written on December 31, 2018
+</div>
+<div class="clear"></div>
+
+			<p>Another glorious year is behind us and I'm here typing up a short <em>summary</em> of what I've been
+hacking on during the year.</p>
+<p>All that being said, let me start by sharing the mandatory <strong>"last year in commits"</strong> chart generated
+by GitHub.</p>
+<p><img alt="" src="/images/github/2018.png" /></p>
+<a name="Sakura"></a>
+<h2>Sakura</h2>
+<p>I've been a long time <a href="https://en.wikipedia.org/wiki/Terminator_(terminal_emulator)">terminator</a> user, but as the years went by it got slower and slower,
+and buggier. Because of this, I ended up forking <a href="https://github.com/icebreaker/sakura">sakura</a> and adding a couple of missing
+features like borderless window, etc.</p>
+<a name="Parsello"></a>
+<h2>Parsello</h2>
+<p>Parsello is a <em>portable</em> single file parser/lexer/tokenizer written in ANSI C (89).</p>
+<h3>Facts</h3>
+<ul>
+<li>minimalist API</li>
+<li>small and lightweight (~ 450 LOC)</li>
+<li>reasonably fast</li>
+<li>zero copy and zero memory allocations</li>
+<li>no dependencies (C std only)</li>
+<li>compiles on your toaster (C89 and up)</li>
+<li>doesn't touch the "source input" string</li>
+<li>single file</li>
+</ul>
+<div class="highlight"><pre><span></span><span class="cp">#define PRS_IMPLEMENTATION</span>
+<span class="cp">#include</span> <span class="cpf">&quot;prs.h&quot;</span><span class="cp"></span>
+
+<span class="k">const</span> <span class="kt">char</span> <span class="o">*</span><span class="n">s</span> <span class="o">=</span> <span class="s">&quot;...&quot;</span><span class="p">;</span>
+
+<span class="p">...</span>
+
+<span class="n">prs_context_t</span> <span class="n">ctx</span><span class="p">;</span>
+<span class="n">prs_token_t</span> <span class="n">token</span><span class="p">;</span>
+
+<span class="n">prs_init</span><span class="p">(</span><span class="o">&amp;</span><span class="n">ctx</span><span class="p">,</span> <span class="n">s</span><span class="p">);</span>
+
+<span class="k">while</span><span class="p">(</span><span class="n">prs_parse</span><span class="p">(</span><span class="o">&amp;</span><span class="n">ctx</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">token</span><span class="p">))</span>
+  <span class="n">printf</span><span class="p">(</span><span class="s">&quot;&#39;%.*s&#39; of type %s on line %d</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span>
+         <span class="n">token</span><span class="o">-&gt;</span><span class="n">len</span><span class="p">,</span> <span class="n">token</span><span class="o">-&gt;</span><span class="n">s</span><span class="p">,</span> <span class="n">prs_token_type_to_str</span><span class="p">(</span><span class="n">token</span><span class="p">),</span> <span class="n">token</span><span class="o">-&gt;</span><span class="n">line</span><span class="p">);</span>
+
+<span class="p">...</span>
+</pre></div>
+
+<p>You can check it out over <a href="https://github.com/icebreaker/parsello">here</a>.</p>
+<a name="O2D3M"></a>
+<h2>O2D3M</h2>
+<p>This project started as a plugin for <a href="https://www.mapeditor.org/">Tiled</a>, but then I turned it into its
+own standalone command line utility and made it work with a Wavefront OBJ file,
+rather than a Tiled <em>map</em>.</p>
+<p>What it does? Well, it takes a Wavefront OBJ file, parses out all the meshes
+and turns them into brushes and entities thus producing a DOOM3 map, which
+then can be <em>compiled</em> via <em>dmap</em>.</p>
+<p><img alt="" src="/images/2018/o2d3m.png" /></p>
+<p><iframe width="985" height="554" src="https://www.youtube.com/embed/7Hsy--jAUQE" frameborder="0" allowfullscreen></iframe></p>
+<p>You can learn more about it over <a href="https://github.com/icebreaker/o2d3m">here</a>.</p>
+<a name="Testa"></a>
+<h2>Testa</h2>
+<p>Made some improvements to Testa, my <em>portable</em> single file <em>"(unit) test framework"</em> for C/C++.</p>
+<div class="highlight"><pre><span></span><span class="cp">#include</span> <span class="cpf">&quot;testa.h&quot;</span><span class="cp"></span>
+
+<span class="kt">int</span> <span class="nf">sample_magic_numbers</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span>
+<span class="p">{</span>
+    <span class="kt">int</span> <span class="n">a</span> <span class="o">=</span> <span class="mi">42</span><span class="p">;</span>
+
+    <span class="n">TESTA_ASSERT_EQUAL</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="mi">13</span><span class="p">);</span>
+
+    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="kt">int</span> <span class="nf">sample_more_magic_numbers</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span>
+<span class="p">{</span>
+    <span class="kt">int</span> <span class="n">b</span> <span class="o">=</span> <span class="mi">42</span><span class="p">;</span>
+
+    <span class="n">TESTA_ASSERT_EQUAL</span><span class="p">(</span><span class="n">b</span><span class="p">,</span> <span class="mi">42</span><span class="p">);</span>
+
+    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="kt">int</span> <span class="nf">sample_that_will_be_skipped</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span>
+<span class="p">{</span>
+    <span class="n">TESTA_SKIP</span><span class="p">();</span>
+
+    <span class="n">TESTA_ASSERT_NOT_EQUAL</span><span class="p">(</span><span class="mi">13</span><span class="p">,</span> <span class="mi">13</span><span class="p">);</span>
+
+    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="kt">int</span> <span class="nf">sample_is_not_null</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span>
+<span class="p">{</span>
+    <span class="kt">int</span> <span class="o">*</span><span class="n">p</span> <span class="o">=</span> <span class="nb">NULL</span><span class="p">;</span>
+
+    <span class="n">TESTA_ASSERT</span><span class="p">(</span><span class="n">p</span> <span class="o">!=</span> <span class="nb">NULL</span><span class="p">);</span>
+
+    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="kt">int</span> <span class="nf">sample_pointer_equality</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span>
+<span class="p">{</span>
+    <span class="kt">int</span> <span class="o">*</span><span class="n">p</span> <span class="o">=</span> <span class="nb">NULL</span><span class="p">;</span>
+
+    <span class="n">TESTA_ASSERT_EQUAL</span><span class="p">(</span><span class="n">p</span><span class="p">,</span> <span class="nb">NULL</span><span class="p">);</span>
+
+    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="kt">int</span> <span class="nf">sample_swap_numbers</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span>
+<span class="p">{</span>
+    <span class="kt">int</span> <span class="n">a</span> <span class="o">=</span> <span class="mi">13</span><span class="p">,</span> <span class="n">b</span> <span class="o">=</span> <span class="mi">14</span><span class="p">,</span> <span class="n">tmp</span><span class="p">;</span>
+
+    <span class="n">tmp</span> <span class="o">=</span> <span class="n">a</span><span class="p">;</span>
+    <span class="n">a</span> <span class="o">=</span> <span class="n">b</span><span class="p">;</span>
+    <span class="n">b</span> <span class="o">=</span> <span class="n">a</span><span class="p">;</span>
+
+    <span class="n">TESTA_ASSERT_EQUAL</span><span class="p">(</span><span class="n">tmp</span><span class="p">,</span> <span class="mi">13</span><span class="p">);</span>
+    <span class="n">TESTA_ASSERT_EQUAL</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="mi">14</span><span class="p">);</span>
+    <span class="n">TESTA_ASSERT_EQUAL</span><span class="p">(</span><span class="n">b</span><span class="p">,</span> <span class="mi">13</span><span class="p">);</span>
+
+    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="n">TESTA_SUITE_BEGIN</span>
+    <span class="n">TESTA_GROUP_BEGIN</span><span class="p">(</span><span class="s">&quot;sample test group&quot;</span><span class="p">)</span>
+        <span class="n">TESTA_TEST</span><span class="p">(</span><span class="n">sample_magic_numbers</span><span class="p">)</span>
+        <span class="n">TESTA_TEST</span><span class="p">(</span><span class="n">sample_more_magic_numbers</span><span class="p">)</span>
+        <span class="n">TESTA_TEST</span><span class="p">(</span><span class="n">sample_that_will_be_skipped</span><span class="p">)</span>
+        <span class="n">TESTA_TEST</span><span class="p">(</span><span class="n">sample_is_not_null</span><span class="p">)</span>
+        <span class="n">TESTA_GROUP_BEGIN</span><span class="p">(</span><span class="s">&quot;sample sub test group&quot;</span><span class="p">)</span>
+            <span class="n">TESTA_TEST</span><span class="p">(</span><span class="n">sample_pointer_equality</span><span class="p">)</span>
+            <span class="n">TESTA_TEST</span><span class="p">(</span><span class="n">sample_swap_numbers</span><span class="p">)</span>
+        <span class="n">TESTA_GROUP_END</span>
+    <span class="n">TESTA_GROUP_END</span>
+<span class="n">TESTA_SUITE_END</span>
+</pre></div>
+
+<p>And the results can be seen on the screenshot below.</p>
+<p><img alt="" src="/images/2017/testa.png" /></p>
+<p>You can check it out over <a href="https://github.com/icebreaker/testa">here</a>.</p>
+<a name="LSL"></a>
+<h2>LSL</h2>
+<p>While <strong>LSL</strong> (<em>Lua Shading Language</em>) is not something I ended up <em>releasing</em> just yet,
+it was a fun little experiment composed of devising a <em>pure</em> Lua based DSL to output
+GLSL 1.2.</p>
+<p><img alt="" src="/images/2018/lsl.jpg" /></p>
+<p>The idea would be that one has "different" backends that can output HLSL, GLSL, MLSL, etc
+from a common source language, without abusing a <em>preprocessor</em> or writing an actual <em>parser</em>.</p>
+<p>This is very much inspired by some of the <a href="http://petenpaja.blogspot.com/2016/11/shinobi-shader-system.html">work</a> of <a href="https://twitter.com/petrih3/">Petri Hakkinen</a>.</p>
+<a name="Sobinka"></a>
+<h2>Sobinka</h2>
+<p>Sobinka is a portable 2D game engine and framework written in C and it started as a small
+experimental sandbox that I've started building to test out a couple of the <em>game ideas</em>
+that I've been toying around with the past 2 years.</p>
+<p>It's made of a <em>thin</em> shell written in C that exposes relatively low level functionality
+via an <em>immediate mode</em> Lua API, which then can be used to build a game or
+even a regular desktop app.</p>
+<p><img alt="" src="/images/2018/sobinka.png" /></p>
+<p>Version <em>1.0.0</em> will support Linux, Windows, macOS (OSX) and HTML5 (web) via emscripten.</p>
+<div class="highlight"><pre><span></span><span class="kd">local</span> <span class="n">tiled</span> <span class="o">=</span> <span class="n">import</span> <span class="s1">&#39;com.tiled&#39;</span>
+
+<span class="kd">local</span> <span class="n">state</span> <span class="o">=</span> <span class="n">state</span> <span class="ow">or</span> <span class="p">{}</span>
+
+<span class="kr">function</span> <span class="nf">soa_on_init</span><span class="p">()</span>
+    <span class="n">soa_window_set_title</span><span class="p">(</span><span class="s1">&#39;Binding&#39;</span><span class="p">)</span>
+
+    <span class="n">state</span><span class="p">.</span><span class="n">texture_id</span> <span class="o">=</span> <span class="n">soa_renderer_texture_load</span><span class="p">(</span><span class="s1">&#39;textures/jerom&#39;</span><span class="p">)</span>
+    <span class="n">soa_renderer_set_texture</span><span class="p">(</span><span class="n">state</span><span class="p">.</span><span class="n">texture_id</span><span class="p">)</span>
+
+    <span class="n">state</span><span class="p">.</span><span class="n">map</span> <span class="o">=</span> <span class="n">tiled</span><span class="p">.</span><span class="n">find</span><span class="p">(</span><span class="s1">&#39;maps/e1m1&#39;</span><span class="p">)</span>
+<span class="kr">end</span>
+
+<span class="kr">function</span> <span class="nf">soa_on_frame</span><span class="p">(</span><span class="n">dt</span><span class="p">)</span>
+    <span class="n">soa_renderer_clear</span><span class="p">(</span><span class="n">SOA_RENDERER_CLEAR_COLOR</span><span class="p">)</span>
+
+    <span class="n">tiled</span><span class="p">.</span><span class="n">draw</span><span class="p">(</span><span class="n">state</span><span class="p">.</span><span class="n">map</span><span class="p">)</span>
+
+    <span class="n">soa_renderer_draw</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">64</span><span class="p">,</span> <span class="mi">64</span><span class="p">,</span> <span class="mi">128</span><span class="p">,</span> <span class="mi">128</span><span class="p">,</span> <span class="mi">64</span><span class="p">,</span> <span class="mi">64</span><span class="p">)</span>
+
+    <span class="n">soa_renderer_flush</span><span class="p">()</span>
+
+    <span class="kr">if</span> <span class="n">soa_input_mouse_clicked</span><span class="p">(</span><span class="n">SOA_MOUSE_BUTTON_LEFT</span><span class="p">)</span> <span class="kr">then</span>
+        <span class="n">soa_message_send</span><span class="p">(</span><span class="s1">&#39;mouse_clicked&#39;</span><span class="p">,</span> <span class="s1">&#39;message mouse&#39;</span><span class="p">)</span>
+    <span class="kr">end</span>
+<span class="kr">end</span>
+
+<span class="kr">function</span> <span class="nf">soa_on_message</span><span class="p">(</span><span class="n">id</span><span class="p">,</span> <span class="n">message</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;on message&#39;</span><span class="p">,</span> <span class="n">id</span><span class="p">,</span> <span class="n">message</span><span class="p">)</span>
+<span class="kr">end</span>
+
+<span class="kr">function</span> <span class="nf">soa_on_quit</span><span class="p">()</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;on quit&#39;</span><span class="p">)</span>
+<span class="kr">end</span>
+</pre></div>
+
+<p><img alt="" src="/images/2018/sobinka_example.png" /></p>
+<p>I intend to post some more in-depth information about some of the technical
+aspects and decisions, in 2019; most likely after the first <em>public release</em>.</p>
+<a name="End"></a>
+<h2>End</h2>
+<p>Until next time, as server said, <strong>END OF LINE</strong>.</p>
+			
+
+		</div>
+		
+		<div class="footer">
+			<div class="text">
+				<div class="clear"></div>
+			</div>
+		</div>
+		
+		
+	</body>
+</html>

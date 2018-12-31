@@ -9,9 +9,215 @@
 	<name>Mihail Szabolcs</name>
 </author>
 
-<updated>2018-01-08T00:00:00+02:00</updated>
+<updated>2018-12-31T00:00:00+02:00</updated>
 
 
+
+<entry>
+	<title type="html">2018 Shakedown</title>
+	<link href="http://mihail.co/2018/12/31/2018-shakedown"/>
+	<updated>2018-12-31T00:00:00+02:00</updated>
+	<id>http://mihail.co/2018/12/31/2018-shakedown</id>
+	<content type="html">&lt;p&gt;Another glorious year is behind us and I'm here typing up a short &lt;em&gt;summary&lt;/em&gt; of what I've been
+hacking on during the year.&lt;/p&gt;
+&lt;p&gt;All that being said, let me start by sharing the mandatory &lt;strong&gt;"last year in commits"&lt;/strong&gt; chart generated
+by GitHub.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="" src="http://mihail.co/images/github/2018.png" /&gt;&lt;/p&gt;
+&lt;a name="Sakura"&gt;&lt;/a&gt;
+&lt;h2&gt;Sakura&lt;/h2&gt;
+&lt;p&gt;I've been a long time &lt;a href="https://en.wikipedia.org/wiki/Terminator_(terminal_emulator)"&gt;terminator&lt;/a&gt; user, but as the years went by it got slower and slower,
+and buggier. Because of this, I ended up forking &lt;a href="https://github.com/icebreaker/sakura"&gt;sakura&lt;/a&gt; and adding a couple of missing
+features like borderless window, etc.&lt;/p&gt;
+&lt;a name="Parsello"&gt;&lt;/a&gt;
+&lt;h2&gt;Parsello&lt;/h2&gt;
+&lt;p&gt;Parsello is a &lt;em&gt;portable&lt;/em&gt; single file parser/lexer/tokenizer written in ANSI C (89).&lt;/p&gt;
+&lt;h3&gt;Facts&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;minimalist API&lt;/li&gt;
+&lt;li&gt;small and lightweight (~ 450 LOC)&lt;/li&gt;
+&lt;li&gt;reasonably fast&lt;/li&gt;
+&lt;li&gt;zero copy and zero memory allocations&lt;/li&gt;
+&lt;li&gt;no dependencies (C std only)&lt;/li&gt;
+&lt;li&gt;compiles on your toaster (C89 and up)&lt;/li&gt;
+&lt;li&gt;doesn't touch the "source input" string&lt;/li&gt;
+&lt;li&gt;single file&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="cp"&gt;#define PRS_IMPLEMENTATION&lt;/span&gt;
+&lt;span class="cp"&gt;#include&lt;/span&gt; &lt;span class="cpf"&gt;&amp;quot;prs.h&amp;quot;&lt;/span&gt;&lt;span class="cp"&gt;&lt;/span&gt;
+
+&lt;span class="k"&gt;const&lt;/span&gt; &lt;span class="kt"&gt;char&lt;/span&gt; &lt;span class="o"&gt;*&lt;/span&gt;&lt;span class="n"&gt;s&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="s"&gt;&amp;quot;...&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+
+&lt;span class="p"&gt;...&lt;/span&gt;
+
+&lt;span class="n"&gt;prs_context_t&lt;/span&gt; &lt;span class="n"&gt;ctx&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="n"&gt;prs_token_t&lt;/span&gt; &lt;span class="n"&gt;token&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+
+&lt;span class="n"&gt;prs_init&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="o"&gt;&amp;amp;&lt;/span&gt;&lt;span class="n"&gt;ctx&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;s&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
+
+&lt;span class="k"&gt;while&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;prs_parse&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="o"&gt;&amp;amp;&lt;/span&gt;&lt;span class="n"&gt;ctx&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="o"&gt;&amp;amp;&lt;/span&gt;&lt;span class="n"&gt;token&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;
+  &lt;span class="n"&gt;printf&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;&amp;#39;%.*s&amp;#39; of type %s on line %d&lt;/span&gt;&lt;span class="se"&gt;\n&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;
+         &lt;span class="n"&gt;token&lt;/span&gt;&lt;span class="o"&gt;-&amp;gt;&lt;/span&gt;&lt;span class="n"&gt;len&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;token&lt;/span&gt;&lt;span class="o"&gt;-&amp;gt;&lt;/span&gt;&lt;span class="n"&gt;s&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;prs_token_type_to_str&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;token&lt;/span&gt;&lt;span class="p"&gt;),&lt;/span&gt; &lt;span class="n"&gt;token&lt;/span&gt;&lt;span class="o"&gt;-&amp;gt;&lt;/span&gt;&lt;span class="n"&gt;line&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
+
+&lt;span class="p"&gt;...&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;You can check it out over &lt;a href="https://github.com/icebreaker/parsello"&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;a name="O2D3M"&gt;&lt;/a&gt;
+&lt;h2&gt;O2D3M&lt;/h2&gt;
+&lt;p&gt;This project started as a plugin for &lt;a href="https://www.mapeditor.org/"&gt;Tiled&lt;/a&gt;, but then I turned it into its
+own standalone command line utility and made it work with a Wavefront OBJ file,
+rather than a Tiled &lt;em&gt;map&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;What it does? Well, it takes a Wavefront OBJ file, parses out all the meshes
+and turns them into brushes and entities thus producing a DOOM3 map, which
+then can be &lt;em&gt;compiled&lt;/em&gt; via &lt;em&gt;dmap&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="" src="http://mihail.co/images/2018/o2d3m.png" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;iframe width="985" height="554" src="https://www.youtube.com/embed/7Hsy--jAUQE" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;&lt;/p&gt;
+&lt;p&gt;You can learn more about it over &lt;a href="https://github.com/icebreaker/o2d3m"&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;a name="Testa"&gt;&lt;/a&gt;
+&lt;h2&gt;Testa&lt;/h2&gt;
+&lt;p&gt;Made some improvements to Testa, my &lt;em&gt;portable&lt;/em&gt; single file &lt;em&gt;"(unit) test framework"&lt;/em&gt; for C/C++.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="cp"&gt;#include&lt;/span&gt; &lt;span class="cpf"&gt;&amp;quot;testa.h&amp;quot;&lt;/span&gt;&lt;span class="cp"&gt;&lt;/span&gt;
+
+&lt;span class="kt"&gt;int&lt;/span&gt; &lt;span class="nf"&gt;sample_magic_numbers&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="kt"&gt;void&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="kt"&gt;int&lt;/span&gt; &lt;span class="n"&gt;a&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mi"&gt;42&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+
+    &lt;span class="n"&gt;TESTA_ASSERT_EQUAL&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;a&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;13&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
+
+    &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+
+&lt;span class="kt"&gt;int&lt;/span&gt; &lt;span class="nf"&gt;sample_more_magic_numbers&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="kt"&gt;void&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="kt"&gt;int&lt;/span&gt; &lt;span class="n"&gt;b&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mi"&gt;42&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+
+    &lt;span class="n"&gt;TESTA_ASSERT_EQUAL&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;b&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;42&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
+
+    &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+
+&lt;span class="kt"&gt;int&lt;/span&gt; &lt;span class="nf"&gt;sample_that_will_be_skipped&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="kt"&gt;void&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="n"&gt;TESTA_SKIP&lt;/span&gt;&lt;span class="p"&gt;();&lt;/span&gt;
+
+    &lt;span class="n"&gt;TESTA_ASSERT_NOT_EQUAL&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;13&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;13&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
+
+    &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+
+&lt;span class="kt"&gt;int&lt;/span&gt; &lt;span class="nf"&gt;sample_is_not_null&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="kt"&gt;void&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="kt"&gt;int&lt;/span&gt; &lt;span class="o"&gt;*&lt;/span&gt;&lt;span class="n"&gt;p&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="nb"&gt;NULL&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+
+    &lt;span class="n"&gt;TESTA_ASSERT&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;p&lt;/span&gt; &lt;span class="o"&gt;!=&lt;/span&gt; &lt;span class="nb"&gt;NULL&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
+
+    &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+
+&lt;span class="kt"&gt;int&lt;/span&gt; &lt;span class="nf"&gt;sample_pointer_equality&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="kt"&gt;void&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="kt"&gt;int&lt;/span&gt; &lt;span class="o"&gt;*&lt;/span&gt;&lt;span class="n"&gt;p&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="nb"&gt;NULL&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+
+    &lt;span class="n"&gt;TESTA_ASSERT_EQUAL&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;p&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="nb"&gt;NULL&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
+
+    &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+
+&lt;span class="kt"&gt;int&lt;/span&gt; &lt;span class="nf"&gt;sample_swap_numbers&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="kt"&gt;void&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="kt"&gt;int&lt;/span&gt; &lt;span class="n"&gt;a&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mi"&gt;13&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;b&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mi"&gt;14&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;tmp&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+
+    &lt;span class="n"&gt;tmp&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;a&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="n"&gt;a&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;b&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+    &lt;span class="n"&gt;b&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;a&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+
+    &lt;span class="n"&gt;TESTA_ASSERT_EQUAL&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;tmp&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;13&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
+    &lt;span class="n"&gt;TESTA_ASSERT_EQUAL&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;a&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;14&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
+    &lt;span class="n"&gt;TESTA_ASSERT_EQUAL&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;b&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;13&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
+
+    &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+
+&lt;span class="n"&gt;TESTA_SUITE_BEGIN&lt;/span&gt;
+    &lt;span class="n"&gt;TESTA_GROUP_BEGIN&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;sample test group&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+        &lt;span class="n"&gt;TESTA_TEST&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;sample_magic_numbers&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+        &lt;span class="n"&gt;TESTA_TEST&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;sample_more_magic_numbers&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+        &lt;span class="n"&gt;TESTA_TEST&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;sample_that_will_be_skipped&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+        &lt;span class="n"&gt;TESTA_TEST&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;sample_is_not_null&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+        &lt;span class="n"&gt;TESTA_GROUP_BEGIN&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;sample sub test group&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+            &lt;span class="n"&gt;TESTA_TEST&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;sample_pointer_equality&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+            &lt;span class="n"&gt;TESTA_TEST&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;sample_swap_numbers&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+        &lt;span class="n"&gt;TESTA_GROUP_END&lt;/span&gt;
+    &lt;span class="n"&gt;TESTA_GROUP_END&lt;/span&gt;
+&lt;span class="n"&gt;TESTA_SUITE_END&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;And the results can be seen on the screenshot below.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="" src="http://mihail.co/images/2017/testa.png" /&gt;&lt;/p&gt;
+&lt;p&gt;You can check it out over &lt;a href="https://github.com/icebreaker/testa"&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;a name="LSL"&gt;&lt;/a&gt;
+&lt;h2&gt;LSL&lt;/h2&gt;
+&lt;p&gt;While &lt;strong&gt;LSL&lt;/strong&gt; (&lt;em&gt;Lua Shading Language&lt;/em&gt;) is not something I ended up &lt;em&gt;releasing&lt;/em&gt; just yet,
+it was a fun little experiment composed of devising a &lt;em&gt;pure&lt;/em&gt; Lua based DSL to output
+GLSL 1.2.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="" src="http://mihail.co/images/2018/lsl.jpg" /&gt;&lt;/p&gt;
+&lt;p&gt;The idea would be that one has "different" backends that can output HLSL, GLSL, MLSL, etc
+from a common source language, without abusing a &lt;em&gt;preprocessor&lt;/em&gt; or writing an actual &lt;em&gt;parser&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;This is very much inspired by some of the &lt;a href="http://petenpaja.blogspot.com/2016/11/shinobi-shader-system.html"&gt;work&lt;/a&gt; of &lt;a href="https://twitter.com/petrih3/"&gt;Petri Hakkinen&lt;/a&gt;.&lt;/p&gt;
+&lt;a name="Sobinka"&gt;&lt;/a&gt;
+&lt;h2&gt;Sobinka&lt;/h2&gt;
+&lt;p&gt;Sobinka is a portable 2D game engine and framework written in C and it started as a small
+experimental sandbox that I've started building to test out a couple of the &lt;em&gt;game ideas&lt;/em&gt;
+that I've been toying around with the past 2 years.&lt;/p&gt;
+&lt;p&gt;It's made of a &lt;em&gt;thin&lt;/em&gt; shell written in C that exposes relatively low level functionality
+via an &lt;em&gt;immediate mode&lt;/em&gt; Lua API, which then can be used to build a game or
+even a regular desktop app.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="" src="http://mihail.co/images/2018/sobinka.png" /&gt;&lt;/p&gt;
+&lt;p&gt;Version &lt;em&gt;1.0.0&lt;/em&gt; will support Linux, Windows, macOS (OSX) and HTML5 (web) via emscripten.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kd"&gt;local&lt;/span&gt; &lt;span class="n"&gt;tiled&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;import&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;com.tiled&amp;#39;&lt;/span&gt;
+
+&lt;span class="kd"&gt;local&lt;/span&gt; &lt;span class="n"&gt;state&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;state&lt;/span&gt; &lt;span class="ow"&gt;or&lt;/span&gt; &lt;span class="p"&gt;{}&lt;/span&gt;
+
+&lt;span class="kr"&gt;function&lt;/span&gt; &lt;span class="nf"&gt;soa_on_init&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+    &lt;span class="n"&gt;soa_window_set_title&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;Binding&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+
+    &lt;span class="n"&gt;state&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;texture_id&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;soa_renderer_texture_load&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;textures/jerom&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+    &lt;span class="n"&gt;soa_renderer_set_texture&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;state&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;texture_id&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+
+    &lt;span class="n"&gt;state&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;map&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;tiled&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;find&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;maps/e1m1&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="kr"&gt;end&lt;/span&gt;
+
+&lt;span class="kr"&gt;function&lt;/span&gt; &lt;span class="nf"&gt;soa_on_frame&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;dt&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+    &lt;span class="n"&gt;soa_renderer_clear&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;SOA_RENDERER_CLEAR_COLOR&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+
+    &lt;span class="n"&gt;tiled&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;draw&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;state&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;map&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+
+    &lt;span class="n"&gt;soa_renderer_draw&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;64&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;64&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;128&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;128&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;64&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;64&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+
+    &lt;span class="n"&gt;soa_renderer_flush&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+
+    &lt;span class="kr"&gt;if&lt;/span&gt; &lt;span class="n"&gt;soa_input_mouse_clicked&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;SOA_MOUSE_BUTTON_LEFT&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="kr"&gt;then&lt;/span&gt;
+        &lt;span class="n"&gt;soa_message_send&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;mouse_clicked&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;message mouse&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+    &lt;span class="kr"&gt;end&lt;/span&gt;
+&lt;span class="kr"&gt;end&lt;/span&gt;
+
+&lt;span class="kr"&gt;function&lt;/span&gt; &lt;span class="nf"&gt;soa_on_message&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;id&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;message&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+    &lt;span class="nb"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;on message&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;id&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;message&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="kr"&gt;end&lt;/span&gt;
+
+&lt;span class="kr"&gt;function&lt;/span&gt; &lt;span class="nf"&gt;soa_on_quit&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+    &lt;span class="nb"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;on quit&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="kr"&gt;end&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;img alt="" src="http://mihail.co/images/2018/sobinka_example.png" /&gt;&lt;/p&gt;
+&lt;p&gt;I intend to post some more in-depth information about some of the technical
+aspects and decisions, in 2019; most likely after the first &lt;em&gt;public release&lt;/em&gt;.&lt;/p&gt;
+&lt;a name="End"&gt;&lt;/a&gt;
+&lt;h2&gt;End&lt;/h2&gt;
+&lt;p&gt;Until next time, as server said, &lt;strong&gt;END OF LINE&lt;/strong&gt;.&lt;/p&gt;</content>
+	<category term="nye"/><category term="resolution"/><category term="projects"/><category term="opensource"/>
+</entry>
 
 <entry>
 	<title type="html">Multi-planetary species (Part 1)</title>
@@ -130,7 +336,7 @@ which is nothing less than appalling if you ask me.&lt;/p&gt;
 &lt;h2&gt;Nintendo Switch&lt;/h2&gt;
 &lt;p&gt;Like millions of people around this piece of this of a rock floating in space, I got
 a Nintendo Switch, shortly after its release, together with the &lt;a href="https://www.nintendo.com/amiibo/detail/wolf-link-amiibo"&gt;Wolf Link Amiibo&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;&lt;iframe width="760" height="428" src="https://www.youtube.com/embed/oFkF6j-mcDY" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;&lt;/p&gt;
+&lt;p&gt;&lt;iframe width="985" height="554" src="https://www.youtube.com/embed/oFkF6j-mcDY" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;&lt;/p&gt;
 &lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
@@ -1479,13 +1685,13 @@ than a good old CRT would.&lt;/p&gt;
 &lt;p&gt;The so called &lt;em&gt;"DYI holograms"&lt;/em&gt; have been circulating on the Internets for quite some time, but all
 efforts seem to be focused on &lt;em&gt;displaying&lt;/em&gt; animations, instead of &lt;em&gt;real-time&lt;/em&gt; applications, like
 video games.&lt;/p&gt;
-&lt;p&gt;&lt;iframe width="760" height="428" src="https://www.youtube.com/embed/nvJ70BThiHc" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;&lt;/p&gt;
+&lt;p&gt;&lt;iframe width="985" height="554" src="https://www.youtube.com/embed/nvJ70BThiHc" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;&lt;/p&gt;
 &lt;p&gt;Basically, you build a &lt;em&gt;pyramid&lt;/em&gt; and then you use a &lt;em&gt;tablet&lt;/em&gt; or another device to &lt;em&gt;project&lt;/em&gt; on it by
 placing it on the top, you can see this in action in the video above.&lt;/p&gt;
 &lt;p&gt;&lt;img alt="" src="http://mihail.co/images/hologram_pyramid.png" /&gt;&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;(Source: &lt;a href="http://myweb.fcu.edu.tw/~mhsung/NPDP/Tech/Papercraft/PC_EX20.htm"&gt;~mhsung&lt;/a&gt;)&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;In order to &lt;em&gt;achieve&lt;/em&gt; the effect, one has to &lt;em&gt;prepare&lt;/em&gt; a special &lt;em&gt;video&lt;/em&gt;, which you can see below.&lt;/p&gt;
-&lt;p&gt;&lt;iframe width="760" height="428" src="https://www.youtube.com/embed/TcUHV6bHOeg" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;&lt;/p&gt;
+&lt;p&gt;&lt;iframe width="985" height="554" src="https://www.youtube.com/embed/TcUHV6bHOeg" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;&lt;/p&gt;
 &lt;p&gt;What's really going on here? The answer is really simple. It's the same &lt;em&gt;thing&lt;/em&gt; rendered from 4 different
 angles, which is then &lt;em&gt;reflected&lt;/em&gt; on the 4 sides of the pyramid, giving the &lt;em&gt;illusion&lt;/em&gt; of a volumetric
 hologram.&lt;/p&gt;
@@ -1560,8 +1766,8 @@ without a shadow of a doubt, &lt;em&gt;silence and drum rolls&lt;/em&gt;, &lt;a 
 &lt;p&gt;To view all the photos I took in-game, click &lt;a href="https://firewatch.camera/EvergreenTwoForksFirs/"&gt;here&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;&lt;a href="https://twitter.com/thatjaneng"&gt;Jane Ng&lt;/a&gt; and the rest of the team did an amazing job when it comes
 to crafting the &lt;em&gt;world&lt;/em&gt; of Firewatch.&lt;/p&gt;
-&lt;p&gt;&lt;iframe width="760" height="428" src="https://www.youtube.com/embed/hTqmk1Zs_1I" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;&lt;/p&gt;
-&lt;p&gt;&lt;iframe width="760" height="428" src="https://www.youtube.com/embed/ZYnS3kKTcGg" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;&lt;/p&gt;
+&lt;p&gt;&lt;iframe width="985" height="554" src="https://www.youtube.com/embed/hTqmk1Zs_1I" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;&lt;/p&gt;
+&lt;p&gt;&lt;iframe width="985" height="554" src="https://www.youtube.com/embed/ZYnS3kKTcGg" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;&lt;/p&gt;
 &lt;p&gt;Until next time, as server said, &lt;strong&gt;END OF LINE&lt;/strong&gt;.&lt;/p&gt;</content>
 	<category term="nye"/><category term="resolution"/><category term="projects"/><category term="opensource"/>
 </entry>

@@ -15,4 +15,4 @@ class YouTubeProcessor(doxter.Processor):
         return content
 
     def compose(self, youtube_id):
-        return '<iframe width="760" height="428" src="https://www.youtube.com/embed/%s" frameborder="0" allowfullscreen></iframe>' % (youtube_id)
+        return '<iframe width="985" height="554" src="https://www.youtube.com/embed/%s" frameborder="0" allowfullscreen></iframe>' % (youtube_id)
