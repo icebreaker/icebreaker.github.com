@@ -4,7 +4,7 @@ title: Games
 propaganda: 5
 ---
 This page contains a selection of my **game** related projects.
-For a complete list of *all my projects* please click [here](/proudify).
+For a complete list of *all my projects* please click [here](//github.com/icebreaker).
 
 Floppy Bird (OS)
 ----------------
@@ -49,7 +49,7 @@ You can find out more about it over
 
 Fz2D
 ----
-Fz2D is a 2D game engine and framework written in CoffeeScript. 
+Fz2D is a 2D game engine and framework written in CoffeeScript.
 
 ![](/images/games/fz2d.png)
 
@@ -195,7 +195,7 @@ You can find out more about it over
 
 GIMP Font Atlas Creator
 -----------------------
-A small Script FU plugin for GIMP that creates font atlases. 
+A small Script FU plugin for GIMP that creates font atlases.
 Ideal for mono-spaced fonts.
 
 ![](/images/games/fatlas.png)
