@@ -42,7 +42,6 @@
 
 body
 {
-	font-family: 'Andada', 'Droid Sans', sans-serif;
 	font-size: 1.20em;
 	font-weight: 400;
 	width: 1024px;
@@ -59,7 +58,7 @@ body
 	border-right: 1px solid #E5E5E5;
 }
 
-.header, 
+.header,
 .footer
 {
 	margin: 0;
@@ -76,7 +75,7 @@ body
 	padding-top: 0;
 }
 
-.header .text, 
+.header .text,
 .footer .text
 {
 	width: 984px;
@@ -96,7 +95,7 @@ body
 
 .header ul
 {
-	list-style-type: none;	
+	list-style-type: none;
 	margin: 0;
 }
 
@@ -108,9 +107,7 @@ body
 
 .content h1, h2, h3, h4, h5, h6
 {
-/*	font-family: 'Arial Black', sans-serif;*/
 	text-transform: uppercase;
-/*	font-weight: 400;*/
 }
 
 .content h1
@@ -121,21 +118,20 @@ body
 	color: #B80000;
 }
 
-.content h2	
-{ 
+.content h2
+{
 	border-top: 0;
 	border-bottom: 2px solid #333333;
 }
 
 .content hr
-{ 
-	border: 1px solid #333333; 
+{
+	border: 1px solid #333333;
 }
 
 .content pre, .content code
 {
-	font-family: 'Droid Sans Mono', monospace;
-/*	background-color: #fdf6e3; */
+	font-family: monospace;
 	background-color: #F1F1F1;
 	background: -webkit-gradient(radial, 100 36, 0, 100 -40, 120, from(#FAFAFA), to(#F1F1F1)), #F1F1F1;
 	border: 1px solid #E5E5E5;
@@ -146,12 +142,12 @@ body
 {
 	-webkit-box-shadow: none;
 	border: 0;
-	padding: 0;	
+	padding: 0;
 }
 
 .content code
 {
-	font-family: 'Andada', 'Droid Sans';
+	font-family: monospace;
 	padding: 0;
 }
 
@@ -171,7 +167,7 @@ body
 .content .posts ul li
 {
 	padding: 5px 0;
-	border-bottom: 1px solid #E5E5E5; 
+	border-bottom: 1px solid #E5E5E5;
 }
 
 .content .posts ul li span
@@ -179,7 +175,7 @@ body
 	float: right;
 }
 
-.content table * tr 
+.content table * tr
 {
 	border-top: 1px solid #E5E5E5;
 }
@@ -190,12 +186,12 @@ body
 }
 
 .content table * tr th,
-.content table * tr td 
+.content table * tr td
 {
 	border: 1px solid #E5E5E5;
 }
 
-.content blockquote 
+.content blockquote
 {
 	color: #666666;
 }
