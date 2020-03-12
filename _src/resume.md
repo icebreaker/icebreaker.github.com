@@ -1,8 +1,7 @@
 ---
-header-includes: \pagenumbering{gobble}
 geometry: margin=4cm
 ---
-Résumé / Mihail Szabolcs
+Résumé - Mihail Szabolcs
 ========================
 My name is Mihail Szabolcs and I work as a senior software engineer/architect.
 
@@ -48,8 +47,14 @@ Reea (Software Agency) - reea.net
 
 Contact
 -------
-email: me@mihail.co
+email: **[me@mihail.co](me@mihail.co)**
 
-web: https://mihail.co
+web: **[mihail.co](https://mihail.co)**
 
-github: https://github.com/icebreaker
+github: **[github.com/icebreaker](https://github.com/icebreaker)**
+
+Page 2
+------
+In order to read this page, you must buy the "Page 2" DLC.
+
+Click **[here](https://mihail.co/resume.jpg)** to get 50% off.
