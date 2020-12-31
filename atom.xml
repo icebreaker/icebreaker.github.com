@@ -9,9 +9,130 @@
 	<name>Mihail Szabolcs</name>
 </author>
 
-<updated>2019-12-31T00:00:00+02:00</updated>
+<updated>2020-12-31T00:00:00+02:00</updated>
 
 
+
+<entry>
+	<title type="html">2020 Retrospective</title>
+	<link href="http://mihail.co/2020/12/31/2020-retrospective"/>
+	<updated>2020-12-31T00:00:00+02:00</updated>
+	<id>http://mihail.co/2020/12/31/2020-retrospective</id>
+	<content type="html">&lt;p&gt;It's that time of the year once more, however considering what a ghastly year
+2020 was, I will cut the &lt;em&gt;intro&lt;/em&gt; short and not antagonize you any further than
+absolutely necessary. If you were expecting wholesome eulogies, this is not the
+spot, and you might want to check out medium.&lt;/p&gt;
+&lt;p&gt;Before getting too much into the weeds of things, let's kick it off with the
+mandatory &lt;strong&gt;last year in commits&lt;/strong&gt; &lt;em&gt;chart&lt;/em&gt; kindly provided by GitHub.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="" src="http://mihail.co/images/github/2020.png" /&gt;&lt;/p&gt;
+&lt;p&gt;As you are probably aware by now, I am always hacking on multiple projects at
+any given time, and this year wasn't any different, despite all that has
+transpired. While on the surface, sometimes it might appear that my &lt;em&gt;side
+projects&lt;/em&gt; have nothing in common with each other, there's always some overlap
+even if only in the sense of building a proof of concept of some &lt;em&gt;piece&lt;/em&gt; that
+might fit into some of my other projects.&lt;/p&gt;
+&lt;p&gt;But, that's enough of that! Let's take a look at some of my highlights.&lt;/p&gt;
+&lt;a name="marmota"&gt;&lt;/a&gt;
+&lt;h2&gt;marmota&lt;/h2&gt;
+&lt;p&gt;&lt;img alt="" src="http://mihail.co/images/2020/marmota.png" /&gt;&lt;/p&gt;
+&lt;p&gt;Earlier this year I ended up releasing &lt;a href="https://github.com/icebreaker/marmota"&gt;marmota&lt;/a&gt;, an opinionated
+minimalist terminal emulator based on VTE.&lt;/p&gt;
+&lt;p&gt;It's roughly 600 lines of C, and all configuration is done at compile time.&lt;/p&gt;
+&lt;p&gt;It has all the basic features that one might expect from a &lt;em&gt;modern&lt;/em&gt; terminal
+emulator, including support for opening links, etc.&lt;/p&gt;
+&lt;p&gt;However, it doesn't have built-in support for &lt;em&gt;tabs&lt;/em&gt;, because you are better off
+with using a terminal multiplexer like tmux or screen to fulfill that need.&lt;/p&gt;
+&lt;a name="gustav.vim"&gt;&lt;/a&gt;
+&lt;h2&gt;gustav.vim&lt;/h2&gt;
+&lt;p&gt;Ended up writing another vim plugin, called &lt;a href="https://github.com/icebreaker/gustav.vim"&gt;gustav&lt;/a&gt;, which is a very simple
+GitHub Flavored Markdown compatible task/todo manager.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="" src="http://mihail.co/images/2020/gustav.gif" /&gt;&lt;/p&gt;
+&lt;p&gt;I also ended up making some enhancements to my previously released &lt;a href="https://github.com/icebreaker/asynctotem.vim"&gt;asynctotem.vim&lt;/a&gt;
+and &lt;a href="https://github.com/icebreaker/fastopen.vim"&gt;fastopen.vim&lt;/a&gt; plugins.&lt;/p&gt;
+&lt;a name="dose2"&gt;&lt;/a&gt;
+&lt;h2&gt;dose2&lt;/h2&gt;
+&lt;p&gt;Ported &lt;a href="https://www.pouet.net/prod.php?which=3289"&gt;dose2&lt;/a&gt; by &lt;a href="http://mfx.scene.org/"&gt;mfx&lt;/a&gt; to WASM (web assembly) by leveraging &lt;a href="https://emscripten.org"&gt;emscripten&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="" src="http://mihail.co/images/2020/dose2.png" /&gt;&lt;/p&gt;
+&lt;p&gt;Click &lt;a href="http://mihail.co/dose2"&gt;here&lt;/a&gt; to see it in action.&lt;/p&gt;
+&lt;a name="DOSKit"&gt;&lt;/a&gt;
+&lt;h2&gt;DOSKit&lt;/h2&gt;
+&lt;p&gt;DOSKit is a "small framework" that I started putting together to allow one to
+write small hobbyist DOS games without the need to install a 16 bit compiler
+toolchain.&lt;/p&gt;
+&lt;p&gt;How is that possible? It turns out that one can &lt;em&gt;abuse&lt;/em&gt; gcc/clang and have it
+spit out 16-bit &lt;em&gt;compatible&lt;/em&gt; machine code, for the most part. Obviously, it's
+not without its problems, but hey it's jolly good fun to play around with stuff
+like this.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="" src="http://mihail.co/images/2020/doskit.png" /&gt;&lt;/p&gt;
+&lt;p&gt;In the screenshot above, you can see a small example embedding a TGA image with
+a palette and then &lt;em&gt;blitting&lt;/em&gt; it into &lt;em&gt;video memory&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;And yes, it &lt;em&gt;produces&lt;/em&gt; .COM files, which makes things more fun, because you have
+to limit yourself to 64K.&lt;/p&gt;
+&lt;p&gt;It's not ready for prime-time just yet, but I might manage to get it over the
+finish line and release it sometime next year.&lt;/p&gt;
+&lt;a name="maksu"&gt;&lt;/a&gt;
+&lt;h2&gt;maksu&lt;/h2&gt;
+&lt;p&gt;After using premake4 and then GeNIE for a number of years, I woke up one morning
+and said to myself, I am going to build my own "build automation tool", but
+unlike premake, it will combine Lua + Ninja into a single statically linked self
+contained executable, that will enable single command builds across Linux,
+MacOS, Windows and FreeBSD.&lt;/p&gt;
+&lt;p&gt;Cross-compilation will not be an &lt;em&gt;after thought&lt;/em&gt;, but rather a built-in as a
+core concept from the get go. Therefore, adding new toolchains (compilers,
+platforms) will not require hacks and monkey-patching.&lt;/p&gt;
+&lt;p&gt;You can just check-in the executable with the source code in your favorite
+source control system and bada-boom anyone who checks out the source code can
+build by running a single command. As with anything, there are and will be some
+&lt;em&gt;caveats&lt;/em&gt;, but nothing too out of the ordinary.&lt;/p&gt;
+&lt;p&gt;I know that this might sound too good to be true, and maybe some of you might
+even say, why on earth do we need another &lt;em&gt;build tool&lt;/em&gt;, but it's going to
+happen, hopefully sometime early next year if the stars and planets align.&lt;/p&gt;
+&lt;p&gt;Calling it &lt;code&gt;maksu&lt;/code&gt; for the time being, and as you probably guessed by now, it
+will be driven by a so called &lt;code&gt;Maksufile&lt;/code&gt;.&lt;/p&gt;
+&lt;a name="GitHub Arctic Code Vault"&gt;&lt;/a&gt;
+&lt;h2&gt;GitHub Arctic Code Vault&lt;/h2&gt;
+&lt;p&gt;The &lt;a href="https://archiveprogram.github.com/"&gt;Arctic Code Vault&lt;/a&gt; was something totally unexpected and perhaps one of
+the very few truly &lt;em&gt;cool&lt;/em&gt; things that have transpired this past year.&lt;/p&gt;
+&lt;p&gt;At least one of my personal projects, &lt;a href="https://github.com/icebreaker/floppybird"&gt;Floppy Bird&lt;/a&gt;, a boot-able &lt;em&gt;flappy bird&lt;/em&gt;
+clone that I wrote in 16 bit assembly, got included in the &lt;em&gt;vault&lt;/em&gt;. Even though
+this is one of my most popular projects of yesteryear's, its inclusion in the
+vault still caught me off guard.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="" src="http://mihail.co/images/games/floppybirdos.gif" /&gt;&lt;/p&gt;
+&lt;p&gt;What a pleasant surprise.&lt;/p&gt;
+&lt;p&gt;However, I do want to bring up the fact that there was little to no information
+to be found about this whole thing and I noticed that I got the "Arctic Code
+Vault" badge totally by accident, when looking at my GitHub profile.&lt;/p&gt;
+&lt;p&gt;Also, the criteria based on which eligible projects/repositories were chosen to
+be included in the vault should have been communicated in a better way, rather
+than being buried and very hard to find.&lt;/p&gt;
+&lt;a name="GitHub Codespaces"&gt;&lt;/a&gt;
+&lt;h2&gt;GitHub Codespaces&lt;/h2&gt;
+&lt;p&gt;A few months ago, I got &lt;em&gt;early access&lt;/em&gt; to &lt;a href="https://github.com/features/codespaces"&gt;GitHub Codespaces&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;What is &lt;em&gt;codespaces&lt;/em&gt;? Simply put, it allows you to open any GitHub repository in
+a purely web based IDE. And this IDE is really just a VSCode that runs in your
+browser, rather than as a &lt;em&gt;standalone&lt;/em&gt; executable via the means of &lt;em&gt;electron&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;It does look like a rather promising piece of technology. What makes it really
+convenient is that you get full shell access to the container that is spawned,
+which allows you to install any tools that you might need, expose ports, etc.&lt;/p&gt;
+&lt;p&gt;Another very convenient thing is that if you have a &lt;code&gt;dotfiles&lt;/code&gt; repository, it
+will pull it in and setup your "terminal" and environment automatically.&lt;/p&gt;
+&lt;p&gt;I might write a more comprehensive standalone review/article about it next year.&lt;/p&gt;
+&lt;a name="Thoughts on Go"&gt;&lt;/a&gt;
+&lt;h2&gt;Thoughts on Go&lt;/h2&gt;
+&lt;p&gt;With the advent of &lt;a href="https://golang.org/"&gt;Go&lt;/a&gt; 1.15.x, I thought that it's about high-time I give Go &lt;em&gt;a
+go&lt;/em&gt;, pun intended.&lt;/p&gt;
+&lt;p&gt;My initial impressions were good, but I still need to spend some more time with
+it and write something fairly non-trivial before jumping to or drawing any
+definitive conclusions.&lt;/p&gt;
+&lt;p&gt;There are &lt;em&gt;still&lt;/em&gt; a couple of things that might rub you the wrong way, if you
+are person who wrote any non-trivial amount of C/C++ (myself included), but it
+does look like a promising language to &lt;em&gt;complement&lt;/em&gt; C/C++, definitely not as a
+&lt;em&gt;replacement&lt;/em&gt;.&lt;/p&gt;
+&lt;a name="End"&gt;&lt;/a&gt;
+&lt;h2&gt;End&lt;/h2&gt;
+&lt;p&gt;Until next time, as server said, &lt;strong&gt;END OF LINE&lt;/strong&gt;.&lt;/p&gt;</content>
+	<category term="nye"/><category term="resolution"/><category term="projects"/><category term="opensource"/><category term="retrospective"/><category term="shakedown"/>
+</entry>
 
 <entry>
 	<title type="html">2019 Retrospective</title>
@@ -26,9 +147,6 @@ year no less.&lt;/p&gt;
 &lt;a name="Async Totem"&gt;&lt;/a&gt;
 &lt;h2&gt;Async Totem&lt;/h2&gt;
 &lt;p&gt;&lt;a href="https://github.com/icebreaker/asynctotem"&gt;Async Totem&lt;/a&gt; is a lean and mean async command runner for Vim 8 and later.&lt;/p&gt;
-&lt;p&gt;I am aware that this is really weird &lt;strong&gt;name&lt;/strong&gt; for a &lt;em&gt;vim plugin&lt;/em&gt;, but it works.
-Aren't there a metric of ton of these already?&lt;/p&gt;
-&lt;p&gt;Why write a new one?&lt;/p&gt;
 &lt;p&gt;The reasons for me writing this plugin are two fold. First, I thought that it
 was about time for me to check out the &lt;em&gt;async&lt;/em&gt; job support in Vim 8, and second
 I wanted to write a simple plugin leveraging it.&lt;/p&gt;
@@ -73,7 +191,7 @@ get by with the bare minimum, without sacrificing customizability or
 flexibility.&lt;/p&gt;
 &lt;p&gt;As far as fonts are concerned, I am still rolling with the excellent
 &lt;a href="https://github.com/IBM/plex"&gt;IBM Plex Mono&lt;/a&gt;. If you are looking for a fresh and new monospaced
-font for the New Year, you should definitely check it out!&lt;/p&gt;
+font for the New Year, you should most definitely check it out!&lt;/p&gt;
 &lt;a name="End"&gt;&lt;/a&gt;
 &lt;h2&gt;End&lt;/h2&gt;
 &lt;p&gt;Until next time, as server said, &lt;strong&gt;END OF LINE&lt;/strong&gt;.&lt;/p&gt;</content>
