@@ -1,0 +1,36 @@
+#!/usr/bin/env ruby
+# frozen_string_literal: true
+
+require "json"
+
+if ARGV.size != 1
+  puts format("usage: %s scheme", File.basename(__FILE__))
+  exit(-1)
+end
+
+COLOR_SCHEME = JSON.parse(File.read(format("%s.json", __FILE__)))
+
+if ARGV.first == "--colors"
+  puts "colors:"
+  puts COLOR_SCHEME.keys.map(&:to_s).map { |c| "  " + c }.join("\n")
+  exit(0)
+end
+
+scheme = ARGV.first.strip.downcase
+if !COLOR_SCHEME.key?(scheme)
+  puts format("'%s' is not a valid color scheme", scheme)
+  exit(-1)
+end
+
+def colorize(name, scheme)
+  css = File.read(format("css/%s.tpl", name))
+
+  COLOR_SCHEME[scheme].each do |name, color|
+    css.gsub!(format('$%s', name), color)
+  end
+
+  open(format("css/%s.css", name), "wb") { |f| f.write(css) }
+end
+
+colorize("style", scheme)
+colorize("syntax", scheme)

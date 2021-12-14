@@ -1,0 +1,261 @@
+<html>
+	<head>
+		<title>&lt;3</title>
+		<style type="text/css">
+		body
+		{
+			margin: 0;
+			padding: 0;
+			background-color: #C3060A;
+		}
+		canvas
+		{
+			background-color: #C3060A;
+			cursor: none;
+		}
+		</style>
+		<script type="text/javascript">
+function main()
+{
+	var w = window.innerWidth;
+	var h = window.innerHeight;
+
+	var canvas = document.getElementById('canvas');
+	canvas.width = w;
+	canvas.height = h;
+
+	var ctx = canvas.getContext('2d');
+	var last = new Date();
+	var now = last;
+	var dt = 0;
+	var speed = 0.4;
+
+	if(!window.requestAnimationFrame)
+	{
+		window.requestAnimationFrame = (function()
+				{
+				return window.webkitRequestAnimationFrame ||
+				window.mozRequestAnimationFrame ||
+				window.oRequestAnimationFrame ||
+				window.msRequestAnimationFrame ||
+				function(callback, element) { window.setTimeout(callback, 1000 / 60);  };
+				})();
+	}
+
+	var map = [
+		'#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#', '#',
+		'#', '#', '#', '#', '#', '#', '#', '@', '@', '#', '#', '#', '#',
+		'#', '#', '#', '#', '@', '@', '@', '#', '@', '#', '#', '#', '#',
+		'#', '#', '#', '#', '@', '#', '@', '#', '@', '@', '#', '#', '#',
+		'#', '#', '#', '#', '#', '#', '@', '#', '#', '#', '#', '#', '#', // ###
+		'#', '#', '@', '@', '@', '#', '@', '#', '@', '@', '@', '#', '#',
+		'#', '@', '@', '@', '@', '@', '@', '@', '@', '@', '@', '@', '#',
+		'@', '@', '@', '@', 'H', 'A', 'P', 'P', 'Y', '@', '@', '@', '@',
+		'@', '@', '@', '@', 'B', 'I', 'R', 'T', 'H', '@', '@', '@', '@',
+		'@', '@', '@', '@', '@', 'D', 'A', 'Y', '@', '@', '@', '@', '@',
+		'#', '@', '@', '@', '@', 'B', 'E', 'B', '@', '@', '@', '@', '#',
+		'#', '#', '@', '@', '@', 'E', 'N', 'C', '@', '@', '@', '#', '#',
+		'#', '#', '#', '@', '@', 'E', '<', '3', '@', '@', '#', '#', '#',
+		'#', '#', '#', '#', '@', 'B', 'A', 'E', '@', '#', '#', '#', '#',
+		'#', '#', '#', '#', '#', '@', '@', '@', '#', '#', '#', '#', '#',
+		'#', '#', '#', '#', '#', '#', '@', '#', '#', '#', '#', '#', '#'    
+	];
+
+	var blocks = [];
+
+	var center = (w - 13*25) / 2;
+	for(var y=0; y<16; y++)
+		for(var x=0; x<13; x++)
+		{
+			var c = map[x + y * 13];
+			if(c != '#')
+				blocks.push({ x: center + x * 25, y: 80 + y * 25, w: 20, h: 20, v: true, c: c });
+		}
+
+	var paddle = { x: 0, y: 0, w: 120, h: 20 };
+	paddle.x = (w - paddle.w) / 2;
+	paddle.y = (h - 80);
+
+	var ball = { x: 0, y: 0, w: 20, h: 20, dx: 1, dy: 1 };
+	ball.x  = (w - ball.w) / 2;
+	ball.y = paddle.y - 160;
+
+	var end = false;
+	var end_ct = 5;
+	var end_dt = 0;
+
+	if(navigator.userAgent.match(/firefox/i))
+	{
+		window.onmousemove = function(e)
+		{
+			if((e.layerX || e.layerX == 0) && (e.layerX >= 10) && (e.layerX + paddle.w <= w - 10))
+				paddle.x = e.layerX;
+		}
+	}
+	else
+	{
+		window.onmousemove = function(e)
+		{
+			if((e.offsetX || e.offsetX == 0) && (e.offsetX >= 10) && (e.offsetX + paddle.w <= w - 10))
+				paddle.x = e.offsetX;
+		}
+	}
+
+	window.onkeydown = function(e)
+	{
+		if(e.keyCode == 37 && paddle.x >= 10)
+			paddle.x -= dt * 0.9;
+		else if (e.keyCode == 39 && paddle.x + paddle.w <= w - 10)
+			paddle.x += dt * 0.9;
+	}
+
+	function collide(a, b)
+	{
+		if(a.x > b.x + b.w)
+			return false;
+
+		if(a.y > b.y + b.h)
+			return false;
+
+		if(a.x + a.w < b.x)
+			return false;
+
+		if(a.y + a.h < b.y)
+			return false;
+
+		return true;
+	}
+
+	function tick()
+	{
+		now = new Date();
+		dt = now - last;
+		last = now;
+
+		ctx.clearRect(0, 0, w, h);
+
+		if(end)
+		{
+			ctx.fillStyle = "#FFFFFF";
+			ctx.font = "bold 94px Arial";
+
+			end_dt += dt;
+			if(end_dt > 1000)
+			{
+				end_dt = 0;
+				if(end_ct-- == 0)
+				{
+					window.location.href = "http://goo.gl/Q0D1Ls";
+					return;
+				}
+			}
+
+			ctx.fillText(end_ct, (w-94)/2, (h-94)/2);
+			requestAnimationFrame(tick);
+
+			return;
+		}
+
+		ctx.fillStyle = "#FFFFFF";
+		ctx.font = "bold 20px Arial";
+
+		for(var i=0; i<blocks.length; i++)
+		{
+			var b = blocks[i];
+			if(b.v)
+			{
+				if(b.black)
+					ctx.fillStyle = "#000000";
+				else
+					ctx.fillStyle = "#FFFFFF";
+
+				ctx.fillRect(b.x, b.y, b.w, b.h);
+			}
+			else if(b.c != '@')
+			{
+				ctx.fillStyle = "#FFFFFF";
+				ctx.fillText(b.c, b.x, b.y + 18);
+			}
+		}
+
+		ctx.fillStyle = "#FFFFFF";
+
+		ctx.fillRect(ball.x, ball.y, ball.w, ball.h);
+		ctx.fillRect(paddle.x, paddle.y, paddle.w, paddle.h);
+
+		ball.x += (ball.dx * dt * speed);
+		ball.y += (ball.dy * dt * speed);
+
+		if(ball.x <= 0 || ball.x + ball.w >= w)
+		{
+			ball.dx = -ball.dx;
+
+			if(ball.x <= 0)
+				ball.x = 0;
+			else
+				ball.x = w - ball.w;
+		}
+
+		if(ball.y <= 0 || ball.y + ball.h >= h)
+		{
+			ball.dy = -ball.dy;
+
+			if(ball.y <= 0)
+				ball.y = 0;
+			else
+				ball.y = h - ball.h;
+		}
+
+		if(collide(ball, paddle))
+		{
+			if(ball.x < paddle.x + paddle.h/4)
+				ball.dx = -1;
+			else if(ball.x > paddle.x + paddle.h/4)
+				ball.dx =  1;
+
+			//ball.dx = -ball.dx;
+			ball.dy = -ball.dy;
+		}
+
+		for(var i=0; i<blocks.length; i++)
+		{
+			var b = blocks[i];
+			if(b.v && collide(b, ball))
+			{
+				if(ball.x < b.x + b.h/2)
+					ball.dx = -1;
+				else if(ball.x > b.x + b.h/2)
+					ball.dx =  1;
+
+				ball.dy = -ball.dy;
+
+				if(b.black)
+					b.v = false;
+				else
+					b.black = true;
+			}
+		}
+
+		end = true;
+		for(var i=0; i<blocks.length; i++)
+		{
+			var b = blocks[i];
+			if(b.v)
+			{
+				end = false;
+				break;
+			}
+		}
+		
+		requestAnimationFrame(tick);
+	}
+	tick();
+}
+
+window.onload = main;
+		</script>
+	</head>
+	<body>
+		<canvas id="canvas"></canvas>
+	</body>
+</html>

@@ -1,0 +1,11 @@
+function install()
+{
+	gem install jekyll
+}
+
+function serve()
+{
+	jekyll serve --drafts
+}
+
+# vim: set ft=bash:

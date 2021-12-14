@@ -1,0 +1,93 @@
+{
+  "www":
+  {
+    "background": "#ffffff",
+    "foreground": "#000000",
+    "highlight_light": "#b90000",
+    "highlight_dark": "#f0f0f0"
+  },
+  "borland":
+  {
+	"background": "#1818b2",
+	"foreground": "#ffffff",
+	"highlight_light": "#fcfc58",
+	"highlight_dark": "#b2b2b2"
+  },
+  "lagrange":
+  {
+    "background": "#181714",
+    "foreground": "#c6bf65",
+    "highlight_light": "#d5d3b0",
+    "highlight_dark": "#24231c"
+  },
+  "brown":
+  {
+	"background": "#4d362c",
+	"foreground": "#87724d",
+	"highlight_light": "#e1cd9e",
+	"highlight_dark": "#544f38"
+  },
+  "blue":
+  {
+	"background": "#0e0f37",
+	"foreground": "#ffffff",
+	"highlight_light": "#ffb921",
+	"highlight_dark": "#14294f"
+  },
+  "dark":
+  {
+	"background": "#121212",
+	"foreground": "#969696",
+	"highlight_light": "#bb86fc",
+	"highlight_dark": "#1e1e1e"
+  },
+  "armchair":
+  {
+	"background": "#eae7dc",
+	"foreground": "#323029",
+	"highlight_light": "#b90000",
+	"highlight_dark": "#d8c3a5"
+  },
+  "red":
+  {
+	"background": "#2b0805",
+	"foreground": "#ffe2aa",
+	"highlight_light": "#f1b400",
+	"highlight_dark": "#3a0905"
+  },
+  "red_v2":
+  {
+	"background": "#310703",
+	"foreground": "#b5b5c0",
+	"highlight_light": "#ffd783",
+	"highlight_dark": "#420803"
+  },
+  "red_v3":
+  {
+	"background": "#1b1211",
+	"foreground": "#af9c9a",
+	"highlight_light": "#955f5b",
+	"highlight_dark": "#281918"
+  },
+  "leon":
+  {
+	"background": "#0d0807",
+	"foreground": "#b9a89f",
+	"highlight_light": "#b6a063",
+	"highlight_dark": "#1f1a20"
+  },
+  "yellow":
+  {
+	"background": "#ffc833",
+	"foreground": "#312f28",
+	"highlight_light": "#336aff",
+	"highlight_dark": "#ffba00"
+  },
+  "gray":
+  {
+	"background": "#212223",
+	"foreground": "#ffffff",
+	"highlight_light": "#fa0000",
+	"highlight_dark": "#333333"
+  }
+}

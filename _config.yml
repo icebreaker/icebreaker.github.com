@@ -1,0 +1,30 @@
+title: Mihail Szabolcs
+author: Mihail Szabolcs
+email: me(at)mihail(dot)co
+description: Ramblings of a humble self-taught code gardener.
+url: https://mihail.co
+github:
+  username: icebreaker
+  url: https://github.com/icebreaker
+  dotfiles:
+    url: https://github.com/icebreaker/dotfiles
+  issue: https://github.com/icebreaker/icebreaker.github.com/issues
+rss:
+  url: https://feeds.feedburner.com/mihailco
+twitter:
+  url: https://twitter.com/c0d3rguy
+  status: https://twitter.com/c0d3rguy/status
+permalink: pretty
+collections:
+  pages:
+    output: true
+    permalink: /:path/
+exclude:
+  - bin/
+  - CNAME
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - .ruby-version
+  - css/style.tpl
+  - css/syntax.tpl

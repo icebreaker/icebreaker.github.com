@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>{{ site.title }}</title>
+  <link href="{{ site.url }}/atom.xml" rel="self"/>
+  <link href="{{ site.url }}"/>
+  <id>{{ site.url }}</id>
+  <author>
+	  <name>{{ site.author }}</name>
+    <email>{{ site.email }}</email>
+  </author>
+  {% if site.posts.size > 0 %}
+  <updated>{{ site.posts[0].date | date_to_xmlschema }}</updated>
+  {% else %}
+  <updated>{{ site.time | date_to_xmlschema }}</updated>
+  {% endif %}
+  {% assign img_url = 'src="' | append: site.url | append: "/" %}
+  {% assign href_url = 'href="' | append: site.url | append: "/" %}
+  {% for post in site.posts %}
+  <entry>
+	  <author>
+        <name>{{ site.author }}</name>
+	  </author>
+	  <title>{{ post.title }}</title>
+	  <link href="{{ site.url }}{{ post.url }}"/>
+	  <updated>{{ post.date | date_to_xmlschema }}</updated>
+	  <id>{{ site.url }}{{ post.url }}</id>
+	  <content type="html">
+		{{ post.content | replace: 'src="/',img_url | replace: 'href="/',href_url | xml_escape }}
+	  </content>
+  </entry>
+  {% endfor %}
+</feed>

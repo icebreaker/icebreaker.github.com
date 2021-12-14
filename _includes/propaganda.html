@@ -1,0 +1,4 @@
+{% if page.propaganda %}
+	{% assign propaganda = page.propaganda | prepend: '00' | slice: -2, 2  %}
+	<img class="propaganda" alt="propaganda" src="/media/propaganda/{{ propaganda }}.png" />
+{% endif %}
