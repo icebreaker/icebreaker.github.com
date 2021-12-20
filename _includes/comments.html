@@ -1,16 +1,14 @@
 <div class="comments">
 	<hr />
-	{% if page.issue or page.tweet %}
 	<p>
+		<span>{{ page.date | date: "%Y-%m-%d" }}</span>
 		{% if page.issue %}
-		<span><a href="{{ site.github.issue }}/{{ page.issue }}" target="_blank">Comments</a></span>
 		&nbsp;/&nbsp;
+		<span><a href="{{ site.github.issue }}/{{ page.issue }}" target="_blank">Comments</a></span>
 		{% endif %}
 		{% if page.tweet %}
-		<span><a href="{{ site.twitter.status }}/{{ page.tweet }}" target="_blank">Comments</a></span>
 		&nbsp;/&nbsp;
+		<span><a href="{{ site.twitter.status }}/{{ page.tweet }}" target="_blank">Comments</a></span>
 		{% endif %}
-		<span>{{ page.date | date: "%Y-%m-%d" }}</span>
 	</p>
-	{% endif %}
 </div>
