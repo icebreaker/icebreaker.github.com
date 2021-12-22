@@ -53,7 +53,6 @@ body
 :root
 {
   scrollbar-color: $foreground $highlight_dark !important;
-  scrollbar-width: 8px !important;
 }
 
 h1, h2, h3, h4, h5, h6
