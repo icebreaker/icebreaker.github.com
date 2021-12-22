@@ -7,7 +7,7 @@ body
 	text-rendering: optimizeLegibility;
 	text-align: justify;
 	text-justify: inter-word;
-	font-family: sans-serif;
+	font-family: 'Roboto', sans-serif;
 	font-size: 1.2rem;
 	line-height: 2rem;
 	background-color: #0d0807;
@@ -85,7 +85,7 @@ code
 
 pre
 {
-	font-family: monospace;
+	font-family: 'Roboto Mono', monospace;
 	overflow: auto;
 	display: block;
 	background-color: #1f1a20 !important;
@@ -95,7 +95,7 @@ pre
 
 pre code
 {
-	font-family: monospace;
+	font-family: 'Roboto Mono', monospace;
 	font-weight: normal;
 	tab-size: 4;
 	padding: 0;
