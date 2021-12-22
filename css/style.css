@@ -16,6 +16,20 @@ body
 	margin: 0 auto;
 }
 
+::-moz-selection
+{
+	background-color: #b9a89f;
+	color: #0d0807;
+	font-weight: bolder;
+}
+
+::selection
+{
+	background-color: #b9a89f;
+	color: #0d0807;
+	font-weight: bolder;
+}
+
 h1, h2, h3, h4, h5, h6
 {
 	padding: 0;

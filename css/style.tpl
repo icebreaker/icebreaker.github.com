@@ -16,6 +16,20 @@ body
 	margin: 0 auto;
 }
 
+::-moz-selection
+{
+	background-color: $foreground;
+	color: $background;
+	font-weight: bolder;
+}
+
+::selection
+{
+	background-color: $foreground;
+	color: $background;
+	font-weight: bolder;
+}
+
 h1, h2, h3, h4, h5, h6
 {
 	padding: 0;
