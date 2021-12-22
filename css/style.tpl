@@ -30,6 +30,32 @@ body
 	font-weight: bolder;
 }
 
+::-webkit-scrollbar
+{
+  width: 8px;
+}
+
+::-webkit-scrollbar-track
+{
+  background: $highlight_dark;
+}
+
+::-webkit-scrollbar-thumb
+{
+  background: $foreground;
+}
+
+::-webkit-scrollbar-thumb:hover
+{
+  background: $highlight_light;
+}
+
+:root
+{
+  scrollbar-color: $foreground $highlight_dark !important;
+  scrollbar-width: 8px !important;
+}
+
 h1, h2, h3, h4, h5, h6
 {
 	padding: 0;
