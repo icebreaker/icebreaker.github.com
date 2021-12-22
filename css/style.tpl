@@ -73,7 +73,7 @@ blockquote
 {
 	margin: 0;
 	padding-left: 10px;
-	border-left: 5px solid $foreground;
+	border-left: 8px solid $foreground;
 }
 
 code
@@ -123,7 +123,7 @@ img, iframe
 
 hr
 {
-	border: 3px solid $foreground;
+	border: 4px solid $foreground;
 	max-width: 320px;
 }
 
@@ -131,7 +131,7 @@ table
 {
 	border-collapse: collapse;
 	width: 100%;
-	border-bottom: 5px solid $foreground;
+	border-bottom: 8px solid $foreground;
 }
 
 table * tr th
