@@ -161,11 +161,6 @@ table * tr:nth-child(even)
 	font-weight: bolder;
 }
 
-.post-list table
-{
-	width: auto;
-}
-
 .post-list table td
 {
 	white-space: nowrap;
@@ -213,6 +208,30 @@ table * tr:nth-child(even)
 #music iframe
 {
 	border: 8px $foreground solid;
+}
+
+@media only screen and (max-width: 1024px)
+{
+	body
+	{
+		font-size: 0.9rem;
+		line-height: 1.6rem;
+	}
+
+	hr
+	{
+		max-width: 160px;
+	}
+
+	img, iframe
+	{
+		max-width: 100%;
+	}
+
+	.background
+	{
+		display: none;
+	}
 }
 
 @media only screen and (min-width: 1920px)
