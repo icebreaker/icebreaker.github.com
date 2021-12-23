@@ -30,3 +30,6 @@ License
 -------
 All content on this [blog](/) is available under the [CC BY-NC-SA 3.0](http://creativecommons.org/licenses/by-nc-sa/3.0/) license.
 
+Credits
+-------
+Video backgrounds by [Gamol](https://www.pexels.com/@gamol-755060).
