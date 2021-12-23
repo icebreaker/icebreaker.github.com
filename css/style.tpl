@@ -184,6 +184,7 @@ table * tr:nth-child(even)
 	top: 0;
 	bottom: 0;
 	z-index: -1;
+	display: none;
 }
 
 #music
@@ -227,10 +228,13 @@ table * tr:nth-child(even)
 	{
 		max-width: 100%;
 	}
+}
 
+@media only screen and (min-width: 1280px)
+{
 	.background
 	{
-		display: none;
+		display: block;
 	}
 }
 
