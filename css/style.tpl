@@ -190,3 +190,35 @@ table * tr:nth-child(even)
 	bottom: 0;
 	z-index: -1;
 }
+
+#music
+{
+	position: fixed;
+	right: 30px;
+	bottom: 30px;
+	z-index: 9999;
+	font-size: 48px;
+	width: 320px;
+	height: 180px;
+	text-align: center;
+	display: none;
+}
+
+#music a
+{
+	display: inline-block;
+	margin-top: 66px;
+}
+
+#music iframe
+{
+	border: 8px $foreground solid;
+}
+
+@media only screen and (min-width: 1920px)
+{
+	#music
+	{
+		display: block;
+	}
+}
