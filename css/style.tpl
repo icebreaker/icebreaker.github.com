@@ -115,7 +115,7 @@ a:hover
 	text-decoration: underline;
 }
 
-img, iframe
+img, iframe, .content video
 {
 	max-width: 1024px;
 }
@@ -224,7 +224,7 @@ table * tr:nth-child(even)
 		max-width: 160px;
 	}
 
-	img, iframe
+	img, iframe, .content video
 	{
 		max-width: 100%;
 	}
