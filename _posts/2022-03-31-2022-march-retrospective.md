@@ -10,7 +10,7 @@ music: fJy5FRrFI8U
 ===========
 Has been a month already? It does look like it. The weeks are just flying by like no tomorrow!
 
-At any rate, as promised, [Flordle][flordle], my boot-table and M$-DOS compatible text-mode [Wordle][wordle] clone, has indeed seen the light of day and is fresh out of my proverbial code oven. 
+At any rate, as promised, [Flordle][flordle], my boot-table and M$-DOS compatible text-mode [Wordle][wordle] clone, has indeed seen the light of day and is fresh out of my proverbial code oven.
 
 ![flordle](/media/2022/flordle.gif)
 
@@ -22,7 +22,7 @@ When I built and released [Floppy Bird][floppybird], there was one thing that I 
 
 It appears that certain BIOSes (in particular ones shipped with laptops) end up being too smart for their own good and attempt to patch the [BPB][bpb] (BIOS Parameter Block), which of course I didn't realize or know about. What this means is that, the BIOS ends up overwriting a few bytes after it loads up the boot sector (the first 512 bytes), which in turn messes everything up.
 
-To work around, it's best to define a BPB or at least reserve some empty spaces for it at the beginning of the boot sector and then **"jump"** over it with a **"near"** *(short)* jump.
+To work around, it's best to define a BPB or at least reserve some empty space for it at the beginning of the boot sector and then **"jump"** over it with a **"near"** *(short)* jump.
 
 ```nasm
 bits 16                           ; 16 bit mode
