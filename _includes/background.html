@@ -1,12 +1,14 @@
-{% if page.background or site.background %}
-	{% if page.background %}
-		{% assign background = page.background %}
-	{% else %}
-		{% assign background = site.background %}
-	{% endif %}
-	{% if background != 'none' %}
-		<video class="background" autoplay loop muted>
-			<source src="/media/misc/{{ background }}.mp4" type="video/mp4">
-		</video>
+{% if site.enable_background %}
+	{% if page.background or site.background %}
+		{% if page.background %}
+			{% assign background = page.background %}
+		{% else %}
+			{% assign background = site.background %}
+		{% endif %}
+		{% if background != 'none' %}
+			<video class="background" autoplay loop muted>
+				<source src="/media/misc/{{ background }}.mp4" type="video/mp4">
+			</video>
+		{% endif %}
 	{% endif %}
 {% endif %}

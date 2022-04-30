@@ -52,7 +52,7 @@ of sorts, which will let me separate these two (and more!) bad boys from the
 rest of my experimental work and put them into more of a front-and-center
 position so to speak.
 
-[![](/media/misc/olen_white.png)](https://olen.games)
+[![](/media/misc/olen_red.png)](https://olen.games)
 
 Having an umbrella like this has the added benefit of simplifying the process of
 naming things. How do people even name their children? In my case, I will just

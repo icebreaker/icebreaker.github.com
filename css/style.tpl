@@ -7,13 +7,12 @@ body
 	text-rendering: optimizeLegibility;
 	text-align: justify;
 	text-justify: inter-word;
-	font-family: 'Roboto', sans-serif;
+	font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif;
 	font-size: 1.2rem;
 	line-height: 2rem;
 	background-color: $background;
 	color: $foreground;
 	max-width: 1024px;
-	margin: 0 auto;
 }
 
 ::-moz-selection
@@ -32,7 +31,7 @@ body
 
 ::-webkit-scrollbar
 {
-  width: 8px;
+  width: 16px;
 }
 
 ::-webkit-scrollbar-track
@@ -85,7 +84,7 @@ code
 
 pre
 {
-	font-family: 'Roboto Mono', monospace;
+	font-family: Menlo,Monaco,'Courier New',monospace;
 	overflow: auto;
 	display: block;
 	background-color: $highlight_dark !important;

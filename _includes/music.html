@@ -1,18 +1,20 @@
-{% if page.music or site.music %}
-	{% if page.music %}
-		{% assign music = page.music %}
-	{% else %}
-		{% assign music = site.music %}
-	{% endif %}
-	{% if music != 'none' %}
-	<div id="music">
-		<a href="javascript:play('{{ music }}');">&#119136;</a>
-		<script type="text/javascript">
-		function play(id)
-		{
-			document.getElementById('music').innerHTML = '<iframe width="320" height="180" src="https://www.youtube.com/embed/' + id + '?autoplay=1&loop=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
-		}
-		</script>
-	</div>
+{% if site.enable_music %}
+	{% if page.music or site.music %}
+		{% if page.music %}
+			{% assign music = page.music %}
+		{% else %}
+			{% assign music = site.music %}
+		{% endif %}
+		{% if music != 'none' %}
+		<div id="music">
+			<a href="javascript:play('{{ music }}');">&#119136;</a>
+			<script type="text/javascript">
+			function play(id)
+			{
+				document.getElementById('music').innerHTML = '<iframe width="320" height="180" src="https://www.youtube.com/embed/' + id + '?autoplay=1&loop=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
+			}
+			</script>
+		</div>
+		{% endif %}
 	{% endif %}
 {% endif %}
