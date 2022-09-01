@@ -7,7 +7,7 @@ body
 	text-rendering: optimizeLegibility;
 	text-align: justify;
 	text-justify: inter-word;
-	font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif;
+	font-family: Verdana,-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif;
 	font-size: 1.2rem;
 	line-height: 2rem;
 	background-color: $background;
