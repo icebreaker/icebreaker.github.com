@@ -89,5 +89,12 @@
 	"foreground": "#ffffff",
 	"highlight_light": "#fa0000",
 	"highlight_dark": "#333333"
+  },
+  "choco":
+  {
+	"background": "#100F0F",
+	"foreground": "#A6A6A6",
+	"highlight_light": "#CC9544",
+	"highlight_dark": "#1F1F1F"
   }
 }

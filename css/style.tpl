@@ -231,6 +231,11 @@ table * tr:nth-child(even)
 
 @media only screen and (min-width: 1280px)
 {
+	body
+	{
+		margin: 0 auto;
+	}
+
 	.background
 	{
 		display: block;
@@ -239,6 +244,11 @@ table * tr:nth-child(even)
 
 @media only screen and (min-width: 1920px)
 {
+	body
+	{
+		margin: 0 auto;
+	}
+
 	#music
 	{
 		display: block;
