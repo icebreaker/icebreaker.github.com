@@ -5,7 +5,6 @@ typora-copy-images-to: ../media/2023
 title: Creating normal maps from diffuse maps
 propaganda: 5
 ---
-
 # Creating normal maps from diffuse maps
 
 When I looked around the inter-webs to see how people go about doing this, pretty much everybody and their grandmother was talking about using a [Sobel filter][sobel] as the one and only true way.
