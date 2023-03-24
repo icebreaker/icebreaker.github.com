@@ -59,6 +59,18 @@ h1, h2, h3, h4, h5, h6
 	padding: 0;
 	margin-bottom: 20px;
 	margin-top: 20px;
+	padding-bottom: 10px;
+	border-bottom: 8px solid $foreground;
+}
+
+h2
+{
+	padding-bottom: 4px;
+}
+
+h3, h4, h5, h6
+{
+	padding-bottom: 0px;
 }
 
 p
