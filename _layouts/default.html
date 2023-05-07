@@ -4,26 +4,33 @@
 		{% if page.title %}
 			<title>{{ page.title }} | {{ site.title }}</title>
 			<meta property="og:title" content="{{ page.title }} | {{ site.title }}" />
+			<meta property="twitter:title" content="{{ page.title }} | {{ site.title }}" />
 		{% else %}
 			<title>{{ site.title }}</title>
 			<meta property="og:title" content="{{ site.title }}" />
+			<meta property="twitter:title" content="{{ site.title }}" />
 		{% endif %}
 		<meta charset="utf-8">
 		{% if page.description %}
-			<meta name="og:description" content="{{ page.description }}">
 			<meta name="description" content="{{ page.description }}">
+			<meta name="og:description" content="{{ page.description }}">
+			<meta name="twitter:description" content="{{ page.description }}">
 		{% else %}
-			<meta name="og:description" content="{{ site.description }}">
 			<meta name="description" content="{{ site.description }}">
+			<meta name="twitter:description" content="{{ site.description }}">
 		{% endif %}
 		{% if page.image %}
 			<meta name="og:image" content="{{ page.image | absolute_url }}">
+			<meta name="twitter:image" content="{{ page.image | absolute_url }}">
 		{% else %}
 			<meta name="og:image" content="{{ site.image | absolute_url }}">
+			<meta name="twitter:image" content="{{ site.image | absolute_url }}">
 		{% endif %}
 		{% if page.url %}
 			<meta name="og:url" content="{{ page.url | absolute_url }}">
+			<meta name="twitter:url" content="{{ page.url | absolute_url }}">
 		{% endif %}
+		<meta name="twitter:card" content="summary">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta http-equiv="content-type" content="text/html; charset=utf-8">
