@@ -2,8 +2,8 @@
 <html>
 	<head>
 		{% if page.title %}
-			<title>{{ site.title }} | {{ page.title }}</title>
-			<meta property="og:title" content="{{ site.title }} | {{ page.title }}" />
+			<title>{{ page.title }} | {{ site.title }}</title>
+			<meta property="og:title" content="{{ page.title }} | {{ site.title }}" />
 		{% else %}
 			<title>{{ site.title }}</title>
 			<meta property="og:title" content="{{ site.title }}" />
