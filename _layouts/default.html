@@ -17,9 +17,12 @@
 			<meta name="description" content="{{ site.description }}">
 		{% endif %}
 		{% if page.image %}
-			<meta name="og:image" content="{{ page.image }}">
+			<meta name="og:image" content="{{ page.image | absolute_url }}">
 		{% else %}
-			<meta name="og:image" content="{{ site.image }}">
+			<meta name="og:image" content="{{ site.image | absolute_url }}">
+		{% endif %}
+		{% if page.url %}
+			<meta name="og:url" content="{{ page.url | absolute_url }}">
 		{% endif %}
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
