@@ -8,7 +8,12 @@ if ARGV.size != 1
   exit(-1)
 end
 
-COLOR_SCHEME = JSON.parse(File.read(format("%s.json", __FILE__)))
+COLOR_SCHEME = JSON.parse(File.read(format("%s.json", __FILE__))).each_value do |colors|
+  colors["highlight_code_identifier"] ||= colors["highlight_light"]
+  colors["highlight_code_alphanum"] ||= colors["highlight_code_identifier"]
+  colors["highlight_code_preprop"] ||= colors["highlight_code_identifier"]
+  colors["highlight_code_comment"] ||= colors["highlight_code_preprop"]
+end
 
 if ARGV.first == "--colors"
   puts "colors:"

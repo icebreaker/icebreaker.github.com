@@ -96,7 +96,7 @@ code
 
 pre
 {
-	font-family: 'JetBrains Mono NL SemiBold','Roboto Mono',monospace;
+	font-family: 'JetBrains Mono NL ExtraBold','Roboto Mono',monospace;
 	overflow: auto;
 	display: block;
 	background-color: $highlight_dark !important;
@@ -106,7 +106,7 @@ pre
 
 pre code
 {
-	font-family: 'JetBrains Mono NL SemiBold','Roboto Mono',monospace;
+	font-family: 'JetBrains Mono NL ExtraBold','Roboto Mono',monospace;
 	font-weight: normal;
 	tab-size: 4;
 	padding: 0;

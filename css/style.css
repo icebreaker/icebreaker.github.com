@@ -10,7 +10,7 @@ body
 	font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,Verdana,sans-serif;
 	font-size: 1.3rem;
 	line-height: 2rem;
-	background-color: #100F0F;
+	background-color: #000000;
 	color: #A6A6A6;
 	max-width: 1024px;
 }
@@ -18,14 +18,14 @@ body
 ::-moz-selection
 {
 	background-color: #A6A6A6;
-	color: #100F0F;
+	color: #000000;
 	font-weight: bolder;
 }
 
 ::selection
 {
 	background-color: #A6A6A6;
-	color: #100F0F;
+	color: #000000;
 	font-weight: bolder;
 }
 
@@ -36,7 +36,7 @@ body
 
 ::-webkit-scrollbar-track
 {
-  background: #1F1F1F;
+  background: #1C1C1C;
 }
 
 ::-webkit-scrollbar-thumb
@@ -46,12 +46,12 @@ body
 
 ::-webkit-scrollbar-thumb:hover
 {
-  background: #CC9544;
+  background: #BF6F00;
 }
 
 :root
 {
-  scrollbar-color: #A6A6A6 #1F1F1F !important;
+  scrollbar-color: #A6A6A6 #1C1C1C !important;
 }
 
 h1, h2, h3, h4, h5, h6
@@ -91,32 +91,32 @@ code
 	padding: 2.5px 6.5px;
 	font-weight: bolder;
 	background-color: #A6A6A6;
-	color: #100F0F;
+	color: #000000;
 }
 
 pre
 {
-	font-family: 'JetBrains Mono NL SemiBold','Roboto Mono',monospace;
+	font-family: 'JetBrains Mono NL ExtraBold','Roboto Mono',monospace;
 	overflow: auto;
 	display: block;
-	background-color: #1F1F1F !important;
+	background-color: #1C1C1C !important;
 	tab-size: 4;
 	padding: 10px;
 }
 
 pre code
 {
-	font-family: 'JetBrains Mono NL SemiBold','Roboto Mono',monospace;
+	font-family: 'JetBrains Mono NL ExtraBold','Roboto Mono',monospace;
 	font-weight: normal;
 	tab-size: 4;
 	padding: 0;
 	color: #A6A6A6;
-	background-color: #1F1F1F !important;
+	background-color: #1C1C1C !important;
 }
 
 a, a:active, a:visited, a:hover
 {
-	color: #CC9544;
+	color: #BF6F00;
 	text-decoration: none;
 	font-weight: bolder;
 }
@@ -146,7 +146,7 @@ table
 
 table * tr th
 {
-	background-color: #1F1F1F;
+	background-color: #1C1C1C;
 	font-weight: bolder;
 	text-align: left;
 }
@@ -158,7 +158,7 @@ table * tr th, table * tr td
 
 table * tr:nth-child(even)
 {
-	background-color: #1F1F1F;
+	background-color: #1C1C1C;
 }
 
 .nav
