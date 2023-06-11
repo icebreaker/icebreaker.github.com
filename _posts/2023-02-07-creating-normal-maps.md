@@ -18,6 +18,10 @@ Before we get started, let's pick a suitable test subject in the form of a rathe
 The first order of business is to turn the diffuse map into a height-map by converting every pixel into its gray-scale equivalent.
 
 ```c
+/*
+	MIT LICENSE
+	Copyright (c) 2023, Mihail Szabolcs
+*/
 typedef union
 {
     uint32_t opaque;
@@ -66,6 +70,10 @@ To do this, we simply sample 4 pixels around the current pixel, calculate the di
 We also `invert` the `green channel`, which holds the value of the `Y axis`, because we intend to use the normal map with OpenGL. In case of DirectX, this is [unnecessary][invertgreenchannel]. Obviously, this could also be inverted at run-time when the normal map is loaded or in a shader.
 
 ```c
+/*
+	MIT LICENSE
+	Copyright (c) 2023, Mihail Szabolcs
+*/
 #define minf(a, b) ((a) < (b) ? (a) : (b))
 #define maxf(a, b) ((a) > (b) ? (a) : (b))
 #define grayscalef(c) ((c.r + c.g + c.b) / 3.0f)
@@ -118,6 +126,10 @@ The `-33` is simply a magic number that is good enough and was chosen purely arb
 We also shift the curve to the right by `0.5` hence the `x - 0.5`.
 
 ```c
+/*
+	MIT LICENSE
+	Copyright (c) 2023, Mihail Szabolcs
+*/
 void build_normal_map(const rgba_t *input, rgba_t *output, int w, int h)
 {
     int x, y;
@@ -157,6 +169,10 @@ Quite an improvement compared to what we got before, with many of the finer deta
 It turns out that we can do away with most of the divisions by multiplying with the inverse and pre-calculate some of the index offsets on the `y` axis which lets us avoid some of the useless multiplications that we are currently doing when calculating the actual index into the input and the output arrays.
 
 ```c
+/*
+	MIT LICENSE
+	Copyright (c) 2023, Mihail Szabolcs
+*/
 #define GRAYSCALE_INV (1.0f / (3.0f * 255.0f))
 #define grayscalef(c) ((c.r + c.g + c.b) * GRAYSCALE_INV)
 
