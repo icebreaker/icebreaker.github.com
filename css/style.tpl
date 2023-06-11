@@ -60,7 +60,7 @@ h1, h2, h3, h4, h5, h6
 	margin-bottom: 20px;
 	margin-top: 20px;
 	padding-bottom: 10px;
-	border-bottom: 8px solid $foreground;
+	border-bottom: 8px solid $highlight_light;
 }
 
 h2
@@ -82,8 +82,9 @@ p
 blockquote
 {
 	margin: 0;
-	padding-left: 10px;
-	border-left: 8px solid $foreground;
+	padding: 10px;
+	border-left: 8px solid $highlight_light;
+	background-color: $highlight_dark;
 }
 
 code
@@ -133,7 +134,7 @@ img, iframe, .content video
 
 hr
 {
-	border: 4px solid $foreground;
+	border: 4px solid $highlight_light;
 	max-width: 320px;
 }
 
@@ -141,7 +142,7 @@ table
 {
 	border-collapse: collapse;
 	width: 100%;
-	border-bottom: 8px solid $foreground;
+	border-bottom: 8px solid $highlight_light;
 }
 
 table * tr th
