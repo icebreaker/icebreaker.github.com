@@ -7,7 +7,7 @@ body
 	text-rendering: optimizeLegibility;
 	text-align: justify;
 	text-justify: inter-word;
-	font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,Verdana,sans-serif;
+	font-family: -apple-system,BlinkMacSystemFont,Segoe UI,sans-serif;
 	font-size: 1.3rem;
 	line-height: 2rem;
 	background-color: $background;
@@ -59,18 +59,18 @@ h1, h2, h3, h4, h5, h6
 	padding: 0;
 	margin-bottom: 20px;
 	margin-top: 20px;
-	padding-bottom: 10px;
+	padding-bottom: 16px;
 	border-bottom: 8px solid $highlight_light;
 }
 
 h2
 {
-	padding-bottom: 4px;
+	padding-bottom: 8px;
 }
 
 h3, h4, h5, h6
 {
-	padding-bottom: 0px;
+	padding-bottom: 4px;
 }
 
 p
