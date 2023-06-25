@@ -247,7 +247,7 @@ int main(int argc, char *argv[])
 	}
 
 	image_clear(image, (color_t) { .a = 0xFF });
-    
+
 	image_render_mesh(
         image,
         mesh,
@@ -283,7 +283,7 @@ static void image_clear(image_t *image, const color_t color)
 {
 	for(color_t *p = image->pixels,
         *end = image->pixels + image->size; p != end; p++)
-		*pixel = color;
+		*p = color;
 }
 
 static bool image_save(image_t *image, const char *filename)
