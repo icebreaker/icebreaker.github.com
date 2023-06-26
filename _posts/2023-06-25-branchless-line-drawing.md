@@ -48,7 +48,7 @@ void image_render_line(
 }
 ```
 
-Let's also take a peak at the disassembly, just for funsies no less.
+Let's also take a peek at the disassembly, just for funsies no less.
 
  ```nasm
  ; cc -O2 -ffast-math -masm=intel -S line.c
@@ -104,16 +104,16 @@ p1.x >= 0 && p1.x <= w - 1
 p1.y >= 0 && p1.y <= h - 1
 ```
 
-Second, it doesn't ensure that `t = 1.0` which means that line is not guaranteed reach the coordinates of the endpoint.
+Second, it doesn't ensure that `t = 1.0f` which means that line is not guaranteed reach the coordinates of the endpoint.
 
-This of course could be addressed by drawing one additional point or simply changing `t < 1.0` to `t <= 1.0` and then making sure that `t` never goes beyond `1.0`.
+This of course could be addressed by drawing one additional point or simply changing `t < 1.0f` to `t <= 1.0f` and then making sure that `t` never goes beyond `1.0f`.
 
 Third, it doesn't handle the case when both points are in the same position, in other words `p0 == p1`.
 
 This could be solved as well relatively easily, by clamping the step value before the division, like illustrated below.
 
 ```c
-const float step = 1.0 / fmax(fmax(fabs(dx), fabs(dy)), 1.0);
+const float step = 1.0f / fmax(fmax(fabs(dx), fabs(dy)), 1.0f);
 ```
 
 That's it. And now, here's an actual full fledged example, which outputs a lovely wireframe render of [Suzanne][suzanne].
@@ -281,9 +281,9 @@ static inline point_t vertex_to_point(
 
 static void image_clear(image_t *image, const color_t color)
 {
-	for(color_t *p = image->pixels,
-        *end = image->pixels + image->size; p != end; p++)
-		*p = color;
+	for(color_t *pixel = image->pixels,
+        *end = image->pixels + image->size; pixel != end; pixel++)
+		*pixel = color;
 }
 
 static bool image_save(image_t *image, const char *filename)
@@ -388,7 +388,7 @@ float Q_rsqrt(float number)
  	i  = * ( long * ) &y; // evil floating point bit level hacking
  	i  = 0x5f3759df - ( i >> 1 ); // what the fuck?
  	y  = * ( float * ) &i;
- 	y  = y * ( threehalfs - ( x2 * y * y ) );   // 1st iteration
+ 	y  = y * ( threehalfs - ( x2 * y * y ) ); // 1st iteration
 
  	return y;
 }
