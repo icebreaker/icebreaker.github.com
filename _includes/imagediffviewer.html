@@ -1,0 +1,37 @@
+{% if page.imagediffviewer %}
+<script type="text/javascript">
+document.querySelectorAll(".image-diff-viewer").forEach(function(el)
+{
+	var images = el.querySelectorAll("img");
+	if(images.length != 2)
+		return;
+
+	var image = images[1];
+	image.style.display = "block";
+
+	el.removeChild(image);
+
+	var wrapper = document.createElement("div");
+	wrapper.className = "wrapper";
+	wrapper.style.width = "50%";
+	wrapper.appendChild(image);
+
+	el.appendChild(wrapper);
+
+	var update = function(e)
+	{
+		var rect = el.getBoundingClientRect();
+		var border = Math.max(0, wrapper.offsetWidth - wrapper.clientWidth);
+		var x = (e.pageX - rect.left - border) / el.offsetWidth;
+		var perc = Math.min(Math.max(0, x * 100), 100);
+
+		wrapper.style.width = perc + "%";
+	};
+
+	el.addEventListener("mousemove",  update, false);
+	el.addEventListener("mouseleave", update, false);
+	el.addEventListener("touchstart", update, false);
+	el.addEventListener("touchmove" , update, false);
+});
+</script>
+{% endif %}

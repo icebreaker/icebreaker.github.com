@@ -267,3 +267,27 @@ table * tr:nth-child(even)
 		display: block;
 	}
 }
+
+.image-diff-viewer
+{
+	position: relative;
+	cursor: ew-resize;
+	display: inline-block;
+}
+
+.image-diff-viewer img:last-child
+{
+	display: none;
+}
+
+.image-diff-viewer .wrapper
+{
+	position: absolute;
+	width: auto;
+	height: auto;
+	top: 0;
+	left: 0;
+	overflow: hidden;
+	border-right: 3px solid white;
+	opacity: 0.8;
+}
