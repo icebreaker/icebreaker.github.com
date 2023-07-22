@@ -304,3 +304,11 @@ table * tr:nth-child(even)
 		max-width: 512px;
 	}
 }
+
+@media only screen and (max-width: 512px)
+{
+	.image-diff-viewer img
+	{
+		max-width: 256px;
+	}
+}
