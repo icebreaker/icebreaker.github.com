@@ -296,3 +296,11 @@ table * tr:nth-child(even)
 	border-right: 3px solid white;
 	opacity: 0.8;
 }
+
+@media only screen and (max-width: 1024px)
+{
+	.image-diff-viewer img
+	{
+		max-width: 512px;
+	}
+}
