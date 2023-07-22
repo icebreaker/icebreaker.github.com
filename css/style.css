@@ -275,6 +275,11 @@ table * tr:nth-child(even)
 	display: inline-block;
 }
 
+.image-diff-viewer img
+{
+	max-width: 1024px;
+}
+
 .image-diff-viewer img:last-child
 {
 	display: none;
