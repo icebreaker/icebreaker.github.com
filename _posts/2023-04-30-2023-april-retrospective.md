@@ -144,7 +144,7 @@ int main(int argc, char *argv[])
 		}
 		else if(!strcmp(argv[i], "--width") && i + 1 < argc)
 		{
-			ow = atoi(argv[i++]);
+			ow = atoi(argv[++i]);
 			if(ow <= 0)
 			{
 				fprintf(
@@ -156,7 +156,7 @@ int main(int argc, char *argv[])
 		}
 		else if(!strcmp(argv[i], "--height") && i + 1 < argc)
 		{
-			oh = atoi(argv[i++]);
+			oh = atoi(argv[++i]);
 			if(oh <= 0)
 			{
 				fprintf(
