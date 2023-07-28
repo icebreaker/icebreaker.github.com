@@ -16,9 +16,8 @@ twitter:
   url: https://twitter.com/c0d3rguy
   status: https://twitter.com/c0d3rguy/status
 enable_background: false
-enable_music: false
+enable_music: true
 background: pexels
-music: 9CjUnGUm6LU
 permalink: pretty
 collections:
   pages:
