@@ -312,3 +312,39 @@ table * tr:nth-child(even)
 		max-width: 256px;
 	}
 }
+
+.nun
+{
+	--blood: #BF0000;
+}
+
+.nun .content:after
+{
+	content: url('/media/misc/13.png');
+}
+
+.nun hr,
+.nun h1,
+.nun h2,
+.nun h3,
+.nun h4,
+.nun h5,
+.nun h6,
+.nun table,
+.nun blockquote
+{
+	border-color: var(--blood);
+}
+
+.nun a,
+.nun a:active,
+.nun a:visited,
+.nun a:hover
+{
+	color: var(--blood);
+}
+
+.nun::-webkit-scrollbar-thumb:hover
+{
+	background: var(--blood);
+}
