@@ -7,7 +7,7 @@ body
 	text-rendering: optimizeLegibility;
 	text-align: justify;
 	text-justify: inter-word;
-	font-family: sans-serif;
+	font-family: -apple-system,BlinkMacSystemFont,Segoe UI,sans-serif;
 	font-size: 1.3rem;
 	line-height: 2rem;
 	background-color: $background;
@@ -97,7 +97,7 @@ code
 
 pre
 {
-	font-family: 'JetBrains Mono ExtraBold',monospace;
+	font-family: 'JetBrains Mono NL ExtraBold','Roboto Mono',monospace;
 	overflow: auto;
 	display: block;
 	background-color: $highlight_dark !important;
@@ -107,7 +107,7 @@ pre
 
 pre code
 {
-	font-family: 'JetBrains Mono ExtraBold',monospace;
+	font-family: 'JetBrains Mono NL ExtraBold','Roboto Mono',monospace;
 	font-weight: normal;
 	tab-size: 4;
 	padding: 0;
