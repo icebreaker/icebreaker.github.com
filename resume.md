@@ -11,8 +11,8 @@ over 15+ years of professional experience.
 
 Everything from _low level_ C/C++ to full stack _web development_ with Ruby on Rails is my jam.
 
-Specialities
-----------------------
+Specialties
+-----------
 - architecting web applications from scratch (with monolithic and micro-service architectures alike)
 - creating integrations with third party services/tools/SDKs
 - writing portable software and tools from scratch
