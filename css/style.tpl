@@ -313,38 +313,43 @@ table * tr:nth-child(even)
 	}
 }
 
-.nun
+.blood
 {
 	--blood: #BF0000;
 }
 
-.nun .content:after
-{
-	content: url('/media/misc/13.png');
-}
-
-.nun hr,
-.nun h1,
-.nun h2,
-.nun h3,
-.nun h4,
-.nun h5,
-.nun h6,
-.nun table,
-.nun blockquote
+.blood hr,
+.blood h1,
+.blood h2,
+.blood h3,
+.blood h4,
+.blood h5,
+.blood h6,
+.blood table,
+.blood blockquote
 {
 	border-color: var(--blood);
 }
 
-.nun a,
-.nun a:active,
-.nun a:visited,
-.nun a:hover
+.blood a,
+.blood a:active,
+.blood a:visited,
+.blood a:hover
 {
 	color: var(--blood);
 }
 
-.nun::-webkit-scrollbar-thumb:hover
+.blood::-webkit-scrollbar-thumb:hover
 {
 	background: var(--blood);
+}
+
+.blood.nun .content:after
+{
+	content: url('/media/misc/13.png');
+}
+
+.blood #music iframe
+{
+	border: 8px var(--blood) solid;
 }

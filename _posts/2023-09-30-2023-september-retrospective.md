@@ -4,7 +4,7 @@ typora-root-url: ..
 typora-copy-images-to: ../media/2023
 title: 2023 September Retrospective
 music: tikbidjo250
-class: nun
+class: blood nun
 propaganda: 13
 ---
 2023 September Retrospective
@@ -17,7 +17,7 @@ I haven't had a chance to watch it yet, which of course is good, because it mean
 
 ## Unity Drama
 
-In other news, unless you have been living under a rock, you probably have heard about the [Unity drama][unitydrama] and the total chaos that followed. I think it's fair to say that this fiasco done irreparable damage to the Unity brand. 
+In other news, unless you have been living under a rock, you probably have heard about the [Unity drama][unitydrama] and the total chaos that followed. I think it's fair to say that this fiasco done irreparable damage to the Unity brand.
 
 Now, I am not here to shit on Unity since plenty of that has been done already and it's not fun anymore anyway, but I do want to touch on a few things.
 
