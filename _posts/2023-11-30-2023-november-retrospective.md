@@ -47,7 +47,7 @@ You can find the integral source code below. It's not much, but it's honest work
         const button = a.cloneNode(true);
         const path = a.href.match(/\/app\/([0-9]+)/)[match_id_only ? 1 : 0];
 
-        button.href = url + path; 
+        button.href = url + path;
         button.target = '_blank';
 
         if(margin && margin > 0) {
@@ -83,7 +83,7 @@ Almost forgot, I also ended up trying out yet another vampire survivors-like thi
 
 I will have to make list or some sort of a top of all the vampire survivors-likes that I ended up playing during the past year and a half or so.
 
-There's a TODO item for final retrospective of the year at end of December.
+There's a TODO item for the final retrospective of the year at end of December.
 
 [suikagame]: https://en.wikipedia.org/wiki/Suika_Game
 [suikagamenintendostore]: https://www.nintendo.com/us/store/products/suika-game-switch/
