@@ -60,11 +60,11 @@ static inline unsigned int rgba_distance(
     const int dg = a.g - b.g;
     const int db = a.b - b.b;
 
-    const int ddr = dr * dr; 
-    const int ddg = dg * dg; 
-    const int ddb = db * db; 
+    const int ddr = dr * dr;
+    const int ddg = dg * dg;
+    const int ddb = db * db;
 
-    return ((ddr << 1) + ddr) + (ddg << 2) + (ddb << 1); 
+    return ((ddr << 1) + ddr) + (ddg << 2) + (ddb << 1);
 }
 ```
 
@@ -546,7 +546,7 @@ user 0m0.124s
 sys	 0m0.010s
 ```
 
-There are some low-hanging fruits that one could optimize. A prime example of this would be the clamping. 
+There are some low-hanging fruits that one could optimize. A prime example of this would be the clamping.
 
 Instead of clamping to border, we could clamp to bounds.
 
@@ -560,7 +560,7 @@ Considering the fact that we very likely going to be upscaling and working with 
 Having that little extra constraint, we could go one step further and replace the `%` with a bitwise `&`.
 
 ```c
-xn1 = (x - 1) & (iw - 1)In this day and age however 
+xn1 = (x - 1) & (iw - 1)
 yn1 = (y - 1) & (ih - 1)
 ```
 
