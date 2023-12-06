@@ -10,7 +10,7 @@ propaganda: 8
 Upscaling Pixel Art
 =========================
 
-A few years ago there was some sort of renessaince of pixel-art-upscalers, mainly fueled by the
+A few years ago there was some sort of renaissance of pixel-art-upscalers, mainly fueled by the
 emulator community. It has gotten to a point where even some research division at Microsoft
 joined in and produced a [paper][paper] around the subject.
 
