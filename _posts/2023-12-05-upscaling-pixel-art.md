@@ -138,7 +138,6 @@ Take a look at the full source code below.
 #include <stdint.h>
 #include <stdlib.h>
 #include <stdio.h>
-#include <stb.h>
 
 #define STBI_NO_HDR
 #define STBI_NO_LINEAR
