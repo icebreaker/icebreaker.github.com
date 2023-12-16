@@ -89,10 +89,9 @@ blockquote
 
 code
 {
-	padding: 2.5px 6.5px;
 	font-weight: bolder;
-	background-color: $foreground;
-	color: $background;
+	color: $highlight_foreground;
+	font-family: 'JetBrains Mono NL ExtraBold','Roboto Mono',monospace;
 }
 
 pre
@@ -316,6 +315,11 @@ table * tr:nth-child(even)
 .blood
 {
 	--blood: #BF0000;
+}
+
+.blood.poltergeist
+{
+	--blood: #7D7DFF;
 }
 
 .blood hr,
