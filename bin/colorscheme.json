@@ -10,7 +10,7 @@
   {
 	"background": "#000000",
 	"foreground": "#A6A6A6",
-	"highlight_foreground": "#C5C5C5",
+	"highlight_foreground": "#AFAF00",
 	"highlight_light": "#BF6F00",
 	"highlight_dark": "#1C1C1C",
 	"highlight_code_identifier": "#AF5F00",

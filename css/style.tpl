@@ -89,8 +89,8 @@ blockquote
 
 code
 {
-	font-weight: bolder;
 	color: $highlight_foreground;
+	font-weight: bolder;
 	font-family: 'JetBrains Mono NL ExtraBold','Roboto Mono',monospace;
 }
 
