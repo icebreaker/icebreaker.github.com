@@ -6,6 +6,7 @@ title: The VLC Xmas Hat Easter Egg
 description: The infamous easter egg hunter strikes again.
 image: /media/2023/vlcxmas512.png
 propaganda: 99
+class: vlcxmas
 ---
 
 The VLC Xmas Hat Easter Egg
@@ -51,13 +52,13 @@ The elephant in the room is value of `QT_XMAS_JOKE_DAY`, which of course we can 
 /*
 	After this day of the year, the usual VLC cone is replaced by another cone
 	wearing a Father Xmas hat.
-	
+
 	Note this icon doesn't represent an endorsment of Coca-Cola company.
 */
-#define QT_XMAS_JOKE_DAY 354 
+#define QT_XMAS_JOKE_DAY 354
 ```
 
-It's all revealed. In other words if the current day of the year is greater or equal to `354` the the Xmas specific icon is used.
+It's all revealed. In other words if the current day of the year is greater or equal to `354`, the Xmas specific icon is used.
 
 There are a couple of other spots where there is a similar conditional check, like setting up the system tray icon for instance.
 
@@ -68,7 +69,7 @@ Spotted this naughty boy inside `modules/gui/qt/components/interface_widgets.cpp
 ```c
 if(QDate::currentDate().dayOfYear() >= QT_XMAS_JOKE_DAY
     && var_InheritBool( p_intf, "qt-icon-change"))
-{    
+{
 	bgWidget = new EasterEggBackgroundWidget(p_intf);
 	CONNECT(this, kc_pressed(), bgWidget, animate());                          }
 else
@@ -84,20 +85,20 @@ Don't get too discouraged by all this Qt specific techno-prep-school-palabra. Th
 The next step was to track down where the `kc_pressed()` signal was being emitted from, which we can find inside `modules/gui/qt/main_interface.cpp`, conveniently tucked away in the key press event handler.
 
 ```c
-void MainInterface::keyPressEvent(QKeyEvent *e) 
+void MainInterface::keyPressEvent(QKeyEvent *e)
 {
-    handleKeyPress(e); 
+    handleKeyPress(e);
 
     /* easter eggs sequence handling */
     if(e->key() == kc[i_kc_offset])
         i_kc_offset++;
-    else 
-        i_kc_offset = 0; 
+    else
+        i_kc_offset = 0;
 
-    if(i_kc_offset == (sizeof(kc) / sizeof(Qt::Key))) 
-    {   
-        i_kc_offset = 0; 
-        emit kc_pressed();      
+    if(i_kc_offset == (sizeof(kc) / sizeof(Qt::Key)))
+    {
+        i_kc_offset = 0;
+        emit kc_pressed();
     }
 }
 ```
@@ -129,7 +130,7 @@ void BackgroundWidget::titleUpdated(const QString& title)
 {
     /* don't ask */
     if(var_InheritBool(p_intf, "qt-icon-change") && !title.isEmpty())
-    {    
+    {
         int i_pos = title.indexOf(
             "Ki" /* Bps */ "ll",
             0,
@@ -139,15 +140,15 @@ void BackgroundWidget::titleUpdated(const QString& title)
            i_pos + 5 == title.indexOf("Bi" /* directional */ "ll",
                                       i_pos, Qt::CaseInsensitive))
                 updateDefaultArt(":/logo/vlc128-kb.png");
-        else if(QDate::currentDate().dayOfYear() >= QT_XMAS_JOKE_DAY)    
+        else if(QDate::currentDate().dayOfYear() >= QT_XMAS_JOKE_DAY)
 				updateDefaultArt( ":/logo/vlc128-xmas.png" );
-        else 
+        else
 				updateDefaultArt( ":/logo/vlc128.png" );
-    }    
+    }
 }
 ```
 
-This piece of code simply checks if the title of the currently plyaing media starts with `Kill Bill` and if it does then the default background art is changed to a `Kill Bill` themed one, which you can see in all its glory below. 
+This piece of code simply checks if the title of the currently playing media starts with `Kill Bill` and if it does then the default background art is changed to a `Kill Bill` themed one, which you can see in all its glory below.
 
 ![vlckillbill](/media/2023/vlckillbill.png)
 

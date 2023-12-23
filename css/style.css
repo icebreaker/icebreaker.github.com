@@ -357,3 +357,10 @@ table * tr:nth-child(even)
 {
 	border: 8px var(--blood) solid;
 }
+
+.vlcxmas .content:after
+{
+	content: url('/media/misc/99.png');
+}
+
+
