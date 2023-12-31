@@ -3,6 +3,8 @@ layout: post
 typora-root-url: ..
 typora-copy-images-to: ../media/2022
 title: 2022 November Retrospective
+year: 2022
+monthly: true
 propaganda: 1
 ---
 2022 November Retrospective
