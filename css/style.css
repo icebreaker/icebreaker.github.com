@@ -322,6 +322,11 @@ table * tr:nth-child(even)
 	--blood: #7D7DFF;
 }
 
+.blood.grinch
+{
+	--blood: #108D38;
+}
+
 .blood hr,
 .blood h1,
 .blood h2,
