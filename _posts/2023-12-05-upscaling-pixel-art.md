@@ -4,6 +4,7 @@ typora-root-url: ..
 typora-copy-images-to: ../media/2023
 title: Upscaling Pixel Art
 year: 2023
+monthly: false
 imagediffviewer: true
 propaganda: 8
 ---

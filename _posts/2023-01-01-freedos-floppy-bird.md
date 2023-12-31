@@ -4,6 +4,7 @@ typora-root-url: ..
 typora-copy-images-to: ../media/2023
 title: FreeDOS and Floppy Bird
 year: 2023
+monthly: false
 propaganda: 4
 ---
 

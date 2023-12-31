@@ -7,7 +7,7 @@
 {% if include.monthly %}
 {% assign posts = posts | where: "monthly", true %}
 {% else %}
-{% assign posts = posts | where: "monthly", empty %}
+{% assign posts = posts | where: "monthly", false %}
 {% endif %}
 
 {% if posts.size > 0 %}

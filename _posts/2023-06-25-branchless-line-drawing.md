@@ -5,6 +5,7 @@ typora-copy-images-to: ../media/2023
 image: /media/og/suzanne.png
 title: Branchless Line Drawing
 year: 2023
+monthly: false
 propaganda: 5
 ---
 

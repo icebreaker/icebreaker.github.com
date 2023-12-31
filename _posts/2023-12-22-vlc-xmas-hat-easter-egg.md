@@ -6,6 +6,7 @@ title: The VLC Xmas Hat Easter Egg
 description: The infamous easter egg hunter strikes again.
 image: /media/2023/vlcxmas512.png
 year: 2023
+monthly: false
 propaganda: 99
 class: vlcxmas
 ---
