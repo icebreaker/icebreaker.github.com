@@ -4,6 +4,7 @@ typora-root-url: ..
 typora-copy-images-to: ../media/2024
 title: 2024 January Retrospective
 year: 2024
+month: 1
 monthly: true
 propaganda: 10
 ---
