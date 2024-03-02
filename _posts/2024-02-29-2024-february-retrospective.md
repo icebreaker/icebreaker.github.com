@@ -17,6 +17,14 @@ As February came and went so did the layoffs which seem to be ramping up. Accord
 
 It seems and feels like the layoffs will continue until morale improves.
 
+## Night Swim
+
+I feel like it's a semi-well known fact by now, that I am a horror movie aficionado of some sorts and my first horror movie of the year happened to be titled [Night Swim][nightswim]. When it comes to horror flicks, anything produced by [James Wan][jameswan] is something that is worth checking out. That's my general rule of thumb.
+
+{% include youtube.html id="pcSNqteCEtE" %}
+
+{% include youtube.html id="PhlLO3Nb3sY" %}
+
 ## Stronghold: Definitive Edition - Swine's Bay DLC
 
 I mentioned [Stronghold Definitive Edition][strongholdde] in my traditional [2023 retrospective][2023retrospective] and here we are a few short months later with a brand new DLC fresh out of the oven.
@@ -58,14 +66,6 @@ This was published in the **52nd issue** *(January 2002)* of the magazine.
 ![level-52-jan-2002-page-29](/media/2024/level-52-jan-2002-page-29.png)
 
 ![level-52-jan-2002-page-30](/media/2024/level-52-jan-2002-page-30.png)
-
-## Night Swim
-
-I feel like it's a semi-well known fact by now, that I am a horror movie aficionado of some sorts and my first horror movie of the year happened to be titled [Night Swim][nightswim]. When it comes to horror flicks, anything produced by [James Wan][jameswan] is something that is worth checking out. That's my general rule of thumb.
-
-{% include youtube.html id="pcSNqteCEtE" %}
-
-{% include youtube.html id="PhlLO3Nb3sY" %}
 
 ## Monthly Archive
 
