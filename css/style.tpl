@@ -327,6 +327,11 @@ table * tr:nth-child(even)
 	--blood: #108D38;
 }
 
+.blood.swim
+{
+	--blood: #2C868D;
+}
+
 .blood hr,
 .blood h1,
 .blood h2,

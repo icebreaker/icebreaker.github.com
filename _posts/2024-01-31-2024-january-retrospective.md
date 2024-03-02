@@ -32,7 +32,7 @@ The only interesting thing I ended up watching this month was the [American Nigh
 
 {% include youtube.html id="Yonx7CyoK3k" %}
 
-[americannightmare]: https://www.imdb.com/title/tt22797582/
+[americannightmare]: https://en.wikipedia.org/wiki/American_Nightmare_(TV_series)
 [oncecom]: https://once.com/
 [37signals]: https://37signals.com/
 [sqlite]: https://www.sqlite.org/
