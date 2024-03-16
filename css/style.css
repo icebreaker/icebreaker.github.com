@@ -267,6 +267,13 @@ table * tr:nth-child(even)
 	}
 }
 
+.center img, iframe, .content video
+{
+	max-width: 1024px;
+	display: block;
+	margin: 0 auto;
+}
+
 .image-diff-viewer
 {
 	position: relative;
