@@ -5,7 +5,7 @@ typora-copy-images-to: ../media/2024
 title: 2024 March Retrospective
 year: 2024
 month: 3
-monthly: false
+monthly: true
 propaganda: difficultgame
 class: center
 ---
