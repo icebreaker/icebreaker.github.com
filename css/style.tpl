@@ -329,6 +329,11 @@ table * tr:nth-child(even)
 	--blood: #7D7DFF;
 }
 
+.blood.plush
+{
+	--blood: #A070CC;
+}
+
 .blood.grinch
 {
 	--blood: #108D38;
@@ -380,4 +385,34 @@ table * tr:nth-child(even)
 	content: url('/media/misc/99.png');
 }
 
+img.propaganda
+{
+	max-width: 100%;
+}
 
+button
+{
+	background-color: $highlight_dark;
+	border: 0.3em outset $highlight_light;
+	color: $highlight_foreground;
+	text-shadow: 1px 1px $background;
+	outline: none;
+	font-size: 1.3rem;
+	font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif;
+	font-weight: bolder;
+}
+
+button:active
+{
+	border: 0.3em inset $highlight_light;
+}
+
+.blood button
+{
+	border: 0.3em outset var(--blood);
+}
+
+.blood button:active
+{
+	border: 0.3em inset var(--blood);
+}
