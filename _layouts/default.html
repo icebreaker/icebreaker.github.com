@@ -1,11 +1,12 @@
+{% assign digest = 'now' | date: '%Y%m%d' %}
 <!DOCTYPE html>
 <html>
 	<head>
 		{% include meta.html %}
 		<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
 		<link rel="alternate" type="application/atom+xml" href="{{ site.rss.url }}" title="{{ site.title }}" />
-		<link rel="stylesheet" type="text/css" href="/css/syntax.css?v=2" />
-		<link rel="stylesheet" type="text/css" href="/css/style.css?v=6" />
+		<link rel="stylesheet" type="text/css" href="/css/syntax.css?v={{ digest }}" />
+		<link rel="stylesheet" type="text/css" href="/css/style.css?v={{ digest }}" />
 	</head>
 	{% if page.class %}
 		{% assign class = ' class="' | append: page.class | append: '"' %}
@@ -19,6 +20,7 @@
 		<div class="content">
 			{{ content }}
 		</div>
+		{% include postpaganda.html %}
 		{% include music.html %}
 		{% include imagediffviewer.html %}
 	</body>

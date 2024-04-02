@@ -131,6 +131,12 @@ img, iframe, .content video
 	max-width: 1024px;
 }
 
+.center img, iframe, .content video
+{
+	display: block;
+	margin: 0 auto;
+}
+
 hr
 {
 	border: 4px solid $highlight_light;
@@ -267,13 +273,6 @@ table * tr:nth-child(even)
 	}
 }
 
-.center img, iframe, .content video
-{
-	max-width: 1024px;
-	display: block;
-	margin: 0 auto;
-}
-
 .image-diff-viewer
 {
 	position: relative;
@@ -370,22 +369,12 @@ table * tr:nth-child(even)
 	background: var(--blood);
 }
 
-.blood.nun .content:after
-{
-	content: url('/media/misc/13.png');
-}
-
 .blood #music iframe
 {
 	border: 8px var(--blood) solid;
 }
 
-.vlcxmas .content:after
-{
-	content: url('/media/misc/99.png');
-}
-
-img.propaganda
+img.propaganda, img.postpaganda
 {
 	max-width: 100%;
 }
