@@ -73,7 +73,7 @@ As per usual, you can find a collection of my random monthly scribblings and mus
 
 {% include toc.html year="2024" month="2" %}
 
-I know it's not much, but it's honest work.
+I know that it's not much, but it's honest work.
 
 [layoffs]: https://layoffs.fyi/
 [nightswim]: https://en.wikipedia.org/wiki/Night_Swim_(film)
