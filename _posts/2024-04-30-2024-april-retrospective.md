@@ -67,7 +67,7 @@ include mk/make.mk
 
 ### mk/make.mk
 
-```makefil
+```makefile
 # MSYS2 and Cygwin
 ifdef COMSPEC
 CC := x86_64-w64-mingw32-gcc
@@ -87,7 +87,7 @@ clean:
 
 ### mk/nmake.mk
 
-```makefil
+```makefile
 TARGET = $(TARGET).exe
 
 all: $(TARGET)
