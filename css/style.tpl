@@ -1,13 +1,19 @@
+html
+{
+	text-rendering: geometricprecision;
+	-webkit-text-size-adjust: 100%;
+	-webkit-font-smoothing: antialiased;
+	-moz-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
 body
 {
 	margin: 0;
 	padding: 0 10px 10px 10px;
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
-	text-rendering: optimizeLegibility;
 	text-align: justify;
 	text-justify: inter-word;
-	font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif;
+	font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,sans-serif;
 	font-size: 1.3rem;
 	line-height: 2rem;
 	background-color: $background;
