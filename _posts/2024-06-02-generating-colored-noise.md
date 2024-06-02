@@ -50,6 +50,10 @@ And now, our friendly neighborhood *faux* [Perlin noise][perlinnoise] imitation.
 ![noisebi](/media/2024/noisebi.png)
 
 ```c
+#define NOISE_MAX (1 << 14)
+#define NOISE_MAX_MASK (NOISE_MAX - 1)
+#define NOISE_MAX_MASK_INV (1.0f / (float) NOISE_MAX_MASK)
+
 static void randomize(
 	float *noise[4],
 	const int w,
@@ -69,6 +73,9 @@ static void randomize(
 		}
     }
 }
+
+#define fract(a) ((a) - ((int)(a)))
+#define lerp(a, b, t) ((1 - (t)) * (a) + (t) * (b))
 
 static void process(
 	const float *restrict noise[4],
