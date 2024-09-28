@@ -2,5 +2,4 @@
 
 cat resume.md | \
 	sed 's|^title:.*$||' | \
-	sed 's|^----$|![DLC](media/misc/resume.png)|' | \
 	pandoc -o resume.pdf && xdg-open resume.pdf

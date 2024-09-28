@@ -7,7 +7,7 @@ title: Resume - Mihail Szabolcs
 Résumé
 ======
 My name is Mihail "Szaby" Szabolcs, and I am a senior software engineer / architect with
-over 15+ years of professional experience.
+over 17+ years of professional experience.
 
 Everything from _low level_ C/C++ to full stack _web development_ with Ruby on Rails is my jam.
 
@@ -59,5 +59,3 @@ email: **[me(at)mihail(dot)co](mailto:me(at)mihail(dot)co?subject=Resume)**
 web: **[mihail.co](https://mihail.co)**
 
 github: **[github.com/icebreaker](https://github.com/icebreaker)**
-
-----
