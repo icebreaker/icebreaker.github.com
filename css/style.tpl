@@ -349,6 +349,11 @@ table * tr:nth-child(even)
 	--blood: #2C868D;
 }
 
+.blood.go
+{
+	--blood: #47959D;
+}
+
 .blood hr,
 .blood h1,
 .blood h2,
