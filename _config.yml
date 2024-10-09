@@ -9,6 +9,8 @@ github:
   url: https://github.com/icebreaker
   dotfiles:
     url: https://github.com/icebreaker/dotfiles
+  blog:
+    url: https://github.com/icebreaker/icebreaker.github.com
   issue: https://github.com/icebreaker/icebreaker.github.com/issues
 rss:
   url: https://feeds.feedburner.com/mihailco
