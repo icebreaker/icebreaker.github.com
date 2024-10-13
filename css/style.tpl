@@ -305,7 +305,6 @@ table * tr:nth-child(even)
 	left: 0;
 	overflow: hidden;
 	border-right: 3px solid white;
-	opacity: 0.8;
 }
 
 @media only screen and (max-width: 1024px)
