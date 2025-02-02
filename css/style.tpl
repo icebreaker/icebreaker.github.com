@@ -55,11 +55,6 @@ body
   background: $highlight_light;
 }
 
-:root
-{
-  scrollbar-color: $foreground $highlight_dark !important;
-}
-
 h1, h2, h3, h4, h5, h6
 {
 	padding: 0;
