@@ -13,9 +13,9 @@ body
 	padding: 0 10px 10px 10px;
 	text-align: justify;
 	text-justify: inter-word;
-	font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,sans-serif;
-	font-size: 1.3rem;
-	line-height: 2rem;
+	font-family: -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif;
+	font-size: 22px;
+	line-height: 28px;
 	background-color: $background;
 	color: $foreground;
 	max-width: 1024px;
@@ -172,6 +172,7 @@ table * tr:nth-child(even)
 {
 	font-weight: bolder;
 	text-align: right;
+	padding: 2px 0 2px 0;
 }
 
 .comments
@@ -392,7 +393,7 @@ button
 	text-shadow: 1px 1px $background;
 	outline: none;
 	font-size: 1.3rem;
-	font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif;
+	font-family: -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif;
 	font-weight: bolder;
 }
 
