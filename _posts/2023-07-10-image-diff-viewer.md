@@ -7,6 +7,7 @@ year: 2023
 monthly: false
 imagediffviewer: true
 propaganda: 14
+topic: javascript
 ---
 
 Image Diff(erence) Viewer

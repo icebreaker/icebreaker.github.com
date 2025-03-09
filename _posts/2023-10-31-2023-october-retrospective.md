@@ -8,6 +8,7 @@ monthly: true
 music: gNpO3BalPBg
 class: blood
 propaganda: 30
+topic: retrospective
 ---
 2023 October Retrospective
 ==========================

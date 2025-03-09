@@ -8,6 +8,7 @@ month: 3
 monthly: true
 propaganda: difficultgame
 class: center
+topic: retrospective
 ---
 
 # 2024 March Retrospective

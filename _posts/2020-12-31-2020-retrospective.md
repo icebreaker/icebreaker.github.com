@@ -2,6 +2,7 @@
 layout: post
 title: 2020 Retrospective
 propaganda: 5
+topic: retrospective
 ---
 2020 Retrospective
 ==================

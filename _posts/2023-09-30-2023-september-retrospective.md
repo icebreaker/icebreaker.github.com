@@ -9,6 +9,7 @@ music: tikbidjo250
 class: blood nun
 propaganda: 13
 postpaganda: 13
+topic: retrospective
 ---
 2023 September Retrospective
 =========================

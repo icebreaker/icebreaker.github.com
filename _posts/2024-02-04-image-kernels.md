@@ -9,6 +9,7 @@ month: 2
 monthly: false
 propaganda: 42
 class: blood
+topic: c
 ---
 
 Image Kernels

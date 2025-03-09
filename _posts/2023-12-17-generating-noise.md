@@ -7,6 +7,7 @@ year: 2023
 monthly: false
 propaganda: 33
 class: blood poltergeist
+topic: c
 ---
 
 Generating Noise

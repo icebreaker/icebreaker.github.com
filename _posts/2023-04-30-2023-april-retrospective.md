@@ -6,6 +6,7 @@ title: 2023 April Retrospective
 year: 2023
 monthly: true
 propaganda: 2
+topic: retrospective
 ---
 
 2023 April Retrospective

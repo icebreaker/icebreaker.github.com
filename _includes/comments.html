@@ -2,6 +2,11 @@
 	<hr />
 	<p>
 		<span>{{ page.date | date: "%Y-%m-%d" }}</span>
+		{% if page.topic %}
+		&nbsp;/&nbsp;
+		{% assign topic = "_topics/" | append: page.topic | append: ".md" %}
+		<span><a href="{% link {{ topic  }} %}" target="_blank">{{ page.topic }}</a></span>
+		{% endif %}
 		{% if page.issue %}
 		&nbsp;/&nbsp;
 		<span><a href="{{ site.github.issue }}/{{ page.issue }}" target="_blank">Comments</a></span>

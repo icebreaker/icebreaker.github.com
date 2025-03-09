@@ -7,6 +7,7 @@ year: 2024
 month: 2
 monthly: false
 propaganda: 11
+topic: c
 ---
 
 # Amalgamation
@@ -23,7 +24,7 @@ There are a few distinct approaches that one can take on the path to achieve ama
 - create a source file acting as an **entrypoint**, that in turn explicitly `#includes` all relevant source files and headers; and then run this file through the **preprocessor** in order to get the final **amalgamated** result:
 	- `cc -E one.c -o amalgamated.c`
 	- `cc -O2 amalgamated.c -o output`
-	
+
 - same as above, except one does not **preprocess** the source file acting as the **entrypoint**, but rather compiles it directly ***as-is***, skipping the intermediary step:
 	- `cc -O2 one.c -o output`
 

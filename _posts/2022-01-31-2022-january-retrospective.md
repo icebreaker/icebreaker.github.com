@@ -3,6 +3,7 @@ layout: post
 title: 2022 January Retrospective
 propaganda: 6
 music: f0oUuhrXGok
+topic: retrospective
 ---
 2022 January Retrospective
 ==========================

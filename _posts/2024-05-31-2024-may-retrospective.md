@@ -7,6 +7,7 @@ year: 2024
 month: 5
 monthly: true
 propaganda: darkmatter
+topic: retrospective
 ---
 
 # 2024 May Retrospective

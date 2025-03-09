@@ -4,6 +4,7 @@ typora-root-url: ..
 typora-copy-images-to: ../media/2022
 title: Notes on Lua
 propaganda: 2
+topic: lua
 ---
 
 Notes on Lua
@@ -15,7 +16,7 @@ Would these be the the languages I'd take with me if I had to leave on a deserte
 
 Some orthodox C++, JS or even 16-bit assembly might rear their ugly head every now and then, but those instances can be considered the exceptions rather than rules.
 
-What the heck is orthodox C++? If you asked that question, then you are in luck because I just happen to know the location of this [perfect place][orthodoxcpp], where you'll find the answers you've been looking for your entire life. 
+What the heck is orthodox C++? If you asked that question, then you are in luck because I just happen to know the location of this [perfect place][orthodoxcpp], where you'll find the answers you've been looking for your entire life.
 
 With that said, I thought that I'd put together some notes on Lua in the hopes that it might help total newcomers, as well as people who might have dabbled with it to a certain extent in the past, but then decided not to go with it for one reason or another.
 
@@ -67,7 +68,7 @@ If this was **THE MAJOR THING** that has been preventing you from trying out Lua
 
 Another thing that is sometimes brought up as kind of a negative when it comes to Lua is the fact that it doesn't really forces you to pick and/or use any particular so called *design patterns* or *styles*.
 
-Obviously, Lua is not the only language out there that does this, but I feel like Lua is still special in some ways when it comes to this because of its dynamic nature. 
+Obviously, Lua is not the only language out there that does this, but I feel like Lua is still special in some ways when it comes to this because of its dynamic nature.
 
 I also consider this fact to be one its strengths rather than shortcomings.
 
@@ -100,7 +101,7 @@ function create_monster()
 	local t = {
 		health = 100,
 		speed = 50,
-		position = { x = 0, y = 0 }     
+		position = { x = 0, y = 0 }
 	}
 	return t
 end
@@ -115,7 +116,7 @@ One could also do away with the so called `constructor` altogether and just decl
 local t = {
 	health = 100,
 	speed = 50,
-	position = { x = 0, y = 0 }     
+	position = { x = 0, y = 0 }
 }
 
 move_monster(t)
@@ -128,10 +129,10 @@ local t = (function()
 	return {
 		health = 100,
 		speed = 50,
-		position = { x = 0, y = 0 }     
+		position = { x = 0, y = 0 }
 	}
 )()
-    
+
 move_monster(t)
 ```
 
@@ -146,7 +147,7 @@ function map(t, f)
 	for i, v in ipairs(t) do
 		result[i] = f(v, i)
 	end
-    
+
 	return result
 end
 
@@ -155,17 +156,17 @@ function create_monster(id)
 		id = id,
 		health = 100,
 		speed = 50,
-		position = { x = 0, y = 0 }     
+		position = { x = 0, y = 0 }
 	}
 	return t
 end
 
 function move_monster(t)
 	local p = t.position
-    
+
 	p.x = p.x + t.speed
 	p.y = p.y + t.speed
-    
+
 	return t
 end
 
@@ -198,22 +199,22 @@ Once your mind has been infested with the OOP paradigm it's always impossible to
 local CLASS_METATABLE <const> = {
 	__call = function(self, ...)
 		local instance = setmetatable({}, self)
-        
+
 		if type(instance.init) == "function" then
 			instance:init(...)
 		end
-        
+
 		return instance
 	end
 }
 
 function class(klass, super_klass)
 	local klass = klass or {}
-    
+
 	for k, v in pairs(super_klass or {}) do
-		klass[k] = v   	    
+		klass[k] = v
 	end
-    
+
 	klass.__index = klass
 	return setmetatable(klass, CLASS_METATABLE)
 end
@@ -224,16 +225,16 @@ Monster.init = function(self, name, kind, speed)
 	self.kind = kind
 	self.speed = speed or 5
 	self.position = { x = 0, y = 0 }
-    
+
 	return self
 end
 Monster.move = function(self, x, y)
 	local p = self.position
 	local speed = self.speed
-    
+
 	p.x = p.x + speed
 	p.y = p.y + speed
-    
+
 	return self
 end
 
@@ -259,10 +260,10 @@ local MONSTER_TYPE_METATABLE <const> = {
 	__call = function(self, t)
 		assert(t.name ~= nil, "monster type needs a valid name")
 		assert(self[t.name] == nil, "duplicate monster type")
-    
+
 		self[t.name] = t
 		table.insert(self, t)
-        
+
 		return t
 	end
 }
@@ -280,7 +281,7 @@ monster {
 }
 
 for _, v in ipairs(monster) do
-	print(v.name, v.speed)    
+	print(v.name, v.speed)
 end
 
 print("ogre speed", monster.ogre.speed)
@@ -328,19 +329,19 @@ function monster_wait(self, amount)
 	local t = 0
 	while t < amount do
 		coroutine.yield()
-		t = t + sys.delta_time 
+		t = t + sys.delta_time
 	end
 end
 
 function monster_think(self, dt)
 	while true do
 		local player = monster_find_player(self)
-        
+
 		if player then
 			print('shooting at player')
 			monster_shoot_at_player(self, player)
 		end
-       
+
 		monster_wait(self, 0.5)
 	end
 end
@@ -429,7 +430,7 @@ You can create your own custom loader and insert into `package.loaders` before o
 ```lua
 function create_zip_archive_loader(archive_filename)
     local archive = assert(zip.open(archive_filename, "r"))
-    
+
     return function(name)
         local filename = string.format(
             "%s.lua",
@@ -461,7 +462,7 @@ With all that being said, I'd recommend creating your own `import` function and 
 ```lua
 function create_import(archive_filename)
     local archive = assert(zip.open(archive_filename, "r"))
-    
+
     return function(name)
         local filename = string.format(
             "%s.lua",
@@ -496,7 +497,7 @@ function sandbox()
 	local _ENV = {
         print = print
     }
-    
+
     return function(message)
     	print(message)
         print(_VERSION)
@@ -517,10 +518,10 @@ local MONSTER_TYPE_METATABLE <const> = {
 	__call = function(self, t)
 		assert(t.name ~= nil, "monster type needs a valid name")
 		assert(self[t.name] == nil, "duplicate monster type")
-    
+
 		self[t.name] = t
 		table.insert(self, t)
-        
+
 		return t
     end
 }
@@ -539,7 +540,7 @@ function create_monster_importer()
 		local chunk = assert(loadfile(filename, "tb", env))
 		return chunk()
 	end
-    
+
 	return env
 end
 
@@ -549,7 +550,7 @@ monster_importer:import("monsters/ogre")
 monster_importer:import("monsters/zombie")
 
 for i, v in ipairs(monster_importer.monster) do
-	print(i, v.name, v.speed)    
+	print(i, v.name, v.speed)
 end
 ```
 
@@ -626,12 +627,12 @@ end
 function on_frame(dt, w, h)
     -- called once every frame
     if input_key_pressed(escape_key) then
-		print("key pressed") 
+		print("key pressed")
     end
 end
 
 function on_quit()
-	-- called once on quit    
+	-- called once on quit
 end
 ```
 
@@ -658,11 +659,11 @@ if(!script_on_init(L, argc, argv))
 while(running)
 {
     double dt = /* calculate delta time in ms/sec */;
-    
+
     process_os_events();
-    
+
     script_on_frame(L, dt, w, h);
-    
+
     // swap GL buffers
     // vsync and/or apply frame limiting
 }
@@ -681,7 +682,7 @@ This would also mean that one doesn't have to change the change and recompile th
 function on_frame(dt, w, h)
 	for event in poll_events() do
 		if event.type == EVENT_TYPE_KEYDOWN && event.key == 27 then
-    		print("key pressed")  
+    		print("key pressed")
 		end
 	end
 end
@@ -695,20 +696,20 @@ Alright, but how do you actually call any of these Lua functions from C (the hos
 bool script_on_init(lua_State *L, const int argc, const char *argv[])
 {
     int i, ret;
-        
+
  	if(lua_getglobal(L, "on_init") != LUA_TFUNCTION)
     {
         lua_pop(L, 1);
         return false;
     }
-    
+
    	lua_createtable(L, argc, 0);
-    for(i = 0; i < argc; i++) 
-    {    
+    for(i = 0; i < argc; i++)
+    {
         lua_pushstring(L, argv[i]);
         lua_rawseti(L, -2, i);
     }
-    
+
     ret = lua_pcall(L, 1 /* one argument */, 0, 0);
     if(ret != 0)
     {
@@ -716,7 +717,7 @@ bool script_on_init(lua_State *L, const int argc, const char *argv[])
         lua_pop(L, 1);
         return false;
     }
-    
+
     return true;
 }
 ```
@@ -786,7 +787,7 @@ lua_pushstring(L, "on_init");
 if(lua_gettable(L, -2) != LUA_TFUNCTION)
 {
     lua_pop(L, 2);
-	return false;   
+	return false;
 }
 lua_pop(L, 1);
 ```
@@ -810,7 +811,7 @@ And now it's time for the fifth and final version of looking up our `on_init` fu
 If we look at `lua_pushglobaltable` we notice that it also happens to be a macro.
 
 ```c
-#define lua_pushglobaltable(L) \          
+#define lua_pushglobaltable(L) \
     ((void) lua_rawgeti(L, LUA_REGISTRYINDEX, LUA_RIDX_GLOBALS))
 ```
 
@@ -825,7 +826,7 @@ int main(int argc, char *argv[])
 {
     UNUSED(argc);
     UNUSED(argv);
-    
+
     return 0;
 }
 ```
@@ -860,7 +861,7 @@ What if the function that we wanted to lookup isn't in the global environment ta
 ```lua
 game = game or {}
 game.on_init = function(argv)
-	-- noop    
+	-- noop
 end
 ```
 
@@ -886,8 +887,8 @@ Now that we mastered the dark arts of looking up the function we want to call, w
 
 ```c
 lua_createtable(L, argc, 0);
-for(i = 0; i < argc; i++) 
-{    
+for(i = 0; i < argc; i++)
+{
 	lua_pushstring(L, argv[i]);
     lua_rawseti(L, -2, i);
 }
@@ -895,7 +896,7 @@ for(i = 0; i < argc; i++)
 
 First we create a new table and push it into the stack by calling `lua_createtable`.
 
-The second and third arguments allow us to reserve memory for numeric and key indices. These come handy when we happen to know the expected or approximate amount of elements that we wish to insert into said table. 
+The second and third arguments allow us to reserve memory for numeric and key indices. These come handy when we happen to know the expected or approximate amount of elements that we wish to insert into said table.
 
 This of course can also help us reduce the number of extraneous memory allocations as the table grows during the insertion process of the elements.
 
@@ -912,7 +913,7 @@ You might have noticed that we start at index `0` rather than `1`, which is not 
 ```lua
 function on_init(argv)
 	for _, arg in ipairs(argv) do
-       -- noop 
+       -- noop
     end
     print(argv[0])
 end
@@ -961,20 +962,20 @@ end
 int script_on_init(lua_State *L, const int argc, const char *argv[])
 {
     int i, ret;
-        
+
  	if(lua_getglobal(L, "on_init") != LUA_TFUNCTION)
     {
         lua_pop(L, 1);
         return false;
     }
-    
+
    	lua_createtable(L, argc, 0);
-    for(i = 0; i < argc; i++) 
-    {    
+    for(i = 0; i < argc; i++)
+    {
         lua_pushstring(L, argv[i]);
         lua_rawseti(L, -2, i);
     }
-    
+
     ret = lua_pcall(L, 1 /* one argument */, 1 /* one return value */, 0);
     if(ret != 0)
     {
@@ -982,12 +983,12 @@ int script_on_init(lua_State *L, const int argc, const char *argv[])
         lua_pop(L, 1);
         return false;
     }
-    
+
     if(lua_isnumber(L, -1))
     {
         ret = lua_tonumber(L, -1);
     }
-    
+
     lua_pop(L, 1);
     return ret;
 }
@@ -996,13 +997,13 @@ int main(int argc, char *argv[])
 {
     int ret;
     lua_State *L;
-    
+
     ret = script_on_init(L, argc, (const char **) argv);
     if(ret != 0)
     	return ret;
-    
+
     // ...
-    
+
     return ret;
 }
 ```
@@ -1039,13 +1040,13 @@ Now let's take a look at how would one go about calling `on_quit`.
 void script_on_quit(lua_State *L)
 {
     int ret;
-    
+
     if(lua_getglobal(L, "on_quit") != LUA_TFUNCTION)
     {
         lua_pop(L, 1);
 		return;
     }
-    
+
     ret = lua_pcall(L, 0, 0, 0);
     if(ret != 0)
     {
@@ -1068,7 +1069,7 @@ void script_on_frame(
 )
 {
     int ret;
-        
+
  	if(lua_getglobal(L, "on_frame") != LUA_TFUNCTION)
     {
         lua_pop(L, 1);
@@ -1078,7 +1079,7 @@ void script_on_frame(
     lua_pushnumber(L, dt);
     lua_pushinteger(L, w);
     lua_pushinteger(L, h);
-    
+
     ret = lua_pcall(L, 3 /* arguments argument */, 0, 0);
     if(ret != 0)
     {
@@ -1122,13 +1123,13 @@ void script_on_frame(
     const int h)
 {
     int ret;
-        
+
  	lua_rawgeti(L, LUA_REGISTRYINDEX, ref);
 
     lua_pushnumber(L, dt);
     lua_pushinteger(L, w);
     lua_pushinteger(L, h);
-    
+
     ret = lua_pcall(L, 3 /* arguments argument */, 0, 0);
     if(ret != 0)
     {
@@ -1161,18 +1162,18 @@ int create_window(lua_State *L)
 {
     const char *title;
     int w, h;
-    
+
     title = luaL_checkstring(L, 1);
     w = luaL_checkinteger(L, 2);
     h = luaL_checkinteger(L, 3);
-    
+
    	if(!os_window_create(title, w, h))
     {
         lua_pushboolean(L, false);
         lua_pushliteral(L, "window creation failed");
-        return 2; 
+        return 2;
     }
-    
+
     lua_pushboolean(L, true);
     lua_pushnil(L);
     return 2;
@@ -1182,7 +1183,7 @@ int create_window(lua_State *L)
 ```lua
 local ok, err = create_window("My Window", 640, 480)
 if not ok then
-   print(err) 
+   print(err)
 end
 
 local ok = assert(create_window("My Window", 800, 600))
@@ -1216,11 +1217,11 @@ Take a look at the example below.
 int set_window_title(lua_State *L)
 {
     const char *title;
-    
+
     title = luaL_checkstring(L, -1);
-    
+
     os_set_window_title(title);
-    
+
     return 0;
 }
 
@@ -1242,7 +1243,7 @@ My recommendation is to use the `tuple` approach in cases when the error is abou
 ```lua
 local f, err = io.open("test.lua", "rb")
 if not f then
-	print(err)    
+	print(err)
 end
 
 local f = assert(io.open("test.lua", "rb"))
@@ -1331,20 +1332,20 @@ int create_window(lua_State *L)
     int w, h;
     uint32_t flags;
     os_window_t *window;
-    
+
     title = luaL_checkstring(L, 1);
     w = luaL_checkinteger(L, 2);
     h = luaL_checkinteger(L, 3);
     flags = luaL_checkinteger(L, 4);
-    
+
     window = os_window_create(title, w, h, flags);
     if(window == NULL)
     {
         lua_pushnil(L);
         lua_pushliteral(L, "window creation failed");
-        return 2; 
+        return 2;
     }
-    
+
     lua_pushlightuserdata(L, window);
     lua_pushnil(L);
     return 2;
@@ -1357,14 +1358,14 @@ Let's implement the `close_window` function now in order to showcase how one wou
 int close_window(lua_State *L)
 {
     os_window_t *window;
-    
+
     luaL_checktype(L, 1, LUA_TLIGHTUSERDATA);
-    
+
     window = lua_touserdata(L, 1);
-    
+
     if(window != NULL)
         os_window_close(window);
-    
+
     return 0;
 }
 ```
@@ -1378,20 +1379,20 @@ int create_window(lua_State *L)
     int w, h;
     uint32_t flags;
     os_window_handle_t window;
-    
+
     title = luaL_checkstring(L, 1);
     w = luaL_checkinteger(L, 2);
     h = luaL_checkinteger(L, 3);
     flags = luaL_checkinteger(L, 4);
-    
+
     window = os_window_create(title, w, h, flags);
     if(window == OS_WINDOW_INVALID)
     {
         lua_pushnil(L);
         lua_pushliteral(L, "window creation failed");
-        return 2; 
+        return 2;
     }
-    
+
     lua_pushlightuserdata(L, (void *) (uintptr_t) window);
     lua_pushnil(L);
     return 2;
@@ -1400,14 +1401,14 @@ int create_window(lua_State *L)
 int close_window(lua_State *L)
 {
     os_window_handle_t window;
-    
+
     luaL_checktype(L, 1, LUA_TLIGHTUSERDATA);
-    
+
     window = (os_window_handle_t) (uintptr_t) lua_touserdata(L, 1);
-    
+
     if(window != OS_WINDOW_INVALID)
         os_window_close(window);
-    
+
     return 0;
 }
 ```
@@ -1425,9 +1426,9 @@ typedef struct
 
 int close_window(lua_State *L);
 
-static const luaL_Reg window_metamethods[] = {   
-	{ "__gc", close_window },            
-	{ "__close", close_window },                                     
+static const luaL_Reg window_metamethods[] = {
+	{ "__gc", close_window },
+	{ "__close", close_window },
 	{ NULL, NULL }
 };
 
@@ -1438,30 +1439,30 @@ int create_window(lua_State *L)
     uint32_t flags;
     os_window_t *window;
     window_userdata_t *window_userdata;
-    
+
     title = luaL_checkstring(L, 1);
     w = luaL_checkinteger(L, 2);
     h = luaL_checkinteger(L, 3);
     flags = luaL_checkinteger(L, 4);
-    
+
     window = os_window_create(title, w, h, flags);
     if(window == OS_WINDOW_INVALID)
     {
         lua_pushnil(L);
         lua_pushliteral(L, "window creation failed");
-        return 2; 
+        return 2;
     }
-    
+
     window_userdata = lua_newuserdata(L, sizeof(window_userdata_t));
     if(window_userdata == NULL)
         return luaL_error(L, "out of memory");
-    
+
     window_userdata->window = window;
     window_userdata->flags = flags;
-    
+
     if(luaL_newmetatable(L, WINDOW_METATABLE))
         luaL_setfuncs(L, window_metamethods);
-    
+
     lua_setmetatable(L, -2);
 
     lua_pushnil(L);
@@ -1471,17 +1472,17 @@ int create_window(lua_State *L)
 int close_window(lua_State *L)
 {
     window_userdata_t *userdata;
-    
+
    	userdata = luaL_checkudata(L, 1, WINDOW_METATABLE);
     if(userdata == NULL)
         return luaL_typeerror(L, 1, WINDOW_METATABLE);
-    
+
     if(userdata->window != NULL)
     {
         os_window_close(userdata->window);
         userdata->window = NULL;
     }
-    
+
     return 0;
 }
 ```
@@ -1493,7 +1494,7 @@ The second thing that might stand out is this lovely piece of code.
 ```c
 if(luaL_newmetatable(L, WINDOW_METATABLE))
 	luaL_setfuncs(L, window_metamethods);
-    
+
 lua_setmetatable(L, -2);
 ```
 
@@ -1552,14 +1553,14 @@ int create_window(lua_State *L)
     int w, h;
     uint32_t flags;
     id_t id;
-    
+
     title = luaL_checkstring(L, 1);
     w = luaL_checkinteger(L, 2);
     h = luaL_checkinteger(L, 3);
     flags = luaL_checkinteger(L, 4);
-    
+
     id = os_window_create(title, w, h, flags);
-    
+
 	lua_pushinteger(L, id.opaque);
     lua_pushnil(L);
     return 2;
@@ -1568,9 +1569,9 @@ int create_window(lua_State *L)
 int close_window(lua_State *L)
 {
     id_t id;
-    
+
   	id.opaque = luaL_checkinteger(L, 1);
-    
+
     os_window_close(id);
     return 0;
 }
@@ -1589,21 +1590,21 @@ int create_window(lua_State *L)
     int n, w = 640, h = 480;
     uint32_t flags = 0;
     id_t id;
-    
+
     title = luaL_checkstring(L, 1);
-    
+
     n = lua_gettop(L);
     if(n > 1)
     {
     	w = luaL_checkinteger(L, 2);
     	h = luaL_checkinteger(L, 3);
-   		
+
         if(n > 3)
     		flags = luaL_checkinteger(L, 4);
     }
-    
+
     id = os_window_create(title, w, h, flags);
-    
+
 	lua_pushinteger(L, id.opaque);
     lua_pushnil(L);
     return 2;
@@ -1618,13 +1619,13 @@ It's really as simple as that. Personally, I also like to use `lua_gettop` to en
 int table_map(lua_State *L)
 {
     int n;
-    
+
     n = lua_gettop(L);
 
     /* call functions that operate on the stack */
-    
+
     assert(lua_gettop(L) == n);
-    
+
 	/* push any return values on the stack */
     return 1;
 }
@@ -1642,8 +1643,8 @@ typedef struct
 } game_t;
 
 int game_set_vsync(lua_State *L)
-{    
-    game->vsync = luaL_checkboolean(L, 1);   
+{
+    game->vsync = luaL_checkboolean(L, 1);
     return 0;
 }
 ```
@@ -1667,7 +1668,7 @@ In simplest terms they are akin to local variables accessible within the confine
 ```lua
 function create_id_generator()
 	local id = 0
-    
+
     return function()
     	id = id + 1
         return id
@@ -1698,7 +1699,7 @@ int game_set_vsync(lua_State *L)
 
     game = lua_touserdata(L, lua_upvalueindex(1));
     game->vsync = luaL_checkboolean(L, 1);
-    
+
     return 0;
 }
 ```
@@ -1731,9 +1732,9 @@ local function odd()
             end
         end
     end
-    
+
 	return function(t)
-    	return f, t, 0 
+    	return f, t, 0
     end
 end
 
@@ -1758,7 +1759,7 @@ This will iterate over all the elements of the array, but will `yield` only when
 3	13
 ```
 
-The expression `v & n == 1` is equivalent to `v % n == 1` but only when `n` is power of two.  
+The expression `v & n == 1` is equivalent to `v % n == 1` but only when `n` is power of two.
 
 Iterators compatible with the `in` keyword always return a triple, in our case `return f, t, 0`.
 
@@ -1875,14 +1876,14 @@ void script_set_funcs(
         lua_pushcclosure(L, func->func, 1);
         lua_setfield(L, -2, func->name);
     }
-    
+
     lua_pop(L, 1);
 }
 
 script_set_funcs(L, window_funcs, game);
 ```
 
-`lua_CFunction` is just convenience function pointer `typedef` as one would expect. 
+`lua_CFunction` is just convenience function pointer `typedef` as one would expect.
 
 ```c
 typedef int (*lua_CFunction)(lua_State *L);
@@ -1924,7 +1925,7 @@ void script_set_funcs(
         lua_pushcclosure(L, func->func, 1);
         lua_setfield(L, -2, func->name);
     }
-    
+
     lua_pop(L, 1);
 }
 

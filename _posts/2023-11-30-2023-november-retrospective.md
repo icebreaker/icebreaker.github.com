@@ -6,6 +6,7 @@ title: 2023 November Retrospective
 year: 2023
 monthly: true
 propaganda: 0
+topic: retrospective
 ---
 2023 November Retrospective
 ==========================

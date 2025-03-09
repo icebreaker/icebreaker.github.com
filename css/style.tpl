@@ -319,6 +319,16 @@ table * tr:nth-child(even)
 	}
 }
 
+@media only screen and (max-width: 512px)
+{
+	.nav .games,
+	.nav .dotfiles,
+	.nav .rss
+	{
+		display: none;
+	}
+}
+
 .blood
 {
 	--blood: #BF0000;

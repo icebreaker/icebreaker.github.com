@@ -25,6 +25,8 @@ collections:
   pages:
     output: true
     permalink: /:path/
+  topics:
+    output: true
 exclude:
   - bin/
   - CNAME

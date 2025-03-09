@@ -10,6 +10,7 @@ monthly: false
 propaganda: 99
 postpaganda: 99
 class: vlcxmas
+topic: easter-egg
 ---
 
 The VLC Xmas Hat Easter Egg

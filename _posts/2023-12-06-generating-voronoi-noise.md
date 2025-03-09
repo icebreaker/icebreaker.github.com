@@ -6,6 +6,7 @@ title: Generating Voronoi Noise
 year: 2023
 monthly: false
 propaganda: 9
+topic: c
 ---
 
 Generating Voronoi Noise
@@ -26,12 +27,12 @@ typedef union
 {
     uint32_t value;
     struct
-    {   
+    {
         uint32_t r : 8;
         uint32_t g : 8;
         uint32_t b : 8;
         uint32_t a : 8;
-    };  
+    };
 } rgba_t;
 
 typedef struct
@@ -57,7 +58,7 @@ static void randomize(
     srand(seed);
 
     for(p = points, e = points + n; p != e; p++)
-    {   
+    {
         p->x = (rand() % ww) + 8;
         p->y = (rand() % hh) + 8;
         p->rgba = (rgba_t) {
@@ -65,8 +66,8 @@ static void randomize(
             .g = ((rand() & 127) + 32),
             .b = ((rand() & 127) + 64),
             .a = 0xFF
-        };  
-    }   
+        };
+    }
 }
 ```
 
@@ -92,24 +93,24 @@ static void process(
     const int h
 )
 {
-    int x, y, yo; 
-    unsigned int d, cd; 
+    int x, y, yo;
+    unsigned int d, cd;
     const point_t *cp, *p, *e = points + n;
 
     for(y = 0; y < h; y++)
-    {   
+    {
         yo = y * w;
 
         for(x = 0; x < w; x++)
-        {   
+        {
             cd = UINT_MAX;
             cp = points;
 
             for(p = points; p != e; p++)
-            {   
-                d = distance(p, x, y); 
-                if(d < cd) 
-                {   
+            {
+                d = distance(p, x, y);
+                if(d < cd)
+                {
                     cd = d;
                     cp = p;
                 }

@@ -8,6 +8,7 @@ month: 10
 monthly: true
 propaganda: dd
 music: NJ62S3A9wn0
+topic: retrospective
 ---
 
 # 2024 October Retrospective

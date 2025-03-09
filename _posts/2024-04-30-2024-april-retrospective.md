@@ -8,6 +8,7 @@ month: 4
 monthly: true
 propaganda: rustysretirement
 class: blood grinch
+topic: retrospective
 ---
 
 # 2024 April Retrospective

@@ -7,6 +7,7 @@ year: 2024
 month: 5
 monthly: false
 propaganda: noise
+topic: c
 ---
 
 # Generating Colored Noise
@@ -123,7 +124,7 @@ static void process(
 
                 fx = fract(xx);
 				fy = fract(yy);
-                
+
                 for(j = 0; j < 4; j++)
             	{
 					c0 = noise[j][xx0 + yyo0];
@@ -142,7 +143,7 @@ static void process(
 			cg = ac[1] * inv_num_samples;
 			cb = ac[2] * inv_num_samples;
 			ca = ac[3] * inv_num_samples;
-            
+
 			output[x + yo] = (rgba_t) {
 				.r = cr,
 				.g = cg,

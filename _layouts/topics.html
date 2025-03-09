@@ -1,0 +1,27 @@
+---
+layout: default
+---
+<div class="post-list topics">
+	<table>
+		{% for topic in site.topics %}
+			{% if topic.topic %}
+			{% assign topic_name = topic.topic %}
+			{% else %}
+			{% assign topic_name = topic.title | downcase %}
+			{% endif %}
+			{% assign posts = site.posts | where: "topic", topic_name %}
+			{% if posts.size > 0 %}
+				{% assign date = posts.first.date %}
+				<tr>
+					<td>
+						{{ date | date: "%Y-%m-%d" }}
+					</td>
+					<td>/</td>
+					<td>
+						<a href="{{ topic.url }}">{{ topic.title }}</a>
+					</td>
+				</tr>
+			{% endif %}
+		{% endfor %}
+	</table>
+</div>

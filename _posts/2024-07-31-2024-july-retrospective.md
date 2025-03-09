@@ -7,6 +7,7 @@ year: 2024
 month: 7
 monthly: true
 propaganda: kingdomrush
+topic: retrospective
 ---
 
 # 2024 July Retrospective

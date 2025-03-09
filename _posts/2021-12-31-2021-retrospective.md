@@ -4,6 +4,7 @@ title: 2021 Retrospective
 propaganda: 5
 music: UE5g6nRRAXI
 music: wNok5dLVlSo
+topic: retrospective
 ---
 2021 Retrospective
 ==================

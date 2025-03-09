@@ -7,6 +7,7 @@ title: Anaglyphs
 year: 2023
 monthly: false
 propaganda: 16
+topic: c
 ---
 
 Anaglyphs
@@ -33,16 +34,16 @@ static void process(
     const int dx
 )
 {
-    int x, y, yo, i, ww; 
+    int x, y, yo, i, ww;
     rgba_t c, a;
 
     ww = w - 1;
 
     for(y = 0; y < h; y++)
-    {   
+    {
         yo = y * w;
         for(x = 0; x < w; x++)
-        {   
+        {
             i = x + yo;
             c = input[i];
 
@@ -50,8 +51,8 @@ static void process(
             c.r = a.r;
 
             output[i] = c;
-        }   
-    }   
+        }
+    }
 }
 ```
 
@@ -59,7 +60,7 @@ We simply iterate over every pixel and sample ahead `dx` amount of pixels on the
 
 Then, we replace the `red` channel of the current pixel with the `red` channel of the pixel we sampled, while leaving the `green` and `blue` channels untouched.
 
-And now, drum rolls please! You can admire the results in all its glory. Slide over the image to view the difference. Special thanks go out to [Big Buck Bunny][bigbuckbunny] for participating and being a trusty test subject. 
+And now, drum rolls please! You can admire the results in all its glory. Slide over the image to view the difference. Special thanks go out to [Big Buck Bunny][bigbuckbunny] for participating and being a trusty test subject.
 
 <div class="image-diff-viewer">
 <img src="/media/2023/bunny.png" />
@@ -85,7 +86,7 @@ static void process(
     const int dx
 )
 {
-    int x, y, yo, i, ww; 
+    int x, y, yo, i, ww;
     rgba_t c, a;
 
 	ww = w - dx;
@@ -132,18 +133,18 @@ static void process(
     const int dx
 )
 {
-    int x, y, yo, i, ww; 
+    int x, y, yo, i, ww;
     rgba_t c, a;
 
 	ww = w - dx;
 
    	for(y = 0; y < h; y++)
-    {   
+    {
         yo = y * w;
 
         for(x = 0; x < ww; x++)
-        {   
-            i = x + yo; 
+        {
+            i = x + yo;
             c = input[i];
 
             a = input[i + dx];
@@ -151,11 +152,11 @@ static void process(
             c.b = a.b;
 
             output[i] = c;
-        }   
+        }
 
         for(x = ww; x < w; x++)
-        {   
-            i = x + yo; 
+        {
+            i = x + yo;
             output[i] = input[i];
         }
     }
@@ -396,12 +397,12 @@ const char * const FRAGMENT_SHADER_SOURCE = SHADER_SOURCE(
 	uniform sampler2D texture;
     uniform vec3 offset;
     varying vec2 uv;
-    
+
     void main()
     {
         vec4 a = texture2D(texture, uv);
         vec4 b = texture2D(texture, uv + offset.xy);
-        
+
         float s = step(uv.x, offset.z);
         gl_FragColor = mix(a, vec4(a.r, b.g, b.b, b.a), s);
     }
@@ -425,13 +426,13 @@ const char * const FRAGMENT_SHADER_SOURCE = SHADER_SOURCE(
 	uniform sampler2D texture_leye;
     uniform sampler2D texture_reye;
     varying vec2 uv;
-    
+
     void main()
     {
         vec4 a = texture2D(texture_leye, uv);
         vec4 b = texture2D(texture_reye, uv);
-        
-        gl_FragColor = vec4(a.r, b.g, b.b, b.a); 
+
+        gl_FragColor = vec4(a.r, b.g, b.b, b.a);
     }
 );
 ```
