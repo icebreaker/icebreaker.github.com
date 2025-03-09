@@ -5,7 +5,7 @@
 		{% if page.topic %}
 		&nbsp;/&nbsp;
 		{% assign topic = "_topics/" | append: page.topic | append: ".md" %}
-		<span><a href="{% link {{ topic  }} %}" target="_blank">{{ page.topic }}</a></span>
+		<span><a href="{% link {{ topic }} %}" target="_blank">{{ page.topic }}</a></span>
 		{% endif %}
 		{% if page.issue %}
 		&nbsp;/&nbsp;

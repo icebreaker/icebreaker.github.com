@@ -36,3 +36,5 @@ exclude:
   - .ruby-version
   - css/style.tpl
   - css/syntax.tpl
+  - .template.md
+  - .dotmake
