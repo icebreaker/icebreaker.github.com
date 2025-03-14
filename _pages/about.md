@@ -17,7 +17,7 @@ covering both [desktop](http://en.wikipedia.org/wiki/Desktop_application) and
 Contact
 -------
 If you think you got something interesting to share, feel free to get in touch
-with me via [twitter](http://twitter.com/c0d3rguy) or [e-mail](mailto:me[at]mihail[dot]co).
+with me via [X](https://x.com/c0d3rguy) or [e-mail](mailto:me[at]mihail[dot]co).
 
 Legal Disclaimer
 ----------------
