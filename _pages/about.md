@@ -5,14 +5,14 @@ propaganda: 2
 ---
 About
 =====
-I'm [Mihail "Szaby" Szabolcs](http://linkedin.com/in/mihailszabolcs) a *senior*
-[software engineer](http://en.wikipedia.org/wiki/Software_engineer) and [open
-source evangelist](http://en.wikipedia.org/wiki/Open-source_advocacy), fluent in
-a dozen of [computer languages](http://en.wikipedia.org/wiki/Computer_language),
-a couple of [human languages](http://en.wikipedia.org/wiki/Human_language) and a
-wide variety of [technologies](http://en.wikipedia.org/wiki/Technology)
-covering both [desktop](http://en.wikipedia.org/wiki/Desktop_application) and
-[web](http://en.wikipedia.org/wiki/Web_application).
+I'm [Mihail "Szaby" Szabolcs](https://linkedin.com/in/mihailszabolcs) a *senior*
+[software engineer](https://en.wikipedia.org/wiki/Software_engineer) and [open
+source evangelist](https://en.wikipedia.org/wiki/Open-source_advocacy), fluent in
+a dozen of [computer languages](https://en.wikipedia.org/wiki/Computer_language),
+a couple of [human languages](https://en.wikipedia.org/wiki/Human_language) and a
+wide variety of [technologies](https://en.wikipedia.org/wiki/Technology)
+covering both [desktop](https://en.wikipedia.org/wiki/Desktop_application) and
+[web](https://en.wikipedia.org/wiki/Web_application).
 
 Contact
 -------
@@ -28,7 +28,7 @@ This [blog](/) is not responsible for externally hosted material, including link
 
 License
 -------
-All content on this [blog](/) is available under the [CC BY-NC-SA 3.0](http://creativecommons.org/licenses/by-nc-sa/3.0/) license.
+All content on this [blog](/) is available under the [CC BY-NC-SA 3.0](https://creativecommons.org/licenses/by-nc-sa/3.0/) license.
 
 Credits
 -------
