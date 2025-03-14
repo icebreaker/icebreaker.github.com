@@ -15,7 +15,7 @@ body
 	text-justify: inter-word;
 	font-family: -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif;
 	font-size: 22px;
-	line-height: 28px;
+	line-height: 30px;
 	background-color: $background;
 	color: $foreground;
 	max-width: 1024px;
@@ -172,7 +172,6 @@ table * tr:nth-child(even)
 {
 	font-weight: bolder;
 	text-align: right;
-	padding: 2px 0 2px 0;
 }
 
 .comments
