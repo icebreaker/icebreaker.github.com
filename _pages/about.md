@@ -32,7 +32,6 @@ All content on this [blog](/) is available under the [CC BY-NC-SA 3.0](http://cr
 
 Credits
 -------
-* Video backgrounds by [Gamol](https://www.pexels.com/@gamol-755060)
 * [Gopher][gopher] by [Takuya Ueda][tenntenn] licensed under the *Creative Commons 3.0 Attributions* license
 
 [gopher]: https://github.com/golang-samples/gopher-vector
