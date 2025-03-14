@@ -5,13 +5,13 @@ layout: default
 	<table>
 		{% for topic in site.topics %}
 			{% if topic.topic %}
-			{% assign topic_name = topic.topic %}
+			{% assign topic_slug = topic.topic %}
 			{% else %}
-			{% assign topic_name = topic.title | downcase %}
+			{% assign topic_slug = topic.title | slugify %}
 			{% endif %}
-			{% assign posts = site.posts | where: "topic", topic_name %}
-			{% if posts.size > 0 %}
-				{% assign date = posts.first.date %}
+			{% assign last = site.posts | find: "topic", topic_slug %}
+			{% if last %}
+				{% assign date = last.date %}
 				<tr>
 					<td>
 						{{ date | date: "%Y-%m-%d" }}
