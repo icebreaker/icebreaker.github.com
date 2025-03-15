@@ -16,23 +16,21 @@ covering both [desktop](https://en.wikipedia.org/wiki/Desktop_application) and
 
 Contact
 -------
-If you think you got something interesting to share, feel free to get in touch
-with me via [X](https://x.com/c0d3rguy) or [e-mail](mailto:me[at]mihail[dot]co).
-
-Legal Disclaimer
-----------------
-The opinions expressed and/or implied herein are exclusively my own personal opinions and do not represent my
-past, present and future employers views in any way.
-
-This [blog](/) is not responsible for externally hosted material, including linked articles, photos or any other media.
+You can get in touch with me via [X](https://x.com/c0d3rguy), [Bluesky](https://bsky.app/profile/mihail.co)
+or [e-mail](mailto:me[at]mihail[dot]co).
 
 License
 -------
 All content on this [blog](/) is available under the [CC BY-NC-SA 3.0](https://creativecommons.org/licenses/by-nc-sa/3.0/) license.
 
-Credits
--------
-* [Gopher][gopher] by [Takuya Ueda][tenntenn] licensed under the *Creative Commons 3.0 Attributions* license
+[Gopher][gopher] by [Takuya Ueda][tenntenn] licensed under the [CC BY 3.0](https://creativecommons.org/licenses/by/3.0/) license.
+
+Legal Disclaimer
+----------------
+The opinions expressed and/or implied herein are exclusively my own personal opinions, and do not represent my
+past, present and future employers views in any way.
+
+This [blog](/) is under no circumstances responsible for any externally hosted material, including but not limited to various linked articles, photos or any other media.
 
 [gopher]: https://github.com/golang-samples/gopher-vector
 [tenntenn]: https://x.com/tenntenn
