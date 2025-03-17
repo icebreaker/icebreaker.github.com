@@ -28,10 +28,11 @@ exclude:
   - bin/
   - CNAME
   - README.md
+  - TODO.md
   - Gemfile
   - Gemfile.lock
-  - .ruby-version
   - css/style.tpl
   - css/syntax.tpl
+  - .ruby-version
   - .template.md
   - .dotmake
