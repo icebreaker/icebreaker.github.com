@@ -369,7 +369,7 @@ table * tr:nth-child(even)
 	border: 8px var(--blood) solid;
 }
 
-img.propaganda, img.postpaganda
+img.propaganda, img.rpropaganda
 {
 	max-width: 100%;
 }

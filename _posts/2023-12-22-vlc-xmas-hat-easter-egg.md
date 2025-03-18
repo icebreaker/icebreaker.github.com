@@ -8,7 +8,7 @@ image: /media/2023/vlcxmas512.png
 year: 2023
 monthly: false
 propaganda: 99
-postpaganda: 99
+rpropaganda: r99
 class: vlcxmas
 topic: easter-egg
 ---
