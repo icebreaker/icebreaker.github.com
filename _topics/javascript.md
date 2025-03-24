@@ -1,4 +1,4 @@
 ---
 layout: topic
-propaganda: electron
+propaganda: js
 ---
