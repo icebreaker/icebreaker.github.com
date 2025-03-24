@@ -9,9 +9,9 @@ layout: default
 			{% else %}
 			{% assign topic_slug = topic.title | slugify %}
 			{% endif %}
-			{% assign last = site.posts | find: "topic", topic_slug %}
-			{% if last %}
-				{% assign date = last.date %}
+			{% assign posts = site.posts | where: "topic", topic_slug %}
+			{% if posts.size > 0 %}
+				{% assign date = posts.first.date %}
 				<tr>
 					<td>
 						{{ date | date: "%Y-%m-%d" }}
