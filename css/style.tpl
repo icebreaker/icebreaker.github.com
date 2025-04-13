@@ -11,14 +11,18 @@ body
 {
 	margin: 0;
 	padding: 0 10px 10px 10px;
-	text-align: justify;
-	text-justify: inter-word;
 	font-family: -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif;
 	font-size: 22px;
 	line-height: 30px;
 	background-color: $background;
 	color: $foreground;
 	max-width: 1024px;
+}
+
+.content
+{
+	text-align: justify;
+	text-justify: inter-word;
 }
 
 ::-moz-selection
@@ -37,22 +41,23 @@ body
 
 ::-webkit-scrollbar
 {
-  width: 16px;
+	width: 8px;
+	height: 8px;
 }
 
 ::-webkit-scrollbar-track
 {
-  background: $highlight_dark;
+	background: $highlight_dark;
 }
 
 ::-webkit-scrollbar-thumb
 {
-  background: $foreground;
+	background: $foreground;
 }
 
 ::-webkit-scrollbar-thumb:hover
 {
-  background: $highlight_light;
+	background: $highlight_light;
 }
 
 h1, h2, h3, h4, h5, h6
@@ -336,6 +341,11 @@ table * tr:nth-child(even)
 .blood.go
 {
 	--blood: #47959D;
+}
+
+.blood.megan
+{
+	--blood: #B132B9;
 }
 
 .blood hr,
