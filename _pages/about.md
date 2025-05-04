@@ -6,9 +6,9 @@ propaganda: 2
 ---
 About
 =====
-I'm [Mihail "Szaby" Szabolcs](https://linkedin.com/in/mihailszabolcs) a *senior* [software engineer](https://en.wikipedia.org/wiki/Software_engineer) and [open
-source evangelist](https://en.wikipedia.org/wiki/Open-source_advocacy), fluent in a dozen of [computer languages](https://en.wikipedia.org/wiki/Computer_language), a couple of [human languages](https://en.wikipedia.org/wiki/Human_language), and a
-very wide range of [technologies](https://en.wikipedia.org/wiki/Technology) across the [desktop](https://en.wikipedia.org/wiki/Desktop_application) and [web](https://en.wikipedia.org/wiki/Web_application).
+I'm [Mihail "Szaby" Szabolcs](https://linkedin.com/in/mihailszabolcs) a *senior* [software engineer](https://en.wikipedia.org/wiki/Software_engineer) and [open source evangelist](https://en.wikipedia.org/wiki/Open-source_advocacy), fluent in a dozen of [computer languages](https://en.wikipedia.org/wiki/Computer_language), a couple of [human languages](https://en.wikipedia.org/wiki/Human_language), and a very wide range of [technologies](https://en.wikipedia.org/wiki/Technology) across the [desktop](https://en.wikipedia.org/wiki/Desktop_application) and [web](https://en.wikipedia.org/wiki/Web_application).
+
+>  *As he was a bachelor, and in nobody’s debt, nobody troubled his head any more about him.*
 
 Contact
 -------
