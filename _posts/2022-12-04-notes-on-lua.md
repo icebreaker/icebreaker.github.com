@@ -4,7 +4,7 @@ typora-root-url: ..
 typora-copy-images-to: ../media/2022
 title: Notes on Lua
 propaganda: 2
-topic: lua
+tags: lua
 ---
 
 Notes on Lua

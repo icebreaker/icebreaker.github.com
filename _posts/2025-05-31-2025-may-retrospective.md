@@ -8,7 +8,7 @@ month: 5
 monthly: true
 propaganda: fd
 music: P-kAwQP3T3w
-topic: retrospective
+tags: retrospective
 ---
 
 # 2025 May Retrospective

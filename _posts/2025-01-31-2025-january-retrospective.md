@@ -8,7 +8,7 @@ month: 1
 monthly: true
 propaganda: sc
 music: v85QO_RDFWA
-topic: retrospective
+tags: retrospective
 ---
 
 # 2025 January Retrospective

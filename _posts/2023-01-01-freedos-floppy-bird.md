@@ -6,7 +6,7 @@ title: FreeDOS and Floppy Bird
 year: 2023
 monthly: false
 propaganda: 4
-topic: assembly
+tags: assembly
 ---
 
 FreeDOS and Floppy Bird

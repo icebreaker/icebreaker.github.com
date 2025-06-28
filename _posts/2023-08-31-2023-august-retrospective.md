@@ -6,7 +6,7 @@ title: 2023 August Retrospective
 year: 2023
 monthly: true
 propaganda: 17
-topic: retrospective
+tags: retrospective
 ---
 
 2023 August Retrospective

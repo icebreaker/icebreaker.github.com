@@ -7,7 +7,7 @@ year: 2024
 month: 8
 monthly: true
 propaganda: alienromulus
-topic: retrospective
+tags: retrospective
 ---
 
 # 2024 August Retrospective

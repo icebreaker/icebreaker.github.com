@@ -9,8 +9,8 @@ layout: default
 			{% else %}
 			{% assign topic_slug = topic.title | slugify %}
 			{% endif %}
-			{% assign posts = site.posts | where: "topic", topic_slug %}
-			{% if posts.size > 0 %}
+			{% assign posts = site.tags[topic_slug] %}
+			{% if posts and posts.size > 0 %}
 				{% assign date = posts.first.date %}
 				<tr>
 					<td>

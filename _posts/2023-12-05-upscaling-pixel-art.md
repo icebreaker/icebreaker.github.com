@@ -7,7 +7,7 @@ year: 2023
 monthly: false
 imagediffviewer: true
 propaganda: 8
-topic: c
+tags: c
 ---
 
 Upscaling Pixel Art

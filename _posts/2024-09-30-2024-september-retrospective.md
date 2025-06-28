@@ -7,7 +7,7 @@ year: 2024
 month: 9
 monthly: true
 propaganda: frostpunk2
-topic: retrospective
+tags: retrospective
 ---
 
 # 2024 September Retrospective

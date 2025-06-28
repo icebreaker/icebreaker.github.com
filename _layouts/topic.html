@@ -6,8 +6,8 @@ layout: default
 {% else %}
 	{% assign topic = page.title | downcase %}
 {% endif %}
-{% assign posts = site.posts | where: "topic", topic %}
-{% if posts.size > 0 %}
+{% assign posts = site.tags[topic] %}
+{% if posts and posts.size > 0 %}
 	<div class="post-list topic">
 		<table>
 			{% for post in posts %}

@@ -7,7 +7,7 @@ year: 2024
 month: 1
 monthly: true
 propaganda: 10
-topic: retrospective
+tags: retrospective
 ---
 2024 January Retrospective
 ==========================

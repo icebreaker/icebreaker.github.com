@@ -6,7 +6,7 @@ title: Creating normal maps from diffuse maps
 year: 2023
 monthly: false
 propaganda: 5
-topic: c
+tags: c
 ---
 # Creating normal maps from diffuse maps
 

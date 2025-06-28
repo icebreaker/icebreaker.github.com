@@ -6,7 +6,7 @@ title: Universal Scene Description
 year: 2023
 monthly: false
 propaganda: 6
-topic: rant
+tags: rant
 ---
 
 # Universal Scene Description

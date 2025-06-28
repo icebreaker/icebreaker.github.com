@@ -7,7 +7,7 @@ title: Branchless Line Drawing
 year: 2023
 monthly: false
 propaganda: 5
-topic: c
+tags: c
 ---
 
 Branchless Line Drawing

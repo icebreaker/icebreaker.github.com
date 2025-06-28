@@ -7,7 +7,7 @@ year: 2024
 month: 9
 monthly: false
 propaganda: win95
-topic: abandonware
+tags: abandonware
 ---
 
 # Abandonware: Evolution

@@ -6,7 +6,7 @@ title: Generating Voronoi Noise
 year: 2023
 monthly: false
 propaganda: 9
-topic: c
+tags: c
 ---
 
 Generating Voronoi Noise

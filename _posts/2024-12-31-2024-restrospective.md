@@ -7,7 +7,7 @@ year: 2024
 propaganda: 24
 music: m3lf2VFAnew
 class: blood grinch
-topic: retrospective
+tags: retrospective
 ---
 
 2024 Retrospective

@@ -9,7 +9,7 @@ monthly: true
 propaganda: megan2
 class: blood megan
 music: CduA0TULnow
-topic: retrospective
+tags: retrospective
 ---
 
 # 2025 April Retrospective

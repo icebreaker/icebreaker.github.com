@@ -7,7 +7,7 @@ year: 2024
 month: 6
 monthly: true
 propaganda: tarot
-topic: retrospective
+tags: retrospective
 ---
 
 # 2024 June Retrospective

@@ -7,7 +7,7 @@ year: 2024
 month: 5
 monthly: false
 propaganda: noise
-topic: c
+tags: c
 ---
 
 # Generating Colored Noise

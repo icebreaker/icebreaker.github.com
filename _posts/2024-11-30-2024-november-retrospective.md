@@ -8,7 +8,7 @@ month: 11
 monthly: true
 propaganda: hl2
 music: Vlo87NYlgrs
-topic: retrospective
+tags: retrospective
 ---
 
 # 2024 November Retrospective

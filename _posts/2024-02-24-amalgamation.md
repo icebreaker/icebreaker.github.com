@@ -7,7 +7,7 @@ year: 2024
 month: 2
 monthly: false
 propaganda: 11
-topic: c
+tags: c
 ---
 
 # Amalgamation

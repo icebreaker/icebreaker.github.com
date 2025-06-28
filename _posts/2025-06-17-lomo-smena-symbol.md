@@ -7,7 +7,7 @@ year: 2025
 month: 6
 monthly: false
 propaganda: win95
-topic: hardware
+tags: hardware
 ---
 
 # Lomo: Smena Symbol

@@ -2,9 +2,11 @@
 	<hr />
 	<p>
 		<span>{{ page.date | date: "%Y-%m-%d" }}</span>
-		{% if page.topic %}
+		{% if page.tags %}
+		{% for tag in page.tags %}
 		&nbsp;/&nbsp;
-		<span><a href="/topics/{{ page.topic }}">{{ page.topic }}</a></span>
+		<span><a href="/topics/{{ tag }}">{{ tag }}</a></span>
+		{% endfor %}
 		{% endif %}
 		{% if page.issue %}
 		&nbsp;/&nbsp;

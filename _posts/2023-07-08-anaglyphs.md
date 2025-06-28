@@ -7,7 +7,7 @@ title: Anaglyphs
 year: 2023
 monthly: false
 propaganda: 16
-topic: c
+tags: c
 ---
 
 Anaglyphs

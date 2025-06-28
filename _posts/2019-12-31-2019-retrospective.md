@@ -2,7 +2,7 @@
 layout: post
 title: 2019 Retrospective
 propaganda: 1
-topic: retrospective
+tags: retrospective
 ---
 2019 Retrospective
 ==================

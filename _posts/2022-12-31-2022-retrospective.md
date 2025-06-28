@@ -4,7 +4,7 @@ typora-root-url: ..
 typora-copy-images-to: ../media/2022
 title: 2022 Retrospective
 propaganda: 4
-topic: retrospective
+tags: retrospective
 ---
 
 2022 Retrospective

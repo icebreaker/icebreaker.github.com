@@ -6,7 +6,7 @@ title: 2022 November Retrospective
 year: 2022
 monthly: true
 propaganda: 1
-topic: retrospective
+tags: retrospective
 ---
 2022 November Retrospective
 ===========================

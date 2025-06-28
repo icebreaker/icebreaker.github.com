@@ -8,7 +8,7 @@ monthly: false
 imagediffviewer: true
 propaganda: 14
 image: /media/og/js.png
-topic: javascript
+tags: javascript
 ---
 
 Image Diff(erence) Viewer
