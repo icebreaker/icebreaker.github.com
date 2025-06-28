@@ -410,3 +410,8 @@ button:active
 {
 	border: 0.3em inset var(--blood);
 }
+
+.hidden
+{
+	display: none;
+}
