@@ -47,7 +47,7 @@ Crying about it, after it has been voted in is like crying over spilled milk; To
 
 The Internet as we know it today, will be nothing more than a distant memory in the next 5 to 15 years. Local neighborhood networks will become a thing again, and piracy will skyrocket.
 
-I would have never ever thought that I'd have to write about anything like this in my lifetime, let alone in the 21st century. Yet, here we are at the cross-roads. One road leading to free and uncensored exchange of information as it was always meant to be, while the other leading to intellectual darkness. And the path has been chosen for us, yet again by the descendants of farmers and shoemakers; the likes of which have left nothing by death and destruction behind.
+I would have never ever thought that I'd have to write about anything like this in my lifetime, let alone in the 21st century. Yet, here we are at the cross-roads. One road leading to free and uncensored exchange of information as it was always meant to be, while the other leading to intellectual darkness. And the path has been chosen for us, yet again by the descendants of farmers and shoemakers; the likes of whom have left nothing but death and destruction behind.
 
 But one thing is crystal clear, *socialist brain-rot* is a hell of a drug.
 
