@@ -46,6 +46,8 @@ All content on this [blog](/) is available under the [CC BY-NC-SA 3.0](https://c
 
 [Gopher][gopher] by [Takuya Ueda][tenntenn] licensed under the [CC BY 3.0](https://creativecommons.org/licenses/by/3.0/) license.
 
+Various illustrations like [Vasilisa the Beautiful][vasilisa] by [Ivan Bilibin][ivanbilibin].
+
 Legal Disclaimer
 ----------------
 The opinions expressed and/or implied herein are exclusively my own personal opinions, and do not represent my past, present and future employers views in any way.
@@ -60,3 +62,5 @@ This [blog](/) is under no circumstances responsible for any externally hosted m
 [tenntenn]: https://x.com/tenntenn
 [ns]: https://en.wikipedia.org/wiki/Netscape
 [ie]: https://en.wikipedia.org/wiki/Internet_Explorer
+[ivanbilibin]: https://en.wikipedia.org/wiki/Ivan_Bilibin
+[vasilisa]: https://en.wikipedia.org/wiki/Vasilisa_the_Beautiful
