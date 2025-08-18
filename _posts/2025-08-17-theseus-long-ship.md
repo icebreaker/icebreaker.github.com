@@ -6,6 +6,7 @@ title: The curious case of Theseus and his long-ship
 year: 2025
 month: 8
 monthly: false
+image: /media/propaganda/skyphos.png
 propaganda: skyphos
 tags: ai mythology
 ---
@@ -30,7 +31,7 @@ Okay, let's dive into the classic myth of Theseus and the Argonauts!
 
 **The Story**
 
-The story tells of Theseus, a brave and skilled prince, who ventures into 
+The story tells of Theseus, a brave and skilled prince, who ventures into
 the Underworld to rescue his deceased father. He's armed with a helmet
 inlaid with a magical bull’s eye, which is a key to passing through the
 Labyrinth of the Dead. He uses this helmet to navigate the perilous maze
@@ -628,7 +629,7 @@ ship, seemingly lost at sea, and finds it remarkably intact.
 
 However, over time, as the ship ages, the wood gradually decays and
 changes. Theseus realizes that the original planks of the ship are
-no longer present. 
+no longer present.
 
 He then begins to replace these planks with new ones, meticulously, until
 every single piece of wood has a different label.
