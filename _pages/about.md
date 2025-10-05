@@ -38,21 +38,30 @@ I'm [Mihail "Szaby" Szabolcs](https://linkedin.com/in/mihailszabolcs) a *senior*
 
 Contact
 -------
-You can get in touch with me via [X](https://x.com/c0d3rguy), [Bluesky](https://bsky.app/profile/mihail.co) or [e-mail](mailto:me[at]mihail[dot]co).
+You can get in touch with me via [X](https://x.com/c0d3rguy),
+[Bluesky](https://bsky.app/profile/mihail.co) or
+[e-mail](mailto:me[at]mihail[dot]co).
 
 License
 -------
-All content on this [blog](/) is available under the [CC BY-NC-SA 3.0](https://creativecommons.org/licenses/by-nc-sa/3.0/) license.
+All content on this [blog](/) is available under the [CC BY-NC-SA
+3.0](https://creativecommons.org/licenses/by-nc-sa/3.0/) license.
 
-[Gopher][gopher] by [Takuya Ueda][tenntenn] licensed under the [CC BY 3.0](https://creativecommons.org/licenses/by/3.0/) license.
+The [Gopher][gopher] by [Takuya Ueda][tenntenn] is licensed under the [CC BY
+3.0](https://creativecommons.org/licenses/by/3.0/) license.
 
-Various illustrations like [Vasilisa the Beautiful][vasilisa] by [Ivan Bilibin][ivanbilibin].
+Some of the illustrations sprinkled through the [blog](/), *like [Vasilisa the
+Beautiful][vasilisa]*, are by none other than [Ivan Bilibin][ivanbilibin].
 
 Legal Disclaimer
 ----------------
-The opinions expressed and/or implied herein are exclusively my own personal opinions, and do not represent my past, present and future employers views in any way.
+The opinions expressed and/or implied herein are exclusively my own personal
+opinions, and do not represent my past, present and future employers views in
+any way.
 
-This [blog](/) is under no circumstances responsible for any externally hosted material, including but not limited to various linked articles, photos or any other media.
+This [blog](/) is under no circumstances responsible for any externally hosted
+material, including but not limited to various linked articles, photos or any
+other media.
 
 ---
 
