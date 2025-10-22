@@ -135,7 +135,7 @@ index e1daa96..8e377e4 100755
 +++ b/bash/bin/powerline.py
 @@ -6,9 +6,9 @@ import subprocess
  import sys
- 
+
  class Powerline:
 -    ESC   = '\e'
 -    LSQ   = '\['
@@ -149,10 +149,10 @@ index e1daa96..8e377e4 100755
 @@ -102,7 +102,7 @@ class Powerline:
          if int(error) != 0:
              bg = self.PINK
- 
+
 -        self.append(' \$ ', None, bg)
 +        self.append(r' \$ ', None, bg)
- 
+
  if __name__ == '__main__':
      p = Powerline()
 ```
@@ -209,7 +209,7 @@ I still wonder to this day if Microsoft regrets not crushing Wine while it was s
 
 I tried not to hype this one up too much in my retrospective of the month of June, as I didn't want to just set myself up for a disappointment of epic proportion, like so many times before.
 
-{% include youtube.html id="FqIi3N9dusk" %}
+{% include youtube.html id="ZbsiKjVAV28" %}
 
 Now that it's here, and I watched a few episodes, my opinion osculates somewhere in between the not good, yet not terrible territory; I say that as someone who liked both [Aliens][aliens] and [Alien 3][alien3].
 
