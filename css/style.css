@@ -420,3 +420,14 @@ button:active
 {
 	display: none;
 }
+
+.invert
+{
+	filter: invert();
+}
+
+img.invert-on-hover:hover
+{
+	filter: invert();
+	cursor: help;
+}

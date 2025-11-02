@@ -47,7 +47,7 @@ I feel like Riddick is a pretty underrated franchise all things considered, and 
 
 ## Toasters
 
-![speakers](/media/2025/speakers.png)
+<img src="/media/2025/speakers.png" alt="speakers" class="invert-on-hover" />
 
 While on the subject of [walking chrome toasters][toasters], it appears that in our particular case, they might turn out to be *walking gray speakers* instead. This was my rather cringe attempt at making a reference to [NEO][neo] by [1x][1x], of course.
 
