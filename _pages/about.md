@@ -47,11 +47,11 @@ License
 All content on this [blog](/) is available under the [CC BY-NC-SA
 3.0](https://creativecommons.org/licenses/by-nc-sa/3.0/) license.
 
-The [Gopher][gopher] by [Takuya Ueda][tenntenn] is licensed under the [CC BY
+The [Gopher][gopher] is by [Takuya Ueda][tenntenn], and has been licensed under the [CC BY
 3.0](https://creativecommons.org/licenses/by/3.0/) license.
 
-Some of the illustrations sprinkled through the [blog](/), *like [Vasilisa the
-Beautiful][vasilisa]*, are by none other than [Ivan Bilibin][ivanbilibin].
+Some of the illustrations sprinkled through this [blog](/), *like [Vasilisa the
+Beautiful][vasilisa]* for instance, are by none other than the brilliant [Ivan Bilibin][ivanbilibin].
 
 Legal Disclaimer
 ----------------
