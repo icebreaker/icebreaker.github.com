@@ -1,5 +1,5 @@
 ---
 layout: topic
-title: FreeBSD
+title: BSD
 propaganda: freebsd
 ---

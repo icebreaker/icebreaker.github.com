@@ -10,7 +10,7 @@ monthly: false
 propaganda: 99
 rpropaganda: r99
 class: vlcxmas
-tags: easter-egg
+tags: cpp easter-egg
 ---
 
 The VLC Xmas Hat Easter Egg
