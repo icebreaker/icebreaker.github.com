@@ -79,10 +79,10 @@ all: $(TARGET)
 
 $(TARGET): $(SOURCE)
 	$(CC) $(SOURCE) -o $@
-	
+
 clean:
 	$(RM) $(TARGET)
-	
+
 .PHONY: all clean
 ```
 
@@ -95,10 +95,10 @@ all: $(TARGET)
 
 $(TARGET): $(SOURCE)
 	cl /nologo $(SOURCE) /link /out:$@
-	
+
 clean:
 	del /Q $(TARGET)
-	
+
 .PHONY: all clean
 ```
 
@@ -110,7 +110,7 @@ If you have a relatively small project, it can come in handy; because it allows 
 
 As per usual, you can find a collection of my random monthly scribblings and musings below.
 
-{% include toc.html year="2024" month="4" %}
+{% include posts.html year="2024" month="4" retrospective="false" reverse="true" %}
 
 I know that it's not much, but it's honest work.
 

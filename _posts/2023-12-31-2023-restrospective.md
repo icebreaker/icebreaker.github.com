@@ -25,19 +25,11 @@ I didn't expect to have to face a financial crisis twice in a row in my natural 
 
 It's not all doom and gloom of course and I am most definitely not the one to beat the drums of the Apocalypse and trying to summon the horsemen by any means. On the contrary, I am just being realistic and preparing for the worst. Better be prepared than show the other cheek, that's my motto.
 
-## Monthly Retrospective Archive
+## Archive
 
 Just like last year, I continued writing monthly retrospectives at the tail end of each month, which you can find conveniently linked below. Just in case you have nothing better to do with your precious time.
 
-{% include toc.html year="2023" monthly="true" %}
-
-## Other Random Scribblings
-
-In addition to my monthly scribblings, I ended up writing about some of my bite-sized-weekend-mini-projects.
-
-{% include toc.html year="2023" %}
-
-I already have some more of these lined up for early next year, in order to start things off with a loud bang.
+{% include posts.html year="2023" reverse="true" %}
 
 ## The Legend of Zelda: Tears of the Kingdom
 

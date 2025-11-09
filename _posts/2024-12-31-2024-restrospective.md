@@ -19,13 +19,9 @@ Let's kick this off with the obligatory GitHub contributions chart.
 
 December looks like a barren wasteland out there as I mostly paid off some of my sleep debt, and didn't end up tinkering too much.
 
-## Monthly Retrospective Archive
+## Archive
 
-{% include toc.html year="2024" monthly="true" %}
-
-## Other Random Scribblings
-
-{% include toc.html year="2024" %}
+{% include posts.html year="2024" reverse="true" %}
 
 Alas, I didn't scribble as much compared to last year. Which is precisely the reason why I don't really do new years resolutions.
 

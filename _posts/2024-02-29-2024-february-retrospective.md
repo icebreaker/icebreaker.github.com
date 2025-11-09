@@ -72,7 +72,7 @@ This was published in the **52nd issue** *(January 2002)* of the magazine.
 
 As per usual, you can find a collection of my random monthly scribblings and musings below.
 
-{% include toc.html year="2024" month="2" %}
+{% include posts.html year="2024" month="2" retrospective="false" reverse="true" %}
 
 I know that it's not much, but it's honest work.
 

@@ -184,13 +184,13 @@ table * tr:nth-child(even)
 	font-weight: bolder;
 }
 
-.post-list table td
+.posts table td
 {
 	white-space: nowrap;
 	font-weight: bolder;
 }
 
-.post-list table td:last-child
+.posts table td:last-child
 {
 	width: 100%;
 }

@@ -4,23 +4,6 @@ layout: default
 {% if page.topic %}
 	{% assign topic = page.topic %}
 {% else %}
-	{% assign topic = page.title | downcase %}
+	{% assign topic = page.title | slugify %}
 {% endif %}
-{% assign posts = site.tags[topic] %}
-{% if posts and posts.size > 0 %}
-	<div class="post-list topic">
-		<table>
-			{% for post in posts %}
-			<tr>
-				<td>
-					{{ post.date | date: "%Y-%m-%d" }}
-				</td>
-				<td>/</td>
-				<td>
-					<a href="{{ post.url }}">{{ post.title }}</a>
-				</td>
-			</tr>
-			{% endfor %}
-		</table>
-	</div>
-{% endif %}
+{% include posts.html tag=topic %}
