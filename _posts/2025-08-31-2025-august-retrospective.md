@@ -3,9 +3,6 @@ layout: post
 typora-root-url: ..
 typora-copy-images-to: ../media/2025
 title: 2025 August Retrospective
-year: 2025
-month: 8
-monthly: true
 propaganda: kinoleto
 music: iOvYGQtFBNM
 tags: retrospective

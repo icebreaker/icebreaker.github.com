@@ -3,9 +3,6 @@ layout: post
 typora-root-url: ..
 typora-copy-images-to: ../media/2025
 title: 2025 September Retrospective
-year: 2025
-month: 9
-monthly: true
 propaganda: ctlr
 class: blood nun
 music: dj_Xi_yfnAU

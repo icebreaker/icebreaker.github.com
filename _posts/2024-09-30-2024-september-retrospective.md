@@ -3,9 +3,6 @@ layout: post
 typora-root-url: ..
 typora-copy-images-to: ../media/2024
 title: 2024 September Retrospective
-year: 2024
-month: 9
-monthly: true
 propaganda: frostpunk2
 tags: retrospective
 ---

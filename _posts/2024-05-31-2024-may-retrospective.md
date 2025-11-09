@@ -3,9 +3,6 @@ layout: post
 typora-root-url: ..
 typora-copy-images-to: ../media/2024
 title: 2024 May Retrospective
-year: 2024
-month: 5
-monthly: true
 propaganda: darkmatter
 tags: retrospective
 ---

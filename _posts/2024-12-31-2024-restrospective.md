@@ -3,7 +3,6 @@ layout: post
 typora-root-url: ..
 typora-copy-images-to: ../media/2024
 title: 2024 Retrospective
-year: 2024
 propaganda: 24
 music: m3lf2VFAnew
 class: blood grinch

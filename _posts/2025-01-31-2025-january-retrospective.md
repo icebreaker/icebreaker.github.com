@@ -3,9 +3,6 @@ layout: post
 typora-root-url: ..
 typora-copy-images-to: ../media/2025
 title: 2025 January Retrospective
-year: 2025
-month: 1
-monthly: true
 propaganda: sc
 music: v85QO_RDFWA
 tags: retrospective

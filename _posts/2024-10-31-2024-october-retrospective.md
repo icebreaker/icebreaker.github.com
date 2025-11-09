@@ -3,9 +3,6 @@ layout: post
 typora-root-url: ..
 typora-copy-images-to: ../media/2024
 title: 2024 October Retrospective
-year: 2024
-month: 10
-monthly: true
 propaganda: dd
 music: NJ62S3A9wn0
 tags: retrospective

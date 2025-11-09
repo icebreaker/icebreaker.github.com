@@ -3,9 +3,6 @@ layout: post
 typora-root-url: ..
 typora-copy-images-to: ../media/2024
 title: 2024 March Retrospective
-year: 2024
-month: 3
-monthly: true
 propaganda: difficultgame
 class: center
 tags: retrospective

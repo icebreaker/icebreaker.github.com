@@ -3,9 +3,6 @@ layout: post
 typora-root-url: ..
 typora-copy-images-to: ../media/2024
 title: Generating Colored Noise
-year: 2024
-month: 5
-monthly: false
 propaganda: noise
 tags: c
 ---

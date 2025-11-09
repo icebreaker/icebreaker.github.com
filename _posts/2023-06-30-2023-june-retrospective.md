@@ -3,8 +3,6 @@ layout: post
 typora-root-url: ..
 typora-copy-images-to: ../media/2023
 title: 2023 June Retrospective
-year: 2023
-monthly: true
 propaganda: 7
 tags: retrospective
 ---

@@ -3,9 +3,6 @@ layout: post
 typora-root-url: ..
 typora-copy-images-to: ../media/2025
 title: 2025 February Retrospective
-year: 2025
-month: 2
-monthly: true
 propaganda: 15
 music: paseuiP5xn0
 tags: retrospective

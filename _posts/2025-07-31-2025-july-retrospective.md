@@ -3,9 +3,6 @@ layout: post
 typora-root-url: ..
 typora-copy-images-to: ../media/2025
 title: 2025 July Retrospective
-year: 2025
-month: 7
-monthly: true
 propaganda: shcde
 music: v85QO_RDFWA
 tags: retrospective

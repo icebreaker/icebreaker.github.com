@@ -3,8 +3,6 @@ layout: post
 typora-root-url: ..
 typora-copy-images-to: ../media/2023
 title: Universal Scene Description
-year: 2023
-monthly: false
 propaganda: 6
 tags: rant random
 ---

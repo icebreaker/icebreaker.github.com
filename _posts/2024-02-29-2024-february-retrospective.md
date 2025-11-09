@@ -3,9 +3,6 @@ layout: post
 typora-root-url: ..
 typora-copy-images-to: ../media/2024
 title: 2024 February Retrospective
-year: 2024
-month: 2
-monthly: true
 propaganda: 31
 class: blood swim
 music: jgjmWH-6XZQ

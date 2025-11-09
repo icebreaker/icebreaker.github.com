@@ -3,9 +3,6 @@ layout: post
 typora-root-url: ..
 typora-copy-images-to: ../media/2025
 title: 2025 June Retrospective
-year: 2025
-month: 6
-monthly: true
 propaganda: alienearth
 music: qpW2AjQbdbs
 tags: retrospective

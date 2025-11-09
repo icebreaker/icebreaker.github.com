@@ -3,9 +3,6 @@ layout: post
 typora-root-url: ..
 typora-copy-images-to: ../media/2025
 title: 2025 October Retrospective
-year: 2025
-month: 10
-monthly: true
 propaganda: starbuck
 music: X_HBIm_8BOE
 tags: retrospective

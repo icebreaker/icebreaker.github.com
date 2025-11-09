@@ -3,8 +3,6 @@ layout: post
 typora-root-url: ..
 typora-copy-images-to: ../media/2023
 title: Creating normal maps from diffuse maps
-year: 2023
-monthly: false
 propaganda: 5
 tags: c
 ---

@@ -3,9 +3,6 @@ layout: post
 typora-root-url: ..
 typora-copy-images-to: ../media/2024
 title: Amalgamation
-year: 2024
-month: 2
-monthly: false
 propaganda: 11
 tags: c
 ---

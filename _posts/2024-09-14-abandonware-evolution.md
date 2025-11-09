@@ -3,9 +3,6 @@ layout: post
 typora-root-url: ..
 typora-copy-images-to: ../media/2024
 title: "Abandonware: Evolution"
-year: 2024
-month: 9
-monthly: false
 propaganda: win95
 tags: abandonware
 ---

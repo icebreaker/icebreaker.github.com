@@ -3,9 +3,6 @@ layout: post
 typora-root-url: ..
 typora-copy-images-to: ../media/2025
 title: The curious case of Theseus and his long-ship
-year: 2025
-month: 8
-monthly: false
 image: /media/propaganda/skyphos.png
 propaganda: skyphos
 tags: ai mythology

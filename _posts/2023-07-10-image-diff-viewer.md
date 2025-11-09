@@ -3,8 +3,6 @@ layout: post
 typora-root-url: ..
 typora-copy-images-to: ../media/2023
 title: Image Diff(erence) Viewer
-year: 2023
-monthly: false
 imagediffviewer: true
 propaganda: 14
 image: /media/og/js.png

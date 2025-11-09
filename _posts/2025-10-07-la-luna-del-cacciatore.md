@@ -3,9 +3,6 @@ layout: post
 typora-root-url: ..
 typora-copy-images-to: ../media/2025
 title: La luna del cacciatore
-year: 2025
-month: 10
-monthly: false
 image: /media/propaganda/avp.png
 propaganda: avp
 music: hHSC2uXj160

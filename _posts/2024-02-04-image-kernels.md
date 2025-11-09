@@ -4,9 +4,6 @@ typora-root-url: ..
 typora-copy-images-to: ../media/2024
 title: Image Kernels
 imagediffviewer: true
-year: 2024
-month: 2
-monthly: false
 propaganda: 42
 class: blood
 tags: c

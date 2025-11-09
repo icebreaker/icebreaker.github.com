@@ -3,9 +3,6 @@ layout: post
 typora-root-url: ..
 typora-copy-images-to: ../media/2025
 title: "Lomo: Smena Symbol"
-year: 2025
-month: 6
-monthly: false
 propaganda: win95
 tags: hardware
 ---

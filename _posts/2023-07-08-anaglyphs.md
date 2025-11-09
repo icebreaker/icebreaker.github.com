@@ -4,8 +4,6 @@ typora-root-url: ..
 typora-copy-images-to: ../media/2023
 imagediffviewer: true
 title: Anaglyphs
-year: 2023
-monthly: false
 propaganda: 16
 tags: c
 ---
