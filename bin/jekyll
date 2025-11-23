@@ -26,4 +26,7 @@ end
 require "rubygems"
 require "bundler/setup"
 
+require_relative "../_lib/pry"
+require_relative "../_lib/jekyll-webrick-monkey-patch"
+
 load Gem.bin_path("jekyll", "jekyll")
