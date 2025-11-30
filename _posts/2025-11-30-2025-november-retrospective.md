@@ -116,6 +116,8 @@ internal void SetTitleBarWidgets(Native.CFramelessMainWindow nativeWindow)
 
 The `grabber` is quite an interesting choice of name for a member variable, but this is a safe place where we don't judge anything or anyone for that matter.
 
+## Decima Engine
+
 While we are on the subject of custom title bars, I would be remiss, if I didn't mention the [Decima Engine][decimaengine], which seems to be doing something similar, as you can see for yourself in the screenshot below.
 
 ![decimaeditor](/media/2025/decimaeditor.png)
