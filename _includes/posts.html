@@ -5,26 +5,36 @@
 {% endif %}
 
 {% if include.year and posts and posts.size > 0 %}
-	{% assign posts_by_year = posts | group_by_exp: "post", "post.date | date: '%Y'" | find: "name", include.year  %}
-	{% if posts_by_year %}
-		{% assign posts = posts_by_year.items %}
-	{% else %}
-		{% assign posts = "" | split: "" %}
-	{% endif %}
+	{% assign filtered_posts = "" | split: "" %}
+	{% for post in posts %}
+		{% assign post_year = post.date | date: "%Y" %}
+		{% if post_year == include.year %}
+			{% assign filtered_posts = filtered_posts | push: post %}
+		{% endif %}
+	{% endfor %}
+	{% assign posts = filtered_posts %}
 {% endif %}
 
 {% if include.month and posts and posts.size > 0 %}
-	{% assign posts_by_month = posts | group_by_exp: "post", "post.date | date: '%m'" | find: "name", include.month  %}
-	{% if posts_by_month %}
-		{% assign posts = posts_by_month.items %}
-	{% else %}
-		{% assign posts = "" | split: "" %}
-	{% endif %}
+	{% assign filtered_posts = "" | split: "" %}
+	{% for post in posts %}
+		{% assign post_month = post.date | date: "%-m" %}
+		{% if post_month == include.month %}
+			{% assign filtered_posts = filtered_posts | push: post %}
+		{% endif %}
+	{% endfor %}
+	{% assign posts = filtered_posts %}
 {% endif %}
 
 {% if include.retrospective and posts and posts.size > 0 %}
 	{% if include.retrospective == "true" %}
-		{% assign posts = posts | where_exp: "post", "post.tags contains 'retrospective'" %}
+		{% assign filtered_posts = "" | split: "" %}
+		{% for post in posts %}
+			{% if post.tags contains 'retrospective' %}
+				{% assign filtered_posts = filtered_posts | push: post %}
+			{% endif %}
+		{% endfor %}
+		{% assign posts = filtered_posts %}
 	{% else %}
 		{% assign filtered_posts = "" | split: "" %}
 		{% for post in posts %}
