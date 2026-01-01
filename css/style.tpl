@@ -259,24 +259,54 @@ table * tr:nth-child(even)
 	}
 }
 
-.image-diff-viewer
+x-image-diff-viewer
 {
 	position: relative;
 	cursor: ew-resize;
 	display: inline-block;
 }
 
-.image-diff-viewer img
+x-image-diff-viewer .label
 {
-	max-width: 1024px;
+	position: absolute;
+	display: inline-block;
+	background-color: black;
+	color: white;
+	font-weight: bolder;
+	padding: 4px;
+	opacity: 0.7;
+	text-align: center;
+	min-width: 128px;
 }
 
-.image-diff-viewer img:last-child
+x-image-diff-viewer .label.hidden
 {
 	display: none;
 }
 
-.image-diff-viewer .wrapper
+x-image-diff-viewer .label.after
+{
+	left: 8px;
+	bottom: 8px;
+}
+
+x-image-diff-viewer .label.before
+{
+	right: 8px;
+	top: 8px;
+}
+
+x-image-diff-viewer img
+{
+	max-width: 1024px;
+}
+
+x-image-diff-viewer img:last-child
+{
+	display: none;
+}
+
+x-image-diff-viewer .wrapper
 {
 	position: absolute;
 	width: auto;
@@ -289,7 +319,7 @@ table * tr:nth-child(even)
 
 @media only screen and (max-width: 1024px)
 {
-	.image-diff-viewer img
+	x-image-diff-viewer img
 	{
 		max-width: 512px;
 	}
@@ -297,7 +327,7 @@ table * tr:nth-child(even)
 
 @media only screen and (max-width: 512px)
 {
-	.image-diff-viewer img
+	x-image-diff-viewer img
 	{
 		max-width: 256px;
 	}

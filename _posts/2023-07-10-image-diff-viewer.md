@@ -3,7 +3,6 @@ layout: post
 typora-root-url: ..
 typora-copy-images-to: ../media/2023
 title: Image Diff(erence) Viewer
-imagediffviewer: true
 propaganda: 14
 image: /media/og/js.png
 tags: javascript
@@ -99,9 +98,9 @@ document.querySelectorAll(".image-diff-viewer").forEach(function(el)
 
 You probably have seen it in action my previous post about anaglyphs, but feel free to check out the  example below, just in case you missed it.
 
-<div class="image-diff-viewer">
+<x-image-diff-viewer>
 <img src="/media/2023/StoneFloorTexture_0.png" />
 <img src="/media/2023/output-final.png" />
-</div>
+</x-image-diff-viewer>
 
 To use it, just to hover over the image and slide to the left or right. Touch should work as well. That is all!

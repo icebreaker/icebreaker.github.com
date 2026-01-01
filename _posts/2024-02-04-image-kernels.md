@@ -3,7 +3,6 @@ layout: post
 typora-root-url: ..
 typora-copy-images-to: ../media/2024
 title: Image Kernels
-imagediffviewer: true
 propaganda: 42
 class: blood
 tags: c
@@ -70,10 +69,10 @@ const float emboss_kernel[9] = {
 };
 ```
 
-<div class="image-diff-viewer">
+<x-image-diff-viewer>
 <img src="/media/2024/skeksisbw.png" />
 <img src="/media/2024/skeksisbwemboss.png" />
-</div>
+</x-image-diff-viewer>
 
 Not too shabby right? But what about colors? Instead of applying the kernel to only one channel, it's possible to apply it red, green and blue at the same time.
 
@@ -98,10 +97,10 @@ for(int i = 0; i < 9; i++)
 }
 ```
 
-<div class="image-diff-viewer">
+<x-image-diff-viewer>
 <img src="/media/2024/skeksis.png" />
 <img src="/media/2024/skeksisemboss.png" />
-</div>
+</x-image-diff-viewer>
 
 Before we take a look at the full source code, let's awe a gander at another shiny kernel that results in a rough outline.
 
@@ -115,10 +114,10 @@ const float outline_kernel[9] = {
 
 In order to spice things up a little bit even more, let's also set the `factor` to a value of `2` this time.
 
-<div class="image-diff-viewer">
+<x-image-diff-viewer>
 <img src="/media/2024/skeksisbw.png" />
 <img src="/media/2024/skeksisbwoutline.png" />
-</div>
+</x-image-diff-viewer>
 
 ## Source Code
 

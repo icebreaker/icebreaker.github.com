@@ -3,7 +3,6 @@ layout: post
 typora-root-url: ..
 typora-copy-images-to: ../media/2023
 title: Upscaling Pixel Art
-imagediffviewer: true
 propaganda: 8
 tags: c
 ---
@@ -35,17 +34,17 @@ Before diving into any of the technical details, let's take a look at some examp
 
 First this tiny house taken from the [Tiny Swords][tinyswords] asset pack by [Pixel Frog][pixelfrog].
 
-<div class="image-diff-viewer">
+<x-image-diff-viewer>
 <img src="/media/2023/houseo.png" />
 <img src="/media/2023/housexbr4.png" />
-</div>
+</x-image-diff-viewer>
 
 And, then something more involved in the form of this amazing [Dungeon Crawler Tileset][dct] from the open source rogue-like adventure called [Dungeon Crawl Stone Soup][dcss].
 
-<div class="image-diff-viewer">
+<x-image-diff-viewer>
 <img src="/media/2023/tileso.png" />
 <img src="/media/2023/tilesxbr4.png" />
-</div>
+</x-image-diff-viewer>
 
 Most implementations out there convert from RGB to YUV and employ all sorts of magical formulas to calculate the distance (or similarity if wish) between two pixels.
 

@@ -2,7 +2,6 @@
 layout: post
 typora-root-url: ..
 typora-copy-images-to: ../media/2023
-imagediffviewer: true
 title: Anaglyphs
 propaganda: 16
 tags: c
@@ -60,10 +59,10 @@ Then, we replace the `red` channel of the current pixel with the `red` channel o
 
 And now, drum rolls please! You can admire the results in all its glory. Slide over the image to view the difference. Special thanks go out to [Big Buck Bunny][bigbuckbunny] for participating and being a trusty test subject.
 
-<div class="image-diff-viewer">
+<x-image-diff-viewer>
 <img src="/media/2023/bunny.png" />
 <img src="/media/2023/bunny_red_cyan_clamp.png" />
-</div>
+</x-image-diff-viewer>
 
 If you pay attention and take a closer look to the right side of the image, you might notice how there are some artifacts that look quite bad to say the least.
 
@@ -115,10 +114,10 @@ static void process(
 
 While this is most definitely far from being perfect, it's also not terrible. At any rate much better than the ugly artifacts and also a whole lot less noticeable, which is a plus.
 
-<div class="image-diff-viewer">
+<x-image-diff-viewer>
 <img src="/media/2023/bunny.png" />
 <img src="/media/2023/bunny_red_cyan.png" />
-</div>
+</x-image-diff-viewer>
 
 Before I go much further, let's take a look at what happens if we flip the channels around.
 
@@ -161,17 +160,17 @@ static void process(
 }
 ```
 
-<div class="image-diff-viewer">
+<x-image-diff-viewer>
 <img src="/media/2023/bunny.png" />
 <img src="/media/2023/bunny_cyan_red.png" />
-</div>
+</x-image-diff-viewer>
 
 To observe the difference a wee bit better, let's take a look another look at the two versions overlay-ed on top of each other.
 
-<div class="image-diff-viewer">
+<x-image-diff-viewer>
 <img src="/media/2023/bunny_cyan_red.png" />
 <img src="/media/2023/bunny_red_cyan.png" />
-</div>
+</x-image-diff-viewer>
 
 In case you want to play around with this yourself, you can find the full listing of the utility below.
 

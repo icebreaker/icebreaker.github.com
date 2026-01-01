@@ -1,0 +1,101 @@
+<script type="module">
+class ImageDiffViewer extends HTMLElement
+{
+	constructor()
+	{
+		super();
+		this.wrapper = this.createWrapper();
+		this.beforeLabel = this.createLabel("before");
+		this.afterLabel = this.createLabel("after");
+	}
+
+	connectedCallback()
+	{
+		const images = this.querySelectorAll("img");
+		if(images.length != 2)
+			return;
+
+		this.initWrapper(images[0], images[1]);
+	}
+
+	onUpdateWrapper = (e) =>
+	{
+		const { wrapper } = this;
+		const rect = this.getBoundingClientRect();
+		const border = Math.max(0, wrapper.offsetWidth - wrapper.clientWidth);
+		const x = (e.pageX - rect.left - border) / this.offsetWidth;
+		const perc = Math.min(Math.max(0, x * 100), 100);
+
+		wrapper.style.width = perc + "%";
+	}
+
+	onToggleLabels = (e) =>
+	{
+		e.preventDefault();
+
+		this.toggleLabel(this.beforeLabel);
+		this.toggleLabel(this.afterLabel);
+
+		return false;
+	}
+
+	initWrapper(beforeImage, afterImage)
+	{
+		afterImage.style.display = "block";
+		this.removeChild(afterImage);
+
+		this.initLabel(this, this.beforeLabel, beforeImage);
+
+		this.wrapper.appendChild(afterImage);
+
+		this.initLabel(this.wrapper, this.afterLabel, afterImage);
+
+		this.appendChild(this.wrapper);
+
+		this.addEventListener("mousemove",  this.onUpdateWrapper, false);
+		this.addEventListener("mouseleave", this.onUpdateWrapper, false);
+		this.addEventListener("touchstart", this.onUpdateWrapper, false);
+		this.addEventListener("touchmove" , this.onUpdateWrapper, false);
+
+		beforeImage.addEventListener("contextmenu", this.onToggleLabels, false);
+		afterImage.addEventListener("contextmenu", this.onToggleLabels, false);
+	}
+
+	createWrapper()
+	{
+		let el = document.createElement("div");
+		el.className = "wrapper";
+		el.style.width = "50%";
+		return el;
+	}
+
+	toggleLabel(label)
+	{
+		if(label.classList.contains("hidden"))
+			label.classList.remove("hidden");
+		else
+			label.classList.add("hidden");
+	}
+
+	initLabel(el, label, image)
+	{
+		if(!image.hasAttribute("title"))
+			return;
+
+		label.innerText = image.getAttribute("title") || label.innerText;
+		image.setAttribute("title", "");
+
+		el.appendChild(label);
+	}
+
+	createLabel(className)
+	{
+		let label = document.createElement("div");
+		label.className = `label ${className}`;
+		label.innerText = className;
+		return label;
+	}
+}
+customElements.define("{{ include.element }}", ImageDiffViewer);
+</script>
+
