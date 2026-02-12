@@ -6,7 +6,6 @@ title: La luna del cacciatore
 image: /media/propaganda/avp.png
 propaganda: avp
 music: hHSC2uXj160
-class: blood avp
 tags: random
 ---
 

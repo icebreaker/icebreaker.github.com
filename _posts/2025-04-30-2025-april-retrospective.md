@@ -4,7 +4,6 @@ typora-root-url: ..
 typora-copy-images-to: ../media/2025
 title: 2025 April Retrospective
 propaganda: megan2
-class: blood megan
 music: CduA0TULnow
 tags: retrospective
 ---

@@ -5,7 +5,6 @@ typora-copy-images-to: ../media/2023
 title: 2023 Retrospective
 propaganda: 24
 music: m3lf2VFAnew
-class: blood grinch
 tags: retrospective
 ---
 

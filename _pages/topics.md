@@ -1,4 +1,4 @@
 ---
 layout: topics
-propaganda: 3
+propaganda: tstb
 ---

@@ -4,7 +4,6 @@ typora-root-url: ..
 typora-copy-images-to: ../media/2025
 title: 2025 September Retrospective
 propaganda: ctlr
-class: blood nun
 music: dj_Xi_yfnAU
 tags: retrospective
 ---

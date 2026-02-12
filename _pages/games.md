@@ -3,7 +3,7 @@ layout: page
 typora-root-url: ..
 typora-copy-images-to: ../media/games
 title: Games
-propaganda: 5
+propaganda: tshh
 ---
 Games
 =====

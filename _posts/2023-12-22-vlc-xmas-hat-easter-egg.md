@@ -7,7 +7,6 @@ description: The infamous easter egg hunter strikes again.
 image: /media/2023/vlcxmas512.png
 propaganda: 99
 rpropaganda: r99
-class: vlcxmas
 tags: cpp easter-egg
 ---
 

@@ -4,7 +4,6 @@ typora-root-url: ..
 typora-copy-images-to: ../media/2023
 title: 2023 September Retrospective
 music: tikbidjo250
-class: blood nun
 propaganda: 13
 rpropaganda: r13
 tags: retrospective

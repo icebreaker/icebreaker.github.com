@@ -1,4 +1,4 @@
 ---
 layout: index
-propaganda: 3
+propaganda: tstb
 ---

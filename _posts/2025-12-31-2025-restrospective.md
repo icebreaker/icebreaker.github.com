@@ -5,7 +5,6 @@ typora-copy-images-to: ../media/2025
 title: 2025 Retrospective
 propaganda: thefuture
 music: LYzPVKg3wyo
-class: blood swim
 tags: retrospective
 ---
 

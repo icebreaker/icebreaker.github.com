@@ -57,7 +57,7 @@ body
 
 ::-webkit-scrollbar-thumb:hover
 {
-	background: #BF6F00;
+	background: #E90909;
 }
 
 h1, h2, h3, h4, h5, h6
@@ -66,7 +66,7 @@ h1, h2, h3, h4, h5, h6
 	margin-bottom: 20px;
 	margin-top: 20px;
 	padding-bottom: 16px;
-	border-bottom: 8px solid #BF6F00;
+	border-bottom: 8px solid #E90909;
 }
 
 h2
@@ -89,7 +89,7 @@ blockquote
 {
 	margin: 0;
 	padding: 10px;
-	border-left: 8px solid #BF6F00;
+	border-left: 8px solid #E90909;
 	background-color: #1C1C1C;
 }
 
@@ -122,7 +122,7 @@ pre code
 
 a, a:active, a:visited, a:hover
 {
-	color: #BF6F00;
+	color: #E90909;
 	text-decoration: none;
 	font-weight: bolder;
 }
@@ -145,7 +145,7 @@ img, iframe, .content video
 
 hr
 {
-	border: 4px solid #BF6F00;
+	border: 4px solid #E90909;
 	max-width: 320px;
 }
 
@@ -153,7 +153,7 @@ table
 {
 	border-collapse: collapse;
 	width: 100%;
-	border-bottom: 8px solid #BF6F00;
+	border-bottom: 8px solid #E90909;
 }
 
 table * tr th
@@ -343,77 +343,6 @@ x-image-diff-viewer .wrapper
 	}
 }
 
-.blood
-{
-	--blood: #BF0000;
-}
-
-.blood.poltergeist
-{
-	--blood: #7D7DFF;
-}
-
-.blood.plush
-{
-	--blood: #A070CC;
-}
-
-.blood.grinch
-{
-	--blood: #108D38;
-}
-
-.blood.swim
-{
-	--blood: #2C868D;
-}
-
-.blood.go
-{
-	--blood: #47959D;
-}
-
-.blood.megan
-{
-	--blood: #B132B9;
-}
-
-.blood.avp
-{
-	--blood: #537BC9;
-}
-
-.blood hr,
-.blood h1,
-.blood h2,
-.blood h3,
-.blood h4,
-.blood h5,
-.blood h6,
-.blood table,
-.blood blockquote
-{
-	border-color: var(--blood);
-}
-
-.blood a,
-.blood a:active,
-.blood a:visited,
-.blood a:hover
-{
-	color: var(--blood);
-}
-
-.blood::-webkit-scrollbar-thumb:hover
-{
-	background: var(--blood);
-}
-
-.blood #music iframe
-{
-	border: 8px var(--blood) solid;
-}
-
 img.propaganda, img.rpropaganda
 {
 	max-width: 100%;
@@ -422,7 +351,7 @@ img.propaganda, img.rpropaganda
 button
 {
 	background-color: #1C1C1C;
-	border: 0.3em outset #BF6F00;
+	border: 0.3em outset #E90909;
 	color: #AFAF00;
 	text-shadow: 1px 1px #000000;
 	outline: none;
@@ -433,17 +362,7 @@ button
 
 button:active
 {
-	border: 0.3em inset #BF6F00;
-}
-
-.blood button
-{
-	border: 0.3em outset var(--blood);
-}
-
-.blood button:active
-{
-	border: 0.3em inset var(--blood);
+	border: 0.3em inset #E90909;
 }
 
 .hidden

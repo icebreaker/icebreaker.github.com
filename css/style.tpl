@@ -343,77 +343,6 @@ x-image-diff-viewer .wrapper
 	}
 }
 
-.blood
-{
-	--blood: #BF0000;
-}
-
-.blood.poltergeist
-{
-	--blood: #7D7DFF;
-}
-
-.blood.plush
-{
-	--blood: #A070CC;
-}
-
-.blood.grinch
-{
-	--blood: #108D38;
-}
-
-.blood.swim
-{
-	--blood: #2C868D;
-}
-
-.blood.go
-{
-	--blood: #47959D;
-}
-
-.blood.megan
-{
-	--blood: #B132B9;
-}
-
-.blood.avp
-{
-	--blood: #537BC9;
-}
-
-.blood hr,
-.blood h1,
-.blood h2,
-.blood h3,
-.blood h4,
-.blood h5,
-.blood h6,
-.blood table,
-.blood blockquote
-{
-	border-color: var(--blood);
-}
-
-.blood a,
-.blood a:active,
-.blood a:visited,
-.blood a:hover
-{
-	color: var(--blood);
-}
-
-.blood::-webkit-scrollbar-thumb:hover
-{
-	background: var(--blood);
-}
-
-.blood #music iframe
-{
-	border: 8px var(--blood) solid;
-}
-
 img.propaganda, img.rpropaganda
 {
 	max-width: 100%;
@@ -434,16 +363,6 @@ button
 button:active
 {
 	border: 0.3em inset $highlight_light;
-}
-
-.blood button
-{
-	border: 0.3em outset var(--blood);
-}
-
-.blood button:active
-{
-	border: 0.3em inset var(--blood);
 }
 
 .hidden

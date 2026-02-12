@@ -4,7 +4,6 @@ typora-root-url: ..
 typora-copy-images-to: ../media/2024
 title: Image Kernels
 propaganda: 42
-class: blood
 tags: c
 ---
 

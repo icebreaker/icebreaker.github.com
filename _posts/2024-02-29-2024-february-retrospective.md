@@ -4,7 +4,6 @@ typora-root-url: ..
 typora-copy-images-to: ../media/2024
 title: 2024 February Retrospective
 propaganda: 31
-class: blood swim
 music: jgjmWH-6XZQ
 tags: retrospective
 ---
