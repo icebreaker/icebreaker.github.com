@@ -1,10 +1,10 @@
 {% if include.src %}
 <audio muted controls width="1024">
 	{% if include.ogg %}
-	<source src="{{ include.src }}.ogg" type="audio/ogg">
-	{% end %}
-	<source src="{{ include.src }}.mp3" type="audio/mpeg">
+	<source src="{{ include.src | replace: '.mp3','.ogg' }}" type="audio/ogg">
+	{% endif %}
+	<source src="{{ include.src }}" type="audio/mpeg">
 	Your browser does not support the audio element.
-	Please click <a href="{{ include.src }}.mp3">here</a> in order to download and listen to the audio.
+	Please click <a href="{{ include.src }}">here</a> in order to download and listen to the audio.
 </audio>
 {% endif %}
