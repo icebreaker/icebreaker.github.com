@@ -1,5 +1,7 @@
 {% if include.src %}
 <video muted controls width="1024">
 	<source src="{{ include.src }}" type="video/mp4">
+	Your browser does not support the video element.
+	Please click <a href="{{ include.src }}">here</a> in order to download and view the video.
 </video>
 {% endif %}
