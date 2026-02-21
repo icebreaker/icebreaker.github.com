@@ -132,12 +132,18 @@ a:hover
 	text-decoration: underline;
 }
 
-img, iframe, .content video
+img, iframe, .content video, .content audio
 {
 	max-width: 1024px;
 }
 
-.center img, iframe, .content video
+.content video, .content audio
+{
+	width: 1024px;
+	color-scheme: dark;
+}
+
+.center img, iframe, .content video, .content audio
 {
 	display: block;
 	margin: 0 auto;
@@ -232,7 +238,7 @@ table * tr:nth-child(even)
 		max-width: 160px;
 	}
 
-	img, iframe, .content video
+	img, iframe, .content video, .content audio
 	{
 		max-width: 100%;
 	}
