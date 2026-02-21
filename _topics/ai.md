@@ -1,5 +1,5 @@
 ---
 layout: topic
 title: AI
-propaganda: 11
+propaganda: ai
 ---

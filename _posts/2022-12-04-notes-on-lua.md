@@ -3,8 +3,8 @@ layout: post
 typora-root-url: ..
 typora-copy-images-to: ../media/2022
 title: Notes on Lua
-propaganda: 2
-tags: lua
+propaganda: lua
+tags: lua random
 ---
 
 Notes on Lua

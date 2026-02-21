@@ -7,7 +7,7 @@ description: The infamous easter egg hunter strikes again.
 image: /media/2023/vlcxmas512.png
 propaganda: 99
 rpropaganda: r99
-tags: cpp easter-egg
+tags: cpp easter-egg www
 ---
 
 The VLC Xmas Hat Easter Egg

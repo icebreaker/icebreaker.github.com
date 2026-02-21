@@ -4,7 +4,7 @@ typora-root-url: ..
 typora-copy-images-to: ../media/2023
 title: FreeDOS and Floppy Bird
 propaganda: 4
-tags: dos asm
+tags: dos asm www
 ---
 
 FreeDOS and Floppy Bird
