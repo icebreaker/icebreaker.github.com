@@ -24,6 +24,10 @@ collections:
     permalink: /:path/
   topics:
     output: true
+#kramdown:
+#  syntax_highlighter_opts:
+#    block:
+#      line_numbers: true
 exclude:
   - bin/
   - CNAME
