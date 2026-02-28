@@ -307,9 +307,12 @@ x-image-diff-viewer img
 	max-width: 1024px;
 }
 
-x-image-diff-viewer img:last-child
+@media only screen
 {
-	display: none;
+	x-image-diff-viewer img:last-child
+	{
+		display: none;
+	}
 }
 
 x-image-diff-viewer .wrapper
