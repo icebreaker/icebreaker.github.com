@@ -133,7 +133,7 @@ I also intend to use this as an opportunity to clean-up, and perhaps also consol
 
 If the nitroglycerin, sorry I meant to say the [glycin][glycin] wasn't bad enough in terms of absolutely bonkers regressions across the board, most of which haven't been addressed, and given the situation with GNOME and GTK very likely never be; then you'll be glad to find out that the global enshitification continues in full force.
 
-This time around with [vim][vim]. It will be three years this august since [Bram][bram] has unexpectedly passed away, and just like I predicted breaking changes are being introduced left and right, without anyone batting an eye.
+This time around in [vim][vim]. It will be three years this *August* since [Bram][bram] has unexpectedly passed away, and just like I predicted, breaking changes are being introduced left and right, without anyone batting an eye.
 
 How on earth, can the number of arguments be changed on a function that is part of the public API, and is known to be relied on by countless plugins out there?
 
@@ -181,3 +181,4 @@ Please enjoy the show, and don't forget to try the fish. Until next month, end o
 [vim-fugitive-patch]: https://github.com/tpope/vim-fugitive/commit/d3e2b58dec75fc6012fecc82ce0d33a45ed0560e
 [tpope]: https://tpo.pe/
 [amazonlayoffs]: https://www.aboutamazon.com/news/company-news/amazon-layoffs-corporate-jan-2026
+[bram]: https://en.wikipedia.org/wiki/Bram_Moolenaar

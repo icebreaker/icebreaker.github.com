@@ -6,7 +6,6 @@ title: 2026 Birthday Retrospective
 propaganda: hr
 music: AzNd30AUVuQ
 tags: retrospective birthday
-class: center
 ---
 
 2026 Birthday Retrospective

@@ -4,7 +4,6 @@ typora-root-url: ..
 typora-copy-images-to: ../media/2024
 title: 2024 March Retrospective
 propaganda: difficultgame
-class: center
 tags: retrospective
 ---
 

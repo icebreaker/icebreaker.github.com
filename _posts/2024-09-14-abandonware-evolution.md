@@ -4,7 +4,7 @@ typora-root-url: ..
 typora-copy-images-to: ../media/2024
 title: "Abandonware: Evolution"
 propaganda: win95
-tags: abandonware win32 www
+tags: abandonware win32 digital-archeology
 ---
 
 # Abandonware: Evolution

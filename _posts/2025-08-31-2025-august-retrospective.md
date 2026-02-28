@@ -36,15 +36,15 @@ I kept getting updates via e-mail from [Bandcamp][bandcamp] about the new releas
 
 Have a listen to two of my personal all-time favorite tracks, [Puddinhead][sumpuddinhead] and [35 cents][sum35cents] from his 2009 album entitled ["Sum and Belief are...The Lone Wolf"][sumthelonewolf].
 
-<iframe style="border: 0; width: 700px; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=3876128231/size=large/bgcol=000000/linkcol=E90909/tracklist=false/artwork=small/track=2607661339/transparent=true/" seamless><a href="https://sumkilla.bandcamp.com/album/sum-and-belief-are-the-lone-wolf-2">Sum and Belief are...The Lone Wolf by Sum</a></iframe>
+{% include bandcamp.html album="3876128231" track="2607661339" href="https://sumkilla.bandcamp.com/album/sum-and-belief-are-the-lone-wolf-2" title="Sum and Belief are...The Lone Wolf by Sum" %}
 
-<iframe style="border: 0; width: 700px; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=3876128231/size=large/bgcol=000000/linkcol=E90909/tracklist=false/artwork=small/track=2881941093/transparent=true/" seamless><a href="https://sumkilla.bandcamp.com/album/sum-and-belief-are-the-lone-wolf-2">Sum and Belief are...The Lone Wolf by Sum</a></iframe>
+{% include bandcamp.html album="3876128231" track="2881941093" href="https://sumkilla.bandcamp.com/album/sum-and-belief-are-the-lone-wolf-2" title="Sum and Belief are...The Lone Wolf by Sum" %}
 
 So, this glorious month of August, I said to myself that it's time to finally bite the bullet and create an account; only to discover that I actually have bought some music already way back in 2011 or so that I totally forgot about. The wonders of life itself, or just the first signs of getting old? I am not quite sure to be perfectly honest.
 
 Then, while randomly browsing around, I noticed that [Enigma][enigma] was also present on the site, so I had to reach to my wallet and buy their pivotal [MCMXC a.D.][mcmxcad] album.
 
-<iframe style="border: 0; width: 700px; height: 700px;" src="https://bandcamp.com/EmbeddedPlayer/album=854346938/size=large/bgcol=000000/linkcol=E90909/transparent=true/" seamless><a href="https://enigmamusic.bandcamp.com/album/mcmxc-a-d">MCMXC a.D. by Enigma</a></iframe>
+{% include bandcamp.html album="854346938" href="https://enigmamusic.bandcamp.com/album/mcmxc-a-d" title="MCMXC a.D. by Enigma" %}
 
 It feels pretty weird to buy download-able music in this day and age, when one can find and listen to pretty much everything straight up on YouTube. No fuss, no muss! Definitely gives off some ancient arcane and primordial ritual vibes.
 
