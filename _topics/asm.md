@@ -1,5 +1,5 @@
 ---
 layout: topic
 title: ASM
-propaganda: 8
+propaganda: asm
 ---

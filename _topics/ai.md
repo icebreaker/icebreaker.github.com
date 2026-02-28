@@ -1,5 +1,5 @@
 ---
 layout: topic
 title: AI
-propaganda: ai
+propaganda: requiem
 ---
