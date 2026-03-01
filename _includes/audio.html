@@ -4,7 +4,9 @@
 	<source src="{{ include.src | replace: '.mp3','.ogg' }}" type="audio/ogg">
 	{% endif %}
 	<source src="{{ include.src }}" type="audio/mpeg">
+	<blockquote>
 	Your browser does not support the audio element.
 	Please click <a href="{{ include.src }}">here</a> in order to download and listen to the audio.
+	</blockquote>
 </audio>
 {% endif %}
