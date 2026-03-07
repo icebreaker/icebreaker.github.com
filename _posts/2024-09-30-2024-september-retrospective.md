@@ -4,6 +4,7 @@ typora-root-url: ..
 typora-copy-images-to: ../media/2024
 title: 2024 September Retrospective
 propaganda: frostpunk2
+music: iqL1BLzn3qc
 tags: retrospective
 ---
 
@@ -122,6 +123,10 @@ Yet another reason why (*just in case, there weren't enough already*), I do not 
 As if that wasn't bad enough, it looks like Ubuntu is no longer offering any official *boot-table mini-netinstall* type ISO images; which in turn makes it a pain in the butt to install, because one has to unnecessarily download an already largely out of date totally unnecessary pile of digital bits.
 
 In 2024, having a *net installer* should be mandatory, and most definitely not some optional nice to have kind of a thing; well hidden away, just in case people find out and complain, and boy oh boy, complain they did.
+
+---
+
+> `D:\funstuff\videos\goodtime.avi`
 
 [frostpunk2]: https://en.wikipedia.org/wiki/Frostpunk_2
 [frostpunk2bgvideo]: https://frostpunk2.com/wp-content/uploads/2023/09/Frostpunk_2_Hammer_Trailer_Endslate_LOOP.mp4
