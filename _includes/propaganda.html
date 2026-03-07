@@ -1,3 +1,7 @@
 {% if page.propaganda %}
+	{% if page.propaganda contains ".gif" %}
+	<img class="propaganda gif" alt="propaganda" src="/media/propaganda/{{ page.propaganda }}" />
+	{% else %}
 	<img class="propaganda" alt="propaganda" src="/media/propaganda/{{ page.propaganda }}.png" />
+	{% endif %}
 {% endif %}

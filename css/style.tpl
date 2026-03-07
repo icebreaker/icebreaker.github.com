@@ -357,6 +357,11 @@ img.propaganda, img.rpropaganda
 	max-width: 100%;
 }
 
+img.propaganda.gif
+{
+	width: 100%;
+}
+
 button
 {
 	background-color: $highlight_dark;
