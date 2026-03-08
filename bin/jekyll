@@ -2,7 +2,7 @@
 # frozen_string_literal: true
 
 if ARGV.empty?
-  ARGV.push("s", "--port", "3008", "--future", "--drafts")
+  ARGV.push("s", "--port", "3008", "--drafts")
   puts "Using default argumennts: #{ARGV}"
 end
 
