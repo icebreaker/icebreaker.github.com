@@ -3,7 +3,7 @@ layout: post
 typora-root-url: ..
 typora-copy-images-to: ../media/2024
 title: 2024 October Retrospective
-propaganda: dd
+propaganda: ddr
 music: NJ62S3A9wn0
 tags: retrospective
 ---
