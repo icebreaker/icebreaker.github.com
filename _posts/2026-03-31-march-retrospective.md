@@ -5,7 +5,7 @@ typora-copy-images-to: ../media/2026
 title: 2026 March Retrospective
 propaganda: ddr
 music: bqxYLZ885RA
-tags: retrospective
+tags: retrospective digital-archeology c java
 ---
 
 2026 March Retrospective
@@ -159,7 +159,7 @@ The terrain is also as lovely as I remember it. Using `666` as the map seed, pro
 
 Continuing with last months' trip down the *"what did I find in my archives"* lane, I wanted to mention yet another silly little thing that I built way back in late `2006`; which lay dormant in my archives waiting for me to stumble upon it once more in the year `2026`.
 
-![hering2](/media/2026/hering2.png)
+![herring2](/media/2026/fishart/herring2.png)
 
 Do you remember [IRC][irc] and [mIRC][mirc]? They are still around and haven't completed faded into obscurity, but one rarely hears anything at all about either of these anymore.
 

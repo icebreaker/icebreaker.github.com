@@ -68,7 +68,7 @@ Speaking of the [NVIDIA Ion][nvidiaion], here's a patch that I cobbled together 
 +++ kernel/uvm/nvidia_uvm_lite.c	2020-11-19 02:15:59.338918014 +0200
 @@ -820,7 +820,7 @@
  }
- 
+
  #if defined(NV_VM_OPERATIONS_STRUCT_HAS_FAULT)
 -int _fault(struct vm_area_struct *vma, struct vm_fault *vmf)
 +vm_fault_t _fault(struct vm_fault *vmf)
@@ -81,15 +81,15 @@ Speaking of the [NVIDIA Ion][nvidiaion], here's a patch that I cobbled together 
      struct page *page = NULL;
 +    struct vm_area_struct *vma = vmf->vma;
      int retval;
- 
+
      retval = _fault_common(vma, vaddr, &page, vmf->flags);
- 
+
      vmf->page = page;
- 
+
 -    return retval;
 +    return (__force vm_fault_t) retval;
  }
- 
+
  #else
 @@ -868,7 +869,7 @@
  // it's dealing with anonymous mapping (see handle_pte_fault).
@@ -139,7 +139,7 @@ How on earth, can the number of arguments be changed on a function that is part 
 
 ```diff
 " netrw#BrowseX: (implements "x") executes a special "viewer" script or
-" program for the given filename; typically this means given their 
+" program for the given filename; typically this means given their
 " extension. 0=local, 1=remote
 -function netrw#BrowseX(fname,remote)
 +function netrw#BrowseX(fname)
@@ -149,7 +149,7 @@ How difficult can be it for these people to understand that this is something yo
 
 The only explanation that I can come up with to explain this attitude is that people seem to be under the impression that coding is like cooking. In other words, something half-edible will come out in the end, no matter what you do. I am not so sure that I agree, but it's definitely a certain point of view.
 
-![salmon](/media/2026/salmon.png) 
+![salmon](/media/2026/fishart/salmon.png)
 
 So, instead of reverting this change, what ended up happening instead is that all affected plugins came up with specific patches like this [one][vim-fugitive-patch] by [Tim Pope][tpope].
 

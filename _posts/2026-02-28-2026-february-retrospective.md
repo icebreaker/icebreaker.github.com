@@ -5,7 +5,7 @@ typora-copy-images-to: ../media/2026
 title: 2026 February Retrospective
 propaganda: starbuck
 music: 1FXn-EPB3sg
-tags: retrospective morcheeba digital-archeology
+tags: retrospective morcheeba c digital-archeology
 ---
 
 2026 February Retrospective
@@ -128,7 +128,7 @@ Managed to track it down, it was tucked away reasonably well within the depths o
 
 ![hak5](/media/2026/hak5.png)
 
-Now, why on earth did I make it all [Hak5][hak5] themed or branded? Do you even remember [Hak5][hak5], like at all? 
+Now, why on earth did I make it all [Hak5][hak5] themed or branded? Do you even remember [Hak5][hak5], like at all?
 
 I honestly have zero ideas about what must have been going through my mind at that particular time. Also, the `fmod.dll` that I have used, it seems to be from way back in `2003`, which is absolutely bananas and not to mention super funny. No support for *HTTPS* of course! It goes to show that we didn't really care too much about that until well into the early `2010s`.
 
@@ -173,7 +173,7 @@ I could understand Google pushing this for their own services. You want to log m
 
 You know what is even worse? There's no way to turn it the *frak off.* But as always, it's not all lost as the good folks at Brave have been hard at [cooking up some fixes][bravebtm] in order to try and address this absolute travesty of a situation. How on earth can you release something as disruptive as this to hundreds of millions of users, without giving them the ability to turn it off for good?
 
-![hering](/media/2026/hering.png)
+![herring](/media/2026/fishart/herring.png)
 
 I fully realize that I might have yapped about this before, but *"the situation is mighty queer, my dear"* as my *great-grandmother* would have put it. I also have a feeling that one of my good old friends, would have had a sudden urge to throw a dinner party had this happened to him one too many times.
 
