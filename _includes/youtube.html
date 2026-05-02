@@ -1,3 +1,9 @@
+{% if page.draft %}
+<blockquote>
+{ include youtube.html id="{{ include.id }}" }
+</blockquote>
+<hr/>
+{% else %}
 {% if include.id %}
 <iframe width="1024" height="576"
 	src="https://www.youtube.com/embed/{{ include.id }}"
@@ -5,4 +11,5 @@
 	encrypted-media; gyroscope; picture-in-picture"
 	allowfullscreen>
 </iframe>
+{% endif %}
 {% endif %}
