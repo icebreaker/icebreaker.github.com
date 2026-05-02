@@ -207,7 +207,7 @@ table * tr:nth-child(even)
 	right: 30px;
 	bottom: 30px;
 	z-index: 9999;
-	font-size: 48px;
+	font-size: 96px;
 	width: 320px;
 	height: 180px;
 	text-align: center;
