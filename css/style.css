@@ -11,7 +11,7 @@ body
 {
 	margin: 0;
 	padding: 0 10px 10px 10px;
-	font-family: -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif;
+	font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Verdana,Tahoma,Arial,sans-serif;
 	font-size: 22px;
 	line-height: 30px;
 	background-color: #000000;
@@ -97,12 +97,12 @@ code
 {
 	color: #AFAF00;
 	font-weight: bolder;
-	font-family: 'JetBrains Mono NL ExtraBold','Roboto Mono',monospace;
+	font-family: "JetBrains Mono NL ExtraBold","Roboto Mono","Lucida Console","Andale Mono","Courier New",monospace;
 }
 
 pre
 {
-	font-family: 'JetBrains Mono NL ExtraBold','Roboto Mono',monospace;
+	font-family: "JetBrains Mono NL ExtraBold","Roboto Mono","Lucida Console","Andale Mono","Courier New",monospace;
 	overflow: auto;
 	display: block;
 	background-color: #1C1C1C !important;
@@ -112,7 +112,7 @@ pre
 
 pre code
 {
-	font-family: 'JetBrains Mono NL ExtraBold','Roboto Mono',monospace;
+	font-family: "JetBrains Mono NL ExtraBold","Roboto Mono","Lucida Console","Andale Mono","Courier New",monospace;
 	font-weight: normal;
 	tab-size: 4;
 	padding: 0;
@@ -132,21 +132,15 @@ a:hover
 	text-decoration: underline;
 }
 
-img, iframe, .content video, .content audio
+img
 {
 	max-width: 1024px;
 }
 
-.content video, .content audio
+iframe, .content video, .content audio
 {
-	width: 1024px;
+	width: 100%;
 	color-scheme: dark;
-}
-
-.center img, iframe, .content video, .content audio
-{
-	display: block;
-	margin: 0 auto;
 }
 
 hr
@@ -370,7 +364,7 @@ button
 	text-shadow: 1px 1px #000000;
 	outline: none;
 	font-size: 1.3rem;
-	font-family: -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif;
+	font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Verdana,Tahoma,Arial,sans-serif;
 	font-weight: bolder;
 }
 
