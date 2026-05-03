@@ -11,9 +11,9 @@ tags: retrospective
 2026 April Retrospective
 =========================
 
-I get the feeling that we got the hear the *first gong* that signals the beginning of the end of what I like to call the *infinitely subsidized token era*. Uh-oh! Ooh-rah!
+This month we got to hear the *first gong* that signals the beginning of the end of what I like to call the *infinitely subsidized token era*. Uh-oh! Rooh-rah!
 
-What does this really mean in the long term; well, it remains to be seen, but in my opinion there's a pretty high chance that only a handful of the so called *frontier-labs* will survive in the end.
+What does this really mean in the long term? Well, it remains to be seen, but in my opinion there's a pretty high chance that only a handful of the so called *frontier-labs* will survive in the end.
 
 Which ones? You might be tempted to ask. Well, two of them are *ad-businesses*, that subsidize their entire product lines already, so in theory they should be able to continue doing the same with tokens as well, pretty much indefinitely if necessary.
 
