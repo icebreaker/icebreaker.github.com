@@ -25,7 +25,7 @@ Look at this absolutely splendid [issue][microcornucopia41] (*No. 41*) of *Micro
 
 ![mcc](/media/2026/mcc.png)
 
-> Neural Networks: Modeling the human reasoning is the first step in creating a useful robot.
+> Neural Networks: Modeling human reasoning is the first step in creating a useful robot.
 
 The more things change, the more they same. At any rate, we are not on *LinkedIn* over here, so that was more than enough yapping about AI for the time being.
 
