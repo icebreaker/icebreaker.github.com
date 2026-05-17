@@ -1,7 +1,7 @@
 ---
 layout: post
 typora-root-url: ..
-typora-copy-images-to: ../media/2023
+typora-copy-images-to: ../media/2023/
 title: 2023 September Retrospective
 music: tikbidjo250
 propaganda: 13

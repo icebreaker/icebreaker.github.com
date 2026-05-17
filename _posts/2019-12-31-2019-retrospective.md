@@ -1,5 +1,7 @@
 ---
 layout: post
+typora-root-url: ..
+typora-copy-images-to: ../media/2019/
 title: 2019 Retrospective
 propaganda: 1
 tags: retrospective

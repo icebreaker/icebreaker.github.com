@@ -1,5 +1,7 @@
 ---
 layout: post
+typora-root-url: ..
+typora-copy-images-to: ../media/2022/
 title: 2022 January Retrospective
 propaganda: 6
 music: f0oUuhrXGok

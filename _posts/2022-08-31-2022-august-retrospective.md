@@ -1,7 +1,7 @@
 ---
 layout: post
 typora-root-url: ..
-typora-copy-images-to: ../media/2022
+typora-copy-images-to: ../media/2022/
 title: 2022 August Retrospective
 propaganda: 6
 tags: retrospective

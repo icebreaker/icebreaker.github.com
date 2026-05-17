@@ -1,7 +1,7 @@
 ---
 layout: post
 typora-root-url: ..
-typora-copy-images-to: ../media/2026
+typora-copy-images-to: ../media/2026/
 title: 2026 January Retrospective
 propaganda: sh
 music: xXwZSMEuFxI

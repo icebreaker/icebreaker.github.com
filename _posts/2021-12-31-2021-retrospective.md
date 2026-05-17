@@ -1,5 +1,7 @@
 ---
 layout: post
+typora-root-url: ..
+typora-copy-images-to: ../media/2021/
 title: 2021 Retrospective
 propaganda: 5
 music: UE5g6nRRAXI

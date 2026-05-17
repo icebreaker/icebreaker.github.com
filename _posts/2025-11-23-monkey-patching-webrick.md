@@ -1,7 +1,7 @@
 ---
 layout: post
 typora-root-url: ..
-typora-copy-images-to: ../media/2025
+typora-copy-images-to: ../media/2025/
 title: Monkey-patching WEBrick
 propaganda: 19
 tags: ruby

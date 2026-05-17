@@ -1,5 +1,7 @@
 ---
 layout: post
+typora-root-url: ..
+typora-copy-images-to: ../media/2020/
 title: 2020 Retrospective
 propaganda: 5
 tags: retrospective

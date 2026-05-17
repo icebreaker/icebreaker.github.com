@@ -1,7 +1,7 @@
 ---
 layout: post
 typora-root-url: ..
-typora-copy-images-to: ../media/2024
+typora-copy-images-to: ../media/2024/
 title: 2024 September Retrospective
 propaganda: frostpunk2
 music: iqL1BLzn3qc

@@ -1,7 +1,7 @@
 ---
 layout: post
 typora-root-url: ..
-typora-copy-images-to: ../media/2024
+typora-copy-images-to: ../media/2024/
 title: Image Kernels
 propaganda: 42
 tags: c

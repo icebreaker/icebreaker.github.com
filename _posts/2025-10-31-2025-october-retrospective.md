@@ -1,7 +1,7 @@
 ---
 layout: post
 typora-root-url: ..
-typora-copy-images-to: ../media/2025
+typora-copy-images-to: ../media/2025/
 title: 2025 October Retrospective
 propaganda: starbuck
 music: X_HBIm_8BOE

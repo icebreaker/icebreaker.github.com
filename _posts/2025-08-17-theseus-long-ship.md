@@ -1,7 +1,7 @@
 ---
 layout: post
 typora-root-url: ..
-typora-copy-images-to: ../media/2025
+typora-copy-images-to: ../media/2025/
 title: The curious case of Theseus and his long-ship
 image: /media/propaganda/skyphos.png
 propaganda: skyphos

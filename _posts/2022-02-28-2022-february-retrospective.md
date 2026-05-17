@@ -1,5 +1,7 @@
 ---
 layout: post
+typora-root-url: ..
+typora-copy-images-to: ../media/2022/
 title: 2022 February Retrospective
 propaganda: 4
 music: 9hsHsAyhzAw

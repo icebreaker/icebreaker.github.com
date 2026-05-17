@@ -1,7 +1,7 @@
 ---
 layout: post
 typora-root-url: ..
-typora-copy-images-to: ../media/2026
+typora-copy-images-to: ../media/2026/
 title: Does your blog still render in IE6?
 propaganda: www
 music: seIP_1f92vc
