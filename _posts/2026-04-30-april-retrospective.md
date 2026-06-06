@@ -196,7 +196,7 @@ At roughly four episodes a month, this is going to take a while.
 
 ## Monthly "*Layoffs Report*"
 
-![yogibear](/media/drafts/2026/yogibear.png)
+![yogibear](/media/2026/yogibear.png)
 
 The layoffs continue in full force, and at the time of me writing this the glorious number of `92_272` can be seen on [Layoffs.fyi][layoffsfyi]. That's an increase of roughly `20_825` compared to last month's report.
 

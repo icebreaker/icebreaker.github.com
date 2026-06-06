@@ -51,7 +51,7 @@ There's no greater raconteur than [Orson Welles][orsonwelles]. Enough said.
 
 ## Monthly "*Layoffs Report*"
 
-![yogibear](/media/drafts/2026/yogibear.png)
+![yogibear](/media/2026/yogibear.png)
 
 According to [Layoffs.fyi][layoffsfyi], there were `124_636` people laid off in `2025`,  and at the time of me writing this up in `2026`, the count is at a whopping `116_739` already.
 
