@@ -59,6 +59,7 @@
 <div class="{{ class }}">
 	<table>
 		{% for post in posts %}
+		{% if post.draft %}
 		<tr>
 			<td>
 				{{ post.date | date: "%Y-%m-%d" }}
@@ -66,11 +67,23 @@
 			<td>/</td>
 			<td>
 				<a href="{{ post.url }}">{{ post.title }}</a>
-				{% if post.draft %}
 				<span>[draft]</span>
-				{% endif %}
 			</td>
 		</tr>
+		{% endif %}
+		{% endfor %}
+		{% for post in posts %}
+		{% unless post.draft %}
+		<tr>
+			<td>
+				{{ post.date | date: "%Y-%m-%d" }}
+			</td>
+			<td>/</td>
+			<td>
+				<a href="{{ post.url }}">{{ post.title }}</a>
+			</td>
+		</tr>
+		{% endunless %}
 		{% endfor %}
 	</table>
 </div>
