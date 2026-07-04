@@ -1,4 +1,8 @@
-{% if include.src %}
+{% if page.draft %}
+<blockquote>
+{{ include.src }}
+</blockquote>
+{% elsif include.src %}
 <audio muted controls width="1024">
 	{% if include.ogg %}
 	<source src="{{ include.src | replace: '.mp3','.ogg' }}" type="audio/ogg">

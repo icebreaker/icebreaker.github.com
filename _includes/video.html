@@ -1,4 +1,8 @@
-{% if include.src %}
+{% if page.draft %}
+<blockquote>
+{{ include.src }}
+</blockquote>
+{% elsif include.src %}
 <video muted controls width="1024">
 	<source src="{{ include.src }}" type="video/mp4">
 	<blockquote>
