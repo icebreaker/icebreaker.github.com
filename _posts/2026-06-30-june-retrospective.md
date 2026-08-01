@@ -49,7 +49,7 @@ At any rate, this was one of the many things that I spent my summer vacations of
 
 Makes use of quite a lo of trial-ware (nag-ware!) so called *VCL components*. There was also support for importing *ActiveX controls* directly, for which Delphi would generate a *wrapper* VLC component for.
 
-```pas
+```pascal
 uses
   Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
   Dialogs, ComCtrls, Menus, StdCtrls, ToolWin, ImgList,
@@ -67,7 +67,7 @@ It should go without saying that this is all pretty terrible code under the hood
 
 Look at this absolute unit of a gem that I have found, while sifting through the code base.
 
-```pas
+```pascal
 procedure TForm1.LoadTemplate(Sender: TObject);
 var mycap:string;
 begin
