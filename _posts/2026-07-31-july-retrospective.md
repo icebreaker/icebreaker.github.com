@@ -296,6 +296,8 @@ Are you ready for another game for the *monkey-brain*?. If the answer to that qu
 
 ## Pomegranate
 
+![pomegranate](/media/2026/pomegranate.png)
+
 Look, I am fully aware that this is rather touchy and delicate subject. Let me be perfectly clear by stating that I am not here to open the floodgates, nor am I here to condone or promote anything. Okay?
 
 {% include youtube.html id="fyZhC2TXgcs" %}
