@@ -3,10 +3,20 @@
 	<p>
 		<span>{{ page.date | date: "%Y-%m-%d" }}</span>
 		{% if page.tags %}
-		{% for tag in page.tags %}
-		&nbsp;/&nbsp;
-		<span><a href="/topics/{{ tag }}">{{ tag }}</a></span>
-		{% endfor %}
+			{% for tag in page.tags %}
+				{% for topic in site.topics %}
+					{% if topic.topic %}
+						{% assign topic_tag = topic.topic | downcase %}
+					{% else %}
+						{% assign topic_tag = topic.title | slugify %}
+					{% endif %}
+					{% if topic_tag == tag %}
+						&nbsp;/&nbsp;
+						<span><a href="{{ topic.url }}">{{ tag }}</a></span>
+						{% break %}
+					{% endif %}
+				{% endfor %}
+			{% endfor %}
 		{% endif %}
 		{% if page.issue %}
 		&nbsp;/&nbsp;
