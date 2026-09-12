@@ -1,6 +1,45 @@
 ---
 layout: default
 ---
+{% if jekyll.environment == "development" %}
+	{% assign tags_with_no_topic = "" | split: "" %}
+	{% for tag in site.tags %}
+		{% assign topic_not_found = tag %}
+		{% assign topic_not_found_tag = tag[0] %}
+		{% for topic in site.topics %}
+			{% if topic.topic %}
+				{% assign topic_tag = topic.topic | downcase %}
+			{% else %}
+				{% assign topic_tag = topic.title | slugify %}
+			{% endif %}
+			{% if topic_tag == topic_not_found_tag %}
+				{% assign topic_not_found = nil %}
+				{% break %}
+			{% endif %}
+		{% endfor %}
+		{% if topic_not_found %}
+			{% assign tags_with_no_topic = tags_with_no_topic | push: topic_not_found %}
+		{% endif %}
+	{% endfor %}
+	{% if tags_with_no_topic.size > 0 %}
+		<blockquote>
+			<strong>WARNING: Found tags with missing topic pages!</strong>
+			<ul>
+				{% for tag in tags_with_no_topic %}
+				<li>
+					{{ tag[0] }}
+					<ul>
+						{% for post in tag[1] %}
+						<li><a href="{{ post.url }}">{{ post.title }}</a></li>
+						{% endfor %}
+					</ul>
+				</li>
+				{% endfor %}
+			</ul>
+		</blockquote>
+		<hr/>
+	{% endif %}
+{% endif %}
 <div class="posts">
 	<table>
 		{% for topic in site.topics %}
