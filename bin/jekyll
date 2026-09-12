@@ -1,8 +1,19 @@
 #!/usr/bin/env ruby
 # frozen_string_literal: true
 
+JEKYLL_SSL_CERTS_PATH = ENV.fetch("JEKYLL_SSL_CERTS_PATH", "")
+
 if ARGV.empty?
-  ARGV.push("s", "--port", "3008", "--drafts")
+  ARGV.push("s", "--drafts")
+
+  if !JEKYLL_SSL_CERTS_PATH.empty? && Dir.exist?(JEKYLL_SSL_CERTS_PATH)
+    ARGV.push("--ssl-cert", File.join(JEKYLL_SSL_CERTS_PATH, "cert.pem"))
+    ARGV.push("--ssl-key", File.join(JEKYLL_SSL_CERTS_PATH, "key.pem"))
+    ARGV.push("--port", "3443")
+  else
+    ARGV.push("--port", "3008")
+  end
+
   puts "Using default argumennts: #{ARGV}"
 end
 
