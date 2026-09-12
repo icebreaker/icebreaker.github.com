@@ -6,7 +6,7 @@
     "highlight_light": "#B90000",
     "highlight_dark": "#F0F0F0"
   },
-  "monoplex-legacy":
+  "monoplex":
   {
 	"background": "#000000",
 	"foreground": "#A6A6A6",
@@ -17,7 +17,7 @@
 	"highlight_code_alphanum": "#AFAF00",
 	"highlight_code_comment": "#5F5F5F"
   },
-  "monoplex":
+  "monoplex-red":
   {
 	"background": "#000000",
 	"foreground": "#A6A6A6",
