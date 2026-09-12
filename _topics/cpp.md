@@ -1,5 +1,6 @@
 ---
 layout: topic
-title: CPP
+title: C++
+topic: c++
 propaganda: cpp
 ---
