@@ -1,0 +1,5 @@
+name: "www"
+background": "#FFFFFF"
+foreground": "#000000"
+highlight_light": "#B90000"
+highlight_dark": "#F0F0F0"

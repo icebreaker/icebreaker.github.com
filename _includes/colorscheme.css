@@ -1,0 +1,31 @@
+{%- assign colorscheme = page.colorscheme | default: site.colorscheme -%}
+{%- assign colorscheme = colorscheme | default: "www" | append: "" -%}
+{%- assign colorscheme = site.data.colorschemes[colorscheme] | default: site.data.colorschemes["www"] -%}
+
+{%- assign background = colorscheme.background | default: "#FFFFFF" -%}
+{%- assign foreground = colorscheme.foreground | default: "#000000" -%}
+{%- assign highlight_light = colorscheme.highlight_light | default: "#B90000" -%}
+{%- assign highlight_dark = colorscheme.highlight_dark | default: "#F0F0F0" -%}
+
+{%- assign highlight_foreground = colorscheme.highlight_foreground | default: foreground -%}
+{%- assign highlight_code_identifier = colorscheme.highlight_code_identifier | default: highlight_light -%}
+{%- assign highlight_code_alphanum = colorscheme.highlight_code_alphanum | default: highlight_code_identifier -%}
+{%- assign highlight_code_preprop = colorscheme.highlight_code_preprop | default: highlight_code_identifier -%}
+{%- assign highlight_code_comment = colorscheme.highlight_code_comment | default: highlight_code_preprop -%}
+
+{%- if page.debug and jekyll.environment == "development" -%}
+/*
+	Color Scheme: {{ colorscheme.name }}
+
+	background = {{ background }}
+	foreground = {{ foreground }}
+	highlight_light = {{ highlight_light }}
+	highligh_dark = {{ highlight_dark }}
+
+	highlight_foreground = {{ highlight_foreground }}
+	highlight_code_identifier = {{ highlight_code_identifier }}
+	highlight_code_alphanum = {{ highlight_code_alphanum }}
+	highlight_code_preprop = {{ highlight_code_preprop }}
+	highlight_code_comment = {{ highlight_code_comment }}
+*/
+{%- endif -%}

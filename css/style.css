@@ -1,3 +1,7 @@
+---
+layout: css
+---
+{%- include colorscheme.css -%}
 html
 {
 	text-rendering: geometricprecision;
@@ -14,8 +18,8 @@ body
 	font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Verdana,Tahoma,Arial,sans-serif;
 	font-size: 22px;
 	line-height: 30px;
-	background-color: #000000;
-	color: #A6A6A6;
+	background-color: {{ background }};
+	color: {{ foreground }};
 	max-width: 1024px;
 }
 
@@ -27,15 +31,15 @@ body
 
 ::-moz-selection
 {
-	background-color: #A6A6A6;
-	color: #000000;
+	background-color: {{ foreground }};
+	color: {{ background }};
 	font-weight: bolder;
 }
 
 ::selection
 {
-	background-color: #A6A6A6;
-	color: #000000;
+	background-color: {{ foreground }};
+	color: {{ background }};
 	font-weight: bolder;
 }
 
@@ -47,17 +51,17 @@ body
 
 ::-webkit-scrollbar-track
 {
-	background: #1C1C1C;
+	background: {{ highlight_dark }};
 }
 
 ::-webkit-scrollbar-thumb
 {
-	background: #A6A6A6;
+	background: {{ foreground }};
 }
 
 ::-webkit-scrollbar-thumb:hover
 {
-	background: #E90909;
+	background: {{ highlight_light }};
 }
 
 h1, h2, h3, h4, h5, h6
@@ -66,7 +70,7 @@ h1, h2, h3, h4, h5, h6
 	margin-bottom: 20px;
 	margin-top: 20px;
 	padding-bottom: 16px;
-	border-bottom: 8px solid #E90909;
+	border-bottom: 8px solid {{ highlight_light }};
 }
 
 h2
@@ -89,13 +93,13 @@ blockquote
 {
 	margin: 0;
 	padding: 10px;
-	border-left: 8px solid #E90909;
-	background-color: #1C1C1C;
+	border-left: 8px solid {{ highlight_light }};
+	background-color: {{ highlight_dark }};
 }
 
 code
 {
-	color: #AFAF00;
+	color: {{ highlight_foreground }};
 	font-weight: bolder;
 	font-family: "JetBrains Mono NL ExtraBold","Roboto Mono","Lucida Console","Andale Mono","Courier New",monospace;
 }
@@ -105,7 +109,7 @@ pre
 	font-family: "JetBrains Mono NL ExtraBold","Roboto Mono","Lucida Console","Andale Mono","Courier New",monospace;
 	overflow: auto;
 	display: block;
-	background-color: #1C1C1C !important;
+	background-color: {{ highlight_dark }} !important;
 	tab-size: 4;
 	padding: 10px;
 }
@@ -116,13 +120,13 @@ pre code
 	font-weight: normal;
 	tab-size: 4;
 	padding: 0;
-	color: #A6A6A6;
-	background-color: #1C1C1C !important;
+	color: {{ foreground }};
+	background-color: {{ highlight_dark }} !important;
 }
 
 a, a:active, a:visited, a:hover
 {
-	color: #E90909;
+	color: {{ highlight_light }};
 	text-decoration: none;
 	font-weight: bolder;
 }
@@ -145,7 +149,7 @@ iframe, .content video, .content audio
 
 hr
 {
-	border: 4px solid #E90909;
+	border: 4px solid {{ highlight_light }};
 	max-width: 320px;
 }
 
@@ -153,12 +157,12 @@ table
 {
 	border-collapse: collapse;
 	width: 100%;
-	border-bottom: 8px solid #E90909;
+	border-bottom: 8px solid {{ highlight_light }};
 }
 
 table * tr th
 {
-	background-color: #1C1C1C;
+	background-color: {{ highlight_dark }};
 	font-weight: bolder;
 	text-align: left;
 }
@@ -170,7 +174,7 @@ table * tr th, table * tr td
 
 table * tr:nth-child(even)
 {
-	background-color: #1C1C1C;
+	background-color: {{ highlight_dark }};
 }
 
 .nav
@@ -216,7 +220,7 @@ table * tr:nth-child(even)
 
 #music iframe
 {
-	border: 8px #A6A6A6 solid;
+	border: 8px {{ foreground }} solid;
 }
 
 @media only screen and (max-width: 1024px)
@@ -358,10 +362,10 @@ img.propaganda.gif
 
 button
 {
-	background-color: #1C1C1C;
-	border: 0.3em outset #E90909;
-	color: #AFAF00;
-	text-shadow: 1px 1px #000000;
+	background-color: {{ highlight_dark }};
+	border: 0.3em outset {{ highlight_light }};
+	color: {{ highlight_foreground }};
+	text-shadow: 1px 1px {{ background }};
 	outline: none;
 	font-size: 1.3rem;
 	font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Verdana,Tahoma,Arial,sans-serif;
@@ -370,7 +374,7 @@ button
 
 button:active
 {
-	border: 0.3em inset #E90909;
+	border: 0.3em inset {{ highlight_light }};
 }
 
 .hidden
