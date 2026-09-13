@@ -30,7 +30,7 @@ Okay, let's dive into the classic myth of Theseus and the Argonauts!
 
 The story tells of Theseus, a brave and skilled prince, who ventures into
 the Underworld to rescue his deceased father. He's armed with a helmet
-inlaid with a magical bull’s eye, which is a key to passing through the
+inlaid with a magical bull's eye, which is a key to passing through the
 Labyrinth of the Dead. He uses this helmet to navigate the perilous maze
 and ultimately kills the Minotaur, bringing peace to Athens.
 
@@ -43,7 +43,7 @@ defeat the Trojans in battle and ultimately returns home.
 
 **The Ship of Theseus**
 
-Here’s an ASCII art representation of the ship. It’s a simplified version,
+Here's an ASCII art representation of the ship. It's a simplified version,
 but it captures the essence of the myth:
 
 ```
@@ -248,7 +248,7 @@ Athens, proving his worth and rescuing the city from the creature.
 
 **ASCII Art Representation**
 
-Here’s an ASCII art depiction of Theseus and the Minotaur:
+Here's an ASCII art depiction of Theseus and the Minotaur:
 
 ```
        _,-._
@@ -258,7 +258,7 @@ Here’s an ASCII art depiction of Theseus and the Minotaur:
        `-'
       /   \
      |     |
-     |  O  |   <-- Theseus’s arm
+     |  O  |   <-- Theseus's arm
      |     |
      \   /
       `-'

@@ -80,7 +80,7 @@ This is what they took from us. What a shame!
 
 > **Q:** Why did the laptop go to the 4th of July BBQ?
 >
-> **A:** It heard there’d be some fireworks and wanted to spark some new connections!
+> **A:** It heard there'd be some fireworks and wanted to spark some new connections!
 
 I just realized that calling this the `Monthly Dad Joke` might have been more appropriate. Oh well!
 

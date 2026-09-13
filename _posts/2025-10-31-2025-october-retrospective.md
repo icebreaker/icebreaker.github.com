@@ -180,7 +180,7 @@ As I am not a judge or a jury, I'll let you decide for yourself. But, I'll say t
 
 > **Q:** Why did Hercule Poirot refuse to bob for apples on Halloween?
 >
-> **A:** Because the little grey cells insisted: *“Mon ami, it is elementary, dunking one’s moustache in a bucket is simply a crime against symmetry!”*
+> **A:** Because the little grey cells insisted: *"Mon ami, it is elementary, dunking one's moustache in a bucket is simply a crime against symmetry!"*
 
 [kateesackhoff]: https://en.wikipedia.org/wiki/Katee_Sackhoff
 [starbuck]: https://en.wikipedia.org/wiki/Kara_Thrace
