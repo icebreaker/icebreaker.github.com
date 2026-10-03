@@ -1,3 +1,9 @@
+{% if page.draft %}
+<blockquote>
+{ include bandcamp.html href="{{ include.href }}" title="{{ include.title }}" }
+</blockquote>
+<hr/>
+{% else %}
 {% if include.album %}
 	{% assign width = 700 %}
 	{% assign url = "https://bandcamp.com/EmbeddedPlayer/size=large/bgcol=000000/linkcol=E90909/transparent=true/" %}
@@ -8,11 +14,11 @@
 		{% assign src = src | append: "track=" | append: include.track | append: "/" %}
 	{% endif %}
 {% endif %}
-
 {% if src and width %}
 <iframe style="border: 0; width: 700px; height: {{ width }}px;" src="{{ src }}" seamless>
 {% if include.href and include.title %}
 <a href="{{ include.href }}">{{ include.title }}</a>
 {% endif %}
 </iframe>
+{% endif %}
 {% endif %}
