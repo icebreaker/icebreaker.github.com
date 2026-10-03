@@ -1,0 +1,17 @@
+{% if page.draft %}
+<blockquote>
+{ include archiveorg.html slug="{{ include.slug }}" }
+</blockquote>
+<hr/>
+{% else %}
+{% if include.slug %}
+{% assign height = "30" %}
+{% assign url = "https://archive.org/embed/" %}
+{% assign url = url | append: include.slug %}
+{% if include.playlist == "true" %}
+  {% assign url = url | append: "?playlist=1" %}
+  {% assign height = "320" %}
+{% endif %}
+<iframe class="archiveorg" src="{{ url }}" width="1024" height="{{ height }}" frameborder="0" webkitallowfullscreen="true" mozallowfullscreen="true" allowfullscreen seamless></iframe>
+{% endif %}
+{% endif %}
