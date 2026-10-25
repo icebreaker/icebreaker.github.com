@@ -16,6 +16,8 @@
   {% assign img_url = 'src="' | append: site.url | append: "/" %}
   {% assign href_url = 'href="' | append: site.url | append: "/" %}
   {% for post in site.posts %}
+  {% assign content_html = post.content | split: '</h1>' | last %}
+  {% assign content_html = content_html | replace: 'src="/',img_url | replace: 'href="/',href_url %}
   <entry>
 	  <author>
         <name>{{ site.author }}</name>
@@ -25,7 +27,7 @@
 	  <updated>{{ post.date | date_to_xmlschema }}</updated>
 	  <id>{{ site.url }}{{ post.url }}</id>
 	  <content type="html">
-		{{ post.content | replace: 'src="/',img_url | replace: 'href="/',href_url | xml_escape }}
+		{{ content_html | xml_escape }}
 	  </content>
   </entry>
   {% endfor %}
