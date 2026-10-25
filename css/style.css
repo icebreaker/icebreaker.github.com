@@ -15,9 +15,9 @@ body
 {
 	margin: 0;
 	padding: 0 10px 10px 10px;
-	font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Verdana,Tahoma,Arial,sans-serif;
-	font-size: 21px;
-	line-height: 30px;
+	font-family: -apple-system,BlinkMacSystemFont,"Segoe UI","Liberation Sans",Roboto,"Helvetica Neue",Verdana,Tahoma,Arial,sans-serif;
+	font-size: 1.25rem;
+	line-height: 1.45;
 	background-color: {{ background }};
 	color: {{ foreground }};
 	max-width: 1024px;
@@ -67,20 +67,18 @@ body
 h1, h2, h3, h4, h5, h6
 {
 	padding: 0;
-	margin-bottom: 20px;
-	margin-top: 20px;
-	padding-bottom: 16px;
-	border-bottom: 8px solid {{ highlight_light }};
+	margin: 0;
+	border-bottom: 4px solid {{ highlight_light }};
 }
 
-h2
+h1
 {
-	padding-bottom: 8px;
+	margin-bottom: 12px;
 }
 
-h3, h4, h5, h6
+h2, h3, h4, h5, h6
 {
-	padding-bottom: 4px;
+	margin: 12px 0 12px 0;
 }
 
 p
@@ -93,7 +91,7 @@ blockquote
 {
 	margin: 0;
 	padding: 10px;
-	border-left: 8px solid {{ highlight_light }};
+	border-left: 4px solid {{ highlight_light }};
 	background-color: {{ highlight_dark }};
 }
 
@@ -154,7 +152,7 @@ iframe.archiveorg
 
 hr
 {
-	border: 4px solid {{ highlight_light }};
+	border: 2px solid {{ highlight_light }};
 	max-width: 320px;
 }
 
@@ -162,7 +160,7 @@ table
 {
 	border-collapse: collapse;
 	width: 100%;
-	border-bottom: 8px solid {{ highlight_light }};
+	border-bottom: 4px solid {{ highlight_light }};
 }
 
 table * tr th
@@ -225,20 +223,20 @@ table * tr:nth-child(even)
 
 #music iframe
 {
-	border: 8px {{ foreground }} solid;
+	border: 4px {{ foreground }} solid;
 }
 
 @media only screen and (max-width: 1024px)
 {
 	body
 	{
-		font-size: 0.9rem;
-		line-height: 1.6rem;
+		font-size: revert;
+		line-height: 1.45;
 	}
 
 	hr
 	{
-		max-width: 160px;
+		max-width: 10rem;
 	}
 
 	img, iframe, .content video, .content audio
