@@ -39,13 +39,13 @@ Now that [Typora 2][typora2] has been announced, I feel like its *charms* might 
 
 ![hotla](/media/2026/hotla.png)
 
-I said this before, and I have no problem with saying it again. [Halls of Tornment][hallsoftornment] is the one of the best [Vampire Survivors][vampiresurvivors] *clones* out there, bar none.
+I said this before, and I have no problem with saying it again. [Halls of Torment][hallsoftorment] is the one of the best [Vampire Survivors][vampiresurvivors] *clones* out there, bar none.
 
 {% include youtube.html id="3HII6hZo-L0" %}
 
-Just as an *FYI* for any interested parties, it's worth calling out that [The Lost Archives][hallsoftornmentthelostarchives] has also been locked behind some good old fashioned *grind-fest*, which manifests itself in the form of having at least `5` *marks* unlocked.
+Just as an *FYI* for any interested parties, it's worth calling out that [The Lost Archives][hallsoftormentthelostarchives] has also been locked behind some good old fashioned *grind-fest*, which manifests itself in the form of having at least `5` *marks* unlocked.
 
-It's not as annoying as with [The Boglands][hallsoftornmenttheboglands], but still unpleasant. I totally get it why it was done this way, but please do not ever do this, especially when we are talking about content that has been *paid* for in full.
+It's not as annoying as with [The Boglands][hallsoftormenttheboglands], but still unpleasant. I totally get it why it was done this way, but please do not ever do this, especially when we are talking about content that has been *paid* for in full.
 
 Obviously, don't let this minor gripe of mine dissuade you from grabbing the DLC for yourself. It's a wee bit unbalanced as per usual, but overall, it's still jolly good fun.
 
@@ -63,7 +63,7 @@ Many of them are usually simply snapshots of various time periods, all this whil
 
 ![macworld1984](/media/2026/macworld1984.png)
 
-Even this rather comprehensive [archive][macworldarchive] of the [Macworld magazine][macworld] seems to hit completely different. 
+Even this rather comprehensive [archive][macworldarchive] of the [Macworld magazine][macworld] seems to hit completely different.
 
 Oh, these *pesky macintosh-ians* and their rather refined sense of taste ...
 
@@ -300,7 +300,7 @@ static NamedPipeClientStream CreatePipe(Process process) => new(
 And, then the next point of interest was the implementation of the `McpWrite.PipeName` function:
 
 ```c#
-internal static string PipeName(int pid, long startTime) 
+internal static string PipeName(int pid, long startTime)
     => $"sbox-mcp-{pid}-{startTime:x}";
 ```
 
@@ -511,14 +511,14 @@ $ winedump -f DIABLO.EXE | tail
   .reloc     VirtSize: 0x000003ce  VirtAddr:  0x00009000
     raw data offs:   0x00004400  raw data size: 0x00000400
     relocation offs: 0x00000000  relocations:   0x00000000
-    line # offs:     0         line #'s:      0       
+    line # offs:     0         line #'s:      0
     characteristics: 0x42000040
       INITIALIZED_DATA  MEM_DISCARDABLE  MEM_READ
 
 Done dumping DIABLO.EXE
 ```
 
-The offset of the `4D 50 51 1A 20`  byte sequence matches up with `0x4400 + 0x0400 = 0x4800`. 
+The offset of the `4D 50 51 1A 20`  byte sequence matches up with `0x4400 + 0x0400 = 0x4800`.
 
 Without going to deep into the *nerd stuff*, let me just say that the `1A` after the `MPQ` char sequence signifies that it's version `1` of the package format, which in turn also happens to have a header size of `32` (`0x20`).
 
@@ -619,13 +619,13 @@ In case I failed to convince you to make up your mind about [Insidious: Out of t
 >
 > As CD-ROMs were just beginning to become main stream at this time, this led to an influx of reference, productivity, educational, and FMV games released for the platform.
 
-## Win32 Scroller in C 
+## Win32 Scroller in C
 
 Staying in the land of projects written in C from my archives, I managed to dig this bad boy out of bog.
 
 ![scroller](/media/2026/scroller.png)
 
-Based on the executable, the last time I have compiled this one was on `December 22, 2005`. 
+Based on the executable, the last time I have compiled this one was on `December 22, 2005`.
 
 ```bash
 $ winedump scroll.exe | head
@@ -660,9 +660,9 @@ File Header
 How about that? The code of course is pretty hard to look at today, and is pretty much as terrible as I have expected it to be to be perfectly honest. No surprises to be had here, like at all.
 
 ```c
-SetTimer(hwnd,ID_TIMER1,TIMER1_INTERVAL,NULL);              
+SetTimer(hwnd,ID_TIMER1,TIMER1_INTERVAL,NULL);
 SetTimer(hwnd,ID_TIMER2,TIMER2_INTERVAL,NULL);
-              
+
 mod = FMUSIC_LoadSong(MUSIC);
 FMUSIC_SetLooping(mod, TRUE);
 FMUSIC_PlaySong(mod);
@@ -801,9 +801,9 @@ Anyway, please enjoy the tunes, and don't forget to try the fish!
 [flanagan]: https://en.wikipedia.org/wiki/Mike_Flanagan_(filmmaker)
 [typora]: https://typora.io/
 [typora2]: https://v2.typora.io/
-[hallsoftornment]: https://store.steampowered.com/app/2218750/Halls_of_Torment/
-[hallsoftornmentthelostarchives]: https://store.steampowered.com/app/4100210/Halls_of_Torment_The_Lost_Archives/?curator_clanid=43496740
-[hallsoftornmenttheboglands]: https://store.steampowered.com/app/3919420/Halls_of_Torment_The_Boglands/?curator_clanid=43496740
+[hallsoftorment]: https://store.steampowered.com/app/2218750/Halls_of_Torment/
+[hallsoftormentthelostarchives]: https://store.steampowered.com/app/4100210/Halls_of_Torment_The_Lost_Archives/?curator_clanid=43496740
+[hallsoftormenttheboglands]: https://store.steampowered.com/app/3919420/Halls_of_Torment_The_Boglands/?curator_clanid=43496740
 [vampiresurvivors]: https://store.steampowered.com/app/1794680/Vampire_Survivors/
 [usenetrewind]: https://www.usenet-rewind.com/
 [usenet]: https://en.wikipedia.org/wiki/Usenet
