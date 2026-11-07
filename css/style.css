@@ -180,6 +180,11 @@ table * tr:nth-child(even)
 	background-color: {{ highlight_dark }};
 }
 
+table * code
+{
+	color: {{ foreground }};
+}
+
 .nav
 {
 	font-weight: bolder;
